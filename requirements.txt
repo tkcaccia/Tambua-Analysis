@@ -1,0 +1,5 @@
+numpy>=1.23
+tifffile>=2024.6
+pytest>=8
+Pillow>=11
+scikit-image>=0.24

@@ -24,6 +24,30 @@ The current bounded ORION CRC33_01 source window is a registered same-section H&
 
 The one approved Chiamaka inference stopped before model loading because an offline `main` cache snapshot had no weights. No DAPI image or cell-typing accuracy resulted. CellPhenotyper now pins the cached weight-bearing GigaTIME CNN revision and its CPU state dictionary loads successfully; the GPU case has **not** been rerun.
 
+When a scale-valid GigaTIME result exists, run the spatial QC on the **same physical field of view**:
+
+```bash
+python -m analysis.qc_dapi --he he.ome.tif --cell-mask expert_cells.ome.tif \
+  --dapi gigatime_output/jpg_image/DAPI.jpg \
+  --manifest gigatime_output/gigatime_jpg_manifest.json \
+  --output-dir results/dapi_qc
+```
+
+The tool refuses a source/target pixel-spacing or image-shape mismatch, saves an H&E/DAPI overlay, and reports enrichment of high virtual DAPI over an H&E hematoxylin nuclear **proxy**. That proxy is not an expert nuclear annotation; the resulting overlay still needs visual review. No QC threshold or biological accuracy is claimed from the failed ORION run.
+
+For a frozen end-to-end comparison, create one CSV manifest per method with columns `sample_id,patient_id,reference_mask,reference_labels,prediction_mask,prediction_labels`. Each labels CSV has `label_id,cell_type`. Score only the test cases, with all methods using the same cases and four-class ontology:
+
+```bash
+python -m analysis.score_instances --manifest test_tambua.csv --method Tambua \
+  --track end_to_end --output results/tambua.json
+python -m analysis.score_instances --manifest test_cellvit.csv --method CellViT \
+  --track end_to_end --output results/cellvit.json
+python -m analysis.score_instances --manifest test_hovernet.csv --method HoVer-Net \
+  --track end_to_end --output results/hovernet.json
+```
+
+The scorer rejects missing or extra typed instances and incompatible mask shapes. It reports per-sample, per-patient and pooled detection/type scores. Use `--track expert_mask_classification` only when prediction and reference instance masks are identical; this is a separate conditional-classification experiment.
+
 ## Data and current status
 
 - MoNuSAC: 310 mirrored annotated images, but the mirror does not establish exact µm/pixel for GigaTIME. Use only after independently verifying scanner spacing. See [Tambua dataset notes](https://github.com/tkcaccia/Tambua/blob/main/docs/DATASETS.md).
