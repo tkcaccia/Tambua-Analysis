@@ -1,0 +1,159 @@
+{
+  "scope": "single previously used MoNuSAC ROI, bounded diagnostic inference",
+  "device": "cuda",
+  "source_mpp": 0.252,
+  "model_mpp": 0.25,
+  "shape_yx": [
+    552,
+    568
+  ],
+  "model": "/home/chiamaka/.cache/huggingface/hub/models--prov-gigatime--GigaTIME/snapshots/a6556030bdb8071857559e12b921620aa1bbac5b/model.pth",
+  "normalization_reference": [
+    "0_10564_556_556_he.png",
+    "0_15568_556_556_he.png",
+    "0_16124_556_556_he.png",
+    "0_16680_556_556_he.png",
+    "0_18348_556_556_he.png"
+  ],
+  "reference_selection": "first five filenames, no target labels used",
+  "reference_control": "/mnt/sata_ssd/Bora-benchmark/results/gigatime-flash-audit-2026-10-16/confirmation/confirmation.json",
+  "note": "StarDist-derived nuclei are independent of virtual DAPI but are not measured DAPI truth.",
+  "results": [
+    {
+      "method": "raw",
+      "qc": {
+        "schema_version": 1,
+        "scope": "virtual_DAPI_vs_HE_derived_nuclear_mask",
+        "sampling_stride_px": 1,
+        "sampled_windows": 1,
+        "nuclear_pixels": 45279,
+        "nearby_extranuclear_pixels": 47498,
+        "thresholds": {
+          "min_auc": 0.7,
+          "min_prevalence_matched_dice": 0.35,
+          "min_edge_to_core_nuclear_mean_ratio": 0.65,
+          "min_nuclear_boundary_contrast": 0.05
+        },
+        "interpretation_limit": "Agreement with H&E-derived nuclei does not establish measured DAPI accuracy. A poor StarDist mask can also lower this score. Inspect the overlay and mask.",
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "alignment_score": 0.34614336754938607,
+        "auc": 0.6680229525817313,
+        "prevalence_matched_dice": 0.6365672053389223,
+        "prevalence_matched_threshold": 0.9294117647058824,
+        "nuclear_boundary_contrast": 0.015182890906339397,
+        "nuclear_inner_boundary_pixels": 10910,
+        "nearby_outer_boundary_pixels": 11595,
+        "edge_to_core_nuclear_mean_ratio": 1.135114697340837,
+        "edge_nuclear_pixels": 5585,
+        "core_nuclear_pixels": 39694
+      },
+      "parameters": {}
+    },
+    {
+      "method": "macenko",
+      "qc": {
+        "schema_version": 1,
+        "scope": "virtual_DAPI_vs_HE_derived_nuclear_mask",
+        "sampling_stride_px": 1,
+        "sampled_windows": 1,
+        "nuclear_pixels": 45279,
+        "nearby_extranuclear_pixels": 47498,
+        "thresholds": {
+          "min_auc": 0.7,
+          "min_prevalence_matched_dice": 0.35,
+          "min_edge_to_core_nuclear_mean_ratio": 0.65,
+          "min_nuclear_boundary_contrast": 0.05
+        },
+        "interpretation_limit": "Agreement with H&E-derived nuclei does not establish measured DAPI accuracy. A poor StarDist mask can also lower this score. Inspect the overlay and mask.",
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "alignment_score": 0.2794307235467328,
+        "auc": 0.624676463447643,
+        "prevalence_matched_dice": 0.5952255109231853,
+        "prevalence_matched_threshold": 0.8823529411764706,
+        "nuclear_boundary_contrast": 0.004758305894634773,
+        "nuclear_inner_boundary_pixels": 10910,
+        "nearby_outer_boundary_pixels": 11595,
+        "edge_to_core_nuclear_mean_ratio": 0.7049469284122593,
+        "edge_nuclear_pixels": 5585,
+        "core_nuclear_pixels": 39694
+      },
+      "parameters": {
+        "source_basis": [
+          [
+            0.5412130049790584,
+            0.40390334515577236
+          ],
+          [
+            0.8176701725796465,
+            0.7654625706302031
+          ],
+          [
+            0.19622429032897323,
+            0.5009282790342134
+          ]
+        ],
+        "target_basis": [
+          [
+            0.5785130819754919,
+            0.20311853869163296
+          ],
+          [
+            0.7597978881660139,
+            0.873097102873636
+          ],
+          [
+            0.2966981346784693,
+            0.4432203833235097
+          ]
+        ]
+      }
+    },
+    {
+      "method": "reinhard_tissue",
+      "qc": {
+        "schema_version": 1,
+        "scope": "virtual_DAPI_vs_HE_derived_nuclear_mask",
+        "sampling_stride_px": 1,
+        "sampled_windows": 1,
+        "nuclear_pixels": 45279,
+        "nearby_extranuclear_pixels": 47498,
+        "thresholds": {
+          "min_auc": 0.7,
+          "min_prevalence_matched_dice": 0.35,
+          "min_edge_to_core_nuclear_mean_ratio": 0.65,
+          "min_nuclear_boundary_contrast": 0.05
+        },
+        "interpretation_limit": "Agreement with H&E-derived nuclei does not establish measured DAPI accuracy. A poor StarDist mask can also lower this score. Inspect the overlay and mask.",
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "fail",
+        "alignment_score": 0.2650861185383067,
+        "auc": 0.5863831968994782,
+        "prevalence_matched_dice": 0.5475093908214927,
+        "prevalence_matched_threshold": 0.00784313725490196,
+        "nuclear_boundary_contrast": 0.03346045914676429,
+        "nuclear_inner_boundary_pixels": 10910,
+        "nearby_outer_boundary_pixels": 11595,
+        "edge_to_core_nuclear_mean_ratio": 0.5452120268664721,
+        "edge_nuclear_pixels": 5585,
+        "core_nuclear_pixels": 39694
+      },
+      "parameters": {
+        "source_mean": [
+          66.12591552734375,
+          20.743131637573242,
+          -23.645076751708984
+        ],
+        "target_mean": [
+          76.51034545898438,
+          16.309743881225586,
+          -7.515885353088379
+        ]
+      }
+    }
+  ]
+}
