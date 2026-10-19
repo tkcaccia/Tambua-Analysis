@@ -18,9 +18,11 @@ class References(HTMLParser):
         self.values.extend(value for key, value in attrs if key in {"src", "href"} and value)
 
 
-def test_page_has_no_invalidated_marker_gallery_or_accuracy() -> None:
+def test_page_labels_corrected_benchmark_and_quality_limits() -> None:
     html = PAGE.read_text(encoding="utf-8")
-    assert "No accepted post-correction test score" in html
+    assert "corrected-monusac.html" in html
+    assert "Native DAPI QC passed 50 images and failed 70" in html
+    assert "conditional on expert-drawn regions and QC selection" in html
     assert "Quality decision: fail" in html
     for stale in ("85.2%", "pre-fix", "monusac-matched/", "monusac-transfer/", "orion-crc33-01/"):
         assert stale not in html.lower()
@@ -34,3 +36,17 @@ def test_local_page_assets_exist() -> None:
         if ref.startswith("#") or urlparse(ref).scheme:
             continue
         assert (PAGE.parent / ref).is_file(), ref
+
+
+def test_corrected_gallery_assets_cover_every_test_image() -> None:
+    import json
+
+    gallery = PAGE.parent / "corrected-monusac.html"
+    assert gallery.is_file()
+    data = json.loads((PAGE.parent / "assets/monusac-corrected/results.json").read_text())
+    assert len(data["cases"]) == 32
+    assets = PAGE.parent / "assets/monusac-corrected"
+    for case in data["cases"]:
+        assert case["source_color_reference"] == "scanner_svs_rgb"
+        for panel in ("he", "expert", "predicted", "errors", "dapi", "ck", "cd3", "cd68"):
+            assert (assets / f'{case["sample_id"]}-{panel}.webp').is_file()
