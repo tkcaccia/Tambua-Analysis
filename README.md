@@ -2,7 +2,7 @@
 
 [Validation site](https://tkcaccia.github.io/Tambua-Analysis/) · [Tambua software](https://github.com/tkcaccia/Tambua)
 
-This repository holds the prospective analysis plan and public, reproducible scoring code for Tambua cell typing. Tambua uses CellPhenotyper GigaTIME virtual-marker scores and [GitHub fastPLS **0.4**](https://github.com/tkcaccia/fastPLS/tree/265108b6aa250c2534f98ec89037bb5cd001dca0). It does **not** claim a matched biological accuracy comparison before the methods are evaluated on the same held-out patients.
+This repository holds the public image gallery and reproducible scoring code for Tambua cell typing. Tambua uses CellPhenotyper GigaTIME virtual-marker scores and [GitHub fastPLS **0.4**](https://github.com/tkcaccia/fastPLS/tree/265108b6aa250c2534f98ec89037bb5cd001dca0). The completed MoNuSAC result is a lung-to-prostate **conditional cell-classification** test at expert-defined nuclei. It is not an end-to-end detection result or a matched comparison against CellViT++ and HoVer-Net.
 
 ## Comparison design
 
@@ -11,12 +11,12 @@ Use the official MoNuSAC epithelial, lymphocyte, macrophage and neutrophil ontol
 | Method | Input | Model source | Endpoint |
 | --- | --- | --- | --- |
 | Tambua | CellPhenotyper instances and calibrated GigaTIME scores | [Tambua](https://github.com/tkcaccia/Tambua), [fastPLS 0.4](https://github.com/tkcaccia/fastPLS) | End-to-end cell detection and type; separately classify on expert instances to isolate the marker/classifier step |
-| CellViT | H&E | [official CellViT](https://github.com/TIO-IKIM/CellViT) | Native instance detection and type, with a prospectively fixed mapping to MoNuSAC classes |
+| CellViT++ | H&E | [official CellViT++](https://github.com/TIO-IKIM/CellViT-plus-plus) | Native instance detection and type, with a prospectively fixed mapping to MoNuSAC classes |
 | HoVer-Net | H&E | [official HoVer-Net](https://github.com/vqdang/hover_net) | Native instance detection and type using its MoNuSAC checkpoint |
 
-CellViT's publicly described PanNuke taxonomy is **not** interchangeable with the four MoNuSAC types. A MoNuSAC-trained cell-type head or a documented external mapping must be fixed without looking at the held-out test set. HoVer-Net provides a MoNuSAC-specific pretrained checkpoint. Do not compare Tambua on expert-provided masks to competitors' end-to-end outputs as if they were equivalent. Report the expert-mask classifier analysis and end-to-end analysis separately.
+CellViT++'s publicly described PanNuke taxonomy is **not** interchangeable with the four MoNuSAC types. A MoNuSAC-trained cell-type head or a documented external mapping must be fixed without looking at the held-out test set. HoVer-Net provides a MoNuSAC-specific pretrained checkpoint. Do not compare Tambua on expert-provided masks to competitors' end-to-end outputs as if they were equivalent. Report the expert-mask classifier analysis and end-to-end analysis separately. Dayao and colleagues' [H&E cell-type prediction using CODEX-derived labels](https://doi.org/10.1016/j.crmeth.2025.101204) is a close conceptual predecessor; its kidney-cohort scores cannot be directly compared with MoNuSAC. The [literature and benchmark note](docs/LITERATURE_BENCHMARK.md) records appropriate comparator and dataset roles for the supplied papers.
 
-**Training-data provenance:** The pinned GigaTIME CNN was trained on 21 in-house paired lung-adenocarcinoma slides, according to its original paper. The current ORION colorectal field is a distinct technical demonstration, and MoNuSAC is a proposed expert-annotated test cohort; neither is listed as GigaTIME translator training data. TCGA application in the GigaTIME paper is inference, not translator fitting. The original paper does not publish all training slide IDs, so exact patient-level disjointness for future MoNuSAC testing remains to be verified if that manifest becomes available. See the [source-by-source audit](docs/DATA_PROVENANCE.md). Test patients must also be excluded from Tambua fastPLS fitting and model selection.
+**Training-data provenance:** The pinned GigaTIME CNN was trained on 21 in-house paired lung-adenocarcinoma slides, according to its original paper. The current ORION colorectal field is a distinct technical demonstration, and MoNuSAC is now a completed expert-annotated transfer cohort; neither source is listed as GigaTIME translator training data. TCGA application in the GigaTIME paper is inference, not translator fitting. The original paper does not publish all training slide IDs, so exact patient-level disjointness for this MoNuSAC testing remains to be verified if that manifest becomes available. See the [source-by-source audit](docs/DATA_PROVENANCE.md). Test patients must also be excluded from Tambua fastPLS fitting and model selection.
 
 For end-to-end evaluation, match predicted and expert instances one-to-one at mask IoU > 0.5, count unmatched instances, and report detection F1 and per-type F1 in addition to classification accuracy on matched cells. Report macro F1 and balanced accuracy only when every reference type is present. Aggregate by patient and add patient-bootstrap uncertainty when there are enough independent patients. Record physical resolution, model checkpoint, inference time, and hardware. Never treat cells from one patient as independent biological replicates.
 
@@ -42,7 +42,7 @@ For a frozen end-to-end comparison, create one CSV manifest per method with colu
 ```bash
 python -m analysis.score_instances --manifest test_tambua.csv --method Tambua \
   --track end_to_end --output results/tambua.json
-python -m analysis.score_instances --manifest test_cellvit.csv --method CellViT \
+python -m analysis.score_instances --manifest test_cellvit.csv --method CellViT++ \
   --track end_to_end --output results/cellvit.json
 python -m analysis.score_instances --manifest test_hovernet.csv --method HoVer-Net \
   --track end_to_end --output results/hovernet.json
@@ -50,18 +50,33 @@ python -m analysis.score_instances --manifest test_hovernet.csv --method HoVer-N
 
 The scorer rejects missing or extra typed instances and incompatible mask shapes. It reports per-sample, per-patient and pooled detection/type scores. Use `--track expert_mask_classification` only when prediction and reference instance masks are identical; this is a separate conditional-classification experiment.
 
-## Data and current status
+## Completed MoNuSAC transfer result
 
-- MoNuSAC: 310 mirrored annotated images; that mirror does not establish exact µm/pixel. In the original challenge test archive, all 101 `.svs` ROI headers matched the paired XML `MicronsPerPixel` values (0.2456–0.2527 µm/pixel); 32 ROIs span at least 512 pixels in both dimensions across 25 patients. These are candidates, not completed GigaTIME results. Freeze source and patient splits before the expert test. See the [provenance audit](docs/DATA_PROVENANCE.md) and [Tambua dataset notes](https://github.com/tkcaccia/Tambua/blob/main/docs/DATASETS.md).
-- ORION CRC33_01: one 2048 × 2048 calibrated window, 4,104 complete measured-table-matched cell instances, 226 edge instances excluded. The published ORION mask is computationally generated, not expert drawn. GigaTIME inference, per-cell quantification and DAPI morphology QC are complete. This is one patient; it cannot support a patient-held-out accuracy estimate.
-- Matched Tambua / CellViT / HoVer-Net scores: **not yet measured**.
+The [gallery](https://tkcaccia.github.io/Tambua-Analysis/#monusac) contains all ten held-out prostate ROIs: source H&E, expert types, predicted types, error map, and virtual DAPI, CK, CD3 and CD68. The fixed evaluation used 27 lung training ROIs (9 patients) and 10 prostate test ROIs (6 distinct patients), with 5,243 and 3,584 expert-typed nuclei respectively. The original organizer image/XML pixel spacing was verified, then GigaTIME CNN inference was run at 0.25 µm/pixel. CellPhenotyper quantified 21 virtual channels on expert nuclear masks and 21 on 3 µm nucleus-anchored cell proxies. The latter are **not expert cell boundaries**.
 
-The static gallery contains small, attributed adaptations of one publicly released ORION H&E window, the published computational mask and our GigaTIME outputs. Full-resolution source data, weights and cell tables remain with their original providers.
+A single fastPLS 0.4 SIMPLS–LDA classifier, fit on lung only, achieved **89.0% accuracy**, **44.5% balanced accuracy**, and **44.7% macro F1** on the prostate nuclei. The lung-training-majority baseline was 54.8% accurate. Epithelial and lymphocyte recall were 94.0% and 84.0%; macrophage and neutrophil recall were both zero (only 20 and 2 test nuclei). This is a strong common-class transfer result with a clear rare-class failure. Eight of ten test image previews passed a simple DAPI top-decile nuclear-enrichment screen; no images were excluded on that basis. Several DAPI previews remain visually diffuse, and all per-image nucleus-versus-local-ring contrasts are published. This is not proof of biological marker fidelity. The full [score report](docs/assets/monusac-transfer/fastpls-report.json), [per-image counts](docs/assets/monusac-transfer/results.json) and [fitted model](docs/assets/monusac-transfer/fastpls-lung-to-prostate.rds) are provided.
+
+To reproduce the CPU model fit and exact per-cell predictions from the saved, completed GigaTIME/CellPhenotyper bundle, install Tambua's pinned fastPLS 0.4 environment and run:
+
+```bash
+TAMBUA_R_LIB=/path/to/fastPLS-0.4/R-library \
+  /path/to/Tambua/.venv/bin/python analysis/score_monusac_transfer.py \
+  --source /path/to/completed-MoNuSAC-bundle \
+  --output /path/to/new-empty-score-directory \
+  --tambua /path/to/Tambua
+/path/to/Tambua/.venv/bin/python analysis/build_monusac_gallery.py \
+  --results /path/to/completed-MoNuSAC-bundle \
+  --scores /path/to/new-empty-score-directory --site docs
+```
+
+The first script never starts GPU inference; the completed source bundle must contain the frozen cohort, expert masks and labels, all 37 quantification outputs, and the one-shot bundle completion marker. The original dataset acquisition and expert-mask preparation code live in [Tambua](https://github.com/tkcaccia/Tambua/tree/main/scripts). The published site contains derived small previews, not raw source archives. MoNuSAC imagery and labels retain CC BY-NC-SA 4.0 terms; the site's MIT license applies only to original code.
+
+The separate ORION CRC33_01 gallery is a one-patient technical demonstration with 4,104 computationally segmented cells and virtual-versus-measured marker associations. It has no expert cell-type truth. CellViT++ and HoVer-Net have **no verified same-cohort prediction** yet, so there is no head-to-head accuracy ranking.
 
 ## Sources
 
 - [GigaTIME official code](https://github.com/prov-gigatime/GigaTIME) and [model card](https://huggingface.co/prov-gigatime/GigaTIME).
-- [CellViT official code](https://github.com/TIO-IKIM/CellViT).
+- [CellViT++ official code](https://github.com/TIO-IKIM/CellViT-plus-plus).
 - [HoVer-Net official code](https://github.com/vqdang/hover_net).
 - [ORION data release](https://github.com/labsyspharm/orion-crc/blob/main/datarelease-README.md).
 - [MoNuSAC challenge](https://monusac-2020.grand-challenge.org/Data/).
