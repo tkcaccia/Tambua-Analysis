@@ -1,0 +1,50 @@
+{
+  "development:0.400000": {
+    "cases": 6,
+    "mean_matched_cell_fraction": 0.6074520463353466,
+    "mean_dapi_auc": 0.6897906312696336,
+    "qc_passes": 2
+  },
+  "development:0.520000": {
+    "cases": 6,
+    "mean_matched_cell_fraction": 0.5738837618543717,
+    "mean_dapi_auc": 0.692059495998832,
+    "qc_passes": 2
+  },
+  "development:0.550000": {
+    "cases": 6,
+    "mean_matched_cell_fraction": 0.564311592143584,
+    "mean_dapi_auc": 0.6929860073261818,
+    "qc_passes": 2
+  },
+  "development:0.692478": {
+    "cases": 6,
+    "mean_matched_cell_fraction": 0.4682579047913557,
+    "mean_dapi_auc": 0.6996709522902518,
+    "qc_passes": 2
+  },
+  "reserved:0.400000": {
+    "cases": 19,
+    "mean_matched_cell_fraction": 0.6549772818822109,
+    "mean_dapi_auc": 0.6856471212250526,
+    "qc_passes": 10
+  },
+  "reserved:0.520000": {
+    "cases": 19,
+    "mean_matched_cell_fraction": 0.6220973690300267,
+    "mean_dapi_auc": 0.6868771014105555,
+    "qc_passes": 10
+  },
+  "reserved:0.550000": {
+    "cases": 19,
+    "mean_matched_cell_fraction": 0.6126831720312467,
+    "mean_dapi_auc": 0.6872423903806635,
+    "qc_passes": 10
+  },
+  "reserved:0.692478": {
+    "cases": 19,
+    "mean_matched_cell_fraction": 0.5160127335692261,
+    "mean_dapi_auc": 0.6896406632807043,
+    "qc_passes": 10
+  }
+}
