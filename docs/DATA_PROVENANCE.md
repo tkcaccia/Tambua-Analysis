@@ -11,4 +11,6 @@ The pinned gallery model is the original [GigaTIME CNN checkpoint](https://huggi
 
 **Evaluation rule:** A test image must not be used to train or tune the model being scored. Freeze the GigaTIME checkpoint; fit Tambua's fastPLS classifier only on separate patients; reserve official MoNuSAC test patients for final scoring. Keep validation/model selection separate from the final test cohort. If any source overlap is discovered, remove the affected patients from the independent test set and disclose it. The present ORION image is a technical demonstration, not an independent-patient benchmark.
 
+If the goal is **in-domain GigaTIME fine-tuning**, ORION supplies paired H&E and measured multiplex fluorescence, but it would require an ORION patient-level training/validation/test split; the same ORION patients cannot be used for both fitting and final evaluation. MoNuSAC supplies H&E images and expert nuclear instance/type annotations, **not paired multiplex fluorescence**, so it can evaluate the downstream Tambua cell-type pipeline but cannot directly supervise GigaTIME's H&E-to-mIF translator.
+
 This audit concerns the **GigaTIME cross-modal translator**. It does not by itself establish the pretraining provenance of unrelated backbones or the CellViT/HoVer-Net checkpoints. Each comparator needs its own training-data and split audit before accuracy claims.
