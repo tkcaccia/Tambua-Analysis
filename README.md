@@ -52,7 +52,7 @@ The scorer rejects missing or extra typed instances and incompatible mask shapes
 
 ## Data and current status
 
-- MoNuSAC: 310 mirrored annotated images; the mirror does not establish exact µm/pixel for GigaTIME. The original challenge archive contains scanner metadata that is being audited ROI by ROI. Do not run the expert test until spacing, split identity and model-training provenance checks pass. See [Tambua dataset notes](https://github.com/tkcaccia/Tambua/blob/main/docs/DATASETS.md).
+- MoNuSAC: 310 mirrored annotated images; that mirror does not establish exact µm/pixel. In the original challenge test archive, all 101 `.svs` ROI headers matched the paired XML `MicronsPerPixel` values (0.2456–0.2527 µm/pixel); 32 ROIs span at least 512 pixels in both dimensions across 25 patients. These are candidates, not completed GigaTIME results. Freeze source and patient splits before the expert test. See the [provenance audit](docs/DATA_PROVENANCE.md) and [Tambua dataset notes](https://github.com/tkcaccia/Tambua/blob/main/docs/DATASETS.md).
 - ORION CRC33_01: one 2048 × 2048 calibrated window, 4,104 complete measured-table-matched cell instances, 226 edge instances excluded. The published ORION mask is computationally generated, not expert drawn. GigaTIME inference, per-cell quantification and DAPI morphology QC are complete. This is one patient; it cannot support a patient-held-out accuracy estimate.
 - Matched Tambua / CellViT / HoVer-Net scores: **not yet measured**.
 
