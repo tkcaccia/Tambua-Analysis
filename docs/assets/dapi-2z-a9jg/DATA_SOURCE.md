@@ -11,8 +11,8 @@ expert nucleus mask, not the virtual DAPI.
 
 The replay on the historical red/blue-swapped input removes the legacy dark image edge but gives expert
 nucleus-versus-nearby-background AUC 0.508; all nine local regions score below
-0.60. The source image and old JPEG preview are already in the public
-MoNuSAC gallery. `legacy_120_image_audit.json` checks all 120 historical JPEG
+0.60. The old JPEG preview is no longer shown on the public page.
+`legacy_120_image_audit.json` checks all 120 historical JPEG
 previews, of which 117 fall below global AUC 0.70. Those JPEG measurements
 are retrospective diagnostics; they are not native-store marker validation.
 No marker quantification or cell-type score is accepted from this field.
