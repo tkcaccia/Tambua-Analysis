@@ -1,0 +1,62 @@
+{
+  "source": "ORION CRC33_01",
+  "source_mpp_um": 0.325,
+  "model_mpp_um": 0.25,
+  "reference_kind": "published computational cell-instance mask",
+  "fields": {
+    "glands": {
+      "source_box_xyxy": [
+        0,
+        0,
+        800,
+        800
+      ],
+      "physical_width_um": 260.0,
+      "images": {
+        "he": "glands-he.webp",
+        "reference": "glands-reference.webp",
+        "dapi": "glands-dapi.webp",
+        "ck": "glands-ck.webp",
+        "cd3": "glands-cd3.webp",
+        "cd68": "glands-cd68.webp",
+        "dapi_overlay": "glands-dapi_overlay.webp"
+      }
+    },
+    "mixed": {
+      "source_box_xyxy": [
+        1100,
+        200,
+        1900,
+        1000
+      ],
+      "physical_width_um": 260.0,
+      "images": {
+        "he": "mixed-he.webp",
+        "reference": "mixed-reference.webp",
+        "dapi": "mixed-dapi.webp",
+        "ck": "mixed-ck.webp",
+        "cd3": "mixed-cd3.webp",
+        "cd68": "mixed-cd68.webp",
+        "dapi_overlay": "mixed-dapi_overlay.webp"
+      }
+    },
+    "stroma": {
+      "source_box_xyxy": [
+        750,
+        1100,
+        1550,
+        1900
+      ],
+      "physical_width_um": 260.0,
+      "images": {
+        "he": "stroma-he.webp",
+        "reference": "stroma-reference.webp",
+        "dapi": "stroma-dapi.webp",
+        "ck": "stroma-ck.webp",
+        "cd3": "stroma-cd3.webp",
+        "cd68": "stroma-cd68.webp",
+        "dapi_overlay": "stroma-dapi_overlay.webp"
+      }
+    }
+  }
+}

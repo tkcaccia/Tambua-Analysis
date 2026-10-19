@@ -1,0 +1,59 @@
+{
+  "sample_id": "ORION CRC33_01",
+  "patient_count": 1,
+  "matched_cells": 4104,
+  "metric": "cell-level Spearman correlation",
+  "interpretation": "Descriptive same-section marker association; not cell-type accuracy or an independent-patient test.",
+  "pairs": [
+    {
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "spearman_rho": 0.599
+    },
+    {
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "spearman_rho": 0.3468
+    },
+    {
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "spearman_rho": 0.4143
+    },
+    {
+      "virtual": "CD68",
+      "measured": "CD68",
+      "spearman_rho": 0.1915
+    },
+    {
+      "virtual": "CD4",
+      "measured": "CD4",
+      "spearman_rho": 0.3084
+    },
+    {
+      "virtual": "CD20",
+      "measured": "CD20",
+      "spearman_rho": -0.1601
+    },
+    {
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "spearman_rho": 0.2242
+    },
+    {
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "spearman_rho": 0.057
+    },
+    {
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "spearman_rho": 0.2874
+    },
+    {
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "spearman_rho": 0.0469
+    }
+  ]
+}

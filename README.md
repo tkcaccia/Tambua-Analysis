@@ -20,9 +20,9 @@ For end-to-end evaluation, match predicted and expert instances one-to-one at ma
 
 ## Physical scale and DAPI quality control
 
-The current bounded ORION CRC33_01 source window is a registered same-section H&E/whole-cell mask at 0.325 µm/pixel. A strict GigaTIME grid at 0.25 µm/pixel should be 2663 × 2663 for a 2048 × 2048 source window. Record the exact transform and confirm the DAPI virtual channel spatially overlaps H&E nuclear morphology. A numerical H&E hematoxylin proxy can support, but cannot replace, visual review or a true expert nuclear mask. ORION's whole-cell mask should be called `cell`, not `nuclei`.
+The current bounded ORION CRC33_01 source window is a registered same-section H&E/whole-cell mask at 0.325 µm/pixel. A strict GigaTIME grid at 0.25 µm/pixel should be 2663 × 2663 for a 2048 × 2048 source window. The [GigaTIME author's preprocessing clarification](https://github.com/prov-gigatime/GigaTIME/issues/4) states that 128 µm fields were resized to 512 pixels and then processed in 256-pixel windows, giving the 0.25 µm/pixel model grid. Record the exact transform and confirm the DAPI virtual channel spatially overlaps H&E nuclear morphology. A numerical H&E hematoxylin proxy can support, but cannot replace, visual review or a true expert nuclear mask. ORION's whole-cell mask should be called `cell`, not `nuclei`.
 
-The one approved Chiamaka inference stopped before model loading because an offline `main` cache snapshot had no weights. No DAPI image or cell-typing accuracy resulted. CellPhenotyper now pins the cached weight-bearing GigaTIME CNN revision and its CPU state dictionary loads successfully; the GPU case has **not** been rerun.
+The calibrated ORION inference has now completed with the pinned GigaTIME CNN checkpoint. It produced four preview channels and all 23 per-cell virtual scores for the 4,104 complete cells. The saved DAPI overlay was visually reviewed against hematoxylin-stained nuclei. Its high-signal overlap enrichment within the published cell regions was 2.068; this is a morphology proxy, not expert-mask Dice. See the [fixed results gallery](https://tkcaccia.github.io/Tambua-Analysis/) and [case record](docs/RESULTS.md).
 
 When a scale-valid GigaTIME result exists, run the spatial QC on the **same physical field of view**:
 
@@ -33,7 +33,7 @@ python -m analysis.qc_dapi --he he.ome.tif --cell-mask expert_cells.ome.tif \
   --output-dir results/dapi_qc
 ```
 
-The tool refuses a source/target pixel-spacing or image-shape mismatch, saves an H&E/DAPI overlay, and reports enrichment of high virtual DAPI over an H&E hematoxylin nuclear **proxy**. That proxy is not an expert nuclear annotation; the resulting overlay still needs visual review. No QC threshold or biological accuracy is claimed from the failed ORION run.
+The tool refuses a source/target pixel-spacing or image-shape mismatch, saves an H&E/DAPI overlay, and reports enrichment of high virtual DAPI over an H&E hematoxylin nuclear **proxy**. That proxy is not an expert nuclear annotation; the resulting overlay still needs visual review.
 
 For a frozen end-to-end comparison, create one CSV manifest per method with columns `sample_id,patient_id,reference_mask,reference_labels,prediction_mask,prediction_labels`. Each labels CSV has `label_id,cell_type`. Score only the test cases, with all methods using the same cases and four-class ontology:
 
@@ -51,10 +51,10 @@ The scorer rejects missing or extra typed instances and incompatible mask shapes
 ## Data and current status
 
 - MoNuSAC: 310 mirrored annotated images, but the mirror does not establish exact µm/pixel for GigaTIME. Use only after independently verifying scanner spacing. See [Tambua dataset notes](https://github.com/tkcaccia/Tambua/blob/main/docs/DATASETS.md).
-- ORION CRC33_01: one 2048 × 2048 calibrated window, 4,104 complete measured-table-matched cell instances, 226 edge instances excluded. This is one patient; it cannot support a patient-held-out accuracy estimate.
+- ORION CRC33_01: one 2048 × 2048 calibrated window, 4,104 complete measured-table-matched cell instances, 226 edge instances excluded. The published ORION mask is computationally generated, not expert drawn. GigaTIME inference, per-cell quantification and DAPI morphology QC are complete. This is one patient; it cannot support a patient-held-out accuracy estimate.
 - Matched Tambua / CellViT / HoVer-Net scores: **not yet measured**.
 
-Raw images, model weights and annotations remain with their original providers. This repository does not redistribute them.
+The static gallery contains small, attributed adaptations of one publicly released ORION H&E window, the published computational mask and our GigaTIME outputs. Full-resolution source data, weights and cell tables remain with their original providers.
 
 ## Sources
 
