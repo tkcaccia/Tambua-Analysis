@@ -1,0 +1,803 @@
+{
+  "design": {
+    "version": 2,
+    "registered_before_full_inference": true,
+    "dataset": "Public ORION colorectal same-section registered H&E, computational cell mask and measured single-cell IF table",
+    "patient_count": 40,
+    "sampling": "One 2048 x 2048 calibrated, densely cellular tissue window per patient; CRC33_01 represents patient C33; all fully contained published cell IDs are retained",
+    "source_mpp_expected": 0.325,
+    "gigatime_model_mpp": 0.25,
+    "cell_identity": "Published ORION CellID. Independent H&E StarDist nuclei are majority-overlap matched to that ID; cytoplasm excludes matched nuclear pixels.",
+    "marker_pairing": "Six exact protein names, three related target families/complexes, plus DAPI/Hoechst as a dye control. No other marker names are substituted.",
+    "methods": [
+      "whole_cell_mean",
+      "cytoplasm_mean",
+      "nucleus_mean",
+      "whole_cell_maximum",
+      "cytoplasm_maximum",
+      "nucleus_maximum",
+      "nucleus_minus_cytoplasm",
+      "cytoplasm_minus_nucleus",
+      "whole_cell_local_contrast",
+      "cytoplasm_local_contrast",
+      "nucleus_local_contrast"
+    ],
+    "local_contrast_definition": "Predicted per-cell mean minus the median predicted mean of the 64 nearest other common cells on the same image; a label-free test of broad virtual-marker shading. Added before inspecting any reserved-evaluation protein correlation.",
+    "primary_metric": "Within-patient same-cell Spearman rho, then equal-patient median across patients; every within-patient method comparison uses the same common cell IDs",
+    "quality": "Native virtual-DAPI nuclear and shadow QC is recorded per patient. Failed/insufficient QC output is exploratory association only and cannot be used as validated cell typing input.",
+    "development_patients": [
+      "CRC01",
+      "CRC33",
+      "CRC16",
+      "CRC26",
+      "CRC40",
+      "CRC11",
+      "CRC31",
+      "CRC15",
+      "CRC03",
+      "CRC20"
+    ],
+    "evaluation_patients": [
+      "CRC04",
+      "CRC37",
+      "CRC35",
+      "CRC36",
+      "CRC39",
+      "CRC34",
+      "CRC13",
+      "CRC06",
+      "CRC28",
+      "CRC21",
+      "CRC32",
+      "CRC29",
+      "CRC17",
+      "CRC25",
+      "CRC38",
+      "CRC27",
+      "CRC22",
+      "CRC08",
+      "CRC12",
+      "CRC02",
+      "CRC10",
+      "CRC30",
+      "CRC19",
+      "CRC05",
+      "CRC24",
+      "CRC07",
+      "CRC18",
+      "CRC09",
+      "CRC14",
+      "CRC23"
+    ],
+    "split_method": "CRC01 and CRC33 were previously inspected; the other eight development patients are the lowest SHA-256 hashes of ORION-v1:<patient>. Remaining patients are reserved for method comparison.",
+    "limits": "One tissue window per patient estimates within-field association; it is not whole-WSI accuracy or external-tissue validation. GigaTIME virtual scores are not calibrated protein abundances."
+  },
+  "patients_completed": 25,
+  "technical_qc_passed_patients": 12,
+  "patient_records": [
+    {
+      "patient": "CRC01",
+      "split": "development",
+      "common_cells": 3882,
+      "published_complete_cells": 7347,
+      "source_mpp": 0.325,
+      "nuclear_qc_status": "fail",
+      "dapi_nuclear_qc_passed": false,
+      "seam_qc_status": "pass",
+      "technical_qc_passed": false
+    },
+    {
+      "patient": "CRC16",
+      "split": "development",
+      "common_cells": 7061,
+      "published_complete_cells": 11558,
+      "source_mpp": 0.325,
+      "nuclear_qc_status": "fail",
+      "dapi_nuclear_qc_passed": false,
+      "seam_qc_status": "pass",
+      "technical_qc_passed": false
+    },
+    {
+      "patient": "CRC11",
+      "split": "development",
+      "common_cells": 3997,
+      "published_complete_cells": 8110,
+      "source_mpp": 0.325,
+      "nuclear_qc_status": "pass",
+      "dapi_nuclear_qc_passed": true,
+      "seam_qc_status": "pass",
+      "technical_qc_passed": true
+    },
+    {
+      "patient": "CRC15",
+      "split": "development",
+      "common_cells": 6309,
+      "published_complete_cells": 10703,
+      "source_mpp": 0.325,
+      "nuclear_qc_status": "fail",
+      "dapi_nuclear_qc_passed": false,
+      "seam_qc_status": "pass",
+      "technical_qc_passed": false
+    },
+    {
+      "patient": "CRC03",
+      "split": "development",
+      "common_cells": 2730,
+      "published_complete_cells": 7843,
+      "source_mpp": 0.325,
+      "nuclear_qc_status": "fail",
+      "dapi_nuclear_qc_passed": false,
+      "seam_qc_status": "pass",
+      "technical_qc_passed": false
+    },
+    {
+      "patient": "CRC20",
+      "split": "development",
+      "common_cells": 4121,
+      "published_complete_cells": 8620,
+      "source_mpp": 0.325,
+      "nuclear_qc_status": "pass",
+      "dapi_nuclear_qc_passed": true,
+      "seam_qc_status": "pass",
+      "technical_qc_passed": true
+    },
+    {
+      "patient": "CRC04",
+      "split": "evaluation",
+      "common_cells": 4536,
+      "published_complete_cells": 7515,
+      "source_mpp": 0.325,
+      "nuclear_qc_status": "pass",
+      "dapi_nuclear_qc_passed": true,
+      "seam_qc_status": "pass",
+      "technical_qc_passed": true
+    },
+    {
+      "patient": "CRC13",
+      "split": "evaluation",
+      "common_cells": 3095,
+      "published_complete_cells": 7743,
+      "source_mpp": 0.325,
+      "nuclear_qc_status": "fail",
+      "dapi_nuclear_qc_passed": false,
+      "seam_qc_status": "pass",
+      "technical_qc_passed": false
+    },
+    {
+      "patient": "CRC06",
+      "split": "evaluation",
+      "common_cells": 4212,
+      "published_complete_cells": 7353,
+      "source_mpp": 0.325,
+      "nuclear_qc_status": "pass",
+      "dapi_nuclear_qc_passed": true,
+      "seam_qc_status": "pass",
+      "technical_qc_passed": true
+    },
+    {
+      "patient": "CRC21",
+      "split": "evaluation",
+      "common_cells": 4215,
+      "published_complete_cells": 8272,
+      "source_mpp": 0.325,
+      "nuclear_qc_status": "pass",
+      "dapi_nuclear_qc_passed": true,
+      "seam_qc_status": "pass",
+      "technical_qc_passed": true
+    },
+    {
+      "patient": "CRC17",
+      "split": "evaluation",
+      "common_cells": 5042,
+      "published_complete_cells": 9716,
+      "source_mpp": 0.325,
+      "nuclear_qc_status": "pass",
+      "dapi_nuclear_qc_passed": true,
+      "seam_qc_status": "pass",
+      "technical_qc_passed": true
+    },
+    {
+      "patient": "CRC25",
+      "split": "evaluation",
+      "common_cells": 2193,
+      "published_complete_cells": 5392,
+      "source_mpp": 0.325,
+      "nuclear_qc_status": "pass",
+      "dapi_nuclear_qc_passed": true,
+      "seam_qc_status": "pass",
+      "technical_qc_passed": true
+    },
+    {
+      "patient": "CRC22",
+      "split": "evaluation",
+      "common_cells": 4062,
+      "published_complete_cells": 8289,
+      "source_mpp": 0.325,
+      "nuclear_qc_status": "fail",
+      "dapi_nuclear_qc_passed": false,
+      "seam_qc_status": "pass",
+      "technical_qc_passed": false
+    },
+    {
+      "patient": "CRC08",
+      "split": "evaluation",
+      "common_cells": 4714,
+      "published_complete_cells": 8769,
+      "source_mpp": 0.325,
+      "nuclear_qc_status": "pass",
+      "dapi_nuclear_qc_passed": true,
+      "seam_qc_status": "pass",
+      "technical_qc_passed": true
+    },
+    {
+      "patient": "CRC12",
+      "split": "evaluation",
+      "common_cells": 3166,
+      "published_complete_cells": 5711,
+      "source_mpp": 0.325,
+      "nuclear_qc_status": "pass",
+      "dapi_nuclear_qc_passed": true,
+      "seam_qc_status": "pass",
+      "technical_qc_passed": true
+    },
+    {
+      "patient": "CRC02",
+      "split": "evaluation",
+      "common_cells": 4621,
+      "published_complete_cells": 9689,
+      "source_mpp": 0.325,
+      "nuclear_qc_status": "fail",
+      "dapi_nuclear_qc_passed": false,
+      "seam_qc_status": "pass",
+      "technical_qc_passed": false
+    },
+    {
+      "patient": "CRC10",
+      "split": "evaluation",
+      "common_cells": 5833,
+      "published_complete_cells": 11491,
+      "source_mpp": 0.325,
+      "nuclear_qc_status": "pass",
+      "dapi_nuclear_qc_passed": true,
+      "seam_qc_status": "pass",
+      "technical_qc_passed": true
+    },
+    {
+      "patient": "CRC19",
+      "split": "evaluation",
+      "common_cells": 2710,
+      "published_complete_cells": 6606,
+      "source_mpp": 0.325,
+      "nuclear_qc_status": "pass",
+      "dapi_nuclear_qc_passed": true,
+      "seam_qc_status": "pass",
+      "technical_qc_passed": true
+    },
+    {
+      "patient": "CRC05",
+      "split": "evaluation",
+      "common_cells": 1154,
+      "published_complete_cells": 4133,
+      "source_mpp": 0.325,
+      "nuclear_qc_status": "fail",
+      "dapi_nuclear_qc_passed": false,
+      "seam_qc_status": "pass",
+      "technical_qc_passed": false
+    },
+    {
+      "patient": "CRC24",
+      "split": "evaluation",
+      "common_cells": 3226,
+      "published_complete_cells": 7029,
+      "source_mpp": 0.325,
+      "nuclear_qc_status": "fail",
+      "dapi_nuclear_qc_passed": false,
+      "seam_qc_status": "pass",
+      "technical_qc_passed": false
+    },
+    {
+      "patient": "CRC07",
+      "split": "evaluation",
+      "common_cells": 3446,
+      "published_complete_cells": 6706,
+      "source_mpp": 0.325,
+      "nuclear_qc_status": "fail",
+      "dapi_nuclear_qc_passed": false,
+      "seam_qc_status": "pass",
+      "technical_qc_passed": false
+    },
+    {
+      "patient": "CRC18",
+      "split": "evaluation",
+      "common_cells": 7052,
+      "published_complete_cells": 11997,
+      "source_mpp": 0.325,
+      "nuclear_qc_status": "fail",
+      "dapi_nuclear_qc_passed": false,
+      "seam_qc_status": "pass",
+      "technical_qc_passed": false
+    },
+    {
+      "patient": "CRC09",
+      "split": "evaluation",
+      "common_cells": 4665,
+      "published_complete_cells": 7066,
+      "source_mpp": 0.325,
+      "nuclear_qc_status": "fail",
+      "dapi_nuclear_qc_passed": false,
+      "seam_qc_status": "pass",
+      "technical_qc_passed": false
+    },
+    {
+      "patient": "CRC14",
+      "split": "evaluation",
+      "common_cells": 3689,
+      "published_complete_cells": 6542,
+      "source_mpp": 0.325,
+      "nuclear_qc_status": "fail",
+      "dapi_nuclear_qc_passed": false,
+      "seam_qc_status": "pass",
+      "technical_qc_passed": false
+    },
+    {
+      "patient": "CRC23",
+      "split": "evaluation",
+      "common_cells": 2933,
+      "published_complete_cells": 5742,
+      "source_mpp": 0.325,
+      "nuclear_qc_status": "pass",
+      "dapi_nuclear_qc_passed": true,
+      "seam_qc_status": "pass",
+      "technical_qc_passed": true
+    }
+  ],
+  "development_selection": {
+    "DAPI": {
+      "method": "whole_cell_local_contrast",
+      "development_median_rho_by_method": {
+        "whole_cell_mean": 0.352494061534211,
+        "cytoplasm_mean": 0.3588174313860626,
+        "nucleus_mean": 0.08719365067979225,
+        "whole_cell_maximum": -0.017396631481007806,
+        "cytoplasm_maximum": 0.0020434619824103006,
+        "nucleus_maximum": -0.003654214250746104,
+        "nucleus_minus_cytoplasm": -0.42682868946908903,
+        "cytoplasm_minus_nucleus": 0.42682868946908903,
+        "whole_cell_local_contrast": 0.45186121333098905,
+        "cytoplasm_local_contrast": 0.4349316220803514,
+        "nucleus_local_contrast": 0.21704937004269043
+      }
+    },
+    "CD68": {
+      "method": "nucleus_minus_cytoplasm",
+      "development_median_rho_by_method": {
+        "whole_cell_mean": -0.161376166708851,
+        "cytoplasm_mean": -0.16403322001345963,
+        "nucleus_mean": -0.1520192068684132,
+        "whole_cell_maximum": -0.14230646110042305,
+        "cytoplasm_maximum": -0.13848403221696812,
+        "nucleus_maximum": -0.15267738243479134,
+        "nucleus_minus_cytoplasm": 0.0036700724582817692,
+        "cytoplasm_minus_nucleus": -0.0036700724582817692,
+        "whole_cell_local_contrast": -0.09751923556983899,
+        "cytoplasm_local_contrast": -0.10438743758604088,
+        "nucleus_local_contrast": -0.07137341311507131
+      }
+    },
+    "CD4": {
+      "method": "cytoplasm_maximum",
+      "development_median_rho_by_method": {
+        "whole_cell_mean": 0.14194188437584682,
+        "cytoplasm_mean": 0.13805311668992423,
+        "nucleus_mean": 0.14458281597618572,
+        "whole_cell_maximum": 0.17224748050900862,
+        "cytoplasm_maximum": 0.1754825369820302,
+        "nucleus_maximum": 0.15719471859696932,
+        "nucleus_minus_cytoplasm": 0.09790869871599886,
+        "cytoplasm_minus_nucleus": -0.09790869871599886,
+        "whole_cell_local_contrast": 0.046065182626258847,
+        "cytoplasm_local_contrast": 0.05159449131298982,
+        "nucleus_local_contrast": 0.04218840812999472
+      }
+    },
+    "CD8": {
+      "method": "nucleus_mean",
+      "development_median_rho_by_method": {
+        "whole_cell_mean": 0.029283472002829665,
+        "cytoplasm_mean": 0.018300494126890922,
+        "nucleus_mean": 0.0346057964733688,
+        "whole_cell_maximum": 0.03147413260536148,
+        "cytoplasm_maximum": 0.03210724855351933,
+        "nucleus_maximum": 0.0322296821276762,
+        "nucleus_minus_cytoplasm": 0.011430527650524212,
+        "cytoplasm_minus_nucleus": -0.011430527650524212,
+        "whole_cell_local_contrast": 0.008149241923991966,
+        "cytoplasm_local_contrast": 0.003960862733192215,
+        "nucleus_local_contrast": 0.011034224044131537
+      }
+    },
+    "CD20": {
+      "method": "cytoplasm_mean",
+      "development_median_rho_by_method": {
+        "whole_cell_mean": 0.17029359612912096,
+        "cytoplasm_mean": 0.17311986092019477,
+        "nucleus_mean": 0.15495951391399082,
+        "whole_cell_maximum": 0.13126455428662026,
+        "cytoplasm_maximum": 0.13459579888339795,
+        "nucleus_maximum": 0.1403099043053216,
+        "nucleus_minus_cytoplasm": -0.06968667603017625,
+        "cytoplasm_minus_nucleus": 0.06968667603017625,
+        "whole_cell_local_contrast": 0.07236725130086936,
+        "cytoplasm_local_contrast": 0.06404957600838605,
+        "nucleus_local_contrast": 0.06832486936625502
+      }
+    },
+    "PD-L1": {
+      "method": "nucleus_mean",
+      "development_median_rho_by_method": {
+        "whole_cell_mean": 0.16230288718479818,
+        "cytoplasm_mean": 0.15851132358376616,
+        "nucleus_mean": 0.16362943873649982,
+        "whole_cell_maximum": 0.1472765014476428,
+        "cytoplasm_maximum": 0.1495682417897127,
+        "nucleus_maximum": 0.14909730437349505,
+        "nucleus_minus_cytoplasm": 0.06022633556165143,
+        "cytoplasm_minus_nucleus": -0.06022633556165143,
+        "whole_cell_local_contrast": 0.0413495781461702,
+        "cytoplasm_local_contrast": 0.04050994227763177,
+        "nucleus_local_contrast": 0.045463242129665536
+      }
+    },
+    "CD3": {
+      "method": "cytoplasm_maximum",
+      "development_median_rho_by_method": {
+        "whole_cell_mean": 0.15754919918276092,
+        "cytoplasm_mean": 0.1477323249204952,
+        "nucleus_mean": 0.15955916537244152,
+        "whole_cell_maximum": 0.18784030011740516,
+        "cytoplasm_maximum": 0.18796957978047968,
+        "nucleus_maximum": 0.18191508858985578,
+        "nucleus_minus_cytoplasm": 0.062456913064567965,
+        "cytoplasm_minus_nucleus": -0.062456913064567965,
+        "whole_cell_local_contrast": 0.0476249173403747,
+        "cytoplasm_local_contrast": 0.04722700751046344,
+        "nucleus_local_contrast": 0.04193021384987261
+      }
+    },
+    "PD-1": {
+      "method": "cytoplasm_maximum",
+      "development_median_rho_by_method": {
+        "whole_cell_mean": 0.12319042183052645,
+        "cytoplasm_mean": 0.12053907979261544,
+        "nucleus_mean": 0.11918075862856221,
+        "whole_cell_maximum": 0.13630743877002158,
+        "cytoplasm_maximum": 0.13632661713411628,
+        "nucleus_maximum": 0.1287852599455463,
+        "nucleus_minus_cytoplasm": 0.04248315287251825,
+        "cytoplasm_minus_nucleus": -0.04248315287251825,
+        "whole_cell_local_contrast": 0.05650707836901768,
+        "cytoplasm_local_contrast": 0.050427663948394694,
+        "nucleus_local_contrast": 0.06095640651100373
+      }
+    },
+    "Ki67": {
+      "method": "cytoplasm_mean",
+      "development_median_rho_by_method": {
+        "whole_cell_mean": 0.06642461677443866,
+        "cytoplasm_mean": 0.11813438268792952,
+        "nucleus_mean": 0.02033220367557252,
+        "whole_cell_maximum": 0.017608289451591767,
+        "cytoplasm_maximum": 0.042375599202975636,
+        "nucleus_maximum": 0.012338600010206379,
+        "nucleus_minus_cytoplasm": -0.038852668524030985,
+        "cytoplasm_minus_nucleus": 0.038852668524030985,
+        "whole_cell_local_contrast": 0.060974199183428404,
+        "cytoplasm_local_contrast": 0.08863229917710647,
+        "nucleus_local_contrast": 0.043680150969169815
+      }
+    },
+    "CK": {
+      "method": "whole_cell_maximum",
+      "development_median_rho_by_method": {
+        "whole_cell_mean": 0.08866833004828287,
+        "cytoplasm_mean": 0.0803684285341854,
+        "nucleus_mean": 0.1158424082583158,
+        "whole_cell_maximum": 0.13041543981633202,
+        "cytoplasm_maximum": 0.12429211294818437,
+        "nucleus_maximum": 0.1261719117311859,
+        "nucleus_minus_cytoplasm": 0.049290477259580065,
+        "cytoplasm_minus_nucleus": -0.049290477259580065,
+        "whole_cell_local_contrast": 0.05808163000786445,
+        "cytoplasm_local_contrast": 0.05423317008549272,
+        "nucleus_local_contrast": 0.061705196800922665
+      }
+    }
+  },
+  "reserved_evaluation": [
+    {
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "method": "whole_cell_local_contrast",
+      "stratum": "all",
+      "patients": 19,
+      "selected_median_rho": 0.35768253545474094,
+      "baseline_median_rho": 0.3757298422585563,
+      "paired_median_delta": -0.002316372979743797,
+      "paired_median_delta_95pct_patient_bootstrap": [
+        -0.07101646965323283,
+        0.020912071171952124
+      ]
+    },
+    {
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "method": "whole_cell_local_contrast",
+      "stratum": "technical_qc_pass",
+      "patients": 10,
+      "selected_median_rho": 0.3802763629149488,
+      "baseline_median_rho": 0.4536409121175121,
+      "paired_median_delta": -0.04462053210120312,
+      "paired_median_delta_95pct_patient_bootstrap": [
+        -0.13558095789004707,
+        0.007001689321830595
+      ]
+    },
+    {
+      "virtual": "CD68",
+      "measured": "CD68",
+      "method": "nucleus_minus_cytoplasm",
+      "stratum": "all",
+      "patients": 19,
+      "selected_median_rho": -0.09647446320084711,
+      "baseline_median_rho": -0.24462274776024515,
+      "paired_median_delta": 0.17157742662269945,
+      "paired_median_delta_95pct_patient_bootstrap": [
+        0.14596126080435054,
+        0.22907641484203564
+      ]
+    },
+    {
+      "virtual": "CD68",
+      "measured": "CD68",
+      "method": "nucleus_minus_cytoplasm",
+      "stratum": "technical_qc_pass",
+      "patients": 10,
+      "selected_median_rho": -0.09891834083061321,
+      "baseline_median_rho": -0.2266860445484158,
+      "paired_median_delta": 0.1712263980059283,
+      "paired_median_delta_95pct_patient_bootstrap": [
+        0.13457381725819112,
+        0.21388601117957284
+      ]
+    },
+    {
+      "virtual": "CD4",
+      "measured": "CD4",
+      "method": "cytoplasm_maximum",
+      "stratum": "all",
+      "patients": 19,
+      "selected_median_rho": 0.17695037016979168,
+      "baseline_median_rho": 0.16799383380617156,
+      "paired_median_delta": 0.0024793107033131215,
+      "paired_median_delta_95pct_patient_bootstrap": [
+        -0.0028885262837121117,
+        0.025199104662299077
+      ]
+    },
+    {
+      "virtual": "CD4",
+      "measured": "CD4",
+      "method": "cytoplasm_maximum",
+      "stratum": "technical_qc_pass",
+      "patients": 10,
+      "selected_median_rho": 0.2241532162574167,
+      "baseline_median_rho": 0.21161977718199115,
+      "paired_median_delta": 0.01182844532119337,
+      "paired_median_delta_95pct_patient_bootstrap": [
+        -0.004112790844907455,
+        0.031145415978768527
+      ]
+    },
+    {
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "method": "nucleus_mean",
+      "stratum": "all",
+      "patients": 19,
+      "selected_median_rho": 0.06316678853865514,
+      "baseline_median_rho": 0.06063878863299164,
+      "paired_median_delta": -0.0038501938017659193,
+      "paired_median_delta_95pct_patient_bootstrap": [
+        -0.013866609325599993,
+        -0.0011745818337139668
+      ]
+    },
+    {
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "method": "nucleus_mean",
+      "stratum": "technical_qc_pass",
+      "patients": 10,
+      "selected_median_rho": 0.06131549766896641,
+      "baseline_median_rho": 0.05853754844269733,
+      "paired_median_delta": -0.003646714770951319,
+      "paired_median_delta_95pct_patient_bootstrap": [
+        -0.014051224686196361,
+        0.0038957274793661664
+      ]
+    },
+    {
+      "virtual": "CD20",
+      "measured": "CD20",
+      "method": "cytoplasm_mean",
+      "stratum": "all",
+      "patients": 19,
+      "selected_median_rho": 0.12912841205432252,
+      "baseline_median_rho": 0.14054892133128485,
+      "paired_median_delta": 0.0017710964713293642,
+      "paired_median_delta_95pct_patient_bootstrap": [
+        0.00015056391486345522,
+        0.004203534885786064
+      ]
+    },
+    {
+      "virtual": "CD20",
+      "measured": "CD20",
+      "method": "cytoplasm_mean",
+      "stratum": "technical_qc_pass",
+      "patients": 10,
+      "selected_median_rho": 0.1769555845021464,
+      "baseline_median_rho": 0.17608874243427589,
+      "paired_median_delta": 0.0028720418641753204,
+      "paired_median_delta_95pct_patient_bootstrap": [
+        0.00015056391486345522,
+        0.007645743212650113
+      ]
+    },
+    {
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "method": "nucleus_mean",
+      "stratum": "all",
+      "patients": 19,
+      "selected_median_rho": 0.0009616513460538529,
+      "baseline_median_rho": -0.009749473166971454,
+      "paired_median_delta": 0.004946951418147244,
+      "paired_median_delta_95pct_patient_bootstrap": [
+        -0.00032634342930837335,
+        0.010711124513025307
+      ]
+    },
+    {
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "method": "nucleus_mean",
+      "stratum": "technical_qc_pass",
+      "patients": 10,
+      "selected_median_rho": 0.06728794084317621,
+      "baseline_median_rho": 0.06626116381915569,
+      "paired_median_delta": 0.004400037272502266,
+      "paired_median_delta_95pct_patient_bootstrap": [
+        -0.0015883865421764485,
+        0.01383664190954162
+      ]
+    },
+    {
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "method": "cytoplasm_maximum",
+      "stratum": "all",
+      "patients": 19,
+      "selected_median_rho": 0.13183562602598992,
+      "baseline_median_rho": 0.21500348921424814,
+      "paired_median_delta": -0.012640524531439323,
+      "paired_median_delta_95pct_patient_bootstrap": [
+        -0.0326831652835855,
+        0.006357845686356411
+      ]
+    },
+    {
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "method": "cytoplasm_maximum",
+      "stratum": "technical_qc_pass",
+      "patients": 10,
+      "selected_median_rho": 0.16723723587783887,
+      "baseline_median_rho": 0.23554436911429638,
+      "paired_median_delta": -0.01250258400799982,
+      "paired_median_delta_95pct_patient_bootstrap": [
+        -0.02533239152471345,
+        -0.0008526629482736997
+      ]
+    },
+    {
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "method": "cytoplasm_maximum",
+      "stratum": "all",
+      "patients": 19,
+      "selected_median_rho": 0.10944943323278829,
+      "baseline_median_rho": 0.11158793245641634,
+      "paired_median_delta": -0.0021384992236280487,
+      "paired_median_delta_95pct_patient_bootstrap": [
+        -0.010317958684832651,
+        0.00943204943843623
+      ]
+    },
+    {
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "method": "cytoplasm_maximum",
+      "stratum": "technical_qc_pass",
+      "patients": 10,
+      "selected_median_rho": 0.12990245545846144,
+      "baseline_median_rho": 0.13090221428141713,
+      "paired_median_delta": 0.0030312141732006144,
+      "paired_median_delta_95pct_patient_bootstrap": [
+        -0.01556180180981323,
+        0.01248019383864768
+      ]
+    },
+    {
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "method": "cytoplasm_mean",
+      "stratum": "all",
+      "patients": 19,
+      "selected_median_rho": 0.09710895681999321,
+      "baseline_median_rho": 0.07915303218568576,
+      "paired_median_delta": -0.0010458726052244849,
+      "paired_median_delta_95pct_patient_bootstrap": [
+        -0.027253127074179654,
+        0.008277917284976122
+      ]
+    },
+    {
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "method": "cytoplasm_mean",
+      "stratum": "technical_qc_pass",
+      "patients": 10,
+      "selected_median_rho": 0.17656073453041848,
+      "baseline_median_rho": 0.16839186266175285,
+      "paired_median_delta": 0.0038049257475544496,
+      "paired_median_delta_95pct_patient_bootstrap": [
+        -0.022019544794179127,
+        0.008277917284976122
+      ]
+    },
+    {
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "method": "whole_cell_maximum",
+      "stratum": "all",
+      "patients": 19,
+      "selected_median_rho": 0.30312967000511376,
+      "baseline_median_rho": 0.24923118792673118,
+      "paired_median_delta": 0.02406150084097186,
+      "paired_median_delta_95pct_patient_bootstrap": [
+        0.005006268705601613,
+        0.04815995172771362
+      ]
+    },
+    {
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "method": "whole_cell_maximum",
+      "stratum": "technical_qc_pass",
+      "patients": 10,
+      "selected_median_rho": 0.26787688592524356,
+      "baseline_median_rho": 0.18856250757511978,
+      "paired_median_delta": 0.03457475813612118,
+      "paired_median_delta_95pct_patient_bootstrap": [
+        0.009822869894815386,
+        0.08089489192795198
+      ]
+    }
+  ],
+  "interpretation": "QC failures are descriptive associations only. Methods were selected on designated development patients; paired evaluation compares identical cells and patients. One ROI per patient is not whole-WSI performance.",
+  "cohort_status": "user_stopped_partial",
+  "planned_patients": 40,
+  "development_patients_analyzed": 6,
+  "reserved_evaluation_patients_analyzed": 19
+}

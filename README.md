@@ -2,7 +2,7 @@
 
 [Validation site](https://tkcaccia.github.io/Tambua-Analysis/) · [Tambua software](https://github.com/tkcaccia/Tambua)
 
-This repository holds Tambua analysis code, the audit record, and a public page showing only the current validation evidence. Tambua uses CellPhenotyper GigaTIME virtual-marker scores and [GitHub fastPLS **0.4**](https://github.com/tkcaccia/fastPLS/tree/265108b6aa250c2534f98ec89037bb5cd001dca0). **No corrected, QC-accepted MoNuSAC cell-type accuracy is available yet.** The [public page](https://tkcaccia.github.io/Tambua-Analysis/) shows a corrected-color GigaTIME case, its remaining QC failure, and a paired reference control; historical marker galleries and scores are kept in the repository for audit only.
+This repository holds Tambua analysis code, the audit record, and a public page showing explicitly qualified validation evidence. Tambua uses CellPhenotyper GigaTIME virtual-marker scores and [GitHub fastPLS **0.4**](https://github.com/tkcaccia/fastPLS/tree/265108b6aa250c2534f98ec89037bb5cd001dca0). **No corrected, QC-accepted MoNuSAC cell-type accuracy is available yet.** The [public page](https://tkcaccia.github.io/Tambua-Analysis/) shows a corrected-color GigaTIME case, its remaining QC failure, a paired reference control, and [registered ORION measured-versus-virtual cell-level maps](https://tkcaccia.github.io/Tambua-Analysis/#orion-visual). The ORION maps cover all ten QC-passing reserved patients and ten marker pairs; they are reconstructed from the published cell table and mask, not raw fluorescence images. Historical invalidated MoNuSAC marker galleries and scores are kept in the repository for audit only.
 
 ## Matched-tissue MoNuSAC result
 
