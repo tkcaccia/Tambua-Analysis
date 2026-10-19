@@ -23,7 +23,7 @@ def test_page_labels_corrected_benchmark_and_quality_limits() -> None:
     assert "corrected-monusac.html" in html
     assert "Native DAPI QC passed 50 images and failed 70" in html
     assert "conditional on expert-drawn regions and QC selection" in html
-    assert "Quality decision: fail" in html
+    assert 'id="dapi-qc"' not in html
     for stale in ("85.2%", "pre-fix", "monusac-matched/", "monusac-transfer/", "orion-crc33-01/"):
         assert stale not in html.lower()
 
