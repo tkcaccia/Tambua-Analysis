@@ -14,4 +14,16 @@ The ORION compartment-preparation script had silently used the StarDist model's 
 
 The coverage denominator is the published ORION **computational** cell mask, not expert-drawn nuclei. It is a useful omission indicator but not a measured nuclear-recall estimate; added detections still need expert review for false positives. The AUC compares virtual DAPI with nuclei inferred independently from H&E, not with measured DAPI/Hoechst. Threshold tuning cannot repair diffuse or misplaced GigaTIME signal. The unchanged QC pass count leaves the failing windows blocked from validated downstream claims.
 
-The example [H&E comparison](comparison-crc01.png) shows the same CRC01 tissue crop with outlines at the built-in default, pipeline setting and inclusive setting. Red contours are matched StarDist nuclei. The complete paired values are in [scores.csv](scores.csv) and [summary.json](summary.json); reproducible CPU-only scripts are `analysis/audit_stardist_thresholds.py` and `analysis/score_stardist_thresholds.py`.
+## Expert-annotated nuclear sensitivity
+
+As an independent detector check, StarDist was run on the **canonical scanner RGB** H&E of all 32 patient-separated MoNuSAC test ROIs (19 patients; breast, kidney, lung and prostate; 10,776 annotated nuclei). Each ROI was resampled from its recorded microscopy spacing to 0.25 µm/pixel. An annotated nucleus counts as detected when its best StarDist-instance intersection over union is at least 0.5. Mean recall gives each patient equal weight:
+
+| Probability / NMS | Mean patient-level expert-nucleus recall | Annotated nuclei recovered, pooled |
+|---|---:|---:|
+| Built-in default, 0.692478 / 0.30 | 92.8% | 93.6% |
+| CellPhenotyper setting, 0.52 / 0.28 | **95.7%** | **96.6%** |
+| Inclusive exploratory setting, 0.40 / 0.30 | 96.0% | 97.0% |
+
+The pipeline setting improves patient-level expert recall by **2.9 percentage points** against the built-in default (95% patient-bootstrap interval 2.3–3.5; improvement in all 19 patients). At 0.40 the gain is 3.3 points, only 0.4 points beyond the pipeline setting. MoNuSAC annotates selected cell types rather than every visible nucleus, so unmatched StarDist objects cannot be classified as false positives here; precision and F1 cannot be honestly computed from this archive. This supports retaining CellPhenotyper's existing 0.52/0.28 configuration, while preserving stricter virtual-DAPI QC on its resulting, more inclusive nuclear mask. Per-ROI expert results are in [test_expert_recall.csv](test_expert_recall.csv).
+
+The example [H&E comparison](comparison-crc01.png) shows the same CRC01 tissue crop with outlines at the built-in default, pipeline setting and inclusive setting. Red contours are matched StarDist nuclei. The complete paired values are in [scores.csv](scores.csv), [summary.json](summary.json) and [test_expert_recall.csv](test_expert_recall.csv); reproducible CPU-only scripts are `analysis/audit_stardist_thresholds.py`, `analysis/score_stardist_thresholds.py` and `analysis/audit_stardist_expert_recall.py`.
