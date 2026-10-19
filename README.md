@@ -16,6 +16,8 @@ Use the official MoNuSAC epithelial, lymphocyte, macrophage and neutrophil ontol
 
 CellViT's publicly described PanNuke taxonomy is **not** interchangeable with the four MoNuSAC types. A MoNuSAC-trained cell-type head or a documented external mapping must be fixed without looking at the held-out test set. HoVer-Net provides a MoNuSAC-specific pretrained checkpoint. Do not compare Tambua on expert-provided masks to competitors' end-to-end outputs as if they were equivalent. Report the expert-mask classifier analysis and end-to-end analysis separately.
 
+**Training-data provenance:** The pinned GigaTIME CNN was trained on 21 in-house paired lung-adenocarcinoma slides, according to its original paper. The current ORION colorectal field is a distinct technical demonstration, and MoNuSAC is a proposed expert-annotated test cohort; neither is listed as GigaTIME translator training data. TCGA application in the GigaTIME paper is inference, not translator fitting. The original paper does not publish all training slide IDs, so exact patient-level disjointness for future MoNuSAC testing remains to be verified if that manifest becomes available. See the [source-by-source audit](docs/DATA_PROVENANCE.md). Test patients must also be excluded from Tambua fastPLS fitting and model selection.
+
 For end-to-end evaluation, match predicted and expert instances one-to-one at mask IoU > 0.5, count unmatched instances, and report detection F1 and per-type F1 in addition to classification accuracy on matched cells. Report macro F1 and balanced accuracy only when every reference type is present. Aggregate by patient and add patient-bootstrap uncertainty when there are enough independent patients. Record physical resolution, model checkpoint, inference time, and hardware. Never treat cells from one patient as independent biological replicates.
 
 ## Physical scale and DAPI quality control
@@ -50,7 +52,7 @@ The scorer rejects missing or extra typed instances and incompatible mask shapes
 
 ## Data and current status
 
-- MoNuSAC: 310 mirrored annotated images, but the mirror does not establish exact µm/pixel for GigaTIME. Use only after independently verifying scanner spacing. See [Tambua dataset notes](https://github.com/tkcaccia/Tambua/blob/main/docs/DATASETS.md).
+- MoNuSAC: 310 mirrored annotated images; the mirror does not establish exact µm/pixel for GigaTIME. The original challenge archive contains scanner metadata that is being audited ROI by ROI. Do not run the expert test until spacing, split identity and model-training provenance checks pass. See [Tambua dataset notes](https://github.com/tkcaccia/Tambua/blob/main/docs/DATASETS.md).
 - ORION CRC33_01: one 2048 × 2048 calibrated window, 4,104 complete measured-table-matched cell instances, 226 edge instances excluded. The published ORION mask is computationally generated, not expert drawn. GigaTIME inference, per-cell quantification and DAPI morphology QC are complete. This is one patient; it cannot support a patient-held-out accuracy estimate.
 - Matched Tambua / CellViT / HoVer-Net scores: **not yet measured**.
 
