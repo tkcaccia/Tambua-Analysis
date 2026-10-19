@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "scope": "virtual_DAPI_vs_HE_derived_nuclear_mask",
+  "sampling_stride_px": 1,
+  "sampled_windows": 1,
+  "nuclear_pixels": 42786,
+  "nearby_extranuclear_pixels": 51717,
+  "thresholds": {
+    "min_auc": 0.7,
+    "min_prevalence_matched_dice": 0.35,
+    "min_edge_to_core_nuclear_mean_ratio": 0.65,
+    "min_nuclear_boundary_contrast": 0.05
+  },
+  "interpretation_limit": "Agreement with H&E-derived nuclei does not establish measured DAPI accuracy. A poor StarDist mask can also lower this score. Inspect the overlay and mask.",
+  "status": "pass",
+  "alignment_status": "pass",
+  "border_shadow_status": "pass",
+  "alignment_score": 0.48357705614178764,
+  "auc": 0.7324365817173557,
+  "prevalence_matched_dice": 0.6411978369792457,
+  "prevalence_matched_threshold": 0.7568627450980392,
+  "nuclear_boundary_contrast": 0.07267281214369642,
+  "nuclear_inner_boundary_pixels": 11699,
+  "nearby_outer_boundary_pixels": 12533,
+  "edge_to_core_nuclear_mean_ratio": 1.0063491340239477,
+  "edge_nuclear_pixels": 7038,
+  "core_nuclear_pixels": 35748,
+  "sampled_stratified_windows": 1,
+  "preview": "paired_qc.png",
+  "preview_region_yxyx": [
+    0,
+    512,
+    0,
+    512
+  ],
+  "image": "/mnt/sata_ssd/GigaTIME-nuclear-qc-2026-10-19-paired-control/output/gigatime",
+  "nuclei_mask": "/mnt/sata_ssd/GigaTIME-nuclear-qc-2026-10-19-paired-control/released_nuclei.tif",
+  "image_shape_yx": [
+    512,
+    512
+  ]
+}

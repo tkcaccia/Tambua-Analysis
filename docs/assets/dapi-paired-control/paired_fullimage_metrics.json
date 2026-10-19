@@ -1,0 +1,12 @@
+{
+  "released_nuclei": {
+    "auc": 0.8607501136584611,
+    "average_precision": 0.5424276870058771,
+    "reference_fraction": 0.16286849975585938
+  },
+  "released_dapi_binary": {
+    "auc": 0.9006959767349587,
+    "average_precision": 0.6128281164705807,
+    "reference_fraction": 0.15525436401367188
+  }
+}
