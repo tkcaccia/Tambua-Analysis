@@ -22,7 +22,31 @@ def csv_rows(path: Path) -> list[dict[str, str]]:
         return list(csv.DictReader(source))
 
 
-def score(source: Path, destination: Path, tambua: Path) -> dict:
+def case_qc_status(folder: Path, sample: str) -> str:
+    report_path = next((p for p in (
+        folder / "gigatime_output" / f"{sample}_gigatime_nuclear_qc.json",
+        folder / "gigatime_output" / "output_gigatime_nuclear_qc.json",
+    ) if p.is_file()), None)
+    summary_path = next((p for p in (
+        folder / "quantification" / f"{sample}_gigatime_integrated_quantification_summary.json",
+        folder / "quantification" / "output_gigatime_integrated_quantification_summary.json",
+    ) if p.is_file()), None)
+    if report_path is None or summary_path is None:
+        return "missing"
+    report = json.loads(report_path.read_text())
+    summary = json.loads(summary_path.read_text())
+    return "pass" if report.get("status") == "pass" and summary.get("technical_qc_passed") is True else "fail"
+
+
+def require_scanner_rgb(records: list[dict], historical_unvalidated: bool) -> None:
+    if not historical_unvalidated and any(
+        row.get("source_color_reference") != "scanner_svs_rgb" for row in records
+    ):
+        raise ValueError("MoNuSAC marker scoring requires scanner-SVS-corrected RGB inputs")
+
+
+def score(source: Path, destination: Path, tambua: Path,
+          *, historical_unvalidated: bool = False) -> dict:
     from tambua.model import metrics
 
     cohort = json.loads((source / "input/COHORT.json").read_text())
@@ -41,11 +65,17 @@ def score(source: Path, destination: Path, tambua: Path) -> dict:
     if organs != {"breast", "kidney", "lung", "prostate"} or not organs <= \
             {r["organ"] for r in records if r["split"] == "train"}:
         raise ValueError("A test tissue is absent from training")
+    require_scanner_rgb(records, historical_unvalidated)
+    qc_statuses = []
     for row in records:
         folder = source / "output" / row["sample_id"]
         if not (folder / "RUN_COMPLETE.json").is_file() or \
                 not (folder / "VALIDATION.json").is_file():
             raise ValueError(f"Unverified image: {row['sample_id']}")
+        status = case_qc_status(folder, row["sample_id"])
+        if status == "fail" or (status == "missing" and not historical_unvalidated):
+            raise ValueError(f"GigaTIME nuclear/shadow QC is {status}: {row['sample_id']}")
+        qc_statuses.append(status)
     if destination.exists() and any(destination.iterdir()):
         raise FileExistsError("Refusing to overwrite model or scores")
     destination.mkdir(parents=True, exist_ok=True)
@@ -102,6 +132,9 @@ def score(source: Path, destination: Path, tambua: Path) -> dict:
                         "tissues_in_both_splits": sorted(organs),
                         "source_cohort_sha256": __import__("hashlib").sha256(
                             (source / "input/COHORT.json").read_bytes()).hexdigest()}
+    report["gigatime_quality_status"] = (
+        "historical_unvalidated" if "missing" in qc_statuses else "native_nuclear_qc_passed"
+    )
     report_path.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     return report
 
@@ -111,7 +144,10 @@ if __name__ == "__main__":
     parser.add_argument("--source", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--tambua", type=Path, required=True)
+    parser.add_argument("--historical-unvalidated", action="store_true",
+                        help="Reproduce archived pre-QC scores only; marks the report unvalidated")
     args = parser.parse_args()
     sys.path.insert(0, str(args.tambua.resolve() / "src"))
-    report = score(args.source.resolve(), args.output.resolve(), args.tambua.resolve())
+    report = score(args.source.resolve(), args.output.resolve(), args.tambua.resolve(),
+                   historical_unvalidated=args.historical_unvalidated)
     print(json.dumps({"test": report["test"], "test_by_tissue": report["test_by_tissue"]}, indent=2))

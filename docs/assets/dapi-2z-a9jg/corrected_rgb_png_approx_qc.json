@@ -1,0 +1,108 @@
+{
+  "schema_version": 2,
+  "scope": "virtual_DAPI_vs_HE_derived_nuclear_mask",
+  "sampling_stride_px": 1,
+  "sampled_windows": 1,
+  "nuclear_pixels": 120984,
+  "nearby_extranuclear_pixels": 111530,
+  "thresholds": {
+    "min_auc": 0.7,
+    "min_prevalence_matched_dice": 0.35,
+    "min_edge_to_core_nuclear_mean_ratio": 0.65,
+    "min_nuclear_boundary_contrast": 0.05,
+    "min_spatial_nuclear_auc": 0.6,
+    "min_spatial_positive_and_negative_pixels": 500
+  },
+  "interpretation_limit": "Agreement with H&E-derived nuclei does not establish measured DAPI accuracy. A poor StarDist mask can also lower this score. Inspect the overlay and mask.",
+  "status": "fail",
+  "alignment_status": "fail",
+  "border_shadow_status": "pass",
+  "spatial_shadow_status": "pass",
+  "spatial_regions": [
+    {
+      "row": 0,
+      "column": 0,
+      "nuclear_pixels": 13185,
+      "nearby_extranuclear_pixels": 13170,
+      "auc": 0.8025190926736481,
+      "status": "pass"
+    },
+    {
+      "row": 0,
+      "column": 1,
+      "nuclear_pixels": 15176,
+      "nearby_extranuclear_pixels": 12925,
+      "auc": 0.8618574502752488,
+      "status": "pass"
+    },
+    {
+      "row": 0,
+      "column": 2,
+      "nuclear_pixels": 15216,
+      "nearby_extranuclear_pixels": 14300,
+      "auc": 0.7853561097813858,
+      "status": "pass"
+    },
+    {
+      "row": 1,
+      "column": 0,
+      "nuclear_pixels": 10442,
+      "nearby_extranuclear_pixels": 9453,
+      "auc": 0.8713572463555368,
+      "status": "pass"
+    },
+    {
+      "row": 1,
+      "column": 1,
+      "nuclear_pixels": 19219,
+      "nearby_extranuclear_pixels": 15746,
+      "auc": 0.8508393351642929,
+      "status": "pass"
+    },
+    {
+      "row": 1,
+      "column": 2,
+      "nuclear_pixels": 14444,
+      "nearby_extranuclear_pixels": 13500,
+      "auc": 0.8465516374862816,
+      "status": "pass"
+    },
+    {
+      "row": 2,
+      "column": 0,
+      "nuclear_pixels": 11433,
+      "nearby_extranuclear_pixels": 10467,
+      "auc": 0.8572809133002472,
+      "status": "pass"
+    },
+    {
+      "row": 2,
+      "column": 1,
+      "nuclear_pixels": 11057,
+      "nearby_extranuclear_pixels": 11459,
+      "auc": 0.820210602876606,
+      "status": "pass"
+    },
+    {
+      "row": 2,
+      "column": 2,
+      "nuclear_pixels": 10812,
+      "nearby_extranuclear_pixels": 10510,
+      "auc": 0.8207585406566267,
+      "status": "pass"
+    }
+  ],
+  "eligible_spatial_regions": 9,
+  "failed_spatial_regions": 0,
+  "alignment_score": 0.5671523133828018,
+  "auc": 0.8282685713809543,
+  "prevalence_matched_dice": 0.7675985592825816,
+  "prevalence_matched_threshold": 0.9137254901960784,
+  "nuclear_boundary_contrast": 0.03758728174496162,
+  "nuclear_inner_boundary_pixels": 26738,
+  "nearby_outer_boundary_pixels": 28591,
+  "edge_to_core_nuclear_mean_ratio": 1.009496621817265,
+  "edge_nuclear_pixels": 13416,
+  "core_nuclear_pixels": 107568,
+  "scope_note": "8-bit PNG approximation of native DAPI, expert nuclear mask; not the production native-store gate"
+}

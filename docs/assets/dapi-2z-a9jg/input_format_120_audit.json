@@ -1,0 +1,4352 @@
+{
+  "n": 120,
+  "source_modes": {
+    "PHOTOMETRIC.RGB": 120
+  },
+  "source_extensions": {
+    ".tif": 116,
+    ".svs": 4
+  },
+  "source_compression_codes": {
+    "5": 116,
+    "33005": 4
+  },
+  "source_lossy_jpeg2000_count": 4,
+  "scanner_compression_codes": {
+    "33005": 120
+  },
+  "scanner_source_channel_order": {
+    "BGR_mistagged_as_RGB": 116,
+    "RGB": 4
+  },
+  "staged_compression_codes": {
+    "8": 120
+  },
+  "scanner_appmag": {
+    "40.0": 120
+  },
+  "all_rgb_pixel_exact": true,
+  "rgb_pixel_exact_count": 120,
+  "all_alpha_opaque": true,
+  "all_ome_mpp_matches_scanner": true,
+  "mpp_range": [
+    0.19448,
+    0.2527
+  ],
+  "rows": [
+    {
+      "sample_id": "TCGA-2Z-A9JG-01Z-00-DX1_4",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        755,
+        601,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 10.63539134554991,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        755,
+        601,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2524,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2524
+    },
+    {
+      "sample_id": "TCGA-2Z-A9JG-01Z-00-DX1_5",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        585,
+        839,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 10.50096540108459,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        585,
+        839,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2524,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2524
+    },
+    {
+      "sample_id": "TCGA-2Z-A9JG-01Z-00-DX1_6",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        582,
+        583,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 14.412076414799621,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        582,
+        583,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2524,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2524
+    },
+    {
+      "sample_id": "TCGA-2Z-A9JN-01Z-00-DX1_2",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        1771,
+        1760,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 18.719092962373594,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        1771,
+        1760,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2524,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2524
+    },
+    {
+      "sample_id": "TCGA-49-6743-01Z-00-DX2_004",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        1500,
+        1500,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 15.003751407407407,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        1500,
+        1500,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.252,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.252
+    },
+    {
+      "sample_id": "TCGA-50-6591-01Z-00-DX1_001",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        1500,
+        760,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 16.760330994152046,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        1500,
+        760,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.252,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.252
+    },
+    {
+      "sample_id": "TCGA-55-1594-01Z-00-DX1_001",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        1024,
+        1024,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 17.780222574869793,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        1024,
+        1024,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.252,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.252
+    },
+    {
+      "sample_id": "TCGA-55-1594-01Z-00-DX1_002",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        512,
+        512,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 13.755455017089844,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        512,
+        512,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.252,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.252
+    },
+    {
+      "sample_id": "TCGA-55-1594-01Z-00-DX1_003",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        512,
+        512,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 16.074183146158855,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        512,
+        512,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.252,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.252
+    },
+    {
+      "sample_id": "TCGA-55-1594-01Z-00-DX1_004",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        512,
+        512,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 13.918449401855469,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        512,
+        512,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.252,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.252
+    },
+    {
+      "sample_id": "TCGA-55-1594-01Z-00-DX1_005",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        512,
+        512,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 19.10406748453776,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        512,
+        512,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.252,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.252
+    },
+    {
+      "sample_id": "TCGA-55-7573-01Z-00-DX1_004",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        1974,
+        868,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 12.809140952194193,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        1974,
+        868,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.252,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.252
+    },
+    {
+      "sample_id": "TCGA-5P-A9K0-01Z-00-DX1_1",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        1153,
+        1307,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": false,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 15.308914371942128,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        1153,
+        1307,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.19448,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.19448
+    },
+    {
+      "sample_id": "TCGA-5P-A9K0-01Z-00-DX1_2",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        763,
+        756,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": false,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 16.12729386691816,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        763,
+        756,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.19448,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.19448
+    },
+    {
+      "sample_id": "TCGA-69-7760-01Z-00-DX1_001",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        512,
+        512,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 24.08135477701823,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        512,
+        512,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.252,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.252
+    },
+    {
+      "sample_id": "TCGA-69-7760-01Z-00-DX1_002",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        512,
+        512,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 23.191197713216145,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        512,
+        512,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.252,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.252
+    },
+    {
+      "sample_id": "TCGA-69-7760-01Z-00-DX1_003",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        512,
+        512,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 21.27515411376953,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        512,
+        512,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.252,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.252
+    },
+    {
+      "sample_id": "TCGA-69-7760-01Z-00-DX1_004",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        1024,
+        1024,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 17.03622309366862,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        1024,
+        1024,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.252,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.252
+    },
+    {
+      "sample_id": "TCGA-69-A59K-01Z-00-DX1_003",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        1422,
+        2162,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 19.390153107005762,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        1422,
+        2162,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2468,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2468
+    },
+    {
+      "sample_id": "TCGA-69-A59K-01Z-00-DX1_004",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        692,
+        680,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 15.377506233707356,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        692,
+        680,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2468,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2468
+    },
+    {
+      "sample_id": "TCGA-73-4662-01Z-00-DX1_003",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        2500,
+        735,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 9.660046077097507,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        2500,
+        735,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.252,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.252
+    },
+    {
+      "sample_id": "TCGA-73-4668-01Z-00-DX1_001",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        591,
+        778,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 33.56257168002761,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        591,
+        778,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.252,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.252
+    },
+    {
+      "sample_id": "TCGA-73-4668-01Z-00-DX1_002",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        1024,
+        1024,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 18.18497149149577,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        1024,
+        1024,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.252,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.252
+    },
+    {
+      "sample_id": "TCGA-78-7220-01Z-00-DX1_001",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        512,
+        512,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 6.934763590494792,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        512,
+        512,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.252,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.252
+    },
+    {
+      "sample_id": "TCGA-78-7220-01Z-00-DX1_002",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        512,
+        512,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 14.339836120605469,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        512,
+        512,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.252,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.252
+    },
+    {
+      "sample_id": "TCGA-78-7220-01Z-00-DX1_003",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        1024,
+        1024,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 14.830584208170572,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        1024,
+        1024,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.252,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.252
+    },
+    {
+      "sample_id": "TCGA-78-7220-01Z-00-DX1_004",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        512,
+        512,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 17.446998596191406,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        512,
+        512,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.252,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.252
+    },
+    {
+      "sample_id": "TCGA-86-7713-01Z-00-DX1_002",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        687,
+        712,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 43.76645595843623,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        687,
+        712,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.252,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.252
+    },
+    {
+      "sample_id": "TCGA-86-7713-01Z-00-DX1_003",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        828,
+        535,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 12.657027405300465,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        828,
+        535,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.252,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.252
+    },
+    {
+      "sample_id": "TCGA-86-7713-01Z-00-DX1_004",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        1232,
+        925,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 11.233366678366679,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        1232,
+        925,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.252,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.252
+    },
+    {
+      "sample_id": "TCGA-86-8672-01Z-00-DX1_1",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        766,
+        570,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 20.214125173682685,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        766,
+        570,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.252,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.252
+    },
+    {
+      "sample_id": "TCGA-86-8672-01Z-00-DX1_2",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        986,
+        1984,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 43.16133258086327,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        986,
+        1984,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.252,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.252
+    },
+    {
+      "sample_id": "TCGA-86-8672-01Z-00-DX1_3",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        1492,
+        1311,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 20.02548109793464,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        1492,
+        1311,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.252,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.252
+    },
+    {
+      "sample_id": "TCGA-A2-A04X-01Z-00-DX1_001",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        912,
+        1007,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 11.41939101726511,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        912,
+        1007,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2505,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2505
+    },
+    {
+      "sample_id": "TCGA-A2-A04X-01Z-00-DX1_002",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        781,
+        892,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 8.4784713170995,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        781,
+        892,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2505,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2505
+    },
+    {
+      "sample_id": "TCGA-A2-A04X-01Z-00-DX1_004",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        556,
+        736,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 8.905865524971327,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        556,
+        736,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2505,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2505
+    },
+    {
+      "sample_id": "TCGA-A2-A0CV-01Z-00-DX1_1",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        610,
+        610,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 9.115879243930843,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        610,
+        610,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2505,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2505
+    },
+    {
+      "sample_id": "TCGA-A2-A0CV-01Z-00-DX1_2",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        552,
+        685,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 10.008038012623858,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        552,
+        685,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2505,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2505
+    },
+    {
+      "sample_id": "TCGA-A2-A0CV-01Z-00-DX1_4",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        677,
+        769,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 13.608604984252539,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        677,
+        769,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2505,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2505
+    },
+    {
+      "sample_id": "TCGA-A2-A0ES-01Z-00-DX1_002",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        879,
+        726,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 7.367442132567792,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        879,
+        726,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2505,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2505
+    },
+    {
+      "sample_id": "TCGA-B6-A0WZ-01Z-00-DX1_1",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        1678,
+        1463,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 12.393407399743264,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        1678,
+        1463,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2485,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2485
+    },
+    {
+      "sample_id": "TCGA-B6-A0WZ-01Z-00-DX1_5",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        526,
+        669,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 11.856019142128027,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        526,
+        669,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2485,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2485
+    },
+    {
+      "sample_id": "TCGA-B9-A44B-01Z-00-DX1_2",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        1136,
+        1445,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 16.568683902724306,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        1136,
+        1445,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2472,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2472
+    },
+    {
+      "sample_id": "TCGA-B9-A8YI-01Z-00-DX1_1",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        1311,
+        1449,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 7.884863738145335,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        1311,
+        1449,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2472,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2472
+    },
+    {
+      "sample_id": "TCGA-B9-A8YI-01Z-00-DX1_2",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        843,
+        1042,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 9.411824752259585,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        843,
+        1042,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2472,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2472
+    },
+    {
+      "sample_id": "TCGA-B9-A8YI-01Z-00-DX1_3",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        1302,
+        1730,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 17.413175520689972,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        1302,
+        1730,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2472,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2472
+    },
+    {
+      "sample_id": "TCGA-BH-A18T-01Z-00-DX1_1",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        917,
+        1301,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 12.604581493809393,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        917,
+        1301,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2485,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2485
+    },
+    {
+      "sample_id": "TCGA-BH-A18T-01Z-00-DX1_2",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        535,
+        711,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 13.150106690151645,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        535,
+        711,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2485,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2485
+    },
+    {
+      "sample_id": "TCGA-BH-A18T-01Z-00-DX1_5",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        922,
+        771,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 11.140389180084648,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        922,
+        771,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2485,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2485
+    },
+    {
+      "sample_id": "TCGA-BH-A18T-01Z-00-DX1_6",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        961,
+        1211,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 14.66477339614065,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        961,
+        1211,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2485,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2485
+    },
+    {
+      "sample_id": "TCGA-D8-A1X5-01Z-00-DX2_2",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        1104,
+        1236,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 6.898916170285947,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        1104,
+        1236,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2527,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2527
+    },
+    {
+      "sample_id": "TCGA-D8-A1X5-01Z-00-DX2_3",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        1254,
+        1796,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 6.66195005973461,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        1254,
+        1796,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2527,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2527
+    },
+    {
+      "sample_id": "TCGA-D8-A1X5-01Z-00-DX2_4",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        811,
+        1056,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 5.112063919092279,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        811,
+        1056,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2527,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2527
+    },
+    {
+      "sample_id": "TCGA-D8-A3Z6-01Z-00-DX2_002",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".svs",
+      "source_decoder": "OpenSlide_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 33005,
+      "source_shape": [
+        992,
+        1079,
+        3
+      ],
+      "source_alpha_values": [],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "RGB",
+      "scanner_source_same_rgb": true,
+      "scanner_source_red_blue_swap_exact": false,
+      "scanner_source_mae_rgb": 0.0,
+      "scanner_source_mae_red_blue_swapped": 7.950597053225308,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        992,
+        1079,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.248,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.248
+    },
+    {
+      "sample_id": "TCGA-DW-7838-01Z-00-DX1_1",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        578,
+        676,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 14.05549640670748,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        578,
+        676,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.252,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.252
+    },
+    {
+      "sample_id": "TCGA-DW-7838-01Z-00-DX1_2",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        523,
+        858,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 8.034081066585847,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        523,
+        858,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.252,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.252
+    },
+    {
+      "sample_id": "TCGA-DW-7841-01Z-00-DX1_1",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        887,
+        878,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 12.658278397403137,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        887,
+        878,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.252,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.252
+    },
+    {
+      "sample_id": "TCGA-DW-7841-01Z-00-DX1_2",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        821,
+        932,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 10.839824248665659,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        821,
+        932,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.252,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.252
+    },
+    {
+      "sample_id": "TCGA-E2-A108-01Z-00-DX1_001",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".svs",
+      "source_decoder": "OpenSlide_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 33005,
+      "source_shape": [
+        833,
+        748,
+        3
+      ],
+      "source_alpha_values": [],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "RGB",
+      "scanner_source_same_rgb": true,
+      "scanner_source_red_blue_swap_exact": false,
+      "scanner_source_mae_rgb": 0.0,
+      "scanner_source_mae_red_blue_swapped": 11.742294778874117,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        833,
+        748,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.248,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.248
+    },
+    {
+      "sample_id": "TCGA-E2-A108-01Z-00-DX1_002",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".svs",
+      "source_decoder": "OpenSlide_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 33005,
+      "source_shape": [
+        518,
+        783,
+        3
+      ],
+      "source_alpha_values": [],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "RGB",
+      "scanner_source_same_rgb": true,
+      "scanner_source_red_blue_swap_exact": false,
+      "scanner_source_mae_rgb": 0.0,
+      "scanner_source_mae_red_blue_swapped": 7.621059483128449,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        518,
+        783,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.248,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.248
+    },
+    {
+      "sample_id": "TCGA-E2-A108-01Z-00-DX1_003",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".svs",
+      "source_decoder": "OpenSlide_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 33005,
+      "source_shape": [
+        885,
+        633,
+        3
+      ],
+      "source_alpha_values": [],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "RGB",
+      "scanner_source_same_rgb": true,
+      "scanner_source_red_blue_swap_exact": false,
+      "scanner_source_mae_rgb": 0.0,
+      "scanner_source_mae_red_blue_swapped": 6.545653823154024,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        885,
+        633,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.248,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.248
+    },
+    {
+      "sample_id": "TCGA-E2-A154-01Z-00-DX1_3",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        560,
+        600,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 9.11148611111111,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        560,
+        600,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2468,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2468
+    },
+    {
+      "sample_id": "TCGA-E2-A154-01Z-00-DX1_4",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        621,
+        626,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 7.235096095308162,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        621,
+        626,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2468,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2468
+    },
+    {
+      "sample_id": "TCGA-E9-A22B-01Z-00-DX1_1",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        1956,
+        1398,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 8.335861046016658,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        1956,
+        1398,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2468,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2468
+    },
+    {
+      "sample_id": "TCGA-E9-A22B-01Z-00-DX1_2",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        649,
+        884,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 10.390233727721265,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        649,
+        884,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2468,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2468
+    },
+    {
+      "sample_id": "TCGA-E9-A22B-01Z-00-DX1_3",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        706,
+        859,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 7.273061655679299,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        706,
+        859,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2468,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2468
+    },
+    {
+      "sample_id": "TCGA-E9-A22B-01Z-00-DX1_8",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        1310,
+        951,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 6.349252828815523,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        1310,
+        951,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2468,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2468
+    },
+    {
+      "sample_id": "TCGA-E9-A22G-01Z-00-DX1_1",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        545,
+        620,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 10.94442931833876,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        545,
+        620,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2468,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2468
+    },
+    {
+      "sample_id": "TCGA-E9-A22G-01Z-00-DX1_2",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        638,
+        686,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 8.555090464309325,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        638,
+        686,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2468,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2468
+    },
+    {
+      "sample_id": "TCGA-E9-A22G-01Z-00-DX1_5",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        562,
+        878,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 7.404379358890177,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        562,
+        878,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2468,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2468
+    },
+    {
+      "sample_id": "TCGA-EJ-5495-01Z-00-DX1-1",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        1423,
+        1619,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 12.112642517678117,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        1423,
+        1619,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.252,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.252
+    },
+    {
+      "sample_id": "TCGA-EJ-5505-01Z-00-DX1-1",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        1087,
+        1022,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 11.804617339115959,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        1087,
+        1022,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.252,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.252
+    },
+    {
+      "sample_id": "TCGA-EJ-5517-01Z-00-DX1-3",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        928,
+        650,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 7.806997126436782,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        928,
+        650,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.252,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.252
+    },
+    {
+      "sample_id": "TCGA-EJ-5517-01Z-00-DX1-4",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        1731,
+        1772,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 11.733982279496752,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        1731,
+        1772,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.252,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.252
+    },
+    {
+      "sample_id": "TCGA-EV-5903-01Z-00-DX1_1",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        841,
+        1177,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 12.264341212922675,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        841,
+        1177,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.252,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.252
+    },
+    {
+      "sample_id": "TCGA-EW-A6SD-01Z-00-DX1_3",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        709,
+        1074,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 10.3462076223145,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        709,
+        1074,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2525,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2525
+    },
+    {
+      "sample_id": "TCGA-EW-A6SD-01Z-00-DX1_4",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        785,
+        881,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 8.91648411499189,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        785,
+        881,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2525,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2525
+    },
+    {
+      "sample_id": "TCGA-F9-A8NY-01Z-00-DX1_1",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        2150,
+        1401,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 30.807068262426064,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        2150,
+        1401,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2525,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2525
+    },
+    {
+      "sample_id": "TCGA-F9-A8NY-01Z-00-DX1_3",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        567,
+        796,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 14.71408335032009,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        567,
+        796,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2525,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2525
+    },
+    {
+      "sample_id": "TCGA-F9-A97G-01Z-00-DX1_1",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        902,
+        1220,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 30.035012661602025,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        902,
+        1220,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2485,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2485
+    },
+    {
+      "sample_id": "TCGA-F9-A97G-01Z-00-DX1_3",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        658,
+        545,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 18.275991560004833,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        658,
+        545,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2485,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2485
+    },
+    {
+      "sample_id": "TCGA-G7-A8LD-01Z-00-DX1_5",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        694,
+        824,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 67.54209684489335,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        694,
+        824,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2527,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2527
+    },
+    {
+      "sample_id": "TCGA-G9-6356-01Z-00-DX1_1",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        1026,
+        1158,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 19.89247610486589,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        1026,
+        1158,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.252,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.252
+    },
+    {
+      "sample_id": "TCGA-G9-6356-01Z-00-DX1_6",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        547,
+        563,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 14.981340710890882,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        547,
+        563,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.252,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.252
+    },
+    {
+      "sample_id": "TCGA-G9-6367-01Z-00-DX1_1",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        635,
+        840,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 10.359353830771154,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        635,
+        840,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.252,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.252
+    },
+    {
+      "sample_id": "TCGA-G9-6367-01Z-00-DX1_2",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        1005,
+        1164,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 5.776012833883276,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        1005,
+        1164,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.252,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.252
+    },
+    {
+      "sample_id": "TCGA-G9-6367-01Z-00-DX1_7",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        633,
+        709,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 6.366296269062999,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        633,
+        709,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.252,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.252
+    },
+    {
+      "sample_id": "TCGA-G9-6499-01Z-00-DX1-1",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        717,
+        1044,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 16.36809129140683,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        717,
+        1044,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.252,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.252
+    },
+    {
+      "sample_id": "TCGA-G9-6499-01Z-00-DX1-4",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        1256,
+        1411,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 13.008226988132373,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        1256,
+        1411,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.252,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.252
+    },
+    {
+      "sample_id": "TCGA-IZ-A6M9-01Z-00-DX1_1",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        600,
+        600,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 36.48948703703704,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        600,
+        600,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2485,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2485
+    },
+    {
+      "sample_id": "TCGA-IZ-A6M9-01Z-00-DX1_2",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        1251,
+        1500,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 32.70064446220801,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        1251,
+        1500,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2485,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2485
+    },
+    {
+      "sample_id": "TCGA-J4-A67Q-01Z-00-DX1-1",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        783,
+        915,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 13.707780313445786,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        783,
+        915,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2485,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2485
+    },
+    {
+      "sample_id": "TCGA-J4-A67T-01Z-00-DX1-2",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        1087,
+        878,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 14.00233448520829,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        1087,
+        878,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2485,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2485
+    },
+    {
+      "sample_id": "TCGA-J4-A67T-01Z-00-DX1-6",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        524,
+        598,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 12.610040252921102,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        524,
+        598,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2485,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2485
+    },
+    {
+      "sample_id": "TCGA-KK-A59X-01Z-00-DX1-1",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        547,
+        554,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 18.847211680823307,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        547,
+        554,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2468,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2468
+    },
+    {
+      "sample_id": "TCGA-KK-A6E0-01Z-00-DX1-1",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        804,
+        744,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 8.70655905062501,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        804,
+        744,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2468,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2468
+    },
+    {
+      "sample_id": "TCGA-KK-A6E0-01Z-00-DX1-2",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        865,
+        1101,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 9.08419146020696,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        865,
+        1101,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2468,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2468
+    },
+    {
+      "sample_id": "TCGA-KK-A7AW-01Z-00-DX1-1",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        516,
+        529,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 15.678619402802811,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        516,
+        529,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.248,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.248
+    },
+    {
+      "sample_id": "TCGA-L4-A4E5-01Z-00-DX1_1",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        846,
+        759,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 15.645110785104619,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        846,
+        759,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2456,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2456
+    },
+    {
+      "sample_id": "TCGA-L4-A4E5-01Z-00-DX1_3",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        900,
+        900,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 10.74852427983539,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        900,
+        900,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2456,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2456
+    },
+    {
+      "sample_id": "TCGA-MH-A560-01Z-00-DX2_2",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        1415,
+        1878,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 7.799089325159838,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        1415,
+        1878,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2527,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2527
+    },
+    {
+      "sample_id": "TCGA-MP-A4SY-01Z-00-DX1_2",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        1105,
+        1105,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 12.138632706128048,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        1105,
+        1105,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2525,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2525
+    },
+    {
+      "sample_id": "TCGA-MP-A4SY-01Z-00-DX1_3",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        601,
+        560,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 13.773169717138103,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        601,
+        560,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2525,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2525
+    },
+    {
+      "sample_id": "TCGA-P4-AAVK-01Z-00-DX1_3",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        1602,
+        1525,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 8.629436974273961,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        1602,
+        1525,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2526,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2526
+    },
+    {
+      "sample_id": "TCGA-S3-AA11-01Z-00-DX1_1",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        1225,
+        1489,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 5.338136630071774,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        1225,
+        1489,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2527,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2527
+    },
+    {
+      "sample_id": "TCGA-S3-AA11-01Z-00-DX1_2",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        1225,
+        1599,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 7.105668934240363,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        1225,
+        1599,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2527,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2527
+    },
+    {
+      "sample_id": "TCGA-S3-AA11-01Z-00-DX1_3",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        739,
+        639,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 12.569346414778956,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        739,
+        639,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2527,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2527
+    },
+    {
+      "sample_id": "TCGA-S3-AA11-01Z-00-DX1_4",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        788,
+        636,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 15.50584767316881,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        788,
+        636,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2527,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2527
+    },
+    {
+      "sample_id": "TCGA-UZ-A9PO-01Z-00-DX1_3",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        951,
+        917,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 13.956741091376388,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        951,
+        917,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2525,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2525
+    },
+    {
+      "sample_id": "TCGA-V1-A8WL-01Z-00-DX1-1",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        590,
+        741,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 10.260948329101764,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        590,
+        741,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2527,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2527
+    },
+    {
+      "sample_id": "TCGA-V1-A9O9-01Z-00-DX1-1",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        624,
+        734,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 14.297739234728336,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        624,
+        734,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2527,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2527
+    },
+    {
+      "sample_id": "TCGA-V1-A9O9-01Z-00-DX1-2",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        597,
+        657,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 11.381055454849081,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        597,
+        657,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2527,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2527
+    },
+    {
+      "sample_id": "TCGA-V1-A9O9-01Z-00-DX1-3",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        833,
+        989,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 8.192144805343775,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        833,
+        989,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2527,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2527
+    },
+    {
+      "sample_id": "TCGA-VP-A87E-01Z-00-DX1_5",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        1400,
+        1872,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": false,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 30.040744047619047,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        1400,
+        1872,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2501,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2501
+    },
+    {
+      "sample_id": "TCGA-VP-A87H-01Z-00-DX1_1",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        566,
+        615,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": false,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 13.86600591800971,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        566,
+        615,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2501,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2501
+    },
+    {
+      "sample_id": "TCGA-VP-A87H-01Z-00-DX1_2",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        1315,
+        1460,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": false,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 26.265024567251768,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        1315,
+        1460,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2501,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2501
+    },
+    {
+      "sample_id": "TCGA-X4-A8KS-01Z-00-DX3_1",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        655,
+        787,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 11.892757306226175,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        655,
+        787,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2527,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2527
+    },
+    {
+      "sample_id": "TCGA-YL-A9WL-01Z-00-DX1_1",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        653,
+        664,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 13.350944359367023,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        653,
+        664,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2485,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2485
+    },
+    {
+      "sample_id": "TCGA-YL-A9WY-01Z-00-DX1-1",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        1170,
+        1090,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 8.661350793277398,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        1170,
+        1090,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2485,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2485
+    },
+    {
+      "sample_id": "TCGA-YL-A9WY-01Z-00-DX1-2",
+      "source_mode": "PHOTOMETRIC.RGB",
+      "source_extension": ".tif",
+      "source_decoder": "Pillow_RGB",
+      "source_bits": [
+        8
+      ],
+      "source_compression_code": 5,
+      "source_shape": [
+        877,
+        802,
+        3
+      ],
+      "source_alpha_values": [
+        255
+      ],
+      "scanner_description_has_icc_profile": true,
+      "scanner_compression_code": 33005,
+      "scanner_channel_order_of_staged_source": "BGR_mistagged_as_RGB",
+      "scanner_source_same_rgb": false,
+      "scanner_source_red_blue_swap_exact": true,
+      "scanner_source_mae_rgb": 6.7746113621305915,
+      "scanner_source_mae_red_blue_swapped": 0.0,
+      "staged_compression_code": 8,
+      "staged_shape": [
+        877,
+        802,
+        3
+      ],
+      "rgb_pixel_exact": true,
+      "rgb_mean_absolute_decoder_difference": 0.0,
+      "scanner_mpp": 0.2485,
+      "scanner_appmag": 40.0,
+      "staged_ome_mpp": 0.2485
+    }
+  ],
+  "staged_canonical_rgb_count": 4,
+  "staged_red_blue_correction_needed_count": 116
+}

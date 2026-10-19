@@ -1,0 +1,64 @@
+{
+  "image": "/mnt/sata_ssd/CellPhenotyper-gigatime-shadow-qc-2026-10-19-v1/corrected_input_2Z_A9JG_4.ome.tif",
+  "nuclei": "/mnt/sata_ssd/Tambua-monusac-matched-2026-10-19-prep-v2/TCGA-2Z-A9JG-01Z-00-DX1_4/expert_nuclei.ome.tif",
+  "model_revision": "a6556030bdb8071857559e12b921620aa1bbac5b",
+  "device": "cpu",
+  "image_shape_yx": [
+    763,
+    607
+  ],
+  "patch_count": 20,
+  "elapsed_seconds": 295.1378017216921,
+  "model_grid_mpp": 0.25,
+  "qc": {
+    "nuclear_nearby_auc": 0.8283235673416596,
+    "local_auc": [
+      {
+        "row": 0,
+        "column": 0,
+        "auc": 0.803477984289397
+      },
+      {
+        "row": 0,
+        "column": 1,
+        "auc": 0.861054414754573
+      },
+      {
+        "row": 0,
+        "column": 2,
+        "auc": 0.7853685423570379
+      },
+      {
+        "row": 1,
+        "column": 0,
+        "auc": 0.871928448951599
+      },
+      {
+        "row": 1,
+        "column": 1,
+        "auc": 0.8502571978939292
+      },
+      {
+        "row": 1,
+        "column": 2,
+        "auc": 0.8464826414231643
+      },
+      {
+        "row": 2,
+        "column": 0,
+        "auc": 0.8572449554401422
+      },
+      {
+        "row": 2,
+        "column": 1,
+        "auc": 0.8219102930659833
+      },
+      {
+        "row": 2,
+        "column": 2,
+        "auc": 0.82133100577605
+      }
+    ],
+    "edge_to_core_nuclear_mean_ratio": 1.0123403072357178
+  }
+}
