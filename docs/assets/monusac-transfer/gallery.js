@@ -2,12 +2,12 @@ const resultRoot = 'assets/monusac-transfer/';
 const imagePanels = [
   ['he', 'Original H&E', 'Expert-annotated prostate ROI'],
   ['expert', 'Expert cell types', 'Independent nuclear masks, colored by expert type'],
-  ['predicted', 'Tambua predictions', 'Same expert nuclei, colored by lung-trained fastPLS'],
+  ['predicted', 'Archived Tambua predictions', 'Pre-fix virtual markers; QC not validated'],
   ['errors', 'Correct / incorrect', 'Green nuclei correct; red nuclei incorrect'],
-  ['dapi', 'Virtual DAPI', 'GigaTIME nuclear-channel preview'],
-  ['ck', 'Virtual CK', 'GigaTIME epithelial-associated channel'],
-  ['cd3', 'Virtual CD3', 'GigaTIME T-cell-associated channel'],
-  ['cd68', 'Virtual CD68', 'GigaTIME macrophage-associated channel'],
+  ['dapi', 'Virtual DAPI — pre-fix', 'Archived marker preview with visible shadow'],
+  ['ck', 'Virtual CK — pre-fix', 'Archived marker preview; QC not validated'],
+  ['cd3', 'Virtual CD3 — pre-fix', 'Archived marker preview; QC not validated'],
+  ['cd68', 'Virtual CD68 — pre-fix', 'Archived marker preview; QC not validated'],
 ];
 function pct(value) { return (value * 100).toFixed(1) + '%'; }
 function renderCase(sample) {

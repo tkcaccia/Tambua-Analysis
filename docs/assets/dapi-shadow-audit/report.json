@@ -1,0 +1,28 @@
+{
+  "method": "reflect 128 model pixels at all outer borders before overlapping CNN tiles",
+  "source": "/mnt/sata_ssd/GigaTIME-nuclear-qc-2026-10-19-paired-control/he.tif",
+  "patch_count": 25,
+  "baseline": {
+    "auc_full": 0.9034413108912793,
+    "auc_rim": 0.8548568830079736,
+    "auc_core": 0.9182164882558508,
+    "positive_rim_mean": 0.7262174487113953,
+    "positive_core_mean": 0.7671861052513123,
+    "negative_rim_mean": 0.22001805901527405,
+    "negative_core_mean": 0.1317543238401413,
+    "first_row_mean": 0.1345818191766739,
+    "last_row_mean": 0.257000595331192
+  },
+  "reflect_halo": {
+    "auc_full": 0.9024637712840908,
+    "auc_rim": 0.8378262197792941,
+    "auc_core": 0.9198445906969868,
+    "positive_rim_mean": 0.715990424156189,
+    "positive_core_mean": 0.7692472338676453,
+    "negative_rim_mean": 0.2253134399652481,
+    "negative_core_mean": 0.1332087516784668,
+    "first_row_mean": 0.16340330243110657,
+    "last_row_mean": 0.1976294219493866
+  },
+  "elapsed_seconds": 377.2372737219557
+}
