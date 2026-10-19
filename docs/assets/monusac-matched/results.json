@@ -1,0 +1,2073 @@
+{
+  "cohort": "MoNuSAC four-tissue patient-disjoint test",
+  "train_images": 88,
+  "test_images": 32,
+  "train_patients": 40,
+  "test_patients": 19,
+  "train_cells": 23213,
+  "test_cells": 10776,
+  "test": {
+    "n": 10776,
+    "accuracy": 0.851800296956199,
+    "balanced_accuracy": 0.42092834811296753,
+    "macro_f1": 0.4314547154161701,
+    "missing_reference_classes": [],
+    "support": {
+      "epithelial": 6548,
+      "lymphocyte": 4178,
+      "macrophage": 46,
+      "neutrophil": 4
+    },
+    "recall": {
+      "epithelial": 0.9427306047648136,
+      "lymphocyte": 0.7192436572522738,
+      "macrophage": 0.021739130434782608,
+      "neutrophil": 0.0
+    },
+    "f1": {
+      "epithelial": 0.898413622471256,
+      "lymphocyte": 0.7996274614156467,
+      "macrophage": 0.027777777777777776,
+      "neutrophil": 0.0
+    },
+    "confusion_matrix": [
+      [
+        6173,
+        332,
+        23,
+        20
+      ],
+      [
+        973,
+        3005,
+        2,
+        198
+      ],
+      [
+        45,
+        0,
+        1,
+        0
+      ],
+      [
+        3,
+        1,
+        0,
+        0
+      ]
+    ],
+    "classes": [
+      "epithelial",
+      "lymphocyte",
+      "macrophage",
+      "neutrophil"
+    ]
+  },
+  "test_by_tissue": {
+    "breast": {
+      "n": 2174,
+      "accuracy": 0.858325666973321,
+      "balanced_accuracy": null,
+      "macro_f1": null,
+      "missing_reference_classes": [
+        "neutrophil"
+      ],
+      "support": {
+        "epithelial": 1230,
+        "lymphocyte": 927,
+        "macrophage": 17,
+        "neutrophil": 0
+      },
+      "recall": {
+        "epithelial": 0.9707317073170731,
+        "lymphocyte": 0.7249190938511327,
+        "macrophage": 0.0,
+        "neutrophil": null
+      },
+      "f1": {
+        "epithelial": 0.8867434088377274,
+        "lymphocyte": 0.8220183486238533,
+        "macrophage": 0.0,
+        "neutrophil": 0.0
+      },
+      "confusion_matrix": [
+        [
+          1194,
+          36,
+          0,
+          0
+        ],
+        [
+          252,
+          672,
+          0,
+          3
+        ],
+        [
+          17,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "classes": [
+        "epithelial",
+        "lymphocyte",
+        "macrophage",
+        "neutrophil"
+      ],
+      "images": 8,
+      "patients": 4
+    },
+    "kidney": {
+      "n": 3841,
+      "accuracy": 0.8458734704504035,
+      "balanced_accuracy": 0.4172521333523644,
+      "macro_f1": 0.4221327333360677,
+      "missing_reference_classes": [],
+      "support": {
+        "epithelial": 2233,
+        "lymphocyte": 1597,
+        "macrophage": 9,
+        "neutrophil": 2
+      },
+      "recall": {
+        "epithelial": 0.9175996417375728,
+        "lymphocyte": 0.7514088916718847,
+        "macrophage": 0.0,
+        "neutrophil": 0.0
+      },
+      "f1": {
+        "epithelial": 0.880722114764668,
+        "lymphocyte": 0.8078088185796028,
+        "macrophage": 0.0,
+        "neutrophil": 0.0
+      },
+      "confusion_matrix": [
+        [
+          2049,
+          174,
+          7,
+          3
+        ],
+        [
+          360,
+          1200,
+          0,
+          37
+        ],
+        [
+          9,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0
+        ]
+      ],
+      "classes": [
+        "epithelial",
+        "lymphocyte",
+        "macrophage",
+        "neutrophil"
+      ],
+      "images": 10,
+      "patients": 5
+    },
+    "lung": {
+      "n": 1177,
+      "accuracy": 0.9575191163976211,
+      "balanced_accuracy": null,
+      "macro_f1": null,
+      "missing_reference_classes": [
+        "macrophage",
+        "neutrophil"
+      ],
+      "support": {
+        "epithelial": 1120,
+        "lymphocyte": 57,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "recall": {
+        "epithelial": 0.99375,
+        "lymphocyte": 0.24561403508771928,
+        "macrophage": null,
+        "neutrophil": null
+      },
+      "f1": {
+        "epithelial": 0.9780316344463972,
+        "lymphocyte": 0.358974358974359,
+        "macrophage": null,
+        "neutrophil": null
+      },
+      "confusion_matrix": [
+        [
+          1113,
+          7,
+          0,
+          0
+        ],
+        [
+          43,
+          14,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "classes": [
+        "epithelial",
+        "lymphocyte",
+        "macrophage",
+        "neutrophil"
+      ],
+      "images": 4,
+      "patients": 4
+    },
+    "prostate": {
+      "n": 3584,
+      "accuracy": 0.8194754464285714,
+      "balanced_accuracy": 0.41884268133156793,
+      "macro_f1": 0.4308937808804108,
+      "missing_reference_classes": [],
+      "support": {
+        "epithelial": 1965,
+        "lymphocyte": 1597,
+        "macrophage": 20,
+        "neutrophil": 2
+      },
+      "recall": {
+        "epithelial": 0.9246819338422392,
+        "lymphocyte": 0.7006887914840325,
+        "macrophage": 0.05,
+        "neutrophil": 0.0
+      },
+      "f1": {
+        "epithelial": 0.8820388349514563,
+        "lymphocyte": 0.7902542372881356,
+        "macrophage": 0.05128205128205128,
+        "neutrophil": 0.0
+      },
+      "confusion_matrix": [
+        [
+          1817,
+          115,
+          16,
+          17
+        ],
+        [
+          318,
+          1119,
+          2,
+          158
+        ],
+        [
+          19,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ]
+      ],
+      "classes": [
+        "epithelial",
+        "lymphocyte",
+        "macrophage",
+        "neutrophil"
+      ],
+      "images": 10,
+      "patients": 6
+    }
+  },
+  "test_equal_patient_accuracy": 0.8818097934152734,
+  "majority_baseline": {
+    "n": 10776,
+    "accuracy": 0.6076466221232368,
+    "balanced_accuracy": 0.25,
+    "macro_f1": 0.1889863772800739,
+    "missing_reference_classes": [],
+    "support": {
+      "epithelial": 6548,
+      "lymphocyte": 4178,
+      "macrophage": 46,
+      "neutrophil": 4
+    },
+    "recall": {
+      "epithelial": 1.0,
+      "lymphocyte": 0.0,
+      "macrophage": 0.0,
+      "neutrophil": 0.0
+    },
+    "f1": {
+      "epithelial": 0.7559455091202956,
+      "lymphocyte": 0.0,
+      "macrophage": 0.0,
+      "neutrophil": 0.0
+    },
+    "confusion_matrix": [
+      [
+        6548,
+        0,
+        0,
+        0
+      ],
+      [
+        4178,
+        0,
+        0,
+        0
+      ],
+      [
+        46,
+        0,
+        0,
+        0
+      ],
+      [
+        4,
+        0,
+        0,
+        0
+      ]
+    ],
+    "classes": [
+      "epithelial",
+      "lymphocyte",
+      "macrophage",
+      "neutrophil"
+    ]
+  },
+  "dapi_qc_passed_test_images": 26,
+  "class_order": [
+    "epithelial",
+    "lymphocyte",
+    "macrophage",
+    "neutrophil"
+  ],
+  "scope": "Conditional cell typing at expert nuclei, with a 3 \u00b5m nucleus-anchored cell proxy. Virtual markers are uncalibrated predictions.",
+  "cases": [
+    {
+      "sample_id": "TCGA-2Z-A9JG-01Z-00-DX1_4",
+      "patient_id": "TCGA-2Z-A9JG",
+      "organ": "kidney",
+      "source_mpp": 0.2524,
+      "model_mpp": 0.25,
+      "width": 601,
+      "height": 755,
+      "annotated_cells": 150,
+      "n_cells": 150,
+      "correct": 150,
+      "accuracy": 1.0,
+      "support": {
+        "epithelial": 150,
+        "lymphocyte": 0,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "confusion_matrix": [
+        [
+          150,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "dapi_qc": {
+        "nuclear_to_non_nuclear_mean_ratio": 1.756,
+        "top_decile_nuclear_enrichment": 2.206,
+        "passes_enrichment_screen": true,
+        "paired_nuclei": 150,
+        "median_nucleus_to_local_ring_ratio": 1.007,
+        "fraction_nuclei_brighter_than_local_ring": 0.5
+      }
+    },
+    {
+      "sample_id": "TCGA-2Z-A9JG-01Z-00-DX1_5",
+      "patient_id": "TCGA-2Z-A9JG",
+      "organ": "kidney",
+      "source_mpp": 0.2524,
+      "model_mpp": 0.25,
+      "width": 839,
+      "height": 585,
+      "annotated_cells": 587,
+      "n_cells": 587,
+      "correct": 491,
+      "accuracy": 0.83646,
+      "support": {
+        "epithelial": 0,
+        "lymphocyte": 587,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          86,
+          491,
+          0,
+          10
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "dapi_qc": {
+        "nuclear_to_non_nuclear_mean_ratio": 1.122,
+        "top_decile_nuclear_enrichment": 0.967,
+        "passes_enrichment_screen": false,
+        "paired_nuclei": 587,
+        "median_nucleus_to_local_ring_ratio": 1.067,
+        "fraction_nuclei_brighter_than_local_ring": 0.717
+      }
+    },
+    {
+      "sample_id": "TCGA-2Z-A9JG-01Z-00-DX1_6",
+      "patient_id": "TCGA-2Z-A9JG",
+      "organ": "kidney",
+      "source_mpp": 0.2524,
+      "model_mpp": 0.25,
+      "width": 583,
+      "height": 582,
+      "annotated_cells": 63,
+      "n_cells": 63,
+      "correct": 47,
+      "accuracy": 0.74603,
+      "support": {
+        "epithelial": 47,
+        "lymphocyte": 5,
+        "macrophage": 9,
+        "neutrophil": 2
+      },
+      "confusion_matrix": [
+        [
+          47,
+          0,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          0,
+          0
+        ],
+        [
+          9,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0
+        ]
+      ],
+      "dapi_qc": {
+        "nuclear_to_non_nuclear_mean_ratio": 1.052,
+        "top_decile_nuclear_enrichment": 0.916,
+        "passes_enrichment_screen": false,
+        "paired_nuclei": 63,
+        "median_nucleus_to_local_ring_ratio": 0.902,
+        "fraction_nuclei_brighter_than_local_ring": 0.381
+      }
+    },
+    {
+      "sample_id": "TCGA-2Z-A9JN-01Z-00-DX1_2",
+      "patient_id": "TCGA-2Z-A9JN",
+      "organ": "kidney",
+      "source_mpp": 0.2524,
+      "model_mpp": 0.25,
+      "width": 1760,
+      "height": 1771,
+      "annotated_cells": 455,
+      "n_cells": 455,
+      "correct": 455,
+      "accuracy": 1.0,
+      "support": {
+        "epithelial": 455,
+        "lymphocyte": 0,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "confusion_matrix": [
+        [
+          455,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "dapi_qc": {
+        "nuclear_to_non_nuclear_mean_ratio": 1.417,
+        "top_decile_nuclear_enrichment": 1.785,
+        "passes_enrichment_screen": true,
+        "paired_nuclei": 455,
+        "median_nucleus_to_local_ring_ratio": 1.093,
+        "fraction_nuclei_brighter_than_local_ring": 0.635
+      }
+    },
+    {
+      "sample_id": "TCGA-49-6743-01Z-00-DX2_004",
+      "patient_id": "TCGA-49-6743",
+      "organ": "lung",
+      "source_mpp": 0.252,
+      "model_mpp": 0.25,
+      "width": 1500,
+      "height": 1500,
+      "annotated_cells": 236,
+      "n_cells": 236,
+      "correct": 228,
+      "accuracy": 0.9661,
+      "support": {
+        "epithelial": 228,
+        "lymphocyte": 8,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "confusion_matrix": [
+        [
+          228,
+          0,
+          0,
+          0
+        ],
+        [
+          8,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "dapi_qc": {
+        "nuclear_to_non_nuclear_mean_ratio": 1.26,
+        "top_decile_nuclear_enrichment": 2.007,
+        "passes_enrichment_screen": true,
+        "paired_nuclei": 236,
+        "median_nucleus_to_local_ring_ratio": 1.043,
+        "fraction_nuclei_brighter_than_local_ring": 0.695
+      }
+    },
+    {
+      "sample_id": "TCGA-50-6591-01Z-00-DX1_001",
+      "patient_id": "TCGA-50-6591",
+      "organ": "lung",
+      "source_mpp": 0.252,
+      "model_mpp": 0.25,
+      "width": 760,
+      "height": 1500,
+      "annotated_cells": 314,
+      "n_cells": 314,
+      "correct": 313,
+      "accuracy": 0.99682,
+      "support": {
+        "epithelial": 313,
+        "lymphocyte": 1,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "confusion_matrix": [
+        [
+          313,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "dapi_qc": {
+        "nuclear_to_non_nuclear_mean_ratio": 1.694,
+        "top_decile_nuclear_enrichment": 2.353,
+        "passes_enrichment_screen": true,
+        "paired_nuclei": 314,
+        "median_nucleus_to_local_ring_ratio": 1.149,
+        "fraction_nuclei_brighter_than_local_ring": 0.815
+      }
+    },
+    {
+      "sample_id": "TCGA-55-7573-01Z-00-DX1_004",
+      "patient_id": "TCGA-55-7573",
+      "organ": "lung",
+      "source_mpp": 0.252,
+      "model_mpp": 0.25,
+      "width": 868,
+      "height": 1974,
+      "annotated_cells": 311,
+      "n_cells": 311,
+      "correct": 299,
+      "accuracy": 0.96141,
+      "support": {
+        "epithelial": 292,
+        "lymphocyte": 19,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "confusion_matrix": [
+        [
+          285,
+          7,
+          0,
+          0
+        ],
+        [
+          5,
+          14,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "dapi_qc": {
+        "nuclear_to_non_nuclear_mean_ratio": 1.219,
+        "top_decile_nuclear_enrichment": 3.011,
+        "passes_enrichment_screen": true,
+        "paired_nuclei": 311,
+        "median_nucleus_to_local_ring_ratio": 1.071,
+        "fraction_nuclei_brighter_than_local_ring": 0.768
+      }
+    },
+    {
+      "sample_id": "TCGA-73-4662-01Z-00-DX1_003",
+      "patient_id": "TCGA-73-4662",
+      "organ": "lung",
+      "source_mpp": 0.252,
+      "model_mpp": 0.25,
+      "width": 735,
+      "height": 2500,
+      "annotated_cells": 316,
+      "n_cells": 316,
+      "correct": 287,
+      "accuracy": 0.90823,
+      "support": {
+        "epithelial": 287,
+        "lymphocyte": 29,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "confusion_matrix": [
+        [
+          287,
+          0,
+          0,
+          0
+        ],
+        [
+          29,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "dapi_qc": {
+        "nuclear_to_non_nuclear_mean_ratio": 1.315,
+        "top_decile_nuclear_enrichment": 2.076,
+        "passes_enrichment_screen": true,
+        "paired_nuclei": 316,
+        "median_nucleus_to_local_ring_ratio": 1.159,
+        "fraction_nuclei_brighter_than_local_ring": 0.816
+      }
+    },
+    {
+      "sample_id": "TCGA-A2-A04X-01Z-00-DX1_001",
+      "patient_id": "TCGA-A2-A04X",
+      "organ": "breast",
+      "source_mpp": 0.2505,
+      "model_mpp": 0.25,
+      "width": 1007,
+      "height": 912,
+      "annotated_cells": 639,
+      "n_cells": 639,
+      "correct": 457,
+      "accuracy": 0.71518,
+      "support": {
+        "epithelial": 84,
+        "lymphocyte": 555,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "confusion_matrix": [
+        [
+          80,
+          4,
+          0,
+          0
+        ],
+        [
+          175,
+          377,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "dapi_qc": {
+        "nuclear_to_non_nuclear_mean_ratio": 0.993,
+        "top_decile_nuclear_enrichment": 0.787,
+        "passes_enrichment_screen": false,
+        "paired_nuclei": 639,
+        "median_nucleus_to_local_ring_ratio": 1.041,
+        "fraction_nuclei_brighter_than_local_ring": 0.588
+      }
+    },
+    {
+      "sample_id": "TCGA-A2-A04X-01Z-00-DX1_002",
+      "patient_id": "TCGA-A2-A04X",
+      "organ": "breast",
+      "source_mpp": 0.2505,
+      "model_mpp": 0.25,
+      "width": 892,
+      "height": 781,
+      "annotated_cells": 192,
+      "n_cells": 192,
+      "correct": 175,
+      "accuracy": 0.91146,
+      "support": {
+        "epithelial": 175,
+        "lymphocyte": 0,
+        "macrophage": 17,
+        "neutrophil": 0
+      },
+      "confusion_matrix": [
+        [
+          175,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          17,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "dapi_qc": {
+        "nuclear_to_non_nuclear_mean_ratio": 1.249,
+        "top_decile_nuclear_enrichment": 1.914,
+        "passes_enrichment_screen": true,
+        "paired_nuclei": 192,
+        "median_nucleus_to_local_ring_ratio": 0.903,
+        "fraction_nuclei_brighter_than_local_ring": 0.391
+      }
+    },
+    {
+      "sample_id": "TCGA-A2-A04X-01Z-00-DX1_004",
+      "patient_id": "TCGA-A2-A04X",
+      "organ": "breast",
+      "source_mpp": 0.2505,
+      "model_mpp": 0.25,
+      "width": 736,
+      "height": 556,
+      "annotated_cells": 139,
+      "n_cells": 139,
+      "correct": 128,
+      "accuracy": 0.92086,
+      "support": {
+        "epithelial": 139,
+        "lymphocyte": 0,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "confusion_matrix": [
+        [
+          128,
+          11,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "dapi_qc": {
+        "nuclear_to_non_nuclear_mean_ratio": 1.229,
+        "top_decile_nuclear_enrichment": 1.961,
+        "passes_enrichment_screen": true,
+        "paired_nuclei": 139,
+        "median_nucleus_to_local_ring_ratio": 0.973,
+        "fraction_nuclei_brighter_than_local_ring": 0.482
+      }
+    },
+    {
+      "sample_id": "TCGA-A2-A0ES-01Z-00-DX1_002",
+      "patient_id": "TCGA-A2-A0ES",
+      "organ": "breast",
+      "source_mpp": 0.2505,
+      "model_mpp": 0.25,
+      "width": 726,
+      "height": 879,
+      "annotated_cells": 275,
+      "n_cells": 275,
+      "correct": 275,
+      "accuracy": 1.0,
+      "support": {
+        "epithelial": 275,
+        "lymphocyte": 0,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "confusion_matrix": [
+        [
+          275,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "dapi_qc": {
+        "nuclear_to_non_nuclear_mean_ratio": 1.374,
+        "top_decile_nuclear_enrichment": 1.977,
+        "passes_enrichment_screen": true,
+        "paired_nuclei": 275,
+        "median_nucleus_to_local_ring_ratio": 1.153,
+        "fraction_nuclei_brighter_than_local_ring": 0.633
+      }
+    },
+    {
+      "sample_id": "TCGA-D8-A3Z6-01Z-00-DX2_002",
+      "patient_id": "TCGA-D8-A3Z6",
+      "organ": "breast",
+      "source_mpp": 0.248,
+      "model_mpp": 0.25,
+      "width": 1079,
+      "height": 992,
+      "annotated_cells": 295,
+      "n_cells": 295,
+      "correct": 288,
+      "accuracy": 0.97627,
+      "support": {
+        "epithelial": 288,
+        "lymphocyte": 7,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "confusion_matrix": [
+        [
+          288,
+          0,
+          0,
+          0
+        ],
+        [
+          7,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "dapi_qc": {
+        "nuclear_to_non_nuclear_mean_ratio": 2.0,
+        "top_decile_nuclear_enrichment": 12.769,
+        "passes_enrichment_screen": true,
+        "paired_nuclei": 295,
+        "median_nucleus_to_local_ring_ratio": 1.446,
+        "fraction_nuclei_brighter_than_local_ring": 0.973
+      }
+    },
+    {
+      "sample_id": "TCGA-DW-7838-01Z-00-DX1_1",
+      "patient_id": "TCGA-DW-7838",
+      "organ": "kidney",
+      "source_mpp": 0.252,
+      "model_mpp": 0.25,
+      "width": 676,
+      "height": 578,
+      "annotated_cells": 625,
+      "n_cells": 625,
+      "correct": 419,
+      "accuracy": 0.6704,
+      "support": {
+        "epithelial": 0,
+        "lymphocyte": 625,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          202,
+          419,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "dapi_qc": {
+        "nuclear_to_non_nuclear_mean_ratio": 0.899,
+        "top_decile_nuclear_enrichment": 0.64,
+        "passes_enrichment_screen": false,
+        "paired_nuclei": 625,
+        "median_nucleus_to_local_ring_ratio": 0.958,
+        "fraction_nuclei_brighter_than_local_ring": 0.363
+      }
+    },
+    {
+      "sample_id": "TCGA-DW-7838-01Z-00-DX1_2",
+      "patient_id": "TCGA-DW-7838",
+      "organ": "kidney",
+      "source_mpp": 0.252,
+      "model_mpp": 0.25,
+      "width": 858,
+      "height": 523,
+      "annotated_cells": 205,
+      "n_cells": 205,
+      "correct": 152,
+      "accuracy": 0.74146,
+      "support": {
+        "epithelial": 187,
+        "lymphocyte": 18,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "confusion_matrix": [
+        [
+          139,
+          48,
+          0,
+          0
+        ],
+        [
+          5,
+          13,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "dapi_qc": {
+        "nuclear_to_non_nuclear_mean_ratio": 1.101,
+        "top_decile_nuclear_enrichment": 1.269,
+        "passes_enrichment_screen": true,
+        "paired_nuclei": 205,
+        "median_nucleus_to_local_ring_ratio": 1.046,
+        "fraction_nuclei_brighter_than_local_ring": 0.615
+      }
+    },
+    {
+      "sample_id": "TCGA-E2-A108-01Z-00-DX1_001",
+      "patient_id": "TCGA-E2-A108",
+      "organ": "breast",
+      "source_mpp": 0.248,
+      "model_mpp": 0.25,
+      "width": 748,
+      "height": 833,
+      "annotated_cells": 458,
+      "n_cells": 458,
+      "correct": 371,
+      "accuracy": 0.81004,
+      "support": {
+        "epithelial": 97,
+        "lymphocyte": 361,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "confusion_matrix": [
+        [
+          76,
+          21,
+          0,
+          0
+        ],
+        [
+          66,
+          295,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "dapi_qc": {
+        "nuclear_to_non_nuclear_mean_ratio": 1.571,
+        "top_decile_nuclear_enrichment": 4.244,
+        "passes_enrichment_screen": true,
+        "paired_nuclei": 458,
+        "median_nucleus_to_local_ring_ratio": 1.296,
+        "fraction_nuclei_brighter_than_local_ring": 0.939
+      }
+    },
+    {
+      "sample_id": "TCGA-E2-A108-01Z-00-DX1_002",
+      "patient_id": "TCGA-E2-A108",
+      "organ": "breast",
+      "source_mpp": 0.248,
+      "model_mpp": 0.25,
+      "width": 783,
+      "height": 518,
+      "annotated_cells": 68,
+      "n_cells": 68,
+      "correct": 66,
+      "accuracy": 0.97059,
+      "support": {
+        "epithelial": 66,
+        "lymphocyte": 2,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "confusion_matrix": [
+        [
+          66,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "dapi_qc": {
+        "nuclear_to_non_nuclear_mean_ratio": 3.463,
+        "top_decile_nuclear_enrichment": 7.436,
+        "passes_enrichment_screen": true,
+        "paired_nuclei": 68,
+        "median_nucleus_to_local_ring_ratio": 1.831,
+        "fraction_nuclei_brighter_than_local_ring": 0.971
+      }
+    },
+    {
+      "sample_id": "TCGA-E2-A108-01Z-00-DX1_003",
+      "patient_id": "TCGA-E2-A108",
+      "organ": "breast",
+      "source_mpp": 0.248,
+      "model_mpp": 0.25,
+      "width": 633,
+      "height": 885,
+      "annotated_cells": 108,
+      "n_cells": 108,
+      "correct": 106,
+      "accuracy": 0.98148,
+      "support": {
+        "epithelial": 106,
+        "lymphocyte": 2,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "confusion_matrix": [
+        [
+          106,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "dapi_qc": {
+        "nuclear_to_non_nuclear_mean_ratio": 3.188,
+        "top_decile_nuclear_enrichment": 12.485,
+        "passes_enrichment_screen": true,
+        "paired_nuclei": 108,
+        "median_nucleus_to_local_ring_ratio": 1.488,
+        "fraction_nuclei_brighter_than_local_ring": 0.963
+      }
+    },
+    {
+      "sample_id": "TCGA-F9-A8NY-01Z-00-DX1_1",
+      "patient_id": "TCGA-F9-A8NY",
+      "organ": "kidney",
+      "source_mpp": 0.2525,
+      "model_mpp": 0.25,
+      "width": 1401,
+      "height": 2150,
+      "annotated_cells": 861,
+      "n_cells": 861,
+      "correct": 796,
+      "accuracy": 0.92451,
+      "support": {
+        "epithelial": 822,
+        "lymphocyte": 39,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "confusion_matrix": [
+        [
+          784,
+          37,
+          1,
+          0
+        ],
+        [
+          27,
+          12,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "dapi_qc": {
+        "nuclear_to_non_nuclear_mean_ratio": 1.555,
+        "top_decile_nuclear_enrichment": 1.571,
+        "passes_enrichment_screen": true,
+        "paired_nuclei": 861,
+        "median_nucleus_to_local_ring_ratio": 1.314,
+        "fraction_nuclei_brighter_than_local_ring": 0.693
+      }
+    },
+    {
+      "sample_id": "TCGA-F9-A8NY-01Z-00-DX1_3",
+      "patient_id": "TCGA-F9-A8NY",
+      "organ": "kidney",
+      "source_mpp": 0.2525,
+      "model_mpp": 0.25,
+      "width": 796,
+      "height": 567,
+      "annotated_cells": 311,
+      "n_cells": 311,
+      "correct": 257,
+      "accuracy": 0.82637,
+      "support": {
+        "epithelial": 10,
+        "lymphocyte": 301,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "confusion_matrix": [
+        [
+          3,
+          7,
+          0,
+          0
+        ],
+        [
+          24,
+          254,
+          0,
+          23
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "dapi_qc": {
+        "nuclear_to_non_nuclear_mean_ratio": 1.296,
+        "top_decile_nuclear_enrichment": 1.2,
+        "passes_enrichment_screen": true,
+        "paired_nuclei": 311,
+        "median_nucleus_to_local_ring_ratio": 1.002,
+        "fraction_nuclei_brighter_than_local_ring": 0.534
+      }
+    },
+    {
+      "sample_id": "TCGA-G9-6356-01Z-00-DX1_1",
+      "patient_id": "TCGA-G9-6356",
+      "organ": "prostate",
+      "source_mpp": 0.252,
+      "model_mpp": 0.25,
+      "width": 1158,
+      "height": 1026,
+      "annotated_cells": 377,
+      "n_cells": 377,
+      "correct": 282,
+      "accuracy": 0.74801,
+      "support": {
+        "epithelial": 347,
+        "lymphocyte": 30,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "confusion_matrix": [
+        [
+          265,
+          77,
+          2,
+          3
+        ],
+        [
+          11,
+          17,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "dapi_qc": {
+        "nuclear_to_non_nuclear_mean_ratio": 1.319,
+        "top_decile_nuclear_enrichment": 2.218,
+        "passes_enrichment_screen": true,
+        "paired_nuclei": 377,
+        "median_nucleus_to_local_ring_ratio": 1.073,
+        "fraction_nuclei_brighter_than_local_ring": 0.878
+      }
+    },
+    {
+      "sample_id": "TCGA-G9-6356-01Z-00-DX1_6",
+      "patient_id": "TCGA-G9-6356",
+      "organ": "prostate",
+      "source_mpp": 0.252,
+      "model_mpp": 0.25,
+      "width": 563,
+      "height": 547,
+      "annotated_cells": 31,
+      "n_cells": 31,
+      "correct": 15,
+      "accuracy": 0.48387,
+      "support": {
+        "epithelial": 14,
+        "lymphocyte": 0,
+        "macrophage": 17,
+        "neutrophil": 0
+      },
+      "confusion_matrix": [
+        [
+          14,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          16,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "dapi_qc": {
+        "nuclear_to_non_nuclear_mean_ratio": 1.915,
+        "top_decile_nuclear_enrichment": 6.817,
+        "passes_enrichment_screen": true,
+        "paired_nuclei": 31,
+        "median_nucleus_to_local_ring_ratio": 1.274,
+        "fraction_nuclei_brighter_than_local_ring": 0.871
+      }
+    },
+    {
+      "sample_id": "TCGA-G9-6367-01Z-00-DX1_1",
+      "patient_id": "TCGA-G9-6367",
+      "organ": "prostate",
+      "source_mpp": 0.252,
+      "model_mpp": 0.25,
+      "width": 840,
+      "height": 635,
+      "annotated_cells": 583,
+      "n_cells": 583,
+      "correct": 442,
+      "accuracy": 0.75815,
+      "support": {
+        "epithelial": 0,
+        "lymphocyte": 582,
+        "macrophage": 0,
+        "neutrophil": 1
+      },
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          136,
+          442,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "dapi_qc": {
+        "nuclear_to_non_nuclear_mean_ratio": 1.128,
+        "top_decile_nuclear_enrichment": 1.431,
+        "passes_enrichment_screen": true,
+        "paired_nuclei": 583,
+        "median_nucleus_to_local_ring_ratio": 1.119,
+        "fraction_nuclei_brighter_than_local_ring": 0.755
+      }
+    },
+    {
+      "sample_id": "TCGA-G9-6367-01Z-00-DX1_2",
+      "patient_id": "TCGA-G9-6367",
+      "organ": "prostate",
+      "source_mpp": 0.252,
+      "model_mpp": 0.25,
+      "width": 1164,
+      "height": 1005,
+      "annotated_cells": 245,
+      "n_cells": 245,
+      "correct": 189,
+      "accuracy": 0.77143,
+      "support": {
+        "epithelial": 244,
+        "lymphocyte": 1,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "confusion_matrix": [
+        [
+          188,
+          32,
+          10,
+          14
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "dapi_qc": {
+        "nuclear_to_non_nuclear_mean_ratio": 1.718,
+        "top_decile_nuclear_enrichment": 5.368,
+        "passes_enrichment_screen": true,
+        "paired_nuclei": 245,
+        "median_nucleus_to_local_ring_ratio": 1.13,
+        "fraction_nuclei_brighter_than_local_ring": 0.914
+      }
+    },
+    {
+      "sample_id": "TCGA-G9-6367-01Z-00-DX1_7",
+      "patient_id": "TCGA-G9-6367",
+      "organ": "prostate",
+      "source_mpp": 0.252,
+      "model_mpp": 0.25,
+      "width": 709,
+      "height": 633,
+      "annotated_cells": 110,
+      "n_cells": 110,
+      "correct": 109,
+      "accuracy": 0.99091,
+      "support": {
+        "epithelial": 110,
+        "lymphocyte": 0,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "confusion_matrix": [
+        [
+          109,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "dapi_qc": {
+        "nuclear_to_non_nuclear_mean_ratio": 1.725,
+        "top_decile_nuclear_enrichment": 3.647,
+        "passes_enrichment_screen": true,
+        "paired_nuclei": 110,
+        "median_nucleus_to_local_ring_ratio": 1.138,
+        "fraction_nuclei_brighter_than_local_ring": 0.836
+      }
+    },
+    {
+      "sample_id": "TCGA-IZ-A6M9-01Z-00-DX1_1",
+      "patient_id": "TCGA-IZ-A6M9",
+      "organ": "kidney",
+      "source_mpp": 0.2485,
+      "model_mpp": 0.25,
+      "width": 600,
+      "height": 600,
+      "annotated_cells": 148,
+      "n_cells": 148,
+      "correct": 80,
+      "accuracy": 0.54054,
+      "support": {
+        "epithelial": 139,
+        "lymphocyte": 9,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "confusion_matrix": [
+        [
+          73,
+          64,
+          0,
+          2
+        ],
+        [
+          2,
+          7,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "dapi_qc": {
+        "nuclear_to_non_nuclear_mean_ratio": 1.393,
+        "top_decile_nuclear_enrichment": 2.119,
+        "passes_enrichment_screen": true,
+        "paired_nuclei": 148,
+        "median_nucleus_to_local_ring_ratio": 1.028,
+        "fraction_nuclei_brighter_than_local_ring": 0.635
+      }
+    },
+    {
+      "sample_id": "TCGA-IZ-A6M9-01Z-00-DX1_2",
+      "patient_id": "TCGA-IZ-A6M9",
+      "organ": "kidney",
+      "source_mpp": 0.2485,
+      "model_mpp": 0.25,
+      "width": 1500,
+      "height": 1251,
+      "annotated_cells": 436,
+      "n_cells": 436,
+      "correct": 402,
+      "accuracy": 0.92202,
+      "support": {
+        "epithelial": 423,
+        "lymphocyte": 13,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "confusion_matrix": [
+        [
+          398,
+          18,
+          6,
+          1
+        ],
+        [
+          9,
+          4,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "dapi_qc": {
+        "nuclear_to_non_nuclear_mean_ratio": 1.552,
+        "top_decile_nuclear_enrichment": 2.756,
+        "passes_enrichment_screen": true,
+        "paired_nuclei": 436,
+        "median_nucleus_to_local_ring_ratio": 1.126,
+        "fraction_nuclei_brighter_than_local_ring": 0.787
+      }
+    },
+    {
+      "sample_id": "TCGA-VP-A87E-01Z-00-DX1_5",
+      "patient_id": "TCGA-VP-A87E",
+      "organ": "prostate",
+      "source_mpp": 0.2501,
+      "model_mpp": 0.25,
+      "width": 1872,
+      "height": 1400,
+      "annotated_cells": 553,
+      "n_cells": 553,
+      "correct": 532,
+      "accuracy": 0.96203,
+      "support": {
+        "epithelial": 535,
+        "lymphocyte": 17,
+        "macrophage": 0,
+        "neutrophil": 1
+      },
+      "confusion_matrix": [
+        [
+          532,
+          0,
+          3,
+          0
+        ],
+        [
+          16,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "dapi_qc": {
+        "nuclear_to_non_nuclear_mean_ratio": 2.014,
+        "top_decile_nuclear_enrichment": 4.118,
+        "passes_enrichment_screen": true,
+        "paired_nuclei": 553,
+        "median_nucleus_to_local_ring_ratio": 1.523,
+        "fraction_nuclei_brighter_than_local_ring": 0.886
+      }
+    },
+    {
+      "sample_id": "TCGA-VP-A87H-01Z-00-DX1_1",
+      "patient_id": "TCGA-VP-A87H",
+      "organ": "prostate",
+      "source_mpp": 0.2501,
+      "model_mpp": 0.25,
+      "width": 615,
+      "height": 566,
+      "annotated_cells": 442,
+      "n_cells": 442,
+      "correct": 244,
+      "accuracy": 0.55204,
+      "support": {
+        "epithelial": 0,
+        "lymphocyte": 442,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          76,
+          244,
+          0,
+          122
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "dapi_qc": {
+        "nuclear_to_non_nuclear_mean_ratio": 1.051,
+        "top_decile_nuclear_enrichment": 0.677,
+        "passes_enrichment_screen": false,
+        "paired_nuclei": 442,
+        "median_nucleus_to_local_ring_ratio": 0.997,
+        "fraction_nuclei_brighter_than_local_ring": 0.421
+      }
+    },
+    {
+      "sample_id": "TCGA-VP-A87H-01Z-00-DX1_2",
+      "patient_id": "TCGA-VP-A87H",
+      "organ": "prostate",
+      "source_mpp": 0.2501,
+      "model_mpp": 0.25,
+      "width": 1460,
+      "height": 1315,
+      "annotated_cells": 519,
+      "n_cells": 519,
+      "correct": 510,
+      "accuracy": 0.98266,
+      "support": {
+        "epithelial": 513,
+        "lymphocyte": 3,
+        "macrophage": 3,
+        "neutrophil": 0
+      },
+      "confusion_matrix": [
+        [
+          510,
+          2,
+          1,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "dapi_qc": {
+        "nuclear_to_non_nuclear_mean_ratio": 2.133,
+        "top_decile_nuclear_enrichment": 3.097,
+        "passes_enrichment_screen": true,
+        "paired_nuclei": 519,
+        "median_nucleus_to_local_ring_ratio": 1.2,
+        "fraction_nuclei_brighter_than_local_ring": 0.692
+      }
+    },
+    {
+      "sample_id": "TCGA-X4-A8KS-01Z-00-DX3_1",
+      "patient_id": "TCGA-X4-A8KS",
+      "organ": "prostate",
+      "source_mpp": 0.2527,
+      "model_mpp": 0.25,
+      "width": 787,
+      "height": 655,
+      "annotated_cells": 519,
+      "n_cells": 519,
+      "correct": 415,
+      "accuracy": 0.79961,
+      "support": {
+        "epithelial": 0,
+        "lymphocyte": 519,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          73,
+          415,
+          0,
+          31
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "dapi_qc": {
+        "nuclear_to_non_nuclear_mean_ratio": 0.976,
+        "top_decile_nuclear_enrichment": 0.854,
+        "passes_enrichment_screen": false,
+        "paired_nuclei": 519,
+        "median_nucleus_to_local_ring_ratio": 1.003,
+        "fraction_nuclei_brighter_than_local_ring": 0.536
+      }
+    },
+    {
+      "sample_id": "TCGA-YL-A9WL-01Z-00-DX1_1",
+      "patient_id": "TCGA-YL-A9WL",
+      "organ": "prostate",
+      "source_mpp": 0.2485,
+      "model_mpp": 0.25,
+      "width": 664,
+      "height": 653,
+      "annotated_cells": 205,
+      "n_cells": 205,
+      "correct": 199,
+      "accuracy": 0.97073,
+      "support": {
+        "epithelial": 202,
+        "lymphocyte": 3,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "confusion_matrix": [
+        [
+          199,
+          3,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "dapi_qc": {
+        "nuclear_to_non_nuclear_mean_ratio": 1.435,
+        "top_decile_nuclear_enrichment": 2.476,
+        "passes_enrichment_screen": true,
+        "paired_nuclei": 205,
+        "median_nucleus_to_local_ring_ratio": 1.036,
+        "fraction_nuclei_brighter_than_local_ring": 0.78
+      }
+    }
+  ]
+}
