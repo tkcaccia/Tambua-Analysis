@@ -36,7 +36,7 @@ function renderCase(sample) {
     ' Median nucleus/local-ring signal: ' + selected.dapi_qc.median_nucleus_to_local_ring_ratio.toFixed(2) + '×; ' +
     pct(selected.dapi_qc.fraction_nuclei_brighter_than_local_ring) + ' of nuclei are brighter than their ring. ' +
     (nuclearQc ? 'Retrospective QC on the saved native-size, pre-fix virtual DAPI JPEG versus expert nuclei: AUC ' + nuclearQc.auc.toFixed(3) +
-      ', Dice ' + nuclearQc.dice.toFixed(3) + ', status ' + nuclearQc.status.toUpperCase() + '. These markers are provisional pending corrected inference.' :
+      ', Dice ' + nuclearQc.prevalence_matched_dice.toFixed(3) + ', boundary contrast ' + (nuclearQc.nuclear_boundary_contrast === null ? 'insufficient' : nuclearQc.nuclear_boundary_contrast.toFixed(3)) + ', status ' + nuclearQc.status.toUpperCase() + '. These markers are provisional pending corrected inference.' :
       'Retrospective nuclear QC unavailable for this case.');
   const body = document.getElementById('matched-case-classes'); body.replaceChildren();
   for (const [index, name] of window.matchedResults.class_order.entries()) {
@@ -49,7 +49,7 @@ function renderCase(sample) {
     body.append(row);
   }
 }
-Promise.all(['results.json', 'nuclear-qc-legacy.json'].map(file => fetch(resultRoot + file).then(response => {
+Promise.all(['results.json', 'nuclear-qc-legacy-boundary-v2.json'].map(file => fetch(resultRoot + file).then(response => {
   if (!response.ok) throw Error(file + ' unavailable'); return response.json();
 }))).then(([data, qc]) => {
   window.matchedResults = data;
