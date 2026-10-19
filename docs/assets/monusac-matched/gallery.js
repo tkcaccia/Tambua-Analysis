@@ -14,6 +14,7 @@ function pct(value) { return (value * 100).toFixed(1) + '%'; }
 function renderCase(sample) {
   const selected = window.matchedResults.cases.find(item => item.sample_id === sample);
   if (!selected) return;
+  const nuclearQc = window.legacyNuclearQc.find(item => item.sample_id === sample);
   const gallery = document.getElementById('matched-gallery');
   gallery.replaceChildren();
   for (const [key, title, note] of imagePanels) {
@@ -33,7 +34,10 @@ function renderCase(sample) {
     selected.dapi_qc.top_decile_nuclear_enrichment.toFixed(2) + '×' +
     (selected.dapi_qc.passes_enrichment_screen ? '.' : ' — below the >1 screen.') +
     ' Median nucleus/local-ring signal: ' + selected.dapi_qc.median_nucleus_to_local_ring_ratio.toFixed(2) + '×; ' +
-    pct(selected.dapi_qc.fraction_nuclei_brighter_than_local_ring) + ' of nuclei are brighter than their ring.';
+    pct(selected.dapi_qc.fraction_nuclei_brighter_than_local_ring) + ' of nuclei are brighter than their ring. ' +
+    (nuclearQc ? 'Retrospective QC on the saved native-size, pre-fix virtual DAPI JPEG versus expert nuclei: AUC ' + nuclearQc.auc.toFixed(3) +
+      ', Dice ' + nuclearQc.dice.toFixed(3) + ', status ' + nuclearQc.status.toUpperCase() + '. These markers are provisional pending corrected inference.' :
+      'Retrospective nuclear QC unavailable for this case.');
   const body = document.getElementById('matched-case-classes'); body.replaceChildren();
   for (const [index, name] of window.matchedResults.class_order.entries()) {
     const support = selected.support[name];
@@ -45,10 +49,11 @@ function renderCase(sample) {
     body.append(row);
   }
 }
-fetch(resultRoot + 'results.json').then(response => {
-  if (!response.ok) throw Error('Result manifest unavailable'); return response.json();
-}).then(data => {
+Promise.all(['results.json', 'nuclear-qc-legacy.json'].map(file => fetch(resultRoot + file).then(response => {
+  if (!response.ok) throw Error(file + ' unavailable'); return response.json();
+}))).then(([data, qc]) => {
   window.matchedResults = data;
+  window.legacyNuclearQc = qc;
   const select = document.getElementById('matched-case');
   for (const [index, sample] of data.cases.entries()) {
     const option = document.createElement('option'); option.value = sample.sample_id;
