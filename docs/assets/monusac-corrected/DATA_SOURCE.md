@@ -27,14 +27,9 @@ The exact source for the classifier is
 version 0.4, with a SIMPLS-LDA CPU fit on 46 features (23 nuclear plus 23 cell
 proxy summaries). No UCT HPC GPU jobs were run.
 
-The native virtual-DAPI nuclear QC passed 50 images and failed 70. The passing
-subset contains 40 training and 10 test images from 29 and 10 patients,
-respectively, across all four tissues. Its patient-separated test has 4,082
-source-annotated regions. Accuracy is 95.71%, and equal-patient accuracy is
-95.50%. Epithelial recall is 96.55%; lymphocyte recall is 94.54%; all three
-macrophages were missed. There are no neutrophils in this QC-selected test
-subset, so a four-class balanced accuracy or macro F1 is undefined. See
-[`qc-pass-report.json`](qc-pass-report.json).
+Native virtual-DAPI status passed 50 images and failed 70. Two status-passing training images had insufficient evidence for a shadow check and were excluded by the stricter acceptance rule. The fully verified subset contains 38 training and 10 test images from 28 and 10 patients, respectively, across all four tissues. Its patient-separated test has 4,082 source-annotated regions. Accuracy is 96.01%, and equal-patient accuracy is 95.81%. Epithelial recall is 96.99%; lymphocyte recall is 94.60%; all three macrophages were missed. There are no neutrophils in this selected test subset, so four-class balanced accuracy and macro F1 are undefined. See [`qc-strict-report.json`](qc-strict-report.json). The earlier 40/10 QC-status-only score is retained as [`qc-pass-report.json`](qc-pass-report.json) for audit, not as the accepted result.
+
+The viewer includes all 88 fitted training images and all 32 patient-separated test images. Its default filter shows the 38 and 10 fully verified images, respectively; failed or insufficient-QC images can be displayed for visual diagnosis. Accepted-image prediction overlays come from the strict 38-image training fit. Excluded images retain clearly marked exploratory predictions from an all-image fit and do not contribute to the accepted score. Training predictions are fitted predictions, not held-out accuracy.
 
 The all-image score in the gallery is **diagnostic only** because it includes
 70 GigaTIME-QC failures. Across 10,776 held-out regions it has 96.65% accuracy,

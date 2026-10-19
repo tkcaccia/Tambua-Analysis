@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build all 32 expert-annotated held-out MoNuSAC image panels."""
+"""Build expert-annotated MoNuSAC panels for either frozen cohort split."""
 from __future__ import annotations
 
 import argparse
@@ -42,7 +42,9 @@ def overlay(he: Image.Image, ids: np.ndarray, labels: dict[int, str],
 
 
 def build(source: Path, scores: Path, site: Path,
-          *, asset_name: str = "monusac-matched") -> dict:
+          *, asset_name: str = "monusac-matched", split: str = "test") -> dict:
+    if split not in {"train", "test"}:
+        raise ValueError("Gallery split must be train or test")
     cohort = json.loads((source / "input/COHORT.json").read_text())
     report = json.loads((scores / "report.json").read_text())
     if not (source / "evidence/BUNDLE_COMPLETE.json").is_file():
@@ -55,19 +57,22 @@ def build(source: Path, scores: Path, site: Path,
                  for row in prediction_rows}
     if len(expert) != len(expert_rows) or len(predicted) != len(prediction_rows) or set(expert) != set(predicted):
         raise ValueError("Matched labels and predictions do not align one-to-one")
-    if asset_name not in {"monusac-matched", "monusac-corrected"}:
+    if asset_name not in {"monusac-matched", "monusac-corrected",
+                          "monusac-corrected-train"}:
         raise ValueError("Unrecognized gallery asset name")
+    if asset_name == "monusac-matched" and split != "test":
+        raise ValueError("Historical gallery supports only the held-out split")
     output = site / "assets" / asset_name
     output.mkdir(parents=True, exist_ok=False)
     cases = []
     for row in cohort["records"]:
-        if row["split"] != "test":
+        if row["split"] != split:
             continue
         sample = row["sample_id"]
         prepared = source / "prepared" / sample
         generated = source / "output" / sample
         provenance = json.loads((prepared / "provenance.json").read_text())
-        if asset_name == "monusac-corrected" and \
+        if asset_name.startswith("monusac-corrected") and \
                 provenance.get("source_color_reference") != "scanner_svs_rgb":
             raise ValueError(f"Gallery image is not scanner RGB: {sample}")
         if not (generated / "RUN_COMPLETE.json").is_file():
@@ -112,7 +117,8 @@ def build(source: Path, scores: Path, site: Path,
                      for actual in CLASSES]
         support = Counter(matched.values())
         correct = sum(matched[index] == predictions[index] for index in matched)
-        cases.append({"sample_id": sample, "patient_id": row["patient_id"],
+        cases.append({"sample_id": sample, "split": split,
+                      "patient_id": row["patient_id"],
                       "organ": row["organ"], "source_mpp": row["mpp"], "model_mpp": 0.25,
                       "width": row["width"], "height": row["height"],
                       "source_color_reference": provenance.get("source_color_reference"),
@@ -121,25 +127,32 @@ def build(source: Path, scores: Path, site: Path,
                       "correct": correct, "accuracy": round(correct / len(matched), 5),
                       "support": {name: support[name] for name in CLASSES},
                       "confusion_matrix": confusion, "dapi_qc": qc})
-    if len(cases) != 32 or sum(item["n_cells"] for item in cases) != report["test_cells"]:
-        raise ValueError("Gallery does not cover all 32 test images and scored cells")
-    if not np.array_equal(np.sum([case["confusion_matrix"] for case in cases], axis=0),
-                          np.asarray(report["test"]["confusion_matrix"])):
+    expected_images = 88 if split == "train" else 32
+    if len(cases) != expected_images or \
+            sum(item["n_cells"] for item in cases) != report[f"{split}_cells"]:
+        raise ValueError(f"Gallery does not cover all {expected_images} {split} images and scored cells")
+    if split == "test" and not np.array_equal(
+            np.sum([case["confusion_matrix"] for case in cases], axis=0),
+            np.asarray(report["test"]["confusion_matrix"])):
         raise ValueError("Gallery confusion disagrees with score report")
-    result = {"cohort": "MoNuSAC four-tissue patient-disjoint test",
+    result = {"cohort": "MoNuSAC four-tissue patient-disjoint cohort",
+              "split": split,
               "train_images": 88, "test_images": 32, "train_patients": 40,
               "test_patients": 19, "train_cells": report["train_cells"],
-              "test_cells": report["test_cells"], "test": report["test"],
-              "test_by_tissue": report["test_by_tissue"],
-              "test_equal_patient_accuracy": report["test_by_patient"]["equal_weight_accuracy"],
-              "majority_baseline": report["majority_baseline"],
+              "test_cells": report["test_cells"],
               "gigatime_quality_status": report.get("gigatime_quality_status"),
               "gigatime_quality_counts": report.get("gigatime_quality_counts"),
-              "dapi_qc_passed_test_images": sum(x["dapi_qc"]["passes_enrichment_screen"] for x in cases),
+              "dapi_qc_passed_images": sum(x["dapi_qc"]["passes_enrichment_screen"] for x in cases),
               "class_order": CLASSES,
               "class_coverage": class_coverage_report(cases, CLASSES),
-              "scope": "Conditional cell typing at expert nuclei, with a 3 µm nucleus-anchored cell proxy. Virtual markers are uncalibrated predictions.",
+              "scope": ("Fitted training predictions" if split == "train" else
+                        "Held-out test predictions") +
+                       " at expert nuclei, with a 3 µm nucleus-anchored cell proxy; virtual markers are uncalibrated predictions.",
               "cases": cases}
+    if split == "test":
+        result.update(test=report["test"], test_by_tissue=report["test_by_tissue"],
+                      test_equal_patient_accuracy=report["test_by_patient"]["equal_weight_accuracy"],
+                      majority_baseline=report["majority_baseline"])
     (output / "results.json").write_text(json.dumps(result, indent=2) + "\n")
     return result
 
@@ -149,10 +162,12 @@ if __name__ == "__main__":
     parser.add_argument("--results", type=Path, required=True)
     parser.add_argument("--scores", type=Path, required=True)
     parser.add_argument("--site", type=Path, required=True)
-    parser.add_argument("--asset-name", choices=("monusac-matched", "monusac-corrected"),
+    parser.add_argument("--asset-name", choices=("monusac-matched", "monusac-corrected",
+                                                 "monusac-corrected-train"),
                         default="monusac-matched")
+    parser.add_argument("--split", choices=("train", "test"), default="test")
     args = parser.parse_args()
-    result = build(args.results, args.scores, args.site, asset_name=args.asset_name)
-    print(json.dumps({"test_images": result["test_images"],
-                      "test_cells": result["test_cells"],
-                      "accuracy": result["test"]["accuracy"]}))
+    result = build(args.results, args.scores, args.site,
+                   asset_name=args.asset_name, split=args.split)
+    print(json.dumps({"split": args.split, "images": len(result["cases"]),
+                      "cells": sum(case["n_cells"] for case in result["cases"])}))

@@ -1,68 +1,11 @@
 {
-  "cohort": "MoNuSAC four-tissue patient-disjoint test",
+  "cohort": "MoNuSAC four-tissue patient-disjoint cohort",
   "train_images": 88,
   "test_images": 32,
   "train_patients": 40,
   "test_patients": 19,
   "train_cells": 23213,
   "test_cells": 10776,
-  "test": {
-    "n": 10776,
-    "accuracy": 0.9664996288047513,
-    "balanced_accuracy": 0.48359969739973735,
-    "macro_f1": 0.48383950149917815,
-    "missing_reference_classes": [],
-    "support": {
-      "epithelial": 6548,
-      "lymphocyte": 4178,
-      "macrophage": 46,
-      "neutrophil": 4
-    },
-    "recall": {
-      "epithelial": 0.9844227244960293,
-      "lymphocyte": 0.9499760651029201,
-      "macrophage": 0.0,
-      "neutrophil": 0.0
-    },
-    "f1": {
-      "epithelial": 0.9736424741333736,
-      "lymphocyte": 0.961715531863339,
-      "macrophage": 0.0,
-      "neutrophil": 0.0
-    },
-    "confusion_matrix": [
-      [
-        6446,
-        96,
-        0,
-        6
-      ],
-      [
-        208,
-        3969,
-        0,
-        1
-      ],
-      [
-        36,
-        10,
-        0,
-        0
-      ],
-      [
-        3,
-        1,
-        0,
-        0
-      ]
-    ],
-    "classes": [
-      "epithelial",
-      "lymphocyte",
-      "macrophage",
-      "neutrophil"
-    ]
-  },
   "test_by_tissue": {
     "breast": {
       "n": 2174,
@@ -369,7 +312,6 @@
     "fail": 70,
     "pass": 50
   },
-  "dapi_qc_passed_test_images": 32,
   "class_order": [
     "epithelial",
     "lymphocyte",
@@ -1073,14 +1015,126 @@
       "height": 755,
       "source_color_reference": "scanner_svs_rgb",
       "native_nuclear_qc": {
+        "schema_version": 2,
+        "scope": "virtual_DAPI_vs_HE_derived_nuclear_mask",
+        "sampling_stride_px": 1,
+        "sampled_windows": 1,
+        "nuclear_pixels": 120984,
+        "nearby_extranuclear_pixels": 111530,
+        "thresholds": {
+          "min_auc": 0.7,
+          "min_prevalence_matched_dice": 0.35,
+          "min_edge_to_core_nuclear_mean_ratio": 0.65,
+          "min_nuclear_boundary_contrast": 0.05,
+          "min_spatial_nuclear_auc": 0.6,
+          "min_spatial_positive_and_negative_pixels": 500
+        },
+        "interpretation_limit": "Agreement with H&E-derived nuclei does not establish measured DAPI accuracy. A poor StarDist mask can also lower this score. Inspect the overlay and mask.",
         "status": "fail",
         "alignment_status": "fail",
         "border_shadow_status": "pass",
         "spatial_shadow_status": "pass",
+        "spatial_regions": [
+          {
+            "row": 0,
+            "column": 0,
+            "nuclear_pixels": 13185,
+            "nearby_extranuclear_pixels": 13170,
+            "auc": 0.8025523412658306,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 1,
+            "nuclear_pixels": 15176,
+            "nearby_extranuclear_pixels": 12925,
+            "auc": 0.8618375471195994,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 2,
+            "nuclear_pixels": 15216,
+            "nearby_extranuclear_pixels": 14300,
+            "auc": 0.78499614869883,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 0,
+            "nuclear_pixels": 10442,
+            "nearby_extranuclear_pixels": 9453,
+            "auc": 0.8712363243160707,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 1,
+            "nuclear_pixels": 19219,
+            "nearby_extranuclear_pixels": 15746,
+            "auc": 0.8510218084535944,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 2,
+            "nuclear_pixels": 14444,
+            "nearby_extranuclear_pixels": 13500,
+            "auc": 0.8465192185400576,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 0,
+            "nuclear_pixels": 11433,
+            "nearby_extranuclear_pixels": 10467,
+            "auc": 0.8572452650331254,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 1,
+            "nuclear_pixels": 11057,
+            "nearby_extranuclear_pixels": 11459,
+            "auc": 0.820424482413927,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 2,
+            "nuclear_pixels": 10812,
+            "nearby_extranuclear_pixels": 10510,
+            "auc": 0.820947647590354,
+            "status": "pass"
+          }
+        ],
+        "eligible_spatial_regions": 9,
+        "failed_spatial_regions": 0,
+        "alignment_score": 0.566494912908447,
         "auc": 0.828286694907076,
         "prevalence_matched_dice": 0.7647920713838859,
+        "prevalence_matched_threshold": 0.9176470588235294,
         "nuclear_boundary_contrast": 0.03760816012431967,
-        "edge_to_core_nuclear_mean_ratio": 1.0094552176069922
+        "nuclear_inner_boundary_pixels": 26738,
+        "nearby_outer_boundary_pixels": 28591,
+        "edge_to_core_nuclear_mean_ratio": 1.0094552176069922,
+        "edge_nuclear_pixels": 13416,
+        "core_nuclear_pixels": 107568,
+        "sampled_stratified_windows": 1,
+        "shadow_preview": "output_gigatime_shadow_qc.png",
+        "preview": "output_gigatime_nuclear_qc.png",
+        "preview_region_yxyx": [
+          0,
+          763,
+          0,
+          607
+        ],
+        "image": "/mnt/sata_ssd/Tambua-monusac-rgb-corrected-2026-10-20-v1/output/TCGA-2Z-A9JG-01Z-00-DX1_4/gigatime_output/gigatime_probs.zarr",
+        "nuclei_mask": "/mnt/sata_ssd/Tambua-monusac-matched-2026-10-19-prep-v3-scanner-rgb/TCGA-2Z-A9JG-01Z-00-DX1_4/expert_nuclei.ome.tif",
+        "image_shape_yx": [
+          763,
+          607
+        ]
       },
       "annotated_cells": 150,
       "n_cells": 150,
@@ -1125,7 +1179,10 @@
         "paired_nuclei": 150,
         "median_nucleus_to_local_ring_ratio": 1.625,
         "fraction_nuclei_brighter_than_local_ring": 1.0
-      }
+      },
+      "accepted_qc": false,
+      "model_scope": "diagnostic_all_image_fit_failed_or_insufficient_qc",
+      "split": "test"
     },
     {
       "sample_id": "TCGA-2Z-A9JG-01Z-00-DX1_5",
@@ -1137,14 +1194,126 @@
       "height": 585,
       "source_color_reference": "scanner_svs_rgb",
       "native_nuclear_qc": {
+        "schema_version": 2,
+        "scope": "virtual_DAPI_vs_HE_derived_nuclear_mask",
+        "sampling_stride_px": 2,
+        "sampled_windows": 1,
+        "nuclear_pixels": 37560,
+        "nearby_extranuclear_pixels": 49468,
+        "thresholds": {
+          "min_auc": 0.7,
+          "min_prevalence_matched_dice": 0.35,
+          "min_edge_to_core_nuclear_mean_ratio": 0.65,
+          "min_nuclear_boundary_contrast": 0.05,
+          "min_spatial_nuclear_auc": 0.6,
+          "min_spatial_positive_and_negative_pixels": 500
+        },
+        "interpretation_limit": "Agreement with H&E-derived nuclei does not establish measured DAPI accuracy. A poor StarDist mask can also lower this score. Inspect the overlay and mask.",
         "status": "pass",
         "alignment_status": "pass",
         "border_shadow_status": "pass",
         "spatial_shadow_status": "pass",
+        "spatial_regions": [
+          {
+            "row": 0,
+            "column": 0,
+            "nuclear_pixels": 4005,
+            "nearby_extranuclear_pixels": 5253,
+            "auc": 0.6886132482882975,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 1,
+            "nuclear_pixels": 3948,
+            "nearby_extranuclear_pixels": 5487,
+            "auc": 0.7539607525866149,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 2,
+            "nuclear_pixels": 4537,
+            "nearby_extranuclear_pixels": 6088,
+            "auc": 0.6938263596702482,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 0,
+            "nuclear_pixels": 4441,
+            "nearby_extranuclear_pixels": 5353,
+            "auc": 0.7242802481656143,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 1,
+            "nuclear_pixels": 3968,
+            "nearby_extranuclear_pixels": 5400,
+            "auc": 0.7918149594907408,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 2,
+            "nuclear_pixels": 4057,
+            "nearby_extranuclear_pixels": 5500,
+            "auc": 0.7561267842337598,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 0,
+            "nuclear_pixels": 5031,
+            "nearby_extranuclear_pixels": 6136,
+            "auc": 0.6989415947073386,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 1,
+            "nuclear_pixels": 3674,
+            "nearby_extranuclear_pixels": 4939,
+            "auc": 0.7527672663655002,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 2,
+            "nuclear_pixels": 3899,
+            "nearby_extranuclear_pixels": 5312,
+            "auc": 0.7939018432668865,
+            "status": "pass"
+          }
+        ],
+        "eligible_spatial_regions": 9,
+        "failed_spatial_regions": 0,
+        "alignment_score": 0.45977641078964226,
         "auc": 0.7338533271969022,
         "prevalence_matched_dice": 0.6118002544529262,
+        "prevalence_matched_threshold": 0.7450980392156863,
         "nuclear_boundary_contrast": 0.058378415983606824,
-        "edge_to_core_nuclear_mean_ratio": 1.0027939336041052
+        "nuclear_inner_boundary_pixels": 24426,
+        "nearby_outer_boundary_pixels": 28362,
+        "edge_to_core_nuclear_mean_ratio": 1.0027939336041052,
+        "edge_nuclear_pixels": 5965,
+        "core_nuclear_pixels": 31595,
+        "sampled_stratified_windows": 1,
+        "shadow_preview": "output_gigatime_shadow_qc.png",
+        "preview": "output_gigatime_nuclear_qc.png",
+        "preview_region_yxyx": [
+          0,
+          591,
+          0,
+          848
+        ],
+        "image": "/mnt/sata_ssd/Tambua-monusac-rgb-corrected-2026-10-20-v1/output/TCGA-2Z-A9JG-01Z-00-DX1_5/gigatime_output/gigatime_probs.zarr",
+        "nuclei_mask": "/mnt/sata_ssd/Tambua-monusac-matched-2026-10-19-prep-v3-scanner-rgb/TCGA-2Z-A9JG-01Z-00-DX1_5/expert_nuclei.ome.tif",
+        "image_shape_yx": [
+          591,
+          848
+        ]
       },
       "annotated_cells": 587,
       "n_cells": 587,
@@ -1189,7 +1358,10 @@
         "paired_nuclei": 587,
         "median_nucleus_to_local_ring_ratio": 1.476,
         "fraction_nuclei_brighter_than_local_ring": 0.971
-      }
+      },
+      "accepted_qc": true,
+      "model_scope": "strict_qc_fastpls_fit",
+      "split": "test"
     },
     {
       "sample_id": "TCGA-2Z-A9JG-01Z-00-DX1_6",
@@ -1201,14 +1373,126 @@
       "height": 582,
       "source_color_reference": "scanner_svs_rgb",
       "native_nuclear_qc": {
+        "schema_version": 2,
+        "scope": "virtual_DAPI_vs_HE_derived_nuclear_mask",
+        "sampling_stride_px": 1,
+        "sampled_windows": 1,
+        "nuclear_pixels": 111451,
+        "nearby_extranuclear_pixels": 53651,
+        "thresholds": {
+          "min_auc": 0.7,
+          "min_prevalence_matched_dice": 0.35,
+          "min_edge_to_core_nuclear_mean_ratio": 0.65,
+          "min_nuclear_boundary_contrast": 0.05,
+          "min_spatial_nuclear_auc": 0.6,
+          "min_spatial_positive_and_negative_pixels": 500
+        },
+        "interpretation_limit": "Agreement with H&E-derived nuclei does not establish measured DAPI accuracy. A poor StarDist mask can also lower this score. Inspect the overlay and mask.",
         "status": "fail",
         "alignment_status": "fail",
         "border_shadow_status": "pass",
         "spatial_shadow_status": "fail",
+        "spatial_regions": [
+          {
+            "row": 0,
+            "column": 0,
+            "nuclear_pixels": 14655,
+            "nearby_extranuclear_pixels": 5870,
+            "auc": 0.3151853563243644,
+            "status": "fail"
+          },
+          {
+            "row": 0,
+            "column": 1,
+            "nuclear_pixels": 12614,
+            "nearby_extranuclear_pixels": 6735,
+            "auc": 0.4035464418990271,
+            "status": "fail"
+          },
+          {
+            "row": 0,
+            "column": 2,
+            "nuclear_pixels": 19986,
+            "nearby_extranuclear_pixels": 4876,
+            "auc": 0.33839822001734277,
+            "status": "fail"
+          },
+          {
+            "row": 1,
+            "column": 0,
+            "nuclear_pixels": 7587,
+            "nearby_extranuclear_pixels": 6594,
+            "auc": 0.8497981397789484,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 1,
+            "nuclear_pixels": 7831,
+            "nearby_extranuclear_pixels": 6464,
+            "auc": 0.7864267809865841,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 2,
+            "nuclear_pixels": 9056,
+            "nearby_extranuclear_pixels": 4832,
+            "auc": 0.46241043358981937,
+            "status": "fail"
+          },
+          {
+            "row": 2,
+            "column": 0,
+            "nuclear_pixels": 7269,
+            "nearby_extranuclear_pixels": 6589,
+            "auc": 0.8519989512154195,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 1,
+            "nuclear_pixels": 15147,
+            "nearby_extranuclear_pixels": 5436,
+            "auc": 0.30079903601560243,
+            "status": "fail"
+          },
+          {
+            "row": 2,
+            "column": 2,
+            "nuclear_pixels": 17306,
+            "nearby_extranuclear_pixels": 6255,
+            "auc": 0.2825719824002118,
+            "status": "fail"
+          }
+        ],
+        "eligible_spatial_regions": 9,
+        "failed_spatial_regions": 6,
+        "alignment_score": 0.045581857954042515,
         "auc": 0.3911212513838845,
         "prevalence_matched_dice": 0.602890339714507,
+        "prevalence_matched_threshold": 0.01568627450980392,
         "nuclear_boundary_contrast": 0.0029904173132250245,
-        "edge_to_core_nuclear_mean_ratio": 1.5701271854761492
+        "nuclear_inner_boundary_pixels": 13605,
+        "nearby_outer_boundary_pixels": 14162,
+        "edge_to_core_nuclear_mean_ratio": 1.5701271854761492,
+        "edge_nuclear_pixels": 6372,
+        "core_nuclear_pixels": 105079,
+        "sampled_stratified_windows": 1,
+        "shadow_preview": "output_gigatime_shadow_qc.png",
+        "preview": "output_gigatime_nuclear_qc.png",
+        "preview_region_yxyx": [
+          0,
+          588,
+          0,
+          589
+        ],
+        "image": "/mnt/sata_ssd/Tambua-monusac-rgb-corrected-2026-10-20-v1/output/TCGA-2Z-A9JG-01Z-00-DX1_6/gigatime_output/gigatime_probs.zarr",
+        "nuclei_mask": "/mnt/sata_ssd/Tambua-monusac-matched-2026-10-19-prep-v3-scanner-rgb/TCGA-2Z-A9JG-01Z-00-DX1_6/expert_nuclei.ome.tif",
+        "image_shape_yx": [
+          588,
+          589
+        ]
       },
       "annotated_cells": 63,
       "n_cells": 63,
@@ -1253,7 +1537,10 @@
         "paired_nuclei": 63,
         "median_nucleus_to_local_ring_ratio": 1.574,
         "fraction_nuclei_brighter_than_local_ring": 0.889
-      }
+      },
+      "accepted_qc": false,
+      "model_scope": "diagnostic_all_image_fit_failed_or_insufficient_qc",
+      "split": "test"
     },
     {
       "sample_id": "TCGA-2Z-A9JN-01Z-00-DX1_2",
@@ -1265,19 +1552,131 @@
       "height": 1771,
       "source_color_reference": "scanner_svs_rgb",
       "native_nuclear_qc": {
+        "schema_version": 2,
+        "scope": "virtual_DAPI_vs_HE_derived_nuclear_mask",
+        "sampling_stride_px": 3,
+        "sampled_windows": 4,
+        "nuclear_pixels": 27160,
+        "nearby_extranuclear_pixels": 40321,
+        "thresholds": {
+          "min_auc": 0.7,
+          "min_prevalence_matched_dice": 0.35,
+          "min_edge_to_core_nuclear_mean_ratio": 0.65,
+          "min_nuclear_boundary_contrast": 0.05,
+          "min_spatial_nuclear_auc": 0.6,
+          "min_spatial_positive_and_negative_pixels": 500
+        },
+        "interpretation_limit": "Agreement with H&E-derived nuclei does not establish measured DAPI accuracy. A poor StarDist mask can also lower this score. Inspect the overlay and mask.",
         "status": "pass",
         "alignment_status": "pass",
         "border_shadow_status": "pass",
         "spatial_shadow_status": "pass",
+        "spatial_regions": [
+          {
+            "row": 0,
+            "column": 0,
+            "nuclear_pixels": 3012,
+            "nearby_extranuclear_pixels": 4592,
+            "auc": 0.7887439064878696,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 1,
+            "nuclear_pixels": 3235,
+            "nearby_extranuclear_pixels": 4986,
+            "auc": 0.8267703821085438,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 2,
+            "nuclear_pixels": 2797,
+            "nearby_extranuclear_pixels": 4441,
+            "auc": 0.8269418765578361,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 0,
+            "nuclear_pixels": 2445,
+            "nearby_extranuclear_pixels": 3575,
+            "auc": 0.8381436069043431,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 1,
+            "nuclear_pixels": 3310,
+            "nearby_extranuclear_pixels": 4768,
+            "auc": 0.8591573797623634,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 2,
+            "nuclear_pixels": 2421,
+            "nearby_extranuclear_pixels": 3554,
+            "auc": 0.8613514578985183,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 0,
+            "nuclear_pixels": 3304,
+            "nearby_extranuclear_pixels": 4668,
+            "auc": 0.8451296862259348,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 1,
+            "nuclear_pixels": 3530,
+            "nearby_extranuclear_pixels": 5259,
+            "auc": 0.8484769129085065,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 2,
+            "nuclear_pixels": 3106,
+            "nearby_extranuclear_pixels": 4478,
+            "auc": 0.8273708165296634,
+            "status": "pass"
+          }
+        ],
+        "eligible_spatial_regions": 9,
+        "failed_spatial_regions": 0,
+        "alignment_score": 0.7630889149117966,
         "auc": 0.8352127924327741,
         "prevalence_matched_dice": 0.71150448991609,
+        "prevalence_matched_threshold": 0.7607843137254902,
         "nuclear_boundary_contrast": 0.22239736150224998,
-        "edge_to_core_nuclear_mean_ratio": 0.9945469248620357
+        "nuclear_inner_boundary_pixels": 18601,
+        "nearby_outer_boundary_pixels": 25625,
+        "edge_to_core_nuclear_mean_ratio": 0.9945469248620357,
+        "edge_nuclear_pixels": 1672,
+        "core_nuclear_pixels": 25488,
+        "sampled_stratified_windows": 4,
+        "shadow_preview": "output_gigatime_shadow_qc.png",
+        "preview": "output_gigatime_nuclear_qc.png",
+        "preview_region_yxyx": [
+          0,
+          1024,
+          0,
+          1024
+        ],
+        "image": "/mnt/sata_ssd/Tambua-monusac-rgb-corrected-2026-10-20-v1/output/TCGA-2Z-A9JN-01Z-00-DX1_2/gigatime_output/gigatime_probs.zarr",
+        "nuclei_mask": "/mnt/sata_ssd/Tambua-monusac-matched-2026-10-19-prep-v3-scanner-rgb/TCGA-2Z-A9JN-01Z-00-DX1_2/expert_nuclei.ome.tif",
+        "image_shape_yx": [
+          1789,
+          1777
+        ]
       },
       "annotated_cells": 455,
       "n_cells": 455,
-      "correct": 455,
-      "accuracy": 1.0,
+      "correct": 418,
+      "accuracy": 0.91868,
       "support": {
         "epithelial": 455,
         "lymphocyte": 0,
@@ -1286,8 +1685,8 @@
       },
       "confusion_matrix": [
         [
-          455,
-          0,
+          418,
+          37,
           0,
           0
         ],
@@ -1317,7 +1716,10 @@
         "paired_nuclei": 455,
         "median_nucleus_to_local_ring_ratio": 3.076,
         "fraction_nuclei_brighter_than_local_ring": 0.969
-      }
+      },
+      "accepted_qc": true,
+      "model_scope": "strict_qc_fastpls_fit",
+      "split": "test"
     },
     {
       "sample_id": "TCGA-49-6743-01Z-00-DX2_004",
@@ -1329,14 +1731,126 @@
       "height": 1500,
       "source_color_reference": "scanner_svs_rgb",
       "native_nuclear_qc": {
+        "schema_version": 2,
+        "scope": "virtual_DAPI_vs_HE_derived_nuclear_mask",
+        "sampling_stride_px": 3,
+        "sampled_windows": 4,
+        "nuclear_pixels": 27485,
+        "nearby_extranuclear_pixels": 27327,
+        "thresholds": {
+          "min_auc": 0.7,
+          "min_prevalence_matched_dice": 0.35,
+          "min_edge_to_core_nuclear_mean_ratio": 0.65,
+          "min_nuclear_boundary_contrast": 0.05,
+          "min_spatial_nuclear_auc": 0.6,
+          "min_spatial_positive_and_negative_pixels": 500
+        },
+        "interpretation_limit": "Agreement with H&E-derived nuclei does not establish measured DAPI accuracy. A poor StarDist mask can also lower this score. Inspect the overlay and mask.",
         "status": "fail",
         "alignment_status": "fail",
         "border_shadow_status": "pass",
         "spatial_shadow_status": "pass",
+        "spatial_regions": [
+          {
+            "row": 0,
+            "column": 0,
+            "nuclear_pixels": 3070,
+            "nearby_extranuclear_pixels": 3078,
+            "auc": 0.7111206354648837,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 1,
+            "nuclear_pixels": 3399,
+            "nearby_extranuclear_pixels": 3685,
+            "auc": 0.7035643414956031,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 2,
+            "nuclear_pixels": 2531,
+            "nearby_extranuclear_pixels": 2364,
+            "auc": 0.647436925942342,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 0,
+            "nuclear_pixels": 4375,
+            "nearby_extranuclear_pixels": 4201,
+            "auc": 0.6263005950964056,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 1,
+            "nuclear_pixels": 4402,
+            "nearby_extranuclear_pixels": 4191,
+            "auc": 0.6764412143847762,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 2,
+            "nuclear_pixels": 5012,
+            "nearby_extranuclear_pixels": 5071,
+            "auc": 0.7116849161696409,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 0,
+            "nuclear_pixels": 1481,
+            "nearby_extranuclear_pixels": 1495,
+            "auc": 0.6030274220392531,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 1,
+            "nuclear_pixels": 1206,
+            "nearby_extranuclear_pixels": 1171,
+            "auc": 0.7496877270351913,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 2,
+            "nuclear_pixels": 2009,
+            "nearby_extranuclear_pixels": 2071,
+            "auc": 0.65533803821961,
+            "status": "pass"
+          }
+        ],
+        "eligible_spatial_regions": 9,
+        "failed_spatial_regions": 0,
+        "alignment_score": 0.4548818415873676,
         "auc": 0.6706105032296747,
         "prevalence_matched_dice": 0.6160211970527386,
+        "prevalence_matched_threshold": 0.5686274509803921,
         "nuclear_boundary_contrast": 0.1042128312756066,
-        "edge_to_core_nuclear_mean_ratio": 0.9908282986572214
+        "nuclear_inner_boundary_pixels": 14936,
+        "nearby_outer_boundary_pixels": 17890,
+        "edge_to_core_nuclear_mean_ratio": 0.9908282986572214,
+        "edge_nuclear_pixels": 1045,
+        "core_nuclear_pixels": 26440,
+        "sampled_stratified_windows": 4,
+        "shadow_preview": "output_gigatime_shadow_qc.png",
+        "preview": "output_gigatime_nuclear_qc.png",
+        "preview_region_yxyx": [
+          0,
+          1024,
+          0,
+          1024
+        ],
+        "image": "/mnt/sata_ssd/Tambua-monusac-rgb-corrected-2026-10-20-v1/output/TCGA-49-6743-01Z-00-DX2_004/gigatime_output/gigatime_probs.zarr",
+        "nuclei_mask": "/mnt/sata_ssd/Tambua-monusac-matched-2026-10-19-prep-v3-scanner-rgb/TCGA-49-6743-01Z-00-DX2_004/expert_nuclei.ome.tif",
+        "image_shape_yx": [
+          1512,
+          1512
+        ]
       },
       "annotated_cells": 236,
       "n_cells": 236,
@@ -1381,7 +1895,10 @@
         "paired_nuclei": 236,
         "median_nucleus_to_local_ring_ratio": 2.095,
         "fraction_nuclei_brighter_than_local_ring": 0.941
-      }
+      },
+      "accepted_qc": false,
+      "model_scope": "diagnostic_all_image_fit_failed_or_insufficient_qc",
+      "split": "test"
     },
     {
       "sample_id": "TCGA-50-6591-01Z-00-DX1_001",
@@ -1393,14 +1910,126 @@
       "height": 1500,
       "source_color_reference": "scanner_svs_rgb",
       "native_nuclear_qc": {
+        "schema_version": 2,
+        "scope": "virtual_DAPI_vs_HE_derived_nuclear_mask",
+        "sampling_stride_px": 2,
+        "sampled_windows": 2,
+        "nuclear_pixels": 67879,
+        "nearby_extranuclear_pixels": 60736,
+        "thresholds": {
+          "min_auc": 0.7,
+          "min_prevalence_matched_dice": 0.35,
+          "min_edge_to_core_nuclear_mean_ratio": 0.65,
+          "min_nuclear_boundary_contrast": 0.05,
+          "min_spatial_nuclear_auc": 0.6,
+          "min_spatial_positive_and_negative_pixels": 500
+        },
+        "interpretation_limit": "Agreement with H&E-derived nuclei does not establish measured DAPI accuracy. A poor StarDist mask can also lower this score. Inspect the overlay and mask.",
         "status": "fail",
         "alignment_status": "fail",
         "border_shadow_status": "pass",
         "spatial_shadow_status": "fail",
+        "spatial_regions": [
+          {
+            "row": 0,
+            "column": 0,
+            "nuclear_pixels": 8843,
+            "nearby_extranuclear_pixels": 8145,
+            "auc": 0.5577664582912046,
+            "status": "fail"
+          },
+          {
+            "row": 0,
+            "column": 1,
+            "nuclear_pixels": 11071,
+            "nearby_extranuclear_pixels": 10251,
+            "auc": 0.5357017718952248,
+            "status": "fail"
+          },
+          {
+            "row": 0,
+            "column": 2,
+            "nuclear_pixels": 9623,
+            "nearby_extranuclear_pixels": 7755,
+            "auc": 0.5591945085359578,
+            "status": "fail"
+          },
+          {
+            "row": 1,
+            "column": 0,
+            "nuclear_pixels": 7655,
+            "nearby_extranuclear_pixels": 7381,
+            "auc": 0.6027925249136948,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 1,
+            "nuclear_pixels": 8558,
+            "nearby_extranuclear_pixels": 7610,
+            "auc": 0.5236093653600891,
+            "status": "fail"
+          },
+          {
+            "row": 1,
+            "column": 2,
+            "nuclear_pixels": 7782,
+            "nearby_extranuclear_pixels": 6629,
+            "auc": 0.594553715772449,
+            "status": "fail"
+          },
+          {
+            "row": 2,
+            "column": 0,
+            "nuclear_pixels": 2068,
+            "nearby_extranuclear_pixels": 1736,
+            "auc": 0.6749720338001052,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 1,
+            "nuclear_pixels": 5359,
+            "nearby_extranuclear_pixels": 5064,
+            "auc": 0.5810920092198475,
+            "status": "fail"
+          },
+          {
+            "row": 2,
+            "column": 2,
+            "nuclear_pixels": 6920,
+            "nearby_extranuclear_pixels": 6165,
+            "auc": 0.5493729636349146,
+            "status": "fail"
+          }
+        ],
+        "eligible_spatial_regions": 9,
+        "failed_spatial_regions": 7,
+        "alignment_score": 0.2435932067403399,
         "auc": 0.560786261476773,
         "prevalence_matched_dice": 0.5743098930618655,
+        "prevalence_matched_threshold": 0.03137254901960784,
         "nuclear_boundary_contrast": 0.0313835775984804,
-        "edge_to_core_nuclear_mean_ratio": 0.9885003063179933
+        "nuclear_inner_boundary_pixels": 28603,
+        "nearby_outer_boundary_pixels": 31508,
+        "edge_to_core_nuclear_mean_ratio": 0.9885003063179933,
+        "edge_nuclear_pixels": 3775,
+        "core_nuclear_pixels": 64104,
+        "sampled_stratified_windows": 2,
+        "shadow_preview": "output_gigatime_shadow_qc.png",
+        "preview": "output_gigatime_nuclear_qc.png",
+        "preview_region_yxyx": [
+          0,
+          1024,
+          0,
+          767
+        ],
+        "image": "/mnt/sata_ssd/Tambua-monusac-rgb-corrected-2026-10-20-v1/output/TCGA-50-6591-01Z-00-DX1_001/gigatime_output/gigatime_probs.zarr",
+        "nuclei_mask": "/mnt/sata_ssd/Tambua-monusac-matched-2026-10-19-prep-v3-scanner-rgb/TCGA-50-6591-01Z-00-DX1_001/expert_nuclei.ome.tif",
+        "image_shape_yx": [
+          1512,
+          767
+        ]
       },
       "annotated_cells": 314,
       "n_cells": 314,
@@ -1445,7 +2074,10 @@
         "paired_nuclei": 314,
         "median_nucleus_to_local_ring_ratio": 1.807,
         "fraction_nuclei_brighter_than_local_ring": 0.605
-      }
+      },
+      "accepted_qc": false,
+      "model_scope": "diagnostic_all_image_fit_failed_or_insufficient_qc",
+      "split": "test"
     },
     {
       "sample_id": "TCGA-55-7573-01Z-00-DX1_004",
@@ -1457,19 +2089,131 @@
       "height": 1974,
       "source_color_reference": "scanner_svs_rgb",
       "native_nuclear_qc": {
+        "schema_version": 2,
+        "scope": "virtual_DAPI_vs_HE_derived_nuclear_mask",
+        "sampling_stride_px": 2,
+        "sampled_windows": 2,
+        "nuclear_pixels": 64886,
+        "nearby_extranuclear_pixels": 63428,
+        "thresholds": {
+          "min_auc": 0.7,
+          "min_prevalence_matched_dice": 0.35,
+          "min_edge_to_core_nuclear_mean_ratio": 0.65,
+          "min_nuclear_boundary_contrast": 0.05,
+          "min_spatial_nuclear_auc": 0.6,
+          "min_spatial_positive_and_negative_pixels": 500
+        },
+        "interpretation_limit": "Agreement with H&E-derived nuclei does not establish measured DAPI accuracy. A poor StarDist mask can also lower this score. Inspect the overlay and mask.",
         "status": "pass",
         "alignment_status": "pass",
         "border_shadow_status": "pass",
         "spatial_shadow_status": "pass",
+        "spatial_regions": [
+          {
+            "row": 0,
+            "column": 0,
+            "nuclear_pixels": 7356,
+            "nearby_extranuclear_pixels": 7075,
+            "auc": 0.6671558613242333,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 1,
+            "nuclear_pixels": 6875,
+            "nearby_extranuclear_pixels": 6459,
+            "auc": 0.7187112330926544,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 2,
+            "nuclear_pixels": 7165,
+            "nearby_extranuclear_pixels": 7124,
+            "auc": 0.7096943075567369,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 0,
+            "nuclear_pixels": 8145,
+            "nearby_extranuclear_pixels": 7931,
+            "auc": 0.7079648137686008,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 1,
+            "nuclear_pixels": 8154,
+            "nearby_extranuclear_pixels": 7719,
+            "auc": 0.695051388507975,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 2,
+            "nuclear_pixels": 5423,
+            "nearby_extranuclear_pixels": 5836,
+            "auc": 0.7389625547116924,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 0,
+            "nuclear_pixels": 6171,
+            "nearby_extranuclear_pixels": 5299,
+            "auc": 0.7109465990180038,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 1,
+            "nuclear_pixels": 7498,
+            "nearby_extranuclear_pixels": 7549,
+            "auc": 0.7306289051125427,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 2,
+            "nuclear_pixels": 8099,
+            "nearby_extranuclear_pixels": 8436,
+            "auc": 0.7633942494232263,
+            "status": "pass"
+          }
+        ],
+        "eligible_spatial_regions": 9,
+        "failed_spatial_regions": 0,
+        "alignment_score": 0.4765865247677105,
         "auc": 0.712394427825995,
         "prevalence_matched_dice": 0.6766814455091017,
+        "prevalence_matched_threshold": 0.8392156862745098,
         "nuclear_boundary_contrast": 0.07601738845155204,
-        "edge_to_core_nuclear_mean_ratio": 1.0252056460554286
+        "nuclear_inner_boundary_pixels": 27861,
+        "nearby_outer_boundary_pixels": 31679,
+        "edge_to_core_nuclear_mean_ratio": 1.0252056460554286,
+        "edge_nuclear_pixels": 3713,
+        "core_nuclear_pixels": 61173,
+        "sampled_stratified_windows": 2,
+        "shadow_preview": "output_gigatime_shadow_qc.png",
+        "preview": "output_gigatime_nuclear_qc.png",
+        "preview_region_yxyx": [
+          0,
+          1024,
+          0,
+          875
+        ],
+        "image": "/mnt/sata_ssd/Tambua-monusac-rgb-corrected-2026-10-20-v1/output/TCGA-55-7573-01Z-00-DX1_004/gigatime_output/gigatime_probs.zarr",
+        "nuclei_mask": "/mnt/sata_ssd/Tambua-monusac-matched-2026-10-19-prep-v3-scanner-rgb/TCGA-55-7573-01Z-00-DX1_004/expert_nuclei.ome.tif",
+        "image_shape_yx": [
+          1990,
+          875
+        ]
       },
       "annotated_cells": 311,
       "n_cells": 311,
-      "correct": 303,
-      "accuracy": 0.97428,
+      "correct": 301,
+      "accuracy": 0.96785,
       "support": {
         "epithelial": 292,
         "lymphocyte": 19,
@@ -1478,14 +2222,14 @@
       },
       "confusion_matrix": [
         [
-          292,
-          0,
+          289,
+          3,
           0,
           0
         ],
         [
-          8,
-          11,
+          7,
+          12,
           0,
           0
         ],
@@ -1509,7 +2253,10 @@
         "paired_nuclei": 311,
         "median_nucleus_to_local_ring_ratio": 1.781,
         "fraction_nuclei_brighter_than_local_ring": 0.977
-      }
+      },
+      "accepted_qc": true,
+      "model_scope": "strict_qc_fastpls_fit",
+      "split": "test"
     },
     {
       "sample_id": "TCGA-73-4662-01Z-00-DX1_003",
@@ -1521,19 +2268,131 @@
       "height": 2500,
       "source_color_reference": "scanner_svs_rgb",
       "native_nuclear_qc": {
+        "schema_version": 2,
+        "scope": "virtual_DAPI_vs_HE_derived_nuclear_mask",
+        "sampling_stride_px": 2,
+        "sampled_windows": 3,
+        "nuclear_pixels": 71405,
+        "nearby_extranuclear_pixels": 65587,
+        "thresholds": {
+          "min_auc": 0.7,
+          "min_prevalence_matched_dice": 0.35,
+          "min_edge_to_core_nuclear_mean_ratio": 0.65,
+          "min_nuclear_boundary_contrast": 0.05,
+          "min_spatial_nuclear_auc": 0.6,
+          "min_spatial_positive_and_negative_pixels": 500
+        },
+        "interpretation_limit": "Agreement with H&E-derived nuclei does not establish measured DAPI accuracy. A poor StarDist mask can also lower this score. Inspect the overlay and mask.",
         "status": "pass",
         "alignment_status": "pass",
         "border_shadow_status": "pass",
         "spatial_shadow_status": "pass",
+        "spatial_regions": [
+          {
+            "row": 0,
+            "column": 0,
+            "nuclear_pixels": 8451,
+            "nearby_extranuclear_pixels": 7710,
+            "auc": 0.7916214184124827,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 1,
+            "nuclear_pixels": 8155,
+            "nearby_extranuclear_pixels": 7617,
+            "auc": 0.7947960236416541,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 2,
+            "nuclear_pixels": 10533,
+            "nearby_extranuclear_pixels": 9406,
+            "auc": 0.7478999256692498,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 0,
+            "nuclear_pixels": 7086,
+            "nearby_extranuclear_pixels": 6387,
+            "auc": 0.8303627720557312,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 1,
+            "nuclear_pixels": 7219,
+            "nearby_extranuclear_pixels": 6538,
+            "auc": 0.8051665180651768,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 2,
+            "nuclear_pixels": 6416,
+            "nearby_extranuclear_pixels": 6575,
+            "auc": 0.7633700089130785,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 0,
+            "nuclear_pixels": 7634,
+            "nearby_extranuclear_pixels": 7067,
+            "auc": 0.735624911885153,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 1,
+            "nuclear_pixels": 8784,
+            "nearby_extranuclear_pixels": 8121,
+            "auc": 0.7789575655460701,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 2,
+            "nuclear_pixels": 7127,
+            "nearby_extranuclear_pixels": 6166,
+            "auc": 0.8160961561068426,
+            "status": "pass"
+          }
+        ],
+        "eligible_spatial_regions": 9,
+        "failed_spatial_regions": 0,
+        "alignment_score": 0.5774937481092934,
         "auc": 0.7778354618013165,
         "prevalence_matched_dice": 0.7319491442815168,
+        "prevalence_matched_threshold": 0.8941176470588236,
         "nuclear_boundary_contrast": 0.09333680019007828,
-        "edge_to_core_nuclear_mean_ratio": 1.0095455658143693
+        "nuclear_inner_boundary_pixels": 28949,
+        "nearby_outer_boundary_pixels": 32585,
+        "edge_to_core_nuclear_mean_ratio": 1.0095455658143693,
+        "edge_nuclear_pixels": 5238,
+        "core_nuclear_pixels": 66167,
+        "sampled_stratified_windows": 3,
+        "shadow_preview": "output_gigatime_shadow_qc.png",
+        "preview": "output_gigatime_nuclear_qc.png",
+        "preview_region_yxyx": [
+          0,
+          1024,
+          0,
+          741
+        ],
+        "image": "/mnt/sata_ssd/Tambua-monusac-rgb-corrected-2026-10-20-v1/output/TCGA-73-4662-01Z-00-DX1_003/gigatime_output/gigatime_probs.zarr",
+        "nuclei_mask": "/mnt/sata_ssd/Tambua-monusac-matched-2026-10-19-prep-v3-scanner-rgb/TCGA-73-4662-01Z-00-DX1_003/expert_nuclei.ome.tif",
+        "image_shape_yx": [
+          2520,
+          741
+        ]
       },
       "annotated_cells": 316,
       "n_cells": 316,
-      "correct": 288,
-      "accuracy": 0.91139,
+      "correct": 289,
+      "accuracy": 0.91456,
       "support": {
         "epithelial": 287,
         "lymphocyte": 29,
@@ -1542,14 +2401,14 @@
       },
       "confusion_matrix": [
         [
-          284,
-          3,
+          286,
+          1,
           0,
           0
         ],
         [
-          25,
-          4,
+          26,
+          3,
           0,
           0
         ],
@@ -1573,7 +2432,10 @@
         "paired_nuclei": 316,
         "median_nucleus_to_local_ring_ratio": 1.691,
         "fraction_nuclei_brighter_than_local_ring": 0.997
-      }
+      },
+      "accepted_qc": true,
+      "model_scope": "strict_qc_fastpls_fit",
+      "split": "test"
     },
     {
       "sample_id": "TCGA-A2-A04X-01Z-00-DX1_001",
@@ -1585,14 +2447,126 @@
       "height": 912,
       "source_color_reference": "scanner_svs_rgb",
       "native_nuclear_qc": {
+        "schema_version": 2,
+        "scope": "virtual_DAPI_vs_HE_derived_nuclear_mask",
+        "sampling_stride_px": 2,
+        "sampled_windows": 1,
+        "nuclear_pixels": 51139,
+        "nearby_extranuclear_pixels": 70821,
+        "thresholds": {
+          "min_auc": 0.7,
+          "min_prevalence_matched_dice": 0.35,
+          "min_edge_to_core_nuclear_mean_ratio": 0.65,
+          "min_nuclear_boundary_contrast": 0.05,
+          "min_spatial_nuclear_auc": 0.6,
+          "min_spatial_positive_and_negative_pixels": 500
+        },
+        "interpretation_limit": "Agreement with H&E-derived nuclei does not establish measured DAPI accuracy. A poor StarDist mask can also lower this score. Inspect the overlay and mask.",
         "status": "fail",
         "alignment_status": "fail",
         "border_shadow_status": "pass",
         "spatial_shadow_status": "pass",
+        "spatial_regions": [
+          {
+            "row": 0,
+            "column": 0,
+            "nuclear_pixels": 5469,
+            "nearby_extranuclear_pixels": 7931,
+            "auc": 0.7405892991985478,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 1,
+            "nuclear_pixels": 5926,
+            "nearby_extranuclear_pixels": 8029,
+            "auc": 0.6828470301737369,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 2,
+            "nuclear_pixels": 5747,
+            "nearby_extranuclear_pixels": 7917,
+            "auc": 0.6836487106013036,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 0,
+            "nuclear_pixels": 5153,
+            "nearby_extranuclear_pixels": 6462,
+            "auc": 0.7169910848734391,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 1,
+            "nuclear_pixels": 5941,
+            "nearby_extranuclear_pixels": 8315,
+            "auc": 0.6670755514007605,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 2,
+            "nuclear_pixels": 6074,
+            "nearby_extranuclear_pixels": 8172,
+            "auc": 0.7006917538964292,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 0,
+            "nuclear_pixels": 4759,
+            "nearby_extranuclear_pixels": 6726,
+            "auc": 0.6720587381674811,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 1,
+            "nuclear_pixels": 5169,
+            "nearby_extranuclear_pixels": 7361,
+            "auc": 0.6963228792634257,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 2,
+            "nuclear_pixels": 6901,
+            "nearby_extranuclear_pixels": 9908,
+            "auc": 0.7259668313796301,
+            "status": "pass"
+          }
+        ],
+        "eligible_spatial_regions": 9,
+        "failed_spatial_regions": 0,
+        "alignment_score": 0.4007263646268402,
         "auc": 0.6976131149149062,
         "prevalence_matched_dice": 0.5816680811665766,
+        "prevalence_matched_threshold": 0.7725490196078432,
         "nuclear_boundary_contrast": 0.04615698353623188,
-        "edge_to_core_nuclear_mean_ratio": 0.990840370490912
+        "nuclear_inner_boundary_pixels": 31071,
+        "nearby_outer_boundary_pixels": 37543,
+        "edge_to_core_nuclear_mean_ratio": 0.990840370490912,
+        "edge_nuclear_pixels": 4215,
+        "core_nuclear_pixels": 46924,
+        "sampled_stratified_windows": 1,
+        "shadow_preview": "output_gigatime_shadow_qc.png",
+        "preview": "output_gigatime_nuclear_qc.png",
+        "preview_region_yxyx": [
+          0,
+          914,
+          0,
+          1010
+        ],
+        "image": "/mnt/sata_ssd/Tambua-monusac-rgb-corrected-2026-10-20-v1/output/TCGA-A2-A04X-01Z-00-DX1_001/gigatime_output/gigatime_probs.zarr",
+        "nuclei_mask": "/mnt/sata_ssd/Tambua-monusac-matched-2026-10-19-prep-v3-scanner-rgb/TCGA-A2-A04X-01Z-00-DX1_001/expert_nuclei.ome.tif",
+        "image_shape_yx": [
+          914,
+          1010
+        ]
       },
       "annotated_cells": 639,
       "n_cells": 639,
@@ -1637,7 +2611,10 @@
         "paired_nuclei": 639,
         "median_nucleus_to_local_ring_ratio": 1.324,
         "fraction_nuclei_brighter_than_local_ring": 0.933
-      }
+      },
+      "accepted_qc": false,
+      "model_scope": "diagnostic_all_image_fit_failed_or_insufficient_qc",
+      "split": "test"
     },
     {
       "sample_id": "TCGA-A2-A04X-01Z-00-DX1_002",
@@ -1649,14 +2626,126 @@
       "height": 781,
       "source_color_reference": "scanner_svs_rgb",
       "native_nuclear_qc": {
+        "schema_version": 2,
+        "scope": "virtual_DAPI_vs_HE_derived_nuclear_mask",
+        "sampling_stride_px": 2,
+        "sampled_windows": 1,
+        "nuclear_pixels": 57975,
+        "nearby_extranuclear_pixels": 36212,
+        "thresholds": {
+          "min_auc": 0.7,
+          "min_prevalence_matched_dice": 0.35,
+          "min_edge_to_core_nuclear_mean_ratio": 0.65,
+          "min_nuclear_boundary_contrast": 0.05,
+          "min_spatial_nuclear_auc": 0.6,
+          "min_spatial_positive_and_negative_pixels": 500
+        },
+        "interpretation_limit": "Agreement with H&E-derived nuclei does not establish measured DAPI accuracy. A poor StarDist mask can also lower this score. Inspect the overlay and mask.",
         "status": "fail",
         "alignment_status": "fail",
         "border_shadow_status": "pass",
         "spatial_shadow_status": "fail",
+        "spatial_regions": [
+          {
+            "row": 0,
+            "column": 0,
+            "nuclear_pixels": 5043,
+            "nearby_extranuclear_pixels": 4470,
+            "auc": 0.5649055483024956,
+            "status": "fail"
+          },
+          {
+            "row": 0,
+            "column": 1,
+            "nuclear_pixels": 6211,
+            "nearby_extranuclear_pixels": 3634,
+            "auc": 0.4195612875305029,
+            "status": "fail"
+          },
+          {
+            "row": 0,
+            "column": 2,
+            "nuclear_pixels": 7327,
+            "nearby_extranuclear_pixels": 4381,
+            "auc": 0.5856799029844216,
+            "status": "fail"
+          },
+          {
+            "row": 1,
+            "column": 0,
+            "nuclear_pixels": 6229,
+            "nearby_extranuclear_pixels": 4427,
+            "auc": 0.6053700270269751,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 1,
+            "nuclear_pixels": 11887,
+            "nearby_extranuclear_pixels": 2651,
+            "auc": 0.439442782543286,
+            "status": "fail"
+          },
+          {
+            "row": 1,
+            "column": 2,
+            "nuclear_pixels": 5286,
+            "nearby_extranuclear_pixels": 3128,
+            "auc": 0.6326686728829616,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 0,
+            "nuclear_pixels": 6067,
+            "nearby_extranuclear_pixels": 5350,
+            "auc": 0.6587550853475751,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 1,
+            "nuclear_pixels": 5093,
+            "nearby_extranuclear_pixels": 4156,
+            "auc": 0.8022620689251151,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 2,
+            "nuclear_pixels": 4832,
+            "nearby_extranuclear_pixels": 4015,
+            "auc": 0.7351545425680189,
+            "status": "pass"
+          }
+        ],
+        "eligible_spatial_regions": 9,
+        "failed_spatial_regions": 4,
+        "alignment_score": 0.23846302407507208,
         "auc": 0.5520300490042183,
         "prevalence_matched_dice": 0.6378707800368413,
+        "prevalence_matched_threshold": 0.7803921568627451,
         "nuclear_boundary_contrast": 0.021572224049314803,
-        "edge_to_core_nuclear_mean_ratio": 1.137734513980641
+        "nuclear_inner_boundary_pixels": 17894,
+        "nearby_outer_boundary_pixels": 19224,
+        "edge_to_core_nuclear_mean_ratio": 1.137734513980641,
+        "edge_nuclear_pixels": 4908,
+        "core_nuclear_pixels": 53067,
+        "sampled_stratified_windows": 1,
+        "shadow_preview": "output_gigatime_shadow_qc.png",
+        "preview": "output_gigatime_nuclear_qc.png",
+        "preview_region_yxyx": [
+          0,
+          783,
+          0,
+          894
+        ],
+        "image": "/mnt/sata_ssd/Tambua-monusac-rgb-corrected-2026-10-20-v1/output/TCGA-A2-A04X-01Z-00-DX1_002/gigatime_output/gigatime_probs.zarr",
+        "nuclei_mask": "/mnt/sata_ssd/Tambua-monusac-matched-2026-10-19-prep-v3-scanner-rgb/TCGA-A2-A04X-01Z-00-DX1_002/expert_nuclei.ome.tif",
+        "image_shape_yx": [
+          783,
+          894
+        ]
       },
       "annotated_cells": 192,
       "n_cells": 192,
@@ -1701,7 +2790,10 @@
         "paired_nuclei": 192,
         "median_nucleus_to_local_ring_ratio": 1.208,
         "fraction_nuclei_brighter_than_local_ring": 0.917
-      }
+      },
+      "accepted_qc": false,
+      "model_scope": "diagnostic_all_image_fit_failed_or_insufficient_qc",
+      "split": "test"
     },
     {
       "sample_id": "TCGA-A2-A04X-01Z-00-DX1_004",
@@ -1713,14 +2805,126 @@
       "height": 556,
       "source_color_reference": "scanner_svs_rgb",
       "native_nuclear_qc": {
+        "schema_version": 2,
+        "scope": "virtual_DAPI_vs_HE_derived_nuclear_mask",
+        "sampling_stride_px": 1,
+        "sampled_windows": 1,
+        "nuclear_pixels": 77030,
+        "nearby_extranuclear_pixels": 92226,
+        "thresholds": {
+          "min_auc": 0.7,
+          "min_prevalence_matched_dice": 0.35,
+          "min_edge_to_core_nuclear_mean_ratio": 0.65,
+          "min_nuclear_boundary_contrast": 0.05,
+          "min_spatial_nuclear_auc": 0.6,
+          "min_spatial_positive_and_negative_pixels": 500
+        },
+        "interpretation_limit": "Agreement with H&E-derived nuclei does not establish measured DAPI accuracy. A poor StarDist mask can also lower this score. Inspect the overlay and mask.",
         "status": "fail",
         "alignment_status": "fail",
         "border_shadow_status": "pass",
         "spatial_shadow_status": "pass",
+        "spatial_regions": [
+          {
+            "row": 0,
+            "column": 0,
+            "nuclear_pixels": 8078,
+            "nearby_extranuclear_pixels": 10698,
+            "auc": 0.8627939077449717,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 1,
+            "nuclear_pixels": 11159,
+            "nearby_extranuclear_pixels": 13651,
+            "auc": 0.8632717640839493,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 2,
+            "nuclear_pixels": 6299,
+            "nearby_extranuclear_pixels": 7880,
+            "auc": 0.8040649732493192,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 0,
+            "nuclear_pixels": 6980,
+            "nearby_extranuclear_pixels": 8444,
+            "auc": 0.8663700102750092,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 1,
+            "nuclear_pixels": 11084,
+            "nearby_extranuclear_pixels": 13094,
+            "auc": 0.8616023303060781,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 2,
+            "nuclear_pixels": 10661,
+            "nearby_extranuclear_pixels": 11648,
+            "auc": 0.8213798837758246,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 0,
+            "nuclear_pixels": 6425,
+            "nearby_extranuclear_pixels": 7426,
+            "auc": 0.8764459607164228,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 1,
+            "nuclear_pixels": 8598,
+            "nearby_extranuclear_pixels": 10514,
+            "auc": 0.8717535891731637,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 2,
+            "nuclear_pixels": 7746,
+            "nearby_extranuclear_pixels": 8871,
+            "auc": 0.819448486515984,
+            "status": "pass"
+          }
+        ],
+        "eligible_spatial_regions": 9,
+        "failed_spatial_regions": 0,
+        "alignment_score": 0.5757017453157923,
         "auc": 0.845794036934466,
         "prevalence_matched_dice": 0.7483454275083447,
+        "prevalence_matched_threshold": 0.8823529411764706,
         "nuclear_boundary_contrast": 0.034257081203392103,
-        "edge_to_core_nuclear_mean_ratio": 0.9868483514191683
+        "nuclear_inner_boundary_pixels": 20358,
+        "nearby_outer_boundary_pixels": 22491,
+        "edge_to_core_nuclear_mean_ratio": 0.9868483514191683,
+        "edge_nuclear_pixels": 8372,
+        "core_nuclear_pixels": 68658,
+        "sampled_stratified_windows": 1,
+        "shadow_preview": "output_gigatime_shadow_qc.png",
+        "preview": "output_gigatime_nuclear_qc.png",
+        "preview_region_yxyx": [
+          0,
+          558,
+          0,
+          738
+        ],
+        "image": "/mnt/sata_ssd/Tambua-monusac-rgb-corrected-2026-10-20-v1/output/TCGA-A2-A04X-01Z-00-DX1_004/gigatime_output/gigatime_probs.zarr",
+        "nuclei_mask": "/mnt/sata_ssd/Tambua-monusac-matched-2026-10-19-prep-v3-scanner-rgb/TCGA-A2-A04X-01Z-00-DX1_004/expert_nuclei.ome.tif",
+        "image_shape_yx": [
+          558,
+          738
+        ]
       },
       "annotated_cells": 139,
       "n_cells": 139,
@@ -1765,7 +2969,10 @@
         "paired_nuclei": 139,
         "median_nucleus_to_local_ring_ratio": 1.469,
         "fraction_nuclei_brighter_than_local_ring": 1.0
-      }
+      },
+      "accepted_qc": false,
+      "model_scope": "diagnostic_all_image_fit_failed_or_insufficient_qc",
+      "split": "test"
     },
     {
       "sample_id": "TCGA-A2-A0ES-01Z-00-DX1_002",
@@ -1777,14 +2984,126 @@
       "height": 879,
       "source_color_reference": "scanner_svs_rgb",
       "native_nuclear_qc": {
+        "schema_version": 2,
+        "scope": "virtual_DAPI_vs_HE_derived_nuclear_mask",
+        "sampling_stride_px": 2,
+        "sampled_windows": 1,
+        "nuclear_pixels": 41539,
+        "nearby_extranuclear_pixels": 40737,
+        "thresholds": {
+          "min_auc": 0.7,
+          "min_prevalence_matched_dice": 0.35,
+          "min_edge_to_core_nuclear_mean_ratio": 0.65,
+          "min_nuclear_boundary_contrast": 0.05,
+          "min_spatial_nuclear_auc": 0.6,
+          "min_spatial_positive_and_negative_pixels": 500
+        },
+        "interpretation_limit": "Agreement with H&E-derived nuclei does not establish measured DAPI accuracy. A poor StarDist mask can also lower this score. Inspect the overlay and mask.",
         "status": "fail",
         "alignment_status": "fail",
         "border_shadow_status": "pass",
         "spatial_shadow_status": "pass",
+        "spatial_regions": [
+          {
+            "row": 0,
+            "column": 0,
+            "nuclear_pixels": 4632,
+            "nearby_extranuclear_pixels": 4553,
+            "auc": 0.6039387095831973,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 1,
+            "nuclear_pixels": 5072,
+            "nearby_extranuclear_pixels": 5178,
+            "auc": 0.6505269275008437,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 2,
+            "nuclear_pixels": 3847,
+            "nearby_extranuclear_pixels": 4181,
+            "auc": 0.6979158318726446,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 0,
+            "nuclear_pixels": 3044,
+            "nearby_extranuclear_pixels": 3019,
+            "auc": 0.6933961063070113,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 1,
+            "nuclear_pixels": 6127,
+            "nearby_extranuclear_pixels": 5631,
+            "auc": 0.7866901748774251,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 2,
+            "nuclear_pixels": 5159,
+            "nearby_extranuclear_pixels": 4821,
+            "auc": 0.62924879718943,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 0,
+            "nuclear_pixels": 4103,
+            "nearby_extranuclear_pixels": 4467,
+            "auc": 0.65489621647109,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 1,
+            "nuclear_pixels": 5385,
+            "nearby_extranuclear_pixels": 5041,
+            "auc": 0.7210168171596437,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 2,
+            "nuclear_pixels": 4170,
+            "nearby_extranuclear_pixels": 3846,
+            "auc": 0.6559581352079024,
+            "status": "pass"
+          }
+        ],
+        "eligible_spatial_regions": 9,
+        "failed_spatial_regions": 0,
+        "alignment_score": 0.37114327427890814,
         "auc": 0.6737011854517395,
         "prevalence_matched_dice": 0.6441651962420716,
+        "prevalence_matched_threshold": 0.8901960784313725,
         "nuclear_boundary_contrast": 0.029120631813320585,
-        "edge_to_core_nuclear_mean_ratio": 0.9565404317989165
+        "nuclear_inner_boundary_pixels": 19845,
+        "nearby_outer_boundary_pixels": 22053,
+        "edge_to_core_nuclear_mean_ratio": 0.9565404317989165,
+        "edge_nuclear_pixels": 4174,
+        "core_nuclear_pixels": 37365,
+        "sampled_stratified_windows": 1,
+        "shadow_preview": "output_gigatime_shadow_qc.png",
+        "preview": "output_gigatime_nuclear_qc.png",
+        "preview_region_yxyx": [
+          0,
+          881,
+          0,
+          728
+        ],
+        "image": "/mnt/sata_ssd/Tambua-monusac-rgb-corrected-2026-10-20-v1/output/TCGA-A2-A0ES-01Z-00-DX1_002/gigatime_output/gigatime_probs.zarr",
+        "nuclei_mask": "/mnt/sata_ssd/Tambua-monusac-matched-2026-10-19-prep-v3-scanner-rgb/TCGA-A2-A0ES-01Z-00-DX1_002/expert_nuclei.ome.tif",
+        "image_shape_yx": [
+          881,
+          728
+        ]
       },
       "annotated_cells": 275,
       "n_cells": 275,
@@ -1829,7 +3148,10 @@
         "paired_nuclei": 275,
         "median_nucleus_to_local_ring_ratio": 1.324,
         "fraction_nuclei_brighter_than_local_ring": 0.927
-      }
+      },
+      "accepted_qc": false,
+      "model_scope": "diagnostic_all_image_fit_failed_or_insufficient_qc",
+      "split": "test"
     },
     {
       "sample_id": "TCGA-D8-A3Z6-01Z-00-DX2_002",
@@ -1841,14 +3163,126 @@
       "height": 992,
       "source_color_reference": "scanner_svs_rgb",
       "native_nuclear_qc": {
+        "schema_version": 2,
+        "scope": "virtual_DAPI_vs_HE_derived_nuclear_mask",
+        "sampling_stride_px": 2,
+        "sampled_windows": 2,
+        "nuclear_pixels": 58829,
+        "nearby_extranuclear_pixels": 59128,
+        "thresholds": {
+          "min_auc": 0.7,
+          "min_prevalence_matched_dice": 0.35,
+          "min_edge_to_core_nuclear_mean_ratio": 0.65,
+          "min_nuclear_boundary_contrast": 0.05,
+          "min_spatial_nuclear_auc": 0.6,
+          "min_spatial_positive_and_negative_pixels": 500
+        },
+        "interpretation_limit": "Agreement with H&E-derived nuclei does not establish measured DAPI accuracy. A poor StarDist mask can also lower this score. Inspect the overlay and mask.",
         "status": "pass",
         "alignment_status": "pass",
         "border_shadow_status": "pass",
         "spatial_shadow_status": "pass",
+        "spatial_regions": [
+          {
+            "row": 0,
+            "column": 0,
+            "nuclear_pixels": 7827,
+            "nearby_extranuclear_pixels": 7672,
+            "auc": 0.8279474171849456,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 1,
+            "nuclear_pixels": 5425,
+            "nearby_extranuclear_pixels": 5574,
+            "auc": 0.8034294676237105,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 2,
+            "nuclear_pixels": 6581,
+            "nearby_extranuclear_pixels": 7317,
+            "auc": 0.7728553195981233,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 0,
+            "nuclear_pixels": 5495,
+            "nearby_extranuclear_pixels": 5656,
+            "auc": 0.8296478378827093,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 1,
+            "nuclear_pixels": 6838,
+            "nearby_extranuclear_pixels": 6797,
+            "auc": 0.794695965733037,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 2,
+            "nuclear_pixels": 7483,
+            "nearby_extranuclear_pixels": 7347,
+            "auc": 0.821547278863623,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 0,
+            "nuclear_pixels": 5227,
+            "nearby_extranuclear_pixels": 5412,
+            "auc": 0.7340864267078763,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 1,
+            "nuclear_pixels": 7500,
+            "nearby_extranuclear_pixels": 7219,
+            "auc": 0.87907525511382,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 2,
+            "nuclear_pixels": 6453,
+            "nearby_extranuclear_pixels": 6134,
+            "auc": 0.8752859898245451,
+            "status": "pass"
+          }
+        ],
+        "eligible_spatial_regions": 9,
+        "failed_spatial_regions": 0,
+        "alignment_score": 0.5846995424913369,
         "auc": 0.8137723252622366,
         "prevalence_matched_dice": 0.7387524524727691,
+        "prevalence_matched_threshold": 0.8509803921568627,
         "nuclear_boundary_contrast": 0.06899128328872639,
-        "edge_to_core_nuclear_mean_ratio": 0.9564087769272744
+        "nuclear_inner_boundary_pixels": 25084,
+        "nearby_outer_boundary_pixels": 29058,
+        "edge_to_core_nuclear_mean_ratio": 0.9564087769272744,
+        "edge_nuclear_pixels": 5142,
+        "core_nuclear_pixels": 53687,
+        "sampled_stratified_windows": 2,
+        "shadow_preview": "output_gigatime_shadow_qc.png",
+        "preview": "output_gigatime_nuclear_qc.png",
+        "preview_region_yxyx": [
+          0,
+          985,
+          0,
+          1024
+        ],
+        "image": "/mnt/sata_ssd/Tambua-monusac-rgb-corrected-2026-10-20-v1/output/TCGA-D8-A3Z6-01Z-00-DX2_002/gigatime_output/gigatime_probs.zarr",
+        "nuclei_mask": "/mnt/sata_ssd/Tambua-monusac-matched-2026-10-19-prep-v3-scanner-rgb/TCGA-D8-A3Z6-01Z-00-DX2_002/expert_nuclei.ome.tif",
+        "image_shape_yx": [
+          985,
+          1071
+        ]
       },
       "annotated_cells": 295,
       "n_cells": 295,
@@ -1862,14 +3296,14 @@
       },
       "confusion_matrix": [
         [
-          288,
-          0,
+          287,
+          1,
           0,
           0
         ],
         [
-          7,
-          0,
+          6,
+          1,
           0,
           0
         ],
@@ -1893,7 +3327,10 @@
         "paired_nuclei": 295,
         "median_nucleus_to_local_ring_ratio": 1.835,
         "fraction_nuclei_brighter_than_local_ring": 0.997
-      }
+      },
+      "accepted_qc": true,
+      "model_scope": "strict_qc_fastpls_fit",
+      "split": "test"
     },
     {
       "sample_id": "TCGA-DW-7838-01Z-00-DX1_1",
@@ -1905,14 +3342,126 @@
       "height": 578,
       "source_color_reference": "scanner_svs_rgb",
       "native_nuclear_qc": {
+        "schema_version": 2,
+        "scope": "virtual_DAPI_vs_HE_derived_nuclear_mask",
+        "sampling_stride_px": 1,
+        "sampled_windows": 1,
+        "nuclear_pixels": 151420,
+        "nearby_extranuclear_pixels": 181283,
+        "thresholds": {
+          "min_auc": 0.7,
+          "min_prevalence_matched_dice": 0.35,
+          "min_edge_to_core_nuclear_mean_ratio": 0.65,
+          "min_nuclear_boundary_contrast": 0.05,
+          "min_spatial_nuclear_auc": 0.6,
+          "min_spatial_positive_and_negative_pixels": 500
+        },
+        "interpretation_limit": "Agreement with H&E-derived nuclei does not establish measured DAPI accuracy. A poor StarDist mask can also lower this score. Inspect the overlay and mask.",
         "status": "fail",
         "alignment_status": "fail",
         "border_shadow_status": "pass",
         "spatial_shadow_status": "pass",
+        "spatial_regions": [
+          {
+            "row": 0,
+            "column": 0,
+            "nuclear_pixels": 17037,
+            "nearby_extranuclear_pixels": 20170,
+            "auc": 0.6626859607872032,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 1,
+            "nuclear_pixels": 19107,
+            "nearby_extranuclear_pixels": 21020,
+            "auc": 0.6405915093710581,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 2,
+            "nuclear_pixels": 15602,
+            "nearby_extranuclear_pixels": 18509,
+            "auc": 0.6310106924634945,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 0,
+            "nuclear_pixels": 16571,
+            "nearby_extranuclear_pixels": 20019,
+            "auc": 0.6671322176947408,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 1,
+            "nuclear_pixels": 18524,
+            "nearby_extranuclear_pixels": 21383,
+            "auc": 0.6277527760682431,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 2,
+            "nuclear_pixels": 17215,
+            "nearby_extranuclear_pixels": 21720,
+            "auc": 0.6555227918604969,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 0,
+            "nuclear_pixels": 16544,
+            "nearby_extranuclear_pixels": 19595,
+            "auc": 0.6855424035214052,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 1,
+            "nuclear_pixels": 16442,
+            "nearby_extranuclear_pixels": 20445,
+            "auc": 0.6901917614669516,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 2,
+            "nuclear_pixels": 14378,
+            "nearby_extranuclear_pixels": 18422,
+            "auc": 0.6658173976698951,
+            "status": "pass"
+          }
+        ],
+        "eligible_spatial_regions": 9,
+        "failed_spatial_regions": 0,
+        "alignment_score": 0.30633700363694505,
         "auc": 0.648265323742025,
         "prevalence_matched_dice": 0.5715951605850056,
+        "prevalence_matched_threshold": 0.8313725490196079,
         "nuclear_boundary_contrast": 0.012138311798934986,
-        "edge_to_core_nuclear_mean_ratio": 0.9734220888652534
+        "nuclear_inner_boundary_pixels": 57573,
+        "nearby_outer_boundary_pixels": 63317,
+        "edge_to_core_nuclear_mean_ratio": 0.9734220888652534,
+        "edge_nuclear_pixels": 25300,
+        "core_nuclear_pixels": 126120,
+        "sampled_stratified_windows": 1,
+        "shadow_preview": "output_gigatime_shadow_qc.png",
+        "preview": "output_gigatime_nuclear_qc.png",
+        "preview_region_yxyx": [
+          0,
+          583,
+          0,
+          682
+        ],
+        "image": "/mnt/sata_ssd/Tambua-monusac-rgb-corrected-2026-10-20-v1/output/TCGA-DW-7838-01Z-00-DX1_1/gigatime_output/gigatime_probs.zarr",
+        "nuclei_mask": "/mnt/sata_ssd/Tambua-monusac-matched-2026-10-19-prep-v3-scanner-rgb/TCGA-DW-7838-01Z-00-DX1_1/expert_nuclei.ome.tif",
+        "image_shape_yx": [
+          583,
+          682
+        ]
       },
       "annotated_cells": 625,
       "n_cells": 625,
@@ -1957,7 +3506,10 @@
         "paired_nuclei": 625,
         "median_nucleus_to_local_ring_ratio": 1.169,
         "fraction_nuclei_brighter_than_local_ring": 0.933
-      }
+      },
+      "accepted_qc": false,
+      "model_scope": "diagnostic_all_image_fit_failed_or_insufficient_qc",
+      "split": "test"
     },
     {
       "sample_id": "TCGA-DW-7838-01Z-00-DX1_2",
@@ -1969,14 +3521,126 @@
       "height": 523,
       "source_color_reference": "scanner_svs_rgb",
       "native_nuclear_qc": {
+        "schema_version": 2,
+        "scope": "virtual_DAPI_vs_HE_derived_nuclear_mask",
+        "sampling_stride_px": 1,
+        "sampled_windows": 1,
+        "nuclear_pixels": 90170,
+        "nearby_extranuclear_pixels": 117034,
+        "thresholds": {
+          "min_auc": 0.7,
+          "min_prevalence_matched_dice": 0.35,
+          "min_edge_to_core_nuclear_mean_ratio": 0.65,
+          "min_nuclear_boundary_contrast": 0.05,
+          "min_spatial_nuclear_auc": 0.6,
+          "min_spatial_positive_and_negative_pixels": 500
+        },
+        "interpretation_limit": "Agreement with H&E-derived nuclei does not establish measured DAPI accuracy. A poor StarDist mask can also lower this score. Inspect the overlay and mask.",
         "status": "fail",
         "alignment_status": "fail",
         "border_shadow_status": "pass",
         "spatial_shadow_status": "pass",
+        "spatial_regions": [
+          {
+            "row": 0,
+            "column": 0,
+            "nuclear_pixels": 8725,
+            "nearby_extranuclear_pixels": 11541,
+            "auc": 0.7255121531333785,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 1,
+            "nuclear_pixels": 9620,
+            "nearby_extranuclear_pixels": 12726,
+            "auc": 0.7874299647814499,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 2,
+            "nuclear_pixels": 9449,
+            "nearby_extranuclear_pixels": 12038,
+            "auc": 0.7474203597452038,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 0,
+            "nuclear_pixels": 11672,
+            "nearby_extranuclear_pixels": 15580,
+            "auc": 0.7212036930925837,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 1,
+            "nuclear_pixels": 8304,
+            "nearby_extranuclear_pixels": 12696,
+            "auc": 0.8103965466950281,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 2,
+            "nuclear_pixels": 9143,
+            "nearby_extranuclear_pixels": 12818,
+            "auc": 0.7428216503550741,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 0,
+            "nuclear_pixels": 8390,
+            "nearby_extranuclear_pixels": 11011,
+            "auc": 0.7637123035161826,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 1,
+            "nuclear_pixels": 13037,
+            "nearby_extranuclear_pixels": 15057,
+            "auc": 0.8065388011455576,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 2,
+            "nuclear_pixels": 11830,
+            "nearby_extranuclear_pixels": 13567,
+            "auc": 0.8032674037949848,
+            "status": "pass"
+          }
+        ],
+        "eligible_spatial_regions": 9,
+        "failed_spatial_regions": 0,
+        "alignment_score": 0.45328333533674237,
         "auc": 0.7644255133039134,
         "prevalence_matched_dice": 0.6553370647925313,
+        "prevalence_matched_threshold": 0.9058823529411765,
         "nuclear_boundary_contrast": 0.02001884466775694,
-        "edge_to_core_nuclear_mean_ratio": 0.9969573046696982
+        "nuclear_inner_boundary_pixels": 26430,
+        "nearby_outer_boundary_pixels": 28987,
+        "edge_to_core_nuclear_mean_ratio": 0.9969573046696982,
+        "edge_nuclear_pixels": 14129,
+        "core_nuclear_pixels": 76041,
+        "sampled_stratified_windows": 1,
+        "shadow_preview": "output_gigatime_shadow_qc.png",
+        "preview": "output_gigatime_nuclear_qc.png",
+        "preview_region_yxyx": [
+          0,
+          528,
+          0,
+          865
+        ],
+        "image": "/mnt/sata_ssd/Tambua-monusac-rgb-corrected-2026-10-20-v1/output/TCGA-DW-7838-01Z-00-DX1_2/gigatime_output/gigatime_probs.zarr",
+        "nuclei_mask": "/mnt/sata_ssd/Tambua-monusac-matched-2026-10-19-prep-v3-scanner-rgb/TCGA-DW-7838-01Z-00-DX1_2/expert_nuclei.ome.tif",
+        "image_shape_yx": [
+          528,
+          865
+        ]
       },
       "annotated_cells": 205,
       "n_cells": 205,
@@ -2021,7 +3685,10 @@
         "paired_nuclei": 205,
         "median_nucleus_to_local_ring_ratio": 1.268,
         "fraction_nuclei_brighter_than_local_ring": 0.995
-      }
+      },
+      "accepted_qc": false,
+      "model_scope": "diagnostic_all_image_fit_failed_or_insufficient_qc",
+      "split": "test"
     },
     {
       "sample_id": "TCGA-E2-A108-01Z-00-DX1_001",
@@ -2033,19 +3700,131 @@
       "height": 833,
       "source_color_reference": "scanner_svs_rgb",
       "native_nuclear_qc": {
+        "schema_version": 2,
+        "scope": "virtual_DAPI_vs_HE_derived_nuclear_mask",
+        "sampling_stride_px": 2,
+        "sampled_windows": 1,
+        "nuclear_pixels": 42042,
+        "nearby_extranuclear_pixels": 51876,
+        "thresholds": {
+          "min_auc": 0.7,
+          "min_prevalence_matched_dice": 0.35,
+          "min_edge_to_core_nuclear_mean_ratio": 0.65,
+          "min_nuclear_boundary_contrast": 0.05,
+          "min_spatial_nuclear_auc": 0.6,
+          "min_spatial_positive_and_negative_pixels": 500
+        },
+        "interpretation_limit": "Agreement with H&E-derived nuclei does not establish measured DAPI accuracy. A poor StarDist mask can also lower this score. Inspect the overlay and mask.",
         "status": "pass",
         "alignment_status": "pass",
         "border_shadow_status": "pass",
         "spatial_shadow_status": "pass",
+        "spatial_regions": [
+          {
+            "row": 0,
+            "column": 0,
+            "nuclear_pixels": 2983,
+            "nearby_extranuclear_pixels": 3830,
+            "auc": 0.6654919215852406,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 1,
+            "nuclear_pixels": 4556,
+            "nearby_extranuclear_pixels": 5364,
+            "auc": 0.7592013858199462,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 2,
+            "nuclear_pixels": 5244,
+            "nearby_extranuclear_pixels": 6914,
+            "auc": 0.6790232544233645,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 0,
+            "nuclear_pixels": 4464,
+            "nearby_extranuclear_pixels": 6190,
+            "auc": 0.6281351693099635,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 1,
+            "nuclear_pixels": 4813,
+            "nearby_extranuclear_pixels": 5509,
+            "auc": 0.7835474406630828,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 2,
+            "nuclear_pixels": 5529,
+            "nearby_extranuclear_pixels": 7698,
+            "auc": 0.6873123366010653,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 0,
+            "nuclear_pixels": 5168,
+            "nearby_extranuclear_pixels": 6140,
+            "auc": 0.6981599368703422,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 1,
+            "nuclear_pixels": 4266,
+            "nearby_extranuclear_pixels": 4756,
+            "auc": 0.7112798174940865,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 2,
+            "nuclear_pixels": 5019,
+            "nearby_extranuclear_pixels": 5475,
+            "auc": 0.7551687332429007,
+            "status": "pass"
+          }
+        ],
+        "eligible_spatial_regions": 9,
+        "failed_spatial_regions": 0,
+        "alignment_score": 0.4389358598654387,
         "auc": 0.7047857684010653,
         "prevalence_matched_dice": 0.6101707003946555,
+        "prevalence_matched_threshold": 0.7647058823529411,
         "nuclear_boundary_contrast": 0.06528593309256758,
-        "edge_to_core_nuclear_mean_ratio": 0.9629220511434397
+        "nuclear_inner_boundary_pixels": 24037,
+        "nearby_outer_boundary_pixels": 28460,
+        "edge_to_core_nuclear_mean_ratio": 0.9629220511434397,
+        "edge_nuclear_pixels": 3910,
+        "core_nuclear_pixels": 38132,
+        "sampled_stratified_windows": 1,
+        "shadow_preview": "output_gigatime_shadow_qc.png",
+        "preview": "output_gigatime_nuclear_qc.png",
+        "preview_region_yxyx": [
+          0,
+          827,
+          0,
+          743
+        ],
+        "image": "/mnt/sata_ssd/Tambua-monusac-rgb-corrected-2026-10-20-v1/output/TCGA-E2-A108-01Z-00-DX1_001/gigatime_output/gigatime_probs.zarr",
+        "nuclei_mask": "/mnt/sata_ssd/Tambua-monusac-matched-2026-10-19-prep-v3-scanner-rgb/TCGA-E2-A108-01Z-00-DX1_001/expert_nuclei.ome.tif",
+        "image_shape_yx": [
+          827,
+          743
+        ]
       },
       "annotated_cells": 458,
       "n_cells": 458,
-      "correct": 423,
-      "accuracy": 0.92358,
+      "correct": 427,
+      "accuracy": 0.93231,
       "support": {
         "epithelial": 97,
         "lymphocyte": 361,
@@ -2054,14 +3833,14 @@
       },
       "confusion_matrix": [
         [
-          80,
-          17,
+          81,
+          16,
           0,
           0
         ],
         [
-          18,
-          343,
+          15,
+          346,
           0,
           0
         ],
@@ -2085,7 +3864,10 @@
         "paired_nuclei": 458,
         "median_nucleus_to_local_ring_ratio": 1.469,
         "fraction_nuclei_brighter_than_local_ring": 0.95
-      }
+      },
+      "accepted_qc": true,
+      "model_scope": "strict_qc_fastpls_fit",
+      "split": "test"
     },
     {
       "sample_id": "TCGA-E2-A108-01Z-00-DX1_002",
@@ -2097,14 +3879,126 @@
       "height": 518,
       "source_color_reference": "scanner_svs_rgb",
       "native_nuclear_qc": {
+        "schema_version": 2,
+        "scope": "virtual_DAPI_vs_HE_derived_nuclear_mask",
+        "sampling_stride_px": 1,
+        "sampled_windows": 1,
+        "nuclear_pixels": 76740,
+        "nearby_extranuclear_pixels": 61978,
+        "thresholds": {
+          "min_auc": 0.7,
+          "min_prevalence_matched_dice": 0.35,
+          "min_edge_to_core_nuclear_mean_ratio": 0.65,
+          "min_nuclear_boundary_contrast": 0.05,
+          "min_spatial_nuclear_auc": 0.6,
+          "min_spatial_positive_and_negative_pixels": 500
+        },
+        "interpretation_limit": "Agreement with H&E-derived nuclei does not establish measured DAPI accuracy. A poor StarDist mask can also lower this score. Inspect the overlay and mask.",
         "status": "fail",
         "alignment_status": "fail",
         "border_shadow_status": "pass",
         "spatial_shadow_status": "fail",
+        "spatial_regions": [
+          {
+            "row": 0,
+            "column": 0,
+            "nuclear_pixels": 6081,
+            "nearby_extranuclear_pixels": 4712,
+            "auc": 0.6853107517947438,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 1,
+            "nuclear_pixels": 7353,
+            "nearby_extranuclear_pixels": 6704,
+            "auc": 0.7683207412622322,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 2,
+            "nuclear_pixels": 5103,
+            "nearby_extranuclear_pixels": 5610,
+            "auc": 0.7964426399066922,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 0,
+            "nuclear_pixels": 9193,
+            "nearby_extranuclear_pixels": 7709,
+            "auc": 0.7375004615921664,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 1,
+            "nuclear_pixels": 12330,
+            "nearby_extranuclear_pixels": 8826,
+            "auc": 0.6916038178139534,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 2,
+            "nuclear_pixels": 10854,
+            "nearby_extranuclear_pixels": 11207,
+            "auc": 0.7888384806285932,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 0,
+            "nuclear_pixels": 5609,
+            "nearby_extranuclear_pixels": 3814,
+            "auc": 0.6488067018667935,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 1,
+            "nuclear_pixels": 13528,
+            "nearby_extranuclear_pixels": 9045,
+            "auc": 0.6609459070048274,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 2,
+            "nuclear_pixels": 6689,
+            "nearby_extranuclear_pixels": 4351,
+            "auc": 0.5615983513377737,
+            "status": "fail"
+          }
+        ],
+        "eligible_spatial_regions": 9,
+        "failed_spatial_regions": 1,
+        "alignment_score": 0.3731222625106916,
         "auc": 0.6626148247447015,
         "prevalence_matched_dice": 0.6490922947648173,
+        "prevalence_matched_threshold": 0.5294117647058824,
         "nuclear_boundary_contrast": 0.03858749125982863,
-        "edge_to_core_nuclear_mean_ratio": 1.1968477994444542
+        "nuclear_inner_boundary_pixels": 14465,
+        "nearby_outer_boundary_pixels": 15364,
+        "edge_to_core_nuclear_mean_ratio": 1.1968477994444542,
+        "edge_nuclear_pixels": 4224,
+        "core_nuclear_pixels": 72516,
+        "sampled_stratified_windows": 1,
+        "shadow_preview": "output_gigatime_shadow_qc.png",
+        "preview": "output_gigatime_nuclear_qc.png",
+        "preview_region_yxyx": [
+          0,
+          514,
+          0,
+          777
+        ],
+        "image": "/mnt/sata_ssd/Tambua-monusac-rgb-corrected-2026-10-20-v1/output/TCGA-E2-A108-01Z-00-DX1_002/gigatime_output/gigatime_probs.zarr",
+        "nuclei_mask": "/mnt/sata_ssd/Tambua-monusac-matched-2026-10-19-prep-v3-scanner-rgb/TCGA-E2-A108-01Z-00-DX1_002/expert_nuclei.ome.tif",
+        "image_shape_yx": [
+          514,
+          777
+        ]
       },
       "annotated_cells": 68,
       "n_cells": 68,
@@ -2149,7 +4043,10 @@
         "paired_nuclei": 68,
         "median_nucleus_to_local_ring_ratio": 2.241,
         "fraction_nuclei_brighter_than_local_ring": 0.941
-      }
+      },
+      "accepted_qc": false,
+      "model_scope": "diagnostic_all_image_fit_failed_or_insufficient_qc",
+      "split": "test"
     },
     {
       "sample_id": "TCGA-E2-A108-01Z-00-DX1_003",
@@ -2161,14 +4058,126 @@
       "height": 885,
       "source_color_reference": "scanner_svs_rgb",
       "native_nuclear_qc": {
+        "schema_version": 2,
+        "scope": "virtual_DAPI_vs_HE_derived_nuclear_mask",
+        "sampling_stride_px": 2,
+        "sampled_windows": 1,
+        "nuclear_pixels": 28699,
+        "nearby_extranuclear_pixels": 21487,
+        "thresholds": {
+          "min_auc": 0.7,
+          "min_prevalence_matched_dice": 0.35,
+          "min_edge_to_core_nuclear_mean_ratio": 0.65,
+          "min_nuclear_boundary_contrast": 0.05,
+          "min_spatial_nuclear_auc": 0.6,
+          "min_spatial_positive_and_negative_pixels": 500
+        },
+        "interpretation_limit": "Agreement with H&E-derived nuclei does not establish measured DAPI accuracy. A poor StarDist mask can also lower this score. Inspect the overlay and mask.",
         "status": "fail",
         "alignment_status": "fail",
         "border_shadow_status": "pass",
         "spatial_shadow_status": "pass",
+        "spatial_regions": [
+          {
+            "row": 0,
+            "column": 0,
+            "nuclear_pixels": 859,
+            "nearby_extranuclear_pixels": 655,
+            "auc": 0.6973126927280967,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 1,
+            "nuclear_pixels": 2289,
+            "nearby_extranuclear_pixels": 2245,
+            "auc": 0.7156913912864956,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 2,
+            "nuclear_pixels": 3393,
+            "nearby_extranuclear_pixels": 2293,
+            "auc": 0.6548287185759553,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 0,
+            "nuclear_pixels": 4228,
+            "nearby_extranuclear_pixels": 2634,
+            "auc": 0.6206038008891801,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 1,
+            "nuclear_pixels": 6068,
+            "nearby_extranuclear_pixels": 4118,
+            "auc": 0.6860063444792593,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 2,
+            "nuclear_pixels": 2369,
+            "nearby_extranuclear_pixels": 1727,
+            "auc": 0.717742785051951,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 0,
+            "nuclear_pixels": 2780,
+            "nearby_extranuclear_pixels": 2642,
+            "auc": 0.7498716772229453,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 1,
+            "nuclear_pixels": 4392,
+            "nearby_extranuclear_pixels": 3427,
+            "auc": 0.7230933381275768,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 2,
+            "nuclear_pixels": 2321,
+            "nearby_extranuclear_pixels": 1746,
+            "auc": 0.8208422970112519,
+            "status": "pass"
+          }
+        ],
+        "eligible_spatial_regions": 9,
+        "failed_spatial_regions": 0,
+        "alignment_score": 0.4509504950648341,
         "auc": 0.6860544958842354,
         "prevalence_matched_dice": 0.6826389009802727,
+        "prevalence_matched_threshold": 0.8,
         "nuclear_boundary_contrast": 0.07538901914842444,
-        "edge_to_core_nuclear_mean_ratio": 1.0497135522107583
+        "nuclear_inner_boundary_pixels": 10424,
+        "nearby_outer_boundary_pixels": 11205,
+        "edge_to_core_nuclear_mean_ratio": 1.0497135522107583,
+        "edge_nuclear_pixels": 1353,
+        "core_nuclear_pixels": 27346,
+        "sampled_stratified_windows": 1,
+        "shadow_preview": "output_gigatime_shadow_qc.png",
+        "preview": "output_gigatime_nuclear_qc.png",
+        "preview_region_yxyx": [
+          0,
+          878,
+          0,
+          628
+        ],
+        "image": "/mnt/sata_ssd/Tambua-monusac-rgb-corrected-2026-10-20-v1/output/TCGA-E2-A108-01Z-00-DX1_003/gigatime_output/gigatime_probs.zarr",
+        "nuclei_mask": "/mnt/sata_ssd/Tambua-monusac-matched-2026-10-19-prep-v3-scanner-rgb/TCGA-E2-A108-01Z-00-DX1_003/expert_nuclei.ome.tif",
+        "image_shape_yx": [
+          878,
+          628
+        ]
       },
       "annotated_cells": 108,
       "n_cells": 108,
@@ -2213,7 +4222,10 @@
         "paired_nuclei": 108,
         "median_nucleus_to_local_ring_ratio": 1.742,
         "fraction_nuclei_brighter_than_local_ring": 0.954
-      }
+      },
+      "accepted_qc": false,
+      "model_scope": "diagnostic_all_image_fit_failed_or_insufficient_qc",
+      "split": "test"
     },
     {
       "sample_id": "TCGA-F9-A8NY-01Z-00-DX1_1",
@@ -2225,14 +4237,126 @@
       "height": 2150,
       "source_color_reference": "scanner_svs_rgb",
       "native_nuclear_qc": {
+        "schema_version": 2,
+        "scope": "virtual_DAPI_vs_HE_derived_nuclear_mask",
+        "sampling_stride_px": 3,
+        "sampled_windows": 6,
+        "nuclear_pixels": 73116,
+        "nearby_extranuclear_pixels": 76178,
+        "thresholds": {
+          "min_auc": 0.7,
+          "min_prevalence_matched_dice": 0.35,
+          "min_edge_to_core_nuclear_mean_ratio": 0.65,
+          "min_nuclear_boundary_contrast": 0.05,
+          "min_spatial_nuclear_auc": 0.6,
+          "min_spatial_positive_and_negative_pixels": 500
+        },
+        "interpretation_limit": "Agreement with H&E-derived nuclei does not establish measured DAPI accuracy. A poor StarDist mask can also lower this score. Inspect the overlay and mask.",
         "status": "fail",
         "alignment_status": "fail",
         "border_shadow_status": "pass",
         "spatial_shadow_status": "fail",
+        "spatial_regions": [
+          {
+            "row": 0,
+            "column": 0,
+            "nuclear_pixels": 9651,
+            "nearby_extranuclear_pixels": 9492,
+            "auc": 0.5583134964845375,
+            "status": "fail"
+          },
+          {
+            "row": 0,
+            "column": 1,
+            "nuclear_pixels": 8557,
+            "nearby_extranuclear_pixels": 8984,
+            "auc": 0.5683092316039807,
+            "status": "fail"
+          },
+          {
+            "row": 0,
+            "column": 2,
+            "nuclear_pixels": 8874,
+            "nearby_extranuclear_pixels": 9684,
+            "auc": 0.6368873776680029,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 0,
+            "nuclear_pixels": 7036,
+            "nearby_extranuclear_pixels": 8177,
+            "auc": 0.6378853389646622,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 1,
+            "nuclear_pixels": 8774,
+            "nearby_extranuclear_pixels": 8650,
+            "auc": 0.5819297490878858,
+            "status": "fail"
+          },
+          {
+            "row": 1,
+            "column": 2,
+            "nuclear_pixels": 7923,
+            "nearby_extranuclear_pixels": 7814,
+            "auc": 0.5566961677246647,
+            "status": "fail"
+          },
+          {
+            "row": 2,
+            "column": 0,
+            "nuclear_pixels": 6703,
+            "nearby_extranuclear_pixels": 8106,
+            "auc": 0.6163828765353178,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 1,
+            "nuclear_pixels": 8466,
+            "nearby_extranuclear_pixels": 8564,
+            "auc": 0.631382958269322,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 2,
+            "nuclear_pixels": 7132,
+            "nearby_extranuclear_pixels": 6707,
+            "auc": 0.5572709253714968,
+            "status": "fail"
+          }
+        ],
+        "eligible_spatial_regions": 9,
+        "failed_spatial_regions": 5,
+        "alignment_score": 0.32702595077388963,
         "auc": 0.5883133513541613,
         "prevalence_matched_dice": 0.5731038009204023,
+        "prevalence_matched_threshold": 0.06274509803921569,
         "nuclear_boundary_contrast": 0.07634931935170222,
-        "edge_to_core_nuclear_mean_ratio": 1.3694582096889847
+        "nuclear_inner_boundary_pixels": 43488,
+        "nearby_outer_boundary_pixels": 51434,
+        "edge_to_core_nuclear_mean_ratio": 1.3694582096889847,
+        "edge_nuclear_pixels": 4950,
+        "core_nuclear_pixels": 68166,
+        "sampled_stratified_windows": 6,
+        "shadow_preview": "output_gigatime_shadow_qc.png",
+        "preview": "output_gigatime_nuclear_qc.png",
+        "preview_region_yxyx": [
+          0,
+          1024,
+          0,
+          1024
+        ],
+        "image": "/mnt/sata_ssd/Tambua-monusac-rgb-corrected-2026-10-20-v1/output/TCGA-F9-A8NY-01Z-00-DX1_1/gigatime_output/gigatime_probs.zarr",
+        "nuclei_mask": "/mnt/sata_ssd/Tambua-monusac-matched-2026-10-19-prep-v3-scanner-rgb/TCGA-F9-A8NY-01Z-00-DX1_1/expert_nuclei.ome.tif",
+        "image_shape_yx": [
+          2172,
+          1416
+        ]
       },
       "annotated_cells": 861,
       "n_cells": 861,
@@ -2277,7 +4401,10 @@
         "paired_nuclei": 861,
         "median_nucleus_to_local_ring_ratio": 2.341,
         "fraction_nuclei_brighter_than_local_ring": 0.718
-      }
+      },
+      "accepted_qc": false,
+      "model_scope": "diagnostic_all_image_fit_failed_or_insufficient_qc",
+      "split": "test"
     },
     {
       "sample_id": "TCGA-F9-A8NY-01Z-00-DX1_3",
@@ -2289,14 +4416,126 @@
       "height": 567,
       "source_color_reference": "scanner_svs_rgb",
       "native_nuclear_qc": {
+        "schema_version": 2,
+        "scope": "virtual_DAPI_vs_HE_derived_nuclear_mask",
+        "sampling_stride_px": 1,
+        "sampled_windows": 1,
+        "nuclear_pixels": 69218,
+        "nearby_extranuclear_pixels": 116447,
+        "thresholds": {
+          "min_auc": 0.7,
+          "min_prevalence_matched_dice": 0.35,
+          "min_edge_to_core_nuclear_mean_ratio": 0.65,
+          "min_nuclear_boundary_contrast": 0.05,
+          "min_spatial_nuclear_auc": 0.6,
+          "min_spatial_positive_and_negative_pixels": 500
+        },
+        "interpretation_limit": "Agreement with H&E-derived nuclei does not establish measured DAPI accuracy. A poor StarDist mask can also lower this score. Inspect the overlay and mask.",
         "status": "fail",
         "alignment_status": "fail",
         "border_shadow_status": "pass",
         "spatial_shadow_status": "pass",
+        "spatial_regions": [
+          {
+            "row": 0,
+            "column": 0,
+            "nuclear_pixels": 1710,
+            "nearby_extranuclear_pixels": 3266,
+            "auc": 0.6146928481645019,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 1,
+            "nuclear_pixels": 8046,
+            "nearby_extranuclear_pixels": 14871,
+            "auc": 0.7013432764295102,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 2,
+            "nuclear_pixels": 9151,
+            "nearby_extranuclear_pixels": 16327,
+            "auc": 0.6571128036549115,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 0,
+            "nuclear_pixels": 7846,
+            "nearby_extranuclear_pixels": 15294,
+            "auc": 0.628049833260448,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 1,
+            "nuclear_pixels": 17519,
+            "nearby_extranuclear_pixels": 23385,
+            "auc": 0.6625748106490887,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 2,
+            "nuclear_pixels": 11679,
+            "nearby_extranuclear_pixels": 20262,
+            "auc": 0.6505020890433277,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 0,
+            "nuclear_pixels": 7923,
+            "nearby_extranuclear_pixels": 13908,
+            "auc": 0.6734907246992017,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 1,
+            "nuclear_pixels": 3917,
+            "nearby_extranuclear_pixels": 6567,
+            "auc": 0.6758049303775124,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 2,
+            "nuclear_pixels": 1427,
+            "nearby_extranuclear_pixels": 2567,
+            "auc": 0.7998181326299599,
+            "status": "pass"
+          }
+        ],
+        "eligible_spatial_regions": 9,
+        "failed_spatial_regions": 0,
+        "alignment_score": 0.3126628823428108,
         "auc": 0.6623456017117458,
         "prevalence_matched_dice": 0.5077409117550356,
+        "prevalence_matched_threshold": 0.7372549019607844,
         "nuclear_boundary_contrast": 0.018705642153844848,
-        "edge_to_core_nuclear_mean_ratio": 0.9130057133720989
+        "nuclear_inner_boundary_pixels": 27592,
+        "nearby_outer_boundary_pixels": 31779,
+        "edge_to_core_nuclear_mean_ratio": 0.9130057133720989,
+        "edge_nuclear_pixels": 5808,
+        "core_nuclear_pixels": 63410,
+        "sampled_stratified_windows": 1,
+        "shadow_preview": "output_gigatime_shadow_qc.png",
+        "preview": "output_gigatime_nuclear_qc.png",
+        "preview_region_yxyx": [
+          0,
+          573,
+          0,
+          804
+        ],
+        "image": "/mnt/sata_ssd/Tambua-monusac-rgb-corrected-2026-10-20-v1/output/TCGA-F9-A8NY-01Z-00-DX1_3/gigatime_output/gigatime_probs.zarr",
+        "nuclei_mask": "/mnt/sata_ssd/Tambua-monusac-matched-2026-10-19-prep-v3-scanner-rgb/TCGA-F9-A8NY-01Z-00-DX1_3/expert_nuclei.ome.tif",
+        "image_shape_yx": [
+          573,
+          804
+        ]
       },
       "annotated_cells": 311,
       "n_cells": 311,
@@ -2341,7 +4580,10 @@
         "paired_nuclei": 311,
         "median_nucleus_to_local_ring_ratio": 1.377,
         "fraction_nuclei_brighter_than_local_ring": 0.897
-      }
+      },
+      "accepted_qc": false,
+      "model_scope": "diagnostic_all_image_fit_failed_or_insufficient_qc",
+      "split": "test"
     },
     {
       "sample_id": "TCGA-G9-6356-01Z-00-DX1_1",
@@ -2353,19 +4595,131 @@
       "height": 1026,
       "source_color_reference": "scanner_svs_rgb",
       "native_nuclear_qc": {
+        "schema_version": 2,
+        "scope": "virtual_DAPI_vs_HE_derived_nuclear_mask",
+        "sampling_stride_px": 2,
+        "sampled_windows": 4,
+        "nuclear_pixels": 44887,
+        "nearby_extranuclear_pixels": 55174,
+        "thresholds": {
+          "min_auc": 0.7,
+          "min_prevalence_matched_dice": 0.35,
+          "min_edge_to_core_nuclear_mean_ratio": 0.65,
+          "min_nuclear_boundary_contrast": 0.05,
+          "min_spatial_nuclear_auc": 0.6,
+          "min_spatial_positive_and_negative_pixels": 500
+        },
+        "interpretation_limit": "Agreement with H&E-derived nuclei does not establish measured DAPI accuracy. A poor StarDist mask can also lower this score. Inspect the overlay and mask.",
         "status": "pass",
         "alignment_status": "pass",
         "border_shadow_status": "pass",
         "spatial_shadow_status": "pass",
+        "spatial_regions": [
+          {
+            "row": 0,
+            "column": 0,
+            "nuclear_pixels": 4208,
+            "nearby_extranuclear_pixels": 5204,
+            "auc": 0.8021535742833095,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 1,
+            "nuclear_pixels": 5011,
+            "nearby_extranuclear_pixels": 6014,
+            "auc": 0.7487903234102136,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 2,
+            "nuclear_pixels": 7041,
+            "nearby_extranuclear_pixels": 8430,
+            "auc": 0.7501620991976666,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 0,
+            "nuclear_pixels": 4642,
+            "nearby_extranuclear_pixels": 5531,
+            "auc": 0.7412431798181742,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 1,
+            "nuclear_pixels": 6357,
+            "nearby_extranuclear_pixels": 7149,
+            "auc": 0.7559920255586645,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 2,
+            "nuclear_pixels": 5172,
+            "nearby_extranuclear_pixels": 6576,
+            "auc": 0.7260985775455711,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 0,
+            "nuclear_pixels": 3781,
+            "nearby_extranuclear_pixels": 5205,
+            "auc": 0.7683513121500114,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 1,
+            "nuclear_pixels": 4466,
+            "nearby_extranuclear_pixels": 5592,
+            "auc": 0.7280424717480733,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 2,
+            "nuclear_pixels": 4209,
+            "nearby_extranuclear_pixels": 5473,
+            "auc": 0.7331412284769783,
+            "status": "pass"
+          }
+        ],
+        "eligible_spatial_regions": 9,
+        "failed_spatial_regions": 0,
+        "alignment_score": 0.5267431851896993,
         "auc": 0.7466722066485615,
         "prevalence_matched_dice": 0.654073909171861,
+        "prevalence_matched_threshold": 0.8549019607843137,
         "nuclear_boundary_contrast": 0.09324200099853808,
-        "edge_to_core_nuclear_mean_ratio": 1.0109338113326845
+        "nuclear_inner_boundary_pixels": 23039,
+        "nearby_outer_boundary_pixels": 27386,
+        "edge_to_core_nuclear_mean_ratio": 1.0109338113326845,
+        "edge_nuclear_pixels": 3883,
+        "core_nuclear_pixels": 41004,
+        "sampled_stratified_windows": 4,
+        "shadow_preview": "output_gigatime_shadow_qc.png",
+        "preview": "output_gigatime_nuclear_qc.png",
+        "preview_region_yxyx": [
+          0,
+          1024,
+          0,
+          1024
+        ],
+        "image": "/mnt/sata_ssd/Tambua-monusac-rgb-corrected-2026-10-20-v1/output/TCGA-G9-6356-01Z-00-DX1_1/gigatime_output/gigatime_probs.zarr",
+        "nuclei_mask": "/mnt/sata_ssd/Tambua-monusac-matched-2026-10-19-prep-v3-scanner-rgb/TCGA-G9-6356-01Z-00-DX1_1/expert_nuclei.ome.tif",
+        "image_shape_yx": [
+          1035,
+          1168
+        ]
       },
       "annotated_cells": 377,
       "n_cells": 377,
-      "correct": 345,
-      "accuracy": 0.91512,
+      "correct": 347,
+      "accuracy": 0.92042,
       "support": {
         "epithelial": 347,
         "lymphocyte": 30,
@@ -2380,8 +4734,8 @@
           0
         ],
         [
-          28,
-          2,
+          26,
+          4,
           0,
           0
         ],
@@ -2405,7 +4759,10 @@
         "paired_nuclei": 377,
         "median_nucleus_to_local_ring_ratio": 1.966,
         "fraction_nuclei_brighter_than_local_ring": 0.995
-      }
+      },
+      "accepted_qc": true,
+      "model_scope": "strict_qc_fastpls_fit",
+      "split": "test"
     },
     {
       "sample_id": "TCGA-G9-6356-01Z-00-DX1_6",
@@ -2417,14 +4774,126 @@
       "height": 547,
       "source_color_reference": "scanner_svs_rgb",
       "native_nuclear_qc": {
+        "schema_version": 2,
+        "scope": "virtual_DAPI_vs_HE_derived_nuclear_mask",
+        "sampling_stride_px": 1,
+        "sampled_windows": 1,
+        "nuclear_pixels": 32494,
+        "nearby_extranuclear_pixels": 28184,
+        "thresholds": {
+          "min_auc": 0.7,
+          "min_prevalence_matched_dice": 0.35,
+          "min_edge_to_core_nuclear_mean_ratio": 0.65,
+          "min_nuclear_boundary_contrast": 0.05,
+          "min_spatial_nuclear_auc": 0.6,
+          "min_spatial_positive_and_negative_pixels": 500
+        },
+        "interpretation_limit": "Agreement with H&E-derived nuclei does not establish measured DAPI accuracy. A poor StarDist mask can also lower this score. Inspect the overlay and mask.",
         "status": "fail",
         "alignment_status": "fail",
         "border_shadow_status": "pass",
         "spatial_shadow_status": "fail",
+        "spatial_regions": [
+          {
+            "row": 0,
+            "column": 0,
+            "nuclear_pixels": 4172,
+            "nearby_extranuclear_pixels": 2882,
+            "auc": 0.6353626137170376,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 1,
+            "nuclear_pixels": 6134,
+            "nearby_extranuclear_pixels": 6169,
+            "auc": 0.7139871237927597,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 2,
+            "nuclear_pixels": 3211,
+            "nearby_extranuclear_pixels": 3975,
+            "auc": 0.6454050052002844,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 0,
+            "nuclear_pixels": 872,
+            "nearby_extranuclear_pixels": 454,
+            "auc": null,
+            "status": "insufficient"
+          },
+          {
+            "row": 1,
+            "column": 1,
+            "nuclear_pixels": 1095,
+            "nearby_extranuclear_pixels": 1101,
+            "auc": 0.8556837080445755,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 2,
+            "nuclear_pixels": 2065,
+            "nearby_extranuclear_pixels": 2058,
+            "auc": 0.8133647232673769,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 0,
+            "nuclear_pixels": 1391,
+            "nearby_extranuclear_pixels": 1040,
+            "auc": 0.8718637670740474,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 1,
+            "nuclear_pixels": 9586,
+            "nearby_extranuclear_pixels": 6873,
+            "auc": 0.6701215874828856,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 2,
+            "nuclear_pixels": 3968,
+            "nearby_extranuclear_pixels": 3632,
+            "auc": 0.5810906997166762,
+            "status": "fail"
+          }
+        ],
+        "eligible_spatial_regions": 8,
+        "failed_spatial_regions": 1,
+        "alignment_score": 0.3599784096471331,
         "auc": 0.6525576018042921,
         "prevalence_matched_dice": 0.6363161131611316,
+        "prevalence_matched_threshold": 0.39215686274509803,
         "nuclear_boundary_contrast": 0.03867342364204651,
-        "edge_to_core_nuclear_mean_ratio": 1.4236699213353075
+        "nuclear_inner_boundary_pixels": 6199,
+        "nearby_outer_boundary_pixels": 6631,
+        "edge_to_core_nuclear_mean_ratio": 1.4236699213353075,
+        "edge_nuclear_pixels": 4608,
+        "core_nuclear_pixels": 27886,
+        "sampled_stratified_windows": 1,
+        "shadow_preview": "output_gigatime_shadow_qc.png",
+        "preview": "output_gigatime_nuclear_qc.png",
+        "preview_region_yxyx": [
+          0,
+          552,
+          0,
+          568
+        ],
+        "image": "/mnt/sata_ssd/Tambua-monusac-rgb-corrected-2026-10-20-v1/output/TCGA-G9-6356-01Z-00-DX1_6/gigatime_output/gigatime_probs.zarr",
+        "nuclei_mask": "/mnt/sata_ssd/Tambua-monusac-matched-2026-10-19-prep-v3-scanner-rgb/TCGA-G9-6356-01Z-00-DX1_6/expert_nuclei.ome.tif",
+        "image_shape_yx": [
+          552,
+          568
+        ]
       },
       "annotated_cells": 31,
       "n_cells": 31,
@@ -2469,7 +4938,10 @@
         "paired_nuclei": 31,
         "median_nucleus_to_local_ring_ratio": 1.971,
         "fraction_nuclei_brighter_than_local_ring": 0.903
-      }
+      },
+      "accepted_qc": false,
+      "model_scope": "diagnostic_all_image_fit_failed_or_insufficient_qc",
+      "split": "test"
     },
     {
       "sample_id": "TCGA-G9-6367-01Z-00-DX1_1",
@@ -2481,14 +4953,126 @@
       "height": 635,
       "source_color_reference": "scanner_svs_rgb",
       "native_nuclear_qc": {
+        "schema_version": 2,
+        "scope": "virtual_DAPI_vs_HE_derived_nuclear_mask",
+        "sampling_stride_px": 2,
+        "sampled_windows": 1,
+        "nuclear_pixels": 43023,
+        "nearby_extranuclear_pixels": 55487,
+        "thresholds": {
+          "min_auc": 0.7,
+          "min_prevalence_matched_dice": 0.35,
+          "min_edge_to_core_nuclear_mean_ratio": 0.65,
+          "min_nuclear_boundary_contrast": 0.05,
+          "min_spatial_nuclear_auc": 0.6,
+          "min_spatial_positive_and_negative_pixels": 500
+        },
+        "interpretation_limit": "Agreement with H&E-derived nuclei does not establish measured DAPI accuracy. A poor StarDist mask can also lower this score. Inspect the overlay and mask.",
         "status": "fail",
         "alignment_status": "fail",
         "border_shadow_status": "pass",
         "spatial_shadow_status": "pass",
+        "spatial_regions": [
+          {
+            "row": 0,
+            "column": 0,
+            "nuclear_pixels": 4747,
+            "nearby_extranuclear_pixels": 6038,
+            "auc": 0.6796392665983914,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 1,
+            "nuclear_pixels": 5240,
+            "nearby_extranuclear_pixels": 6665,
+            "auc": 0.7016120155993196,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 2,
+            "nuclear_pixels": 4334,
+            "nearby_extranuclear_pixels": 5720,
+            "auc": 0.707090604941897,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 0,
+            "nuclear_pixels": 4807,
+            "nearby_extranuclear_pixels": 6427,
+            "auc": 0.6999588665834008,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 1,
+            "nuclear_pixels": 5459,
+            "nearby_extranuclear_pixels": 6657,
+            "auc": 0.7542823428464771,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 2,
+            "nuclear_pixels": 3437,
+            "nearby_extranuclear_pixels": 5316,
+            "auc": 0.7146084645624903,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 0,
+            "nuclear_pixels": 5283,
+            "nearby_extranuclear_pixels": 6372,
+            "auc": 0.6938498944665992,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 1,
+            "nuclear_pixels": 5106,
+            "nearby_extranuclear_pixels": 6421,
+            "auc": 0.711392943968799,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 2,
+            "nuclear_pixels": 4610,
+            "nearby_extranuclear_pixels": 5871,
+            "auc": 0.705808117475839,
+            "status": "pass"
+          }
+        ],
+        "eligible_spatial_regions": 9,
+        "failed_spatial_regions": 0,
+        "alignment_score": 0.40440243519131147,
         "auc": 0.704545793024386,
         "prevalence_matched_dice": 0.5963402503065214,
+        "prevalence_matched_threshold": 0.8901960784313725,
         "nuclear_boundary_contrast": 0.04061726367223606,
-        "edge_to_core_nuclear_mean_ratio": 0.9871848898194288
+        "nuclear_inner_boundary_pixels": 26858,
+        "nearby_outer_boundary_pixels": 32133,
+        "edge_to_core_nuclear_mean_ratio": 0.9871848898194288,
+        "edge_nuclear_pixels": 4734,
+        "core_nuclear_pixels": 38289,
+        "sampled_stratified_windows": 1,
+        "shadow_preview": "output_gigatime_shadow_qc.png",
+        "preview": "output_gigatime_nuclear_qc.png",
+        "preview_region_yxyx": [
+          0,
+          641,
+          0,
+          847
+        ],
+        "image": "/mnt/sata_ssd/Tambua-monusac-rgb-corrected-2026-10-20-v1/output/TCGA-G9-6367-01Z-00-DX1_1/gigatime_output/gigatime_probs.zarr",
+        "nuclei_mask": "/mnt/sata_ssd/Tambua-monusac-matched-2026-10-19-prep-v3-scanner-rgb/TCGA-G9-6367-01Z-00-DX1_1/expert_nuclei.ome.tif",
+        "image_shape_yx": [
+          641,
+          847
+        ]
       },
       "annotated_cells": 583,
       "n_cells": 583,
@@ -2533,7 +5117,10 @@
         "paired_nuclei": 583,
         "median_nucleus_to_local_ring_ratio": 1.249,
         "fraction_nuclei_brighter_than_local_ring": 0.955
-      }
+      },
+      "accepted_qc": false,
+      "model_scope": "diagnostic_all_image_fit_failed_or_insufficient_qc",
+      "split": "test"
     },
     {
       "sample_id": "TCGA-G9-6367-01Z-00-DX1_2",
@@ -2545,19 +5132,131 @@
       "height": 1005,
       "source_color_reference": "scanner_svs_rgb",
       "native_nuclear_qc": {
+        "schema_version": 2,
+        "scope": "virtual_DAPI_vs_HE_derived_nuclear_mask",
+        "sampling_stride_px": 2,
+        "sampled_windows": 2,
+        "nuclear_pixels": 49610,
+        "nearby_extranuclear_pixels": 43951,
+        "thresholds": {
+          "min_auc": 0.7,
+          "min_prevalence_matched_dice": 0.35,
+          "min_edge_to_core_nuclear_mean_ratio": 0.65,
+          "min_nuclear_boundary_contrast": 0.05,
+          "min_spatial_nuclear_auc": 0.6,
+          "min_spatial_positive_and_negative_pixels": 500
+        },
+        "interpretation_limit": "Agreement with H&E-derived nuclei does not establish measured DAPI accuracy. A poor StarDist mask can also lower this score. Inspect the overlay and mask.",
         "status": "pass",
         "alignment_status": "pass",
         "border_shadow_status": "pass",
         "spatial_shadow_status": "pass",
+        "spatial_regions": [
+          {
+            "row": 0,
+            "column": 0,
+            "nuclear_pixels": 5149,
+            "nearby_extranuclear_pixels": 4894,
+            "auc": 0.7972123208961425,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 1,
+            "nuclear_pixels": 4535,
+            "nearby_extranuclear_pixels": 4694,
+            "auc": 0.8015308900287449,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 2,
+            "nuclear_pixels": 5624,
+            "nearby_extranuclear_pixels": 4910,
+            "auc": 0.7859931107010107,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 0,
+            "nuclear_pixels": 7054,
+            "nearby_extranuclear_pixels": 6254,
+            "auc": 0.8141639478321059,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 1,
+            "nuclear_pixels": 5188,
+            "nearby_extranuclear_pixels": 4867,
+            "auc": 0.8038107015937745,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 2,
+            "nuclear_pixels": 7149,
+            "nearby_extranuclear_pixels": 6027,
+            "auc": 0.7953329938807794,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 0,
+            "nuclear_pixels": 5720,
+            "nearby_extranuclear_pixels": 4820,
+            "auc": 0.8282032723500565,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 1,
+            "nuclear_pixels": 4398,
+            "nearby_extranuclear_pixels": 4044,
+            "auc": 0.8135822291761969,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 2,
+            "nuclear_pixels": 4793,
+            "nearby_extranuclear_pixels": 3441,
+            "auc": 0.7086222867032246,
+            "status": "pass"
+          }
+        ],
+        "eligible_spatial_regions": 9,
+        "failed_spatial_regions": 0,
+        "alignment_score": 0.5542115529507585,
         "auc": 0.7895296323541778,
         "prevalence_matched_dice": 0.7501673294224183,
+        "prevalence_matched_threshold": 0.9529411764705882,
         "nuclear_boundary_contrast": 0.06171207059278094,
-        "edge_to_core_nuclear_mean_ratio": 0.9866537428393299
+        "nuclear_inner_boundary_pixels": 20280,
+        "nearby_outer_boundary_pixels": 22304,
+        "edge_to_core_nuclear_mean_ratio": 0.9866537428393299,
+        "edge_nuclear_pixels": 5176,
+        "core_nuclear_pixels": 44434,
+        "sampled_stratified_windows": 2,
+        "shadow_preview": "output_gigatime_shadow_qc.png",
+        "preview": "output_gigatime_nuclear_qc.png",
+        "preview_region_yxyx": [
+          0,
+          1014,
+          0,
+          1024
+        ],
+        "image": "/mnt/sata_ssd/Tambua-monusac-rgb-corrected-2026-10-20-v1/output/TCGA-G9-6367-01Z-00-DX1_2/gigatime_output/gigatime_probs.zarr",
+        "nuclei_mask": "/mnt/sata_ssd/Tambua-monusac-matched-2026-10-19-prep-v3-scanner-rgb/TCGA-G9-6367-01Z-00-DX1_2/expert_nuclei.ome.tif",
+        "image_shape_yx": [
+          1014,
+          1174
+        ]
       },
       "annotated_cells": 245,
       "n_cells": 245,
-      "correct": 238,
-      "accuracy": 0.97143,
+      "correct": 241,
+      "accuracy": 0.98367,
       "support": {
         "epithelial": 244,
         "lymphocyte": 1,
@@ -2566,8 +5265,8 @@
       },
       "confusion_matrix": [
         [
-          238,
-          6,
+          241,
+          3,
           0,
           0
         ],
@@ -2597,7 +5296,10 @@
         "paired_nuclei": 245,
         "median_nucleus_to_local_ring_ratio": 1.63,
         "fraction_nuclei_brighter_than_local_ring": 1.0
-      }
+      },
+      "accepted_qc": true,
+      "model_scope": "strict_qc_fastpls_fit",
+      "split": "test"
     },
     {
       "sample_id": "TCGA-G9-6367-01Z-00-DX1_7",
@@ -2609,14 +5311,126 @@
       "height": 633,
       "source_color_reference": "scanner_svs_rgb",
       "native_nuclear_qc": {
+        "schema_version": 2,
+        "scope": "virtual_DAPI_vs_HE_derived_nuclear_mask",
+        "sampling_stride_px": 1,
+        "sampled_windows": 1,
+        "nuclear_pixels": 98190,
+        "nearby_extranuclear_pixels": 79795,
+        "thresholds": {
+          "min_auc": 0.7,
+          "min_prevalence_matched_dice": 0.35,
+          "min_edge_to_core_nuclear_mean_ratio": 0.65,
+          "min_nuclear_boundary_contrast": 0.05,
+          "min_spatial_nuclear_auc": 0.6,
+          "min_spatial_positive_and_negative_pixels": 500
+        },
+        "interpretation_limit": "Agreement with H&E-derived nuclei does not establish measured DAPI accuracy. A poor StarDist mask can also lower this score. Inspect the overlay and mask.",
         "status": "fail",
         "alignment_status": "fail",
         "border_shadow_status": "pass",
         "spatial_shadow_status": "fail",
+        "spatial_regions": [
+          {
+            "row": 0,
+            "column": 0,
+            "nuclear_pixels": 13931,
+            "nearby_extranuclear_pixels": 10366,
+            "auc": 0.8371254639937113,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 1,
+            "nuclear_pixels": 10318,
+            "nearby_extranuclear_pixels": 8103,
+            "auc": 0.7430383076467721,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 2,
+            "nuclear_pixels": 9432,
+            "nearby_extranuclear_pixels": 7806,
+            "auc": 0.7974846301979056,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 0,
+            "nuclear_pixels": 10683,
+            "nearby_extranuclear_pixels": 10676,
+            "auc": 0.7856675324844763,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 1,
+            "nuclear_pixels": 11093,
+            "nearby_extranuclear_pixels": 10294,
+            "auc": 0.7755154064132113,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 2,
+            "nuclear_pixels": 12574,
+            "nearby_extranuclear_pixels": 9847,
+            "auc": 0.7868060303072835,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 0,
+            "nuclear_pixels": 14115,
+            "nearby_extranuclear_pixels": 10911,
+            "auc": 0.8046627346177343,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 1,
+            "nuclear_pixels": 7705,
+            "nearby_extranuclear_pixels": 7058,
+            "auc": 0.8026276486528879,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 2,
+            "nuclear_pixels": 8339,
+            "nearby_extranuclear_pixels": 4734,
+            "auc": 0.5935782045902069,
+            "status": "fail"
+          }
+        ],
+        "eligible_spatial_regions": 9,
+        "failed_spatial_regions": 1,
+        "alignment_score": 0.4809856421188567,
         "auc": 0.7572921413392927,
         "prevalence_matched_dice": 0.7320468649208167,
+        "prevalence_matched_threshold": 0.9411764705882353,
         "nuclear_boundary_contrast": 0.03254542763948787,
-        "edge_to_core_nuclear_mean_ratio": 1.0354945263290474
+        "nuclear_inner_boundary_pixels": 19818,
+        "nearby_outer_boundary_pixels": 20674,
+        "edge_to_core_nuclear_mean_ratio": 1.0354945263290474,
+        "edge_nuclear_pixels": 11225,
+        "core_nuclear_pixels": 86965,
+        "sampled_stratified_windows": 1,
+        "shadow_preview": "output_gigatime_shadow_qc.png",
+        "preview": "output_gigatime_nuclear_qc.png",
+        "preview_region_yxyx": [
+          0,
+          639,
+          0,
+          715
+        ],
+        "image": "/mnt/sata_ssd/Tambua-monusac-rgb-corrected-2026-10-20-v1/output/TCGA-G9-6367-01Z-00-DX1_7/gigatime_output/gigatime_probs.zarr",
+        "nuclei_mask": "/mnt/sata_ssd/Tambua-monusac-matched-2026-10-19-prep-v3-scanner-rgb/TCGA-G9-6367-01Z-00-DX1_7/expert_nuclei.ome.tif",
+        "image_shape_yx": [
+          639,
+          715
+        ]
       },
       "annotated_cells": 110,
       "n_cells": 110,
@@ -2661,7 +5475,10 @@
         "paired_nuclei": 110,
         "median_nucleus_to_local_ring_ratio": 1.57,
         "fraction_nuclei_brighter_than_local_ring": 0.991
-      }
+      },
+      "accepted_qc": false,
+      "model_scope": "diagnostic_all_image_fit_failed_or_insufficient_qc",
+      "split": "test"
     },
     {
       "sample_id": "TCGA-IZ-A6M9-01Z-00-DX1_1",
@@ -2673,14 +5490,126 @@
       "height": 600,
       "source_color_reference": "scanner_svs_rgb",
       "native_nuclear_qc": {
+        "schema_version": 2,
+        "scope": "virtual_DAPI_vs_HE_derived_nuclear_mask",
+        "sampling_stride_px": 1,
+        "sampled_windows": 1,
+        "nuclear_pixels": 69991,
+        "nearby_extranuclear_pixels": 84866,
+        "thresholds": {
+          "min_auc": 0.7,
+          "min_prevalence_matched_dice": 0.35,
+          "min_edge_to_core_nuclear_mean_ratio": 0.65,
+          "min_nuclear_boundary_contrast": 0.05,
+          "min_spatial_nuclear_auc": 0.6,
+          "min_spatial_positive_and_negative_pixels": 500
+        },
+        "interpretation_limit": "Agreement with H&E-derived nuclei does not establish measured DAPI accuracy. A poor StarDist mask can also lower this score. Inspect the overlay and mask.",
         "status": "fail",
         "alignment_status": "fail",
         "border_shadow_status": "pass",
         "spatial_shadow_status": "pass",
+        "spatial_regions": [
+          {
+            "row": 0,
+            "column": 0,
+            "nuclear_pixels": 9895,
+            "nearby_extranuclear_pixels": 12105,
+            "auc": 0.6765251163653722,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 1,
+            "nuclear_pixels": 7679,
+            "nearby_extranuclear_pixels": 7995,
+            "auc": 0.7179239108047165,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 2,
+            "nuclear_pixels": 6129,
+            "nearby_extranuclear_pixels": 7334,
+            "auc": 0.7399066488994037,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 0,
+            "nuclear_pixels": 9855,
+            "nearby_extranuclear_pixels": 11228,
+            "auc": 0.7836149867774573,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 1,
+            "nuclear_pixels": 9308,
+            "nearby_extranuclear_pixels": 10483,
+            "auc": 0.683680693496799,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 2,
+            "nuclear_pixels": 6174,
+            "nearby_extranuclear_pixels": 7628,
+            "auc": 0.7256047273705097,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 0,
+            "nuclear_pixels": 4362,
+            "nearby_extranuclear_pixels": 6377,
+            "auc": 0.6797242346387972,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 1,
+            "nuclear_pixels": 8982,
+            "nearby_extranuclear_pixels": 11075,
+            "auc": 0.7652749391433984,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 2,
+            "nuclear_pixels": 7607,
+            "nearby_extranuclear_pixels": 10641,
+            "auc": 0.7453485058518023,
+            "status": "pass"
+          }
+        ],
+        "eligible_spatial_regions": 9,
+        "failed_spatial_regions": 0,
+        "alignment_score": 0.41990396970615174,
         "auc": 0.7166818216407174,
         "prevalence_matched_dice": 0.6305418021349086,
+        "prevalence_matched_threshold": 0.8784313725490196,
         "nuclear_boundary_contrast": 0.03646935802536577,
-        "edge_to_core_nuclear_mean_ratio": 1.0190737048145293
+        "nuclear_inner_boundary_pixels": 19544,
+        "nearby_outer_boundary_pixels": 21324,
+        "edge_to_core_nuclear_mean_ratio": 1.0190737048145293,
+        "edge_nuclear_pixels": 12347,
+        "core_nuclear_pixels": 57644,
+        "sampled_stratified_windows": 1,
+        "shadow_preview": "output_gigatime_shadow_qc.png",
+        "preview": "output_gigatime_nuclear_qc.png",
+        "preview_region_yxyx": [
+          0,
+          597,
+          0,
+          597
+        ],
+        "image": "/mnt/sata_ssd/Tambua-monusac-rgb-corrected-2026-10-20-v1/output/TCGA-IZ-A6M9-01Z-00-DX1_1/gigatime_output/gigatime_probs.zarr",
+        "nuclei_mask": "/mnt/sata_ssd/Tambua-monusac-matched-2026-10-19-prep-v3-scanner-rgb/TCGA-IZ-A6M9-01Z-00-DX1_1/expert_nuclei.ome.tif",
+        "image_shape_yx": [
+          597,
+          597
+        ]
       },
       "annotated_cells": 148,
       "n_cells": 148,
@@ -2725,7 +5654,10 @@
         "paired_nuclei": 148,
         "median_nucleus_to_local_ring_ratio": 1.673,
         "fraction_nuclei_brighter_than_local_ring": 0.946
-      }
+      },
+      "accepted_qc": false,
+      "model_scope": "diagnostic_all_image_fit_failed_or_insufficient_qc",
+      "split": "test"
     },
     {
       "sample_id": "TCGA-IZ-A6M9-01Z-00-DX1_2",
@@ -2737,14 +5669,126 @@
       "height": 1251,
       "source_color_reference": "scanner_svs_rgb",
       "native_nuclear_qc": {
+        "schema_version": 2,
+        "scope": "virtual_DAPI_vs_HE_derived_nuclear_mask",
+        "sampling_stride_px": 2,
+        "sampled_windows": 4,
+        "nuclear_pixels": 68719,
+        "nearby_extranuclear_pixels": 73478,
+        "thresholds": {
+          "min_auc": 0.7,
+          "min_prevalence_matched_dice": 0.35,
+          "min_edge_to_core_nuclear_mean_ratio": 0.65,
+          "min_nuclear_boundary_contrast": 0.05,
+          "min_spatial_nuclear_auc": 0.6,
+          "min_spatial_positive_and_negative_pixels": 500
+        },
+        "interpretation_limit": "Agreement with H&E-derived nuclei does not establish measured DAPI accuracy. A poor StarDist mask can also lower this score. Inspect the overlay and mask.",
         "status": "fail",
         "alignment_status": "fail",
         "border_shadow_status": "pass",
         "spatial_shadow_status": "pass",
+        "spatial_regions": [
+          {
+            "row": 0,
+            "column": 0,
+            "nuclear_pixels": 7648,
+            "nearby_extranuclear_pixels": 7520,
+            "auc": 0.7249462468980904,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 1,
+            "nuclear_pixels": 7549,
+            "nearby_extranuclear_pixels": 7868,
+            "auc": 0.6674986091546414,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 2,
+            "nuclear_pixels": 9616,
+            "nearby_extranuclear_pixels": 10628,
+            "auc": 0.6804695636099538,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 0,
+            "nuclear_pixels": 6249,
+            "nearby_extranuclear_pixels": 7477,
+            "auc": 0.7103983447569613,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 1,
+            "nuclear_pixels": 7962,
+            "nearby_extranuclear_pixels": 8589,
+            "auc": 0.6847871287790366,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 2,
+            "nuclear_pixels": 7071,
+            "nearby_extranuclear_pixels": 7897,
+            "auc": 0.7151399595058618,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 0,
+            "nuclear_pixels": 9192,
+            "nearby_extranuclear_pixels": 9627,
+            "auc": 0.7043243046125259,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 1,
+            "nuclear_pixels": 7598,
+            "nearby_extranuclear_pixels": 7642,
+            "auc": 0.6771234823362585,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 2,
+            "nuclear_pixels": 5834,
+            "nearby_extranuclear_pixels": 6230,
+            "auc": 0.7459865260984619,
+            "status": "pass"
+          }
+        ],
+        "eligible_spatial_regions": 9,
+        "failed_spatial_regions": 0,
+        "alignment_score": 0.4930948669807212,
         "auc": 0.6944782161104527,
         "prevalence_matched_dice": 0.6468431771894094,
+        "prevalence_matched_threshold": 0.6235294117647059,
         "nuclear_boundary_contrast": 0.10952468525833292,
-        "edge_to_core_nuclear_mean_ratio": 0.8309931407186609
+        "nuclear_inner_boundary_pixels": 31675,
+        "nearby_outer_boundary_pixels": 36301,
+        "edge_to_core_nuclear_mean_ratio": 0.8309931407186609,
+        "edge_nuclear_pixels": 5554,
+        "core_nuclear_pixels": 63165,
+        "sampled_stratified_windows": 4,
+        "shadow_preview": "output_gigatime_shadow_qc.png",
+        "preview": "output_gigatime_nuclear_qc.png",
+        "preview_region_yxyx": [
+          0,
+          1024,
+          0,
+          1024
+        ],
+        "image": "/mnt/sata_ssd/Tambua-monusac-rgb-corrected-2026-10-20-v1/output/TCGA-IZ-A6M9-01Z-00-DX1_2/gigatime_output/gigatime_probs.zarr",
+        "nuclei_mask": "/mnt/sata_ssd/Tambua-monusac-matched-2026-10-19-prep-v3-scanner-rgb/TCGA-IZ-A6M9-01Z-00-DX1_2/expert_nuclei.ome.tif",
+        "image_shape_yx": [
+          1244,
+          1491
+        ]
       },
       "annotated_cells": 436,
       "n_cells": 436,
@@ -2789,7 +5833,10 @@
         "paired_nuclei": 436,
         "median_nucleus_to_local_ring_ratio": 2.685,
         "fraction_nuclei_brighter_than_local_ring": 0.917
-      }
+      },
+      "accepted_qc": false,
+      "model_scope": "diagnostic_all_image_fit_failed_or_insufficient_qc",
+      "split": "test"
     },
     {
       "sample_id": "TCGA-VP-A87E-01Z-00-DX1_5",
@@ -2801,14 +5848,126 @@
       "height": 1400,
       "source_color_reference": "scanner_svs_rgb",
       "native_nuclear_qc": {
+        "schema_version": 2,
+        "scope": "virtual_DAPI_vs_HE_derived_nuclear_mask",
+        "sampling_stride_px": 3,
+        "sampled_windows": 4,
+        "nuclear_pixels": 42662,
+        "nearby_extranuclear_pixels": 45374,
+        "thresholds": {
+          "min_auc": 0.7,
+          "min_prevalence_matched_dice": 0.35,
+          "min_edge_to_core_nuclear_mean_ratio": 0.65,
+          "min_nuclear_boundary_contrast": 0.05,
+          "min_spatial_nuclear_auc": 0.6,
+          "min_spatial_positive_and_negative_pixels": 500
+        },
+        "interpretation_limit": "Agreement with H&E-derived nuclei does not establish measured DAPI accuracy. A poor StarDist mask can also lower this score. Inspect the overlay and mask.",
         "status": "fail",
         "alignment_status": "fail",
         "border_shadow_status": "pass",
         "spatial_shadow_status": "pass",
+        "spatial_regions": [
+          {
+            "row": 0,
+            "column": 0,
+            "nuclear_pixels": 4309,
+            "nearby_extranuclear_pixels": 4670,
+            "auc": 0.6978797924567026,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 1,
+            "nuclear_pixels": 4320,
+            "nearby_extranuclear_pixels": 4552,
+            "auc": 0.6925953386382868,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 2,
+            "nuclear_pixels": 4706,
+            "nearby_extranuclear_pixels": 5108,
+            "auc": 0.6256273543729144,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 0,
+            "nuclear_pixels": 6543,
+            "nearby_extranuclear_pixels": 6491,
+            "auc": 0.6510178108331047,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 1,
+            "nuclear_pixels": 4593,
+            "nearby_extranuclear_pixels": 4959,
+            "auc": 0.7056088754260003,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 2,
+            "nuclear_pixels": 5092,
+            "nearby_extranuclear_pixels": 5413,
+            "auc": 0.6463850119921651,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 0,
+            "nuclear_pixels": 3857,
+            "nearby_extranuclear_pixels": 4066,
+            "auc": 0.7023173254472069,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 1,
+            "nuclear_pixels": 4579,
+            "nearby_extranuclear_pixels": 4981,
+            "auc": 0.6503899574881602,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 2,
+            "nuclear_pixels": 4663,
+            "nearby_extranuclear_pixels": 5134,
+            "auc": 0.6503698102936519,
+            "status": "pass"
+          }
+        ],
+        "eligible_spatial_regions": 9,
+        "failed_spatial_regions": 0,
+        "alignment_score": 0.4698556751780537,
         "auc": 0.664601706172144,
         "prevalence_matched_dice": 0.6153468126930638,
+        "prevalence_matched_threshold": 0.12549019607843137,
         "nuclear_boundary_contrast": 0.12113381266611509,
-        "edge_to_core_nuclear_mean_ratio": 1.1092881490504751
+        "nuclear_inner_boundary_pixels": 26125,
+        "nearby_outer_boundary_pixels": 30523,
+        "edge_to_core_nuclear_mean_ratio": 1.1092881490504751,
+        "edge_nuclear_pixels": 2590,
+        "core_nuclear_pixels": 40072,
+        "sampled_stratified_windows": 4,
+        "shadow_preview": "output_gigatime_shadow_qc.png",
+        "preview": "output_gigatime_nuclear_qc.png",
+        "preview_region_yxyx": [
+          0,
+          1024,
+          0,
+          1024
+        ],
+        "image": "/mnt/sata_ssd/Tambua-monusac-rgb-corrected-2026-10-20-v1/output/TCGA-VP-A87E-01Z-00-DX1_5/gigatime_output/gigatime_probs.zarr",
+        "nuclei_mask": "/mnt/sata_ssd/Tambua-monusac-matched-2026-10-19-prep-v3-scanner-rgb/TCGA-VP-A87E-01Z-00-DX1_5/expert_nuclei.ome.tif",
+        "image_shape_yx": [
+          1401,
+          1873
+        ]
       },
       "annotated_cells": 553,
       "n_cells": 553,
@@ -2853,7 +6012,10 @@
         "paired_nuclei": 553,
         "median_nucleus_to_local_ring_ratio": 3.55,
         "fraction_nuclei_brighter_than_local_ring": 0.81
-      }
+      },
+      "accepted_qc": false,
+      "model_scope": "diagnostic_all_image_fit_failed_or_insufficient_qc",
+      "split": "test"
     },
     {
       "sample_id": "TCGA-VP-A87H-01Z-00-DX1_1",
@@ -2865,14 +6027,126 @@
       "height": 566,
       "source_color_reference": "scanner_svs_rgb",
       "native_nuclear_qc": {
+        "schema_version": 2,
+        "scope": "virtual_DAPI_vs_HE_derived_nuclear_mask",
+        "sampling_stride_px": 1,
+        "sampled_windows": 1,
+        "nuclear_pixels": 127571,
+        "nearby_extranuclear_pixels": 148735,
+        "thresholds": {
+          "min_auc": 0.7,
+          "min_prevalence_matched_dice": 0.35,
+          "min_edge_to_core_nuclear_mean_ratio": 0.65,
+          "min_nuclear_boundary_contrast": 0.05,
+          "min_spatial_nuclear_auc": 0.6,
+          "min_spatial_positive_and_negative_pixels": 500
+        },
+        "interpretation_limit": "Agreement with H&E-derived nuclei does not establish measured DAPI accuracy. A poor StarDist mask can also lower this score. Inspect the overlay and mask.",
         "status": "fail",
         "alignment_status": "fail",
         "border_shadow_status": "pass",
         "spatial_shadow_status": "pass",
+        "spatial_regions": [
+          {
+            "row": 0,
+            "column": 0,
+            "nuclear_pixels": 10237,
+            "nearby_extranuclear_pixels": 13859,
+            "auc": 0.6842180145826402,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 1,
+            "nuclear_pixels": 10519,
+            "nearby_extranuclear_pixels": 14380,
+            "auc": 0.699786250087761,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 2,
+            "nuclear_pixels": 15965,
+            "nearby_extranuclear_pixels": 17862,
+            "auc": 0.6123509718854749,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 0,
+            "nuclear_pixels": 14522,
+            "nearby_extranuclear_pixels": 17493,
+            "auc": 0.6936887175434047,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 1,
+            "nuclear_pixels": 14871,
+            "nearby_extranuclear_pixels": 17203,
+            "auc": 0.6797563152862921,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 2,
+            "nuclear_pixels": 14192,
+            "nearby_extranuclear_pixels": 16559,
+            "auc": 0.645637281040709,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 0,
+            "nuclear_pixels": 17048,
+            "nearby_extranuclear_pixels": 17165,
+            "auc": 0.627396796598231,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 1,
+            "nuclear_pixels": 14143,
+            "nearby_extranuclear_pixels": 17070,
+            "auc": 0.6201366380664218,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 2,
+            "nuclear_pixels": 16074,
+            "nearby_extranuclear_pixels": 17144,
+            "auc": 0.6273724686966039,
+            "status": "pass"
+          }
+        ],
+        "eligible_spatial_regions": 9,
+        "failed_spatial_regions": 0,
+        "alignment_score": 0.3048921821044118,
         "auc": 0.647303606646781,
         "prevalence_matched_dice": 0.5734112377660853,
+        "prevalence_matched_threshold": 0.8352941176470589,
         "nuclear_boundary_contrast": 0.01138861281288761,
-        "edge_to_core_nuclear_mean_ratio": 0.9830723904129395
+        "nuclear_inner_boundary_pixels": 45446,
+        "nearby_outer_boundary_pixels": 49507,
+        "edge_to_core_nuclear_mean_ratio": 0.9830723904129395,
+        "edge_nuclear_pixels": 23337,
+        "core_nuclear_pixels": 104234,
+        "sampled_stratified_windows": 1,
+        "shadow_preview": "output_gigatime_shadow_qc.png",
+        "preview": "output_gigatime_nuclear_qc.png",
+        "preview_region_yxyx": [
+          0,
+          567,
+          0,
+          616
+        ],
+        "image": "/mnt/sata_ssd/Tambua-monusac-rgb-corrected-2026-10-20-v1/output/TCGA-VP-A87H-01Z-00-DX1_1/gigatime_output/gigatime_probs.zarr",
+        "nuclei_mask": "/mnt/sata_ssd/Tambua-monusac-matched-2026-10-19-prep-v3-scanner-rgb/TCGA-VP-A87H-01Z-00-DX1_1/expert_nuclei.ome.tif",
+        "image_shape_yx": [
+          567,
+          616
+        ]
       },
       "annotated_cells": 442,
       "n_cells": 442,
@@ -2917,7 +6191,10 @@
         "paired_nuclei": 442,
         "median_nucleus_to_local_ring_ratio": 1.149,
         "fraction_nuclei_brighter_than_local_ring": 0.887
-      }
+      },
+      "accepted_qc": false,
+      "model_scope": "diagnostic_all_image_fit_failed_or_insufficient_qc",
+      "split": "test"
     },
     {
       "sample_id": "TCGA-VP-A87H-01Z-00-DX1_2",
@@ -2929,19 +6206,131 @@
       "height": 1315,
       "source_color_reference": "scanner_svs_rgb",
       "native_nuclear_qc": {
+        "schema_version": 2,
+        "scope": "virtual_DAPI_vs_HE_derived_nuclear_mask",
+        "sampling_stride_px": 2,
+        "sampled_windows": 4,
+        "nuclear_pixels": 90837,
+        "nearby_extranuclear_pixels": 85131,
+        "thresholds": {
+          "min_auc": 0.7,
+          "min_prevalence_matched_dice": 0.35,
+          "min_edge_to_core_nuclear_mean_ratio": 0.65,
+          "min_nuclear_boundary_contrast": 0.05,
+          "min_spatial_nuclear_auc": 0.6,
+          "min_spatial_positive_and_negative_pixels": 500
+        },
+        "interpretation_limit": "Agreement with H&E-derived nuclei does not establish measured DAPI accuracy. A poor StarDist mask can also lower this score. Inspect the overlay and mask.",
         "status": "pass",
         "alignment_status": "pass",
         "border_shadow_status": "pass",
         "spatial_shadow_status": "pass",
+        "spatial_regions": [
+          {
+            "row": 0,
+            "column": 0,
+            "nuclear_pixels": 11526,
+            "nearby_extranuclear_pixels": 10820,
+            "auc": 0.7723392190861262,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 1,
+            "nuclear_pixels": 9169,
+            "nearby_extranuclear_pixels": 7853,
+            "auc": 0.7748831570932773,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 2,
+            "nuclear_pixels": 10843,
+            "nearby_extranuclear_pixels": 9892,
+            "auc": 0.7205464408958073,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 0,
+            "nuclear_pixels": 14114,
+            "nearby_extranuclear_pixels": 13273,
+            "auc": 0.767322627307441,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 1,
+            "nuclear_pixels": 11806,
+            "nearby_extranuclear_pixels": 11585,
+            "auc": 0.7913949155426043,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 2,
+            "nuclear_pixels": 7885,
+            "nearby_extranuclear_pixels": 7966,
+            "auc": 0.7613802859999004,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 0,
+            "nuclear_pixels": 9980,
+            "nearby_extranuclear_pixels": 8877,
+            "auc": 0.7852920496845894,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 1,
+            "nuclear_pixels": 6912,
+            "nearby_extranuclear_pixels": 7037,
+            "auc": 0.7737620494055232,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 2,
+            "nuclear_pixels": 8602,
+            "nearby_extranuclear_pixels": 7828,
+            "auc": 0.7234519589210338,
+            "status": "pass"
+          }
+        ],
+        "eligible_spatial_regions": 9,
+        "failed_spatial_regions": 0,
+        "alignment_score": 0.5545794911695401,
         "auc": 0.7555504035227123,
         "prevalence_matched_dice": 0.7034154492189647,
+        "prevalence_matched_threshold": 0.803921568627451,
         "nuclear_boundary_contrast": 0.09854018027366929,
-        "edge_to_core_nuclear_mean_ratio": 0.9608578349940748
+        "nuclear_inner_boundary_pixels": 39876,
+        "nearby_outer_boundary_pixels": 43679,
+        "edge_to_core_nuclear_mean_ratio": 0.9608578349940748,
+        "edge_nuclear_pixels": 4949,
+        "core_nuclear_pixels": 85888,
+        "sampled_stratified_windows": 4,
+        "shadow_preview": "output_gigatime_shadow_qc.png",
+        "preview": "output_gigatime_nuclear_qc.png",
+        "preview_region_yxyx": [
+          0,
+          1024,
+          0,
+          1024
+        ],
+        "image": "/mnt/sata_ssd/Tambua-monusac-rgb-corrected-2026-10-20-v1/output/TCGA-VP-A87H-01Z-00-DX1_2/gigatime_output/gigatime_probs.zarr",
+        "nuclei_mask": "/mnt/sata_ssd/Tambua-monusac-matched-2026-10-19-prep-v3-scanner-rgb/TCGA-VP-A87H-01Z-00-DX1_2/expert_nuclei.ome.tif",
+        "image_shape_yx": [
+          1316,
+          1461
+        ]
       },
       "annotated_cells": 519,
       "n_cells": 519,
-      "correct": 513,
-      "accuracy": 0.98844,
+      "correct": 502,
+      "accuracy": 0.96724,
       "support": {
         "epithelial": 513,
         "lymphocyte": 3,
@@ -2950,8 +6339,8 @@
       },
       "confusion_matrix": [
         [
-          513,
-          0,
+          502,
+          11,
           0,
           0
         ],
@@ -2981,7 +6370,10 @@
         "paired_nuclei": 519,
         "median_nucleus_to_local_ring_ratio": 2.243,
         "fraction_nuclei_brighter_than_local_ring": 0.988
-      }
+      },
+      "accepted_qc": true,
+      "model_scope": "strict_qc_fastpls_fit",
+      "split": "test"
     },
     {
       "sample_id": "TCGA-X4-A8KS-01Z-00-DX3_1",
@@ -2993,14 +6385,126 @@
       "height": 655,
       "source_color_reference": "scanner_svs_rgb",
       "native_nuclear_qc": {
+        "schema_version": 2,
+        "scope": "virtual_DAPI_vs_HE_derived_nuclear_mask",
+        "sampling_stride_px": 2,
+        "sampled_windows": 1,
+        "nuclear_pixels": 35407,
+        "nearby_extranuclear_pixels": 53789,
+        "thresholds": {
+          "min_auc": 0.7,
+          "min_prevalence_matched_dice": 0.35,
+          "min_edge_to_core_nuclear_mean_ratio": 0.65,
+          "min_nuclear_boundary_contrast": 0.05,
+          "min_spatial_nuclear_auc": 0.6,
+          "min_spatial_positive_and_negative_pixels": 500
+        },
+        "interpretation_limit": "Agreement with H&E-derived nuclei does not establish measured DAPI accuracy. A poor StarDist mask can also lower this score. Inspect the overlay and mask.",
         "status": "pass",
         "alignment_status": "pass",
         "border_shadow_status": "pass",
         "spatial_shadow_status": "pass",
+        "spatial_regions": [
+          {
+            "row": 0,
+            "column": 0,
+            "nuclear_pixels": 4242,
+            "nearby_extranuclear_pixels": 6233,
+            "auc": 0.6823916262039442,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 1,
+            "nuclear_pixels": 4469,
+            "nearby_extranuclear_pixels": 6553,
+            "auc": 0.7012734384627786,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 2,
+            "nuclear_pixels": 4552,
+            "nearby_extranuclear_pixels": 6468,
+            "auc": 0.682510161557833,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 0,
+            "nuclear_pixels": 3630,
+            "nearby_extranuclear_pixels": 5612,
+            "auc": 0.716309551158576,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 1,
+            "nuclear_pixels": 4231,
+            "nearby_extranuclear_pixels": 6382,
+            "auc": 0.701339244348673,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 2,
+            "nuclear_pixels": 4097,
+            "nearby_extranuclear_pixels": 6415,
+            "auc": 0.7234260340294241,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 0,
+            "nuclear_pixels": 2812,
+            "nearby_extranuclear_pixels": 4487,
+            "auc": 0.7144450968040754,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 1,
+            "nuclear_pixels": 3704,
+            "nearby_extranuclear_pixels": 5750,
+            "auc": 0.7141603671706264,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 2,
+            "nuclear_pixels": 3670,
+            "nearby_extranuclear_pixels": 5889,
+            "auc": 0.7560234918193667,
+            "status": "pass"
+          }
+        ],
+        "eligible_spatial_regions": 9,
+        "failed_spatial_regions": 0,
+        "alignment_score": 0.42832460008080914,
         "auc": 0.7079979112265048,
         "prevalence_matched_dice": 0.5834470533616578,
+        "prevalence_matched_threshold": 0.8392156862745098,
         "nuclear_boundary_contrast": 0.05957194041111191,
-        "edge_to_core_nuclear_mean_ratio": 0.995962875962131
+        "nuclear_inner_boundary_pixels": 23148,
+        "nearby_outer_boundary_pixels": 29424,
+        "edge_to_core_nuclear_mean_ratio": 0.995962875962131,
+        "edge_nuclear_pixels": 5654,
+        "core_nuclear_pixels": 29753,
+        "sampled_stratified_windows": 1,
+        "shadow_preview": "output_gigatime_shadow_qc.png",
+        "preview": "output_gigatime_nuclear_qc.png",
+        "preview_region_yxyx": [
+          0,
+          663,
+          0,
+          796
+        ],
+        "image": "/mnt/sata_ssd/Tambua-monusac-rgb-corrected-2026-10-20-v1/output/TCGA-X4-A8KS-01Z-00-DX3_1/gigatime_output/gigatime_probs.zarr",
+        "nuclei_mask": "/mnt/sata_ssd/Tambua-monusac-matched-2026-10-19-prep-v3-scanner-rgb/TCGA-X4-A8KS-01Z-00-DX3_1/expert_nuclei.ome.tif",
+        "image_shape_yx": [
+          663,
+          796
+        ]
       },
       "annotated_cells": 519,
       "n_cells": 519,
@@ -3045,7 +6549,10 @@
         "paired_nuclei": 519,
         "median_nucleus_to_local_ring_ratio": 1.361,
         "fraction_nuclei_brighter_than_local_ring": 0.967
-      }
+      },
+      "accepted_qc": true,
+      "model_scope": "strict_qc_fastpls_fit",
+      "split": "test"
     },
     {
       "sample_id": "TCGA-YL-A9WL-01Z-00-DX1_1",
@@ -3057,14 +6564,126 @@
       "height": 653,
       "source_color_reference": "scanner_svs_rgb",
       "native_nuclear_qc": {
+        "schema_version": 2,
+        "scope": "virtual_DAPI_vs_HE_derived_nuclear_mask",
+        "sampling_stride_px": 1,
+        "sampled_windows": 1,
+        "nuclear_pixels": 123446,
+        "nearby_extranuclear_pixels": 112568,
+        "thresholds": {
+          "min_auc": 0.7,
+          "min_prevalence_matched_dice": 0.35,
+          "min_edge_to_core_nuclear_mean_ratio": 0.65,
+          "min_nuclear_boundary_contrast": 0.05,
+          "min_spatial_nuclear_auc": 0.6,
+          "min_spatial_positive_and_negative_pixels": 500
+        },
+        "interpretation_limit": "Agreement with H&E-derived nuclei does not establish measured DAPI accuracy. A poor StarDist mask can also lower this score. Inspect the overlay and mask.",
         "status": "fail",
         "alignment_status": "fail",
         "border_shadow_status": "pass",
         "spatial_shadow_status": "pass",
+        "spatial_regions": [
+          {
+            "row": 0,
+            "column": 0,
+            "nuclear_pixels": 4218,
+            "nearby_extranuclear_pixels": 5881,
+            "auc": 0.6704221001176406,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 1,
+            "nuclear_pixels": 13116,
+            "nearby_extranuclear_pixels": 15158,
+            "auc": 0.7751623631709599,
+            "status": "pass"
+          },
+          {
+            "row": 0,
+            "column": 2,
+            "nuclear_pixels": 15293,
+            "nearby_extranuclear_pixels": 14507,
+            "auc": 0.7868685760312574,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 0,
+            "nuclear_pixels": 16844,
+            "nearby_extranuclear_pixels": 16183,
+            "auc": 0.8302749800639395,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 1,
+            "nuclear_pixels": 20304,
+            "nearby_extranuclear_pixels": 15628,
+            "auc": 0.707547334520913,
+            "status": "pass"
+          },
+          {
+            "row": 1,
+            "column": 2,
+            "nuclear_pixels": 12575,
+            "nearby_extranuclear_pixels": 12171,
+            "auc": 0.6274621305116471,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 0,
+            "nuclear_pixels": 16487,
+            "nearby_extranuclear_pixels": 12797,
+            "auc": 0.7221993355623761,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 1,
+            "nuclear_pixels": 11571,
+            "nearby_extranuclear_pixels": 10558,
+            "auc": 0.7369792335578939,
+            "status": "pass"
+          },
+          {
+            "row": 2,
+            "column": 2,
+            "nuclear_pixels": 13038,
+            "nearby_extranuclear_pixels": 9685,
+            "auc": 0.7279699948595516,
+            "status": "pass"
+          }
+        ],
+        "eligible_spatial_regions": 9,
+        "failed_spatial_regions": 0,
+        "alignment_score": 0.40998783645246695,
         "auc": 0.7071432367712781,
         "prevalence_matched_dice": 0.6633136118636587,
+        "prevalence_matched_threshold": 0.807843137254902,
         "nuclear_boundary_contrast": 0.029612957372219362,
-        "edge_to_core_nuclear_mean_ratio": 0.8755450653401058
+        "nuclear_inner_boundary_pixels": 30553,
+        "nearby_outer_boundary_pixels": 32402,
+        "edge_to_core_nuclear_mean_ratio": 0.8755450653401058,
+        "edge_nuclear_pixels": 10465,
+        "core_nuclear_pixels": 112981,
+        "sampled_stratified_windows": 1,
+        "shadow_preview": "output_gigatime_shadow_qc.png",
+        "preview": "output_gigatime_nuclear_qc.png",
+        "preview_region_yxyx": [
+          0,
+          650,
+          0,
+          661
+        ],
+        "image": "/mnt/sata_ssd/Tambua-monusac-rgb-corrected-2026-10-20-v1/output/TCGA-YL-A9WL-01Z-00-DX1_1/gigatime_output/gigatime_probs.zarr",
+        "nuclei_mask": "/mnt/sata_ssd/Tambua-monusac-matched-2026-10-19-prep-v3-scanner-rgb/TCGA-YL-A9WL-01Z-00-DX1_1/expert_nuclei.ome.tif",
+        "image_shape_yx": [
+          650,
+          661
+        ]
       },
       "annotated_cells": 205,
       "n_cells": 205,
@@ -3109,7 +6728,156 @@
         "paired_nuclei": 205,
         "median_nucleus_to_local_ring_ratio": 1.479,
         "fraction_nuclei_brighter_than_local_ring": 0.971
-      }
+      },
+      "accepted_qc": false,
+      "model_scope": "diagnostic_all_image_fit_failed_or_insufficient_qc",
+      "split": "test"
     }
-  ]
+  ],
+  "strict_qc_selection": {
+    "all_images": 120,
+    "pass_images": 48,
+    "train_pass": 38,
+    "test_pass": 10,
+    "train_fail": 50,
+    "test_fail": 22,
+    "pass_by_split_organ": {
+      "test:breast": 2,
+      "test:kidney": 2,
+      "test:lung": 2,
+      "test:prostate": 4,
+      "train:breast": 14,
+      "train:kidney": 7,
+      "train:lung": 6,
+      "train:prostate": 11
+    },
+    "selected_test_patients": 10,
+    "excluded_status_counts": {
+      "alignment_status:fail": 69,
+      "border_shadow_status:insufficient": 2,
+      "spatial_shadow_status:fail": 31,
+      "spatial_shadow_status:insufficient": 1,
+      "status:fail": 70
+    },
+    "rule": "All native status, alignment, border-shadow and spatial-shadow fields must explicitly pass"
+  },
+  "accepted_qc_images_in_split": 10,
+  "all_image_diagnostic_test": {
+    "n": 10776,
+    "accuracy": 0.9664996288047513,
+    "balanced_accuracy": 0.48359969739973735,
+    "macro_f1": 0.48383950149917815,
+    "missing_reference_classes": [],
+    "support": {
+      "epithelial": 6548,
+      "lymphocyte": 4178,
+      "macrophage": 46,
+      "neutrophil": 4
+    },
+    "recall": {
+      "epithelial": 0.9844227244960293,
+      "lymphocyte": 0.9499760651029201,
+      "macrophage": 0.0,
+      "neutrophil": 0.0
+    },
+    "f1": {
+      "epithelial": 0.9736424741333736,
+      "lymphocyte": 0.961715531863339,
+      "macrophage": 0.0,
+      "neutrophil": 0.0
+    },
+    "confusion_matrix": [
+      [
+        6446,
+        96,
+        0,
+        6
+      ],
+      [
+        208,
+        3969,
+        0,
+        1
+      ],
+      [
+        36,
+        10,
+        0,
+        0
+      ],
+      [
+        3,
+        1,
+        0,
+        0
+      ]
+    ],
+    "classes": [
+      "epithelial",
+      "lymphocyte",
+      "macrophage",
+      "neutrophil"
+    ]
+  },
+  "strict_qc_test": {
+    "n": 4082,
+    "accuracy": 0.9600685938265556,
+    "balanced_accuracy": null,
+    "macro_f1": null,
+    "missing_reference_classes": [
+      "neutrophil"
+    ],
+    "support": {
+      "epithelial": 2523,
+      "lymphocyte": 1556,
+      "macrophage": 3,
+      "neutrophil": 0
+    },
+    "recall": {
+      "epithelial": 0.9698771304003171,
+      "lymphocyte": 0.9460154241645244,
+      "macrophage": 0.0,
+      "neutrophil": null
+    },
+    "f1": {
+      "epithelial": 0.9677674510579395,
+      "lymphocyte": 0.9484536082474226,
+      "macrophage": 0.0,
+      "neutrophil": null
+    },
+    "confusion_matrix": [
+      [
+        2447,
+        76,
+        0,
+        0
+      ],
+      [
+        84,
+        1472,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "classes": [
+      "epithelial",
+      "lymphocyte",
+      "macrophage",
+      "neutrophil"
+    ]
+  },
+  "split": "test",
+  "dapi_qc_passed_images": 32
 }

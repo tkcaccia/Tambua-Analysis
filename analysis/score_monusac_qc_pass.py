@@ -18,6 +18,13 @@ import sys
 import numpy as np
 
 
+def complete_quality_pass(report: dict) -> bool:
+    """Require explicit passes for nuclei, border shading and spatial shading."""
+    return all(report.get(field) == "pass" for field in
+               ("status", "alignment_status", "border_shadow_status",
+                "spatial_shadow_status"))
+
+
 def run(source: Path, output: Path, tambua: Path) -> dict:
     from tambua.model import metrics
 
@@ -29,6 +36,7 @@ def run(source: Path, output: Path, tambua: Path) -> dict:
             sum(r["split"] == "test" for r in records) != 32:
         raise ValueError("Frozen cohort changed")
     status = {}
+    qc_reasons = Counter()
     for row in records:
         sample = row["sample_id"]
         case = source / "output" / sample
@@ -38,8 +46,20 @@ def run(source: Path, output: Path, tambua: Path) -> dict:
         if validation["source_color_reference"] != "scanner_svs_rgb" or \
                 abs(validation["effective_mpp"] - 0.25) > 1e-4:
             raise ValueError(f"Uncorrected image or physical scale: {sample}")
-        status[sample] = validation["nuclear_qc"]
-    selected = [row for row in records if status[row["sample_id"]] == "pass"]
+        qc_path = case / "gigatime_output/output_gigatime_nuclear_qc.json"
+        if not qc_path.is_file():
+            raise ValueError(f"Native DAPI/shadow QC missing: {sample}")
+        qc = json.loads(qc_path.read_text())
+        if qc.get("status") != validation["nuclear_qc"]:
+            raise ValueError(f"Native QC and validated status disagree: {sample}")
+        status[sample] = {key: qc.get(key) for key in
+                          ("status", "alignment_status", "border_shadow_status",
+                           "spatial_shadow_status")}
+        if not complete_quality_pass(qc):
+            for key, value in status[sample].items():
+                if value != "pass":
+                    qc_reasons[f"{key}:{value}"] += 1
+    selected = [row for row in records if complete_quality_pass(status[row["sample_id"]])]
     training = [r for r in selected if r["split"] == "train"]
     testing = [r for r in selected if r["split"] == "test"]
     train_organs = {r["organ"] for r in training}
@@ -99,7 +119,9 @@ def run(source: Path, output: Path, tambua: Path) -> dict:
                                 "pass_by_split_organ": {
                                     f"{split}:{organ}": count for (split, organ), count in
                                     sorted(Counter((r["split"], r["organ"]) for r in selected).items())},
-                                "selected_test_patients": len({r["patient_id"] for r in testing})},
+                                "selected_test_patients": len({r["patient_id"] for r in testing}),
+                                "excluded_status_counts": dict(sorted(qc_reasons.items())),
+                                "rule": "All native status, alignment, border-shadow and spatial-shadow fields must explicitly pass"},
                   test_by_tissue=by_organ)
     report["claim_limit"] += (
         " QC-selected evaluation at expert-drawn regions, not end-to-end StarDist detection. "
