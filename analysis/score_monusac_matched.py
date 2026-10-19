@@ -16,6 +16,9 @@ import sys
 
 import numpy as np
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from analysis.report_class_coverage import report as class_coverage_report
+
 
 def csv_rows(path: Path) -> list[dict[str, str]]:
     with path.open(newline="", encoding="utf-8-sig") as source:
@@ -127,6 +130,17 @@ def score(source: Path, destination: Path, tambua: Path,
     if sum(x["n"] for x in per_organ.values()) != report["test_cells"]:
         raise ValueError("Tissue-stratified scores do not cover every test cell")
     report["test_by_tissue"] = per_organ
+    image_cases = []
+    for row in records:
+        if row["split"] != "test":
+            continue
+        keys = [key for key in expert if key[0] == row["sample_id"]]
+        item = metrics(np.asarray([expert[key]["cell_type"] for key in keys]),
+                       np.asarray([predicted[key] for key in keys]), classes)
+        image_cases.append({"sample_id": row["sample_id"], "organ": row["organ"],
+                            "n_cells": item["n"], "support": item["support"],
+                            "confusion_matrix": item["confusion_matrix"]})
+    report["test_image_class_coverage"] = class_coverage_report(image_cases, classes)
     report["cohort"] = {"train_images": 88, "test_images": 32,
                         "train_patients": 40, "test_patients": 19,
                         "tissues_in_both_splits": sorted(organs),

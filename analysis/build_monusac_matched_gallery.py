@@ -12,6 +12,7 @@ import numpy as np
 from PIL import Image
 
 from build_monusac_gallery import CLASSES, COLORS, dapi_qc, save_webp
+from report_class_coverage import report as class_coverage_report
 
 
 def csv_rows(path: Path) -> list[dict[str, str]]:
@@ -117,6 +118,7 @@ def build(source: Path, scores: Path, site: Path) -> dict:
               "majority_baseline": report["majority_baseline"],
               "dapi_qc_passed_test_images": sum(x["dapi_qc"]["passes_enrichment_screen"] for x in cases),
               "class_order": CLASSES,
+              "class_coverage": class_coverage_report(cases, CLASSES),
               "scope": "Conditional cell typing at expert nuclei, with a 3 µm nucleus-anchored cell proxy. Virtual markers are uncalibrated predictions.",
               "cases": cases}
     (output / "results.json").write_text(json.dumps(result, indent=2) + "\n")

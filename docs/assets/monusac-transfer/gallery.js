@@ -13,6 +13,7 @@ function pct(value) { return (value * 100).toFixed(1) + '%'; }
 function renderCase(sample) {
   const selected = window.monusacResults.cases.find(item => item.sample_id === sample);
   if (!selected) return;
+  const coverage = window.monusacCoverageById.get(sample);
   const gallery = document.getElementById('monusac-gallery');
   gallery.replaceChildren();
   for (const [key, title, note] of imagePanels) {
@@ -28,7 +29,10 @@ function renderCase(sample) {
   document.getElementById('monusac-case-meta').textContent =
     selected.sample_id + ' · patient ' + selected.patient_id + ' · ' + selected.width + ' × ' + selected.height +
     ' pixels · ' + selected.source_mpp + ' µm/pixel source · ' + selected.n_cells + ' expert cells · ' +
-    selected.correct + ' correct (' + pct(selected.accuracy) + '). Virtual DAPI top-decile enrichment in expert nuclei: ' +
+    coverage.reference_class_count + ' expert cell type' + (coverage.reference_class_count === 1 ? '' : 's') + '. ' +
+    (coverage.multiclass_eligible ? 'Within-image mean class recall: ' + pct(coverage.observed_class_macro_recall) + '. ' :
+      'Single-class image: no multiclass discrimination score. ') +
+    selected.correct + ' historical classifications correct (' + pct(selected.accuracy) + '). Virtual DAPI top-decile enrichment in expert nuclei: ' +
     selected.dapi_qc.top_decile_nuclear_enrichment.toFixed(2) + '×' +
     (selected.dapi_qc.passes_enrichment_screen ? '.' : ' — below the >1 screen.') +
     ' Median nucleus/local-ring signal: ' + selected.dapi_qc.median_nucleus_to_local_ring_ratio.toFixed(2) + '×; ' +
@@ -48,10 +52,14 @@ fetch(resultRoot + 'results.json').then(response => {
   if (!response.ok) throw Error('Result manifest unavailable'); return response.json();
 }).then(data => {
   window.monusacResults = data;
+  window.monusacCoverageById = new Map(data.class_coverage.per_image.map(item => [item.sample_id, item]));
   const select = document.getElementById('monusac-case');
   for (const [index, sample] of data.cases.entries()) {
     const option = document.createElement('option'); option.value = sample.sample_id;
-    option.textContent = String(index + 1).padStart(2, '0') + ' · ' + sample.sample_id + ' · ' + pct(sample.accuracy);
+    const coverage = window.monusacCoverageById.get(sample.sample_id);
+    option.textContent = String(index + 1).padStart(2, '0') + ' · ' + sample.sample_id + ' · ' +
+      (coverage.multiclass_eligible ? coverage.reference_class_count + ' classes · mean recall ' + pct(coverage.observed_class_macro_recall) :
+        'ONE CLASS · no multiclass score');
     select.append(option);
   }
   select.addEventListener('change', () => renderCase(select.value));
