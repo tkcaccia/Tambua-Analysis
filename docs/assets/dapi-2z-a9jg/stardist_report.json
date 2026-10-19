@@ -1,0 +1,14 @@
+{
+  "source": "/mnt/sata_ssd/CellPhenotyper-gigatime-shadow-qc-2026-10-19-v1/corrected_input_2Z_A9JG_4.ome.tif",
+  "source_shape": [
+    755,
+    601,
+    3
+  ],
+  "model": "2D_versatile_he",
+  "device": "CPU",
+  "prob_thresh": 0.48,
+  "nms_thresh": 0.3,
+  "nuclei_count": 210,
+  "elapsed_seconds": 0.48319988418370485
+}

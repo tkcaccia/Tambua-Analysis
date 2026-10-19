@@ -1,0 +1,30 @@
+{
+  "linear_png_sha256": "2d3af71b1fa37e6d6cbb9a4568eb228a2e44a291b39d8434d2154cf37a60586e",
+  "stardist_labels_sha256": "bbe04f2e7792fe27a6477364029a8bc5aba6c02a56b56d4930ee28516d9f0abe",
+  "linear_shape_yx": [
+    763,
+    607
+  ],
+  "stardist_native_shape_yx": [
+    755,
+    601
+  ],
+  "stardist_object_count": 210,
+  "overlay_color_rgb": [
+    255,
+    35,
+    70
+  ],
+  "transform": {
+    "kind": "display_only_global_percentile_gamma",
+    "lower_percentile": 2.0,
+    "upper_percentile": 99.0,
+    "lower_value_uint8": 1.0,
+    "upper_value_uint8": 248.0,
+    "gamma": 2.0,
+    "applied": true,
+    "source": "8-bit linear preview of native GigaTIME scores",
+    "native_scores_and_qc_unchanged": true
+  },
+  "qc_note": "Display transform did not use StarDist, expert nuclei or QC metrics; score raw native GigaTIME output separately."
+}
