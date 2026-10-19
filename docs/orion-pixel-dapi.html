@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tambua · registered ORION DAPI pixels</title>
+  <style>
+    :root{font-family:Inter,ui-sans-serif,system-ui,sans-serif;color:#17313c;background:#f4f8f8;line-height:1.5}*{box-sizing:border-box}body{margin:0}header{background:#102d3b;color:white;padding:26px max(20px,calc((100vw - 1300px)/2)) 32px}header a{color:#bceaf0}h1{margin:10px 0 6px;font-size:clamp(2rem,4vw,3rem)}main{max-width:1380px;margin:auto;padding:24px 22px 70px}.note{background:#fff2df;border-left:5px solid #b96d32;padding:15px 20px;border-radius:0 10px 10px 0}select{font:inherit;padding:9px;border:1px solid #9dbac0;border-radius:7px;background:white}label{display:grid;gap:5px;font-weight:700}.metrics{display:flex;flex-wrap:wrap;gap:12px;margin:20px 0}.metric,figure{background:white;border:1px solid #d4e3e5;border-radius:12px}.metric{padding:14px 18px;min-width:180px}.metric strong{display:block;font-size:1.5rem}.metric small,.fine{color:#526d76}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;margin-top:18px}figure{margin:0;overflow:hidden}figure img{width:100%;display:block}figcaption{padding:11px 15px}figcaption strong{display:block}@media(max-width:650px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<header><a href="./">← Tambua Analysis</a><h1>Registered ORION DAPI image pixels</h1><p>Measured Hoechst fluorescence and GigaTIME virtual DAPI on the same tissue window, alongside registered H&amp;E.</p></header>
+<main>
+  <p class="note"><strong>These are image pixels, not cell-table values painted onto masks.</strong> The measured channel comes from the released ORION fluorescence OME-TIFF. The virtual DAPI is bilinearly resampled from its 0.25 µm/pixel inference grid to the 0.325 µm/pixel source grid. Display contrast is adjusted independently for inspection; correlations use the saved native signal values. Virtual DAPI remains broader and more saturated than measured nuclei in some fields, so rank agreement must not be read as pixel-exact morphology. This comparison does not validate the other virtual proteins or cell types.</p>
+  <div id="summary" class="metrics" aria-live="polite">Loading pixel comparisons…</div>
+  <label>Patient<select id="patient"><option>Loading…</option></select></label>
+  <p id="case-note" class="fine"></p>
+  <div id="gallery" class="grid"></div>
+  <p class="fine">One registered 2048 × 2048 window was sampled from each reserved patient with complete technical GigaTIME QC. Every patient contributes once to the cohort summary. <a href="https://github.com/labsyspharm/orion-crc/blob/main/datarelease-README.md">ORION source release</a> · <a href="https://github.com/tkcaccia/Tambua-Analysis">Acquisition and scoring code</a>.</p>
+</main>
+<script>
+const root='assets/orion-pixel-dapi/';
+const panels=[['he','Registered H&E'],['measured-Hoechst','Measured Hoechst · raw image pixels'],['virtual-DAPI','GigaTIME virtual DAPI · image pixels'],['pixel-overlap','Pixel overlay · measured magenta, virtual green']];
+let data;
+function render(id){const row=data.records.find(r=>r.patient===id);if(!row)return;location.hash=id;document.getElementById('case-note').textContent=`${id} · source ${row.source_mpp} µm/pixel · virtual ${row.virtual_mpp} µm/pixel · window origin (${row.source_window_xy.join(', ')}) · pixel Spearman ρ = ${row.pixel_spearman_rho.toFixed(3)} · measured border/core ${row.measured_border_core_ratio.toFixed(3)}, virtual ${row.virtual_border_core_ratio.toFixed(3)}.`;const gallery=document.getElementById('gallery');gallery.replaceChildren();for(const [name,title] of panels){const fig=document.createElement('figure'),img=document.createElement('img'),cap=document.createElement('figcaption'),strong=document.createElement('strong'),a=document.createElement('a');img.src=root+id+'-'+name+'.webp';img.alt=title+' for '+id;img.loading='lazy';a.href=img.src;a.target='_blank';a.rel='noopener';strong.textContent=title;cap.append(strong);a.append(img);fig.append(a,cap);gallery.append(fig)}}
+fetch(root+'manifest.json').then(r=>{if(!r.ok)throw Error('Pixel images unavailable');return r.json()}).then(manifest=>{data=manifest;const s=manifest.scores,ci=s.equal_patient_median_95pct_bootstrap_ci;document.getElementById('summary').innerHTML=`<div class="metric"><strong>${manifest.records.length}</strong><small>QC-passing patients</small></div><div class="metric"><strong>${s.equal_patient_median_spearman.toFixed(3)}</strong><small>Equal-patient median pixel Spearman ρ</small></div><div class="metric"><strong>${ci[0].toFixed(3)}–${ci[1].toFixed(3)}</strong><small>Patient-bootstrap 95% interval</small></div>`;const select=document.getElementById('patient');select.replaceChildren();for(const row of manifest.records){const option=document.createElement('option');option.value=row.patient;option.textContent=row.patient;select.append(option)}select.addEventListener('change',()=>render(select.value));select.value=manifest.records.some(r=>r.patient===location.hash.slice(1))?location.hash.slice(1):manifest.records[0].patient;render(select.value)}).catch(e=>document.getElementById('summary').textContent=e.message);
+</script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+{
+  "patients": 10,
+  "pixel_stride": 4,
+  "measure": "same-section registered raw Hoechst pixels versus native GigaTIME virtual DAPI, bilinear-resampled to source physical grid",
+  "equal_patient_median_spearman": 0.8060634041903385,
+  "equal_patient_median_95pct_bootstrap_ci": [
+    0.7515490081136484,
+    0.8490905921969547
+  ],
+  "equal_patient_mean_spearman": 0.7919269803265621,
+  "minimum_patient_spearman": 0.6236894944198091,
+  "maximum_patient_spearman": 0.875721170835291,
+  "limit": "One 2048-pixel window per QC-passing patient; registered same-section comparison is not whole-WSI or calibrated-protein validation.",
+  "per_patient": [
+    {
+      "patient": "CRC04",
+      "pixels_sampled": 262144,
+      "spearman_rho": 0.7378190015387268,
+      "source_mpp": 0.325,
+      "virtual_mpp": 0.25,
+      "measured_border_core_ratio": 1.018593668937683,
+      "virtual_border_core_ratio": 0.9747837781906128,
+      "registered_window_xy": [
+        41984,
+        6144
+      ]
+    },
+    {
+      "patient": "CRC06",
+      "pixels_sampled": 262144,
+      "spearman_rho": 0.875721170835291,
+      "source_mpp": 0.325,
+      "virtual_mpp": 0.25,
+      "measured_border_core_ratio": 0.9184178709983826,
+      "virtual_border_core_ratio": 0.8809440732002258,
+      "registered_window_xy": [
+        46080,
+        43008
+      ]
+    },
+    {
+      "patient": "CRC08",
+      "pixels_sampled": 262144,
+      "spearman_rho": 0.7809848923522206,
+      "source_mpp": 0.325,
+      "virtual_mpp": 0.25,
+      "measured_border_core_ratio": 0.7015419602394104,
+      "virtual_border_core_ratio": 0.8241023421287537,
+      "registered_window_xy": [
+        17408,
+        19456
+      ]
+    },
+    {
+      "patient": "CRC10",
+      "pixels_sampled": 262144,
+      "spearman_rho": 0.6236894944198091,
+      "source_mpp": 0.325,
+      "virtual_mpp": 0.25,
+      "measured_border_core_ratio": 0.9790074229240417,
+      "virtual_border_core_ratio": 0.9935891032218933,
+      "registered_window_xy": [
+        11264,
+        21504
+      ]
+    },
+    {
+      "patient": "CRC12",
+      "pixels_sampled": 262144,
+      "spearman_rho": 0.8591319688636941,
+      "source_mpp": 0.325,
+      "virtual_mpp": 0.25,
+      "measured_border_core_ratio": 0.9891613125801086,
+      "virtual_border_core_ratio": 1.0011663436889648,
+      "registered_window_xy": [
+        20480,
+        51200
+      ]
+    },
+    {
+      "patient": "CRC17",
+      "pixels_sampled": 262144,
+      "spearman_rho": 0.7637818047422819,
+      "source_mpp": 0.325,
+      "virtual_mpp": 0.25,
+      "measured_border_core_ratio": 0.7887754440307617,
+      "virtual_border_core_ratio": 0.8739564418792725,
+      "registered_window_xy": [
+        7168,
+        60416
+      ]
+    },
+    {
+      "patient": "CRC19",
+      "pixels_sampled": 262144,
+      "spearman_rho": 0.8311419160284563,
+      "source_mpp": 0.325,
+      "virtual_mpp": 0.25,
+      "measured_border_core_ratio": 0.9166491031646729,
+      "virtual_border_core_ratio": 0.9571356177330017,
+      "registered_window_xy": [
+        19456,
+        40960
+      ]
+    },
+    {
+      "patient": "CRC21",
+      "pixels_sampled": 262144,
+      "spearman_rho": 0.7652790146885701,
+      "source_mpp": 0.325,
+      "virtual_mpp": 0.25,
+      "measured_border_core_ratio": 0.8492249250411987,
+      "virtual_border_core_ratio": 0.903634786605835,
+      "registered_window_xy": [
+        69632,
+        41984
+      ]
+    },
+    {
+      "patient": "CRC23",
+      "pixels_sampled": 262144,
+      "spearman_rho": 0.8426713242663558,
+      "source_mpp": 0.325,
+      "virtual_mpp": 0.25,
+      "measured_border_core_ratio": 0.9188637733459473,
+      "virtual_border_core_ratio": 0.9302222728729248,
+      "registered_window_xy": [
+        73728,
+        51200
+      ]
+    },
+    {
+      "patient": "CRC25",
+      "pixels_sampled": 262144,
+      "spearman_rho": 0.8390492155302154,
+      "source_mpp": 0.325,
+      "virtual_mpp": 0.25,
+      "measured_border_core_ratio": 0.972745418548584,
+      "virtual_border_core_ratio": 0.8989163637161255,
+      "registered_window_xy": [
+        82944,
+        7168
+      ]
+    }
+  ]
+}

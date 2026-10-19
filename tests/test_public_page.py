@@ -62,3 +62,24 @@ def test_corrected_gallery_assets_cover_every_test_image() -> None:
     assert strict["qc_selection"]["test_pass"] == 10
     test_data = json.loads((PAGE.parent / "assets/monusac-corrected/results.json").read_text())
     assert test_data["strict_qc_test"]["confusion_matrix"] == strict["test"]["confusion_matrix"]
+
+
+def test_orion_pixel_gallery_is_registered_and_complete() -> None:
+    import json
+
+    page = PAGE.parent / "orion-pixel-dapi.html"
+    assert page.is_file()
+    root = PAGE.parent / "assets/orion-pixel-dapi"
+    manifest = json.loads((root / "manifest.json").read_text())
+    scores = json.loads((root / "summary.json").read_text())
+    assert scores["patients"] == len(manifest["records"]) == 10
+    assert len({row["patient"] for row in manifest["records"]}) == 10
+    assert manifest["scores"]["equal_patient_median_spearman"] == scores["equal_patient_median_spearman"]
+    for row in manifest["records"]:
+        assert row["source_mpp"] == 0.325
+        assert row["virtual_mpp"] == 0.25
+        assert 0 < row["pixel_spearman_rho"] < 1
+        for panel in ("he", "measured-Hoechst", "virtual-DAPI", "pixel-overlap"):
+            image = root / f'{row["patient"]}-{panel}.webp'
+            assert image.stat().st_size > 1000
+            assert image.read_bytes()[:4] == b"RIFF"

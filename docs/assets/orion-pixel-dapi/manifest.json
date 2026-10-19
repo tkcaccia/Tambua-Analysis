@@ -1,0 +1,146 @@
+{
+  "scope": "Ten reserved ORION QC-passing patients; one registered 2048 px window each",
+  "measured": "Raw pixel-level ORION Hoechst channel, not per-cell painted values",
+  "virtual": "Native GigaTIME virtual DAPI, resampled to the 0.325 \u00b5m/pixel registered source grid",
+  "display": "Measured: asinh then 1st\u201399.7th percentile. Virtual: logit then 1st\u201399.7th percentile. Display normalization is per image and is excluded from scoring.",
+  "overlap": "Magenta measured Hoechst, green virtual DAPI; white indicates co-located bright signal",
+  "scores": {
+    "equal_patient_median_spearman": 0.8060634041903385,
+    "equal_patient_median_95pct_bootstrap_ci": [
+      0.7515490081136484,
+      0.8490905921969547
+    ]
+  },
+  "records": [
+    {
+      "patient": "CRC04",
+      "source_mpp": 0.325,
+      "virtual_mpp": 0.25,
+      "source_window_xy": [
+        41984,
+        6144
+      ],
+      "measured_source_url": "https://lin-2023-orion-crc.s3.amazonaws.com/data/CRC04/P37_S32_A24_C59kX_E15_20220106_014630_553652-zlib.ome.tiff",
+      "pixel_spearman_rho": 0.7378190015387268,
+      "measured_border_core_ratio": 1.018593668937683,
+      "virtual_border_core_ratio": 0.9747837781906128
+    },
+    {
+      "patient": "CRC06",
+      "source_mpp": 0.325,
+      "virtual_mpp": 0.25,
+      "source_window_xy": [
+        46080,
+        43008
+      ],
+      "measured_source_url": "https://lin-2023-orion-crc.s3.amazonaws.com/data/CRC06/P37_S34_A24_C59kX_E15_20220107_202112_212579-zlib.ome.tiff",
+      "pixel_spearman_rho": 0.875721170835291,
+      "measured_border_core_ratio": 0.9184178709983826,
+      "virtual_border_core_ratio": 0.8809440732002258
+    },
+    {
+      "patient": "CRC08",
+      "source_mpp": 0.325,
+      "virtual_mpp": 0.25,
+      "source_window_xy": [
+        17408,
+        19456
+      ],
+      "measured_source_url": "https://lin-2023-orion-crc.s3.amazonaws.com/data/CRC08/P37_S57_Full_A24_C59nX_E15_20220224_011032_774034-zlib.ome.tiff",
+      "pixel_spearman_rho": 0.7809848923522206,
+      "measured_border_core_ratio": 0.7015419602394104,
+      "virtual_border_core_ratio": 0.8241023421287537
+    },
+    {
+      "patient": "CRC10",
+      "source_mpp": 0.325,
+      "virtual_mpp": 0.25,
+      "source_window_xy": [
+        11264,
+        21504
+      ],
+      "measured_source_url": "https://lin-2023-orion-crc.s3.amazonaws.com/data/CRC10/P37_S38_A24_C59kX_E15_20220108_012130_664519-zlib.ome.tiff",
+      "pixel_spearman_rho": 0.6236894944198091,
+      "measured_border_core_ratio": 0.9790074229240417,
+      "virtual_border_core_ratio": 0.9935891032218933
+    },
+    {
+      "patient": "CRC12",
+      "source_mpp": 0.325,
+      "virtual_mpp": 0.25,
+      "source_window_xy": [
+        20480,
+        51200
+      ],
+      "measured_source_url": "https://lin-2023-orion-crc.s3.amazonaws.com/data/CRC12/P37_S44_Full_A24_C59mX_E15_20220128_171448_903938-zlib.ome.tiff",
+      "pixel_spearman_rho": 0.8591319688636941,
+      "measured_border_core_ratio": 0.9891613125801086,
+      "virtual_border_core_ratio": 1.0011663436889648
+    },
+    {
+      "patient": "CRC17",
+      "source_mpp": 0.325,
+      "virtual_mpp": 0.25,
+      "source_window_xy": [
+        7168,
+        60416
+      ],
+      "measured_source_url": "https://lin-2023-orion-crc.s3.amazonaws.com/data/CRC17/P37_S49_Full_A24_C59mX_E15_20220129_015121_911264-zlib.ome.tiff",
+      "pixel_spearman_rho": 0.7637818047422819,
+      "measured_border_core_ratio": 0.7887754440307617,
+      "virtual_border_core_ratio": 0.8739564418792725
+    },
+    {
+      "patient": "CRC19",
+      "source_mpp": 0.325,
+      "virtual_mpp": 0.25,
+      "source_window_xy": [
+        19456,
+        40960
+      ],
+      "measured_source_url": "https://lin-2023-orion-crc.s3.amazonaws.com/data/CRC19/P37_S51_Full_A24_C59mX_E15_20220129_015300_669681-zlib.ome.tiff",
+      "pixel_spearman_rho": 0.8311419160284563,
+      "measured_border_core_ratio": 0.9166491031646729,
+      "virtual_border_core_ratio": 0.9571356177330017
+    },
+    {
+      "patient": "CRC21",
+      "source_mpp": 0.325,
+      "virtual_mpp": 0.25,
+      "source_window_xy": [
+        69632,
+        41984
+      ],
+      "measured_source_url": "https://lin-2023-orion-crc.s3.amazonaws.com/data/CRC21/P37_S58_Full_A24_C59nX_E15_20220224_011058_014787-zlib.ome.tiff",
+      "pixel_spearman_rho": 0.7652790146885701,
+      "measured_border_core_ratio": 0.8492249250411987,
+      "virtual_border_core_ratio": 0.903634786605835
+    },
+    {
+      "patient": "CRC23",
+      "source_mpp": 0.325,
+      "virtual_mpp": 0.25,
+      "source_window_xy": [
+        73728,
+        51200
+      ],
+      "measured_source_url": "https://lin-2023-orion-crc.s3.amazonaws.com/data/CRC23/P37_S60_Full_A24_C59nX_E15_20220224_011127_971497-zlib.ome.tiff",
+      "pixel_spearman_rho": 0.8426713242663558,
+      "measured_border_core_ratio": 0.9188637733459473,
+      "virtual_border_core_ratio": 0.9302222728729248
+    },
+    {
+      "patient": "CRC25",
+      "source_mpp": 0.325,
+      "virtual_mpp": 0.25,
+      "source_window_xy": [
+        82944,
+        7168
+      ],
+      "measured_source_url": "https://lin-2023-orion-crc.s3.amazonaws.com/data/CRC25/P37_S62_Full_A24_C59nX_E15_20220224_011204_784145-zlib.ome.tiff",
+      "pixel_spearman_rho": 0.8390492155302154,
+      "measured_border_core_ratio": 0.972745418548584,
+      "virtual_border_core_ratio": 0.8989163637161255
+    }
+  ]
+}
