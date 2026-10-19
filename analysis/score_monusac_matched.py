@@ -49,7 +49,8 @@ def require_scanner_rgb(records: list[dict], historical_unvalidated: bool) -> No
 
 
 def score(source: Path, destination: Path, tambua: Path,
-          *, historical_unvalidated: bool = False) -> dict:
+          *, historical_unvalidated: bool = False,
+          exploratory_failed_qc: bool = False) -> dict:
     from tambua.model import metrics
 
     cohort = json.loads((source / "input/COHORT.json").read_text())
@@ -76,7 +77,8 @@ def score(source: Path, destination: Path, tambua: Path,
                 not (folder / "VALIDATION.json").is_file():
             raise ValueError(f"Unverified image: {row['sample_id']}")
         status = case_qc_status(folder, row["sample_id"])
-        if status == "fail" or (status == "missing" and not historical_unvalidated):
+        if (status == "fail" and not exploratory_failed_qc) or \
+                (status == "missing" and not historical_unvalidated):
             raise ValueError(f"GigaTIME nuclear/shadow QC is {status}: {row['sample_id']}")
         qc_statuses.append(status)
     if destination.exists() and any(destination.iterdir()):
@@ -146,8 +148,17 @@ def score(source: Path, destination: Path, tambua: Path,
                         "tissues_in_both_splits": sorted(organs),
                         "source_cohort_sha256": __import__("hashlib").sha256(
                             (source / "input/COHORT.json").read_bytes()).hexdigest()}
+    from collections import Counter
+    report["gigatime_quality_counts"] = dict(Counter(qc_statuses))
     report["gigatime_quality_status"] = (
-        "historical_unvalidated" if "missing" in qc_statuses else "native_nuclear_qc_passed"
+        "historical_unvalidated" if "missing" in qc_statuses else
+        "corrected_rgb_exploratory_failed_qc" if "fail" in qc_statuses else
+        "native_nuclear_qc_passed"
+    )
+    report["claim_limit"] += (
+        " Corrected-RGB exploratory score includes GigaTIME nuclear-QC failures; "
+        "it is not validated cell-typing performance."
+        if "fail" in qc_statuses else ""
     )
     report_path.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     return report
@@ -160,8 +171,11 @@ if __name__ == "__main__":
     parser.add_argument("--tambua", type=Path, required=True)
     parser.add_argument("--historical-unvalidated", action="store_true",
                         help="Reproduce archived pre-QC scores only; marks the report unvalidated")
+    parser.add_argument("--exploratory-failed-qc", action="store_true",
+                        help="Score corrected images for diagnosis even when nuclear QC fails; never an accepted result")
     args = parser.parse_args()
     sys.path.insert(0, str(args.tambua.resolve() / "src"))
     report = score(args.source.resolve(), args.output.resolve(), args.tambua.resolve(),
-                   historical_unvalidated=args.historical_unvalidated)
+                   historical_unvalidated=args.historical_unvalidated,
+                   exploratory_failed_qc=args.exploratory_failed_qc)
     print(json.dumps({"test": report["test"], "test_by_tissue": report["test_by_tissue"]}, indent=2))

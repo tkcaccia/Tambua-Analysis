@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tambua · corrected MoNuSAC cell-typing audit</title>
+  <style>
+    :root{font-family:Inter,ui-sans-serif,system-ui,sans-serif;color:#17313c;background:#f4f8f8;line-height:1.5}
+    *{box-sizing:border-box}body{margin:0}header{background:#102d3b;color:white;padding:27px max(20px,calc((100vw - 1300px)/2)) 34px}header a{color:#bceaf0}h1{margin:12px 0 8px;font-size:clamp(2rem,4vw,3.4rem);line-height:1.1}h2{margin:30px 0 12px}p{max-width:1080px}main{max-width:1350px;margin:auto;padding:22px 24px 70px}.warning{background:#fff2df;border-left:5px solid #b96d32;padding:16px 20px;border-radius:0 10px 10px 0}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin:23px 0}.metric,figure,.panel{background:white;border:1px solid #d4e3e5;border-radius:13px}.metric{padding:17px}.metric strong{font-size:1.5rem;display:block}.metric small{color:#55717b}.toolbar{display:flex;gap:16px;flex-wrap:wrap;align-items:end;margin:21px 0}.toolbar label{display:grid;font-weight:700;gap:5px}.toolbar select{padding:10px;border:1px solid #9dbac0;border-radius:7px;min-width:300px;background:white;font:inherit}.panel{padding:18px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}figure{margin:0;overflow:hidden}figure img{display:block;width:100%;height:auto;image-rendering:auto}figcaption{padding:12px 15px}figcaption strong{display:block}figcaption small{color:#5d737c}table{border-collapse:collapse;width:100%;max-width:800px}th,td{text-align:left;padding:9px;border-bottom:1px solid #d9e5e7}th{background:#e8f1f2}.legend{display:flex;flex-wrap:wrap;gap:15px}.swatch{display:inline-block;width:12px;height:12px;margin-right:5px;border-radius:3px}.fine{font-size:.9rem;color:#526d76}@media(max-width:760px){.metrics,.grid{grid-template-columns:1fr 1fr}}@media(max-width:560px){.metrics,.grid{grid-template-columns:1fr}main{padding:16px}}
+  </style>
+</head>
+<body>
+<header><a href="./">← Tambua Analysis</a><h1>Corrected scanner-RGB cell-typing audit</h1><p>MoNuSAC · 88 training and 32 patient-separated test regions · 0.25 µm/pixel GigaTIME grid · 23 virtual channels quantified in nuclei and nucleus-anchored cell proxies.</p></header>
+<main>
+  <p class="warning"><strong>Exploratory result, not validated cell-identification accuracy.</strong> These predictions are evaluated at MoNuSAC expert-drawn regions, not at independently detected StarDist cells. The page reports every corrected-image GigaTIME nuclear-QC failure. Failed-QC marker values are shown only to diagnose the pipeline and cannot establish biological cell typing. Some source annotations, including large regions marked macrophage in TCGA-2Z-A9JG-01Z-00-DX1_6, also require review.</p>
+  <div id="summary" class="metrics" aria-live="polite"><div class="metric">Loading corrected benchmark…</div></div>
+  <p class="fine">The previous companion TIFFs had red and blue interchanged in 116 of 120 images. This gallery uses the scanner-SVS RGB images; the corrected inputs were checked pixel-for-pixel against the scanner decoder. No historical GigaTIME predictions are reused. <a href="assets/dapi-2z-a9jg/corrected_120_input_audit.json">Input audit</a>.</p>
+  <div class="toolbar"><label>Test image<select id="case"><option>Loading…</option></select></label><label><input type="checkbox" id="multiclass"> Show only images with more than one expert class</label></div>
+  <div id="case-meta" class="panel" aria-live="polite"></div>
+  <h2>Side-by-side outputs</h2>
+  <p class="legend"><span><i class="swatch" style="background:#fb9548"></i>Epithelial</span><span><i class="swatch" style="background:#42c1dc"></i>Lymphocyte</span><span><i class="swatch" style="background:#bc7ee0"></i>Macrophage</span><span><i class="swatch" style="background:#88cf6c"></i>Neutrophil</span></p>
+  <div id="gallery" class="grid"></div>
+  <h2>Expert-class recall in this image</h2><div class="panel"><table><thead><tr><th>Expert type</th><th>Number</th><th>Correctly predicted</th></tr></thead><tbody id="classes"></tbody></table></div>
+  <p class="fine">Expert labels and polygons come from the original MoNuSAC XML. The colored regions are source annotations; large purple polygons in TCGA-2Z-A9JG-01Z-00-DX1_6 were already labelled macrophage there and are not StarDist detections. Virtual marker intensities are uncalibrated model scores. <a href="https://github.com/tkcaccia/Tambua-Analysis">Code and data provenance</a>.</p>
+</main>
+<script>
+const root='assets/monusac-corrected/';
+const panels=[['he','Corrected scanner RGB H&E','Pixel-verified scanner color order'],['expert','MoNuSAC source annotations','Source XML regions; inspect large macrophage polygons'],['predicted','Exploratory fastPLS predictions','At source regions; not StarDist detections'],['errors','Correct versus incorrect','Green correct; red incorrect'],['dapi','Virtual DAPI','Corrected input, uncalibrated output'],['ck','Virtual CK','Corrected input'],['cd3','Virtual CD3','Corrected input'],['cd68','Virtual CD68','Corrected input']];
+const pct=v=>v==null?'Unavailable':(100*v).toFixed(1)+'%';
+let data;
+function render(sample){
+  const c=data.cases.find(x=>x.sample_id===sample);if(!c)return;
+  location.hash=encodeURIComponent(sample);
+  const q=c.native_nuclear_qc||{};
+  document.getElementById('case-meta').textContent=`${c.organ} · ${sample} · patient ${c.patient_id} · ${c.width} × ${c.height} px · ${c.source_mpp} µm/pixel · ${c.n_cells} expert regions · exploratory accuracy ${pct(c.accuracy)}. Native DAPI QC: ${(q.status||'missing').toUpperCase()}; AUC ${q.auc==null?'unavailable':q.auc.toFixed(3)}, boundary contrast ${q.nuclear_boundary_contrast==null?'unavailable':q.nuclear_boundary_contrast.toFixed(3)} (gate 0.050).`;
+  const gallery=document.getElementById('gallery');gallery.replaceChildren();
+  for(const [key,title,note] of panels){const fig=document.createElement('figure'),img=document.createElement('img'),cap=document.createElement('figcaption'),strong=document.createElement('strong'),small=document.createElement('small');img.src=root+sample+'-'+key+'.webp';img.alt=title+' for '+sample;img.loading='lazy';strong.textContent=title;small.textContent=note;cap.append(strong,small);fig.append(img,cap);gallery.append(fig)}
+  const body=document.getElementById('classes');body.replaceChildren();
+  data.class_order.forEach((name,i)=>{const n=c.support[name],tr=document.createElement('tr');for(const text of [name,String(n),n?pct(c.confusion_matrix[i][i]/n):'No reference cells']){const td=document.createElement('td');td.textContent=text;tr.append(td)}body.append(tr)});
+}
+function options(){const select=document.getElementById('case'),only=document.getElementById('multiclass').checked,current=select.value;select.replaceChildren();for(const [i,c] of data.cases.entries()){if(only&&Object.values(c.support).filter(x=>x>0).length<2)continue;const option=document.createElement('option');option.value=c.sample_id;option.textContent=`${String(i+1).padStart(2,'0')} · ${c.organ} · ${c.sample_id} · QC ${c.native_nuclear_qc?.status||'missing'}`;select.append(option)}const hash=decodeURIComponent(location.hash.slice(1));select.value=[...select.options].some(o=>o.value===hash)?hash:([...select.options].some(o=>o.value===current)?current:select.options[0]?.value);render(select.value)}
+fetch(root+'results.json').then(r=>{if(!r.ok)throw Error('Corrected gallery results unavailable');return r.json()}).then(d=>{data=d;const qc=d.gigatime_quality_counts||{};document.getElementById('summary').innerHTML=`<div class="metric"><strong>${d.train_images} / ${d.test_images}</strong><small>Train / held-out test images</small></div><div class="metric"><strong>${qc.pass||0} / ${d.train_images+d.test_images}</strong><small>Images passing native DAPI QC</small></div><div class="metric"><strong>${pct(d.test.accuracy)}</strong><small>Exploratory cell accuracy, all QC statuses</small></div><div class="metric"><strong>${pct(d.test.balanced_accuracy)}</strong><small>Exploratory balanced accuracy</small></div>`;document.getElementById('case').addEventListener('change',e=>render(e.target.value));document.getElementById('multiclass').addEventListener('change',options);options()}).catch(e=>document.getElementById('summary').textContent=e.message);
+</script>
+</body>
+</html>

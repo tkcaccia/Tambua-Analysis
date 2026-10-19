@@ -1,0 +1,2325 @@
+{
+  "method": "fastPLS SIMPLS-LDA on CellPhenotyper virtual-marker scores",
+  "feature_names": [
+    "nuclei_DAPI",
+    "nuclei_TRITC",
+    "nuclei_Cy5",
+    "nuclei_PD-1",
+    "nuclei_CD14",
+    "nuclei_CD4",
+    "nuclei_T-bet",
+    "nuclei_CD34",
+    "nuclei_CD68",
+    "nuclei_CD16",
+    "nuclei_CD11c",
+    "nuclei_CD138",
+    "nuclei_CD20",
+    "nuclei_CD3",
+    "nuclei_CD8",
+    "nuclei_PD-L1",
+    "nuclei_CK",
+    "nuclei_Ki67",
+    "nuclei_Tryptase",
+    "nuclei_Actin-D",
+    "nuclei_Caspase3-D",
+    "nuclei_PHH3-B",
+    "nuclei_Transgelin",
+    "cell_DAPI",
+    "cell_TRITC",
+    "cell_Cy5",
+    "cell_PD-1",
+    "cell_CD14",
+    "cell_CD4",
+    "cell_T-bet",
+    "cell_CD34",
+    "cell_CD68",
+    "cell_CD16",
+    "cell_CD11c",
+    "cell_CD138",
+    "cell_CD20",
+    "cell_CD3",
+    "cell_CD8",
+    "cell_PD-L1",
+    "cell_CK",
+    "cell_Ki67",
+    "cell_Tryptase",
+    "cell_Actin-D",
+    "cell_Caspase3-D",
+    "cell_PHH3-B",
+    "cell_Transgelin"
+  ],
+  "fastpls_version": "0.4",
+  "fastpls_source": "https://github.com/tkcaccia/fastPLS",
+  "fastpls_commit": "265108b6aa250c2534f98ec89037bb5cd001dca0",
+  "components": 3,
+  "train_patients": [
+    "TCGA-55-1594",
+    "TCGA-5P-A9K0",
+    "TCGA-69-7760",
+    "TCGA-69-A59K",
+    "TCGA-73-4668",
+    "TCGA-78-7220",
+    "TCGA-86-7713",
+    "TCGA-86-8672",
+    "TCGA-A2-A0CV",
+    "TCGA-B6-A0WZ",
+    "TCGA-B9-A44B",
+    "TCGA-B9-A8YI",
+    "TCGA-BH-A18T",
+    "TCGA-D8-A1X5",
+    "TCGA-DW-7841",
+    "TCGA-E2-A154",
+    "TCGA-E9-A22B",
+    "TCGA-E9-A22G",
+    "TCGA-EJ-5495",
+    "TCGA-EJ-5505",
+    "TCGA-EJ-5517",
+    "TCGA-EV-5903",
+    "TCGA-EW-A6SD",
+    "TCGA-F9-A97G",
+    "TCGA-G7-A8LD",
+    "TCGA-G9-6499",
+    "TCGA-J4-A67Q",
+    "TCGA-J4-A67T",
+    "TCGA-KK-A59X",
+    "TCGA-KK-A6E0",
+    "TCGA-KK-A7AW",
+    "TCGA-L4-A4E5",
+    "TCGA-MH-A560",
+    "TCGA-MP-A4SY",
+    "TCGA-P4-AAVK",
+    "TCGA-S3-AA11",
+    "TCGA-UZ-A9PO",
+    "TCGA-V1-A8WL",
+    "TCGA-V1-A9O9",
+    "TCGA-YL-A9WY"
+  ],
+  "test_patients": [
+    "TCGA-2Z-A9JG",
+    "TCGA-2Z-A9JN",
+    "TCGA-49-6743",
+    "TCGA-50-6591",
+    "TCGA-55-7573",
+    "TCGA-73-4662",
+    "TCGA-A2-A04X",
+    "TCGA-A2-A0ES",
+    "TCGA-D8-A3Z6",
+    "TCGA-DW-7838",
+    "TCGA-E2-A108",
+    "TCGA-F9-A8NY",
+    "TCGA-G9-6356",
+    "TCGA-G9-6367",
+    "TCGA-IZ-A6M9",
+    "TCGA-VP-A87E",
+    "TCGA-VP-A87H",
+    "TCGA-X4-A8KS",
+    "TCGA-YL-A9WL"
+  ],
+  "train_cells": 23213,
+  "test_cells": 10776,
+  "fit_seconds": 1.7393910102546215,
+  "test": {
+    "n": 10776,
+    "accuracy": 0.9664996288047513,
+    "balanced_accuracy": 0.48359969739973735,
+    "macro_f1": 0.48383950149917815,
+    "missing_reference_classes": [],
+    "support": {
+      "epithelial": 6548,
+      "lymphocyte": 4178,
+      "macrophage": 46,
+      "neutrophil": 4
+    },
+    "recall": {
+      "epithelial": 0.9844227244960293,
+      "lymphocyte": 0.9499760651029201,
+      "macrophage": 0.0,
+      "neutrophil": 0.0
+    },
+    "f1": {
+      "epithelial": 0.9736424741333736,
+      "lymphocyte": 0.961715531863339,
+      "macrophage": 0.0,
+      "neutrophil": 0.0
+    },
+    "confusion_matrix": [
+      [
+        6446,
+        96,
+        0,
+        6
+      ],
+      [
+        208,
+        3969,
+        0,
+        1
+      ],
+      [
+        36,
+        10,
+        0,
+        0
+      ],
+      [
+        3,
+        1,
+        0,
+        0
+      ]
+    ],
+    "classes": [
+      "epithelial",
+      "lymphocyte",
+      "macrophage",
+      "neutrophil"
+    ]
+  },
+  "test_by_patient": {
+    "n_patients": 19,
+    "equal_weight_accuracy": 0.9669994940503562,
+    "complete_class_patients": 1,
+    "equal_weight_balanced_accuracy": 0.4966194779805186,
+    "per_patient": {
+      "TCGA-2Z-A9JG": {
+        "n": 800,
+        "accuracy": 0.97875,
+        "balanced_accuracy": 0.4966194779805186,
+        "macro_f1": 0.4885485814301208,
+        "missing_reference_classes": [],
+        "support": {
+          "epithelial": 197,
+          "lymphocyte": 592,
+          "macrophage": 9,
+          "neutrophil": 2
+        },
+        "recall": {
+          "epithelial": 0.9949238578680203,
+          "lymphocyte": 0.9915540540540541,
+          "macrophage": 0.0,
+          "neutrophil": 0.0
+        },
+        "f1": {
+          "epithelial": 0.9584352078239609,
+          "lymphocyte": 0.9957591178965225,
+          "macrophage": 0.0,
+          "neutrophil": 0.0
+        },
+        "confusion_matrix": [
+          [
+            196,
+            0,
+            0,
+            1
+          ],
+          [
+            5,
+            587,
+            0,
+            0
+          ],
+          [
+            9,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            0
+          ]
+        ],
+        "classes": [
+          "epithelial",
+          "lymphocyte",
+          "macrophage",
+          "neutrophil"
+        ]
+      },
+      "TCGA-2Z-A9JN": {
+        "n": 455,
+        "accuracy": 1.0,
+        "balanced_accuracy": null,
+        "macro_f1": null,
+        "missing_reference_classes": [
+          "lymphocyte",
+          "macrophage",
+          "neutrophil"
+        ],
+        "support": {
+          "epithelial": 455,
+          "lymphocyte": 0,
+          "macrophage": 0,
+          "neutrophil": 0
+        },
+        "recall": {
+          "epithelial": 1.0,
+          "lymphocyte": null,
+          "macrophage": null,
+          "neutrophil": null
+        },
+        "f1": {
+          "epithelial": 1.0,
+          "lymphocyte": null,
+          "macrophage": null,
+          "neutrophil": null
+        },
+        "confusion_matrix": [
+          [
+            455,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "classes": [
+          "epithelial",
+          "lymphocyte",
+          "macrophage",
+          "neutrophil"
+        ]
+      },
+      "TCGA-49-6743": {
+        "n": 236,
+        "accuracy": 0.9661016949152542,
+        "balanced_accuracy": null,
+        "macro_f1": null,
+        "missing_reference_classes": [
+          "macrophage",
+          "neutrophil"
+        ],
+        "support": {
+          "epithelial": 228,
+          "lymphocyte": 8,
+          "macrophage": 0,
+          "neutrophil": 0
+        },
+        "recall": {
+          "epithelial": 1.0,
+          "lymphocyte": 0.0,
+          "macrophage": null,
+          "neutrophil": null
+        },
+        "f1": {
+          "epithelial": 0.9827586206896551,
+          "lymphocyte": 0.0,
+          "macrophage": null,
+          "neutrophil": null
+        },
+        "confusion_matrix": [
+          [
+            228,
+            0,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "classes": [
+          "epithelial",
+          "lymphocyte",
+          "macrophage",
+          "neutrophil"
+        ]
+      },
+      "TCGA-50-6591": {
+        "n": 314,
+        "accuracy": 0.9968152866242038,
+        "balanced_accuracy": null,
+        "macro_f1": null,
+        "missing_reference_classes": [
+          "macrophage",
+          "neutrophil"
+        ],
+        "support": {
+          "epithelial": 313,
+          "lymphocyte": 1,
+          "macrophage": 0,
+          "neutrophil": 0
+        },
+        "recall": {
+          "epithelial": 1.0,
+          "lymphocyte": 0.0,
+          "macrophage": null,
+          "neutrophil": null
+        },
+        "f1": {
+          "epithelial": 0.9984051036682615,
+          "lymphocyte": 0.0,
+          "macrophage": null,
+          "neutrophil": null
+        },
+        "confusion_matrix": [
+          [
+            313,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "classes": [
+          "epithelial",
+          "lymphocyte",
+          "macrophage",
+          "neutrophil"
+        ]
+      },
+      "TCGA-55-7573": {
+        "n": 311,
+        "accuracy": 0.9742765273311897,
+        "balanced_accuracy": null,
+        "macro_f1": null,
+        "missing_reference_classes": [
+          "macrophage",
+          "neutrophil"
+        ],
+        "support": {
+          "epithelial": 292,
+          "lymphocyte": 19,
+          "macrophage": 0,
+          "neutrophil": 0
+        },
+        "recall": {
+          "epithelial": 1.0,
+          "lymphocyte": 0.5789473684210527,
+          "macrophage": null,
+          "neutrophil": null
+        },
+        "f1": {
+          "epithelial": 0.9864864864864865,
+          "lymphocyte": 0.7333333333333333,
+          "macrophage": null,
+          "neutrophil": null
+        },
+        "confusion_matrix": [
+          [
+            292,
+            0,
+            0,
+            0
+          ],
+          [
+            8,
+            11,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "classes": [
+          "epithelial",
+          "lymphocyte",
+          "macrophage",
+          "neutrophil"
+        ]
+      },
+      "TCGA-73-4662": {
+        "n": 316,
+        "accuracy": 0.9113924050632911,
+        "balanced_accuracy": null,
+        "macro_f1": null,
+        "missing_reference_classes": [
+          "macrophage",
+          "neutrophil"
+        ],
+        "support": {
+          "epithelial": 287,
+          "lymphocyte": 29,
+          "macrophage": 0,
+          "neutrophil": 0
+        },
+        "recall": {
+          "epithelial": 0.9895470383275261,
+          "lymphocyte": 0.13793103448275862,
+          "macrophage": null,
+          "neutrophil": null
+        },
+        "f1": {
+          "epithelial": 0.9530201342281879,
+          "lymphocyte": 0.2222222222222222,
+          "macrophage": null,
+          "neutrophil": null
+        },
+        "confusion_matrix": [
+          [
+            284,
+            3,
+            0,
+            0
+          ],
+          [
+            25,
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "classes": [
+          "epithelial",
+          "lymphocyte",
+          "macrophage",
+          "neutrophil"
+        ]
+      },
+      "TCGA-A2-A04X": {
+        "n": 970,
+        "accuracy": 0.934020618556701,
+        "balanced_accuracy": null,
+        "macro_f1": null,
+        "missing_reference_classes": [
+          "neutrophil"
+        ],
+        "support": {
+          "epithelial": 398,
+          "lymphocyte": 555,
+          "macrophage": 17,
+          "neutrophil": 0
+        },
+        "recall": {
+          "epithelial": 0.9120603015075377,
+          "lymphocyte": 0.9783783783783784,
+          "macrophage": 0.0,
+          "neutrophil": null
+        },
+        "f1": {
+          "epithelial": 0.9307692307692308,
+          "lymphocyte": 0.9501312335958005,
+          "macrophage": 0.0,
+          "neutrophil": null
+        },
+        "confusion_matrix": [
+          [
+            363,
+            35,
+            0,
+            0
+          ],
+          [
+            12,
+            543,
+            0,
+            0
+          ],
+          [
+            7,
+            10,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "classes": [
+          "epithelial",
+          "lymphocyte",
+          "macrophage",
+          "neutrophil"
+        ]
+      },
+      "TCGA-A2-A0ES": {
+        "n": 275,
+        "accuracy": 1.0,
+        "balanced_accuracy": null,
+        "macro_f1": null,
+        "missing_reference_classes": [
+          "lymphocyte",
+          "macrophage",
+          "neutrophil"
+        ],
+        "support": {
+          "epithelial": 275,
+          "lymphocyte": 0,
+          "macrophage": 0,
+          "neutrophil": 0
+        },
+        "recall": {
+          "epithelial": 1.0,
+          "lymphocyte": null,
+          "macrophage": null,
+          "neutrophil": null
+        },
+        "f1": {
+          "epithelial": 1.0,
+          "lymphocyte": null,
+          "macrophage": null,
+          "neutrophil": null
+        },
+        "confusion_matrix": [
+          [
+            275,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "classes": [
+          "epithelial",
+          "lymphocyte",
+          "macrophage",
+          "neutrophil"
+        ]
+      },
+      "TCGA-D8-A3Z6": {
+        "n": 295,
+        "accuracy": 0.976271186440678,
+        "balanced_accuracy": null,
+        "macro_f1": null,
+        "missing_reference_classes": [
+          "macrophage",
+          "neutrophil"
+        ],
+        "support": {
+          "epithelial": 288,
+          "lymphocyte": 7,
+          "macrophage": 0,
+          "neutrophil": 0
+        },
+        "recall": {
+          "epithelial": 1.0,
+          "lymphocyte": 0.0,
+          "macrophage": null,
+          "neutrophil": null
+        },
+        "f1": {
+          "epithelial": 0.9879931389365352,
+          "lymphocyte": 0.0,
+          "macrophage": null,
+          "neutrophil": null
+        },
+        "confusion_matrix": [
+          [
+            288,
+            0,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "classes": [
+          "epithelial",
+          "lymphocyte",
+          "macrophage",
+          "neutrophil"
+        ]
+      },
+      "TCGA-DW-7838": {
+        "n": 830,
+        "accuracy": 0.9710843373493976,
+        "balanced_accuracy": null,
+        "macro_f1": null,
+        "missing_reference_classes": [
+          "macrophage",
+          "neutrophil"
+        ],
+        "support": {
+          "epithelial": 187,
+          "lymphocyte": 643,
+          "macrophage": 0,
+          "neutrophil": 0
+        },
+        "recall": {
+          "epithelial": 0.93048128342246,
+          "lymphocyte": 0.9828926905132193,
+          "macrophage": null,
+          "neutrophil": null
+        },
+        "f1": {
+          "epithelial": 0.9354838709677419,
+          "lymphocyte": 0.9813664596273292,
+          "macrophage": null,
+          "neutrophil": null
+        },
+        "confusion_matrix": [
+          [
+            174,
+            13,
+            0,
+            0
+          ],
+          [
+            11,
+            632,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "classes": [
+          "epithelial",
+          "lymphocyte",
+          "macrophage",
+          "neutrophil"
+        ]
+      },
+      "TCGA-E2-A108": {
+        "n": 634,
+        "accuracy": 0.9384858044164038,
+        "balanced_accuracy": null,
+        "macro_f1": null,
+        "missing_reference_classes": [
+          "macrophage",
+          "neutrophil"
+        ],
+        "support": {
+          "epithelial": 269,
+          "lymphocyte": 365,
+          "macrophage": 0,
+          "neutrophil": 0
+        },
+        "recall": {
+          "epithelial": 0.9368029739776952,
+          "lymphocyte": 0.9397260273972603,
+          "macrophage": null,
+          "neutrophil": null
+        },
+        "f1": {
+          "epithelial": 0.9281767955801105,
+          "lymphocyte": 0.9462068965517242,
+          "macrophage": null,
+          "neutrophil": null
+        },
+        "confusion_matrix": [
+          [
+            252,
+            17,
+            0,
+            0
+          ],
+          [
+            22,
+            343,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "classes": [
+          "epithelial",
+          "lymphocyte",
+          "macrophage",
+          "neutrophil"
+        ]
+      },
+      "TCGA-F9-A8NY": {
+        "n": 1172,
+        "accuracy": 0.9564846416382252,
+        "balanced_accuracy": null,
+        "macro_f1": null,
+        "missing_reference_classes": [
+          "macrophage",
+          "neutrophil"
+        ],
+        "support": {
+          "epithelial": 832,
+          "lymphocyte": 340,
+          "macrophage": 0,
+          "neutrophil": 0
+        },
+        "recall": {
+          "epithelial": 0.9867788461538461,
+          "lymphocyte": 0.8823529411764706,
+          "macrophage": null,
+          "neutrophil": null
+        },
+        "f1": {
+          "epithelial": 0.9704491725768322,
+          "lymphocyte": 0.9244992295839753,
+          "macrophage": null,
+          "neutrophil": 0.0
+        },
+        "confusion_matrix": [
+          [
+            821,
+            9,
+            0,
+            2
+          ],
+          [
+            39,
+            300,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "classes": [
+          "epithelial",
+          "lymphocyte",
+          "macrophage",
+          "neutrophil"
+        ]
+      },
+      "TCGA-G9-6356": {
+        "n": 408,
+        "accuracy": 0.8799019607843137,
+        "balanced_accuracy": null,
+        "macro_f1": null,
+        "missing_reference_classes": [
+          "neutrophil"
+        ],
+        "support": {
+          "epithelial": 361,
+          "lymphocyte": 30,
+          "macrophage": 17,
+          "neutrophil": 0
+        },
+        "recall": {
+          "epithelial": 0.9889196675900277,
+          "lymphocyte": 0.06666666666666667,
+          "macrophage": 0.0,
+          "neutrophil": null
+        },
+        "f1": {
+          "epithelial": 0.9357798165137615,
+          "lymphocyte": 0.1111111111111111,
+          "macrophage": 0.0,
+          "neutrophil": null
+        },
+        "confusion_matrix": [
+          [
+            357,
+            4,
+            0,
+            0
+          ],
+          [
+            28,
+            2,
+            0,
+            0
+          ],
+          [
+            17,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "classes": [
+          "epithelial",
+          "lymphocyte",
+          "macrophage",
+          "neutrophil"
+        ]
+      },
+      "TCGA-G9-6367": {
+        "n": 938,
+        "accuracy": 0.9893390191897654,
+        "balanced_accuracy": null,
+        "macro_f1": null,
+        "missing_reference_classes": [
+          "macrophage"
+        ],
+        "support": {
+          "epithelial": 354,
+          "lymphocyte": 583,
+          "macrophage": 0,
+          "neutrophil": 1
+        },
+        "recall": {
+          "epithelial": 0.980225988700565,
+          "lymphocyte": 0.9965694682675815,
+          "macrophage": null,
+          "neutrophil": 0.0
+        },
+        "f1": {
+          "epithelial": 0.9871977240398293,
+          "lymphocyte": 0.9914675767918089,
+          "macrophage": null,
+          "neutrophil": 0.0
+        },
+        "confusion_matrix": [
+          [
+            347,
+            7,
+            0,
+            0
+          ],
+          [
+            2,
+            581,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ]
+        ],
+        "classes": [
+          "epithelial",
+          "lymphocyte",
+          "macrophage",
+          "neutrophil"
+        ]
+      },
+      "TCGA-IZ-A6M9": {
+        "n": 584,
+        "accuracy": 0.9537671232876712,
+        "balanced_accuracy": null,
+        "macro_f1": null,
+        "missing_reference_classes": [
+          "macrophage",
+          "neutrophil"
+        ],
+        "support": {
+          "epithelial": 562,
+          "lymphocyte": 22,
+          "macrophage": 0,
+          "neutrophil": 0
+        },
+        "recall": {
+          "epithelial": 0.9804270462633452,
+          "lymphocyte": 0.2727272727272727,
+          "macrophage": null,
+          "neutrophil": null
+        },
+        "f1": {
+          "epithelial": 0.9760850310008857,
+          "lymphocyte": 0.3333333333333333,
+          "macrophage": null,
+          "neutrophil": 0.0
+        },
+        "confusion_matrix": [
+          [
+            551,
+            8,
+            0,
+            3
+          ],
+          [
+            16,
+            6,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "classes": [
+          "epithelial",
+          "lymphocyte",
+          "macrophage",
+          "neutrophil"
+        ]
+      },
+      "TCGA-VP-A87E": {
+        "n": 553,
+        "accuracy": 0.969258589511754,
+        "balanced_accuracy": null,
+        "macro_f1": null,
+        "missing_reference_classes": [
+          "macrophage"
+        ],
+        "support": {
+          "epithelial": 535,
+          "lymphocyte": 17,
+          "macrophage": 0,
+          "neutrophil": 1
+        },
+        "recall": {
+          "epithelial": 1.0,
+          "lymphocyte": 0.058823529411764705,
+          "macrophage": null,
+          "neutrophil": 0.0
+        },
+        "f1": {
+          "epithelial": 0.984360625574977,
+          "lymphocyte": 0.1111111111111111,
+          "macrophage": null,
+          "neutrophil": 0.0
+        },
+        "confusion_matrix": [
+          [
+            535,
+            0,
+            0,
+            0
+          ],
+          [
+            16,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0
+          ]
+        ],
+        "classes": [
+          "epithelial",
+          "lymphocyte",
+          "macrophage",
+          "neutrophil"
+        ]
+      },
+      "TCGA-VP-A87H": {
+        "n": 961,
+        "accuracy": 0.991675338189386,
+        "balanced_accuracy": null,
+        "macro_f1": null,
+        "missing_reference_classes": [
+          "neutrophil"
+        ],
+        "support": {
+          "epithelial": 513,
+          "lymphocyte": 445,
+          "macrophage": 3,
+          "neutrophil": 0
+        },
+        "recall": {
+          "epithelial": 1.0,
+          "lymphocyte": 0.9887640449438202,
+          "macrophage": 0.0,
+          "neutrophil": null
+        },
+        "f1": {
+          "epithelial": 0.9922630560928434,
+          "lymphocyte": 0.9943502824858758,
+          "macrophage": 0.0,
+          "neutrophil": null
+        },
+        "confusion_matrix": [
+          [
+            513,
+            0,
+            0,
+            0
+          ],
+          [
+            5,
+            440,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "classes": [
+          "epithelial",
+          "lymphocyte",
+          "macrophage",
+          "neutrophil"
+        ]
+      },
+      "TCGA-X4-A8KS": {
+        "n": 519,
+        "accuracy": 1.0,
+        "balanced_accuracy": null,
+        "macro_f1": null,
+        "missing_reference_classes": [
+          "epithelial",
+          "macrophage",
+          "neutrophil"
+        ],
+        "support": {
+          "epithelial": 0,
+          "lymphocyte": 519,
+          "macrophage": 0,
+          "neutrophil": 0
+        },
+        "recall": {
+          "epithelial": null,
+          "lymphocyte": 1.0,
+          "macrophage": null,
+          "neutrophil": null
+        },
+        "f1": {
+          "epithelial": null,
+          "lymphocyte": 1.0,
+          "macrophage": null,
+          "neutrophil": null
+        },
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            519,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "classes": [
+          "epithelial",
+          "lymphocyte",
+          "macrophage",
+          "neutrophil"
+        ]
+      },
+      "TCGA-YL-A9WL": {
+        "n": 205,
+        "accuracy": 0.9853658536585366,
+        "balanced_accuracy": null,
+        "macro_f1": null,
+        "missing_reference_classes": [
+          "macrophage",
+          "neutrophil"
+        ],
+        "support": {
+          "epithelial": 202,
+          "lymphocyte": 3,
+          "macrophage": 0,
+          "neutrophil": 0
+        },
+        "recall": {
+          "epithelial": 1.0,
+          "lymphocyte": 0.0,
+          "macrophage": null,
+          "neutrophil": null
+        },
+        "f1": {
+          "epithelial": 0.9926289926289926,
+          "lymphocyte": 0.0,
+          "macrophage": null,
+          "neutrophil": null
+        },
+        "confusion_matrix": [
+          [
+            202,
+            0,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "classes": [
+          "epithelial",
+          "lymphocyte",
+          "macrophage",
+          "neutrophil"
+        ]
+      }
+    }
+  },
+  "majority_baseline": {
+    "n": 10776,
+    "accuracy": 0.6076466221232368,
+    "balanced_accuracy": 0.25,
+    "macro_f1": 0.1889863772800739,
+    "missing_reference_classes": [],
+    "support": {
+      "epithelial": 6548,
+      "lymphocyte": 4178,
+      "macrophage": 46,
+      "neutrophil": 4
+    },
+    "recall": {
+      "epithelial": 1.0,
+      "lymphocyte": 0.0,
+      "macrophage": 0.0,
+      "neutrophil": 0.0
+    },
+    "f1": {
+      "epithelial": 0.7559455091202956,
+      "lymphocyte": 0.0,
+      "macrophage": 0.0,
+      "neutrophil": 0.0
+    },
+    "confusion_matrix": [
+      [
+        6548,
+        0,
+        0,
+        0
+      ],
+      [
+        4178,
+        0,
+        0,
+        0
+      ],
+      [
+        46,
+        0,
+        0,
+        0
+      ],
+      [
+        4,
+        0,
+        0,
+        0
+      ]
+    ],
+    "classes": [
+      "epithelial",
+      "lymphocyte",
+      "macrophage",
+      "neutrophil"
+    ]
+  },
+  "claim_limit": "Virtual-marker scores are not measured protein abundance; this is research cell-type prediction. Corrected-RGB exploratory score includes GigaTIME nuclear-QC failures; it is not validated cell-typing performance.",
+  "test_by_tissue": {
+    "breast": {
+      "n": 2174,
+      "accuracy": 0.9494020239190433,
+      "balanced_accuracy": null,
+      "macro_f1": null,
+      "missing_reference_classes": [
+        "neutrophil"
+      ],
+      "support": {
+        "epithelial": 1230,
+        "lymphocyte": 927,
+        "macrophage": 17,
+        "neutrophil": 0
+      },
+      "recall": {
+        "epithelial": 0.9577235772357724,
+        "lymphocyte": 0.9557713052858684,
+        "macrophage": 0.0,
+        "neutrophil": null
+      },
+      "f1": {
+        "epithelial": 0.9592833876221498,
+        "lymphocyte": 0.9450666666666667,
+        "macrophage": 0.0,
+        "neutrophil": null
+      },
+      "confusion_matrix": [
+        [
+          1178,
+          52,
+          0,
+          0
+        ],
+        [
+          41,
+          886,
+          0,
+          0
+        ],
+        [
+          7,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "classes": [
+        "epithelial",
+        "lymphocyte",
+        "macrophage",
+        "neutrophil"
+      ],
+      "images": 8,
+      "patients": 4
+    },
+    "kidney": {
+      "n": 3841,
+      "accuracy": 0.9690184847695913,
+      "balanced_accuracy": 0.4846984143186074,
+      "macro_f1": 0.4853717779097815,
+      "missing_reference_classes": [],
+      "support": {
+        "epithelial": 2233,
+        "lymphocyte": 1597,
+        "macrophage": 9,
+        "neutrophil": 2
+      },
+      "recall": {
+        "epithelial": 0.9838781907747425,
+        "lymphocyte": 0.954915466499687,
+        "macrophage": 0.0,
+        "neutrophil": 0.0
+      },
+      "f1": {
+        "epithelial": 0.9738475177304965,
+        "lymphocyte": 0.9676395939086294,
+        "macrophage": 0.0,
+        "neutrophil": 0.0
+      },
+      "confusion_matrix": [
+        [
+          2197,
+          30,
+          0,
+          6
+        ],
+        [
+          71,
+          1525,
+          0,
+          1
+        ],
+        [
+          9,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0
+        ]
+      ],
+      "classes": [
+        "epithelial",
+        "lymphocyte",
+        "macrophage",
+        "neutrophil"
+      ],
+      "images": 10,
+      "patients": 5
+    },
+    "lung": {
+      "n": 1177,
+      "accuracy": 0.9617672047578589,
+      "balanced_accuracy": null,
+      "macro_f1": null,
+      "missing_reference_classes": [
+        "macrophage",
+        "neutrophil"
+      ],
+      "support": {
+        "epithelial": 1120,
+        "lymphocyte": 57,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "recall": {
+        "epithelial": 0.9973214285714286,
+        "lymphocyte": 0.2631578947368421,
+        "macrophage": null,
+        "neutrophil": null
+      },
+      "f1": {
+        "epithelial": 0.9802544975866608,
+        "lymphocyte": 0.4,
+        "macrophage": null,
+        "neutrophil": null
+      },
+      "confusion_matrix": [
+        [
+          1117,
+          3,
+          0,
+          0
+        ],
+        [
+          42,
+          15,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "classes": [
+        "epithelial",
+        "lymphocyte",
+        "macrophage",
+        "neutrophil"
+      ],
+      "images": 4,
+      "patients": 4
+    },
+    "prostate": {
+      "n": 3584,
+      "accuracy": 0.9757254464285714,
+      "balanced_accuracy": 0.49014715887454374,
+      "macro_f1": 0.4893821538144781,
+      "missing_reference_classes": [],
+      "support": {
+        "epithelial": 1965,
+        "lymphocyte": 1597,
+        "macrophage": 20,
+        "neutrophil": 2
+      },
+      "recall": {
+        "epithelial": 0.9944020356234097,
+        "lymphocyte": 0.9661865998747652,
+        "macrophage": 0.0,
+        "neutrophil": 0.0
+      },
+      "f1": {
+        "epithelial": 0.9784677015523285,
+        "lymphocyte": 0.9790609137055838,
+        "macrophage": 0.0,
+        "neutrophil": 0.0
+      },
+      "confusion_matrix": [
+        [
+          1954,
+          11,
+          0,
+          0
+        ],
+        [
+          54,
+          1543,
+          0,
+          0
+        ],
+        [
+          20,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ]
+      ],
+      "classes": [
+        "epithelial",
+        "lymphocyte",
+        "macrophage",
+        "neutrophil"
+      ],
+      "images": 10,
+      "patients": 6
+    }
+  },
+  "test_image_class_coverage": {
+    "schema_version": 1,
+    "minimum_per_class_support_sensitivity": 5,
+    "images": 32,
+    "cells": 10776,
+    "reference_class_count_distribution": {
+      "1": 9,
+      "2": 20,
+      "3": 2,
+      "4": 1
+    },
+    "single_class_images": 9,
+    "single_class_cells": 3302,
+    "multiclass": {
+      "images": 23,
+      "cells": 7474,
+      "equal_image_observed_class_macro_recall": 0.5548685564595686,
+      "equal_image_observed_class_macro_f1": 0.5502585842352119,
+      "equal_image_minimum_five_class_macro_recall": null,
+      "equal_image_minimum_five_class_macro_f1": null
+    },
+    "multiclass_minimum_five": {
+      "images": 16,
+      "cells": 5432,
+      "equal_image_observed_class_macro_recall": 0.5901123533583227,
+      "equal_image_observed_class_macro_f1": 0.5843297567205168,
+      "equal_image_minimum_five_class_macro_recall": 0.606239282853525,
+      "equal_image_minimum_five_class_macro_f1": 0.600136945109162
+    },
+    "per_image": [
+      {
+        "sample_id": "TCGA-2Z-A9JG-01Z-00-DX1_4",
+        "organ": "kidney",
+        "n_cells": 150,
+        "reference_class_count": 1,
+        "reference_classes": [
+          "epithelial"
+        ],
+        "classes_with_at_least_five_cells": [
+          "epithelial"
+        ],
+        "multiclass_eligible": false,
+        "multiclass_minimum_five_eligible": false,
+        "observed_class_macro_recall": null,
+        "observed_class_macro_f1": null,
+        "minimum_five_class_macro_recall": null,
+        "minimum_five_class_macro_f1": null,
+        "accuracy": 1.0
+      },
+      {
+        "sample_id": "TCGA-2Z-A9JG-01Z-00-DX1_5",
+        "organ": "kidney",
+        "n_cells": 587,
+        "reference_class_count": 1,
+        "reference_classes": [
+          "lymphocyte"
+        ],
+        "classes_with_at_least_five_cells": [
+          "lymphocyte"
+        ],
+        "multiclass_eligible": false,
+        "multiclass_minimum_five_eligible": false,
+        "observed_class_macro_recall": null,
+        "observed_class_macro_f1": null,
+        "minimum_five_class_macro_recall": null,
+        "minimum_five_class_macro_f1": null,
+        "accuracy": 1.0
+      },
+      {
+        "sample_id": "TCGA-2Z-A9JG-01Z-00-DX1_6",
+        "organ": "kidney",
+        "n_cells": 63,
+        "reference_class_count": 4,
+        "reference_classes": [
+          "epithelial",
+          "lymphocyte",
+          "macrophage",
+          "neutrophil"
+        ],
+        "classes_with_at_least_five_cells": [
+          "epithelial",
+          "lymphocyte",
+          "macrophage"
+        ],
+        "multiclass_eligible": true,
+        "multiclass_minimum_five_eligible": true,
+        "observed_class_macro_recall": 0.24468085106382978,
+        "observed_class_macro_f1": 0.21100917431192662,
+        "minimum_five_class_macro_recall": 0.326241134751773,
+        "minimum_five_class_macro_f1": 0.28134556574923547,
+        "accuracy": 0.7301587301587301
+      },
+      {
+        "sample_id": "TCGA-2Z-A9JN-01Z-00-DX1_2",
+        "organ": "kidney",
+        "n_cells": 455,
+        "reference_class_count": 1,
+        "reference_classes": [
+          "epithelial"
+        ],
+        "classes_with_at_least_five_cells": [
+          "epithelial"
+        ],
+        "multiclass_eligible": false,
+        "multiclass_minimum_five_eligible": false,
+        "observed_class_macro_recall": null,
+        "observed_class_macro_f1": null,
+        "minimum_five_class_macro_recall": null,
+        "minimum_five_class_macro_f1": null,
+        "accuracy": 1.0
+      },
+      {
+        "sample_id": "TCGA-49-6743-01Z-00-DX2_004",
+        "organ": "lung",
+        "n_cells": 236,
+        "reference_class_count": 2,
+        "reference_classes": [
+          "epithelial",
+          "lymphocyte"
+        ],
+        "classes_with_at_least_five_cells": [
+          "epithelial",
+          "lymphocyte"
+        ],
+        "multiclass_eligible": true,
+        "multiclass_minimum_five_eligible": true,
+        "observed_class_macro_recall": 0.5,
+        "observed_class_macro_f1": 0.49137931034482757,
+        "minimum_five_class_macro_recall": 0.5,
+        "minimum_five_class_macro_f1": 0.49137931034482757,
+        "accuracy": 0.9661016949152542
+      },
+      {
+        "sample_id": "TCGA-50-6591-01Z-00-DX1_001",
+        "organ": "lung",
+        "n_cells": 314,
+        "reference_class_count": 2,
+        "reference_classes": [
+          "epithelial",
+          "lymphocyte"
+        ],
+        "classes_with_at_least_five_cells": [
+          "epithelial"
+        ],
+        "multiclass_eligible": true,
+        "multiclass_minimum_five_eligible": false,
+        "observed_class_macro_recall": 0.5,
+        "observed_class_macro_f1": 0.49920255183413076,
+        "minimum_five_class_macro_recall": null,
+        "minimum_five_class_macro_f1": null,
+        "accuracy": 0.9968152866242038
+      },
+      {
+        "sample_id": "TCGA-55-7573-01Z-00-DX1_004",
+        "organ": "lung",
+        "n_cells": 311,
+        "reference_class_count": 2,
+        "reference_classes": [
+          "epithelial",
+          "lymphocyte"
+        ],
+        "classes_with_at_least_five_cells": [
+          "epithelial",
+          "lymphocyte"
+        ],
+        "multiclass_eligible": true,
+        "multiclass_minimum_five_eligible": true,
+        "observed_class_macro_recall": 0.7894736842105263,
+        "observed_class_macro_f1": 0.8599099099099099,
+        "minimum_five_class_macro_recall": 0.7894736842105263,
+        "minimum_five_class_macro_f1": 0.8599099099099099,
+        "accuracy": 0.9742765273311897
+      },
+      {
+        "sample_id": "TCGA-73-4662-01Z-00-DX1_003",
+        "organ": "lung",
+        "n_cells": 316,
+        "reference_class_count": 2,
+        "reference_classes": [
+          "epithelial",
+          "lymphocyte"
+        ],
+        "classes_with_at_least_five_cells": [
+          "epithelial",
+          "lymphocyte"
+        ],
+        "multiclass_eligible": true,
+        "multiclass_minimum_five_eligible": true,
+        "observed_class_macro_recall": 0.5637390364051423,
+        "observed_class_macro_f1": 0.587621178225205,
+        "minimum_five_class_macro_recall": 0.5637390364051423,
+        "minimum_five_class_macro_f1": 0.587621178225205,
+        "accuracy": 0.9113924050632911
+      },
+      {
+        "sample_id": "TCGA-A2-A04X-01Z-00-DX1_001",
+        "organ": "breast",
+        "n_cells": 639,
+        "reference_class_count": 2,
+        "reference_classes": [
+          "epithelial",
+          "lymphocyte"
+        ],
+        "classes_with_at_least_five_cells": [
+          "epithelial",
+          "lymphocyte"
+        ],
+        "multiclass_eligible": true,
+        "multiclass_minimum_five_eligible": true,
+        "observed_class_macro_recall": 0.8641891891891892,
+        "observed_class_macro_f1": 0.8814811067833477,
+        "minimum_five_class_macro_recall": 0.8641891891891892,
+        "minimum_five_class_macro_f1": 0.8814811067833477,
+        "accuracy": 0.9483568075117371
+      },
+      {
+        "sample_id": "TCGA-A2-A04X-01Z-00-DX1_002",
+        "organ": "breast",
+        "n_cells": 192,
+        "reference_class_count": 2,
+        "reference_classes": [
+          "epithelial",
+          "macrophage"
+        ],
+        "classes_with_at_least_five_cells": [
+          "epithelial",
+          "macrophage"
+        ],
+        "multiclass_eligible": true,
+        "multiclass_minimum_five_eligible": true,
+        "observed_class_macro_recall": 0.4942857142857143,
+        "observed_class_macro_f1": 0.48732394366197185,
+        "minimum_five_class_macro_recall": 0.4942857142857143,
+        "minimum_five_class_macro_f1": 0.48732394366197185,
+        "accuracy": 0.9010416666666666
+      },
+      {
+        "sample_id": "TCGA-A2-A04X-01Z-00-DX1_004",
+        "organ": "breast",
+        "n_cells": 139,
+        "reference_class_count": 1,
+        "reference_classes": [
+          "epithelial"
+        ],
+        "classes_with_at_least_five_cells": [
+          "epithelial"
+        ],
+        "multiclass_eligible": false,
+        "multiclass_minimum_five_eligible": false,
+        "observed_class_macro_recall": null,
+        "observed_class_macro_f1": null,
+        "minimum_five_class_macro_recall": null,
+        "minimum_five_class_macro_f1": null,
+        "accuracy": 0.9136690647482014
+      },
+      {
+        "sample_id": "TCGA-A2-A0ES-01Z-00-DX1_002",
+        "organ": "breast",
+        "n_cells": 275,
+        "reference_class_count": 1,
+        "reference_classes": [
+          "epithelial"
+        ],
+        "classes_with_at_least_five_cells": [
+          "epithelial"
+        ],
+        "multiclass_eligible": false,
+        "multiclass_minimum_five_eligible": false,
+        "observed_class_macro_recall": null,
+        "observed_class_macro_f1": null,
+        "minimum_five_class_macro_recall": null,
+        "minimum_five_class_macro_f1": null,
+        "accuracy": 1.0
+      },
+      {
+        "sample_id": "TCGA-D8-A3Z6-01Z-00-DX2_002",
+        "organ": "breast",
+        "n_cells": 295,
+        "reference_class_count": 2,
+        "reference_classes": [
+          "epithelial",
+          "lymphocyte"
+        ],
+        "classes_with_at_least_five_cells": [
+          "epithelial",
+          "lymphocyte"
+        ],
+        "multiclass_eligible": true,
+        "multiclass_minimum_five_eligible": true,
+        "observed_class_macro_recall": 0.5,
+        "observed_class_macro_f1": 0.4939965694682676,
+        "minimum_five_class_macro_recall": 0.5,
+        "minimum_five_class_macro_f1": 0.4939965694682676,
+        "accuracy": 0.976271186440678
+      },
+      {
+        "sample_id": "TCGA-DW-7838-01Z-00-DX1_1",
+        "organ": "kidney",
+        "n_cells": 625,
+        "reference_class_count": 1,
+        "reference_classes": [
+          "lymphocyte"
+        ],
+        "classes_with_at_least_five_cells": [
+          "lymphocyte"
+        ],
+        "multiclass_eligible": false,
+        "multiclass_minimum_five_eligible": false,
+        "observed_class_macro_recall": null,
+        "observed_class_macro_f1": null,
+        "minimum_five_class_macro_recall": null,
+        "minimum_five_class_macro_f1": null,
+        "accuracy": 0.9952
+      },
+      {
+        "sample_id": "TCGA-DW-7838-01Z-00-DX1_2",
+        "organ": "kidney",
+        "n_cells": 205,
+        "reference_class_count": 2,
+        "reference_classes": [
+          "epithelial",
+          "lymphocyte"
+        ],
+        "classes_with_at_least_five_cells": [
+          "epithelial",
+          "lymphocyte"
+        ],
+        "multiclass_eligible": true,
+        "multiclass_minimum_five_eligible": true,
+        "observed_class_macro_recall": 0.7430184194890077,
+        "observed_class_macro_f1": 0.7154471544715447,
+        "minimum_five_class_macro_recall": 0.7430184194890077,
+        "minimum_five_class_macro_f1": 0.7154471544715447,
+        "accuracy": 0.8975609756097561
+      },
+      {
+        "sample_id": "TCGA-E2-A108-01Z-00-DX1_001",
+        "organ": "breast",
+        "n_cells": 458,
+        "reference_class_count": 2,
+        "reference_classes": [
+          "epithelial",
+          "lymphocyte"
+        ],
+        "classes_with_at_least_five_cells": [
+          "epithelial",
+          "lymphocyte"
+        ],
+        "multiclass_eligible": true,
+        "multiclass_minimum_five_eligible": true,
+        "observed_class_macro_recall": 0.8874403860981809,
+        "observed_class_macro_f1": 0.8859845655962161,
+        "minimum_five_class_macro_recall": 0.8874403860981809,
+        "minimum_five_class_macro_f1": 0.8859845655962161,
+        "accuracy": 0.9235807860262009
+      },
+      {
+        "sample_id": "TCGA-E2-A108-01Z-00-DX1_002",
+        "organ": "breast",
+        "n_cells": 68,
+        "reference_class_count": 2,
+        "reference_classes": [
+          "epithelial",
+          "lymphocyte"
+        ],
+        "classes_with_at_least_five_cells": [
+          "epithelial"
+        ],
+        "multiclass_eligible": true,
+        "multiclass_minimum_five_eligible": false,
+        "observed_class_macro_recall": 0.5,
+        "observed_class_macro_f1": 0.4925373134328358,
+        "minimum_five_class_macro_recall": null,
+        "minimum_five_class_macro_f1": null,
+        "accuracy": 0.9705882352941176
+      },
+      {
+        "sample_id": "TCGA-E2-A108-01Z-00-DX1_003",
+        "organ": "breast",
+        "n_cells": 108,
+        "reference_class_count": 2,
+        "reference_classes": [
+          "epithelial",
+          "lymphocyte"
+        ],
+        "classes_with_at_least_five_cells": [
+          "epithelial"
+        ],
+        "multiclass_eligible": true,
+        "multiclass_minimum_five_eligible": false,
+        "observed_class_macro_recall": 0.5,
+        "observed_class_macro_f1": 0.4953271028037383,
+        "minimum_five_class_macro_recall": null,
+        "minimum_five_class_macro_f1": null,
+        "accuracy": 0.9814814814814815
+      },
+      {
+        "sample_id": "TCGA-F9-A8NY-01Z-00-DX1_1",
+        "organ": "kidney",
+        "n_cells": 861,
+        "reference_class_count": 2,
+        "reference_classes": [
+          "epithelial",
+          "lymphocyte"
+        ],
+        "classes_with_at_least_five_cells": [
+          "epithelial",
+          "lymphocyte"
+        ],
+        "multiclass_eligible": true,
+        "multiclass_minimum_five_eligible": true,
+        "observed_class_macro_recall": 0.5488489612577204,
+        "observed_class_macro_f1": 0.5775388291517324,
+        "minimum_five_class_macro_recall": 0.5488489612577204,
+        "minimum_five_class_macro_f1": 0.5775388291517324,
+        "accuracy": 0.9547038327526133
+      },
+      {
+        "sample_id": "TCGA-F9-A8NY-01Z-00-DX1_3",
+        "organ": "kidney",
+        "n_cells": 311,
+        "reference_class_count": 2,
+        "reference_classes": [
+          "epithelial",
+          "lymphocyte"
+        ],
+        "classes_with_at_least_five_cells": [
+          "epithelial",
+          "lymphocyte"
+        ],
+        "multiclass_eligible": true,
+        "multiclass_minimum_five_eligible": true,
+        "observed_class_macro_recall": 0.6416943521594685,
+        "observed_class_macro_f1": 0.6567328918322296,
+        "minimum_five_class_macro_recall": 0.6416943521594685,
+        "minimum_five_class_macro_f1": 0.6567328918322296,
+        "accuracy": 0.9614147909967846
+      },
+      {
+        "sample_id": "TCGA-G9-6356-01Z-00-DX1_1",
+        "organ": "prostate",
+        "n_cells": 377,
+        "reference_class_count": 2,
+        "reference_classes": [
+          "epithelial",
+          "lymphocyte"
+        ],
+        "classes_with_at_least_five_cells": [
+          "epithelial",
+          "lymphocyte"
+        ],
+        "multiclass_eligible": true,
+        "multiclass_minimum_five_eligible": true,
+        "observed_class_macro_recall": 0.5275696445725264,
+        "observed_class_macro_f1": 0.5332714329928815,
+        "minimum_five_class_macro_recall": 0.5275696445725264,
+        "minimum_five_class_macro_f1": 0.5332714329928815,
+        "accuracy": 0.9151193633952255
+      },
+      {
+        "sample_id": "TCGA-G9-6356-01Z-00-DX1_6",
+        "organ": "prostate",
+        "n_cells": 31,
+        "reference_class_count": 2,
+        "reference_classes": [
+          "epithelial",
+          "macrophage"
+        ],
+        "classes_with_at_least_five_cells": [
+          "epithelial",
+          "macrophage"
+        ],
+        "multiclass_eligible": true,
+        "multiclass_minimum_five_eligible": true,
+        "observed_class_macro_recall": 0.5,
+        "observed_class_macro_f1": 0.3111111111111111,
+        "minimum_five_class_macro_recall": 0.5,
+        "minimum_five_class_macro_f1": 0.3111111111111111,
+        "accuracy": 0.45161290322580644
+      },
+      {
+        "sample_id": "TCGA-G9-6367-01Z-00-DX1_1",
+        "organ": "prostate",
+        "n_cells": 583,
+        "reference_class_count": 2,
+        "reference_classes": [
+          "lymphocyte",
+          "neutrophil"
+        ],
+        "classes_with_at_least_five_cells": [
+          "lymphocyte"
+        ],
+        "multiclass_eligible": true,
+        "multiclass_minimum_five_eligible": false,
+        "observed_class_macro_recall": 0.4991408934707904,
+        "observed_class_macro_f1": 0.4991408934707904,
+        "minimum_five_class_macro_recall": null,
+        "minimum_five_class_macro_f1": null,
+        "accuracy": 0.9965694682675815
+      },
+      {
+        "sample_id": "TCGA-G9-6367-01Z-00-DX1_2",
+        "organ": "prostate",
+        "n_cells": 245,
+        "reference_class_count": 2,
+        "reference_classes": [
+          "epithelial",
+          "lymphocyte"
+        ],
+        "classes_with_at_least_five_cells": [
+          "epithelial"
+        ],
+        "multiclass_eligible": true,
+        "multiclass_minimum_five_eligible": false,
+        "observed_class_macro_recall": 0.48770491803278687,
+        "observed_class_macro_f1": 0.4927536231884058,
+        "minimum_five_class_macro_recall": null,
+        "minimum_five_class_macro_f1": null,
+        "accuracy": 0.9714285714285714
+      },
+      {
+        "sample_id": "TCGA-G9-6367-01Z-00-DX1_7",
+        "organ": "prostate",
+        "n_cells": 110,
+        "reference_class_count": 1,
+        "reference_classes": [
+          "epithelial"
+        ],
+        "classes_with_at_least_five_cells": [
+          "epithelial"
+        ],
+        "multiclass_eligible": false,
+        "multiclass_minimum_five_eligible": false,
+        "observed_class_macro_recall": null,
+        "observed_class_macro_f1": null,
+        "minimum_five_class_macro_recall": null,
+        "minimum_five_class_macro_f1": null,
+        "accuracy": 0.990909090909091
+      },
+      {
+        "sample_id": "TCGA-IZ-A6M9-01Z-00-DX1_1",
+        "organ": "kidney",
+        "n_cells": 148,
+        "reference_class_count": 2,
+        "reference_classes": [
+          "epithelial",
+          "lymphocyte"
+        ],
+        "classes_with_at_least_five_cells": [
+          "epithelial",
+          "lymphocyte"
+        ],
+        "multiclass_eligible": true,
+        "multiclass_minimum_five_eligible": true,
+        "observed_class_macro_recall": 0.7490007993605117,
+        "observed_class_macro_f1": 0.7412600845178641,
+        "minimum_five_class_macro_recall": 0.7490007993605117,
+        "minimum_five_class_macro_f1": 0.7412600845178641,
+        "accuracy": 0.918918918918919
+      },
+      {
+        "sample_id": "TCGA-IZ-A6M9-01Z-00-DX1_2",
+        "organ": "kidney",
+        "n_cells": 436,
+        "reference_class_count": 2,
+        "reference_classes": [
+          "epithelial",
+          "lymphocyte"
+        ],
+        "classes_with_at_least_five_cells": [
+          "epithelial",
+          "lymphocyte"
+        ],
+        "multiclass_eligible": true,
+        "multiclass_minimum_five_eligible": true,
+        "observed_class_macro_recall": 0.5349154391707583,
+        "observed_class_macro_f1": 0.5500515995872033,
+        "minimum_five_class_macro_recall": 0.5349154391707583,
+        "minimum_five_class_macro_f1": 0.5500515995872033,
+        "accuracy": 0.9655963302752294
+      },
+      {
+        "sample_id": "TCGA-VP-A87E-01Z-00-DX1_5",
+        "organ": "prostate",
+        "n_cells": 553,
+        "reference_class_count": 3,
+        "reference_classes": [
+          "epithelial",
+          "lymphocyte",
+          "neutrophil"
+        ],
+        "classes_with_at_least_five_cells": [
+          "epithelial",
+          "lymphocyte"
+        ],
+        "multiclass_eligible": true,
+        "multiclass_minimum_five_eligible": true,
+        "observed_class_macro_recall": 0.35294117647058826,
+        "observed_class_macro_f1": 0.3651572455620294,
+        "minimum_five_class_macro_recall": 0.5294117647058824,
+        "minimum_five_class_macro_f1": 0.5477358683430441,
+        "accuracy": 0.969258589511754
+      },
+      {
+        "sample_id": "TCGA-VP-A87H-01Z-00-DX1_1",
+        "organ": "prostate",
+        "n_cells": 442,
+        "reference_class_count": 1,
+        "reference_classes": [
+          "lymphocyte"
+        ],
+        "classes_with_at_least_five_cells": [
+          "lymphocyte"
+        ],
+        "multiclass_eligible": false,
+        "multiclass_minimum_five_eligible": false,
+        "observed_class_macro_recall": null,
+        "observed_class_macro_f1": null,
+        "minimum_five_class_macro_recall": null,
+        "minimum_five_class_macro_f1": null,
+        "accuracy": 0.995475113122172
+      },
+      {
+        "sample_id": "TCGA-VP-A87H-01Z-00-DX1_2",
+        "organ": "prostate",
+        "n_cells": 519,
+        "reference_class_count": 3,
+        "reference_classes": [
+          "epithelial",
+          "lymphocyte",
+          "macrophage"
+        ],
+        "classes_with_at_least_five_cells": [
+          "epithelial"
+        ],
+        "multiclass_eligible": true,
+        "multiclass_minimum_five_eligible": false,
+        "observed_class_macro_recall": 0.3333333333333333,
+        "observed_class_macro_f1": 0.3313953488372093,
+        "minimum_five_class_macro_recall": null,
+        "minimum_five_class_macro_f1": null,
+        "accuracy": 0.9884393063583815
+      },
+      {
+        "sample_id": "TCGA-X4-A8KS-01Z-00-DX3_1",
+        "organ": "prostate",
+        "n_cells": 519,
+        "reference_class_count": 1,
+        "reference_classes": [
+          "lymphocyte"
+        ],
+        "classes_with_at_least_five_cells": [
+          "lymphocyte"
+        ],
+        "multiclass_eligible": false,
+        "multiclass_minimum_five_eligible": false,
+        "observed_class_macro_recall": null,
+        "observed_class_macro_f1": null,
+        "minimum_five_class_macro_recall": null,
+        "minimum_five_class_macro_f1": null,
+        "accuracy": 1.0
+      },
+      {
+        "sample_id": "TCGA-YL-A9WL-01Z-00-DX1_1",
+        "organ": "prostate",
+        "n_cells": 205,
+        "reference_class_count": 2,
+        "reference_classes": [
+          "epithelial",
+          "lymphocyte"
+        ],
+        "classes_with_at_least_five_cells": [
+          "epithelial"
+        ],
+        "multiclass_eligible": true,
+        "multiclass_minimum_five_eligible": false,
+        "observed_class_macro_recall": 0.5,
+        "observed_class_macro_f1": 0.4963144963144963,
+        "minimum_five_class_macro_recall": null,
+        "minimum_five_class_macro_f1": null,
+        "accuracy": 0.9853658536585366
+      }
+    ],
+    "interpretation": "Only images with at least two expert reference classes contribute to the multiclass image-average scores. Classes with fewer than five expert cells are excluded from the sensitivity score. Single-class images remain visible but have no multiclass score. The score is conditional on expert nuclear masks, and does not assess cell detection."
+  },
+  "cohort": {
+    "train_images": 88,
+    "test_images": 32,
+    "train_patients": 40,
+    "test_patients": 19,
+    "tissues_in_both_splits": [
+      "breast",
+      "kidney",
+      "lung",
+      "prostate"
+    ],
+    "source_cohort_sha256": "678aa28a28113fa037e9c8849e5acf7cbd7f0564d3284358290506ac36072016"
+  },
+  "gigatime_quality_counts": {
+    "fail": 70,
+    "pass": 50
+  },
+  "gigatime_quality_status": "corrected_rgb_exploratory_failed_qc"
+}

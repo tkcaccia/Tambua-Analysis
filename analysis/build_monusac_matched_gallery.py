@@ -41,7 +41,8 @@ def overlay(he: Image.Image, ids: np.ndarray, labels: dict[int, str],
     return Image.fromarray(output)
 
 
-def build(source: Path, scores: Path, site: Path) -> dict:
+def build(source: Path, scores: Path, site: Path,
+          *, asset_name: str = "monusac-matched") -> dict:
     cohort = json.loads((source / "input/COHORT.json").read_text())
     report = json.loads((scores / "report.json").read_text())
     if not (source / "evidence/BUNDLE_COMPLETE.json").is_file():
@@ -54,7 +55,9 @@ def build(source: Path, scores: Path, site: Path) -> dict:
                  for row in prediction_rows}
     if len(expert) != len(expert_rows) or len(predicted) != len(prediction_rows) or set(expert) != set(predicted):
         raise ValueError("Matched labels and predictions do not align one-to-one")
-    output = site / "assets/monusac-matched"
+    if asset_name not in {"monusac-matched", "monusac-corrected"}:
+        raise ValueError("Unrecognized gallery asset name")
+    output = site / "assets" / asset_name
     output.mkdir(parents=True, exist_ok=False)
     cases = []
     for row in cohort["records"]:
@@ -63,6 +66,10 @@ def build(source: Path, scores: Path, site: Path) -> dict:
         sample = row["sample_id"]
         prepared = source / "prepared" / sample
         generated = source / "output" / sample
+        provenance = json.loads((prepared / "provenance.json").read_text())
+        if asset_name == "monusac-corrected" and \
+                provenance.get("source_color_reference") != "scanner_svs_rgb":
+            raise ValueError(f"Gallery image is not scanner RGB: {sample}")
         if not (generated / "RUN_COMPLETE.json").is_file():
             raise ValueError(f"Inference incomplete: {sample}")
         metadata = json.loads((generated / "gigatime_output/gigatime_metadata.json").read_text())
@@ -75,6 +82,14 @@ def build(source: Path, scores: Path, site: Path) -> dict:
             ids = np.asarray(image, dtype=np.int32)
         with Image.open(prepared / "expert_anchored_cell_proxy.ome.tif") as image:
             cell_ids = np.asarray(image, dtype=np.int32)
+        native_qc_path = generated / "gigatime_output/output_gigatime_nuclear_qc.json"
+        native_qc = json.loads(native_qc_path.read_text()) if native_qc_path.is_file() else None
+        if native_qc is not None:
+            native_qc = {key: native_qc.get(key) for key in (
+                "status", "alignment_status", "border_shadow_status",
+                "spatial_shadow_status", "auc", "prevalence_matched_dice",
+                "nuclear_boundary_contrast", "edge_to_core_nuclear_mean_ratio",
+            )}
         reference = {int(r["label_id"]): r["cell_type"] for r in csv_rows(prepared / "expert_types.csv")}
         matched = {index: name for (case, index), name in expert.items() if case == sample}
         predictions = {index: name for (case, index), name in predicted.items() if case == sample}
@@ -100,6 +115,8 @@ def build(source: Path, scores: Path, site: Path) -> dict:
         cases.append({"sample_id": sample, "patient_id": row["patient_id"],
                       "organ": row["organ"], "source_mpp": row["mpp"], "model_mpp": 0.25,
                       "width": row["width"], "height": row["height"],
+                      "source_color_reference": provenance.get("source_color_reference"),
+                      "native_nuclear_qc": native_qc,
                       "annotated_cells": len(reference), "n_cells": len(matched),
                       "correct": correct, "accuracy": round(correct / len(matched), 5),
                       "support": {name: support[name] for name in CLASSES},
@@ -116,6 +133,8 @@ def build(source: Path, scores: Path, site: Path) -> dict:
               "test_by_tissue": report["test_by_tissue"],
               "test_equal_patient_accuracy": report["test_by_patient"]["equal_weight_accuracy"],
               "majority_baseline": report["majority_baseline"],
+              "gigatime_quality_status": report.get("gigatime_quality_status"),
+              "gigatime_quality_counts": report.get("gigatime_quality_counts"),
               "dapi_qc_passed_test_images": sum(x["dapi_qc"]["passes_enrichment_screen"] for x in cases),
               "class_order": CLASSES,
               "class_coverage": class_coverage_report(cases, CLASSES),
@@ -130,8 +149,10 @@ if __name__ == "__main__":
     parser.add_argument("--results", type=Path, required=True)
     parser.add_argument("--scores", type=Path, required=True)
     parser.add_argument("--site", type=Path, required=True)
+    parser.add_argument("--asset-name", choices=("monusac-matched", "monusac-corrected"),
+                        default="monusac-matched")
     args = parser.parse_args()
-    result = build(args.results, args.scores, args.site)
+    result = build(args.results, args.scores, args.site, asset_name=args.asset_name)
     print(json.dumps({"test_images": result["test_images"],
                       "test_cells": result["test_cells"],
                       "accuracy": result["test"]["accuracy"]}))
