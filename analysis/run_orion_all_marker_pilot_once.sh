@@ -92,10 +92,17 @@ date -u +%Y-%m-%dT%H:%M:%SZ >"$root/started-utc.txt"
 
 # The previously approved CPU bundle must be terminal and its exact controller
 # no longer live. This check never stops or restarts that bundle.
-if [[ ! -f "$cpu_bundle/BUNDLE_COMPLETE.json" && ! -f "$cpu_bundle/BUNDLE_FAILED.json" ]]; then
-  echo 'MoNuSAC CPU bundle is not terminal' >&2
+if [[ ! -f "$cpu_bundle/BUNDLE_COMPLETE.json" || -f "$cpu_bundle/BUNDLE_FAILED.json" ]]; then
+  echo 'MoNuSAC CPU bundle has not completed successfully' >&2
   false
 fi
+"$python_bin" - "$cpu_bundle/BUNDLE_COMPLETE.json" <<'PY'
+import json, sys
+report = json.load(open(sys.argv[1]))
+if report.get('status') != 'complete' or report.get('device') != 'CPU' or \
+        report.get('cases') != 93 or len(report.get('case_order', [])) != 93:
+    raise SystemExit('MoNuSAC CPU bundle completion record is invalid')
+PY
 if [[ -f "$cpu_pidfile" ]]; then
   read -r cpu_pid cpu_starttick _ <"$cpu_pidfile"
   if [[ -r "/proc/$cpu_pid/stat" ]]; then
