@@ -50,8 +50,12 @@ def plan(old_qc: dict, expansion: dict) -> list[dict]:
             expansion.get("source_images") != 93 or \
             expansion.get("qc_passing_images") != len(expansion.get("records", [])):
         raise ValueError("Complete independent 93-image quantification is required")
+    prior_test_patients = {row["patient_id"] for row in old_qc["records"]
+                           if row["split"] == "test"}
     added = [dict(sample_id=row["sample_id"], patient_id=row["patient_id"],
-                  organ=row["organ"], split=row["split"], source="expansion")
+                  organ=row["organ"], split=row["split"], source="expansion",
+                  patient_seen_in_original_test=(row["patient_id"] in prior_test_patients)
+                  if row["split"] == "test" else False)
              for row in expansion["records"]]
     cases = prior + added
     if len({row["sample_id"] for row in cases}) != len(cases):
@@ -61,7 +65,8 @@ def plan(old_qc: dict, expansion: dict) -> list[dict]:
         raise ValueError("Unknown patient split")
     by_patient: dict[str, set[str]] = defaultdict(set)
     for row in cases:
-        by_patient[row["patient_id"]].add(row["split"])
+        family = "test" if row["split"] in {"test", "historical_test"} else row["split"]
+        by_patient[row["patient_id"]].add(family)
     if any(len(splits) != 1 for splits in by_patient.values()):
         raise ValueError("Patient leakage between fitting, development or test")
     if not any(row["split"] == "test" for row in added):
@@ -106,10 +111,16 @@ def manifest(cases: list[dict], old_root: Path, new_root: Path,
             writer.writerow(item)
 
 
-def matched_metrics(table: Path, predicted: Path, classes: list[str]) -> dict:
+def matched_metrics(table: Path, predicted: Path, classes: list[str],
+                    *, only_patients: set[str] | None = None) -> dict:
     from tambua.model import metrics
     labels = rows(table)
     predictions = rows(predicted)
+    if only_patients is not None:
+        labels = [row for row in labels if row["patient_id"] in only_patients]
+        predictions = [row for row in predictions if row["patient_id"] in only_patients]
+        if not labels:
+            return {"status": "no_matched_cells_from_previously_unseen_test_patients"}
     actual = {(r["sample_id"], r["label_id"]): r for r in labels}
     called = {(r["sample_id"], r["label_id"]): r["predicted_cell_type"]
               for r in predictions}
@@ -177,7 +188,11 @@ def run(args: argparse.Namespace) -> dict:
         "patients_by_split": {split: len({row["patient_id"] for row in cases
                                            if row["split"] == split})
                               for split in sorted(split_counts)},
-        "evaluation": "Additional patient-held-out QC-pass test images only; original organizer test kept historical",
+        "evaluation": "Additional images from organizer-test patients held out from fitting. Some patients were already audited in the original organizer test; report that overlap and an unseen-patient subset separately.",
+        "additional_test_images_from_previously_seen_test_patients": sum(
+            row["split"] == "test" and row["patient_seen_in_original_test"] for row in cases),
+        "additional_test_images_from_unseen_test_patients": sum(
+            row["split"] == "test" and not row["patient_seen_in_original_test"] for row in cases),
         "features": "All 23 native GigaTIME channels in independent StarDist nucleus and calibrated detected-cell proxy",
         "primary_metric": "Pooled four-class balanced accuracy conditional on conservative expert match",
         "records": cases}, indent=2) + "\n")
@@ -230,9 +245,14 @@ def run(args: argparse.Namespace) -> dict:
               "development": development["test"],
               "new_test": matched_metrics(test_table, test_prediction,
                                           development["test"]["classes"]),
+              "unseen_patient_test": matched_metrics(
+                  test_table, test_prediction, development["test"]["classes"],
+                  only_patients={row["patient_id"] for row in cases
+                                 if row["split"] == "test" and
+                                 not row["patient_seen_in_original_test"]}),
               "all_detected_new_test_cells_predicted": len(predicted),
               "publication_status": "preliminary_until_all_included_images_pass_documented_manual_visual_review",
-              "limit": "The additional test patients are held out from classifier fitting but share the organizer and pipeline development history. Matched-cell metrics do not measure false-positive detection in incompletely annotated tissue. Every included image still requires documented visual RGB, nuclear and shadow review before website publication."}
+              "limit": "All additional test patients are held out from fitting, but some were seen in prior organizer-test auditing. The unseen-patient subset excludes every patient in the original 32-image organizer test; its tissue and class coverage may be incomplete. Matched-cell metrics do not measure false-positive detection in incompletely annotated tissue. Every included image still requires documented visual RGB, nuclear and shadow review before website publication."}
     staged = args.output / "STUDY_COMPLETE.json.tmp"
     staged.write_text(json.dumps(result, indent=2) + "\n")
     staged.replace(args.output / "STUDY_COMPLETE.json")

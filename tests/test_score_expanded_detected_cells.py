@@ -27,3 +27,9 @@ def test_expanded_plan_keeps_old_test_retrospective_and_blocks_patient_leakage()
     leaked["records"][1]["patient_id"] = "new-fit-patient"
     with pytest.raises(ValueError, match="Patient leakage"):
         plan(old, leaked)
+    previously_tested = copy.deepcopy(new)
+    previously_tested["records"][1]["patient_id"] = next(
+        row["patient_id"] for row in old["records"] if row["split"] == "test")
+    additional = plan(old, previously_tested)
+    assert next(row for row in additional if row["sample_id"] == "new-test")[
+        "patient_seen_in_original_test"] is True
