@@ -1,0 +1,67 @@
+{
+  "status": "manual_contact_sheet_review_complete_technical_only",
+  "date": "2026-10-20",
+  "scope": "All 23 saved native GigaTIME channels for all eight automatic nuclear-QC passes among the first 79 completed expansion fields; scanner RGB and DAPI/StarDist shown beside each channel.",
+  "reviewed_count": 8,
+  "common_findings": "No obvious sharp rectangular tiling shadow was visible at contact-sheet scale. Several markers have broadly similar displayed morphology, but each preview was independently contrast-stretched; native-channel rank analysis does not support describing all channels as duplicates. Contact sheets alone cannot verify protein identity, cellular specificity, or full-resolution shadow absence.",
+  "records": [
+    {
+      "sample_id": "TCGA-E2-A108-01Z-00-DX1_004",
+      "split": "test",
+      "technical_visual_finding": "DAPI peaks mostly track sparse visible nuclei, with broad halos; no apparent rectangular seam. CD20 dynamic range is flagged near-flat by native marker QC.",
+      "marker_distribution_qc": "review",
+      "decision": "manual_marker_review_required"
+    },
+    {
+      "sample_id": "TCGA-E9-A22G-01Z-00-DX1_3",
+      "split": "development",
+      "technical_visual_finding": "DAPI broadly follows the mixed-cell nuclei, although peaks are larger than several StarDist outlines. No apparent rectangular seam.",
+      "marker_distribution_qc": "pass",
+      "decision": "technical_candidate_pending_measured_marker_validation"
+    },
+    {
+      "sample_id": "TCGA-EV-5903-01Z-00-DX1_4",
+      "split": "train",
+      "technical_visual_finding": "Sparse kidney-cell nuclei have corresponding DAPI peaks, with some diffuse background and no apparent rectangular seam.",
+      "marker_distribution_qc": "pass",
+      "decision": "technical_candidate_pending_measured_marker_validation"
+    },
+    {
+      "sample_id": "TCGA-EW-A6SB-01Z-00-DX1_003",
+      "split": "test",
+      "technical_visual_finding": "DAPI mostly corresponds to independent outlines in the breast field; multiple virtual proteins show bright shared cell morphology. No apparent rectangular seam.",
+      "marker_distribution_qc": "pass",
+      "decision": "technical_candidate_pending_measured_marker_validation"
+    },
+    {
+      "sample_id": "TCGA-G7-A8LD-01Z-00-DX1_1",
+      "split": "development",
+      "technical_visual_finding": "Narrow erythrocyte-rich strip with few detected nuclei. Nineteen of 23 channels have near-flat native dynamic range and the median pairwise nuclear-pixel channel rho is 0.732; independent marker information is inadequately supported.",
+      "marker_distribution_qc": "review",
+      "decision": "exclude_from_23_marker_classifier_pending_resolution"
+    },
+    {
+      "sample_id": "TCGA-G9-6356-01Z-00-DX1_3",
+      "split": "test",
+      "technical_visual_finding": "Dense lymphoid region has confluent bright virtual DAPI and several broadly bright protein maps. Numeric DAPI QC passes, but individual-cell separation in the virtual signal is difficult to verify at contact-sheet scale.",
+      "marker_distribution_qc": "pass",
+      "decision": "full_resolution_cell_separation_review_required"
+    },
+    {
+      "sample_id": "TCGA-KK-A59X-01Z-00-DX1-2",
+      "split": "train",
+      "technical_visual_finding": "Sparse blood-rich prostate field; DAPI peaks often correspond to visible nuclei. CD138, CD20, Actin-D and Transgelin are flagged near-flat by native marker QC.",
+      "marker_distribution_qc": "review",
+      "decision": "manual_marker_review_required"
+    },
+    {
+      "sample_id": "TCGA-L4-A4E5-01Z-00-DX1_2",
+      "split": "development",
+      "technical_visual_finding": "DAPI peaks partly agree with independent outlines but are broader than many nuclei. No apparent rectangular seam.",
+      "marker_distribution_qc": "pass",
+      "decision": "technical_candidate_pending_measured_marker_validation"
+    }
+  ],
+  "classifier_rule": "Do not silently treat automatic DAPI QC pass as whole-panel acceptance. Preserve review/exclusion flags and keep measured-marker and test-cell validity separate from technical image QC.",
+  "publication_limit": "No image is yet certified protein-specific or shadow-free at full resolution. Do not update the public classifier score from this partial cohort."
+}
