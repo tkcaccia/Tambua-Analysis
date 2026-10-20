@@ -1,0 +1,665 @@
+{
+  "status": "complete",
+  "device": "CPU",
+  "patient_ids": [
+    "CRC04",
+    "CRC06",
+    "CRC08",
+    "CRC10",
+    "CRC12",
+    "CRC17",
+    "CRC19",
+    "CRC21",
+    "CRC23",
+    "CRC25"
+  ],
+  "patients": 10,
+  "marker_pairs": 10,
+  "estimator": "Within each patient, rank each marker across the same measured cells and scale ranks by n+1; pool patient-specific five moments with equal patient weight; compute Pearson correlation of the pooled within-patient ranks. Resample whole patients for the 95% percentile CI.",
+  "bootstrap_replicates": 10000,
+  "bootstrap_seed": 20261020,
+  "source_summary": "/mnt/sata_ssd/Tambua-orion-all-patient-2026-10-19/results-partial25/summary.json",
+  "limit": "One QC-passing tissue window per reserved patient; whole-cell virtual means versus published whole-cell measurements. This is not raw spatial IF validation, intensity calibration, or whole-slide validation. Related target pairs are distinguished from exact pairs.",
+  "results": [
+    {
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "mapping": "nuclear-dye family",
+      "patients": 10,
+      "same_cells_total": 39554,
+      "equal_patient_pooled_within_patient_rank_correlation": 0.44389217380336554,
+      "patient_bootstrap_95pct_ci": [
+        0.3660324233076733,
+        0.5188284258456963
+      ],
+      "per_patient": [
+        {
+          "patient": "CRC04",
+          "cells": 4536,
+          "spearman_rho": 0.20333805007798747
+        },
+        {
+          "patient": "CRC06",
+          "cells": 4212,
+          "spearman_rho": 0.5492576700739086
+        },
+        {
+          "patient": "CRC08",
+          "cells": 4714,
+          "spearman_rho": 0.5865387127341175
+        },
+        {
+          "patient": "CRC10",
+          "cells": 5833,
+          "spearman_rho": 0.32188778719909167
+        },
+        {
+          "patient": "CRC12",
+          "cells": 3166,
+          "spearman_rho": 0.6410137429812189
+        },
+        {
+          "patient": "CRC17",
+          "cells": 5042,
+          "spearman_rho": 0.39937698300153424
+        },
+        {
+          "patient": "CRC19",
+          "cells": 2710,
+          "spearman_rho": 0.47328445906151656
+        },
+        {
+          "patient": "CRC21",
+          "cells": 4215,
+          "spearman_rho": 0.46495515747071925
+        },
+        {
+          "patient": "CRC23",
+          "cells": 2933,
+          "spearman_rho": 0.35698300535554073
+        },
+        {
+          "patient": "CRC25",
+          "cells": 2193,
+          "spearman_rho": 0.44232666676430493
+        }
+      ]
+    },
+    {
+      "virtual": "CD68",
+      "measured": "CD68",
+      "mapping": "exact",
+      "patients": 10,
+      "same_cells_total": 39554,
+      "equal_patient_pooled_within_patient_rank_correlation": -0.22521432436706704,
+      "patient_bootstrap_95pct_ci": [
+        -0.3447955709481926,
+        -0.10565553846594947
+      ],
+      "per_patient": [
+        {
+          "patient": "CRC04",
+          "cells": 4536,
+          "spearman_rho": -0.34348112744126846
+        },
+        {
+          "patient": "CRC06",
+          "cells": 4212,
+          "spearman_rho": -0.24462274776024515
+        },
+        {
+          "patient": "CRC08",
+          "cells": 4714,
+          "spearman_rho": 0.16296510423280947
+        },
+        {
+          "patient": "CRC10",
+          "cells": 5833,
+          "spearman_rho": -0.039011484255200124
+        },
+        {
+          "patient": "CRC12",
+          "cells": 3166,
+          "spearman_rho": -0.1309602655061658
+        },
+        {
+          "patient": "CRC17",
+          "cells": 5042,
+          "spearman_rho": -0.15833193601335308
+        },
+        {
+          "patient": "CRC19",
+          "cells": 2710,
+          "spearman_rho": -0.5743729649851765
+        },
+        {
+          "patient": "CRC21",
+          "cells": 4215,
+          "spearman_rho": -0.20874934133658643
+        },
+        {
+          "patient": "CRC23",
+          "cells": 2933,
+          "spearman_rho": -0.4147333778599104
+        },
+        {
+          "patient": "CRC25",
+          "cells": 2193,
+          "spearman_rho": -0.30103999741164444
+        }
+      ]
+    },
+    {
+      "virtual": "CD4",
+      "measured": "CD4",
+      "mapping": "exact",
+      "patients": 10,
+      "same_cells_total": 39554,
+      "equal_patient_pooled_within_patient_rank_correlation": 0.16848188217755988,
+      "patient_bootstrap_95pct_ci": [
+        0.04184372136091209,
+        0.284318898230155
+      ],
+      "per_patient": [
+        {
+          "patient": "CRC04",
+          "cells": 4536,
+          "spearman_rho": 0.3951185274070663
+        },
+        {
+          "patient": "CRC06",
+          "cells": 4212,
+          "spearman_rho": 0.2716874175151527
+        },
+        {
+          "patient": "CRC08",
+          "cells": 4714,
+          "spearman_rho": 0.09931424361421684
+        },
+        {
+          "patient": "CRC10",
+          "cells": 5833,
+          "spearman_rho": -0.06283876074275808
+        },
+        {
+          "patient": "CRC12",
+          "cells": 3166,
+          "spearman_rho": 0.24172147634565863
+        },
+        {
+          "patient": "CRC17",
+          "cells": 5042,
+          "spearman_rho": -0.24338928522066314
+        },
+        {
+          "patient": "CRC19",
+          "cells": 2710,
+          "spearman_rho": 0.18151807801832368
+        },
+        {
+          "patient": "CRC21",
+          "cells": 4215,
+          "spearman_rho": 0.42687413380776335
+        },
+        {
+          "patient": "CRC23",
+          "cells": 2933,
+          "spearman_rho": 0.29971258296408493
+        },
+        {
+          "patient": "CRC25",
+          "cells": 2193,
+          "spearman_rho": 0.07516015497645769
+        }
+      ]
+    },
+    {
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "mapping": "same CD8 alpha target",
+      "patients": 10,
+      "same_cells_total": 39554,
+      "equal_patient_pooled_within_patient_rank_correlation": 0.09281243239204356,
+      "patient_bootstrap_95pct_ci": [
+        0.015482773107185112,
+        0.18417428024047205
+      ],
+      "per_patient": [
+        {
+          "patient": "CRC04",
+          "cells": 4536,
+          "spearman_rho": 0.06063878863299164
+        },
+        {
+          "patient": "CRC06",
+          "cells": 4212,
+          "spearman_rho": 0.05643630825240302
+        },
+        {
+          "patient": "CRC08",
+          "cells": 4714,
+          "spearman_rho": 0.04042187365891154
+        },
+        {
+          "patient": "CRC10",
+          "cells": 5833,
+          "spearman_rho": -0.09904010219634865
+        },
+        {
+          "patient": "CRC12",
+          "cells": 3166,
+          "spearman_rho": -0.033040979751644425
+        },
+        {
+          "patient": "CRC17",
+          "cells": 5042,
+          "spearman_rho": 0.054634385272464135
+        },
+        {
+          "patient": "CRC19",
+          "cells": 2710,
+          "spearman_rho": 0.11966238290635757
+        },
+        {
+          "patient": "CRC21",
+          "cells": 4215,
+          "spearman_rho": 0.24252547427842852
+        },
+        {
+          "patient": "CRC23",
+          "cells": 2933,
+          "spearman_rho": 0.06661002427879185
+        },
+        {
+          "patient": "CRC25",
+          "cells": 2193,
+          "spearman_rho": 0.41943281275340205
+        }
+      ]
+    },
+    {
+      "virtual": "CD20",
+      "measured": "CD20",
+      "mapping": "exact",
+      "patients": 10,
+      "same_cells_total": 39554,
+      "equal_patient_pooled_within_patient_rank_correlation": 0.2134250292703047,
+      "patient_bootstrap_95pct_ci": [
+        0.06193550313130488,
+        0.37401631607758656
+      ],
+      "per_patient": [
+        {
+          "patient": "CRC04",
+          "cells": 4536,
+          "spearman_rho": 0.1477894816541226
+        },
+        {
+          "patient": "CRC06",
+          "cells": 4212,
+          "spearman_rho": 0.5592975097462878
+        },
+        {
+          "patient": "CRC08",
+          "cells": 4714,
+          "spearman_rho": 0.4952694438744736
+        },
+        {
+          "patient": "CRC10",
+          "cells": 5833,
+          "spearman_rho": -0.0364329385599597
+        },
+        {
+          "patient": "CRC12",
+          "cells": 3166,
+          "spearman_rho": 0.20438800321442918
+        },
+        {
+          "patient": "CRC17",
+          "cells": 5042,
+          "spearman_rho": 0.30185632608055835
+        },
+        {
+          "patient": "CRC19",
+          "cells": 2710,
+          "spearman_rho": -0.056581239641250385
+        },
+        {
+          "patient": "CRC21",
+          "cells": 4215,
+          "spearman_rho": 0.6035377158673015
+        },
+        {
+          "patient": "CRC23",
+          "cells": 2933,
+          "spearman_rho": 0.06412184118270108
+        },
+        {
+          "patient": "CRC25",
+          "cells": 2193,
+          "spearman_rho": -0.14924383634933347
+        }
+      ]
+    },
+    {
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "mapping": "exact",
+      "patients": 10,
+      "same_cells_total": 39554,
+      "equal_patient_pooled_within_patient_rank_correlation": 0.01910125098863034,
+      "patient_bootstrap_95pct_ci": [
+        -0.08771373543216093,
+        0.11248720464491808
+      ],
+      "per_patient": [
+        {
+          "patient": "CRC04",
+          "cells": 4536,
+          "spearman_rho": 0.20532003353512324
+        },
+        {
+          "patient": "CRC06",
+          "cells": 4212,
+          "spearman_rho": 0.13115767307790344
+        },
+        {
+          "patient": "CRC08",
+          "cells": 4714,
+          "spearman_rho": -0.12475954473005774
+        },
+        {
+          "patient": "CRC10",
+          "cells": 5833,
+          "spearman_rho": 0.13846630357470693
+        },
+        {
+          "patient": "CRC12",
+          "cells": 3166,
+          "spearman_rho": 0.15717257050112066
+        },
+        {
+          "patient": "CRC17",
+          "cells": 5042,
+          "spearman_rho": -0.0801186805156418
+        },
+        {
+          "patient": "CRC19",
+          "cells": 2710,
+          "spearman_rho": -0.03476694233821625
+        },
+        {
+          "patient": "CRC21",
+          "cells": 4215,
+          "spearman_rho": 0.15824338407203525
+        },
+        {
+          "patient": "CRC23",
+          "cells": 2933,
+          "spearman_rho": 0.0013646545604079367
+        },
+        {
+          "patient": "CRC25",
+          "cells": 2193,
+          "spearman_rho": -0.3612364466330087
+        }
+      ]
+    },
+    {
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "mapping": "same CD3 epsilon complex",
+      "patients": 10,
+      "same_cells_total": 39554,
+      "equal_patient_pooled_within_patient_rank_correlation": 0.2234223855753095,
+      "patient_bootstrap_95pct_ci": [
+        0.10835199680870186,
+        0.34248415388776265
+      ],
+      "per_patient": [
+        {
+          "patient": "CRC04",
+          "cells": 4536,
+          "spearman_rho": 0.3778018413212759
+        },
+        {
+          "patient": "CRC06",
+          "cells": 4212,
+          "spearman_rho": 0.4309272253102118
+        },
+        {
+          "patient": "CRC08",
+          "cells": 4714,
+          "spearman_rho": 0.21500348921424814
+        },
+        {
+          "patient": "CRC10",
+          "cells": 5833,
+          "spearman_rho": -0.002508789476524864
+        },
+        {
+          "patient": "CRC12",
+          "cells": 3166,
+          "spearman_rho": 0.11015689315768697
+        },
+        {
+          "patient": "CRC17",
+          "cells": 5042,
+          "spearman_rho": -0.06252948218194591
+        },
+        {
+          "patient": "CRC19",
+          "cells": 2710,
+          "spearman_rho": 0.2920719614482321
+        },
+        {
+          "patient": "CRC21",
+          "cells": 4215,
+          "spearman_rho": 0.566197770792448
+        },
+        {
+          "patient": "CRC23",
+          "cells": 2933,
+          "spearman_rho": 0.2560852490143446
+        },
+        {
+          "patient": "CRC25",
+          "cells": 2193,
+          "spearman_rho": 0.05099663704017811
+        }
+      ]
+    },
+    {
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "mapping": "exact",
+      "patients": 10,
+      "same_cells_total": 39554,
+      "equal_patient_pooled_within_patient_rank_correlation": 0.12083152743899013,
+      "patient_bootstrap_95pct_ci": [
+        0.030013789096864495,
+        0.2132989604428451
+      ],
+      "per_patient": [
+        {
+          "patient": "CRC04",
+          "cells": 4536,
+          "spearman_rho": 0.023898666458064412
+        },
+        {
+          "patient": "CRC06",
+          "cells": 4212,
+          "spearman_rho": 0.17083269236083512
+        },
+        {
+          "patient": "CRC08",
+          "cells": 4714,
+          "spearman_rho": -0.07285209438059068
+        },
+        {
+          "patient": "CRC10",
+          "cells": 5833,
+          "spearman_rho": 0.1502164961064179
+        },
+        {
+          "patient": "CRC12",
+          "cells": 3166,
+          "spearman_rho": 0.2155732746151135
+        },
+        {
+          "patient": "CRC17",
+          "cells": 5042,
+          "spearman_rho": 0.2143928232445505
+        },
+        {
+          "patient": "CRC19",
+          "cells": 2710,
+          "spearman_rho": -0.13216700651317764
+        },
+        {
+          "patient": "CRC21",
+          "cells": 4215,
+          "spearman_rho": 0.11158793245641634
+        },
+        {
+          "patient": "CRC23",
+          "cells": 2933,
+          "spearman_rho": 0.09612638193169246
+        },
+        {
+          "patient": "CRC25",
+          "cells": 2193,
+          "spearman_rho": 0.4307866444985852
+        }
+      ]
+    },
+    {
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "mapping": "exact",
+      "patients": 10,
+      "same_cells_total": 39554,
+      "equal_patient_pooled_within_patient_rank_correlation": 0.17296112340794093,
+      "patient_bootstrap_95pct_ci": [
+        0.06755641796163389,
+        0.27813917233750823
+      ],
+      "per_patient": [
+        {
+          "patient": "CRC04",
+          "cells": 4536,
+          "spearman_rho": 0.393255978659072
+        },
+        {
+          "patient": "CRC06",
+          "cells": 4212,
+          "spearman_rho": 0.2479526857884886
+        },
+        {
+          "patient": "CRC08",
+          "cells": 4714,
+          "spearman_rho": -0.0801802707058688
+        },
+        {
+          "patient": "CRC10",
+          "cells": 5833,
+          "spearman_rho": 0.014366650224778682
+        },
+        {
+          "patient": "CRC12",
+          "cells": 3166,
+          "spearman_rho": 0.08883103953501709
+        },
+        {
+          "patient": "CRC17",
+          "cells": 5042,
+          "spearman_rho": -0.03489840807686523
+        },
+        {
+          "patient": "CRC19",
+          "cells": 2710,
+          "spearman_rho": 0.3136927785698713
+        },
+        {
+          "patient": "CRC21",
+          "cells": 4215,
+          "spearman_rho": 0.06576463343939565
+        },
+        {
+          "patient": "CRC23",
+          "cells": 2933,
+          "spearman_rho": 0.3605554402327868
+        },
+        {
+          "patient": "CRC25",
+          "cells": 2193,
+          "spearman_rho": 0.36045787087934533
+        }
+      ]
+    },
+    {
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "mapping": "cytokeratin family",
+      "patients": 10,
+      "same_cells_total": 39554,
+      "equal_patient_pooled_within_patient_rank_correlation": 0.22750139477656756,
+      "patient_bootstrap_95pct_ci": [
+        0.0827231465446761,
+        0.37792440416276546
+      ],
+      "per_patient": [
+        {
+          "patient": "CRC04",
+          "cells": 4536,
+          "spearman_rho": 0.4181066242268039
+        },
+        {
+          "patient": "CRC06",
+          "cells": 4212,
+          "spearman_rho": 0.11556606482674528
+        },
+        {
+          "patient": "CRC08",
+          "cells": 4714,
+          "spearman_rho": 0.12789382722350834
+        },
+        {
+          "patient": "CRC10",
+          "cells": 5833,
+          "spearman_rho": 0.03933645670678489
+        },
+        {
+          "patient": "CRC12",
+          "cells": 3166,
+          "spearman_rho": 0.24923118792673118
+        },
+        {
+          "patient": "CRC17",
+          "cells": 5042,
+          "spearman_rho": -0.20236099415989584
+        },
+        {
+          "patient": "CRC19",
+          "cells": 2710,
+          "spearman_rho": 0.2636375957012602
+        },
+        {
+          "patient": "CRC21",
+          "cells": 4215,
+          "spearman_rho": 0.1018323841979693
+        },
+        {
+          "patient": "CRC23",
+          "cells": 2933,
+          "spearman_rho": 0.47574449368466504
+        },
+        {
+          "patient": "CRC25",
+          "cells": 2193,
+          "spearman_rho": 0.6863482137502175
+        }
+      ]
+    }
+  ]
+}

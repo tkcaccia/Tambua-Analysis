@@ -28,3 +28,22 @@ All 25 persisted DAPI images passed the recorded seam-continuity check; only 12/
 Important limits: ORION's published measured table gives **whole-cell fluorescence**, so this study compares virtual nuclear or cytoplasmic summaries with measured *whole-cell* abundance. It does not establish true measured-nucleus versus predicted-nucleus or measured-cytoplasm versus predicted-cytoplasm correlation; that requires registered raw IF compartment quantification. Each patient contributes one tissue window, not a full WSI. No UCT HPC job was run.
 
 Reproduction files: `per_patient_spearman.csv` has every per-patient, per-marker, per-method rho and QC flag; `summary.json` has selected methods, paired estimates and patient records. `WINDOW_SELECTION_QC.json`, `ANALYSIS_PLAN_FROZEN.json`, `ANALYSIS_PLAN_AMENDMENT_QC.json` and `USER_STOPPED_BUNDLE.json` preserve sampling, method and stop provenance. The code is in `analysis/analyze_orion_proteins.py`, `analysis/acquire_orion_window.py` and the CellPhenotyper GigaTIME quantifiers.
+
+## Across-patient pooled rank association
+
+As an additional fixed-baseline analysis, [`cross-patient-rank.json`](cross-patient-rank.json) combines the same 10 reserved patients who passed both technical gates. For each of the ten prespecified marker pairs, it ranks virtual whole-cell means and published measured whole-cell values **within each patient**, pools the five rank moments with **equal patient weight**, and bootstraps whole patients 10,000 times for uncertainty. This uses 39,554 matched cells but does not give larger patients more weight. It does not fit or select a marker-specific correction on the reserved patients.
+
+| Virtual → measured | Equal-patient pooled rank correlation | 95% patient-bootstrap interval |
+| --- | ---: | ---: |
+| DAPI → Hoechst | +0.444 | +0.366 to +0.519 |
+| CD68 → CD68 | −0.225 | −0.345 to −0.106 |
+| CD4 → CD4 | +0.168 | +0.042 to +0.284 |
+| CD8 → CD8a | +0.093 | +0.015 to +0.184 |
+| CD20 → CD20 | +0.213 | +0.062 to +0.374 |
+| PD-L1 → PD-L1 | +0.019 | −0.088 to +0.112 |
+| CD3 → CD3e | +0.223 | +0.108 to +0.342 |
+| PD-1 → PD-1 | +0.121 | +0.030 to +0.213 |
+| Ki67 → Ki67 | +0.173 | +0.068 to +0.278 |
+| CK → Pan-CK | +0.228 | +0.083 to +0.378 |
+
+This is a cross-patient *cell-abundance* association, not a correlation between raw measured and virtual protein image pixels. The present ORION GigaTIME stores retained DAPI but not the other spatial channels, so raw spatial protein comparisons still require a new, separately authorized inference and independent image-by-image QC. The weak or negative associations, especially CD68, do not support a claim that the current virtual proteins are biologically validated.
