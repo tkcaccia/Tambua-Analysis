@@ -1,0 +1,2538 @@
+{
+  "status": "complete",
+  "device": "CPU",
+  "reference": "StarDist2D 2D_versatile_he nuclei on scanner RGB",
+  "qc_implementation": "/mnt/sata_ssd/Tambua-monusac-rgb-corrected-2026-10-20-v1/code/gigatime_nuclear_qc.py",
+  "thresholds": "unchanged from the original corrected-RGB bundle",
+  "cases": 120,
+  "by_split_status": {
+    "development:fail": 13,
+    "development:pass": 4,
+    "fit:fail": 38,
+    "fit:pass": 33,
+    "test:fail": 22,
+    "test:pass": 10
+  },
+  "records": [
+    {
+      "sample_id": "TCGA-55-1594-01Z-00-DX1_001",
+      "patient_id": "TCGA-55-1594",
+      "organ": "lung",
+      "split": "development",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.6257360543219944,
+      "stardist_nuclear_auc": 0.6297330817818829,
+      "stardist_nuclear_boundary_contrast": 0.06164268774005999
+    },
+    {
+      "sample_id": "TCGA-55-1594-01Z-00-DX1_002",
+      "patient_id": "TCGA-55-1594",
+      "organ": "lung",
+      "split": "development",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.7216267627082928,
+      "stardist_nuclear_auc": 0.723878186245361,
+      "stardist_nuclear_boundary_contrast": 0.02587954557383565
+    },
+    {
+      "sample_id": "TCGA-55-1594-01Z-00-DX1_003",
+      "patient_id": "TCGA-55-1594",
+      "organ": "lung",
+      "split": "development",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "source_polygon_auc": 0.5409782235748203,
+      "stardist_nuclear_auc": 0.5973558122825665,
+      "stardist_nuclear_boundary_contrast": 0.04054737870191072
+    },
+    {
+      "sample_id": "TCGA-55-1594-01Z-00-DX1_004",
+      "patient_id": "TCGA-55-1594",
+      "organ": "lung",
+      "split": "development",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.7130572329404848,
+      "stardist_nuclear_auc": 0.6911653091918168,
+      "stardist_nuclear_boundary_contrast": 0.045581004613003295
+    },
+    {
+      "sample_id": "TCGA-55-1594-01Z-00-DX1_005",
+      "patient_id": "TCGA-55-1594",
+      "organ": "lung",
+      "split": "development",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "source_polygon_auc": 0.6557434142139582,
+      "stardist_nuclear_auc": 0.6433603685035759,
+      "stardist_nuclear_boundary_contrast": 0.04055172143360153
+    },
+    {
+      "sample_id": "TCGA-5P-A9K0-01Z-00-DX1_1",
+      "patient_id": "TCGA-5P-A9K0",
+      "organ": "kidney",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "source_polygon_auc": 0.5456465641191198,
+      "stardist_nuclear_auc": 0.5567178989493722,
+      "stardist_nuclear_boundary_contrast": 0.010216963030105053
+    },
+    {
+      "sample_id": "TCGA-5P-A9K0-01Z-00-DX1_2",
+      "patient_id": "TCGA-5P-A9K0",
+      "organ": "kidney",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "source_polygon_auc": 0.5220158068327261,
+      "stardist_nuclear_auc": 0.5289571318806309,
+      "stardist_nuclear_boundary_contrast": -0.004929563232382694
+    },
+    {
+      "sample_id": "TCGA-69-7760-01Z-00-DX1_001",
+      "patient_id": "TCGA-69-7760",
+      "organ": "lung",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "source_polygon_auc": 0.5745071161048689,
+      "stardist_nuclear_auc": 0.6389428671525215,
+      "stardist_nuclear_boundary_contrast": 0.028780475023779117
+    },
+    {
+      "sample_id": "TCGA-69-7760-01Z-00-DX1_002",
+      "patient_id": "TCGA-69-7760",
+      "organ": "lung",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.6346394458397556,
+      "stardist_nuclear_auc": 0.6644971070726922,
+      "stardist_nuclear_boundary_contrast": 0.025513003969887094
+    },
+    {
+      "sample_id": "TCGA-69-7760-01Z-00-DX1_003",
+      "patient_id": "TCGA-69-7760",
+      "organ": "lung",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "source_polygon_auc": 0.6443818786571879,
+      "stardist_nuclear_auc": 0.7073285377311594,
+      "stardist_nuclear_boundary_contrast": 0.029860339978953432
+    },
+    {
+      "sample_id": "TCGA-69-7760-01Z-00-DX1_004",
+      "patient_id": "TCGA-69-7760",
+      "organ": "lung",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.7280719028062789,
+      "stardist_nuclear_auc": 0.736079978660083,
+      "stardist_nuclear_boundary_contrast": 0.0760494065938847
+    },
+    {
+      "sample_id": "TCGA-69-A59K-01Z-00-DX1_003",
+      "patient_id": "TCGA-69-A59K",
+      "organ": "lung",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.8230095819677257,
+      "stardist_nuclear_auc": 0.7913348767581703,
+      "stardist_nuclear_boundary_contrast": 0.19975373351134718
+    },
+    {
+      "sample_id": "TCGA-69-A59K-01Z-00-DX1_004",
+      "patient_id": "TCGA-69-A59K",
+      "organ": "lung",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.6761249497344957,
+      "stardist_nuclear_auc": 0.7009048894337626,
+      "stardist_nuclear_boundary_contrast": 0.03992253016779279
+    },
+    {
+      "sample_id": "TCGA-73-4668-01Z-00-DX1_001",
+      "patient_id": "TCGA-73-4668",
+      "organ": "lung",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "source_polygon_auc": 0.6409201170252755,
+      "stardist_nuclear_auc": 0.6079745369397297,
+      "stardist_nuclear_boundary_contrast": 0.04502284977091775
+    },
+    {
+      "sample_id": "TCGA-73-4668-01Z-00-DX1_002",
+      "patient_id": "TCGA-73-4668",
+      "organ": "lung",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.6562424739288648,
+      "stardist_nuclear_auc": 0.662368169927173,
+      "stardist_nuclear_boundary_contrast": 0.06585403826602831
+    },
+    {
+      "sample_id": "TCGA-78-7220-01Z-00-DX1_001",
+      "patient_id": "TCGA-78-7220",
+      "organ": "lung",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "source_polygon_auc": 0.6595572047173193,
+      "stardist_nuclear_auc": 0.6622670927948935,
+      "stardist_nuclear_boundary_contrast": 0.027003893144618263
+    },
+    {
+      "sample_id": "TCGA-78-7220-01Z-00-DX1_002",
+      "patient_id": "TCGA-78-7220",
+      "organ": "lung",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "source_polygon_auc": 0.6583852218187344,
+      "stardist_nuclear_auc": 0.6539231707992256,
+      "stardist_nuclear_boundary_contrast": 0.02876959086156783
+    },
+    {
+      "sample_id": "TCGA-78-7220-01Z-00-DX1_003",
+      "patient_id": "TCGA-78-7220",
+      "organ": "lung",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.7835813378892066,
+      "stardist_nuclear_auc": 0.7842978342452965,
+      "stardist_nuclear_boundary_contrast": 0.13255777006626546
+    },
+    {
+      "sample_id": "TCGA-78-7220-01Z-00-DX1_004",
+      "patient_id": "TCGA-78-7220",
+      "organ": "lung",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.6841715782838222,
+      "stardist_nuclear_auc": 0.687576705494259,
+      "stardist_nuclear_boundary_contrast": 0.03114476707806413
+    },
+    {
+      "sample_id": "TCGA-86-7713-01Z-00-DX1_002",
+      "patient_id": "TCGA-86-7713",
+      "organ": "lung",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "source_polygon_auc": 0.5608536805914319,
+      "stardist_nuclear_auc": 0.6467345756080659,
+      "stardist_nuclear_boundary_contrast": 0.04475856892732166
+    },
+    {
+      "sample_id": "TCGA-86-7713-01Z-00-DX1_003",
+      "patient_id": "TCGA-86-7713",
+      "organ": "lung",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.8171108191711808,
+      "stardist_nuclear_auc": 0.8081352128607372,
+      "stardist_nuclear_boundary_contrast": 0.046590664096393786
+    },
+    {
+      "sample_id": "TCGA-86-7713-01Z-00-DX1_004",
+      "patient_id": "TCGA-86-7713",
+      "organ": "lung",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.6817773820428848,
+      "stardist_nuclear_auc": 0.6994378996900972,
+      "stardist_nuclear_boundary_contrast": 0.06531686940624315
+    },
+    {
+      "sample_id": "TCGA-86-8672-01Z-00-DX1_1",
+      "patient_id": "TCGA-86-8672",
+      "organ": "lung",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.42100985517711054,
+      "stardist_nuclear_auc": 0.6441271370778673,
+      "stardist_nuclear_boundary_contrast": 0.021322302634728008
+    },
+    {
+      "sample_id": "TCGA-86-8672-01Z-00-DX1_2",
+      "patient_id": "TCGA-86-8672",
+      "organ": "lung",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "insufficient",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "source_polygon_auc": 0.7014465531239519,
+      "stardist_nuclear_auc": 0.48182487455793477,
+      "stardist_nuclear_boundary_contrast": 0.01577219811545226
+    },
+    {
+      "sample_id": "TCGA-86-8672-01Z-00-DX1_3",
+      "patient_id": "TCGA-86-8672",
+      "organ": "lung",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.6731533329080839,
+      "stardist_nuclear_auc": 0.6686324946816802,
+      "stardist_nuclear_boundary_contrast": 0.0855692888495937
+    },
+    {
+      "sample_id": "TCGA-A2-A0CV-01Z-00-DX1_1",
+      "patient_id": "TCGA-A2-A0CV",
+      "organ": "breast",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.8036381025685284,
+      "stardist_nuclear_auc": 0.8054247154503087,
+      "stardist_nuclear_boundary_contrast": 0.012533693680969127
+    },
+    {
+      "sample_id": "TCGA-A2-A0CV-01Z-00-DX1_2",
+      "patient_id": "TCGA-A2-A0CV",
+      "organ": "breast",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.7226997064515183,
+      "stardist_nuclear_auc": 0.7236670376527052,
+      "stardist_nuclear_boundary_contrast": 0.011121374663509043
+    },
+    {
+      "sample_id": "TCGA-A2-A0CV-01Z-00-DX1_4",
+      "patient_id": "TCGA-A2-A0CV",
+      "organ": "breast",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.7317336738855073,
+      "stardist_nuclear_auc": 0.7215511025052336,
+      "stardist_nuclear_boundary_contrast": 0.06724929254140966
+    },
+    {
+      "sample_id": "TCGA-B6-A0WZ-01Z-00-DX1_1",
+      "patient_id": "TCGA-B6-A0WZ",
+      "organ": "breast",
+      "split": "development",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.8273112392576425,
+      "stardist_nuclear_auc": 0.8429279867686509,
+      "stardist_nuclear_boundary_contrast": 0.14767046862607514
+    },
+    {
+      "sample_id": "TCGA-B6-A0WZ-01Z-00-DX1_5",
+      "patient_id": "TCGA-B6-A0WZ",
+      "organ": "breast",
+      "split": "development",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "source_polygon_auc": 0.5699860788119482,
+      "stardist_nuclear_auc": 0.5965597635600799,
+      "stardist_nuclear_boundary_contrast": 0.01053298258590929
+    },
+    {
+      "sample_id": "TCGA-B9-A44B-01Z-00-DX1_2",
+      "patient_id": "TCGA-B9-A44B",
+      "organ": "kidney",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.6844626461038718,
+      "stardist_nuclear_auc": 0.6630212088933409,
+      "stardist_nuclear_boundary_contrast": 0.0760002387653721
+    },
+    {
+      "sample_id": "TCGA-B9-A8YI-01Z-00-DX1_1",
+      "patient_id": "TCGA-B9-A8YI",
+      "organ": "kidney",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.8537647704635012,
+      "stardist_nuclear_auc": 0.823104742660569,
+      "stardist_nuclear_boundary_contrast": 0.11060827388469852
+    },
+    {
+      "sample_id": "TCGA-B9-A8YI-01Z-00-DX1_2",
+      "patient_id": "TCGA-B9-A8YI",
+      "organ": "kidney",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.8655606732693717,
+      "stardist_nuclear_auc": 0.8265892718279041,
+      "stardist_nuclear_boundary_contrast": 0.13035141614675538
+    },
+    {
+      "sample_id": "TCGA-B9-A8YI-01Z-00-DX1_3",
+      "patient_id": "TCGA-B9-A8YI",
+      "organ": "kidney",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.6868576215175772,
+      "stardist_nuclear_auc": 0.7090725698072364,
+      "stardist_nuclear_boundary_contrast": 0.148252689773261
+    },
+    {
+      "sample_id": "TCGA-BH-A18T-01Z-00-DX1_1",
+      "patient_id": "TCGA-BH-A18T",
+      "organ": "breast",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.6951858560561994,
+      "stardist_nuclear_auc": 0.7378080639858968,
+      "stardist_nuclear_boundary_contrast": 0.09542810065933438
+    },
+    {
+      "sample_id": "TCGA-BH-A18T-01Z-00-DX1_2",
+      "patient_id": "TCGA-BH-A18T",
+      "organ": "breast",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "fail",
+        "spatial_shadow_status": "fail"
+      },
+      "source_polygon_auc": 0.6711323922749745,
+      "stardist_nuclear_auc": 0.6390331148858548,
+      "stardist_nuclear_boundary_contrast": 0.03041738681674322
+    },
+    {
+      "sample_id": "TCGA-BH-A18T-01Z-00-DX1_5",
+      "patient_id": "TCGA-BH-A18T",
+      "organ": "breast",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.7786935425831614,
+      "stardist_nuclear_auc": 0.784773740013649,
+      "stardist_nuclear_boundary_contrast": 0.07538732372384016
+    },
+    {
+      "sample_id": "TCGA-BH-A18T-01Z-00-DX1_6",
+      "patient_id": "TCGA-BH-A18T",
+      "organ": "breast",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.7247615817060328,
+      "stardist_nuclear_auc": 0.7362840008443148,
+      "stardist_nuclear_boundary_contrast": 0.07647209019649481
+    },
+    {
+      "sample_id": "TCGA-D8-A1X5-01Z-00-DX2_2",
+      "patient_id": "TCGA-D8-A1X5",
+      "organ": "breast",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.7973710422617911,
+      "stardist_nuclear_auc": 0.7997924088108648,
+      "stardist_nuclear_boundary_contrast": 0.1211836125383342
+    },
+    {
+      "sample_id": "TCGA-D8-A1X5-01Z-00-DX2_3",
+      "patient_id": "TCGA-D8-A1X5",
+      "organ": "breast",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.8306879298057758,
+      "stardist_nuclear_auc": 0.8189948049363162,
+      "stardist_nuclear_boundary_contrast": 0.09120547934199619
+    },
+    {
+      "sample_id": "TCGA-D8-A1X5-01Z-00-DX2_4",
+      "patient_id": "TCGA-D8-A1X5",
+      "organ": "breast",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.709467301412162,
+      "stardist_nuclear_auc": 0.6978967953339769,
+      "stardist_nuclear_boundary_contrast": 0.03932371023385084
+    },
+    {
+      "sample_id": "TCGA-DW-7841-01Z-00-DX1_1",
+      "patient_id": "TCGA-DW-7841",
+      "organ": "kidney",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.6604876521368197,
+      "stardist_nuclear_auc": 0.6707782136301533,
+      "stardist_nuclear_boundary_contrast": 0.03198627239487073
+    },
+    {
+      "sample_id": "TCGA-DW-7841-01Z-00-DX1_2",
+      "patient_id": "TCGA-DW-7841",
+      "organ": "kidney",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.7487907332246374,
+      "stardist_nuclear_auc": 0.7570779603188598,
+      "stardist_nuclear_boundary_contrast": 0.04309901658315096
+    },
+    {
+      "sample_id": "TCGA-E2-A154-01Z-00-DX1_3",
+      "patient_id": "TCGA-E2-A154",
+      "organ": "breast",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.7555539806131153,
+      "stardist_nuclear_auc": 0.7810050772905277,
+      "stardist_nuclear_boundary_contrast": 0.03703280681672838
+    },
+    {
+      "sample_id": "TCGA-E2-A154-01Z-00-DX1_4",
+      "patient_id": "TCGA-E2-A154",
+      "organ": "breast",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.8547322672523995,
+      "stardist_nuclear_auc": 0.8705908048013342,
+      "stardist_nuclear_boundary_contrast": 0.03624888987819619
+    },
+    {
+      "sample_id": "TCGA-E9-A22B-01Z-00-DX1_1",
+      "patient_id": "TCGA-E9-A22B",
+      "organ": "breast",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.7909010499594834,
+      "stardist_nuclear_auc": 0.799688877823937,
+      "stardist_nuclear_boundary_contrast": 0.19770514743528844
+    },
+    {
+      "sample_id": "TCGA-E9-A22B-01Z-00-DX1_2",
+      "patient_id": "TCGA-E9-A22B",
+      "organ": "breast",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "insufficient"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "source_polygon_auc": 0.7746821877276299,
+      "stardist_nuclear_auc": 0.7186438182644102,
+      "stardist_nuclear_boundary_contrast": 0.12331211102539896
+    },
+    {
+      "sample_id": "TCGA-E9-A22B-01Z-00-DX1_3",
+      "patient_id": "TCGA-E9-A22B",
+      "organ": "breast",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.8286867760058102,
+      "stardist_nuclear_auc": 0.8265529935616706,
+      "stardist_nuclear_boundary_contrast": 0.08699193994037357
+    },
+    {
+      "sample_id": "TCGA-E9-A22B-01Z-00-DX1_8",
+      "patient_id": "TCGA-E9-A22B",
+      "organ": "breast",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.8002031296611051,
+      "stardist_nuclear_auc": 0.7926237729927532,
+      "stardist_nuclear_boundary_contrast": 0.08423322194686123
+    },
+    {
+      "sample_id": "TCGA-E9-A22G-01Z-00-DX1_1",
+      "patient_id": "TCGA-E9-A22G",
+      "organ": "breast",
+      "split": "development",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.7511708694562904,
+      "stardist_nuclear_auc": 0.7553424245604633,
+      "stardist_nuclear_boundary_contrast": 0.03514054135545164
+    },
+    {
+      "sample_id": "TCGA-E9-A22G-01Z-00-DX1_2",
+      "patient_id": "TCGA-E9-A22G",
+      "organ": "breast",
+      "split": "development",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.7824292732862443,
+      "stardist_nuclear_auc": 0.790257359168002,
+      "stardist_nuclear_boundary_contrast": 0.03132794821828855
+    },
+    {
+      "sample_id": "TCGA-E9-A22G-01Z-00-DX1_5",
+      "patient_id": "TCGA-E9-A22G",
+      "organ": "breast",
+      "split": "development",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.7559273153096755,
+      "stardist_nuclear_auc": 0.7664017558335535,
+      "stardist_nuclear_boundary_contrast": 0.021192846267680032
+    },
+    {
+      "sample_id": "TCGA-EJ-5495-01Z-00-DX1-1",
+      "patient_id": "TCGA-EJ-5495",
+      "organ": "prostate",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.8095813374833123,
+      "stardist_nuclear_auc": 0.7944427265836346,
+      "stardist_nuclear_boundary_contrast": 0.1279437037067077
+    },
+    {
+      "sample_id": "TCGA-EJ-5505-01Z-00-DX1-1",
+      "patient_id": "TCGA-EJ-5505",
+      "organ": "prostate",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.7658068013388031,
+      "stardist_nuclear_auc": 0.7694911041742353,
+      "stardist_nuclear_boundary_contrast": 0.05022379285575773
+    },
+    {
+      "sample_id": "TCGA-EJ-5517-01Z-00-DX1-3",
+      "patient_id": "TCGA-EJ-5517",
+      "organ": "prostate",
+      "split": "development",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "insufficient",
+        "spatial_shadow_status": "fail"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "source_polygon_auc": 0.6416589805346831,
+      "stardist_nuclear_auc": 0.5992180133459623,
+      "stardist_nuclear_boundary_contrast": 0.053687498820397694
+    },
+    {
+      "sample_id": "TCGA-EJ-5517-01Z-00-DX1-4",
+      "patient_id": "TCGA-EJ-5517",
+      "organ": "prostate",
+      "split": "development",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.7235730030307281,
+      "stardist_nuclear_auc": 0.7149025105672373,
+      "stardist_nuclear_boundary_contrast": 0.1144052505458496
+    },
+    {
+      "sample_id": "TCGA-EV-5903-01Z-00-DX1_1",
+      "patient_id": "TCGA-EV-5903",
+      "organ": "kidney",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.7766429808422574,
+      "stardist_nuclear_auc": 0.7868792582086203,
+      "stardist_nuclear_boundary_contrast": 0.09875194188667558
+    },
+    {
+      "sample_id": "TCGA-EW-A6SD-01Z-00-DX1_3",
+      "patient_id": "TCGA-EW-A6SD",
+      "organ": "breast",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.8673346056316549,
+      "stardist_nuclear_auc": 0.8611069028822724,
+      "stardist_nuclear_boundary_contrast": 0.09317315806331072
+    },
+    {
+      "sample_id": "TCGA-EW-A6SD-01Z-00-DX1_4",
+      "patient_id": "TCGA-EW-A6SD",
+      "organ": "breast",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.3706117501643875,
+      "stardist_nuclear_auc": 0.8412843045327157,
+      "stardist_nuclear_boundary_contrast": 0.1105114790775481
+    },
+    {
+      "sample_id": "TCGA-F9-A97G-01Z-00-DX1_1",
+      "patient_id": "TCGA-F9-A97G",
+      "organ": "kidney",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "source_polygon_auc": 0.6081673168637672,
+      "stardist_nuclear_auc": 0.6080898455342729,
+      "stardist_nuclear_boundary_contrast": 0.062427106126615006
+    },
+    {
+      "sample_id": "TCGA-F9-A97G-01Z-00-DX1_3",
+      "patient_id": "TCGA-F9-A97G",
+      "organ": "kidney",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "source_polygon_auc": 0.5970690222414209,
+      "stardist_nuclear_auc": 0.621454125484561,
+      "stardist_nuclear_boundary_contrast": 0.013226149290706757
+    },
+    {
+      "sample_id": "TCGA-G7-A8LD-01Z-00-DX1_5",
+      "patient_id": "TCGA-G7-A8LD",
+      "organ": "kidney",
+      "split": "development",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "source_polygon_auc": 0.7326365536641796,
+      "stardist_nuclear_auc": 0.560581868086162,
+      "stardist_nuclear_boundary_contrast": 0.05669733162188534
+    },
+    {
+      "sample_id": "TCGA-G9-6499-01Z-00-DX1-1",
+      "patient_id": "TCGA-G9-6499",
+      "organ": "prostate",
+      "split": "development",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.6355564872271631,
+      "stardist_nuclear_auc": 0.6913402271066558,
+      "stardist_nuclear_boundary_contrast": 0.06830749229351851
+    },
+    {
+      "sample_id": "TCGA-G9-6499-01Z-00-DX1-4",
+      "patient_id": "TCGA-G9-6499",
+      "organ": "prostate",
+      "split": "development",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.8162685761834426,
+      "stardist_nuclear_auc": 0.7855373963697252,
+      "stardist_nuclear_boundary_contrast": 0.0905250412228199
+    },
+    {
+      "sample_id": "TCGA-J4-A67Q-01Z-00-DX1-1",
+      "patient_id": "TCGA-J4-A67Q",
+      "organ": "prostate",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.732563864038793,
+      "stardist_nuclear_auc": 0.7211551546390379,
+      "stardist_nuclear_boundary_contrast": 0.059393054657640554
+    },
+    {
+      "sample_id": "TCGA-J4-A67T-01Z-00-DX1-2",
+      "patient_id": "TCGA-J4-A67T",
+      "organ": "prostate",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.701643323886035,
+      "stardist_nuclear_auc": 0.7586476077298715,
+      "stardist_nuclear_boundary_contrast": 0.06147836360543735
+    },
+    {
+      "sample_id": "TCGA-J4-A67T-01Z-00-DX1-6",
+      "patient_id": "TCGA-J4-A67T",
+      "organ": "prostate",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.7249937606949152,
+      "stardist_nuclear_auc": 0.7397983336110514,
+      "stardist_nuclear_boundary_contrast": 0.02908368632083691
+    },
+    {
+      "sample_id": "TCGA-KK-A59X-01Z-00-DX1-1",
+      "patient_id": "TCGA-KK-A59X",
+      "organ": "prostate",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.7263967500225058,
+      "stardist_nuclear_auc": 0.7590054262736633,
+      "stardist_nuclear_boundary_contrast": 0.03585956495704523
+    },
+    {
+      "sample_id": "TCGA-KK-A6E0-01Z-00-DX1-1",
+      "patient_id": "TCGA-KK-A6E0",
+      "organ": "prostate",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.7480495367349093,
+      "stardist_nuclear_auc": 0.7628619853253544,
+      "stardist_nuclear_boundary_contrast": 0.06986413657315016
+    },
+    {
+      "sample_id": "TCGA-KK-A6E0-01Z-00-DX1-2",
+      "patient_id": "TCGA-KK-A6E0",
+      "organ": "prostate",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.7592640971866241,
+      "stardist_nuclear_auc": 0.7615515354668214,
+      "stardist_nuclear_boundary_contrast": 0.07680389382632491
+    },
+    {
+      "sample_id": "TCGA-KK-A7AW-01Z-00-DX1-1",
+      "patient_id": "TCGA-KK-A7AW",
+      "organ": "prostate",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.6716150194798399,
+      "stardist_nuclear_auc": 0.7127941654489376,
+      "stardist_nuclear_boundary_contrast": 0.02532148571556736
+    },
+    {
+      "sample_id": "TCGA-L4-A4E5-01Z-00-DX1_1",
+      "patient_id": "TCGA-L4-A4E5",
+      "organ": "lung",
+      "split": "development",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.7015271595696447,
+      "stardist_nuclear_auc": 0.715155610673892,
+      "stardist_nuclear_boundary_contrast": 0.07803019267718192
+    },
+    {
+      "sample_id": "TCGA-L4-A4E5-01Z-00-DX1_3",
+      "patient_id": "TCGA-L4-A4E5",
+      "organ": "lung",
+      "split": "development",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "source_polygon_auc": 0.6120279802926786,
+      "stardist_nuclear_auc": 0.6240765979463637,
+      "stardist_nuclear_boundary_contrast": 0.02073784989505345
+    },
+    {
+      "sample_id": "TCGA-MH-A560-01Z-00-DX2_2",
+      "patient_id": "TCGA-MH-A560",
+      "organ": "kidney",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.8962164048715194,
+      "stardist_nuclear_auc": 0.8684697832663951,
+      "stardist_nuclear_boundary_contrast": 0.18226014488470121
+    },
+    {
+      "sample_id": "TCGA-MP-A4SY-01Z-00-DX1_2",
+      "patient_id": "TCGA-MP-A4SY",
+      "organ": "lung",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "source_polygon_auc": 0.4774673495633771,
+      "stardist_nuclear_auc": 0.49116578037823816,
+      "stardist_nuclear_boundary_contrast": 0.01151834801924903
+    },
+    {
+      "sample_id": "TCGA-MP-A4SY-01Z-00-DX1_3",
+      "patient_id": "TCGA-MP-A4SY",
+      "organ": "lung",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.7411229397493483,
+      "stardist_nuclear_auc": 0.7590523791329215,
+      "stardist_nuclear_boundary_contrast": 0.028657890936551134
+    },
+    {
+      "sample_id": "TCGA-P4-AAVK-01Z-00-DX1_3",
+      "patient_id": "TCGA-P4-AAVK",
+      "organ": "kidney",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.849625019165519,
+      "stardist_nuclear_auc": 0.8355671701173981,
+      "stardist_nuclear_boundary_contrast": 0.10893307170983535
+    },
+    {
+      "sample_id": "TCGA-S3-AA11-01Z-00-DX1_1",
+      "patient_id": "TCGA-S3-AA11",
+      "organ": "breast",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.767028677983441,
+      "stardist_nuclear_auc": 0.7599152306687282,
+      "stardist_nuclear_boundary_contrast": 0.0748366632420755
+    },
+    {
+      "sample_id": "TCGA-S3-AA11-01Z-00-DX1_2",
+      "patient_id": "TCGA-S3-AA11",
+      "organ": "breast",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.7507519740651054,
+      "stardist_nuclear_auc": 0.7505609445277545,
+      "stardist_nuclear_boundary_contrast": 0.06950411920178334
+    },
+    {
+      "sample_id": "TCGA-S3-AA11-01Z-00-DX1_3",
+      "patient_id": "TCGA-S3-AA11",
+      "organ": "breast",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.7662525234318279,
+      "stardist_nuclear_auc": 0.7650109416687134,
+      "stardist_nuclear_boundary_contrast": 0.04661002475781206
+    },
+    {
+      "sample_id": "TCGA-S3-AA11-01Z-00-DX1_4",
+      "patient_id": "TCGA-S3-AA11",
+      "organ": "breast",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.7307182240846015,
+      "stardist_nuclear_auc": 0.731995707867456,
+      "stardist_nuclear_boundary_contrast": 0.1020879698900381
+    },
+    {
+      "sample_id": "TCGA-UZ-A9PO-01Z-00-DX1_3",
+      "patient_id": "TCGA-UZ-A9PO",
+      "organ": "kidney",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.841765458348294,
+      "stardist_nuclear_auc": 0.818593935674629,
+      "stardist_nuclear_boundary_contrast": 0.08781175286785825
+    },
+    {
+      "sample_id": "TCGA-V1-A8WL-01Z-00-DX1-1",
+      "patient_id": "TCGA-V1-A8WL",
+      "organ": "prostate",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.8211190661858231,
+      "stardist_nuclear_auc": 0.8228393564028944,
+      "stardist_nuclear_boundary_contrast": 0.044627655111836195
+    },
+    {
+      "sample_id": "TCGA-V1-A9O9-01Z-00-DX1-1",
+      "patient_id": "TCGA-V1-A9O9",
+      "organ": "prostate",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.6996780992272067,
+      "stardist_nuclear_auc": 0.717878291167544,
+      "stardist_nuclear_boundary_contrast": 0.04234165922872424
+    },
+    {
+      "sample_id": "TCGA-V1-A9O9-01Z-00-DX1-2",
+      "patient_id": "TCGA-V1-A9O9",
+      "organ": "prostate",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.7022227434512149,
+      "stardist_nuclear_auc": 0.7121818894358117,
+      "stardist_nuclear_boundary_contrast": 0.028580851168696797
+    },
+    {
+      "sample_id": "TCGA-V1-A9O9-01Z-00-DX1-3",
+      "patient_id": "TCGA-V1-A9O9",
+      "organ": "prostate",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.7672202613351139,
+      "stardist_nuclear_auc": 0.7618933427493895,
+      "stardist_nuclear_boundary_contrast": 0.05564375081492823
+    },
+    {
+      "sample_id": "TCGA-YL-A9WY-01Z-00-DX1-1",
+      "patient_id": "TCGA-YL-A9WY",
+      "organ": "prostate",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.7814654912949179,
+      "stardist_nuclear_auc": 0.768963609725695,
+      "stardist_nuclear_boundary_contrast": 0.14604672018310738
+    },
+    {
+      "sample_id": "TCGA-YL-A9WY-01Z-00-DX1-2",
+      "patient_id": "TCGA-YL-A9WY",
+      "organ": "prostate",
+      "split": "fit",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.8062202427871927,
+      "stardist_nuclear_auc": 0.7963640577087878,
+      "stardist_nuclear_boundary_contrast": 0.15220224722329345
+    },
+    {
+      "sample_id": "TCGA-2Z-A9JG-01Z-00-DX1_4",
+      "patient_id": "TCGA-2Z-A9JG",
+      "organ": "kidney",
+      "split": "test",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.828286694907076,
+      "stardist_nuclear_auc": 0.8176126751237832,
+      "stardist_nuclear_boundary_contrast": 0.035045580695473255
+    },
+    {
+      "sample_id": "TCGA-2Z-A9JG-01Z-00-DX1_5",
+      "patient_id": "TCGA-2Z-A9JG",
+      "organ": "kidney",
+      "split": "test",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.7338533271969022,
+      "stardist_nuclear_auc": 0.7529963328026057,
+      "stardist_nuclear_boundary_contrast": 0.061871708968350037
+    },
+    {
+      "sample_id": "TCGA-2Z-A9JG-01Z-00-DX1_6",
+      "patient_id": "TCGA-2Z-A9JG",
+      "organ": "kidney",
+      "split": "test",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.3911212513838845,
+      "stardist_nuclear_auc": 0.7992970442146041,
+      "stardist_nuclear_boundary_contrast": 0.04361423750767379
+    },
+    {
+      "sample_id": "TCGA-2Z-A9JN-01Z-00-DX1_2",
+      "patient_id": "TCGA-2Z-A9JN",
+      "organ": "kidney",
+      "split": "test",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.8352127924327741,
+      "stardist_nuclear_auc": 0.7980919875196699,
+      "stardist_nuclear_boundary_contrast": 0.20654819116804018
+    },
+    {
+      "sample_id": "TCGA-49-6743-01Z-00-DX2_004",
+      "patient_id": "TCGA-49-6743",
+      "organ": "lung",
+      "split": "test",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "source_polygon_auc": 0.6706105032296747,
+      "stardist_nuclear_auc": 0.6391100775235287,
+      "stardist_nuclear_boundary_contrast": 0.09227477000416912
+    },
+    {
+      "sample_id": "TCGA-50-6591-01Z-00-DX1_001",
+      "patient_id": "TCGA-50-6591",
+      "organ": "lung",
+      "split": "test",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "source_polygon_auc": 0.560786261476773,
+      "stardist_nuclear_auc": 0.5641822652999394,
+      "stardist_nuclear_boundary_contrast": 0.03643421750487982
+    },
+    {
+      "sample_id": "TCGA-55-7573-01Z-00-DX1_004",
+      "patient_id": "TCGA-55-7573",
+      "organ": "lung",
+      "split": "test",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.712394427825995,
+      "stardist_nuclear_auc": 0.7087852830802572,
+      "stardist_nuclear_boundary_contrast": 0.07631734354255171
+    },
+    {
+      "sample_id": "TCGA-73-4662-01Z-00-DX1_003",
+      "patient_id": "TCGA-73-4662",
+      "organ": "lung",
+      "split": "test",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.7778354618013165,
+      "stardist_nuclear_auc": 0.790838656511833,
+      "stardist_nuclear_boundary_contrast": 0.09039211568317174
+    },
+    {
+      "sample_id": "TCGA-A2-A04X-01Z-00-DX1_001",
+      "patient_id": "TCGA-A2-A04X",
+      "organ": "breast",
+      "split": "test",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.6976131149149062,
+      "stardist_nuclear_auc": 0.7065016257762509,
+      "stardist_nuclear_boundary_contrast": 0.04693582788654416
+    },
+    {
+      "sample_id": "TCGA-A2-A04X-01Z-00-DX1_002",
+      "patient_id": "TCGA-A2-A04X",
+      "organ": "breast",
+      "split": "test",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.5520300490042183,
+      "stardist_nuclear_auc": 0.6967413780640542,
+      "stardist_nuclear_boundary_contrast": 0.031387925928839655
+    },
+    {
+      "sample_id": "TCGA-A2-A04X-01Z-00-DX1_004",
+      "patient_id": "TCGA-A2-A04X",
+      "organ": "breast",
+      "split": "test",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.845794036934466,
+      "stardist_nuclear_auc": 0.8284831901275103,
+      "stardist_nuclear_boundary_contrast": 0.03135239391688571
+    },
+    {
+      "sample_id": "TCGA-A2-A0ES-01Z-00-DX1_002",
+      "patient_id": "TCGA-A2-A0ES",
+      "organ": "breast",
+      "split": "test",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "source_polygon_auc": 0.6737011854517395,
+      "stardist_nuclear_auc": 0.65052591308861,
+      "stardist_nuclear_boundary_contrast": 0.025531073890205924
+    },
+    {
+      "sample_id": "TCGA-D8-A3Z6-01Z-00-DX2_002",
+      "patient_id": "TCGA-D8-A3Z6",
+      "organ": "breast",
+      "split": "test",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.8137723252622366,
+      "stardist_nuclear_auc": 0.8198438819836633,
+      "stardist_nuclear_boundary_contrast": 0.0619304530054281
+    },
+    {
+      "sample_id": "TCGA-DW-7838-01Z-00-DX1_1",
+      "patient_id": "TCGA-DW-7838",
+      "organ": "kidney",
+      "split": "test",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.648265323742025,
+      "stardist_nuclear_auc": 0.6542288623284672,
+      "stardist_nuclear_boundary_contrast": 0.012616012238517382
+    },
+    {
+      "sample_id": "TCGA-DW-7838-01Z-00-DX1_2",
+      "patient_id": "TCGA-DW-7838",
+      "organ": "kidney",
+      "split": "test",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.7644255133039134,
+      "stardist_nuclear_auc": 0.7614800856398094,
+      "stardist_nuclear_boundary_contrast": 0.02004513575298128
+    },
+    {
+      "sample_id": "TCGA-E2-A108-01Z-00-DX1_001",
+      "patient_id": "TCGA-E2-A108",
+      "organ": "breast",
+      "split": "test",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.7047857684010653,
+      "stardist_nuclear_auc": 0.7371790235977329,
+      "stardist_nuclear_boundary_contrast": 0.07429992024496801
+    },
+    {
+      "sample_id": "TCGA-E2-A108-01Z-00-DX1_002",
+      "patient_id": "TCGA-E2-A108",
+      "organ": "breast",
+      "split": "test",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.6626148247447015,
+      "stardist_nuclear_auc": 0.6563737784536235,
+      "stardist_nuclear_boundary_contrast": 0.037079420426841425
+    },
+    {
+      "sample_id": "TCGA-E2-A108-01Z-00-DX1_003",
+      "patient_id": "TCGA-E2-A108",
+      "organ": "breast",
+      "split": "test",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.6860544958842354,
+      "stardist_nuclear_auc": 0.6961746834869379,
+      "stardist_nuclear_boundary_contrast": 0.07243484440452752
+    },
+    {
+      "sample_id": "TCGA-F9-A8NY-01Z-00-DX1_1",
+      "patient_id": "TCGA-F9-A8NY",
+      "organ": "kidney",
+      "split": "test",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "source_polygon_auc": 0.5883133513541613,
+      "stardist_nuclear_auc": 0.5739480995290173,
+      "stardist_nuclear_boundary_contrast": 0.07000905955173334
+    },
+    {
+      "sample_id": "TCGA-F9-A8NY-01Z-00-DX1_3",
+      "patient_id": "TCGA-F9-A8NY",
+      "organ": "kidney",
+      "split": "test",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "source_polygon_auc": 0.6623456017117458,
+      "stardist_nuclear_auc": 0.6594733563288373,
+      "stardist_nuclear_boundary_contrast": 0.01914586781081129
+    },
+    {
+      "sample_id": "TCGA-G9-6356-01Z-00-DX1_1",
+      "patient_id": "TCGA-G9-6356",
+      "organ": "prostate",
+      "split": "test",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.7466722066485615,
+      "stardist_nuclear_auc": 0.7435870216774625,
+      "stardist_nuclear_boundary_contrast": 0.09653949829490938
+    },
+    {
+      "sample_id": "TCGA-G9-6356-01Z-00-DX1_6",
+      "patient_id": "TCGA-G9-6356",
+      "organ": "prostate",
+      "split": "test",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "source_polygon_auc": 0.6525576018042921,
+      "stardist_nuclear_auc": 0.6525214866926886,
+      "stardist_nuclear_boundary_contrast": 0.03417613450228163
+    },
+    {
+      "sample_id": "TCGA-G9-6367-01Z-00-DX1_1",
+      "patient_id": "TCGA-G9-6367",
+      "organ": "prostate",
+      "split": "test",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.704545793024386,
+      "stardist_nuclear_auc": 0.7046736121572285,
+      "stardist_nuclear_boundary_contrast": 0.0377130236019505
+    },
+    {
+      "sample_id": "TCGA-G9-6367-01Z-00-DX1_2",
+      "patient_id": "TCGA-G9-6367",
+      "organ": "prostate",
+      "split": "test",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.7895296323541778,
+      "stardist_nuclear_auc": 0.7965151704438077,
+      "stardist_nuclear_boundary_contrast": 0.050998600788032755
+    },
+    {
+      "sample_id": "TCGA-G9-6367-01Z-00-DX1_7",
+      "patient_id": "TCGA-G9-6367",
+      "organ": "prostate",
+      "split": "test",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "source_polygon_auc": 0.7572921413392927,
+      "stardist_nuclear_auc": 0.7684444141144077,
+      "stardist_nuclear_boundary_contrast": 0.02951621290167139
+    },
+    {
+      "sample_id": "TCGA-IZ-A6M9-01Z-00-DX1_1",
+      "patient_id": "TCGA-IZ-A6M9",
+      "organ": "kidney",
+      "split": "test",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.7166818216407174,
+      "stardist_nuclear_auc": 0.7160759323054436,
+      "stardist_nuclear_boundary_contrast": 0.034585807372685795
+    },
+    {
+      "sample_id": "TCGA-IZ-A6M9-01Z-00-DX1_2",
+      "patient_id": "TCGA-IZ-A6M9",
+      "organ": "kidney",
+      "split": "test",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.6944782161104527,
+      "stardist_nuclear_auc": 0.6780071773952224,
+      "stardist_nuclear_boundary_contrast": 0.09841226489268773
+    },
+    {
+      "sample_id": "TCGA-VP-A87E-01Z-00-DX1_5",
+      "patient_id": "TCGA-VP-A87E",
+      "organ": "prostate",
+      "split": "test",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "fail"
+      },
+      "source_polygon_auc": 0.664601706172144,
+      "stardist_nuclear_auc": 0.6197215328646887,
+      "stardist_nuclear_boundary_contrast": 0.09557313823041388
+    },
+    {
+      "sample_id": "TCGA-VP-A87H-01Z-00-DX1_1",
+      "patient_id": "TCGA-VP-A87H",
+      "organ": "prostate",
+      "split": "test",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.647303606646781,
+      "stardist_nuclear_auc": 0.6796823292807681,
+      "stardist_nuclear_boundary_contrast": 0.014309696902221947
+    },
+    {
+      "sample_id": "TCGA-VP-A87H-01Z-00-DX1_2",
+      "patient_id": "TCGA-VP-A87H",
+      "organ": "prostate",
+      "split": "test",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.7555504035227123,
+      "stardist_nuclear_auc": 0.7076331414311511,
+      "stardist_nuclear_boundary_contrast": 0.08625952853517871
+    },
+    {
+      "sample_id": "TCGA-X4-A8KS-01Z-00-DX3_1",
+      "patient_id": "TCGA-X4-A8KS",
+      "organ": "prostate",
+      "split": "test",
+      "source_polygon_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.7079979112265048,
+      "stardist_nuclear_auc": 0.7315028308146141,
+      "stardist_nuclear_boundary_contrast": 0.06850567575998034
+    },
+    {
+      "sample_id": "TCGA-YL-A9WL-01Z-00-DX1_1",
+      "patient_id": "TCGA-YL-A9WL",
+      "organ": "prostate",
+      "split": "test",
+      "source_polygon_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "stardist_nuclear_qc": {
+        "status": "fail",
+        "alignment_status": "fail",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      },
+      "source_polygon_auc": 0.7071432367712781,
+      "stardist_nuclear_auc": 0.7194486950559928,
+      "stardist_nuclear_boundary_contrast": 0.029428487970148964
+    }
+  ]
+}

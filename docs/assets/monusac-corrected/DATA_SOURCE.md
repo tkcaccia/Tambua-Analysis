@@ -38,9 +38,17 @@ have zero recall: 0/46 macrophages and 0/4 neutrophils. High overall accuracy
 therefore overstates the biological breadth of this classifier. See
 [`exploratory-all-report.json`](exploratory-all-report.json).
 
-These are **conditional cell-type predictions at source MoNuSAC regions**, not
-end-to-end cell detection using StarDist. The source annotations themselves
-contain implausibly large regions marked macrophage, including nine in
+These are **historical conditional cell-type predictions at source MoNuSAC regions**, not
+end-to-end cell detection using StarDist. The original DAPI QC compared virtual
+DAPI with those source polygons as if every one were a nucleus. That reference
+assumption was incorrect for many macrophages. A CPU-only reassessment with
+actual StarDist nuclei, using unchanged thresholds and the same saved GigaTIME
+images, yields 33 fit, 4 development and 10 organizer-test complete passes
+(47/120 total). The prior model was fitted on a different set and its score is
+not the revised QC result. See [the detected-cell audit](DETECTED_CELL_AUDIT.md)
+and its [machine-readable QC report](stardist-nuclear-qc-summary.json).
+
+The source annotations themselves contain large regions marked macrophage, including nine in
 `TCGA-2Z-A9JG-01Z-00-DX1_6`. The original XML contains those labels and
 polygons; the overlay is not a StarDist output. Across the 120 images,
 41/257 source macrophage regions exceed a 5,000-pixel *manual-review flag*.

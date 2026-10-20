@@ -1,0 +1,196 @@
+{
+  "status": "source-label-only_development_split_frozen_before_expanded_inference",
+  "expanded_candidate_sha256": "b3ec529ee0b4690bd596fcd55038f931789cb05b14cad582836f9a0f33d9b7fa",
+  "rule": "Two organizer-training patients per tissue in development; all remaining organizer-training patients fit candidate models. Organizer-test patients are reserved for one final evaluation.",
+  "development_patients": [
+    "TCGA-B6-A0WZ",
+    "TCGA-E9-A22G",
+    "TCGA-SX-A7SR",
+    "TCGA-G7-A8LD",
+    "TCGA-55-1594",
+    "TCGA-L4-A4E5",
+    "TCGA-G9-6499",
+    "TCGA-EJ-5517"
+  ],
+  "summary": {
+    "fit": {
+      "images": 115,
+      "patients": 36,
+      "images_by_tissue": {
+        "breast": 29,
+        "kidney": 27,
+        "lung": 25,
+        "prostate": 34
+      },
+      "expert_regions_by_class": {
+        "epithelial": 11551,
+        "lymphocyte": 12252,
+        "macrophage": 328,
+        "neutrophil": 197
+      },
+      "rare_regions_by_tissue": {
+        "breast": {
+          "macrophage": 72,
+          "neutrophil": 19
+        },
+        "kidney": {
+          "macrophage": 35,
+          "neutrophil": 28
+        },
+        "lung": {
+          "macrophage": 132,
+          "neutrophil": 110
+        },
+        "prostate": {
+          "macrophage": 89,
+          "neutrophil": 40
+        }
+      }
+    },
+    "development": {
+      "images": 32,
+      "patients": 8,
+      "images_by_tissue": {
+        "breast": 10,
+        "kidney": 6,
+        "lung": 8,
+        "prostate": 8
+      },
+      "expert_regions_by_class": {
+        "epithelial": 2363,
+        "lymphocyte": 2076,
+        "macrophage": 134,
+        "neutrophil": 161
+      },
+      "rare_regions_by_tissue": {
+        "breast": {
+          "macrophage": 36,
+          "neutrophil": 32
+        },
+        "kidney": {
+          "macrophage": 21,
+          "neutrophil": 44
+        },
+        "lung": {
+          "macrophage": 35,
+          "neutrophil": 24
+        },
+        "prostate": {
+          "macrophage": 42,
+          "neutrophil": 61
+        }
+      }
+    },
+    "test": {
+      "images": 66,
+      "patients": 24,
+      "images_by_tissue": {
+        "breast": 18,
+        "kidney": 15,
+        "lung": 15,
+        "prostate": 18
+      },
+      "expert_regions_by_class": {
+        "epithelial": 7194,
+        "lymphocyte": 7491,
+        "macrophage": 209,
+        "neutrophil": 50
+      },
+      "rare_regions_by_tissue": {
+        "breast": {
+          "macrophage": 36,
+          "neutrophil": 19
+        },
+        "kidney": {
+          "macrophage": 37,
+          "neutrophil": 8
+        },
+        "lung": {
+          "macrophage": 29,
+          "neutrophil": 16
+        },
+        "prostate": {
+          "macrophage": 107,
+          "neutrophil": 7
+        }
+      }
+    }
+  },
+  "patient_sets": {
+    "fit": [
+      "TCGA-5P-A9K0",
+      "TCGA-69-7760",
+      "TCGA-69-A59K",
+      "TCGA-73-4668",
+      "TCGA-78-7220",
+      "TCGA-86-7713",
+      "TCGA-86-8672",
+      "TCGA-A2-A0CV",
+      "TCGA-B9-A44B",
+      "TCGA-B9-A8YI",
+      "TCGA-BH-A18T",
+      "TCGA-D8-A1X5",
+      "TCGA-DW-7841",
+      "TCGA-E2-A154",
+      "TCGA-E9-A22B",
+      "TCGA-EJ-5495",
+      "TCGA-EJ-5505",
+      "TCGA-EV-5903",
+      "TCGA-EW-A6SD",
+      "TCGA-F9-A97G",
+      "TCGA-G9-6342",
+      "TCGA-J4-A67Q",
+      "TCGA-J4-A67T",
+      "TCGA-KK-A59X",
+      "TCGA-KK-A6E0",
+      "TCGA-KK-A7AW",
+      "TCGA-MH-A560",
+      "TCGA-MP-A4SY",
+      "TCGA-P4-AAVK",
+      "TCGA-S3-AA11",
+      "TCGA-UZ-A9PO",
+      "TCGA-UZ-A9PU",
+      "TCGA-V1-A8WL",
+      "TCGA-V1-A9O9",
+      "TCGA-X4-A8KQ",
+      "TCGA-YL-A9WY"
+    ],
+    "development": [
+      "TCGA-55-1594",
+      "TCGA-B6-A0WZ",
+      "TCGA-E9-A22G",
+      "TCGA-EJ-5517",
+      "TCGA-G7-A8LD",
+      "TCGA-G9-6499",
+      "TCGA-L4-A4E5",
+      "TCGA-SX-A7SR"
+    ],
+    "test": [
+      "TCGA-2Z-A9JG",
+      "TCGA-2Z-A9JN",
+      "TCGA-49-6743",
+      "TCGA-50-6591",
+      "TCGA-55-7570",
+      "TCGA-55-7573",
+      "TCGA-73-4662",
+      "TCGA-78-7152",
+      "TCGA-A2-A04X",
+      "TCGA-A2-A0ES",
+      "TCGA-D8-A3Z6",
+      "TCGA-DW-7838",
+      "TCGA-DW-7963",
+      "TCGA-E2-A108",
+      "TCGA-EW-A6SB",
+      "TCGA-F9-A8NY",
+      "TCGA-G9-6356",
+      "TCGA-G9-6367",
+      "TCGA-IZ-A6M9",
+      "TCGA-MP-A4T7",
+      "TCGA-VP-A87E",
+      "TCGA-VP-A87H",
+      "TCGA-X4-A8KS",
+      "TCGA-YL-A9WL"
+    ]
+  },
+  "limit": "Expert source counts precede virtual-marker QC; only complete QC passes may enter any subsequent fit, development score or final test score."
+}
