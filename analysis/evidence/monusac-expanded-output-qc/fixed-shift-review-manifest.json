@@ -1,0 +1,29 @@
+{
+  "status": "pending_manual_review",
+  "selected_cases": 8,
+  "fixed_shift_model_px": [
+    -3,
+    3
+  ],
+  "pages": [
+    {
+      "file": "fixed-shift-review-01.webp",
+      "sample_ids": [
+        "TCGA-55-7573-01Z-00-DX1_003",
+        "TCGA-69-A59K-01Z-00-DX1_002",
+        "TCGA-73-4662-01Z-00-DX1_002",
+        "TCGA-78-7152-01Z-00-DX1_001"
+      ]
+    },
+    {
+      "file": "fixed-shift-review-02.webp",
+      "sample_ids": [
+        "TCGA-BH-A18T-01Z-00-DX1_4",
+        "TCGA-D8-A3Z6-01Z-00-DX2_001",
+        "TCGA-EV-5903-01Z-00-DX1_2",
+        "TCGA-EW-A6SD-01Z-00-DX1_5"
+      ]
+    }
+  ],
+  "limit": "A diagnostic QC replay, not a validated marker correction. Every candidate requires visual review; test-set labels were not used to select the shift."
+}

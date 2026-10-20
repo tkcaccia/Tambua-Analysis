@@ -1,0 +1,147 @@
+{
+  "status": "read_only_diagnostic",
+  "patients": 10,
+  "pixel_grid": [
+    1024,
+    1024
+  ],
+  "source_mpp_um": 0.325,
+  "virtual_mpp_um": 0.25,
+  "fixed_shift_model_px": [
+    -3,
+    3
+  ],
+  "records": [
+    {
+      "patient": "CRC04",
+      "measured": "Hoechst",
+      "virtual": "DAPI",
+      "zero_shift_pearson": 0.6277047395706177,
+      "train_derived_fixed_shift_pearson": 0.606204628944397,
+      "fixed_minus_zero": -0.021500110626220703,
+      "exploratory_local_best_dy_dx_1024px": [
+        0,
+        0
+      ],
+      "exploratory_local_best_pearson": 0.6277047395706177
+    },
+    {
+      "patient": "CRC06",
+      "measured": "Hoechst",
+      "virtual": "DAPI",
+      "zero_shift_pearson": 0.7892221212387085,
+      "train_derived_fixed_shift_pearson": 0.7740432024002075,
+      "fixed_minus_zero": -0.015178918838500977,
+      "exploratory_local_best_dy_dx_1024px": [
+        0,
+        0
+      ],
+      "exploratory_local_best_pearson": 0.7892221212387085
+    },
+    {
+      "patient": "CRC08",
+      "measured": "Hoechst",
+      "virtual": "DAPI",
+      "zero_shift_pearson": 0.7990613579750061,
+      "train_derived_fixed_shift_pearson": 0.7910909652709961,
+      "fixed_minus_zero": -0.00797039270401001,
+      "exploratory_local_best_dy_dx_1024px": [
+        0,
+        0
+      ],
+      "exploratory_local_best_pearson": 0.7990613579750061
+    },
+    {
+      "patient": "CRC10",
+      "measured": "Hoechst",
+      "virtual": "DAPI",
+      "zero_shift_pearson": 0.6451848745346069,
+      "train_derived_fixed_shift_pearson": 0.6227802038192749,
+      "fixed_minus_zero": -0.02240467071533203,
+      "exploratory_local_best_dy_dx_1024px": [
+        0,
+        0
+      ],
+      "exploratory_local_best_pearson": 0.6451848745346069
+    },
+    {
+      "patient": "CRC12",
+      "measured": "Hoechst",
+      "virtual": "DAPI",
+      "zero_shift_pearson": 0.7920374870300293,
+      "train_derived_fixed_shift_pearson": 0.7763270139694214,
+      "fixed_minus_zero": -0.01571047306060791,
+      "exploratory_local_best_dy_dx_1024px": [
+        0,
+        0
+      ],
+      "exploratory_local_best_pearson": 0.7920374870300293
+    },
+    {
+      "patient": "CRC17",
+      "measured": "Hoechst",
+      "virtual": "DAPI",
+      "zero_shift_pearson": 0.7123012542724609,
+      "train_derived_fixed_shift_pearson": 0.6999918818473816,
+      "fixed_minus_zero": -0.012309372425079346,
+      "exploratory_local_best_dy_dx_1024px": [
+        0,
+        0
+      ],
+      "exploratory_local_best_pearson": 0.7123012542724609
+    },
+    {
+      "patient": "CRC19",
+      "measured": "Hoechst",
+      "virtual": "DAPI",
+      "zero_shift_pearson": 0.7870241403579712,
+      "train_derived_fixed_shift_pearson": 0.7600593566894531,
+      "fixed_minus_zero": -0.026964783668518066,
+      "exploratory_local_best_dy_dx_1024px": [
+        1,
+        0
+      ],
+      "exploratory_local_best_pearson": 0.7885270714759827
+    },
+    {
+      "patient": "CRC21",
+      "measured": "Hoechst",
+      "virtual": "DAPI",
+      "zero_shift_pearson": 0.7802453637123108,
+      "train_derived_fixed_shift_pearson": 0.7578182220458984,
+      "fixed_minus_zero": -0.022427141666412354,
+      "exploratory_local_best_dy_dx_1024px": [
+        0,
+        0
+      ],
+      "exploratory_local_best_pearson": 0.7802453637123108
+    },
+    {
+      "patient": "CRC23",
+      "measured": "Hoechst",
+      "virtual": "DAPI",
+      "zero_shift_pearson": 0.7757775783538818,
+      "train_derived_fixed_shift_pearson": 0.7482311129570007,
+      "fixed_minus_zero": -0.027546465396881104,
+      "exploratory_local_best_dy_dx_1024px": [
+        0,
+        0
+      ],
+      "exploratory_local_best_pearson": 0.7757775783538818
+    },
+    {
+      "patient": "CRC25",
+      "measured": "Hoechst",
+      "virtual": "DAPI",
+      "zero_shift_pearson": 0.804561972618103,
+      "train_derived_fixed_shift_pearson": 0.7946085929870605,
+      "fixed_minus_zero": -0.00995337963104248,
+      "exploratory_local_best_dy_dx_1024px": [
+        0,
+        0
+      ],
+      "exploratory_local_best_pearson": 0.804561972618103
+    }
+  ],
+  "limit": "DAPI and Hoechst are related nuclear dyes, not identical channels. Local optimization is exploratory and can overfit; no registration or QC is changed. Raw spatial correlations need separate marker-specific validation."
+}

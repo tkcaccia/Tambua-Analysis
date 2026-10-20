@@ -1,0 +1,14 @@
+{
+  "sample_id": "TCGA-E2-A108-01Z-00-DX1_004",
+  "sampled_tissue_pixels": 1570,
+  "median_absolute_pairwise_spatial_spearman": 0.8983512559360248,
+  "fraction_channel_pairs_absolute_rho_gt_0_90": 0.48221343873517786,
+  "selected_pair_spatial_spearman": {
+    "DAPI__TRITC": 0.9562857210099248,
+    "DAPI__Cy5": 0.9482974648461365,
+    "DAPI__CK": 0.8931325955261888,
+    "CK__CD68": 0.8631459912246451,
+    "CK__CD3": 0.8091331143585007,
+    "CD68__CD3": 0.9244126081928752
+  }
+}

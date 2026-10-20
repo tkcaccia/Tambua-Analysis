@@ -1,0 +1,16 @@
+{
+  "scope": "Eight diagnostic candidates newly passing nuclear QC only after a train-derived (-3,+3) model-pixel DAPI shift",
+  "panels_reviewed": ["scanner RGB", "native virtual DAPI", "shifted virtual DAPI", "shifted DAPI plus independent StarDist outlines", "shifted CK", "shifted CD68"],
+  "reviewer_decision": "No image promoted to the validated classifier cohort. The fixed shift worsens raw DAPI/Hoechst spatial alignment in every reserved ORION patient.",
+  "cases": [
+    {"sample_id": "TCGA-55-7573-01Z-00-DX1_003", "split": "test", "decision": "exclude", "observation": "The virtual DAPI is diffuse across the tissue instead of resolving the dense field of H&E nuclei; the shift does not remove this ambiguity."},
+    {"sample_id": "TCGA-69-A59K-01Z-00-DX1_002", "split": "train", "decision": "exclude", "observation": "Large bright virtual-DAPI spots coincide with erythrocyte-rich structures; several H&E nuclei remain dark."},
+    {"sample_id": "TCGA-73-4662-01Z-00-DX1_002", "split": "test", "decision": "exclude", "observation": "Bright virtual-DAPI blobs overlap red-cell-rich structures and exceed plausible individual nuclear footprints."},
+    {"sample_id": "TCGA-78-7152-01Z-00-DX1_001", "split": "test", "decision": "exclude", "observation": "Bright spots and confluent DAPI regions overlap an erythrocyte-rich field; many outlined nuclei lack distinct matched peaks."},
+    {"sample_id": "TCGA-BH-A18T-01Z-00-DX1_4", "split": "train", "decision": "hold", "observation": "Many DAPI peaks follow nuclear outlines, but some remain confluent. Full-marker specificity and independent fluorescence are unverified."},
+    {"sample_id": "TCGA-D8-A3Z6-01Z-00-DX2_001", "split": "test", "decision": "hold", "observation": "Dense nuclear field has broad DAPI correspondence, but several merged bright regions and unresolved individual nuclei remain."},
+    {"sample_id": "TCGA-EV-5903-01Z-00-DX1_2", "split": "train", "decision": "hold", "observation": "DAPI broadly follows dense kidney nuclei, with substantial confluent signal; marker-specific validation is absent."},
+    {"sample_id": "TCGA-EW-A6SD-01Z-00-DX1_5", "split": "train", "decision": "hold", "observation": "DAPI broadly follows dense breast nuclei but appears confluent and marker specificity is unverified."}
+  ],
+  "limits": "Contact sheets are display-scaled. No raw channel was changed and a numerical QC replay cannot establish biological validity. The four held fields remain excluded until further evidence."
+}

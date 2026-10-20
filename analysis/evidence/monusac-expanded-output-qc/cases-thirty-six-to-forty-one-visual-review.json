@@ -1,0 +1,14 @@
+{
+  "scope": "Completed CPU-only scanner-RGB expansion cases 36 through 41, visually inspected on the original GigaTIME output without a spatial shift",
+  "source_manifest": "first-forty-one-manifest.json",
+  "source_contact_sheets": ["first-forty-one-06.webp", "first-forty-one-07.webp"],
+  "reviewed_cases": [
+    {"sample_id": "TCGA-DW-7838-01Z-00-DX1_3", "split": "test", "frozen_qc_status": "fail", "decision": "exclude", "visual_observation": "Sparse kidney nuclei: virtual DAPI is bright over only some outlined nuclei and has broader diffuse patches."},
+    {"sample_id": "TCGA-G9-6342-01Z-00-DX1-2", "split": "train", "frozen_qc_status": "fail", "decision": "exclude", "visual_observation": "The prostate field contains erythrocyte-rich areas; large bright virtual-DAPI spots do not map consistently to H&E nuclei."},
+    {"sample_id": "TCGA-DW-7963-01Z-00-DX1_1", "split": "test", "frozen_qc_status": "fail", "decision": "exclude", "visual_observation": "Dense kidney nuclei blend into a diffuse virtual-DAPI region with low nuclear-boundary contrast."},
+    {"sample_id": "TCGA-J4-A67Q-01Z-00-DX1-3", "split": "train", "frozen_qc_status": "fail", "decision": "exclude", "visual_observation": "Virtual DAPI is confluent over a densely nucleated prostate region and does not resolve many outlined nuclei."},
+    {"sample_id": "TCGA-E2-A108-01Z-00-DX1_004", "split": "test", "frozen_qc_status": "pass", "decision": "hold_marker_specific_validation", "visual_observation": "Virtual DAPI peaks follow most independent nuclear outlines, with no obvious edge shadow in this small field. The 23-channel sheet shows extensive shared morphology; median absolute pairwise spatial Spearman is 0.898 across channels, DAPI/TRITC 0.956 and DAPI/Cy5 0.948. This nuclear technical pass does not establish protein identity or support cell-type evaluation."},
+    {"sample_id": "TCGA-J4-A67Q-01Z-00-DX1-4", "split": "train", "frozen_qc_status": "fail", "decision": "exclude", "visual_observation": "Virtual DAPI remains confluent in the prostate gland region, with many H&E nuclei lacking individual fluorescence peaks."}
+  ],
+  "limits": "The contact sheets show RGB, DAPI, DAPI/StarDist, CK and CD68. All 23 saved virtual channels for the one new technical pass were reviewed separately at TCGA-E2-A108-01Z-00-DX1_004/all-23-markers.webp. None of these six cases has entered fastPLS training or testing."
+}

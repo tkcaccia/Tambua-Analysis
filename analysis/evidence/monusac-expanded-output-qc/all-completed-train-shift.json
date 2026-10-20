@@ -1,0 +1,295 @@
+{
+  "status": "diagnostic_only",
+  "cases": 22,
+  "max_shift_model_px": 32,
+  "model_mpp_um": 0.25,
+  "records": [
+    {
+      "sample_id": "TCGA-69-A59K-01Z-00-DX1_002",
+      "organ": "lung",
+      "frozen_qc_status": "fail",
+      "zero_shift_pearson": 0.5968148545281692,
+      "best_shift_dy_dx_model_px": [
+        -5,
+        3
+      ],
+      "best_shift_pearson": 0.6689431021444902,
+      "improvement": 0.07212824761632097,
+      "interpretation": "Mask shifted relative to DAPI; exploratory train-only search, not a QC correction"
+    },
+    {
+      "sample_id": "TCGA-73-4668-01Z-00-DX1_004",
+      "organ": "lung",
+      "frozen_qc_status": "fail",
+      "zero_shift_pearson": 0.5605833923933926,
+      "best_shift_dy_dx_model_px": [
+        -2,
+        2
+      ],
+      "best_shift_pearson": 0.577110053632817,
+      "improvement": 0.016526661239424367,
+      "interpretation": "Mask shifted relative to DAPI; exploratory train-only search, not a QC correction"
+    },
+    {
+      "sample_id": "TCGA-86-7713-01Z-00-DX1_001",
+      "organ": "lung",
+      "frozen_qc_status": "fail",
+      "zero_shift_pearson": 0.5940573405512746,
+      "best_shift_dy_dx_model_px": [
+        -3,
+        3
+      ],
+      "best_shift_pearson": 0.609655086857086,
+      "improvement": 0.015597746305811455,
+      "interpretation": "Mask shifted relative to DAPI; exploratory train-only search, not a QC correction"
+    },
+    {
+      "sample_id": "TCGA-B6-A0WZ-01Z-00-DX1_2",
+      "organ": "breast",
+      "frozen_qc_status": "fail",
+      "zero_shift_pearson": 0.5316598815182537,
+      "best_shift_dy_dx_model_px": [
+        3,
+        8
+      ],
+      "best_shift_pearson": 0.5647285775397518,
+      "improvement": 0.03306869602149809,
+      "interpretation": "Mask shifted relative to DAPI; exploratory train-only search, not a QC correction"
+    },
+    {
+      "sample_id": "TCGA-B6-A0WZ-01Z-00-DX1_3",
+      "organ": "breast",
+      "frozen_qc_status": "fail",
+      "zero_shift_pearson": 0.15155465825329642,
+      "best_shift_dy_dx_model_px": [
+        -4,
+        11
+      ],
+      "best_shift_pearson": 0.3341793938882634,
+      "improvement": 0.18262473563496698,
+      "interpretation": "Mask shifted relative to DAPI; exploratory train-only search, not a QC correction"
+    },
+    {
+      "sample_id": "TCGA-B6-A0WZ-01Z-00-DX1_4",
+      "organ": "breast",
+      "frozen_qc_status": "fail",
+      "zero_shift_pearson": 0.5772576584531487,
+      "best_shift_dy_dx_model_px": [
+        3,
+        3
+      ],
+      "best_shift_pearson": 0.5900823881369783,
+      "improvement": 0.012824729683829639,
+      "interpretation": "Mask shifted relative to DAPI; exploratory train-only search, not a QC correction"
+    },
+    {
+      "sample_id": "TCGA-B9-A44B-01Z-00-DX1_1",
+      "organ": "kidney",
+      "frozen_qc_status": "fail",
+      "zero_shift_pearson": 0.388066937794016,
+      "best_shift_dy_dx_model_px": [
+        -5,
+        3
+      ],
+      "best_shift_pearson": 0.5627545333187465,
+      "improvement": 0.17468759552473045,
+      "interpretation": "Mask shifted relative to DAPI; exploratory train-only search, not a QC correction"
+    },
+    {
+      "sample_id": "TCGA-BH-A18T-01Z-00-DX1_3",
+      "organ": "breast",
+      "frozen_qc_status": "fail",
+      "zero_shift_pearson": 0.39017506837273397,
+      "best_shift_dy_dx_model_px": [
+        1,
+        5
+      ],
+      "best_shift_pearson": 0.40925187057203377,
+      "improvement": 0.019076802199299803,
+      "interpretation": "Mask shifted relative to DAPI; exploratory train-only search, not a QC correction"
+    },
+    {
+      "sample_id": "TCGA-BH-A18T-01Z-00-DX1_4",
+      "organ": "breast",
+      "frozen_qc_status": "fail",
+      "zero_shift_pearson": 0.5484491745916955,
+      "best_shift_dy_dx_model_px": [
+        -1,
+        6
+      ],
+      "best_shift_pearson": 0.6330729167919241,
+      "improvement": 0.08462374220022861,
+      "interpretation": "Mask shifted relative to DAPI; exploratory train-only search, not a QC correction"
+    },
+    {
+      "sample_id": "TCGA-DW-7841-01Z-00-DX1_3",
+      "organ": "kidney",
+      "frozen_qc_status": "fail",
+      "zero_shift_pearson": 0.35000525357589307,
+      "best_shift_dy_dx_model_px": [
+        -4,
+        10
+      ],
+      "best_shift_pearson": 0.40606858769601295,
+      "improvement": 0.05606333412011988,
+      "interpretation": "Mask shifted relative to DAPI; exploratory train-only search, not a QC correction"
+    },
+    {
+      "sample_id": "TCGA-E2-A154-01Z-00-DX1_1",
+      "organ": "breast",
+      "frozen_qc_status": "fail",
+      "zero_shift_pearson": 0.5215625811091241,
+      "best_shift_dy_dx_model_px": [
+        -5,
+        4
+      ],
+      "best_shift_pearson": 0.5966449212086977,
+      "improvement": 0.0750823400995736,
+      "interpretation": "Mask shifted relative to DAPI; exploratory train-only search, not a QC correction"
+    },
+    {
+      "sample_id": "TCGA-E2-A154-01Z-00-DX1_5",
+      "organ": "breast",
+      "frozen_qc_status": "fail",
+      "zero_shift_pearson": 0.6100568870869084,
+      "best_shift_dy_dx_model_px": [
+        -5,
+        4
+      ],
+      "best_shift_pearson": 0.6641623342105905,
+      "improvement": 0.05410544712368204,
+      "interpretation": "Mask shifted relative to DAPI; exploratory train-only search, not a QC correction"
+    },
+    {
+      "sample_id": "TCGA-E9-A22B-01Z-00-DX1_6",
+      "organ": "breast",
+      "frozen_qc_status": "fail",
+      "zero_shift_pearson": 0.7023960156689253,
+      "best_shift_dy_dx_model_px": [
+        -4,
+        2
+      ],
+      "best_shift_pearson": 0.7182143925796102,
+      "improvement": 0.015818376910684884,
+      "interpretation": "Mask shifted relative to DAPI; exploratory train-only search, not a QC correction"
+    },
+    {
+      "sample_id": "TCGA-EJ-5495-01Z-00-DX1-2",
+      "organ": "prostate",
+      "frozen_qc_status": "fail",
+      "zero_shift_pearson": 0.5799770702325632,
+      "best_shift_dy_dx_model_px": [
+        -3,
+        2
+      ],
+      "best_shift_pearson": 0.6167420746002609,
+      "improvement": 0.036765004367697696,
+      "interpretation": "Mask shifted relative to DAPI; exploratory train-only search, not a QC correction"
+    },
+    {
+      "sample_id": "TCGA-EJ-5495-01Z-00-DX1-3",
+      "organ": "prostate",
+      "frozen_qc_status": "fail",
+      "zero_shift_pearson": 0.6446887484949116,
+      "best_shift_dy_dx_model_px": [
+        -4,
+        2
+      ],
+      "best_shift_pearson": 0.6633568437866544,
+      "improvement": 0.018668095291742737,
+      "interpretation": "Mask shifted relative to DAPI; exploratory train-only search, not a QC correction"
+    },
+    {
+      "sample_id": "TCGA-EJ-5505-01Z-00-DX1-2",
+      "organ": "prostate",
+      "frozen_qc_status": "fail",
+      "zero_shift_pearson": 0.6857065243566831,
+      "best_shift_dy_dx_model_px": [
+        -3,
+        -2
+      ],
+      "best_shift_pearson": 0.7060379994992132,
+      "improvement": 0.020331475142530087,
+      "interpretation": "Mask shifted relative to DAPI; exploratory train-only search, not a QC correction"
+    },
+    {
+      "sample_id": "TCGA-EJ-5505-01Z-00-DX1-4",
+      "organ": "prostate",
+      "frozen_qc_status": "fail",
+      "zero_shift_pearson": 0.6363175288463314,
+      "best_shift_dy_dx_model_px": [
+        -2,
+        1
+      ],
+      "best_shift_pearson": 0.6407791868776818,
+      "improvement": 0.004461658031350346,
+      "interpretation": "Mask shifted relative to DAPI; exploratory train-only search, not a QC correction"
+    },
+    {
+      "sample_id": "TCGA-EV-5903-01Z-00-DX1_2",
+      "organ": "kidney",
+      "frozen_qc_status": "fail",
+      "zero_shift_pearson": 0.651843809073575,
+      "best_shift_dy_dx_model_px": [
+        -2,
+        2
+      ],
+      "best_shift_pearson": 0.6874882831584099,
+      "improvement": 0.035644474084834954,
+      "interpretation": "Mask shifted relative to DAPI; exploratory train-only search, not a QC correction"
+    },
+    {
+      "sample_id": "TCGA-EV-5903-01Z-00-DX1_4",
+      "organ": "kidney",
+      "frozen_qc_status": "pass",
+      "zero_shift_pearson": 0.637638663114416,
+      "best_shift_dy_dx_model_px": [
+        -2,
+        0
+      ],
+      "best_shift_pearson": 0.6450357393144551,
+      "improvement": 0.007397076200039154,
+      "interpretation": "Mask shifted relative to DAPI; exploratory train-only search, not a QC correction"
+    },
+    {
+      "sample_id": "TCGA-EW-A6SD-01Z-00-DX1_5",
+      "organ": "breast",
+      "frozen_qc_status": "fail",
+      "zero_shift_pearson": 0.6200027218082732,
+      "best_shift_dy_dx_model_px": [
+        -4,
+        1
+      ],
+      "best_shift_pearson": 0.675971276195032,
+      "improvement": 0.05596855438675874,
+      "interpretation": "Mask shifted relative to DAPI; exploratory train-only search, not a QC correction"
+    },
+    {
+      "sample_id": "TCGA-F9-A97G-01Z-00-DX1_4",
+      "organ": "kidney",
+      "frozen_qc_status": "fail",
+      "zero_shift_pearson": 0.5261788379847815,
+      "best_shift_dy_dx_model_px": [
+        -3,
+        3
+      ],
+      "best_shift_pearson": 0.5685513566631634,
+      "improvement": 0.042372518678381876,
+      "interpretation": "Mask shifted relative to DAPI; exploratory train-only search, not a QC correction"
+    },
+    {
+      "sample_id": "TCGA-G9-6342-01Z-00-DX1-2",
+      "organ": "prostate",
+      "frozen_qc_status": "fail",
+      "zero_shift_pearson": 0.5989628793669686,
+      "best_shift_dy_dx_model_px": [
+        -3,
+        2
+      ],
+      "best_shift_pearson": 0.6087903786240558,
+      "improvement": 0.009827499257087258,
+      "interpretation": "Mask shifted relative to DAPI; exploratory train-only search, not a QC correction"
+    }
+  ],
+  "limit": "The same H&E supports both the StarDist mask and virtual DAPI. A train-only shift search cannot establish measured-marker validity. No QC status is changed."
+}
