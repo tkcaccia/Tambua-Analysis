@@ -1,6 +1,7 @@
 {
   "status": "diagnostic_gallery_complete",
   "source_manifest_sha256": "874e1deafa1a567c61678a66e959940aa220e5c15215a0947eddcec65c4b6405",
+  "model_split_map_sha256": "230b5a74f969d7588471148c225336be7837399829f77238228954d9246eb83a",
   "images": 93,
   "qc_pass": 9,
   "qc_fail": 84,
@@ -11,7 +12,8 @@
     {
       "sample_id": "TCGA-69-A59K-01Z-00-DX1_002",
       "organ": "lung",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "train",
       "qc_status": "fail",
       "auc": 0.6938673622365524,
       "nuclear_boundary_contrast": 0.04085825176053992,
@@ -23,7 +25,8 @@
     {
       "sample_id": "TCGA-2Z-A9JN-01Z-00-DX1_1",
       "organ": "kidney",
-      "split": "test",
+      "organizer_split": "test",
+      "model_split": "test",
       "qc_status": "fail",
       "auc": 0.7433034590162864,
       "nuclear_boundary_contrast": 0.026295006482286554,
@@ -35,7 +38,8 @@
     {
       "sample_id": "TCGA-73-4668-01Z-00-DX1_004",
       "organ": "lung",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "train",
       "qc_status": "fail",
       "auc": 0.7349164996977949,
       "nuclear_boundary_contrast": 0.03654929478549318,
@@ -47,7 +51,8 @@
     {
       "sample_id": "TCGA-2Z-A9JN-01Z-00-DX1_3",
       "organ": "kidney",
-      "split": "test",
+      "organizer_split": "test",
+      "model_split": "test",
       "qc_status": "fail",
       "auc": 0.4980591847499812,
       "nuclear_boundary_contrast": 0.0019876074737893434,
@@ -59,7 +64,8 @@
     {
       "sample_id": "TCGA-86-7713-01Z-00-DX1_001",
       "organ": "lung",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "train",
       "qc_status": "fail",
       "auc": 0.662642436371476,
       "nuclear_boundary_contrast": 0.05529078667132736,
@@ -71,7 +77,8 @@
     {
       "sample_id": "TCGA-49-6743-01Z-00-DX2_001",
       "organ": "lung",
-      "split": "test",
+      "organizer_split": "test",
+      "model_split": "test",
       "qc_status": "fail",
       "auc": 0.7716342054316222,
       "nuclear_boundary_contrast": 0.04165157285614085,
@@ -83,7 +90,8 @@
     {
       "sample_id": "TCGA-B9-A44B-01Z-00-DX1_1",
       "organ": "kidney",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "train",
       "qc_status": "fail",
       "auc": 0.6327903626520959,
       "nuclear_boundary_contrast": 0.011564194044588416,
@@ -95,7 +103,8 @@
     {
       "sample_id": "TCGA-49-6743-01Z-00-DX2_003",
       "organ": "lung",
-      "split": "test",
+      "organizer_split": "test",
+      "model_split": "test",
       "qc_status": "fail",
       "auc": 0.6789790647388367,
       "nuclear_boundary_contrast": 0.016931361184668536,
@@ -107,7 +116,8 @@
     {
       "sample_id": "TCGA-BH-A18T-01Z-00-DX1_3",
       "organ": "breast",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "train",
       "qc_status": "fail",
       "auc": 0.6105274648515865,
       "nuclear_boundary_contrast": 0.036394064678966664,
@@ -119,7 +129,8 @@
     {
       "sample_id": "TCGA-49-6743-01Z-00-DX2_005",
       "organ": "lung",
-      "split": "test",
+      "organizer_split": "test",
+      "model_split": "test",
       "qc_status": "fail",
       "auc": 0.6815502691999709,
       "nuclear_boundary_contrast": 0.06325888792775458,
@@ -131,7 +142,8 @@
     {
       "sample_id": "TCGA-BH-A18T-01Z-00-DX1_4",
       "organ": "breast",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "train",
       "qc_status": "fail",
       "auc": 0.6853361242553234,
       "nuclear_boundary_contrast": 0.04009040295549826,
@@ -143,7 +155,8 @@
     {
       "sample_id": "TCGA-55-7570-01Z-00-DX1_001",
       "organ": "lung",
-      "split": "test",
+      "organizer_split": "test",
+      "model_split": "test",
       "qc_status": "fail",
       "auc": 0.6835461183935148,
       "nuclear_boundary_contrast": 0.016686197940884218,
@@ -155,7 +168,8 @@
     {
       "sample_id": "TCGA-DW-7841-01Z-00-DX1_3",
       "organ": "kidney",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "train",
       "qc_status": "fail",
       "auc": 0.538118206189504,
       "nuclear_boundary_contrast": 0.007356574097908575,
@@ -167,7 +181,8 @@
     {
       "sample_id": "TCGA-55-7573-01Z-00-DX1_003",
       "organ": "lung",
-      "split": "test",
+      "organizer_split": "test",
+      "model_split": "test",
       "qc_status": "fail",
       "auc": 0.7433646770243644,
       "nuclear_boundary_contrast": 0.048662138324727655,
@@ -179,7 +194,8 @@
     {
       "sample_id": "TCGA-E2-A154-01Z-00-DX1_1",
       "organ": "breast",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "train",
       "qc_status": "fail",
       "auc": 0.6801762361340041,
       "nuclear_boundary_contrast": 0.03681667967860813,
@@ -191,7 +207,8 @@
     {
       "sample_id": "TCGA-73-4662-01Z-00-DX1_001",
       "organ": "lung",
-      "split": "test",
+      "organizer_split": "test",
+      "model_split": "test",
       "qc_status": "fail",
       "auc": 0.8061277580737669,
       "nuclear_boundary_contrast": 0.04489493012447132,
@@ -203,7 +220,8 @@
     {
       "sample_id": "TCGA-E2-A154-01Z-00-DX1_5",
       "organ": "breast",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "train",
       "qc_status": "fail",
       "auc": 0.6733086795186382,
       "nuclear_boundary_contrast": 0.032694051881957176,
@@ -215,7 +233,8 @@
     {
       "sample_id": "TCGA-73-4662-01Z-00-DX1_002",
       "organ": "lung",
-      "split": "test",
+      "organizer_split": "test",
+      "model_split": "test",
       "qc_status": "fail",
       "auc": 0.6971801411013384,
       "nuclear_boundary_contrast": 0.05603613702135479,
@@ -227,7 +246,8 @@
     {
       "sample_id": "TCGA-E9-A22B-01Z-00-DX1_6",
       "organ": "breast",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "train",
       "qc_status": "fail",
       "auc": 0.820582472120333,
       "nuclear_boundary_contrast": 0.04141257648795893,
@@ -239,7 +259,8 @@
     {
       "sample_id": "TCGA-78-7152-01Z-00-DX1_001",
       "organ": "lung",
-      "split": "test",
+      "organizer_split": "test",
+      "model_split": "test",
       "qc_status": "fail",
       "auc": 0.6955656791571438,
       "nuclear_boundary_contrast": 0.05192455208690716,
@@ -251,7 +272,8 @@
     {
       "sample_id": "TCGA-EJ-5495-01Z-00-DX1-2",
       "organ": "prostate",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "train",
       "qc_status": "fail",
       "auc": 0.7780212376235986,
       "nuclear_boundary_contrast": 0.04081892853602209,
@@ -263,7 +285,8 @@
     {
       "sample_id": "TCGA-A2-A0ES-01Z-00-DX1_001",
       "organ": "breast",
-      "split": "test",
+      "organizer_split": "test",
+      "model_split": "test",
       "qc_status": "fail",
       "auc": 0.7769113984588283,
       "nuclear_boundary_contrast": 0.031671841816930724,
@@ -275,7 +298,8 @@
     {
       "sample_id": "TCGA-EJ-5495-01Z-00-DX1-3",
       "organ": "prostate",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "train",
       "qc_status": "fail",
       "auc": 0.6710462417131707,
       "nuclear_boundary_contrast": 0.04762049696766357,
@@ -287,7 +311,8 @@
     {
       "sample_id": "TCGA-B6-A0WZ-01Z-00-DX1_2",
       "organ": "breast",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "development",
       "qc_status": "fail",
       "auc": 0.6522285535262818,
       "nuclear_boundary_contrast": 0.027424161044154793,
@@ -299,7 +324,8 @@
     {
       "sample_id": "TCGA-EJ-5505-01Z-00-DX1-2",
       "organ": "prostate",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "train",
       "qc_status": "fail",
       "auc": 0.6401535733318874,
       "nuclear_boundary_contrast": 0.024557528466797818,
@@ -311,7 +337,8 @@
     {
       "sample_id": "TCGA-B6-A0WZ-01Z-00-DX1_3",
       "organ": "breast",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "development",
       "qc_status": "fail",
       "auc": 0.5098860700748774,
       "nuclear_boundary_contrast": -0.0001309393429364536,
@@ -323,7 +350,8 @@
     {
       "sample_id": "TCGA-EJ-5505-01Z-00-DX1-4",
       "organ": "prostate",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "train",
       "qc_status": "fail",
       "auc": 0.7557231647099901,
       "nuclear_boundary_contrast": 0.04011842937413512,
@@ -335,7 +363,8 @@
     {
       "sample_id": "TCGA-B6-A0WZ-01Z-00-DX1_4",
       "organ": "breast",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "development",
       "qc_status": "fail",
       "auc": 0.7385727131735399,
       "nuclear_boundary_contrast": 0.026487286245693964,
@@ -347,7 +376,8 @@
     {
       "sample_id": "TCGA-EV-5903-01Z-00-DX1_2",
       "organ": "kidney",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "train",
       "qc_status": "fail",
       "auc": 0.750916295323236,
       "nuclear_boundary_contrast": 0.03919585782319157,
@@ -359,7 +389,8 @@
     {
       "sample_id": "TCGA-D8-A3Z6-01Z-00-DX2_001",
       "organ": "breast",
-      "split": "test",
+      "organizer_split": "test",
+      "model_split": "test",
       "qc_status": "fail",
       "auc": 0.719057716200429,
       "nuclear_boundary_contrast": 0.04641325251944939,
@@ -371,7 +402,8 @@
     {
       "sample_id": "TCGA-EV-5903-01Z-00-DX1_4",
       "organ": "kidney",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "train",
       "qc_status": "pass",
       "auc": 0.7899027883991128,
       "nuclear_boundary_contrast": 0.06798021470307536,
@@ -383,7 +415,8 @@
     {
       "sample_id": "TCGA-D8-A3Z6-01Z-00-DX2_003",
       "organ": "breast",
-      "split": "test",
+      "organizer_split": "test",
+      "model_split": "test",
       "qc_status": "fail",
       "auc": 0.6214238109639307,
       "nuclear_boundary_contrast": 0.018678021702578707,
@@ -395,7 +428,8 @@
     {
       "sample_id": "TCGA-EW-A6SD-01Z-00-DX1_5",
       "organ": "breast",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "train",
       "qc_status": "fail",
       "auc": 0.7625364688516517,
       "nuclear_boundary_contrast": 0.03899871928189269,
@@ -407,7 +441,8 @@
     {
       "sample_id": "TCGA-D8-A3Z6-01Z-00-DX2_004",
       "organ": "breast",
-      "split": "test",
+      "organizer_split": "test",
+      "model_split": "test",
       "qc_status": "fail",
       "auc": 0.7247186775449131,
       "nuclear_boundary_contrast": 0.02816126387501472,
@@ -419,7 +454,8 @@
     {
       "sample_id": "TCGA-F9-A97G-01Z-00-DX1_4",
       "organ": "kidney",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "train",
       "qc_status": "fail",
       "auc": 0.6185861330550108,
       "nuclear_boundary_contrast": 0.036669733666209736,
@@ -431,7 +467,8 @@
     {
       "sample_id": "TCGA-DW-7838-01Z-00-DX1_3",
       "organ": "kidney",
-      "split": "test",
+      "organizer_split": "test",
+      "model_split": "test",
       "qc_status": "fail",
       "auc": 0.5726153027079613,
       "nuclear_boundary_contrast": 0.030849284942277677,
@@ -443,7 +480,8 @@
     {
       "sample_id": "TCGA-G9-6342-01Z-00-DX1-2",
       "organ": "prostate",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "train",
       "qc_status": "fail",
       "auc": 0.7127586064013756,
       "nuclear_boundary_contrast": 0.043836208186239456,
@@ -455,7 +493,8 @@
     {
       "sample_id": "TCGA-DW-7963-01Z-00-DX1_1",
       "organ": "kidney",
-      "split": "test",
+      "organizer_split": "test",
+      "model_split": "test",
       "qc_status": "fail",
       "auc": 0.6924005143141413,
       "nuclear_boundary_contrast": 0.020138784944033983,
@@ -467,7 +506,8 @@
     {
       "sample_id": "TCGA-J4-A67Q-01Z-00-DX1-3",
       "organ": "prostate",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "train",
       "qc_status": "fail",
       "auc": 0.6743816528676367,
       "nuclear_boundary_contrast": 0.016868841080787567,
@@ -479,7 +519,8 @@
     {
       "sample_id": "TCGA-E2-A108-01Z-00-DX1_004",
       "organ": "breast",
-      "split": "test",
+      "organizer_split": "test",
+      "model_split": "test",
       "qc_status": "pass",
       "auc": 0.8890424527208419,
       "nuclear_boundary_contrast": 0.054876829961986506,
@@ -491,7 +532,8 @@
     {
       "sample_id": "TCGA-J4-A67Q-01Z-00-DX1-4",
       "organ": "prostate",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "train",
       "qc_status": "fail",
       "auc": 0.7463570439339273,
       "nuclear_boundary_contrast": 0.03313571701710505,
@@ -503,7 +545,8 @@
     {
       "sample_id": "TCGA-E9-A22G-01Z-00-DX1_3",
       "organ": "breast",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "development",
       "qc_status": "pass",
       "auc": 0.7216636592877806,
       "nuclear_boundary_contrast": 0.05822549827114021,
@@ -515,7 +558,8 @@
     {
       "sample_id": "TCGA-J4-A67T-01Z-00-DX1-1",
       "organ": "prostate",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "train",
       "qc_status": "fail",
       "auc": 0.6850506881869594,
       "nuclear_boundary_contrast": 0.015029289241788923,
@@ -527,7 +571,8 @@
     {
       "sample_id": "TCGA-E9-A22G-01Z-00-DX1_4",
       "organ": "breast",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "development",
       "qc_status": "fail",
       "auc": 0.7328806494493343,
       "nuclear_boundary_contrast": 0.03846539408425276,
@@ -539,7 +584,8 @@
     {
       "sample_id": "TCGA-J4-A67T-01Z-00-DX1-5",
       "organ": "prostate",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "train",
       "qc_status": "fail",
       "auc": 0.6755833670556194,
       "nuclear_boundary_contrast": 0.014160199729891576,
@@ -551,7 +597,8 @@
     {
       "sample_id": "TCGA-EJ-5517-01Z-00-DX1-1",
       "organ": "prostate",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "development",
       "qc_status": "fail",
       "auc": 0.6097406764340245,
       "nuclear_boundary_contrast": 0.02605936576440382,
@@ -563,7 +610,8 @@
     {
       "sample_id": "TCGA-KK-A59X-01Z-00-DX1-2",
       "organ": "prostate",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "train",
       "qc_status": "pass",
       "auc": 0.8391649942622138,
       "nuclear_boundary_contrast": 0.06972541001848209,
@@ -575,7 +623,8 @@
     {
       "sample_id": "TCGA-EW-A6SB-01Z-00-DX1_001",
       "organ": "breast",
-      "split": "test",
+      "organizer_split": "test",
+      "model_split": "test",
       "qc_status": "fail",
       "auc": 0.6713916934702354,
       "nuclear_boundary_contrast": 0.0218818464709859,
@@ -587,7 +636,8 @@
     {
       "sample_id": "TCGA-KK-A6E0-01Z-00-DX1-3",
       "organ": "prostate",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "train",
       "qc_status": "fail",
       "auc": 0.6215326970738654,
       "nuclear_boundary_contrast": 0.020005313189250695,
@@ -599,7 +649,8 @@
     {
       "sample_id": "TCGA-EW-A6SB-01Z-00-DX1_002",
       "organ": "breast",
-      "split": "test",
+      "organizer_split": "test",
+      "model_split": "test",
       "qc_status": "fail",
       "auc": 0.6565745996587717,
       "nuclear_boundary_contrast": 0.019518145517208874,
@@ -611,7 +662,8 @@
     {
       "sample_id": "TCGA-KK-A6E0-01Z-00-DX1-5",
       "organ": "prostate",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "train",
       "qc_status": "fail",
       "auc": 0.6616931495007135,
       "nuclear_boundary_contrast": 0.034874480095774874,
@@ -623,7 +675,8 @@
     {
       "sample_id": "TCGA-EW-A6SB-01Z-00-DX1_003",
       "organ": "breast",
-      "split": "test",
+      "organizer_split": "test",
+      "model_split": "test",
       "qc_status": "pass",
       "auc": 0.8668414080546808,
       "nuclear_boundary_contrast": 0.07882748665511685,
@@ -635,7 +688,8 @@
     {
       "sample_id": "TCGA-MH-A560-01Z-00-DX2_1",
       "organ": "kidney",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "train",
       "qc_status": "fail",
       "auc": 0.7282347346661667,
       "nuclear_boundary_contrast": 0.02754150211868489,
@@ -647,7 +701,8 @@
     {
       "sample_id": "TCGA-EW-A6SB-01Z-00-DX1_004",
       "organ": "breast",
-      "split": "test",
+      "organizer_split": "test",
+      "model_split": "test",
       "qc_status": "fail",
       "auc": 0.7212573632946456,
       "nuclear_boundary_contrast": 0.020291503932518884,
@@ -659,7 +714,8 @@
     {
       "sample_id": "TCGA-MH-A560-01Z-00-DX2_3",
       "organ": "kidney",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "train",
       "qc_status": "fail",
       "auc": 0.7984818088230302,
       "nuclear_boundary_contrast": 0.06331407320973137,
@@ -671,7 +727,8 @@
     {
       "sample_id": "TCGA-EW-A6SB-01Z-00-DX1_005",
       "organ": "breast",
-      "split": "test",
+      "organizer_split": "test",
+      "model_split": "test",
       "qc_status": "fail",
       "auc": 0.758079650938085,
       "nuclear_boundary_contrast": 0.022706262991615267,
@@ -683,7 +740,8 @@
     {
       "sample_id": "TCGA-MP-A4SY-01Z-00-DX1_1",
       "organ": "lung",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "train",
       "qc_status": "fail",
       "auc": 0.5755122131454957,
       "nuclear_boundary_contrast": 0.012891868084499714,
@@ -695,7 +753,8 @@
     {
       "sample_id": "TCGA-G7-A8LD-01Z-00-DX1_1",
       "organ": "kidney",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "development",
       "qc_status": "pass",
       "auc": 0.7145412839106405,
       "nuclear_boundary_contrast": 0.06567420144738001,
@@ -707,7 +766,8 @@
     {
       "sample_id": "TCGA-MP-A4SY-01Z-00-DX1_4",
       "organ": "lung",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "train",
       "qc_status": "fail",
       "auc": 0.721835626242445,
       "nuclear_boundary_contrast": 0.042562810456882705,
@@ -719,7 +779,8 @@
     {
       "sample_id": "TCGA-G7-A8LD-01Z-00-DX1_7",
       "organ": "kidney",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "development",
       "qc_status": "fail",
       "auc": 0.5587427466095186,
       "nuclear_boundary_contrast": 0.0433811231859369,
@@ -731,7 +792,8 @@
     {
       "sample_id": "TCGA-P4-AAVK-01Z-00-DX1_1",
       "organ": "kidney",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "train",
       "qc_status": "fail",
       "auc": 0.7945468692508517,
       "nuclear_boundary_contrast": 0.025068233368032655,
@@ -743,7 +805,8 @@
     {
       "sample_id": "TCGA-G7-A8LD-01Z-00-DX1_8",
       "organ": "kidney",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "development",
       "qc_status": "fail",
       "auc": 0.5441426375784029,
       "nuclear_boundary_contrast": 0.03368211060292095,
@@ -755,7 +818,8 @@
     {
       "sample_id": "TCGA-P4-AAVK-01Z-00-DX1_2",
       "organ": "kidney",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "train",
       "qc_status": "fail",
       "auc": 0.8001008215732386,
       "nuclear_boundary_contrast": 0.019518786431796165,
@@ -767,7 +831,8 @@
     {
       "sample_id": "TCGA-G9-6356-01Z-00-DX1_3",
       "organ": "prostate",
-      "split": "test",
+      "organizer_split": "test",
+      "model_split": "test",
       "qc_status": "pass",
       "auc": 0.7686097519847738,
       "nuclear_boundary_contrast": 0.050677559109554515,
@@ -779,7 +844,8 @@
     {
       "sample_id": "TCGA-S3-AA11-01Z-00-DX1_5",
       "organ": "breast",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "train",
       "qc_status": "fail",
       "auc": 0.6893351776498611,
       "nuclear_boundary_contrast": 0.04728878197141573,
@@ -791,7 +857,8 @@
     {
       "sample_id": "TCGA-G9-6356-01Z-00-DX1_4",
       "organ": "prostate",
-      "split": "test",
+      "organizer_split": "test",
+      "model_split": "test",
       "qc_status": "fail",
       "auc": 0.7440662760051464,
       "nuclear_boundary_contrast": 0.04483569112351349,
@@ -803,7 +870,8 @@
     {
       "sample_id": "TCGA-UZ-A9PO-01Z-00-DX1_1",
       "organ": "kidney",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "train",
       "qc_status": "fail",
       "auc": 0.7512323993644647,
       "nuclear_boundary_contrast": 0.025179253673004,
@@ -815,7 +883,8 @@
     {
       "sample_id": "TCGA-G9-6499-01Z-00-DX1-2",
       "organ": "prostate",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "development",
       "qc_status": "fail",
       "auc": 0.794099002180862,
       "nuclear_boundary_contrast": 0.026927107003018147,
@@ -827,7 +896,8 @@
     {
       "sample_id": "TCGA-UZ-A9PO-01Z-00-DX1_4",
       "organ": "kidney",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "train",
       "qc_status": "fail",
       "auc": 0.6411728721081585,
       "nuclear_boundary_contrast": 0.0484964485847279,
@@ -839,7 +909,8 @@
     {
       "sample_id": "TCGA-G9-6499-01Z-00-DX1-3",
       "organ": "prostate",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "development",
       "qc_status": "fail",
       "auc": 0.6189231377213179,
       "nuclear_boundary_contrast": 0.0361636422909698,
@@ -851,7 +922,8 @@
     {
       "sample_id": "TCGA-UZ-A9PU-01Z-00-DX1_1",
       "organ": "kidney",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "train",
       "qc_status": "fail",
       "auc": 0.6861110348354483,
       "nuclear_boundary_contrast": 0.014160867233723229,
@@ -863,7 +935,8 @@
     {
       "sample_id": "TCGA-G9-6499-01Z-00-DX1-5",
       "organ": "prostate",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "development",
       "qc_status": "fail",
       "auc": 0.7882296960454466,
       "nuclear_boundary_contrast": 0.044536860379921106,
@@ -875,7 +948,8 @@
     {
       "sample_id": "TCGA-UZ-A9PU-01Z-00-DX1_2",
       "organ": "kidney",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "train",
       "qc_status": "fail",
       "auc": 0.6359646169712156,
       "nuclear_boundary_contrast": 0.012796950861789225,
@@ -887,7 +961,8 @@
     {
       "sample_id": "TCGA-IZ-A6M9-01Z-00-DX1_3",
       "organ": "kidney",
-      "split": "test",
+      "organizer_split": "test",
+      "model_split": "test",
       "qc_status": "fail",
       "auc": 0.5925142319100877,
       "nuclear_boundary_contrast": 0.030227830001808342,
@@ -899,7 +974,8 @@
     {
       "sample_id": "TCGA-V1-A8WL-01Z-00-DX1-2",
       "organ": "prostate",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "train",
       "qc_status": "fail",
       "auc": 0.5774547309230853,
       "nuclear_boundary_contrast": 0.0415929493107402,
@@ -911,7 +987,8 @@
     {
       "sample_id": "TCGA-L4-A4E5-01Z-00-DX1_2",
       "organ": "lung",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "development",
       "qc_status": "pass",
       "auc": 0.7449452841598065,
       "nuclear_boundary_contrast": 0.0529956364308245,
@@ -923,7 +1000,8 @@
     {
       "sample_id": "TCGA-V1-A9O9-01Z-00-DX1-4",
       "organ": "prostate",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "train",
       "qc_status": "fail",
       "auc": 0.8171597107181848,
       "nuclear_boundary_contrast": 0.04922223355158184,
@@ -935,7 +1013,8 @@
     {
       "sample_id": "TCGA-MP-A4T7-01Z-00-DX1_002",
       "organ": "lung",
-      "split": "test",
+      "organizer_split": "test",
+      "model_split": "test",
       "qc_status": "fail",
       "auc": 0.6171875942781827,
       "nuclear_boundary_contrast": 0.04401025251579771,
@@ -947,7 +1026,8 @@
     {
       "sample_id": "TCGA-V1-A9O9-01Z-00-DX1-5",
       "organ": "prostate",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "train",
       "qc_status": "fail",
       "auc": 0.7305568511377315,
       "nuclear_boundary_contrast": 0.03247695485317004,
@@ -959,7 +1039,8 @@
     {
       "sample_id": "TCGA-MP-A4T7-01Z-00-DX1_004",
       "organ": "lung",
-      "split": "test",
+      "organizer_split": "test",
+      "model_split": "test",
       "qc_status": "fail",
       "auc": 0.7024768270598334,
       "nuclear_boundary_contrast": 0.04309262320145191,
@@ -971,7 +1052,8 @@
     {
       "sample_id": "TCGA-X4-A8KQ-01Z-00-DX8-1",
       "organ": "prostate",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "train",
       "qc_status": "fail",
       "auc": 0.8150424336281413,
       "nuclear_boundary_contrast": 0.04696512188506918,
@@ -983,7 +1065,8 @@
     {
       "sample_id": "TCGA-MP-A4T7-01Z-00-DX1_005",
       "organ": "lung",
-      "split": "test",
+      "organizer_split": "test",
+      "model_split": "test",
       "qc_status": "fail",
       "auc": 0.6743685051238607,
       "nuclear_boundary_contrast": 0.04499656915752959,
@@ -995,7 +1078,8 @@
     {
       "sample_id": "TCGA-X4-A8KQ-01Z-00-DX8-2",
       "organ": "prostate",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "train",
       "qc_status": "fail",
       "auc": 0.723018156136473,
       "nuclear_boundary_contrast": 0.018183467896503158,
@@ -1007,7 +1091,8 @@
     {
       "sample_id": "TCGA-SX-A7SR-01Z-00-DX1_1",
       "organ": "kidney",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "development",
       "qc_status": "fail",
       "auc": 0.7896303286351996,
       "nuclear_boundary_contrast": 0.028975576790698065,
@@ -1019,7 +1104,8 @@
     {
       "sample_id": "TCGA-YL-A9WY-01Z-00-DX1-3",
       "organ": "prostate",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "train",
       "qc_status": "fail",
       "auc": 0.7522354798806093,
       "nuclear_boundary_contrast": 0.0490710010255172,
@@ -1031,7 +1117,8 @@
     {
       "sample_id": "TCGA-SX-A7SR-01Z-00-DX1_2",
       "organ": "kidney",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "development",
       "qc_status": "fail",
       "auc": 0.6540927598097642,
       "nuclear_boundary_contrast": 0.036275630256974445,
@@ -1043,7 +1130,8 @@
     {
       "sample_id": "TCGA-YL-A9WY-01Z-00-DX1-4",
       "organ": "prostate",
-      "split": "train",
+      "organizer_split": "train",
+      "model_split": "train",
       "qc_status": "fail",
       "auc": 0.7112697530474259,
       "nuclear_boundary_contrast": 0.03990533710913158,
@@ -1055,7 +1143,8 @@
     {
       "sample_id": "TCGA-VP-A87E-01Z-00-DX1_1",
       "organ": "prostate",
-      "split": "test",
+      "organizer_split": "test",
+      "model_split": "test",
       "qc_status": "fail",
       "auc": 0.6789148892543434,
       "nuclear_boundary_contrast": 0.018606697305473152,
@@ -1067,7 +1156,8 @@
     {
       "sample_id": "TCGA-VP-A87E-01Z-00-DX1_2",
       "organ": "prostate",
-      "split": "test",
+      "organizer_split": "test",
+      "model_split": "test",
       "qc_status": "fail",
       "auc": 0.7270650637186125,
       "nuclear_boundary_contrast": 0.01742580073958444,
@@ -1079,7 +1169,8 @@
     {
       "sample_id": "TCGA-VP-A87E-01Z-00-DX1_4",
       "organ": "prostate",
-      "split": "test",
+      "organizer_split": "test",
+      "model_split": "test",
       "qc_status": "fail",
       "auc": 0.6978828973226862,
       "nuclear_boundary_contrast": 0.02938234511209248,
@@ -1091,7 +1182,8 @@
     {
       "sample_id": "TCGA-VP-A87H-01Z-00-DX1_6",
       "organ": "prostate",
-      "split": "test",
+      "organizer_split": "test",
+      "model_split": "test",
       "qc_status": "fail",
       "auc": 0.68960180915741,
       "nuclear_boundary_contrast": 0.03423273043132935,
@@ -1103,7 +1195,8 @@
     {
       "sample_id": "TCGA-YL-A9WL-01Z-00-DX1_2",
       "organ": "prostate",
-      "split": "test",
+      "organizer_split": "test",
+      "model_split": "test",
       "qc_status": "pass",
       "auc": 0.7099589443474297,
       "nuclear_boundary_contrast": 0.07993520502809792,
@@ -1115,7 +1208,8 @@
     {
       "sample_id": "TCGA-YL-A9WL-01Z-00-DX1_4",
       "organ": "prostate",
-      "split": "test",
+      "organizer_split": "test",
+      "model_split": "test",
       "qc_status": "fail",
       "auc": 0.7787592127323804,
       "nuclear_boundary_contrast": 0.04257699793256442,

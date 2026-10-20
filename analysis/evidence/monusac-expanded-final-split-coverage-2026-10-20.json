@@ -1,0 +1,1157 @@
+{
+  "status": "frozen_patient_separated_matching_source",
+  "source_summary_sha256": {
+    "tambua-fit-match-summary-2026-10-20": "74daf35ab9fadecd51913622f51ff4e9ca3cec0210d0aaf267dd1d212e92990b",
+    "tambua-eval-match-summary-2026-10-20": "48c347914703c790b06ce1d312577f4e9a3c71353b9b32ef2368f2cb4c94bebe"
+  },
+  "images": 93,
+  "model_splits": {
+    "train": 44,
+    "development": 15,
+    "test": 34
+  },
+  "qc_passing_model_splits": {
+    "train": 2,
+    "development": 3,
+    "test": 4
+  },
+  "qc_passing_conservatively_matched_cells": {
+    "train": {
+      "epithelial": 13,
+      "lymphocyte": 2,
+      "macrophage": 8,
+      "neutrophil": 4
+    },
+    "development": {
+      "epithelial": 12,
+      "lymphocyte": 10,
+      "macrophage": 9,
+      "neutrophil": 9
+    },
+    "test": {
+      "epithelial": 6,
+      "lymphocyte": 148,
+      "macrophage": 25,
+      "neutrophil": 5
+    }
+  },
+  "records": [
+    {
+      "sample_id": "TCGA-69-A59K-01Z-00-DX1_002",
+      "patient_id": "TCGA-69-A59K",
+      "model_split": "train",
+      "organ": "lung",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 0,
+        "macrophage": 0,
+        "neutrophil": 5
+      }
+    },
+    {
+      "sample_id": "TCGA-73-4668-01Z-00-DX1_004",
+      "patient_id": "TCGA-73-4668",
+      "model_split": "train",
+      "organ": "lung",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 202,
+        "macrophage": 1,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-86-7713-01Z-00-DX1_001",
+      "patient_id": "TCGA-86-7713",
+      "model_split": "train",
+      "organ": "lung",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 0,
+        "macrophage": 0,
+        "neutrophil": 10
+      }
+    },
+    {
+      "sample_id": "TCGA-B9-A44B-01Z-00-DX1_1",
+      "patient_id": "TCGA-B9-A44B",
+      "model_split": "train",
+      "organ": "kidney",
+      "matched_by_type": {
+        "epithelial": 2,
+        "lymphocyte": 433,
+        "macrophage": 0,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-BH-A18T-01Z-00-DX1_3",
+      "patient_id": "TCGA-BH-A18T",
+      "model_split": "train",
+      "organ": "breast",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 4,
+        "macrophage": 6,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-BH-A18T-01Z-00-DX1_4",
+      "patient_id": "TCGA-BH-A18T",
+      "model_split": "train",
+      "organ": "breast",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 41,
+        "macrophage": 0,
+        "neutrophil": 9
+      }
+    },
+    {
+      "sample_id": "TCGA-DW-7841-01Z-00-DX1_3",
+      "patient_id": "TCGA-DW-7841",
+      "model_split": "train",
+      "organ": "kidney",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 2,
+        "macrophage": 6,
+        "neutrophil": 2
+      }
+    },
+    {
+      "sample_id": "TCGA-E2-A154-01Z-00-DX1_1",
+      "patient_id": "TCGA-E2-A154",
+      "model_split": "train",
+      "organ": "breast",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 103,
+        "macrophage": 0,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-E2-A154-01Z-00-DX1_5",
+      "patient_id": "TCGA-E2-A154",
+      "model_split": "train",
+      "organ": "breast",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 97,
+        "macrophage": 0,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-E9-A22B-01Z-00-DX1_6",
+      "patient_id": "TCGA-E9-A22B",
+      "model_split": "train",
+      "organ": "breast",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 1,
+        "macrophage": 3,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-EJ-5495-01Z-00-DX1-2",
+      "patient_id": "TCGA-EJ-5495",
+      "model_split": "train",
+      "organ": "prostate",
+      "matched_by_type": {
+        "epithelial": 3,
+        "lymphocyte": 320,
+        "macrophage": 0,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-EJ-5495-01Z-00-DX1-3",
+      "patient_id": "TCGA-EJ-5495",
+      "model_split": "train",
+      "organ": "prostate",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 0,
+        "macrophage": 6,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-EJ-5505-01Z-00-DX1-2",
+      "patient_id": "TCGA-EJ-5505",
+      "model_split": "train",
+      "organ": "prostate",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 0,
+        "macrophage": 0,
+        "neutrophil": 5
+      }
+    },
+    {
+      "sample_id": "TCGA-EJ-5505-01Z-00-DX1-4",
+      "patient_id": "TCGA-EJ-5505",
+      "model_split": "train",
+      "organ": "prostate",
+      "matched_by_type": {
+        "epithelial": 5,
+        "lymphocyte": 5,
+        "macrophage": 0,
+        "neutrophil": 17
+      }
+    },
+    {
+      "sample_id": "TCGA-EV-5903-01Z-00-DX1_2",
+      "patient_id": "TCGA-EV-5903",
+      "model_split": "train",
+      "organ": "kidney",
+      "matched_by_type": {
+        "epithelial": 20,
+        "lymphocyte": 485,
+        "macrophage": 0,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-EV-5903-01Z-00-DX1_4",
+      "patient_id": "TCGA-EV-5903",
+      "model_split": "train",
+      "organ": "kidney",
+      "matched_by_type": {
+        "epithelial": 7,
+        "lymphocyte": 2,
+        "macrophage": 2,
+        "neutrophil": 4
+      }
+    },
+    {
+      "sample_id": "TCGA-EW-A6SD-01Z-00-DX1_5",
+      "patient_id": "TCGA-EW-A6SD",
+      "model_split": "train",
+      "organ": "breast",
+      "matched_by_type": {
+        "epithelial": 2,
+        "lymphocyte": 342,
+        "macrophage": 0,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-F9-A97G-01Z-00-DX1_4",
+      "patient_id": "TCGA-F9-A97G",
+      "model_split": "train",
+      "organ": "kidney",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 0,
+        "macrophage": 0,
+        "neutrophil": 3
+      }
+    },
+    {
+      "sample_id": "TCGA-G9-6342-01Z-00-DX1-2",
+      "patient_id": "TCGA-G9-6342",
+      "model_split": "train",
+      "organ": "prostate",
+      "matched_by_type": {
+        "epithelial": 1,
+        "lymphocyte": 2,
+        "macrophage": 0,
+        "neutrophil": 6
+      }
+    },
+    {
+      "sample_id": "TCGA-J4-A67Q-01Z-00-DX1-3",
+      "patient_id": "TCGA-J4-A67Q",
+      "model_split": "train",
+      "organ": "prostate",
+      "matched_by_type": {
+        "epithelial": 1,
+        "lymphocyte": 311,
+        "macrophage": 0,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-J4-A67Q-01Z-00-DX1-4",
+      "patient_id": "TCGA-J4-A67Q",
+      "model_split": "train",
+      "organ": "prostate",
+      "matched_by_type": {
+        "epithelial": 71,
+        "lymphocyte": 0,
+        "macrophage": 0,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-J4-A67T-01Z-00-DX1-1",
+      "patient_id": "TCGA-J4-A67T",
+      "model_split": "train",
+      "organ": "prostate",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 265,
+        "macrophage": 0,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-J4-A67T-01Z-00-DX1-5",
+      "patient_id": "TCGA-J4-A67T",
+      "model_split": "train",
+      "organ": "prostate",
+      "matched_by_type": {
+        "epithelial": 3,
+        "lymphocyte": 144,
+        "macrophage": 0,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-KK-A59X-01Z-00-DX1-2",
+      "patient_id": "TCGA-KK-A59X",
+      "model_split": "train",
+      "organ": "prostate",
+      "matched_by_type": {
+        "epithelial": 6,
+        "lymphocyte": 0,
+        "macrophage": 6,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-KK-A6E0-01Z-00-DX1-3",
+      "patient_id": "TCGA-KK-A6E0",
+      "model_split": "train",
+      "organ": "prostate",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 0,
+        "macrophage": 14,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-KK-A6E0-01Z-00-DX1-5",
+      "patient_id": "TCGA-KK-A6E0",
+      "model_split": "train",
+      "organ": "prostate",
+      "matched_by_type": {
+        "epithelial": 4,
+        "lymphocyte": 0,
+        "macrophage": 3,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-MH-A560-01Z-00-DX2_1",
+      "patient_id": "TCGA-MH-A560",
+      "model_split": "train",
+      "organ": "kidney",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 209,
+        "macrophage": 0,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-MH-A560-01Z-00-DX2_3",
+      "patient_id": "TCGA-MH-A560",
+      "model_split": "train",
+      "organ": "kidney",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 0,
+        "macrophage": 6,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-MP-A4SY-01Z-00-DX1_1",
+      "patient_id": "TCGA-MP-A4SY",
+      "model_split": "train",
+      "organ": "lung",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 7,
+        "macrophage": 0,
+        "neutrophil": 11
+      }
+    },
+    {
+      "sample_id": "TCGA-MP-A4SY-01Z-00-DX1_4",
+      "patient_id": "TCGA-MP-A4SY",
+      "model_split": "train",
+      "organ": "lung",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 8,
+        "macrophage": 43,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-P4-AAVK-01Z-00-DX1_1",
+      "patient_id": "TCGA-P4-AAVK",
+      "model_split": "train",
+      "organ": "kidney",
+      "matched_by_type": {
+        "epithelial": 3,
+        "lymphocyte": 188,
+        "macrophage": 0,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-P4-AAVK-01Z-00-DX1_2",
+      "patient_id": "TCGA-P4-AAVK",
+      "model_split": "train",
+      "organ": "kidney",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 88,
+        "macrophage": 0,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-S3-AA11-01Z-00-DX1_5",
+      "patient_id": "TCGA-S3-AA11",
+      "model_split": "train",
+      "organ": "breast",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 0,
+        "macrophage": 11,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-UZ-A9PO-01Z-00-DX1_1",
+      "patient_id": "TCGA-UZ-A9PO",
+      "model_split": "train",
+      "organ": "kidney",
+      "matched_by_type": {
+        "epithelial": 4,
+        "lymphocyte": 265,
+        "macrophage": 0,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-UZ-A9PO-01Z-00-DX1_4",
+      "patient_id": "TCGA-UZ-A9PO",
+      "model_split": "train",
+      "organ": "kidney",
+      "matched_by_type": {
+        "epithelial": 2,
+        "lymphocyte": 7,
+        "macrophage": 8,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-UZ-A9PU-01Z-00-DX1_1",
+      "patient_id": "TCGA-UZ-A9PU",
+      "model_split": "train",
+      "organ": "kidney",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 151,
+        "macrophage": 0,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-UZ-A9PU-01Z-00-DX1_2",
+      "patient_id": "TCGA-UZ-A9PU",
+      "model_split": "train",
+      "organ": "kidney",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 171,
+        "macrophage": 0,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-V1-A8WL-01Z-00-DX1-2",
+      "patient_id": "TCGA-V1-A8WL",
+      "model_split": "train",
+      "organ": "prostate",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 1,
+        "macrophage": 8,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-V1-A9O9-01Z-00-DX1-4",
+      "patient_id": "TCGA-V1-A9O9",
+      "model_split": "train",
+      "organ": "prostate",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 3,
+        "macrophage": 5,
+        "neutrophil": 2
+      }
+    },
+    {
+      "sample_id": "TCGA-V1-A9O9-01Z-00-DX1-5",
+      "patient_id": "TCGA-V1-A9O9",
+      "model_split": "train",
+      "organ": "prostate",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 3,
+        "macrophage": 11,
+        "neutrophil": 4
+      }
+    },
+    {
+      "sample_id": "TCGA-X4-A8KQ-01Z-00-DX8-1",
+      "patient_id": "TCGA-X4-A8KQ",
+      "model_split": "train",
+      "organ": "prostate",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 132,
+        "macrophage": 0,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-X4-A8KQ-01Z-00-DX8-2",
+      "patient_id": "TCGA-X4-A8KQ",
+      "model_split": "train",
+      "organ": "prostate",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 178,
+        "macrophage": 0,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-YL-A9WY-01Z-00-DX1-3",
+      "patient_id": "TCGA-YL-A9WY",
+      "model_split": "train",
+      "organ": "prostate",
+      "matched_by_type": {
+        "epithelial": 2,
+        "lymphocyte": 157,
+        "macrophage": 0,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-YL-A9WY-01Z-00-DX1-4",
+      "patient_id": "TCGA-YL-A9WY",
+      "model_split": "train",
+      "organ": "prostate",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 109,
+        "macrophage": 0,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-B6-A0WZ-01Z-00-DX1_2",
+      "patient_id": "TCGA-B6-A0WZ",
+      "model_split": "development",
+      "organ": "breast",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 0,
+        "macrophage": 8,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-B6-A0WZ-01Z-00-DX1_3",
+      "patient_id": "TCGA-B6-A0WZ",
+      "model_split": "development",
+      "organ": "breast",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 1,
+        "macrophage": 0,
+        "neutrophil": 2
+      }
+    },
+    {
+      "sample_id": "TCGA-B6-A0WZ-01Z-00-DX1_4",
+      "patient_id": "TCGA-B6-A0WZ",
+      "model_split": "development",
+      "organ": "breast",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 1,
+        "macrophage": 11,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-E9-A22G-01Z-00-DX1_3",
+      "patient_id": "TCGA-E9-A22G",
+      "model_split": "development",
+      "organ": "breast",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 6,
+        "macrophage": 2,
+        "neutrophil": 2
+      }
+    },
+    {
+      "sample_id": "TCGA-E9-A22G-01Z-00-DX1_4",
+      "patient_id": "TCGA-E9-A22G",
+      "model_split": "development",
+      "organ": "breast",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 0,
+        "macrophage": 5,
+        "neutrophil": 1
+      }
+    },
+    {
+      "sample_id": "TCGA-EJ-5517-01Z-00-DX1-1",
+      "patient_id": "TCGA-EJ-5517",
+      "model_split": "development",
+      "organ": "prostate",
+      "matched_by_type": {
+        "epithelial": 13,
+        "lymphocyte": 10,
+        "macrophage": 0,
+        "neutrophil": 12
+      }
+    },
+    {
+      "sample_id": "TCGA-G7-A8LD-01Z-00-DX1_1",
+      "patient_id": "TCGA-G7-A8LD",
+      "model_split": "development",
+      "organ": "kidney",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 1,
+        "macrophage": 0,
+        "neutrophil": 7
+      }
+    },
+    {
+      "sample_id": "TCGA-G7-A8LD-01Z-00-DX1_7",
+      "patient_id": "TCGA-G7-A8LD",
+      "model_split": "development",
+      "organ": "kidney",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 0,
+        "macrophage": 0,
+        "neutrophil": 3
+      }
+    },
+    {
+      "sample_id": "TCGA-G7-A8LD-01Z-00-DX1_8",
+      "patient_id": "TCGA-G7-A8LD",
+      "model_split": "development",
+      "organ": "kidney",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 0,
+        "macrophage": 0,
+        "neutrophil": 6
+      }
+    },
+    {
+      "sample_id": "TCGA-G9-6499-01Z-00-DX1-2",
+      "patient_id": "TCGA-G9-6499",
+      "model_split": "development",
+      "organ": "prostate",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 261,
+        "macrophage": 0,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-G9-6499-01Z-00-DX1-3",
+      "patient_id": "TCGA-G9-6499",
+      "model_split": "development",
+      "organ": "prostate",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 2,
+        "macrophage": 0,
+        "neutrophil": 9
+      }
+    },
+    {
+      "sample_id": "TCGA-G9-6499-01Z-00-DX1-5",
+      "patient_id": "TCGA-G9-6499",
+      "model_split": "development",
+      "organ": "prostate",
+      "matched_by_type": {
+        "epithelial": 41,
+        "lymphocyte": 44,
+        "macrophage": 0,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-L4-A4E5-01Z-00-DX1_2",
+      "patient_id": "TCGA-L4-A4E5",
+      "model_split": "development",
+      "organ": "lung",
+      "matched_by_type": {
+        "epithelial": 12,
+        "lymphocyte": 3,
+        "macrophage": 7,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-SX-A7SR-01Z-00-DX1_1",
+      "patient_id": "TCGA-SX-A7SR",
+      "model_split": "development",
+      "organ": "kidney",
+      "matched_by_type": {
+        "epithelial": 215,
+        "lymphocyte": 15,
+        "macrophage": 0,
+        "neutrophil": 1
+      }
+    },
+    {
+      "sample_id": "TCGA-SX-A7SR-01Z-00-DX1_2",
+      "patient_id": "TCGA-SX-A7SR",
+      "model_split": "development",
+      "organ": "kidney",
+      "matched_by_type": {
+        "epithelial": 38,
+        "lymphocyte": 15,
+        "macrophage": 9,
+        "neutrophil": 7
+      }
+    },
+    {
+      "sample_id": "TCGA-2Z-A9JN-01Z-00-DX1_1",
+      "patient_id": "TCGA-2Z-A9JN",
+      "model_split": "test",
+      "organ": "kidney",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 231,
+        "macrophage": 0,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-2Z-A9JN-01Z-00-DX1_3",
+      "patient_id": "TCGA-2Z-A9JN",
+      "model_split": "test",
+      "organ": "kidney",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 0,
+        "macrophage": 0,
+        "neutrophil": 5
+      }
+    },
+    {
+      "sample_id": "TCGA-49-6743-01Z-00-DX2_001",
+      "patient_id": "TCGA-49-6743",
+      "model_split": "test",
+      "organ": "lung",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 8,
+        "macrophage": 15,
+        "neutrophil": 1
+      }
+    },
+    {
+      "sample_id": "TCGA-49-6743-01Z-00-DX2_003",
+      "patient_id": "TCGA-49-6743",
+      "model_split": "test",
+      "organ": "lung",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 353,
+        "macrophage": 0,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-49-6743-01Z-00-DX2_005",
+      "patient_id": "TCGA-49-6743",
+      "model_split": "test",
+      "organ": "lung",
+      "matched_by_type": {
+        "epithelial": 96,
+        "lymphocyte": 5,
+        "macrophage": 0,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-55-7570-01Z-00-DX1_001",
+      "patient_id": "TCGA-55-7570",
+      "model_split": "test",
+      "organ": "lung",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 304,
+        "macrophage": 0,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-55-7573-01Z-00-DX1_003",
+      "patient_id": "TCGA-55-7573",
+      "model_split": "test",
+      "organ": "lung",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 318,
+        "macrophage": 0,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-73-4662-01Z-00-DX1_001",
+      "patient_id": "TCGA-73-4662",
+      "model_split": "test",
+      "organ": "lung",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 299,
+        "macrophage": 0,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-73-4662-01Z-00-DX1_002",
+      "patient_id": "TCGA-73-4662",
+      "model_split": "test",
+      "organ": "lung",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 0,
+        "macrophage": 0,
+        "neutrophil": 3
+      }
+    },
+    {
+      "sample_id": "TCGA-78-7152-01Z-00-DX1_001",
+      "patient_id": "TCGA-78-7152",
+      "model_split": "test",
+      "organ": "lung",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 8,
+        "macrophage": 0,
+        "neutrophil": 4
+      }
+    },
+    {
+      "sample_id": "TCGA-A2-A0ES-01Z-00-DX1_001",
+      "patient_id": "TCGA-A2-A0ES",
+      "model_split": "test",
+      "organ": "breast",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 318,
+        "macrophage": 0,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-D8-A3Z6-01Z-00-DX2_001",
+      "patient_id": "TCGA-D8-A3Z6",
+      "model_split": "test",
+      "organ": "breast",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 204,
+        "macrophage": 0,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-D8-A3Z6-01Z-00-DX2_003",
+      "patient_id": "TCGA-D8-A3Z6",
+      "model_split": "test",
+      "organ": "breast",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 43,
+        "macrophage": 0,
+        "neutrophil": 3
+      }
+    },
+    {
+      "sample_id": "TCGA-D8-A3Z6-01Z-00-DX2_004",
+      "patient_id": "TCGA-D8-A3Z6",
+      "model_split": "test",
+      "organ": "breast",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 56,
+        "macrophage": 0,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-DW-7838-01Z-00-DX1_3",
+      "patient_id": "TCGA-DW-7838",
+      "model_split": "test",
+      "organ": "kidney",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 0,
+        "macrophage": 4,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-DW-7963-01Z-00-DX1_1",
+      "patient_id": "TCGA-DW-7963",
+      "model_split": "test",
+      "organ": "kidney",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 260,
+        "macrophage": 0,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-E2-A108-01Z-00-DX1_004",
+      "patient_id": "TCGA-E2-A108",
+      "model_split": "test",
+      "organ": "breast",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 0,
+        "macrophage": 12,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-EW-A6SB-01Z-00-DX1_001",
+      "patient_id": "TCGA-EW-A6SB",
+      "model_split": "test",
+      "organ": "breast",
+      "matched_by_type": {
+        "epithelial": 40,
+        "lymphocyte": 7,
+        "macrophage": 0,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-EW-A6SB-01Z-00-DX1_002",
+      "patient_id": "TCGA-EW-A6SB",
+      "model_split": "test",
+      "organ": "breast",
+      "matched_by_type": {
+        "epithelial": 76,
+        "lymphocyte": 16,
+        "macrophage": 0,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-EW-A6SB-01Z-00-DX1_003",
+      "patient_id": "TCGA-EW-A6SB",
+      "model_split": "test",
+      "organ": "breast",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 0,
+        "macrophage": 4,
+        "neutrophil": 5
+      }
+    },
+    {
+      "sample_id": "TCGA-EW-A6SB-01Z-00-DX1_004",
+      "patient_id": "TCGA-EW-A6SB",
+      "model_split": "test",
+      "organ": "breast",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 96,
+        "macrophage": 0,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-EW-A6SB-01Z-00-DX1_005",
+      "patient_id": "TCGA-EW-A6SB",
+      "model_split": "test",
+      "organ": "breast",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 142,
+        "macrophage": 0,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-G9-6356-01Z-00-DX1_3",
+      "patient_id": "TCGA-G9-6356",
+      "model_split": "test",
+      "organ": "prostate",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 148,
+        "macrophage": 0,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-G9-6356-01Z-00-DX1_4",
+      "patient_id": "TCGA-G9-6356",
+      "model_split": "test",
+      "organ": "prostate",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 142,
+        "macrophage": 0,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-IZ-A6M9-01Z-00-DX1_3",
+      "patient_id": "TCGA-IZ-A6M9",
+      "model_split": "test",
+      "organ": "kidney",
+      "matched_by_type": {
+        "epithelial": 12,
+        "lymphocyte": 2,
+        "macrophage": 14,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-MP-A4T7-01Z-00-DX1_002",
+      "patient_id": "TCGA-MP-A4T7",
+      "model_split": "test",
+      "organ": "lung",
+      "matched_by_type": {
+        "epithelial": 7,
+        "lymphocyte": 0,
+        "macrophage": 5,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-MP-A4T7-01Z-00-DX1_004",
+      "patient_id": "TCGA-MP-A4T7",
+      "model_split": "test",
+      "organ": "lung",
+      "matched_by_type": {
+        "epithelial": 262,
+        "lymphocyte": 5,
+        "macrophage": 0,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-MP-A4T7-01Z-00-DX1_005",
+      "patient_id": "TCGA-MP-A4T7",
+      "model_split": "test",
+      "organ": "lung",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 2,
+        "macrophage": 0,
+        "neutrophil": 3
+      }
+    },
+    {
+      "sample_id": "TCGA-VP-A87E-01Z-00-DX1_1",
+      "patient_id": "TCGA-VP-A87E",
+      "model_split": "test",
+      "organ": "prostate",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 131,
+        "macrophage": 0,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-VP-A87E-01Z-00-DX1_2",
+      "patient_id": "TCGA-VP-A87E",
+      "model_split": "test",
+      "organ": "prostate",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 116,
+        "macrophage": 0,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-VP-A87E-01Z-00-DX1_4",
+      "patient_id": "TCGA-VP-A87E",
+      "model_split": "test",
+      "organ": "prostate",
+      "matched_by_type": {
+        "epithelial": 9,
+        "lymphocyte": 4,
+        "macrophage": 8,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-VP-A87H-01Z-00-DX1_6",
+      "patient_id": "TCGA-VP-A87H",
+      "model_split": "test",
+      "organ": "prostate",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 0,
+        "macrophage": 51,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-YL-A9WL-01Z-00-DX1_2",
+      "patient_id": "TCGA-YL-A9WL",
+      "model_split": "test",
+      "organ": "prostate",
+      "matched_by_type": {
+        "epithelial": 6,
+        "lymphocyte": 0,
+        "macrophage": 9,
+        "neutrophil": 0
+      }
+    },
+    {
+      "sample_id": "TCGA-YL-A9WL-01Z-00-DX1_4",
+      "patient_id": "TCGA-YL-A9WL",
+      "model_split": "test",
+      "organ": "prostate",
+      "matched_by_type": {
+        "epithelial": 116,
+        "lymphocyte": 0,
+        "macrophage": 0,
+        "neutrophil": 0
+      }
+    }
+  ],
+  "limit": "Pre-quantification expert-to-StarDist matching. Cell counts in a DAPI-QC-passing image do not establish virtual marker validity or classifier accuracy."
+}

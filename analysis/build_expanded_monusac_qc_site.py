@@ -37,7 +37,7 @@ def reviewed_ids(evidence: Path) -> dict[str, str]:
     return out
 
 
-def build(site_assets: Path, evidence: Path) -> dict:
+def build(site_assets: Path, evidence: Path, split_map_path: Path) -> dict:
     source = site_assets / "manifest.json"
     data = json.loads(source.read_text())
     records = data["records"]
@@ -48,7 +48,18 @@ def build(site_assets: Path, evidence: Path) -> dict:
     samples = {row["sample_id"] for row in records}
     if set(reviews) != samples or len(samples) != 93:
         raise ValueError(f"Manual review coverage differs: {sorted(samples-set(reviews))}")
+    split_source = json.loads(split_map_path.read_text())
+    splits = {row["sample_id"]: row for row in split_source["records"]}
+    if split_source["status"] != "frozen_patient_separated_matching_source" or \
+            set(splits) != samples or len(split_source["records"]) != 93:
+        raise ValueError("Patient-separated model split map differs from the 93 images")
     by_id = {row["sample_id"]: row for row in records}
+    for sample, row in by_id.items():
+        model_split = splits[sample]["model_split"]
+        if row["organ"] != splits[sample]["organ"] or \
+                (row["split"] == "test") != (model_split == "test") or \
+                model_split not in {"train", "development", "test"}:
+            raise ValueError(f"Organizer source and model split disagree: {sample}")
     case_dir = site_assets / "cases"
     if case_dir.exists() or (site_assets / "site-manifest.json").exists():
         raise FileExistsError("Diagnostic site output exists; preserve published evidence")
@@ -66,7 +77,8 @@ def build(site_assets: Path, evidence: Path) -> dict:
                 crop = sheet.crop((0, y, WIDTH, y + ROW))
                 crop.save(case_dir / f"{sample}.webp", "WEBP", quality=90)
                 pages.append({"sample_id": sample, "organ": by_id[sample]["organ"],
-                              "split": by_id[sample]["split"],
+                              "organizer_split": by_id[sample]["split"],
+                              "model_split": splits[sample]["model_split"],
                               "qc_status": by_id[sample]["qc_status"],
                               "auc": by_id[sample]["dapi_auc"],
                               "nuclear_boundary_contrast": by_id[sample]["dapi_boundary_contrast"],
@@ -78,6 +90,7 @@ def build(site_assets: Path, evidence: Path) -> dict:
         raise ValueError("Contact sheets omit or duplicate a case")
     report = {"status": "diagnostic_gallery_complete",
               "source_manifest_sha256": hashlib.sha256(source.read_bytes()).hexdigest(),
+              "model_split_map_sha256": hashlib.sha256(split_map_path.read_bytes()).hexdigest(),
               "images": 93, "qc_pass": 9, "qc_fail": 84,
               "all_images_manually_reviewed_at_contact_sheet_scale": True,
               "scope": "Scanner RGB, virtual DAPI, StarDist overlay, virtual CK and CD68 for every additional annotated MoNuSAC image",
@@ -91,6 +104,7 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--site-assets", type=Path, required=True)
     ap.add_argument("--evidence", type=Path, required=True)
+    ap.add_argument("--split-map", type=Path, required=True)
     a = ap.parse_args()
-    result = build(a.site_assets, a.evidence)
+    result = build(a.site_assets, a.evidence, a.split_map)
     print(json.dumps({key: result[key] for key in ("status", "images", "qc_pass", "qc_fail")}))
