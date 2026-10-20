@@ -1,0 +1,45 @@
+{
+  "status": "partial_diagnostic",
+  "completed_cases": 68,
+  "source_identity_sha256": "f2cd350c442234e4168fadc3e8f40dcd0ef01be16a771fcb118c07f7f4ad2a1b",
+  "overall": {
+    "fail": 61,
+    "pass": 7
+  },
+  "gate_counts": {
+    "alignment_status": {
+      "fail": 60,
+      "pass": 8
+    },
+    "border_shadow_status": {
+      "pass": 64,
+      "insufficient": 1,
+      "fail": 3
+    },
+    "spatial_shadow_status": {
+      "pass": 44,
+      "fail": 24
+    }
+  },
+  "failed_alignment": 60,
+  "failed_with_alignment_pass": 1,
+  "by_organ": {
+    "breast": {
+      "cases": 22,
+      "pass": 3
+    },
+    "kidney": {
+      "cases": 17,
+      "pass": 2
+    },
+    "lung": {
+      "cases": 13,
+      "pass": 0
+    },
+    "prostate": {
+      "cases": 16,
+      "pass": 2
+    }
+  },
+  "interpretation": "Most failures may be nuclear alignment rather than the explicit border or spatial shadow gates. These gate counts overlap and cannot be added. A visual near-pass does not authorize threshold relaxation or establish protein specificity."
+}
