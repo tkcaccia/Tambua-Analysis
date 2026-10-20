@@ -1,0 +1,383 @@
+{
+  "status": "complete",
+  "device": "CPU",
+  "patients": 10,
+  "pixel_stride": 4,
+  "markers": [
+    "DAPI"
+  ],
+  "scope": "Registered raw ORION fluorescence versus native spatial GigaTIME channels",
+  "compartment_source": "Published registered ORION nuclear and cytoplasm masks; not H&E StarDist detections",
+  "display_transform_used_for_scoring": false,
+  "per_patient": [
+    {
+      "patient": "CRC04",
+      "virtual_marker": "DAPI",
+      "measured_marker": "Hoechst",
+      "relation": "nuclear-dye family",
+      "compartment": "full_field",
+      "pixels": 262144,
+      "spearman_rho": 0.7378190015387268,
+      "source_mpp": 0.325,
+      "model_mpp": 0.25
+    },
+    {
+      "patient": "CRC04",
+      "virtual_marker": "DAPI",
+      "measured_marker": "Hoechst",
+      "relation": "nuclear-dye family",
+      "compartment": "registered_nuclei",
+      "pixels": 69532,
+      "spearman_rho": 0.12823924866081235,
+      "source_mpp": 0.325,
+      "model_mpp": 0.25
+    },
+    {
+      "patient": "CRC04",
+      "virtual_marker": "DAPI",
+      "measured_marker": "Hoechst",
+      "relation": "nuclear-dye family",
+      "compartment": "registered_cytoplasm",
+      "pixels": 130726,
+      "spearman_rho": 0.6130367760478557,
+      "source_mpp": 0.325,
+      "model_mpp": 0.25
+    },
+    {
+      "patient": "CRC06",
+      "virtual_marker": "DAPI",
+      "measured_marker": "Hoechst",
+      "relation": "nuclear-dye family",
+      "compartment": "full_field",
+      "pixels": 262144,
+      "spearman_rho": 0.875721170835291,
+      "source_mpp": 0.325,
+      "model_mpp": 0.25
+    },
+    {
+      "patient": "CRC06",
+      "virtual_marker": "DAPI",
+      "measured_marker": "Hoechst",
+      "relation": "nuclear-dye family",
+      "compartment": "registered_nuclei",
+      "pixels": 49851,
+      "spearman_rho": 0.20731019640516574,
+      "source_mpp": 0.325,
+      "model_mpp": 0.25
+    },
+    {
+      "patient": "CRC06",
+      "virtual_marker": "DAPI",
+      "measured_marker": "Hoechst",
+      "relation": "nuclear-dye family",
+      "compartment": "registered_cytoplasm",
+      "pixels": 126086,
+      "spearman_rho": 0.7636460170136107,
+      "source_mpp": 0.325,
+      "model_mpp": 0.25
+    },
+    {
+      "patient": "CRC08",
+      "virtual_marker": "DAPI",
+      "measured_marker": "Hoechst",
+      "relation": "nuclear-dye family",
+      "compartment": "full_field",
+      "pixels": 262144,
+      "spearman_rho": 0.7809848923522206,
+      "source_mpp": 0.325,
+      "model_mpp": 0.25
+    },
+    {
+      "patient": "CRC08",
+      "virtual_marker": "DAPI",
+      "measured_marker": "Hoechst",
+      "relation": "nuclear-dye family",
+      "compartment": "registered_nuclei",
+      "pixels": 48415,
+      "spearman_rho": 0.04784121965387426,
+      "source_mpp": 0.325,
+      "model_mpp": 0.25
+    },
+    {
+      "patient": "CRC08",
+      "virtual_marker": "DAPI",
+      "measured_marker": "Hoechst",
+      "relation": "nuclear-dye family",
+      "compartment": "registered_cytoplasm",
+      "pixels": 135136,
+      "spearman_rho": 0.6426637026015355,
+      "source_mpp": 0.325,
+      "model_mpp": 0.25
+    },
+    {
+      "patient": "CRC10",
+      "virtual_marker": "DAPI",
+      "measured_marker": "Hoechst",
+      "relation": "nuclear-dye family",
+      "compartment": "full_field",
+      "pixels": 262144,
+      "spearman_rho": 0.6236894944198091,
+      "source_mpp": 0.325,
+      "model_mpp": 0.25
+    },
+    {
+      "patient": "CRC10",
+      "virtual_marker": "DAPI",
+      "measured_marker": "Hoechst",
+      "relation": "nuclear-dye family",
+      "compartment": "registered_nuclei",
+      "pixels": 57388,
+      "spearman_rho": 0.1604526721694765,
+      "source_mpp": 0.325,
+      "model_mpp": 0.25
+    },
+    {
+      "patient": "CRC10",
+      "virtual_marker": "DAPI",
+      "measured_marker": "Hoechst",
+      "relation": "nuclear-dye family",
+      "compartment": "registered_cytoplasm",
+      "pixels": 167208,
+      "spearman_rho": 0.5961798039031306,
+      "source_mpp": 0.325,
+      "model_mpp": 0.25
+    },
+    {
+      "patient": "CRC12",
+      "virtual_marker": "DAPI",
+      "measured_marker": "Hoechst",
+      "relation": "nuclear-dye family",
+      "compartment": "full_field",
+      "pixels": 262144,
+      "spearman_rho": 0.8591319688636941,
+      "source_mpp": 0.325,
+      "model_mpp": 0.25
+    },
+    {
+      "patient": "CRC12",
+      "virtual_marker": "DAPI",
+      "measured_marker": "Hoechst",
+      "relation": "nuclear-dye family",
+      "compartment": "registered_nuclei",
+      "pixels": 36893,
+      "spearman_rho": 0.2502764878223098,
+      "source_mpp": 0.325,
+      "model_mpp": 0.25
+    },
+    {
+      "patient": "CRC12",
+      "virtual_marker": "DAPI",
+      "measured_marker": "Hoechst",
+      "relation": "nuclear-dye family",
+      "compartment": "registered_cytoplasm",
+      "pixels": 106275,
+      "spearman_rho": 0.7039414337122437,
+      "source_mpp": 0.325,
+      "model_mpp": 0.25
+    },
+    {
+      "patient": "CRC17",
+      "virtual_marker": "DAPI",
+      "measured_marker": "Hoechst",
+      "relation": "nuclear-dye family",
+      "compartment": "full_field",
+      "pixels": 262144,
+      "spearman_rho": 0.7637818047422819,
+      "source_mpp": 0.325,
+      "model_mpp": 0.25
+    },
+    {
+      "patient": "CRC17",
+      "virtual_marker": "DAPI",
+      "measured_marker": "Hoechst",
+      "relation": "nuclear-dye family",
+      "compartment": "registered_nuclei",
+      "pixels": 44230,
+      "spearman_rho": 0.18789191978594366,
+      "source_mpp": 0.325,
+      "model_mpp": 0.25
+    },
+    {
+      "patient": "CRC17",
+      "virtual_marker": "DAPI",
+      "measured_marker": "Hoechst",
+      "relation": "nuclear-dye family",
+      "compartment": "registered_cytoplasm",
+      "pixels": 150400,
+      "spearman_rho": 0.6223414018701144,
+      "source_mpp": 0.325,
+      "model_mpp": 0.25
+    },
+    {
+      "patient": "CRC19",
+      "virtual_marker": "DAPI",
+      "measured_marker": "Hoechst",
+      "relation": "nuclear-dye family",
+      "compartment": "full_field",
+      "pixels": 262144,
+      "spearman_rho": 0.8311419160284563,
+      "source_mpp": 0.325,
+      "model_mpp": 0.25
+    },
+    {
+      "patient": "CRC19",
+      "virtual_marker": "DAPI",
+      "measured_marker": "Hoechst",
+      "relation": "nuclear-dye family",
+      "compartment": "registered_nuclei",
+      "pixels": 45872,
+      "spearman_rho": 0.26874432479376303,
+      "source_mpp": 0.325,
+      "model_mpp": 0.25
+    },
+    {
+      "patient": "CRC19",
+      "virtual_marker": "DAPI",
+      "measured_marker": "Hoechst",
+      "relation": "nuclear-dye family",
+      "compartment": "registered_cytoplasm",
+      "pixels": 138692,
+      "spearman_rho": 0.7188276537338681,
+      "source_mpp": 0.325,
+      "model_mpp": 0.25
+    },
+    {
+      "patient": "CRC21",
+      "virtual_marker": "DAPI",
+      "measured_marker": "Hoechst",
+      "relation": "nuclear-dye family",
+      "compartment": "full_field",
+      "pixels": 262144,
+      "spearman_rho": 0.7652790146885701,
+      "source_mpp": 0.325,
+      "model_mpp": 0.25
+    },
+    {
+      "patient": "CRC21",
+      "virtual_marker": "DAPI",
+      "measured_marker": "Hoechst",
+      "relation": "nuclear-dye family",
+      "compartment": "registered_nuclei",
+      "pixels": 45385,
+      "spearman_rho": 0.02530993143200891,
+      "source_mpp": 0.325,
+      "model_mpp": 0.25
+    },
+    {
+      "patient": "CRC21",
+      "virtual_marker": "DAPI",
+      "measured_marker": "Hoechst",
+      "relation": "nuclear-dye family",
+      "compartment": "registered_cytoplasm",
+      "pixels": 140994,
+      "spearman_rho": 0.6240144756549488,
+      "source_mpp": 0.325,
+      "model_mpp": 0.25
+    },
+    {
+      "patient": "CRC23",
+      "virtual_marker": "DAPI",
+      "measured_marker": "Hoechst",
+      "relation": "nuclear-dye family",
+      "compartment": "full_field",
+      "pixels": 262144,
+      "spearman_rho": 0.8426713242663558,
+      "source_mpp": 0.325,
+      "model_mpp": 0.25
+    },
+    {
+      "patient": "CRC23",
+      "virtual_marker": "DAPI",
+      "measured_marker": "Hoechst",
+      "relation": "nuclear-dye family",
+      "compartment": "registered_nuclei",
+      "pixels": 47617,
+      "spearman_rho": 0.27488141582825343,
+      "source_mpp": 0.325,
+      "model_mpp": 0.25
+    },
+    {
+      "patient": "CRC23",
+      "virtual_marker": "DAPI",
+      "measured_marker": "Hoechst",
+      "relation": "nuclear-dye family",
+      "compartment": "registered_cytoplasm",
+      "pixels": 126549,
+      "spearman_rho": 0.6846915481485324,
+      "source_mpp": 0.325,
+      "model_mpp": 0.25
+    },
+    {
+      "patient": "CRC25",
+      "virtual_marker": "DAPI",
+      "measured_marker": "Hoechst",
+      "relation": "nuclear-dye family",
+      "compartment": "full_field",
+      "pixels": 262144,
+      "spearman_rho": 0.8390492155302154,
+      "source_mpp": 0.325,
+      "model_mpp": 0.25
+    },
+    {
+      "patient": "CRC25",
+      "virtual_marker": "DAPI",
+      "measured_marker": "Hoechst",
+      "relation": "nuclear-dye family",
+      "compartment": "registered_nuclei",
+      "pixels": 33181,
+      "spearman_rho": 0.1204697442447489,
+      "source_mpp": 0.325,
+      "model_mpp": 0.25
+    },
+    {
+      "patient": "CRC25",
+      "virtual_marker": "DAPI",
+      "measured_marker": "Hoechst",
+      "relation": "nuclear-dye family",
+      "compartment": "registered_cytoplasm",
+      "pixels": 124814,
+      "spearman_rho": 0.6539972472031048,
+      "source_mpp": 0.325,
+      "model_mpp": 0.25
+    }
+  ],
+  "equal_patient_aggregates": [
+    {
+      "virtual_marker": "DAPI",
+      "measured_marker": "Hoechst",
+      "relation": "nuclear-dye family",
+      "compartment": "full_field",
+      "patients": 10,
+      "equal_patient_median_spearman": 0.8060634041903385,
+      "patient_bootstrap_95pct_ci": [
+        0.7515490081136484,
+        0.8490905921969547
+      ]
+    },
+    {
+      "virtual_marker": "DAPI",
+      "measured_marker": "Hoechst",
+      "relation": "nuclear-dye family",
+      "compartment": "registered_nuclei",
+      "patients": 10,
+      "equal_patient_median_spearman": 0.17417229597771008,
+      "patient_bootstrap_95pct_ci": [
+        0.09276027510965783,
+        0.2502764878223098
+      ]
+    },
+    {
+      "virtual_marker": "DAPI",
+      "measured_marker": "Hoechst",
+      "relation": "nuclear-dye family",
+      "compartment": "registered_cytoplasm",
+      "patients": 10,
+      "equal_patient_median_spearman": 0.6483304749023202,
+      "patient_bootstrap_95pct_ci": [
+        0.6185256258514022,
+        0.7039414337122437
+      ]
+    }
+  ],
+  "limit": "Ten previously analyzed QC-passing reserved patients, one window per patient. Full-field nuclear/background localization can inflate association relative to within-nucleus intensity ranks. Rank association is not protein concentration calibration or whole-slide validation."
+}

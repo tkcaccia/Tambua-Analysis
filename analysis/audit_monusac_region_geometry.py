@@ -12,7 +12,7 @@ import numpy as np
 import tifffile
 
 
-def audit(prepared: Path) -> dict:
+def audit(prepared: Path, expected_images: int = 120) -> dict:
     areas: dict[str, list[int]] = defaultdict(list)
     unusual = []
     images = 0
@@ -33,8 +33,8 @@ def audit(prepared: Path) -> dict:
                     unusual.append(dict(sample_id=folder.name, label_id=label_id,
                                         source_class=cell_type, pixels=area,
                                         area_um2=round(area * provenance["mpp"] ** 2, 1)))
-    if images != 120:
-        raise ValueError(f"Expected 120 prepared images, got {images}")
+    if images != expected_images:
+        raise ValueError(f"Expected {expected_images} prepared images, got {images}")
     summary = {}
     for cell_type, values in sorted(areas.items()):
         arr = np.asarray(values)
@@ -51,8 +51,9 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--prepared", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--expected-images", type=int, default=120)
     args = parser.parse_args()
-    result = audit(args.prepared)
+    result = audit(args.prepared, args.expected_images)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(result, indent=2) + "\n")
     print(json.dumps({"images": result["images"], "regions": result["regions"],

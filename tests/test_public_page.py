@@ -152,6 +152,12 @@ def test_expansion_input_preflight_covers_every_prepared_image_without_claiming_
         assert path.read_bytes()[:4] == b"RIFF"
         assert part["file"] in page
 
+    geometry = json.loads((PAGE.parent / "assets/monusac-corrected/expansion-geometry-audit.json").read_text())
+    assert geometry["images"] == 93
+    assert geometry["by_class"]["macrophage"]["count"] == 414
+    assert len(geometry["large_source_macrophage_regions"]) == 70
+    assert "manual-review flag" in geometry["threshold_note"]
+
 
 def test_rare_balance_audit_is_fit_patient_held_out_development_only() -> None:
     import json
@@ -198,3 +204,29 @@ def test_orion_pixel_gallery_is_registered_and_complete() -> None:
             image = root / f'{row["patient"]}-{panel}.webp'
             assert image.stat().st_size > 1000
             assert image.read_bytes()[:4] == b"RIFF"
+
+    replay = json.loads((root / "spatial-compartment-dapi-replay.json").read_text())
+    aggregate = {item["compartment"]: item for item in replay["equal_patient_aggregates"]}
+    assert replay["patients"] == 10 and replay["markers"] == ["DAPI"]
+    assert aggregate["full_field"]["equal_patient_median_spearman"] == scores["equal_patient_median_spearman"]
+    assert aggregate["registered_nuclei"]["equal_patient_median_spearman"] < .25
+    assert "0.174" in page.read_text(encoding="utf-8")
+
+
+def test_orion_measured_protein_gallery_uses_real_image_pixels() -> None:
+    import json
+
+    page = (PAGE.parent / "orion-measured-preflight.html").read_text(encoding="utf-8")
+    root = PAGE.parent / "assets/orion-measured-preflight"
+    manifest = json.loads((root / "COHORT_COMPLETE.json").read_text())
+    assert manifest["status"] == "complete"
+    assert manifest["patients"] == 10 and manifest["measured_marker_images"] == 100
+    assert len({row["patient"] for row in manifest["records"]}) == 10
+    assert all(row["markers"] == 10 and row["source_mpp"] == .325
+               for row in manifest["records"])
+    assert "Measured-source inspection only" in page
+    assert "not GigaTIME predictions" in page
+    for row in manifest["records"]:
+        path = root / f'{row["patient"]}.webp'
+        assert path.stat().st_size > 10000
+        assert path.read_bytes()[:4] == b"RIFF"

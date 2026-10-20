@@ -1,0 +1,528 @@
+{
+  "scope": "Source expert-region geometry; no exclusions or corrected labels",
+  "images": 93,
+  "regions": 10010,
+  "threshold_note": "Macrophage >5000 px is a manual-review flag, not an exclusion rule",
+  "by_class": {
+    "epithelial": {
+      "count": 1110,
+      "median_px": 501.0,
+      "p99_px": 1679.9400000000028,
+      "max_px": 3374,
+      "greater_than_5000_px": 0
+    },
+    "lymphocyte": {
+      "count": 8239,
+      "median_px": 270.0,
+      "p99_px": 506.0,
+      "max_px": 763,
+      "greater_than_5000_px": 0
+    },
+    "macrophage": {
+      "count": 414,
+      "median_px": 2082.0,
+      "p99_px": 10286.960000000001,
+      "max_px": 13215,
+      "greater_than_5000_px": 70
+    },
+    "neutrophil": {
+      "count": 247,
+      "median_px": 594.0,
+      "p99_px": 1038.62,
+      "max_px": 1062,
+      "greater_than_5000_px": 0
+    }
+  },
+  "large_source_macrophage_regions": [
+    {
+      "sample_id": "TCGA-49-6743-01Z-00-DX2_001",
+      "label_id": 10,
+      "source_class": "macrophage",
+      "pixels": 12331,
+      "area_um2": 783.1
+    },
+    {
+      "sample_id": "TCGA-49-6743-01Z-00-DX2_001",
+      "label_id": 11,
+      "source_class": "macrophage",
+      "pixels": 8552,
+      "area_um2": 543.1
+    },
+    {
+      "sample_id": "TCGA-B6-A0WZ-01Z-00-DX1_4",
+      "label_id": 4,
+      "source_class": "macrophage",
+      "pixels": 10301,
+      "area_um2": 636.1
+    },
+    {
+      "sample_id": "TCGA-DW-7841-01Z-00-DX1_3",
+      "label_id": 7,
+      "source_class": "macrophage",
+      "pixels": 6678,
+      "area_um2": 424.1
+    },
+    {
+      "sample_id": "TCGA-DW-7841-01Z-00-DX1_3",
+      "label_id": 10,
+      "source_class": "macrophage",
+      "pixels": 6623,
+      "area_um2": 420.6
+    },
+    {
+      "sample_id": "TCGA-DW-7841-01Z-00-DX1_3",
+      "label_id": 12,
+      "source_class": "macrophage",
+      "pixels": 5579,
+      "area_um2": 354.3
+    },
+    {
+      "sample_id": "TCGA-E2-A108-01Z-00-DX1_004",
+      "label_id": 4,
+      "source_class": "macrophage",
+      "pixels": 5174,
+      "area_um2": 318.2
+    },
+    {
+      "sample_id": "TCGA-E2-A108-01Z-00-DX1_004",
+      "label_id": 7,
+      "source_class": "macrophage",
+      "pixels": 5120,
+      "area_um2": 314.9
+    },
+    {
+      "sample_id": "TCGA-E2-A108-01Z-00-DX1_004",
+      "label_id": 8,
+      "source_class": "macrophage",
+      "pixels": 5961,
+      "area_um2": 366.6
+    },
+    {
+      "sample_id": "TCGA-E2-A108-01Z-00-DX1_004",
+      "label_id": 13,
+      "source_class": "macrophage",
+      "pixels": 8914,
+      "area_um2": 548.2
+    },
+    {
+      "sample_id": "TCGA-E2-A108-01Z-00-DX1_004",
+      "label_id": 14,
+      "source_class": "macrophage",
+      "pixels": 5138,
+      "area_um2": 316.0
+    },
+    {
+      "sample_id": "TCGA-E9-A22G-01Z-00-DX1_3",
+      "label_id": 22,
+      "source_class": "macrophage",
+      "pixels": 6785,
+      "area_um2": 413.3
+    },
+    {
+      "sample_id": "TCGA-EV-5903-01Z-00-DX1_4",
+      "label_id": 17,
+      "source_class": "macrophage",
+      "pixels": 7061,
+      "area_um2": 448.4
+    },
+    {
+      "sample_id": "TCGA-EW-A6SB-01Z-00-DX1_003",
+      "label_id": 17,
+      "source_class": "macrophage",
+      "pixels": 8515,
+      "area_um2": 542.9
+    },
+    {
+      "sample_id": "TCGA-IZ-A6M9-01Z-00-DX1_3",
+      "label_id": 17,
+      "source_class": "macrophage",
+      "pixels": 6531,
+      "area_um2": 403.3
+    },
+    {
+      "sample_id": "TCGA-IZ-A6M9-01Z-00-DX1_3",
+      "label_id": 21,
+      "source_class": "macrophage",
+      "pixels": 6154,
+      "area_um2": 380.0
+    },
+    {
+      "sample_id": "TCGA-IZ-A6M9-01Z-00-DX1_3",
+      "label_id": 22,
+      "source_class": "macrophage",
+      "pixels": 5054,
+      "area_um2": 312.1
+    },
+    {
+      "sample_id": "TCGA-IZ-A6M9-01Z-00-DX1_3",
+      "label_id": 31,
+      "source_class": "macrophage",
+      "pixels": 5339,
+      "area_um2": 329.7
+    },
+    {
+      "sample_id": "TCGA-IZ-A6M9-01Z-00-DX1_3",
+      "label_id": 33,
+      "source_class": "macrophage",
+      "pixels": 5489,
+      "area_um2": 339.0
+    },
+    {
+      "sample_id": "TCGA-IZ-A6M9-01Z-00-DX1_3",
+      "label_id": 35,
+      "source_class": "macrophage",
+      "pixels": 5144,
+      "area_um2": 317.7
+    },
+    {
+      "sample_id": "TCGA-IZ-A6M9-01Z-00-DX1_3",
+      "label_id": 37,
+      "source_class": "macrophage",
+      "pixels": 6149,
+      "area_um2": 379.7
+    },
+    {
+      "sample_id": "TCGA-KK-A59X-01Z-00-DX1-2",
+      "label_id": 9,
+      "source_class": "macrophage",
+      "pixels": 6868,
+      "area_um2": 418.3
+    },
+    {
+      "sample_id": "TCGA-KK-A59X-01Z-00-DX1-2",
+      "label_id": 10,
+      "source_class": "macrophage",
+      "pixels": 6468,
+      "area_um2": 394.0
+    },
+    {
+      "sample_id": "TCGA-KK-A59X-01Z-00-DX1-2",
+      "label_id": 13,
+      "source_class": "macrophage",
+      "pixels": 6572,
+      "area_um2": 400.3
+    },
+    {
+      "sample_id": "TCGA-KK-A59X-01Z-00-DX1-2",
+      "label_id": 16,
+      "source_class": "macrophage",
+      "pixels": 6941,
+      "area_um2": 422.8
+    },
+    {
+      "sample_id": "TCGA-KK-A59X-01Z-00-DX1-2",
+      "label_id": 17,
+      "source_class": "macrophage",
+      "pixels": 6170,
+      "area_um2": 375.8
+    },
+    {
+      "sample_id": "TCGA-KK-A59X-01Z-00-DX1-2",
+      "label_id": 18,
+      "source_class": "macrophage",
+      "pixels": 11688,
+      "area_um2": 711.9
+    },
+    {
+      "sample_id": "TCGA-KK-A59X-01Z-00-DX1-2",
+      "label_id": 19,
+      "source_class": "macrophage",
+      "pixels": 7543,
+      "area_um2": 459.4
+    },
+    {
+      "sample_id": "TCGA-KK-A59X-01Z-00-DX1-2",
+      "label_id": 20,
+      "source_class": "macrophage",
+      "pixels": 5365,
+      "area_um2": 326.8
+    },
+    {
+      "sample_id": "TCGA-KK-A59X-01Z-00-DX1-2",
+      "label_id": 22,
+      "source_class": "macrophage",
+      "pixels": 5437,
+      "area_um2": 331.2
+    },
+    {
+      "sample_id": "TCGA-L4-A4E5-01Z-00-DX1_2",
+      "label_id": 17,
+      "source_class": "macrophage",
+      "pixels": 5413,
+      "area_um2": 326.5
+    },
+    {
+      "sample_id": "TCGA-MH-A560-01Z-00-DX2_3",
+      "label_id": 1,
+      "source_class": "macrophage",
+      "pixels": 6038,
+      "area_um2": 385.6
+    },
+    {
+      "sample_id": "TCGA-MH-A560-01Z-00-DX2_3",
+      "label_id": 2,
+      "source_class": "macrophage",
+      "pixels": 6236,
+      "area_um2": 398.2
+    },
+    {
+      "sample_id": "TCGA-MH-A560-01Z-00-DX2_3",
+      "label_id": 4,
+      "source_class": "macrophage",
+      "pixels": 9005,
+      "area_um2": 575.0
+    },
+    {
+      "sample_id": "TCGA-MH-A560-01Z-00-DX2_3",
+      "label_id": 6,
+      "source_class": "macrophage",
+      "pixels": 10193,
+      "area_um2": 650.9
+    },
+    {
+      "sample_id": "TCGA-MP-A4T7-01Z-00-DX1_002",
+      "label_id": 8,
+      "source_class": "macrophage",
+      "pixels": 6066,
+      "area_um2": 386.7
+    },
+    {
+      "sample_id": "TCGA-MP-A4T7-01Z-00-DX1_002",
+      "label_id": 10,
+      "source_class": "macrophage",
+      "pixels": 5379,
+      "area_um2": 342.9
+    },
+    {
+      "sample_id": "TCGA-MP-A4T7-01Z-00-DX1_002",
+      "label_id": 12,
+      "source_class": "macrophage",
+      "pixels": 5419,
+      "area_um2": 345.5
+    },
+    {
+      "sample_id": "TCGA-MP-A4T7-01Z-00-DX1_002",
+      "label_id": 15,
+      "source_class": "macrophage",
+      "pixels": 8004,
+      "area_um2": 510.3
+    },
+    {
+      "sample_id": "TCGA-S3-AA11-01Z-00-DX1_5",
+      "label_id": 11,
+      "source_class": "macrophage",
+      "pixels": 5572,
+      "area_um2": 355.8
+    },
+    {
+      "sample_id": "TCGA-SX-A7SR-01Z-00-DX1_1",
+      "label_id": 237,
+      "source_class": "macrophage",
+      "pixels": 5947,
+      "area_um2": 379.8
+    },
+    {
+      "sample_id": "TCGA-SX-A7SR-01Z-00-DX1_2",
+      "label_id": 67,
+      "source_class": "macrophage",
+      "pixels": 5444,
+      "area_um2": 347.6
+    },
+    {
+      "sample_id": "TCGA-SX-A7SR-01Z-00-DX1_2",
+      "label_id": 69,
+      "source_class": "macrophage",
+      "pixels": 5584,
+      "area_um2": 356.6
+    },
+    {
+      "sample_id": "TCGA-SX-A7SR-01Z-00-DX1_2",
+      "label_id": 72,
+      "source_class": "macrophage",
+      "pixels": 7116,
+      "area_um2": 454.4
+    },
+    {
+      "sample_id": "TCGA-SX-A7SR-01Z-00-DX1_2",
+      "label_id": 73,
+      "source_class": "macrophage",
+      "pixels": 7379,
+      "area_um2": 471.2
+    },
+    {
+      "sample_id": "TCGA-SX-A7SR-01Z-00-DX1_2",
+      "label_id": 75,
+      "source_class": "macrophage",
+      "pixels": 5292,
+      "area_um2": 337.9
+    },
+    {
+      "sample_id": "TCGA-SX-A7SR-01Z-00-DX1_2",
+      "label_id": 77,
+      "source_class": "macrophage",
+      "pixels": 5859,
+      "area_um2": 374.1
+    },
+    {
+      "sample_id": "TCGA-SX-A7SR-01Z-00-DX1_2",
+      "label_id": 79,
+      "source_class": "macrophage",
+      "pixels": 5973,
+      "area_um2": 381.4
+    },
+    {
+      "sample_id": "TCGA-SX-A7SR-01Z-00-DX1_2",
+      "label_id": 80,
+      "source_class": "macrophage",
+      "pixels": 6758,
+      "area_um2": 431.5
+    },
+    {
+      "sample_id": "TCGA-SX-A7SR-01Z-00-DX1_2",
+      "label_id": 82,
+      "source_class": "macrophage",
+      "pixels": 6322,
+      "area_um2": 403.7
+    },
+    {
+      "sample_id": "TCGA-SX-A7SR-01Z-00-DX1_2",
+      "label_id": 83,
+      "source_class": "macrophage",
+      "pixels": 7282,
+      "area_um2": 465.0
+    },
+    {
+      "sample_id": "TCGA-SX-A7SR-01Z-00-DX1_2",
+      "label_id": 84,
+      "source_class": "macrophage",
+      "pixels": 8724,
+      "area_um2": 557.1
+    },
+    {
+      "sample_id": "TCGA-UZ-A9PO-01Z-00-DX1_4",
+      "label_id": 10,
+      "source_class": "macrophage",
+      "pixels": 7455,
+      "area_um2": 475.3
+    },
+    {
+      "sample_id": "TCGA-UZ-A9PO-01Z-00-DX1_4",
+      "label_id": 12,
+      "source_class": "macrophage",
+      "pixels": 7776,
+      "area_um2": 495.8
+    },
+    {
+      "sample_id": "TCGA-UZ-A9PO-01Z-00-DX1_4",
+      "label_id": 13,
+      "source_class": "macrophage",
+      "pixels": 13215,
+      "area_um2": 842.5
+    },
+    {
+      "sample_id": "TCGA-UZ-A9PO-01Z-00-DX1_4",
+      "label_id": 14,
+      "source_class": "macrophage",
+      "pixels": 8460,
+      "area_um2": 539.4
+    },
+    {
+      "sample_id": "TCGA-UZ-A9PO-01Z-00-DX1_4",
+      "label_id": 16,
+      "source_class": "macrophage",
+      "pixels": 7505,
+      "area_um2": 478.5
+    },
+    {
+      "sample_id": "TCGA-UZ-A9PO-01Z-00-DX1_4",
+      "label_id": 17,
+      "source_class": "macrophage",
+      "pixels": 6973,
+      "area_um2": 444.6
+    },
+    {
+      "sample_id": "TCGA-V1-A8WL-01Z-00-DX1-2",
+      "label_id": 2,
+      "source_class": "macrophage",
+      "pixels": 7735,
+      "area_um2": 493.9
+    },
+    {
+      "sample_id": "TCGA-V1-A8WL-01Z-00-DX1-2",
+      "label_id": 3,
+      "source_class": "macrophage",
+      "pixels": 7153,
+      "area_um2": 456.8
+    },
+    {
+      "sample_id": "TCGA-V1-A8WL-01Z-00-DX1-2",
+      "label_id": 5,
+      "source_class": "macrophage",
+      "pixels": 6144,
+      "area_um2": 392.3
+    },
+    {
+      "sample_id": "TCGA-V1-A8WL-01Z-00-DX1-2",
+      "label_id": 6,
+      "source_class": "macrophage",
+      "pixels": 7361,
+      "area_um2": 470.1
+    },
+    {
+      "sample_id": "TCGA-V1-A8WL-01Z-00-DX1-2",
+      "label_id": 7,
+      "source_class": "macrophage",
+      "pixels": 5905,
+      "area_um2": 377.1
+    },
+    {
+      "sample_id": "TCGA-V1-A8WL-01Z-00-DX1-2",
+      "label_id": 8,
+      "source_class": "macrophage",
+      "pixels": 6744,
+      "area_um2": 430.7
+    },
+    {
+      "sample_id": "TCGA-V1-A8WL-01Z-00-DX1-2",
+      "label_id": 9,
+      "source_class": "macrophage",
+      "pixels": 5520,
+      "area_um2": 352.5
+    },
+    {
+      "sample_id": "TCGA-V1-A8WL-01Z-00-DX1-2",
+      "label_id": 11,
+      "source_class": "macrophage",
+      "pixels": 10834,
+      "area_um2": 691.8
+    },
+    {
+      "sample_id": "TCGA-V1-A8WL-01Z-00-DX1-2",
+      "label_id": 12,
+      "source_class": "macrophage",
+      "pixels": 6732,
+      "area_um2": 429.9
+    },
+    {
+      "sample_id": "TCGA-V1-A8WL-01Z-00-DX1-2",
+      "label_id": 14,
+      "source_class": "macrophage",
+      "pixels": 8085,
+      "area_um2": 516.3
+    },
+    {
+      "sample_id": "TCGA-YL-A9WL-01Z-00-DX1_2",
+      "label_id": 13,
+      "source_class": "macrophage",
+      "pixels": 6257,
+      "area_um2": 386.4
+    },
+    {
+      "sample_id": "TCGA-YL-A9WL-01Z-00-DX1_2",
+      "label_id": 15,
+      "source_class": "macrophage",
+      "pixels": 9152,
+      "area_um2": 565.2
+    }
+  ]
+}

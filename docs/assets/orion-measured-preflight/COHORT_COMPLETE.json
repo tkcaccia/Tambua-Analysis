@@ -1,0 +1,122 @@
+{
+  "status": "complete",
+  "device": "CPU",
+  "patients": 10,
+  "measured_marker_images": 100,
+  "markers": [
+    "Hoechst",
+    "CD68",
+    "CD4",
+    "CD8a",
+    "CD20",
+    "PD-L1",
+    "CD3e",
+    "PD-1",
+    "Ki67",
+    "Pan-CK"
+  ],
+  "records": [
+    {
+      "patient": "CRC04",
+      "source_url": "https://lin-2023-orion-crc.s3.amazonaws.com/data/CRC04/P37_S32_A24_C59kX_E15_20220106_014630_553652-zlib.ome.tiff",
+      "source_mpp": 0.325,
+      "window_xy": [
+        41984,
+        6144
+      ],
+      "markers": 10
+    },
+    {
+      "patient": "CRC06",
+      "source_url": "https://lin-2023-orion-crc.s3.amazonaws.com/data/CRC06/P37_S34_A24_C59kX_E15_20220107_202112_212579-zlib.ome.tiff",
+      "source_mpp": 0.325,
+      "window_xy": [
+        46080,
+        43008
+      ],
+      "markers": 10
+    },
+    {
+      "patient": "CRC08",
+      "source_url": "https://lin-2023-orion-crc.s3.amazonaws.com/data/CRC08/P37_S57_Full_A24_C59nX_E15_20220224_011032_774034-zlib.ome.tiff",
+      "source_mpp": 0.325,
+      "window_xy": [
+        17408,
+        19456
+      ],
+      "markers": 10
+    },
+    {
+      "patient": "CRC10",
+      "source_url": "https://lin-2023-orion-crc.s3.amazonaws.com/data/CRC10/P37_S38_A24_C59kX_E15_20220108_012130_664519-zlib.ome.tiff",
+      "source_mpp": 0.325,
+      "window_xy": [
+        11264,
+        21504
+      ],
+      "markers": 10
+    },
+    {
+      "patient": "CRC12",
+      "source_url": "https://lin-2023-orion-crc.s3.amazonaws.com/data/CRC12/P37_S44_Full_A24_C59mX_E15_20220128_171448_903938-zlib.ome.tiff",
+      "source_mpp": 0.325,
+      "window_xy": [
+        20480,
+        51200
+      ],
+      "markers": 10
+    },
+    {
+      "patient": "CRC17",
+      "source_url": "https://lin-2023-orion-crc.s3.amazonaws.com/data/CRC17/P37_S49_Full_A24_C59mX_E15_20220129_015121_911264-zlib.ome.tiff",
+      "source_mpp": 0.325,
+      "window_xy": [
+        7168,
+        60416
+      ],
+      "markers": 10
+    },
+    {
+      "patient": "CRC19",
+      "source_url": "https://lin-2023-orion-crc.s3.amazonaws.com/data/CRC19/P37_S51_Full_A24_C59mX_E15_20220129_015300_669681-zlib.ome.tiff",
+      "source_mpp": 0.325,
+      "window_xy": [
+        19456,
+        40960
+      ],
+      "markers": 10
+    },
+    {
+      "patient": "CRC21",
+      "source_url": "https://lin-2023-orion-crc.s3.amazonaws.com/data/CRC21/P37_S58_Full_A24_C59nX_E15_20220224_011058_014787-zlib.ome.tiff",
+      "source_mpp": 0.325,
+      "window_xy": [
+        69632,
+        41984
+      ],
+      "markers": 10
+    },
+    {
+      "patient": "CRC23",
+      "source_url": "https://lin-2023-orion-crc.s3.amazonaws.com/data/CRC23/P37_S60_Full_A24_C59nX_E15_20220224_011127_971497-zlib.ome.tiff",
+      "source_mpp": 0.325,
+      "window_xy": [
+        73728,
+        51200
+      ],
+      "markers": 10
+    },
+    {
+      "patient": "CRC25",
+      "source_url": "https://lin-2023-orion-crc.s3.amazonaws.com/data/CRC25/P37_S62_Full_A24_C59nX_E15_20220224_011204_784145-zlib.ome.tiff",
+      "source_mpp": 0.325,
+      "window_xy": [
+        82944,
+        7168
+      ],
+      "markers": 10
+    }
+  ],
+  "scope": "Registered raw measured fluorescence pixels, not virtual marker predictions",
+  "limit": "These measured images do not by themselves validate GigaTIME or cell typing."
+}
