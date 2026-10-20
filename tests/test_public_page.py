@@ -101,8 +101,12 @@ def test_detected_cell_gallery_has_complete_predictions_and_qualified_score() ->
 
     markers = PAGE.parent / "assets/monusac-all-markers"
     marker_manifest = json.loads((markers / "manifest.json").read_text())
+    contacts = json.loads((markers / "CONTACTS_COMPLETE.json").read_text())
     assert marker_manifest["cases"] == 47
     assert len(marker_manifest["channel_names"]) == 23
+    assert contacts["cases_per_sheet"] == 47
+    assert len(contacts["channels"]) == 23
+    assert "Open the 47-image overview" in html
     assert {row["sample_id"] for row in marker_manifest["records"]} == \
            {row["sample_id"] for row in manifest["records"]}
     assert "All 23 spatial GigaTIME channels" in html
@@ -113,6 +117,10 @@ def test_detected_cell_gallery_has_complete_predictions_and_qualified_score() ->
             path = markers / f'{row["sample_id"]}--{index:02d}.webp'
             assert path.stat().st_size > 1000
             assert path.read_bytes()[:4] == b"RIFF"
+    for index in range(23):
+        contact = markers / f"contact-{index:02d}.webp"
+        assert contact.stat().st_size > 1000
+        assert contact.read_bytes()[:4] == b"RIFF"
 
 
 def test_orion_pixel_gallery_is_registered_and_complete() -> None:

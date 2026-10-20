@@ -98,3 +98,8 @@ returned `review` in four cases because selected channels had a sampled
 5th–95th percentile range below 0.005; the viewer displays the affected
 channel warnings. This flag is not proof of a border shadow, and passing DAPI
 shadow QC is not proof that every virtual marker is biologically valid.
+One [contact sheet per channel](../monusac-all-markers/CONTACTS_COMPLETE.json)
+was visually reviewed, covering all 47 images and all 23 channels at thumbnail
+scale. No obvious periodic block seams appeared at that scale; tissue-dependent
+dark regions and diffuse nuclear signals remain, so this inspection cannot
+exclude subtle shading or certify protein localization.

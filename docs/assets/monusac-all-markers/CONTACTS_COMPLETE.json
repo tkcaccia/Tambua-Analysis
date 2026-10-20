@@ -1,0 +1,100 @@
+{
+  "status": "complete",
+  "cases_per_sheet": 47,
+  "channels": [
+    {
+      "channel": "DAPI",
+      "path": "contact-00.webp"
+    },
+    {
+      "channel": "TRITC",
+      "path": "contact-01.webp"
+    },
+    {
+      "channel": "Cy5",
+      "path": "contact-02.webp"
+    },
+    {
+      "channel": "PD-1",
+      "path": "contact-03.webp"
+    },
+    {
+      "channel": "CD14",
+      "path": "contact-04.webp"
+    },
+    {
+      "channel": "CD4",
+      "path": "contact-05.webp"
+    },
+    {
+      "channel": "T-bet",
+      "path": "contact-06.webp"
+    },
+    {
+      "channel": "CD34",
+      "path": "contact-07.webp"
+    },
+    {
+      "channel": "CD68",
+      "path": "contact-08.webp"
+    },
+    {
+      "channel": "CD16",
+      "path": "contact-09.webp"
+    },
+    {
+      "channel": "CD11c",
+      "path": "contact-10.webp"
+    },
+    {
+      "channel": "CD138",
+      "path": "contact-11.webp"
+    },
+    {
+      "channel": "CD20",
+      "path": "contact-12.webp"
+    },
+    {
+      "channel": "CD3",
+      "path": "contact-13.webp"
+    },
+    {
+      "channel": "CD8",
+      "path": "contact-14.webp"
+    },
+    {
+      "channel": "PD-L1",
+      "path": "contact-15.webp"
+    },
+    {
+      "channel": "CK",
+      "path": "contact-16.webp"
+    },
+    {
+      "channel": "Ki67",
+      "path": "contact-17.webp"
+    },
+    {
+      "channel": "Tryptase",
+      "path": "contact-18.webp"
+    },
+    {
+      "channel": "Actin-D",
+      "path": "contact-19.webp"
+    },
+    {
+      "channel": "Caspase3-D",
+      "path": "contact-20.webp"
+    },
+    {
+      "channel": "PHH3-B",
+      "path": "contact-21.webp"
+    },
+    {
+      "channel": "Transgelin",
+      "path": "contact-22.webp"
+    }
+  ],
+  "marker_manifest_sha256": "13da0120e23476065bc21767bcd2634ddf0d436a9d57344c469c4debe9b9aa30",
+  "layout": "Six columns; row-major case order follows manifest.records. Label: index, split initial, first 12 sample-ID characters. Contact sheets are visual previews, not quantitative expression maps."
+}
