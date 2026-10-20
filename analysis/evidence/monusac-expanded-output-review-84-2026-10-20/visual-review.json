@@ -1,0 +1,13 @@
+{
+  "status": "partial_manual_review_complete",
+  "date": "2026-10-20",
+  "reviewed_position": 84,
+  "sample_id": "TCGA-SX-A7SR-01Z-00-DX1_1",
+  "organ": "kidney",
+  "split": "train",
+  "source_mpp_um": 0.2527,
+  "automated_nuclear_qc": "fail",
+  "finding": "Dense scanner-RGB nuclei are individually visible, but virtual DAPI appears broad and partly confluent over them. The independent StarDist-outline overlay supports the frozen boundary-contrast failure (AUC 0.790, contrast 0.029). CK and CD68 preview morphology cannot establish marker specificity.",
+  "decision": "exclude_from_classification_and_protein_validity_results",
+  "scope": "Contact-sheet screening of position 84; no threshold changed or failed image requalified."
+}
