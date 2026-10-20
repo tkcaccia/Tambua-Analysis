@@ -1,0 +1,130 @@
+{
+  "status": "snapshot_manual_review_complete",
+  "source_full_manifest_sha256": "12e6a3eede796709d8b195e20e0fa2c27b5b9050d259a7f278b2931acc11463a",
+  "source_completed_cases": 71,
+  "expected_cases": 93,
+  "pages": [
+    {
+      "file": "output-qc-12.webp",
+      "sample_ids": [
+        "TCGA-UZ-A9PO-01Z-00-DX1_1",
+        "TCGA-G9-6499-01Z-00-DX1-2",
+        "TCGA-UZ-A9PO-01Z-00-DX1_4",
+        "TCGA-G9-6499-01Z-00-DX1-3",
+        "TCGA-UZ-A9PU-01Z-00-DX1_1"
+      ]
+    }
+  ],
+  "reviewed_case_positions": [
+    69,
+    70,
+    71
+  ],
+  "records": [
+    {
+      "sample_id": "TCGA-UZ-A9PO-01Z-00-DX1_4",
+      "patient_id": "TCGA-UZ-A9PO",
+      "organ": "kidney",
+      "split": "train",
+      "source_mpp": 0.2525,
+      "model_mpp": 0.25,
+      "qc_status": "fail",
+      "alignment_status": "fail",
+      "border_shadow_status": "pass",
+      "spatial_shadow_status": "fail",
+      "dapi_auc": 0.6411728721081585,
+      "dapi_boundary_contrast": 0.0484964485847279,
+      "raw_quantiles_p01_p50_p997": {
+        "DAPI": [
+          17.0,
+          65.0,
+          64139.582999999984
+        ],
+        "CK": [
+          21.0,
+          105.0,
+          12863.744999999763
+        ],
+        "CD68": [
+          5.0,
+          39.0,
+          64601.582999999984
+        ]
+      },
+      "visual_review_status": "pending"
+    },
+    {
+      "sample_id": "TCGA-G9-6499-01Z-00-DX1-3",
+      "patient_id": "TCGA-G9-6499",
+      "organ": "prostate",
+      "split": "train",
+      "source_mpp": 0.252,
+      "model_mpp": 0.25,
+      "qc_status": "fail",
+      "alignment_status": "fail",
+      "border_shadow_status": "pass",
+      "spatial_shadow_status": "fail",
+      "dapi_auc": 0.6189231377213179,
+      "dapi_boundary_contrast": 0.0361636422909698,
+      "raw_quantiles_p01_p50_p997": {
+        "DAPI": [
+          31.0,
+          536.0,
+          64121.88399999999
+        ],
+        "CK": [
+          33.0,
+          322.0,
+          21295.767999999982
+        ],
+        "CD68": [
+          12.0,
+          87.0,
+          5261.139999999985
+        ]
+      },
+      "visual_review_status": "pending"
+    },
+    {
+      "sample_id": "TCGA-UZ-A9PU-01Z-00-DX1_1",
+      "patient_id": "TCGA-UZ-A9PU",
+      "organ": "kidney",
+      "split": "train",
+      "source_mpp": 0.2525,
+      "model_mpp": 0.25,
+      "qc_status": "fail",
+      "alignment_status": "fail",
+      "border_shadow_status": "pass",
+      "spatial_shadow_status": "fail",
+      "dapi_auc": 0.6861110348354483,
+      "dapi_boundary_contrast": 0.014160867233723229,
+      "raw_quantiles_p01_p50_p997": {
+        "DAPI": [
+          8008.3,
+          54768.0,
+          62424.630999999994
+        ],
+        "CK": [
+          91.0,
+          292.0,
+          14636.0
+        ],
+        "CD68": [
+          3029.23,
+          23522.0,
+          56151.30999999994
+        ]
+      },
+      "visual_review_status": "pending"
+    }
+  ],
+  "panels": [
+    "Scanner RGB",
+    "Virtual DAPI",
+    "DAPI / StarDist",
+    "CK",
+    "CD68"
+  ],
+  "display": "Marker channels use per-image logit/1st\u201399.7th percentile display scaling; original uint16 scores remain unchanged. These previews cannot establish marker validity alone.",
+  "limit": "A partial bundle is diagnostic only. QC-failing cases are excluded from classifier analysis; human visual review is separately required before publication."
+}

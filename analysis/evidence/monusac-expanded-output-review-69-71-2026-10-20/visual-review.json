@@ -1,0 +1,16 @@
+{
+  "status": "partial_manual_review_complete",
+  "date": "2026-10-20",
+  "reviewed_cases": [
+    "TCGA-UZ-A9PO-01Z-00-DX1_4",
+    "TCGA-G9-6499-01Z-00-DX1-3",
+    "TCGA-UZ-A9PU-01Z-00-DX1_1"
+  ],
+  "automated_qc_counts": {
+    "pass": 0,
+    "fail": 3
+  },
+  "visual_findings": "Scanner RGB colors are plausible in all three. The kidney TCGA-UZ-A9PO-01Z-00-DX1_4 field has sparse bright virtual-DAPI spots amid blood-rich tissue, but the field-level AUC is only 0.641 and nuclear boundary contrast is 0.048. The prostate TCGA-G9-6499-01Z-00-DX1-3 field has a visible broad haze across a sparse blood-rich field (AUC 0.619, contrast 0.036). The dense kidney TCGA-UZ-A9PU-01Z-00-DX1_1 field shows virtual DAPI merging adjacent nuclei and diffuse CD68 (AUC 0.686, contrast 0.014). All remain excluded; none has protein-specific measured truth.",
+  "publication_status": "exclude_from_classification_and_protein_validity_results",
+  "scope": "Preview-scale inspection of cases 69-71 from an active 93-case CPU bundle; no post-hoc QC threshold change."
+}
