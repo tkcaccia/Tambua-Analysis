@@ -43,6 +43,8 @@ def main() -> None:
     ap.add_argument("--original-quant", type=Path, required=True)
     ap.add_argument("--additional-quant", type=Path, required=True)
     ap.add_argument("--tambua-src", type=Path, required=True)
+    ap.add_argument("--r-library", type=Path,
+                    help="Isolated library containing GitHub fastPLS 0.4")
     ap.add_argument("--output", type=Path, required=True)
     args = ap.parse_args()
     qc = json.loads(args.qc_summary.read_text())
@@ -98,6 +100,8 @@ def main() -> None:
     write_manifest(args.output / "test_inference_manifest.csv", test, labelled=False)
     env = os.environ.copy()
     env["PYTHONPATH"] = str(args.tambua_src.resolve())
+    if args.r_library:
+        env["TAMBUA_R_LIB"] = str(args.r_library.resolve())
     def cli(*values: str) -> None:
         subprocess.run([sys.executable, "-m", "tambua.cli", *values],
                        check=True, env=env, stdout=subprocess.DEVNULL)

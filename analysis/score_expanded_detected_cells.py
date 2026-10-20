@@ -29,6 +29,21 @@ def sha(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def verify_fastpls_04(env: dict[str, str]) -> str:
+    """Fail before table construction if the selected R library is wrong."""
+    probe = ('lib <- Sys.getenv("TAMBUA_R_LIB", ""); '
+             'if (nzchar(lib)) .libPaths(c(lib, .libPaths())); '
+             'cat(as.character(utils::packageVersion("fastPLS")), "|", '
+             'find.package("fastPLS"), sep="")')
+    result = subprocess.run([env.get("TAMBUA_RSCRIPT", "Rscript"), "--vanilla",
+                             "-e", probe], env=env, capture_output=True, text=True,
+                            check=False)
+    if result.returncode or not result.stdout.startswith("0.4|"):
+        raise RuntimeError("GitHub fastPLS 0.4 is not selected: " +
+                           (result.stderr.strip() or result.stdout.strip()))
+    return result.stdout.strip().split("|", 1)[1]
+
+
 def rows(path: Path) -> list[dict[str, str]]:
     with path.open(newline="", encoding="utf-8") as stream:
         return list(csv.DictReader(stream))
@@ -180,7 +195,17 @@ def run(args: argparse.Namespace) -> dict:
     expanded = json.loads(expanded_path.read_text())
     cases = plan(old, expanded)
     sys.path.insert(0, str(args.tambua_src.resolve()))
+    env = dict(os.environ, PYTHONPATH=str(args.tambua_src.resolve()))
+    if args.r_library:
+        # Tambua's bridge explicitly prepends this library with .libPaths().
+        # R_LIBS_USER can be overridden by the host R startup and silently
+        # select an unrelated, incompatible global fastPLS installation.
+        env["TAMBUA_R_LIB"] = str(args.r_library.resolve())
+    resolved_fastpls = verify_fastpls_04(env)
     args.output.mkdir(parents=True)
+    (args.output / "FASTPLS_RUNTIME.json").write_text(json.dumps({
+        "version": "0.4", "resolved_library": resolved_fastpls,
+        "explicit_isolated_library": env.get("TAMBUA_R_LIB")}, indent=2) + "\n")
     split_counts = Counter(row["split"] for row in cases)
     (args.output / "COHORT_PLAN.json").write_text(json.dumps({
         "old_qc_sha256": sha(args.old_qc), "expansion_quant_sha256": sha(expanded_path),
@@ -203,9 +228,6 @@ def run(args: argparse.Namespace) -> dict:
              args.output / "new_test_manifest.csv", {"test"}, labelled=True)
     manifest(cases, args.old_quant, args.new_quant,
              args.output / "new_test_all_detected_manifest.csv", {"test"}, labelled=False)
-    env = dict(os.environ, PYTHONPATH=str(args.tambua_src.resolve()))
-    if args.r_library:
-        env["R_LIBS_USER"] = str(args.r_library.resolve())
     def cli(*command: str) -> None:
         subprocess.run([sys.executable, "-m", "tambua.cli", *command],
                        check=True, env=env)
