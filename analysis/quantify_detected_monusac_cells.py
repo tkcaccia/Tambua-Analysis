@@ -17,9 +17,6 @@ from pathlib import Path
 import subprocess
 import sys
 
-if os.environ.get("CUDA_VISIBLE_DEVICES") != "-1":
-    raise RuntimeError("This postprocessing must explicitly hide all GPUs")
-
 import numpy as np
 from scipy.ndimage import distance_transform_edt
 import tifffile
@@ -82,6 +79,8 @@ def quantify(quantifier: Path, image: Path, mask: Path, name: str,
 def run(sample: str, detected_path: Path, matched_path: Path,
         prepared: Path, gigatime_case: Path, quantifier: Path,
         output: Path, *, halo_um: float = 3.0) -> dict:
+    if os.environ.get("CUDA_VISIBLE_DEVICES") != "-1":
+        raise RuntimeError("This postprocessing must explicitly hide all GPUs")
     if output.exists():
         raise FileExistsError(output)
     provenance = json.loads((prepared / "provenance.json").read_text())
