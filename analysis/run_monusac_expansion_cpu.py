@@ -82,6 +82,15 @@ def validate_case(case: Path, source: dict, image_sha: str) -> dict:
             "seam_qc": seam["status"]}
 
 
+def inference_timeout(source: dict) -> int:
+    """Finite CPU deadline scales with pixel count at the 0.25 µm model grid."""
+    pixels = (int(source["width"]) * int(source["height"]) *
+              (float(source["mpp"]) / .25) ** 2)
+    if pixels <= 0 or pixels > 2_000_000:
+        raise ValueError("Expanded CPU image dimensions exceed the audited scope")
+    return max(240, int(120 + pixels * .001))
+
+
 def run(args: argparse.Namespace) -> dict:
     if os.environ.get("CUDA_VISIBLE_DEVICES") != "-1":
         raise RuntimeError("CPU bundle requires CUDA_VISIBLE_DEVICES=-1")
@@ -153,19 +162,22 @@ def run(args: argparse.Namespace) -> dict:
                 raise FileNotFoundError(mask)
             # A symlink records the exact independent mask used in the QC report.
             (folder / "stardist_labels.tif").symlink_to(mask)
+            time_limit = inference_timeout(source[sample])
             elapsed = bounded([str(args.python), "-u", str(args.runner),
                                "--image", str(image), "--outdir", str(folder / "gigatime_output"),
                                "--device", "cpu", "--repo-revision", REVISION,
                                "--auto-parameters", "--output-format", "zarr",
                                "--jpg-markers", "DAPI,CK,CD3,CD68,CD14,CD16",
-                               "--seam-qc-mode", "warn"], folder / "inference.log", 180, env)
+                               "--seam-qc-mode", "warn"], folder / "inference.log",
+                              time_limit, env)
             qc_elapsed = bounded([str(args.python), str(args.qc),
                                   "--image", str(folder / "gigatime_output"),
                                   "--nuclei", str(folder / "stardist_labels.tif"),
                                   "--output", str(folder / "stardist_qc.json"),
                                   "--mode", "warn"], folder / "qc.log", 90, env)
             result = validate_case(folder, source[sample], image_sha)
-            result.update(inference_seconds=elapsed, qc_seconds=qc_elapsed)
+            result.update(inference_seconds=elapsed, inference_timeout_seconds=time_limit,
+                          qc_seconds=qc_elapsed)
             atomic_json(marker, result)
             outcomes.append(result)
             print(f"COMPLETE {index}/93 {sample} QC={result['nuclear_qc']['status']} "
