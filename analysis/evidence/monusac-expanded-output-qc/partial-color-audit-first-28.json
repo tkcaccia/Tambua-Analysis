@@ -1,0 +1,3235 @@
+{
+  "status": "partial_read_only_audit",
+  "prior_images": 120,
+  "expanded_completed_images": 28,
+  "color_method": "Every third RGB pixel; tissue if mean RGB<240 and RGB channel range>12; per-image tissue-pixel median, then per-organ/group median. LAB values use OpenCV uint8 encoding.",
+  "causal_limit": "Brightness and stain associations cannot establish a cause of QC failure. No threshold, image, or prediction was changed.",
+  "groups": [
+    {
+      "organ": "breast",
+      "group": "expanded_complete",
+      "images": 9,
+      "across_image_median_lab": [
+        164.0,
+        152.0,
+        121.0
+      ],
+      "across_image_median_rgb": [
+        200.0,
+        137.0,
+        182.0
+      ]
+    },
+    {
+      "organ": "breast",
+      "group": "prior_fail",
+      "images": 18,
+      "across_image_median_lab": [
+        158.5,
+        153.5,
+        113.0
+      ],
+      "across_image_median_rgb": [
+        188.0,
+        129.0,
+        172.0
+      ]
+    },
+    {
+      "organ": "breast",
+      "group": "prior_pass",
+      "images": 17,
+      "across_image_median_lab": [
+        174.0,
+        146.0,
+        117.0
+      ],
+      "across_image_median_rgb": [
+        195.0,
+        157.0,
+        190.0
+      ]
+    },
+    {
+      "organ": "kidney",
+      "group": "expanded_complete",
+      "images": 4,
+      "across_image_median_lab": [
+        117.0,
+        166.0,
+        117.5
+      ],
+      "across_image_median_rgb": [
+        166.0,
+        85.0,
+        129.0
+      ]
+    },
+    {
+      "organ": "kidney",
+      "group": "prior_fail",
+      "images": 16,
+      "across_image_median_lab": [
+        127.0,
+        161.0,
+        116.0
+      ],
+      "across_image_median_rgb": [
+        174.5,
+        85.0,
+        137.5
+      ]
+    },
+    {
+      "organ": "kidney",
+      "group": "prior_pass",
+      "images": 9,
+      "across_image_median_lab": [
+        136.0,
+        158.0,
+        113.0
+      ],
+      "across_image_median_rgb": [
+        166.0,
+        108.0,
+        154.0
+      ]
+    },
+    {
+      "organ": "lung",
+      "group": "expanded_complete",
+      "images": 11,
+      "across_image_median_lab": [
+        147.0,
+        159.0,
+        113.0
+      ],
+      "across_image_median_rgb": [
+        180.0,
+        118.0,
+        161.0
+      ]
+    },
+    {
+      "organ": "lung",
+      "group": "prior_fail",
+      "images": 25,
+      "across_image_median_lab": [
+        147.0,
+        160.0,
+        120.0
+      ],
+      "across_image_median_rgb": [
+        188.0,
+        112.0,
+        153.0
+      ]
+    },
+    {
+      "organ": "lung",
+      "group": "prior_pass",
+      "images": 6,
+      "across_image_median_lab": [
+        163.0,
+        159.0,
+        116.5
+      ],
+      "across_image_median_rgb": [
+        194.5,
+        136.0,
+        176.5
+      ]
+    },
+    {
+      "organ": "prostate",
+      "group": "expanded_complete",
+      "images": 4,
+      "across_image_median_lab": [
+        156.0,
+        162.0,
+        117.0
+      ],
+      "across_image_median_rgb": [
+        187.5,
+        128.5,
+        169.0
+      ]
+    },
+    {
+      "organ": "prostate",
+      "group": "prior_fail",
+      "images": 14,
+      "across_image_median_lab": [
+        153.5,
+        151.5,
+        115.5
+      ],
+      "across_image_median_rgb": [
+        183.5,
+        124.0,
+        163.5
+      ]
+    },
+    {
+      "organ": "prostate",
+      "group": "prior_pass",
+      "images": 15,
+      "across_image_median_lab": [
+        156.0,
+        154.0,
+        116.0
+      ],
+      "across_image_median_rgb": [
+        192.0,
+        126.0,
+        167.0
+      ]
+    }
+  ],
+  "records": [
+    {
+      "sample_id": "TCGA-55-1594-01Z-00-DX1_001",
+      "organ": "lung",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 116964,
+        "sampled_tissue_pixels": 114327,
+        "sampled_tissue_fraction": 0.977455,
+        "median_rgb": [
+          188.0,
+          131.0,
+          157.0
+        ],
+        "median_lab_opencv_uint8": [
+          156.0,
+          152.0,
+          123.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-55-1594-01Z-00-DX1_002",
+      "organ": "lung",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 29241,
+        "sampled_tissue_pixels": 28719,
+        "sampled_tissue_fraction": 0.982148,
+        "median_rgb": [
+          171.0,
+          121.0,
+          150.0
+        ],
+        "median_lab_opencv_uint8": [
+          145.0,
+          150.0,
+          120.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-55-1594-01Z-00-DX1_003",
+      "organ": "lung",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 29241,
+        "sampled_tissue_pixels": 21979,
+        "sampled_tissue_fraction": 0.75165,
+        "median_rgb": [
+          204.0,
+          159.0,
+          172.0
+        ],
+        "median_lab_opencv_uint8": [
+          179.0,
+          145.0,
+          128.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-55-1594-01Z-00-DX1_004",
+      "organ": "lung",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 29241,
+        "sampled_tissue_pixels": 21120,
+        "sampled_tissue_fraction": 0.722274,
+        "median_rgb": [
+          219.0,
+          177.0,
+          188.0
+        ],
+        "median_lab_opencv_uint8": [
+          194.0,
+          144.0,
+          128.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-55-1594-01Z-00-DX1_005",
+      "organ": "lung",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 29241,
+        "sampled_tissue_pixels": 28737,
+        "sampled_tissue_fraction": 0.982764,
+        "median_rgb": [
+          188.0,
+          130.0,
+          156.0
+        ],
+        "median_lab_opencv_uint8": [
+          156.0,
+          153.0,
+          123.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-5P-A9K0-01Z-00-DX1_1",
+      "organ": "kidney",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 167860,
+        "sampled_tissue_pixels": 157919,
+        "sampled_tissue_fraction": 0.940778,
+        "median_rgb": [
+          165.0,
+          43.0,
+          134.0
+        ],
+        "median_lab_opencv_uint8": [
+          103.0,
+          183.0,
+          104.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-5P-A9K0-01Z-00-DX1_2",
+      "organ": "kidney",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 64260,
+        "sampled_tissue_pixels": 61853,
+        "sampled_tissue_fraction": 0.962543,
+        "median_rgb": [
+          178.0,
+          67.0,
+          154.0
+        ],
+        "median_lab_opencv_uint8": [
+          122.0,
+          177.0,
+          101.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-69-7760-01Z-00-DX1_001",
+      "organ": "lung",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 29241,
+        "sampled_tissue_pixels": 20107,
+        "sampled_tissue_fraction": 0.68763,
+        "median_rgb": [
+          195.0,
+          97.0,
+          138.0
+        ],
+        "median_lab_opencv_uint8": [
+          138.0,
+          166.0,
+          124.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-69-7760-01Z-00-DX1_002",
+      "organ": "lung",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 29241,
+        "sampled_tissue_pixels": 29033,
+        "sampled_tissue_fraction": 0.992887,
+        "median_rgb": [
+          172.0,
+          86.0,
+          133.0
+        ],
+        "median_lab_opencv_uint8": [
+          125.0,
+          164.0,
+          117.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-69-7760-01Z-00-DX1_003",
+      "organ": "lung",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 29241,
+        "sampled_tissue_pixels": 23152,
+        "sampled_tissue_fraction": 0.791765,
+        "median_rgb": [
+          188.0,
+          96.0,
+          140.0
+        ],
+        "median_lab_opencv_uint8": [
+          135.0,
+          165.0,
+          122.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-69-7760-01Z-00-DX1_004",
+      "organ": "lung",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 116964,
+        "sampled_tissue_pixels": 113813,
+        "sampled_tissue_fraction": 0.97306,
+        "median_rgb": [
+          157.0,
+          77.0,
+          129.0
+        ],
+        "median_lab_opencv_uint8": [
+          113.0,
+          165.0,
+          113.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-69-A59K-01Z-00-DX1_003",
+      "organ": "lung",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 341754,
+        "sampled_tissue_pixels": 330050,
+        "sampled_tissue_fraction": 0.965753,
+        "median_rgb": [
+          218.0,
+          149.0,
+          184.0
+        ],
+        "median_lab_opencv_uint8": [
+          177.0,
+          158.0,
+          120.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-69-A59K-01Z-00-DX1_004",
+      "organ": "lung",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 52437,
+        "sampled_tissue_pixels": 46936,
+        "sampled_tissue_fraction": 0.895093,
+        "median_rgb": [
+          185.0,
+          117.0,
+          162.0
+        ],
+        "median_lab_opencv_uint8": [
+          147.0,
+          156.0,
+          115.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-73-4668-01Z-00-DX1_001",
+      "organ": "lung",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 51220,
+        "sampled_tissue_pixels": 37606,
+        "sampled_tissue_fraction": 0.734205,
+        "median_rgb": [
+          215.0,
+          100.0,
+          137.0
+        ],
+        "median_lab_opencv_uint8": [
+          148.0,
+          170.0,
+          130.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-73-4668-01Z-00-DX1_002",
+      "organ": "lung",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 116964,
+        "sampled_tissue_pixels": 116214,
+        "sampled_tissue_fraction": 0.993588,
+        "median_rgb": [
+          173.0,
+          97.0,
+          143.0
+        ],
+        "median_lab_opencv_uint8": [
+          131.0,
+          163.0,
+          116.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-78-7220-01Z-00-DX1_001",
+      "organ": "lung",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 29241,
+        "sampled_tissue_pixels": 8647,
+        "sampled_tissue_fraction": 0.295715,
+        "median_rgb": [
+          205.0,
+          125.0,
+          169.0
+        ],
+        "median_lab_opencv_uint8": [
+          159.0,
+          161.0,
+          120.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-78-7220-01Z-00-DX1_002",
+      "organ": "lung",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 29241,
+        "sampled_tissue_pixels": 16206,
+        "sampled_tissue_fraction": 0.554222,
+        "median_rgb": [
+          202.0,
+          105.0,
+          158.0
+        ],
+        "median_lab_opencv_uint8": [
+          146.0,
+          168.0,
+          118.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-78-7220-01Z-00-DX1_003",
+      "organ": "lung",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 116964,
+        "sampled_tissue_pixels": 116603,
+        "sampled_tissue_fraction": 0.996914,
+        "median_rgb": [
+          191.0,
+          117.0,
+          167.0
+        ],
+        "median_lab_opencv_uint8": [
+          150.0,
+          162.0,
+          114.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-78-7220-01Z-00-DX1_004",
+      "organ": "lung",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 29241,
+        "sampled_tissue_pixels": 28626,
+        "sampled_tissue_fraction": 0.978968,
+        "median_rgb": [
+          195.0,
+          112.0,
+          164.0
+        ],
+        "median_lab_opencv_uint8": [
+          147.0,
+          161.0,
+          115.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-86-7713-01Z-00-DX1_002",
+      "organ": "lung",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 54502,
+        "sampled_tissue_pixels": 52242,
+        "sampled_tissue_fraction": 0.958534,
+        "median_rgb": [
+          216.0,
+          118.0,
+          153.0
+        ],
+        "median_lab_opencv_uint8": [
+          156.0,
+          167.0,
+          128.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-86-7713-01Z-00-DX1_003",
+      "organ": "lung",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 49404,
+        "sampled_tissue_pixels": 47991,
+        "sampled_tissue_fraction": 0.971399,
+        "median_rgb": [
+          188.0,
+          126.0,
+          167.0
+        ],
+        "median_lab_opencv_uint8": [
+          154.0,
+          154.0,
+          116.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-86-7713-01Z-00-DX1_004",
+      "organ": "lung",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 126999,
+        "sampled_tissue_pixels": 124777,
+        "sampled_tissue_fraction": 0.982504,
+        "median_rgb": [
+          190.0,
+          133.0,
+          172.0
+        ],
+        "median_lab_opencv_uint8": [
+          159.0,
+          155.0,
+          116.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-86-8672-01Z-00-DX1_1",
+      "organ": "lung",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 48640,
+        "sampled_tissue_pixels": 44721,
+        "sampled_tissue_fraction": 0.919428,
+        "median_rgb": [
+          209.0,
+          131.0,
+          165.0
+        ],
+        "median_lab_opencv_uint8": [
+          162.0,
+          155.0,
+          123.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-86-8672-01Z-00-DX1_2",
+      "organ": "lung",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 217798,
+        "sampled_tissue_pixels": 177434,
+        "sampled_tissue_fraction": 0.814672,
+        "median_rgb": [
+          224.0,
+          107.0,
+          137.0
+        ],
+        "median_lab_opencv_uint8": [
+          154.0,
+          174.0,
+          134.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-86-8672-01Z-00-DX1_3",
+      "organ": "lung",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 217626,
+        "sampled_tissue_pixels": 213344,
+        "sampled_tissue_fraction": 0.980324,
+        "median_rgb": [
+          199.0,
+          126.0,
+          163.0
+        ],
+        "median_lab_opencv_uint8": [
+          157.0,
+          160.0,
+          120.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-A2-A0CV-01Z-00-DX1_1",
+      "organ": "breast",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 41616,
+        "sampled_tissue_pixels": 41608,
+        "sampled_tissue_fraction": 0.999808,
+        "median_rgb": [
+          200.0,
+          129.0,
+          186.0
+        ],
+        "median_lab_opencv_uint8": [
+          161.0,
+          162.0,
+          109.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-A2-A0CV-01Z-00-DX1_2",
+      "organ": "breast",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 42136,
+        "sampled_tissue_pixels": 42118,
+        "sampled_tissue_fraction": 0.999573,
+        "median_rgb": [
+          199.0,
+          126.0,
+          184.0
+        ],
+        "median_lab_opencv_uint8": [
+          159.0,
+          163.0,
+          109.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-A2-A0CV-01Z-00-DX1_4",
+      "organ": "breast",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 58082,
+        "sampled_tissue_pixels": 57539,
+        "sampled_tissue_fraction": 0.990651,
+        "median_rgb": [
+          215.0,
+          139.0,
+          191.0
+        ],
+        "median_lab_opencv_uint8": [
+          171.0,
+          159.0,
+          113.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-B6-A0WZ-01Z-00-DX1_1",
+      "organ": "breast",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 273280,
+        "sampled_tissue_pixels": 245608,
+        "sampled_tissue_fraction": 0.898741,
+        "median_rgb": [
+          212.0,
+          158.0,
+          192.0
+        ],
+        "median_lab_opencv_uint8": [
+          181.0,
+          150.0,
+          119.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-B6-A0WZ-01Z-00-DX1_5",
+      "organ": "breast",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 39248,
+        "sampled_tissue_pixels": 28541,
+        "sampled_tissue_fraction": 0.727196,
+        "median_rgb": [
+          191.0,
+          131.0,
+          172.0
+        ],
+        "median_lab_opencv_uint8": [
+          158.0,
+          149.0,
+          116.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-B9-A44B-01Z-00-DX1_2",
+      "organ": "kidney",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 182678,
+        "sampled_tissue_pixels": 174951,
+        "sampled_tissue_fraction": 0.957702,
+        "median_rgb": [
+          175.0,
+          103.0,
+          143.0
+        ],
+        "median_lab_opencv_uint8": [
+          134.0,
+          159.0,
+          118.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-B9-A8YI-01Z-00-DX1_1",
+      "organ": "kidney",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 211071,
+        "sampled_tissue_pixels": 209472,
+        "sampled_tissue_fraction": 0.992424,
+        "median_rgb": [
+          150.0,
+          93.0,
+          142.0
+        ],
+        "median_lab_opencv_uint8": [
+          121.0,
+          158.0,
+          111.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-B9-A8YI-01Z-00-DX1_2",
+      "organ": "kidney",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 97788,
+        "sampled_tissue_pixels": 96660,
+        "sampled_tissue_fraction": 0.988465,
+        "median_rgb": [
+          166.0,
+          104.0,
+          152.0
+        ],
+        "median_lab_opencv_uint8": [
+          133.0,
+          158.0,
+          112.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-B9-A8YI-01Z-00-DX1_3",
+      "organ": "kidney",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 250418,
+        "sampled_tissue_pixels": 238945,
+        "sampled_tissue_fraction": 0.954185,
+        "median_rgb": [
+          176.0,
+          108.0,
+          152.0
+        ],
+        "median_lab_opencv_uint8": [
+          137.0,
+          156.0,
+          116.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-BH-A18T-01Z-00-DX1_1",
+      "organ": "breast",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 132804,
+        "sampled_tissue_pixels": 110095,
+        "sampled_tissue_fraction": 0.829004,
+        "median_rgb": [
+          189.0,
+          142.0,
+          176.0
+        ],
+        "median_lab_opencv_uint8": [
+          165.0,
+          148.0,
+          117.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-BH-A18T-01Z-00-DX1_2",
+      "organ": "breast",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 42423,
+        "sampled_tissue_pixels": 24977,
+        "sampled_tissue_fraction": 0.588761,
+        "median_rgb": [
+          202.0,
+          130.0,
+          167.0
+        ],
+        "median_lab_opencv_uint8": [
+          160.0,
+          158.0,
+          122.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-BH-A18T-01Z-00-DX1_5",
+      "organ": "breast",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 79156,
+        "sampled_tissue_pixels": 68415,
+        "sampled_tissue_fraction": 0.864306,
+        "median_rgb": [
+          180.0,
+          126.0,
+          166.0
+        ],
+        "median_lab_opencv_uint8": [
+          152.0,
+          153.0,
+          116.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-BH-A18T-01Z-00-DX1_6",
+      "organ": "breast",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 129684,
+        "sampled_tissue_pixels": 125857,
+        "sampled_tissue_fraction": 0.97049,
+        "median_rgb": [
+          166.0,
+          107.0,
+          151.0
+        ],
+        "median_lab_opencv_uint8": [
+          135.0,
+          156.0,
+          115.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-D8-A1X5-01Z-00-DX2_2",
+      "organ": "breast",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 151616,
+        "sampled_tissue_pixels": 95023,
+        "sampled_tissue_fraction": 0.626735,
+        "median_rgb": [
+          192.0,
+          173.0,
+          196.0
+        ],
+        "median_lab_opencv_uint8": [
+          186.0,
+          139.0,
+          118.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-D8-A1X5-01Z-00-DX2_3",
+      "organ": "breast",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 250382,
+        "sampled_tissue_pixels": 228380,
+        "sampled_tissue_fraction": 0.912126,
+        "median_rgb": [
+          185.0,
+          154.0,
+          188.0
+        ],
+        "median_lab_opencv_uint8": [
+          172.0,
+          145.0,
+          115.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-D8-A1X5-01Z-00-DX2_4",
+      "organ": "breast",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 95392,
+        "sampled_tissue_pixels": 57513,
+        "sampled_tissue_fraction": 0.602912,
+        "median_rgb": [
+          216.0,
+          195.0,
+          209.0
+        ],
+        "median_lab_opencv_uint8": [
+          206.0,
+          138.0,
+          123.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-DW-7841-01Z-00-DX1_1",
+      "organ": "kidney",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 86728,
+        "sampled_tissue_pixels": 85780,
+        "sampled_tissue_fraction": 0.989069,
+        "median_rgb": [
+          115.0,
+          59.0,
+          119.0
+        ],
+        "median_lab_opencv_uint8": [
+          88.0,
+          158.0,
+          105.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-DW-7841-01Z-00-DX1_2",
+      "organ": "kidney",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 85214,
+        "sampled_tissue_pixels": 85103,
+        "sampled_tissue_fraction": 0.998697,
+        "median_rgb": [
+          140.0,
+          73.0,
+          133.0
+        ],
+        "median_lab_opencv_uint8": [
+          105.0,
+          162.0,
+          106.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-E2-A154-01Z-00-DX1_3",
+      "organ": "breast",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 37400,
+        "sampled_tissue_pixels": 34944,
+        "sampled_tissue_fraction": 0.934332,
+        "median_rgb": [
+          182.0,
+          126.0,
+          169.0
+        ],
+        "median_lab_opencv_uint8": [
+          153.0,
+          155.0,
+          114.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-E2-A154-01Z-00-DX1_4",
+      "organ": "breast",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 43263,
+        "sampled_tissue_pixels": 42232,
+        "sampled_tissue_fraction": 0.976169,
+        "median_rgb": [
+          185.0,
+          138.0,
+          179.0
+        ],
+        "median_lab_opencv_uint8": [
+          161.0,
+          153.0,
+          113.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-E9-A22B-01Z-00-DX1_1",
+      "organ": "breast",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 303832,
+        "sampled_tissue_pixels": 191399,
+        "sampled_tissue_fraction": 0.62995,
+        "median_rgb": [
+          229.0,
+          187.0,
+          208.0
+        ],
+        "median_lab_opencv_uint8": [
+          204.0,
+          146.0,
+          123.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-E9-A22B-01Z-00-DX1_2",
+      "organ": "breast",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 64015,
+        "sampled_tissue_pixels": 45754,
+        "sampled_tissue_fraction": 0.714739,
+        "median_rgb": [
+          235.0,
+          196.0,
+          214.0
+        ],
+        "median_lab_opencv_uint8": [
+          211.0,
+          144.0,
+          124.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-E9-A22B-01Z-00-DX1_3",
+      "organ": "breast",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 67732,
+        "sampled_tissue_pixels": 63409,
+        "sampled_tissue_fraction": 0.936175,
+        "median_rgb": [
+          213.0,
+          173.0,
+          202.0
+        ],
+        "median_lab_opencv_uint8": [
+          192.0,
+          147.0,
+          119.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-E9-A22B-01Z-00-DX1_8",
+      "organ": "breast",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 138529,
+        "sampled_tissue_pixels": 106332,
+        "sampled_tissue_fraction": 0.767579,
+        "median_rgb": [
+          211.0,
+          177.0,
+          204.0
+        ],
+        "median_lab_opencv_uint8": [
+          193.0,
+          145.0,
+          119.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-E9-A22G-01Z-00-DX1_1",
+      "organ": "breast",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 37674,
+        "sampled_tissue_pixels": 33521,
+        "sampled_tissue_fraction": 0.889765,
+        "median_rgb": [
+          163.0,
+          125.0,
+          170.0
+        ],
+        "median_lab_opencv_uint8": [
+          147.0,
+          150.0,
+          110.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-E9-A22G-01Z-00-DX1_2",
+      "organ": "breast",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 48777,
+        "sampled_tissue_pixels": 47612,
+        "sampled_tissue_fraction": 0.976116,
+        "median_rgb": [
+          180.0,
+          129.0,
+          172.0
+        ],
+        "median_lab_opencv_uint8": [
+          154.0,
+          154.0,
+          113.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-E9-A22G-01Z-00-DX1_5",
+      "organ": "breast",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 55084,
+        "sampled_tissue_pixels": 47505,
+        "sampled_tissue_fraction": 0.86241,
+        "median_rgb": [
+          175.0,
+          121.0,
+          169.0
+        ],
+        "median_lab_opencv_uint8": [
+          148.0,
+          156.0,
+          111.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-EJ-5495-01Z-00-DX1-1",
+      "organ": "prostate",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 256500,
+        "sampled_tissue_pixels": 250005,
+        "sampled_tissue_fraction": 0.974678,
+        "median_rgb": [
+          195.0,
+          131.0,
+          174.0
+        ],
+        "median_lab_opencv_uint8": [
+          159.0,
+          157.0,
+          116.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-EJ-5505-01Z-00-DX1-1",
+      "organ": "prostate",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 123783,
+        "sampled_tissue_pixels": 122273,
+        "sampled_tissue_fraction": 0.987801,
+        "median_rgb": [
+          148.0,
+          89.0,
+          141.0
+        ],
+        "median_lab_opencv_uint8": [
+          118.0,
+          158.0,
+          110.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-EJ-5517-01Z-00-DX1-3",
+      "organ": "prostate",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 67270,
+        "sampled_tissue_pixels": 34544,
+        "sampled_tissue_fraction": 0.513513,
+        "median_rgb": [
+          214.0,
+          167.0,
+          193.0
+        ],
+        "median_lab_opencv_uint8": [
+          187.0,
+          149.0,
+          122.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-EJ-5517-01Z-00-DX1-4",
+      "organ": "prostate",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 341007,
+        "sampled_tissue_pixels": 322263,
+        "sampled_tissue_fraction": 0.945033,
+        "median_rgb": [
+          195.0,
+          136.0,
+          173.0
+        ],
+        "median_lab_opencv_uint8": [
+          162.0,
+          153.0,
+          118.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-EV-5903-01Z-00-DX1_1",
+      "organ": "kidney",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 110433,
+        "sampled_tissue_pixels": 105140,
+        "sampled_tissue_fraction": 0.95207,
+        "median_rgb": [
+          200.0,
+          144.0,
+          179.0
+        ],
+        "median_lab_opencv_uint8": [
+          169.0,
+          152.0,
+          118.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-EW-A6SD-01Z-00-DX1_3",
+      "organ": "breast",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 84846,
+        "sampled_tissue_pixels": 76745,
+        "sampled_tissue_fraction": 0.904521,
+        "median_rgb": [
+          186.0,
+          157.0,
+          192.0
+        ],
+        "median_lab_opencv_uint8": [
+          174.0,
+          145.0,
+          114.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-EW-A6SD-01Z-00-DX1_4",
+      "organ": "breast",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 77028,
+        "sampled_tissue_pixels": 69594,
+        "sampled_tissue_fraction": 0.90349,
+        "median_rgb": [
+          195.0,
+          159.0,
+          190.0
+        ],
+        "median_lab_opencv_uint8": [
+          178.0,
+          146.0,
+          117.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-F9-A97G-01Z-00-DX1_1",
+      "organ": "kidney",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 122507,
+        "sampled_tissue_pixels": 114379,
+        "sampled_tissue_fraction": 0.933653,
+        "median_rgb": [
+          220.0,
+          123.0,
+          161.0
+        ],
+        "median_lab_opencv_uint8": [
+          162.0,
+          166.0,
+          124.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-F9-A97G-01Z-00-DX1_3",
+      "organ": "kidney",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 40040,
+        "sampled_tissue_pixels": 39560,
+        "sampled_tissue_fraction": 0.988012,
+        "median_rgb": [
+          174.0,
+          106.0,
+          148.0
+        ],
+        "median_lab_opencv_uint8": [
+          138.0,
+          157.0,
+          116.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-G7-A8LD-01Z-00-DX1_5",
+      "organ": "kidney",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 63800,
+        "sampled_tissue_pixels": 62744,
+        "sampled_tissue_fraction": 0.983448,
+        "median_rgb": [
+          212.0,
+          78.0,
+          97.0
+        ],
+        "median_lab_opencv_uint8": [
+          134.0,
+          180.0,
+          144.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-G9-6499-01Z-00-DX1-1",
+      "organ": "prostate",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 83172,
+        "sampled_tissue_pixels": 55992,
+        "sampled_tissue_fraction": 0.673207,
+        "median_rgb": [
+          220.0,
+          151.0,
+          182.0
+        ],
+        "median_lab_opencv_uint8": [
+          179.0,
+          158.0,
+          124.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-G9-6499-01Z-00-DX1-4",
+      "organ": "prostate",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 197349,
+        "sampled_tissue_pixels": 187570,
+        "sampled_tissue_fraction": 0.950448,
+        "median_rgb": [
+          208.0,
+          149.0,
+          181.0
+        ],
+        "median_lab_opencv_uint8": [
+          174.0,
+          154.0,
+          120.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-J4-A67Q-01Z-00-DX1-1",
+      "organ": "prostate",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 79605,
+        "sampled_tissue_pixels": 78519,
+        "sampled_tissue_fraction": 0.986358,
+        "median_rgb": [
+          163.0,
+          95.0,
+          143.0
+        ],
+        "median_lab_opencv_uint8": [
+          127.0,
+          160.0,
+          114.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-J4-A67T-01Z-00-DX1-2",
+      "organ": "prostate",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 106359,
+        "sampled_tissue_pixels": 102478,
+        "sampled_tissue_fraction": 0.96351,
+        "median_rgb": [
+          156.0,
+          91.0,
+          142.0
+        ],
+        "median_lab_opencv_uint8": [
+          122.0,
+          159.0,
+          112.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-J4-A67T-01Z-00-DX1-6",
+      "organ": "prostate",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 35000,
+        "sampled_tissue_pixels": 34406,
+        "sampled_tissue_fraction": 0.983029,
+        "median_rgb": [
+          143.0,
+          85.0,
+          135.0
+        ],
+        "median_lab_opencv_uint8": [
+          113.0,
+          157.0,
+          110.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-KK-A59X-01Z-00-DX1-1",
+      "organ": "prostate",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 33855,
+        "sampled_tissue_pixels": 32594,
+        "sampled_tissue_fraction": 0.962753,
+        "median_rgb": [
+          139.0,
+          119.5,
+          162.0
+        ],
+        "median_lab_opencv_uint8": [
+          137.0,
+          144.0,
+          108.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-KK-A6E0-01Z-00-DX1-1",
+      "organ": "prostate",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 66464,
+        "sampled_tissue_pixels": 60164,
+        "sampled_tissue_fraction": 0.905212,
+        "median_rgb": [
+          169.0,
+          120.0,
+          162.0
+        ],
+        "median_lab_opencv_uint8": [
+          144.0,
+          153.0,
+          113.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-KK-A6E0-01Z-00-DX1-2",
+      "organ": "prostate",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 106063,
+        "sampled_tissue_pixels": 101368,
+        "sampled_tissue_fraction": 0.955734,
+        "median_rgb": [
+          174.0,
+          126.0,
+          167.0
+        ],
+        "median_lab_opencv_uint8": [
+          150.0,
+          153.0,
+          113.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-KK-A7AW-01Z-00-DX1-1",
+      "organ": "prostate",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 30444,
+        "sampled_tissue_pixels": 29821,
+        "sampled_tissue_fraction": 0.979536,
+        "median_rgb": [
+          118.0,
+          83.0,
+          133.0
+        ],
+        "median_lab_opencv_uint8": [
+          104.0,
+          149.0,
+          108.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-L4-A4E5-01Z-00-DX1_1",
+      "organ": "lung",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 71346,
+        "sampled_tissue_pixels": 62228,
+        "sampled_tissue_fraction": 0.8722,
+        "median_rgb": [
+          223.0,
+          170.0,
+          194.0
+        ],
+        "median_lab_opencv_uint8": [
+          191.0,
+          148.0,
+          123.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-L4-A4E5-01Z-00-DX1_3",
+      "organ": "lung",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 90000,
+        "sampled_tissue_pixels": 89036,
+        "sampled_tissue_fraction": 0.989289,
+        "median_rgb": [
+          155.0,
+          97.0,
+          140.0
+        ],
+        "median_lab_opencv_uint8": [
+          125.0,
+          156.0,
+          114.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-MH-A560-01Z-00-DX2_2",
+      "organ": "kidney",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 295472,
+        "sampled_tissue_pixels": 294410,
+        "sampled_tissue_fraction": 0.996406,
+        "median_rgb": [
+          163.0,
+          104.0,
+          154.0
+        ],
+        "median_lab_opencv_uint8": [
+          133.0,
+          158.0,
+          111.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-MP-A4SY-01Z-00-DX1_2",
+      "organ": "lung",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 136161,
+        "sampled_tissue_pixels": 134753,
+        "sampled_tissue_fraction": 0.989659,
+        "median_rgb": [
+          160.0,
+          93.0,
+          142.0
+        ],
+        "median_lab_opencv_uint8": [
+          124.0,
+          160.0,
+          112.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-MP-A4SY-01Z-00-DX1_3",
+      "organ": "lung",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 37587,
+        "sampled_tissue_pixels": 37179,
+        "sampled_tissue_fraction": 0.989145,
+        "median_rgb": [
+          127.0,
+          81.0,
+          133.0
+        ],
+        "median_lab_opencv_uint8": [
+          106.0,
+          155.0,
+          107.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-P4-AAVK-01Z-00-DX1_3",
+      "organ": "kidney",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 271806,
+        "sampled_tissue_pixels": 268577,
+        "sampled_tissue_fraction": 0.98812,
+        "median_rgb": [
+          178.0,
+          124.0,
+          183.0
+        ],
+        "median_lab_opencv_uint8": [
+          151.0,
+          158.0,
+          105.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-S3-AA11-01Z-00-DX1_1",
+      "organ": "breast",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 203273,
+        "sampled_tissue_pixels": 108164,
+        "sampled_tissue_fraction": 0.532112,
+        "median_rgb": [
+          197.0,
+          164.0,
+          191.0
+        ],
+        "median_lab_opencv_uint8": [
+          181.0,
+          143.0,
+          119.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-S3-AA11-01Z-00-DX1_2",
+      "organ": "breast",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 217997,
+        "sampled_tissue_pixels": 172234,
+        "sampled_tissue_fraction": 0.790075,
+        "median_rgb": [
+          184.0,
+          150.0,
+          182.0
+        ],
+        "median_lab_opencv_uint8": [
+          169.0,
+          145.0,
+          116.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-S3-AA11-01Z-00-DX1_3",
+      "organ": "breast",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 52611,
+        "sampled_tissue_pixels": 38971,
+        "sampled_tissue_fraction": 0.740739,
+        "median_rgb": [
+          202.0,
+          152.0,
+          179.0
+        ],
+        "median_lab_opencv_uint8": [
+          175.0,
+          147.0,
+          120.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-S3-AA11-01Z-00-DX1_4",
+      "organ": "breast",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 55756,
+        "sampled_tissue_pixels": 46580,
+        "sampled_tissue_fraction": 0.835426,
+        "median_rgb": [
+          200.0,
+          148.0,
+          176.0
+        ],
+        "median_lab_opencv_uint8": [
+          171.0,
+          148.0,
+          121.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-UZ-A9PO-01Z-00-DX1_3",
+      "organ": "kidney",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 97002,
+        "sampled_tissue_pixels": 95064,
+        "sampled_tissue_fraction": 0.980021,
+        "median_rgb": [
+          187.0,
+          116.0,
+          161.0
+        ],
+        "median_lab_opencv_uint8": [
+          147.0,
+          161.0,
+          115.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-V1-A8WL-01Z-00-DX1-1",
+      "organ": "prostate",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 48659,
+        "sampled_tissue_pixels": 41994,
+        "sampled_tissue_fraction": 0.863026,
+        "median_rgb": [
+          217.0,
+          170.0,
+          196.0
+        ],
+        "median_lab_opencv_uint8": [
+          190.0,
+          148.0,
+          121.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-V1-A9O9-01Z-00-DX1-1",
+      "organ": "prostate",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 50960,
+        "sampled_tissue_pixels": 47501,
+        "sampled_tissue_fraction": 0.932123,
+        "median_rgb": [
+          180.0,
+          122.0,
+          161.0
+        ],
+        "median_lab_opencv_uint8": [
+          149.0,
+          152.0,
+          115.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-V1-A9O9-01Z-00-DX1-2",
+      "organ": "prostate",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 43581,
+        "sampled_tissue_pixels": 36874,
+        "sampled_tissue_fraction": 0.846103,
+        "median_rgb": [
+          156.0,
+          121.0,
+          162.0
+        ],
+        "median_lab_opencv_uint8": [
+          142.0,
+          147.0,
+          112.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-V1-A9O9-01Z-00-DX1-3",
+      "organ": "prostate",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 91740,
+        "sampled_tissue_pixels": 76513,
+        "sampled_tissue_fraction": 0.83402,
+        "median_rgb": [
+          180.0,
+          137.0,
+          176.0
+        ],
+        "median_lab_opencv_uint8": [
+          159.0,
+          150.0,
+          114.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-YL-A9WY-01Z-00-DX1-1",
+      "organ": "prostate",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 141960,
+        "sampled_tissue_pixels": 133403,
+        "sampled_tissue_fraction": 0.939722,
+        "median_rgb": [
+          206.0,
+          171.0,
+          194.0
+        ],
+        "median_lab_opencv_uint8": [
+          188.0,
+          144.0,
+          121.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-YL-A9WY-01Z-00-DX1-2",
+      "organ": "prostate",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 78524,
+        "sampled_tissue_pixels": 70488,
+        "sampled_tissue_fraction": 0.897662,
+        "median_rgb": [
+          205.0,
+          181.0,
+          199.0
+        ],
+        "median_lab_opencv_uint8": [
+          195.0,
+          139.0,
+          122.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-2Z-A9JG-01Z-00-DX1_4",
+      "organ": "kidney",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 50652,
+        "sampled_tissue_pixels": 50442,
+        "sampled_tissue_fraction": 0.995854,
+        "median_rgb": [
+          152.0,
+          89.0,
+          138.0
+        ],
+        "median_lab_opencv_uint8": [
+          119.0,
+          160.0,
+          111.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-2Z-A9JG-01Z-00-DX1_5",
+      "organ": "kidney",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 54600,
+        "sampled_tissue_pixels": 51155,
+        "sampled_tissue_fraction": 0.936905,
+        "median_rgb": [
+          153.0,
+          114.0,
+          155.0
+        ],
+        "median_lab_opencv_uint8": [
+          136.0,
+          147.0,
+          113.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-2Z-A9JG-01Z-00-DX1_6",
+      "organ": "kidney",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 37830,
+        "sampled_tissue_pixels": 37372,
+        "sampled_tissue_fraction": 0.987893,
+        "median_rgb": [
+          171.0,
+          104.0,
+          148.0
+        ],
+        "median_lab_opencv_uint8": [
+          134.0,
+          157.0,
+          116.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-2Z-A9JN-01Z-00-DX1_2",
+      "organ": "kidney",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 346917,
+        "sampled_tissue_pixels": 339727,
+        "sampled_tissue_fraction": 0.979275,
+        "median_rgb": [
+          158.0,
+          75.0,
+          124.0
+        ],
+        "median_lab_opencv_uint8": [
+          112.0,
+          167.0,
+          117.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-49-6743-01Z-00-DX2_004",
+      "organ": "lung",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 250000,
+        "sampled_tissue_pixels": 249939,
+        "sampled_tissue_fraction": 0.999756,
+        "median_rgb": [
+          167.0,
+          88.0,
+          146.0
+        ],
+        "median_lab_opencv_uint8": [
+          124.0,
+          164.0,
+          112.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-50-6591-01Z-00-DX1_001",
+      "organ": "lung",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 127000,
+        "sampled_tissue_pixels": 113115,
+        "sampled_tissue_fraction": 0.890669,
+        "median_rgb": [
+          180.0,
+          105.0,
+          150.0
+        ],
+        "median_lab_opencv_uint8": [
+          138.0,
+          163.0,
+          116.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-55-7573-01Z-00-DX1_004",
+      "organ": "lung",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 190820,
+        "sampled_tissue_pixels": 183779,
+        "sampled_tissue_fraction": 0.963101,
+        "median_rgb": [
+          191.0,
+          123.0,
+          169.0
+        ],
+        "median_lab_opencv_uint8": [
+          153.0,
+          160.0,
+          115.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-73-4662-01Z-00-DX1_003",
+      "organ": "lung",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 204330,
+        "sampled_tissue_pixels": 185376,
+        "sampled_tissue_fraction": 0.907238,
+        "median_rgb": [
+          198.0,
+          151.0,
+          184.0
+        ],
+        "median_lab_opencv_uint8": [
+          173.0,
+          150.0,
+          118.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-A2-A04X-01Z-00-DX1_001",
+      "organ": "breast",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 102144,
+        "sampled_tissue_pixels": 98800,
+        "sampled_tissue_fraction": 0.967262,
+        "median_rgb": [
+          151.0,
+          95.0,
+          156.0
+        ],
+        "median_lab_opencv_uint8": [
+          124.0,
+          154.0,
+          106.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-A2-A04X-01Z-00-DX1_002",
+      "organ": "breast",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 77778,
+        "sampled_tissue_pixels": 67762,
+        "sampled_tissue_fraction": 0.871223,
+        "median_rgb": [
+          160.0,
+          108.0,
+          166.0
+        ],
+        "median_lab_opencv_uint8": [
+          135.0,
+          153.0,
+          107.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-A2-A04X-01Z-00-DX1_004",
+      "organ": "breast",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 45756,
+        "sampled_tissue_pixels": 45724,
+        "sampled_tissue_fraction": 0.999301,
+        "median_rgb": [
+          163.0,
+          101.0,
+          165.0
+        ],
+        "median_lab_opencv_uint8": [
+          132.0,
+          160.0,
+          105.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-A2-A0ES-01Z-00-DX1_002",
+      "organ": "breast",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 70906,
+        "sampled_tissue_pixels": 70812,
+        "sampled_tissue_fraction": 0.998674,
+        "median_rgb": [
+          178.0,
+          108.0,
+          172.0
+        ],
+        "median_lab_opencv_uint8": [
+          141.0,
+          163.0,
+          105.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-D8-A3Z6-01Z-00-DX2_002",
+      "organ": "breast",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 119160,
+        "sampled_tissue_pixels": 118255,
+        "sampled_tissue_fraction": 0.992405,
+        "median_rgb": [
+          203.0,
+          166.0,
+          189.0
+        ],
+        "median_lab_opencv_uint8": [
+          184.0,
+          145.0,
+          121.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-DW-7838-01Z-00-DX1_1",
+      "organ": "kidney",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 43618,
+        "sampled_tissue_pixels": 43448,
+        "sampled_tissue_fraction": 0.996103,
+        "median_rgb": [
+          104.0,
+          63.0,
+          121.0
+        ],
+        "median_lab_opencv_uint8": [
+          88.0,
+          154.0,
+          104.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-DW-7838-01Z-00-DX1_2",
+      "organ": "kidney",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 50050,
+        "sampled_tissue_pixels": 49848,
+        "sampled_tissue_fraction": 0.995964,
+        "median_rgb": [
+          144.0,
+          85.0,
+          142.0
+        ],
+        "median_lab_opencv_uint8": [
+          114.0,
+          159.0,
+          107.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-E2-A108-01Z-00-DX1_001",
+      "organ": "breast",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 69500,
+        "sampled_tissue_pixels": 64294,
+        "sampled_tissue_fraction": 0.925094,
+        "median_rgb": [
+          180.0,
+          131.0,
+          173.0
+        ],
+        "median_lab_opencv_uint8": [
+          156.0,
+          152.0,
+          113.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-E2-A108-01Z-00-DX1_002",
+      "organ": "breast",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 45153,
+        "sampled_tissue_pixels": 38646,
+        "sampled_tissue_fraction": 0.85589,
+        "median_rgb": [
+          197.0,
+          150.0,
+          186.0
+        ],
+        "median_lab_opencv_uint8": [
+          172.0,
+          151.0,
+          116.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-E2-A108-01Z-00-DX1_003",
+      "organ": "breast",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 62245,
+        "sampled_tissue_pixels": 54513,
+        "sampled_tissue_fraction": 0.875781,
+        "median_rgb": [
+          196.0,
+          156.0,
+          190.0
+        ],
+        "median_lab_opencv_uint8": [
+          176.0,
+          148.0,
+          116.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-F9-A8NY-01Z-00-DX1_1",
+      "organ": "kidney",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 334839,
+        "sampled_tissue_pixels": 323696,
+        "sampled_tissue_fraction": 0.966721,
+        "median_rgb": [
+          188.0,
+          81.0,
+          126.0
+        ],
+        "median_lab_opencv_uint8": [
+          126.0,
+          172.0,
+          122.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-F9-A8NY-01Z-00-DX1_3",
+      "organ": "kidney",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 50274,
+        "sampled_tissue_pixels": 42494,
+        "sampled_tissue_fraction": 0.845248,
+        "median_rgb": [
+          208.0,
+          136.0,
+          172.0
+        ],
+        "median_lab_opencv_uint8": [
+          166.0,
+          154.0,
+          120.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-G9-6356-01Z-00-DX1_1",
+      "organ": "prostate",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 132012,
+        "sampled_tissue_pixels": 128639,
+        "sampled_tissue_fraction": 0.974449,
+        "median_rgb": [
+          197.0,
+          126.0,
+          159.0
+        ],
+        "median_lab_opencv_uint8": [
+          156.0,
+          158.0,
+          122.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-G9-6356-01Z-00-DX1_6",
+      "organ": "prostate",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 34404,
+        "sampled_tissue_pixels": 29884,
+        "sampled_tissue_fraction": 0.86862,
+        "median_rgb": [
+          218.0,
+          167.0,
+          190.0
+        ],
+        "median_lab_opencv_uint8": [
+          188.0,
+          151.0,
+          124.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-G9-6367-01Z-00-DX1_1",
+      "organ": "prostate",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 59360,
+        "sampled_tissue_pixels": 49820,
+        "sampled_tissue_fraction": 0.839286,
+        "median_rgb": [
+          178.0,
+          132.0,
+          186.0
+        ],
+        "median_lab_opencv_uint8": [
+          156.0,
+          154.0,
+          107.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-G9-6367-01Z-00-DX1_2",
+      "organ": "prostate",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 129980,
+        "sampled_tissue_pixels": 76725,
+        "sampled_tissue_fraction": 0.590283,
+        "median_rgb": [
+          227.0,
+          182.0,
+          218.0
+        ],
+        "median_lab_opencv_uint8": [
+          202.0,
+          150.0,
+          116.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-G9-6367-01Z-00-DX1_7",
+      "organ": "prostate",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 50007,
+        "sampled_tissue_pixels": 33353,
+        "sampled_tissue_fraction": 0.666967,
+        "median_rgb": [
+          225.0,
+          183.0,
+          219.0
+        ],
+        "median_lab_opencv_uint8": [
+          202.0,
+          149.0,
+          116.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-IZ-A6M9-01Z-00-DX1_1",
+      "organ": "kidney",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 40000,
+        "sampled_tissue_pixels": 39434,
+        "sampled_tissue_fraction": 0.98585,
+        "median_rgb": [
+          187.0,
+          85.0,
+          119.0
+        ],
+        "median_lab_opencv_uint8": [
+          128.0,
+          165.0,
+          125.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-IZ-A6M9-01Z-00-DX1_2",
+      "organ": "kidney",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 208500,
+        "sampled_tissue_pixels": 202682,
+        "sampled_tissue_fraction": 0.972096,
+        "median_rgb": [
+          199.0,
+          97.0,
+          137.0
+        ],
+        "median_lab_opencv_uint8": [
+          139.0,
+          170.0,
+          124.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-VP-A87E-01Z-00-DX1_5",
+      "organ": "prostate",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 291408,
+        "sampled_tissue_pixels": 290817,
+        "sampled_tissue_fraction": 0.997972,
+        "median_rgb": [
+          213.0,
+          114.0,
+          158.0
+        ],
+        "median_lab_opencv_uint8": [
+          154.0,
+          169.0,
+          122.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-VP-A87H-01Z-00-DX1_1",
+      "organ": "prostate",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 38745,
+        "sampled_tissue_pixels": 38577,
+        "sampled_tissue_fraction": 0.995664,
+        "median_rgb": [
+          143.0,
+          77.0,
+          131.0
+        ],
+        "median_lab_opencv_uint8": [
+          109.0,
+          159.0,
+          111.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-VP-A87H-01Z-00-DX1_2",
+      "organ": "prostate",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 213793,
+        "sampled_tissue_pixels": 212127,
+        "sampled_tissue_fraction": 0.992207,
+        "median_rgb": [
+          192.0,
+          94.0,
+          142.0
+        ],
+        "median_lab_opencv_uint8": [
+          136.0,
+          169.0,
+          119.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-X4-A8KS-01Z-00-DX3_1",
+      "organ": "prostate",
+      "group": "prior_pass",
+      "color": {
+        "sampled_pixels": 57597,
+        "sampled_tissue_pixels": 53762,
+        "sampled_tissue_fraction": 0.933417,
+        "median_rgb": [
+          161.0,
+          104.0,
+          148.0
+        ],
+        "median_lab_opencv_uint8": [
+          132.0,
+          154.0,
+          114.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-YL-A9WL-01Z-00-DX1_1",
+      "organ": "prostate",
+      "group": "prior_fail",
+      "color": {
+        "sampled_pixels": 48396,
+        "sampled_tissue_pixels": 47661,
+        "sampled_tissue_fraction": 0.984813,
+        "median_rgb": [
+          187.0,
+          126.0,
+          165.0
+        ],
+        "median_lab_opencv_uint8": [
+          153.0,
+          156.0,
+          116.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-2Z-A9JN-01Z-00-DX1_1",
+      "organ": "kidney",
+      "group": "expanded_complete",
+      "qc_status": "fail",
+      "auc": 0.7433034590162864,
+      "nuclear_boundary_contrast": 0.026295006482286554,
+      "color": {
+        "sampled_pixels": 23288,
+        "sampled_tissue_pixels": 23274,
+        "sampled_tissue_fraction": 0.999399,
+        "median_rgb": [
+          138.0,
+          80.0,
+          128.0
+        ],
+        "median_lab_opencv_uint8": [
+          109.0,
+          156.0,
+          111.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-2Z-A9JN-01Z-00-DX1_3",
+      "organ": "kidney",
+      "group": "expanded_complete",
+      "qc_status": "fail",
+      "auc": 0.4980591847499812,
+      "nuclear_boundary_contrast": 0.0019876074737893434,
+      "color": {
+        "sampled_pixels": 27125,
+        "sampled_tissue_pixels": 26985,
+        "sampled_tissue_fraction": 0.994839,
+        "median_rgb": [
+          194.0,
+          70.0,
+          95.0
+        ],
+        "median_lab_opencv_uint8": [
+          122.0,
+          176.0,
+          138.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-49-6743-01Z-00-DX2_001",
+      "organ": "lung",
+      "group": "expanded_complete",
+      "qc_status": "fail",
+      "auc": 0.7716342054316222,
+      "nuclear_boundary_contrast": 0.04165157285614085,
+      "color": {
+        "sampled_pixels": 10000,
+        "sampled_tissue_pixels": 9691,
+        "sampled_tissue_fraction": 0.9691,
+        "median_rgb": [
+          167.0,
+          115.0,
+          161.0
+        ],
+        "median_lab_opencv_uint8": [
+          141.0,
+          153.0,
+          113.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-49-6743-01Z-00-DX2_003",
+      "organ": "lung",
+      "group": "expanded_complete",
+      "qc_status": "fail",
+      "auc": 0.6789790647388367,
+      "nuclear_boundary_contrast": 0.016931361184668536,
+      "color": {
+        "sampled_pixels": 44756,
+        "sampled_tissue_pixels": 44752,
+        "sampled_tissue_fraction": 0.999911,
+        "median_rgb": [
+          114.0,
+          67.0,
+          126.0
+        ],
+        "median_lab_opencv_uint8": [
+          93.0,
+          156.0,
+          104.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-49-6743-01Z-00-DX2_005",
+      "organ": "lung",
+      "group": "expanded_complete",
+      "qc_status": "fail",
+      "auc": 0.6815502691999709,
+      "nuclear_boundary_contrast": 0.06325888792775458,
+      "color": {
+        "sampled_pixels": 106053,
+        "sampled_tissue_pixels": 106036,
+        "sampled_tissue_fraction": 0.99984,
+        "median_rgb": [
+          165.0,
+          99.0,
+          154.0
+        ],
+        "median_lab_opencv_uint8": [
+          130.0,
+          160.0,
+          110.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-55-7570-01Z-00-DX1_001",
+      "organ": "lung",
+      "group": "expanded_complete",
+      "qc_status": "fail",
+      "auc": 0.6835461183935148,
+      "nuclear_boundary_contrast": 0.016686197940884218,
+      "color": {
+        "sampled_pixels": 32968,
+        "sampled_tissue_pixels": 31410,
+        "sampled_tissue_fraction": 0.952742,
+        "median_rgb": [
+          164.0,
+          106.0,
+          157.0
+        ],
+        "median_lab_opencv_uint8": [
+          134.0,
+          157.0,
+          110.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-55-7573-01Z-00-DX1_003",
+      "organ": "lung",
+      "group": "expanded_complete",
+      "qc_status": "fail",
+      "auc": 0.7433646770243644,
+      "nuclear_boundary_contrast": 0.048662138324727655,
+      "color": {
+        "sampled_pixels": 54800,
+        "sampled_tissue_pixels": 50837,
+        "sampled_tissue_fraction": 0.927682,
+        "median_rgb": [
+          180.0,
+          127.0,
+          171.0
+        ],
+        "median_lab_opencv_uint8": [
+          152.0,
+          154.0,
+          112.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-69-A59K-01Z-00-DX1_002",
+      "organ": "lung",
+      "group": "expanded_complete",
+      "qc_status": "fail",
+      "auc": 0.6938673622365524,
+      "nuclear_boundary_contrast": 0.04085825176053992,
+      "color": {
+        "sampled_pixels": 12800,
+        "sampled_tissue_pixels": 12331,
+        "sampled_tissue_fraction": 0.963359,
+        "median_rgb": [
+          234.0,
+          118.0,
+          154.0
+        ],
+        "median_lab_opencv_uint8": [
+          163.0,
+          174.0,
+          129.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-73-4662-01Z-00-DX1_001",
+      "organ": "lung",
+      "group": "expanded_complete",
+      "qc_status": "fail",
+      "auc": 0.8061277580737669,
+      "nuclear_boundary_contrast": 0.04489493012447132,
+      "color": {
+        "sampled_pixels": 39078,
+        "sampled_tissue_pixels": 36829,
+        "sampled_tissue_fraction": 0.942448,
+        "median_rgb": [
+          166.0,
+          123.0,
+          165.0
+        ],
+        "median_lab_opencv_uint8": [
+          147.0,
+          150.0,
+          112.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-73-4662-01Z-00-DX1_002",
+      "organ": "lung",
+      "group": "expanded_complete",
+      "qc_status": "fail",
+      "auc": 0.6971801411013384,
+      "nuclear_boundary_contrast": 0.05603613702135479,
+      "color": {
+        "sampled_pixels": 9393,
+        "sampled_tissue_pixels": 9121,
+        "sampled_tissue_fraction": 0.971042,
+        "median_rgb": [
+          218.0,
+          130.0,
+          162.0
+        ],
+        "median_lab_opencv_uint8": [
+          165.0,
+          164.0,
+          126.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-73-4668-01Z-00-DX1_004",
+      "organ": "lung",
+      "group": "expanded_complete",
+      "qc_status": "fail",
+      "auc": 0.7349164996977949,
+      "nuclear_boundary_contrast": 0.03654929478549318,
+      "color": {
+        "sampled_pixels": 37680,
+        "sampled_tissue_pixels": 35802,
+        "sampled_tissue_fraction": 0.950159,
+        "median_rgb": [
+          186.0,
+          110.0,
+          151.0
+        ],
+        "median_lab_opencv_uint8": [
+          143.0,
+          159.0,
+          119.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-78-7152-01Z-00-DX1_001",
+      "organ": "lung",
+      "group": "expanded_complete",
+      "qc_status": "fail",
+      "auc": 0.6955656791571438,
+      "nuclear_boundary_contrast": 0.05192455208690716,
+      "color": {
+        "sampled_pixels": 15096,
+        "sampled_tissue_pixels": 10067,
+        "sampled_tissue_fraction": 0.666865,
+        "median_rgb": [
+          221.0,
+          124.0,
+          165.0
+        ],
+        "median_lab_opencv_uint8": [
+          163.0,
+          163.0,
+          125.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-86-7713-01Z-00-DX1_001",
+      "organ": "lung",
+      "group": "expanded_complete",
+      "qc_status": "fail",
+      "auc": 0.662642436371476,
+      "nuclear_boundary_contrast": 0.05529078667132736,
+      "color": {
+        "sampled_pixels": 31141,
+        "sampled_tissue_pixels": 28543,
+        "sampled_tissue_fraction": 0.916573,
+        "median_rgb": [
+          224.0,
+          147.0,
+          177.0
+        ],
+        "median_lab_opencv_uint8": [
+          176.0,
+          159.0,
+          125.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-A2-A0ES-01Z-00-DX1_001",
+      "organ": "breast",
+      "group": "expanded_complete",
+      "qc_status": "fail",
+      "auc": 0.7769113984588283,
+      "nuclear_boundary_contrast": 0.031671841816930724,
+      "color": {
+        "sampled_pixels": 46800,
+        "sampled_tissue_pixels": 46653,
+        "sampled_tissue_fraction": 0.996859,
+        "median_rgb": [
+          181.0,
+          132.0,
+          182.0
+        ],
+        "median_lab_opencv_uint8": [
+          157.0,
+          153.0,
+          109.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-B6-A0WZ-01Z-00-DX1_2",
+      "organ": "breast",
+      "group": "expanded_complete",
+      "qc_status": "fail",
+      "auc": 0.6522285535262818,
+      "nuclear_boundary_contrast": 0.027424161044154793,
+      "color": {
+        "sampled_pixels": 12236,
+        "sampled_tissue_pixels": 3829,
+        "sampled_tissue_fraction": 0.312929,
+        "median_rgb": [
+          191.0,
+          160.0,
+          188.0
+        ],
+        "median_lab_opencv_uint8": [
+          177.0,
+          145.0,
+          117.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-B6-A0WZ-01Z-00-DX1_3",
+      "organ": "breast",
+      "group": "expanded_complete",
+      "qc_status": "fail",
+      "auc": 0.5098860700748774,
+      "nuclear_boundary_contrast": -0.0001309393429364536,
+      "color": {
+        "sampled_pixels": 8976,
+        "sampled_tissue_pixels": 6814,
+        "sampled_tissue_fraction": 0.759135,
+        "median_rgb": [
+          208.0,
+          102.0,
+          158.0
+        ],
+        "median_lab_opencv_uint8": [
+          147.5,
+          171.0,
+          121.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-B6-A0WZ-01Z-00-DX1_4",
+      "organ": "breast",
+      "group": "expanded_complete",
+      "qc_status": "fail",
+      "auc": 0.7385727131735399,
+      "nuclear_boundary_contrast": 0.026487286245693964,
+      "color": {
+        "sampled_pixels": 21463,
+        "sampled_tissue_pixels": 8689,
+        "sampled_tissue_fraction": 0.404836,
+        "median_rgb": [
+          217.0,
+          190.0,
+          209.0
+        ],
+        "median_lab_opencv_uint8": [
+          203.0,
+          140.0,
+          122.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-B9-A44B-01Z-00-DX1_1",
+      "organ": "kidney",
+      "group": "expanded_complete",
+      "qc_status": "fail",
+      "auc": 0.6327903626520959,
+      "nuclear_boundary_contrast": 0.011564194044588416,
+      "color": {
+        "sampled_pixels": 32705,
+        "sampled_tissue_pixels": 32110,
+        "sampled_tissue_fraction": 0.981807,
+        "median_rgb": [
+          128.0,
+          90.0,
+          130.0
+        ],
+        "median_lab_opencv_uint8": [
+          112.0,
+          148.0,
+          114.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-BH-A18T-01Z-00-DX1_3",
+      "organ": "breast",
+      "group": "expanded_complete",
+      "qc_status": "fail",
+      "auc": 0.6105274648515865,
+      "nuclear_boundary_contrast": 0.036394064678966664,
+      "color": {
+        "sampled_pixels": 23240,
+        "sampled_tissue_pixels": 11270,
+        "sampled_tissue_fraction": 0.48494,
+        "median_rgb": [
+          213.0,
+          157.0,
+          187.0
+        ],
+        "median_lab_opencv_uint8": [
+          181.0,
+          152.0,
+          123.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-BH-A18T-01Z-00-DX1_4",
+      "organ": "breast",
+      "group": "expanded_complete",
+      "qc_status": "fail",
+      "auc": 0.6853361242553234,
+      "nuclear_boundary_contrast": 0.04009040295549826,
+      "color": {
+        "sampled_pixels": 18625,
+        "sampled_tissue_pixels": 13129,
+        "sampled_tissue_fraction": 0.704913,
+        "median_rgb": [
+          200.0,
+          137.0,
+          171.0
+        ],
+        "median_lab_opencv_uint8": [
+          164.0,
+          151.0,
+          121.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-DW-7841-01Z-00-DX1_3",
+      "organ": "kidney",
+      "group": "expanded_complete",
+      "qc_status": "fail",
+      "auc": 0.538118206189504,
+      "nuclear_boundary_contrast": 0.007356574097908575,
+      "color": {
+        "sampled_pixels": 17750,
+        "sampled_tissue_pixels": 17721,
+        "sampled_tissue_fraction": 0.998366,
+        "median_rgb": [
+          205.0,
+          90.0,
+          144.0
+        ],
+        "median_lab_opencv_uint8": [
+          139.0,
+          179.0,
+          121.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-E2-A154-01Z-00-DX1_1",
+      "organ": "breast",
+      "group": "expanded_complete",
+      "qc_status": "fail",
+      "auc": 0.6801762361340041,
+      "nuclear_boundary_contrast": 0.03681667967860813,
+      "color": {
+        "sampled_pixels": 24963,
+        "sampled_tissue_pixels": 21879,
+        "sampled_tissue_fraction": 0.876457,
+        "median_rgb": [
+          186.0,
+          120.0,
+          162.0
+        ],
+        "median_lab_opencv_uint8": [
+          150.0,
+          157.0,
+          116.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-E2-A154-01Z-00-DX1_5",
+      "organ": "breast",
+      "group": "expanded_complete",
+      "qc_status": "fail",
+      "auc": 0.6733086795186382,
+      "nuclear_boundary_contrast": 0.032694051881957176,
+      "color": {
+        "sampled_pixels": 27604,
+        "sampled_tissue_pixels": 12392,
+        "sampled_tissue_fraction": 0.44892,
+        "median_rgb": [
+          180.0,
+          123.0,
+          164.5
+        ],
+        "median_lab_opencv_uint8": [
+          149.0,
+          153.0,
+          115.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-E9-A22B-01Z-00-DX1_6",
+      "organ": "breast",
+      "group": "expanded_complete",
+      "qc_status": "fail",
+      "auc": 0.820582472120333,
+      "nuclear_boundary_contrast": 0.04141257648795893,
+      "color": {
+        "sampled_pixels": 8910,
+        "sampled_tissue_pixels": 4986,
+        "sampled_tissue_fraction": 0.559596,
+        "median_rgb": [
+          228.0,
+          193.0,
+          213.0
+        ],
+        "median_lab_opencv_uint8": [
+          208.0,
+          143.0,
+          122.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-EJ-5495-01Z-00-DX1-2",
+      "organ": "prostate",
+      "group": "expanded_complete",
+      "qc_status": "fail",
+      "auc": 0.7780212376235986,
+      "nuclear_boundary_contrast": 0.04081892853602209,
+      "color": {
+        "sampled_pixels": 40185,
+        "sampled_tissue_pixels": 37005,
+        "sampled_tissue_fraction": 0.920866,
+        "median_rgb": [
+          162.0,
+          122.0,
+          166.0
+        ],
+        "median_lab_opencv_uint8": [
+          145.0,
+          150.0,
+          110.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-EJ-5495-01Z-00-DX1-3",
+      "organ": "prostate",
+      "group": "expanded_complete",
+      "qc_status": "fail",
+      "auc": 0.6710462417131707,
+      "nuclear_boundary_contrast": 0.04762049696766357,
+      "color": {
+        "sampled_pixels": 17952,
+        "sampled_tissue_pixels": 17917,
+        "sampled_tissue_fraction": 0.99805,
+        "median_rgb": [
+          222.0,
+          145.0,
+          180.0
+        ],
+        "median_lab_opencv_uint8": [
+          176.0,
+          162.0,
+          122.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-EJ-5505-01Z-00-DX1-2",
+      "organ": "prostate",
+      "group": "expanded_complete",
+      "qc_status": "fail",
+      "auc": 0.6401535733318874,
+      "nuclear_boundary_contrast": 0.024557528466797818,
+      "color": {
+        "sampled_pixels": 8832,
+        "sampled_tissue_pixels": 8802,
+        "sampled_tissue_fraction": 0.996603,
+        "median_rgb": [
+          213.0,
+          135.0,
+          172.0
+        ],
+        "median_lab_opencv_uint8": [
+          167.0,
+          162.0,
+          121.0
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-EJ-5505-01Z-00-DX1-4",
+      "organ": "prostate",
+      "group": "expanded_complete",
+      "qc_status": "fail",
+      "auc": 0.7557231647099901,
+      "nuclear_boundary_contrast": 0.04011842937413512,
+      "color": {
+        "sampled_pixels": 19352,
+        "sampled_tissue_pixels": 19322,
+        "sampled_tissue_fraction": 0.99845,
+        "median_rgb": [
+          157.0,
+          81.0,
+          134.0
+        ],
+        "median_lab_opencv_uint8": [
+          116.0,
+          164.0,
+          113.0
+        ]
+      }
+    }
+  ]
+}
