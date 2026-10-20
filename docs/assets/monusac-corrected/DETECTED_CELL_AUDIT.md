@@ -123,3 +123,11 @@ than 5,000 native pixels for review. These are **candidates before GigaTIME
 inference and nuclear/shadow QC**, not additions to the validated cohort or
 four-class test score. The [CPU audit code](https://github.com/tkcaccia/Tambua-Analysis/blob/main/analysis/audit_expansion_detected_preflight.py)
 records input hashes, image identities, physical spacing and class counts.
+All 40 oversized matched macrophage regions were then screened against scanner
+RGB H&E and the matched StarDist nucleus outline in
+[four contact sheets](https://github.com/tkcaccia/Tambua-Analysis/tree/main/analysis/evidence/monusac-large-macrophages).
+Their source polygons are cell-scale and morphologically heterogeneous. A
+single enclosed nucleus does not by itself verify macrophage identity; these
+40 regions remain flagged for expert review and a size-exclusion sensitivity
+analysis. Excluding them would leave 112 fit, 39 development and 112 test
+candidate macrophage matches, still before GigaTIME QC.

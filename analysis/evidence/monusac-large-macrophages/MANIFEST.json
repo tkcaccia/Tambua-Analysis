@@ -1,0 +1,370 @@
+{
+  "status": "visual_screened_expert_identity_unverified",
+  "device": "CPU",
+  "regions": 40,
+  "overlay": "Magenta expert macrophage region; cyan matched StarDist nucleus outline; scanner RGB H&E background",
+  "limit": "These source annotations may cover cytoplasm or structures larger than one cell; visual inspection is required before use as reliable cell-type labels.",
+  "records": [
+    {
+      "rank": 1,
+      "sample_id": "TCGA-UZ-A9PO-01Z-00-DX1_4",
+      "split": "train",
+      "organ": "kidney",
+      "expert_area_native_px": 13215,
+      "detected_nucleus_fraction_in_expert_region": 1.0,
+      "sheet": "large-macrophage-1.jpg"
+    },
+    {
+      "rank": 2,
+      "sample_id": "TCGA-KK-A59X-01Z-00-DX1-2",
+      "split": "train",
+      "organ": "prostate",
+      "expert_area_native_px": 11688,
+      "detected_nucleus_fraction_in_expert_region": 1.0,
+      "sheet": "large-macrophage-1.jpg"
+    },
+    {
+      "rank": 3,
+      "sample_id": "TCGA-V1-A8WL-01Z-00-DX1-2",
+      "split": "train",
+      "organ": "prostate",
+      "expert_area_native_px": 10834,
+      "detected_nucleus_fraction_in_expert_region": 1.0,
+      "sheet": "large-macrophage-1.jpg"
+    },
+    {
+      "rank": 4,
+      "sample_id": "TCGA-B6-A0WZ-01Z-00-DX1_4",
+      "split": "development",
+      "organ": "breast",
+      "expert_area_native_px": 10301,
+      "detected_nucleus_fraction_in_expert_region": 1.0,
+      "sheet": "large-macrophage-1.jpg"
+    },
+    {
+      "rank": 5,
+      "sample_id": "TCGA-MH-A560-01Z-00-DX2_3",
+      "split": "train",
+      "organ": "kidney",
+      "expert_area_native_px": 10193,
+      "detected_nucleus_fraction_in_expert_region": 1.0,
+      "sheet": "large-macrophage-1.jpg"
+    },
+    {
+      "rank": 6,
+      "sample_id": "TCGA-MH-A560-01Z-00-DX2_3",
+      "split": "train",
+      "organ": "kidney",
+      "expert_area_native_px": 9005,
+      "detected_nucleus_fraction_in_expert_region": 1.0,
+      "sheet": "large-macrophage-1.jpg"
+    },
+    {
+      "rank": 7,
+      "sample_id": "TCGA-E2-A108-01Z-00-DX1_004",
+      "split": "test",
+      "organ": "breast",
+      "expert_area_native_px": 8914,
+      "detected_nucleus_fraction_in_expert_region": 1.0,
+      "sheet": "large-macrophage-1.jpg"
+    },
+    {
+      "rank": 8,
+      "sample_id": "TCGA-EW-A6SB-01Z-00-DX1_003",
+      "split": "test",
+      "organ": "breast",
+      "expert_area_native_px": 8515,
+      "detected_nucleus_fraction_in_expert_region": 1.0,
+      "sheet": "large-macrophage-1.jpg"
+    },
+    {
+      "rank": 9,
+      "sample_id": "TCGA-V1-A8WL-01Z-00-DX1-2",
+      "split": "train",
+      "organ": "prostate",
+      "expert_area_native_px": 8085,
+      "detected_nucleus_fraction_in_expert_region": 1.0,
+      "sheet": "large-macrophage-1.jpg"
+    },
+    {
+      "rank": 10,
+      "sample_id": "TCGA-UZ-A9PO-01Z-00-DX1_4",
+      "split": "train",
+      "organ": "kidney",
+      "expert_area_native_px": 7776,
+      "detected_nucleus_fraction_in_expert_region": 1.0,
+      "sheet": "large-macrophage-1.jpg"
+    },
+    {
+      "rank": 11,
+      "sample_id": "TCGA-V1-A8WL-01Z-00-DX1-2",
+      "split": "train",
+      "organ": "prostate",
+      "expert_area_native_px": 7735,
+      "detected_nucleus_fraction_in_expert_region": 1.0,
+      "sheet": "large-macrophage-2.jpg"
+    },
+    {
+      "rank": 12,
+      "sample_id": "TCGA-KK-A59X-01Z-00-DX1-2",
+      "split": "train",
+      "organ": "prostate",
+      "expert_area_native_px": 7543,
+      "detected_nucleus_fraction_in_expert_region": 1.0,
+      "sheet": "large-macrophage-2.jpg"
+    },
+    {
+      "rank": 13,
+      "sample_id": "TCGA-UZ-A9PO-01Z-00-DX1_4",
+      "split": "train",
+      "organ": "kidney",
+      "expert_area_native_px": 7505,
+      "detected_nucleus_fraction_in_expert_region": 0.8922305764411027,
+      "sheet": "large-macrophage-2.jpg"
+    },
+    {
+      "rank": 14,
+      "sample_id": "TCGA-UZ-A9PO-01Z-00-DX1_4",
+      "split": "train",
+      "organ": "kidney",
+      "expert_area_native_px": 7455,
+      "detected_nucleus_fraction_in_expert_region": 1.0,
+      "sheet": "large-macrophage-2.jpg"
+    },
+    {
+      "rank": 15,
+      "sample_id": "TCGA-V1-A8WL-01Z-00-DX1-2",
+      "split": "train",
+      "organ": "prostate",
+      "expert_area_native_px": 7361,
+      "detected_nucleus_fraction_in_expert_region": 1.0,
+      "sheet": "large-macrophage-2.jpg"
+    },
+    {
+      "rank": 16,
+      "sample_id": "TCGA-SX-A7SR-01Z-00-DX1_2",
+      "split": "development",
+      "organ": "kidney",
+      "expert_area_native_px": 7282,
+      "detected_nucleus_fraction_in_expert_region": 0.9636363636363636,
+      "sheet": "large-macrophage-2.jpg"
+    },
+    {
+      "rank": 17,
+      "sample_id": "TCGA-V1-A8WL-01Z-00-DX1-2",
+      "split": "train",
+      "organ": "prostate",
+      "expert_area_native_px": 7153,
+      "detected_nucleus_fraction_in_expert_region": 0.9959590517241379,
+      "sheet": "large-macrophage-2.jpg"
+    },
+    {
+      "rank": 18,
+      "sample_id": "TCGA-EV-5903-01Z-00-DX1_4",
+      "split": "train",
+      "organ": "kidney",
+      "expert_area_native_px": 7061,
+      "detected_nucleus_fraction_in_expert_region": 1.0,
+      "sheet": "large-macrophage-2.jpg"
+    },
+    {
+      "rank": 19,
+      "sample_id": "TCGA-UZ-A9PO-01Z-00-DX1_4",
+      "split": "train",
+      "organ": "kidney",
+      "expert_area_native_px": 6973,
+      "detected_nucleus_fraction_in_expert_region": 1.0,
+      "sheet": "large-macrophage-2.jpg"
+    },
+    {
+      "rank": 20,
+      "sample_id": "TCGA-KK-A59X-01Z-00-DX1-2",
+      "split": "train",
+      "organ": "prostate",
+      "expert_area_native_px": 6941,
+      "detected_nucleus_fraction_in_expert_region": 1.0,
+      "sheet": "large-macrophage-2.jpg"
+    },
+    {
+      "rank": 21,
+      "sample_id": "TCGA-KK-A59X-01Z-00-DX1-2",
+      "split": "train",
+      "organ": "prostate",
+      "expert_area_native_px": 6868,
+      "detected_nucleus_fraction_in_expert_region": 1.0,
+      "sheet": "large-macrophage-3.jpg"
+    },
+    {
+      "rank": 22,
+      "sample_id": "TCGA-DW-7841-01Z-00-DX1_3",
+      "split": "train",
+      "organ": "kidney",
+      "expert_area_native_px": 6678,
+      "detected_nucleus_fraction_in_expert_region": 1.0,
+      "sheet": "large-macrophage-3.jpg"
+    },
+    {
+      "rank": 23,
+      "sample_id": "TCGA-DW-7841-01Z-00-DX1_3",
+      "split": "train",
+      "organ": "kidney",
+      "expert_area_native_px": 6623,
+      "detected_nucleus_fraction_in_expert_region": 0.9534695529030953,
+      "sheet": "large-macrophage-3.jpg"
+    },
+    {
+      "rank": 24,
+      "sample_id": "TCGA-IZ-A6M9-01Z-00-DX1_3",
+      "split": "test",
+      "organ": "kidney",
+      "expert_area_native_px": 6531,
+      "detected_nucleus_fraction_in_expert_region": 1.0,
+      "sheet": "large-macrophage-3.jpg"
+    },
+    {
+      "rank": 25,
+      "sample_id": "TCGA-MH-A560-01Z-00-DX2_3",
+      "split": "train",
+      "organ": "kidney",
+      "expert_area_native_px": 6236,
+      "detected_nucleus_fraction_in_expert_region": 1.0,
+      "sheet": "large-macrophage-3.jpg"
+    },
+    {
+      "rank": 26,
+      "sample_id": "TCGA-KK-A59X-01Z-00-DX1-2",
+      "split": "train",
+      "organ": "prostate",
+      "expert_area_native_px": 6170,
+      "detected_nucleus_fraction_in_expert_region": 1.0,
+      "sheet": "large-macrophage-3.jpg"
+    },
+    {
+      "rank": 27,
+      "sample_id": "TCGA-IZ-A6M9-01Z-00-DX1_3",
+      "split": "test",
+      "organ": "kidney",
+      "expert_area_native_px": 6154,
+      "detected_nucleus_fraction_in_expert_region": 0.9743589743589743,
+      "sheet": "large-macrophage-3.jpg"
+    },
+    {
+      "rank": 28,
+      "sample_id": "TCGA-MH-A560-01Z-00-DX2_3",
+      "split": "train",
+      "organ": "kidney",
+      "expert_area_native_px": 6038,
+      "detected_nucleus_fraction_in_expert_region": 1.0,
+      "sheet": "large-macrophage-3.jpg"
+    },
+    {
+      "rank": 29,
+      "sample_id": "TCGA-E2-A108-01Z-00-DX1_004",
+      "split": "test",
+      "organ": "breast",
+      "expert_area_native_px": 5961,
+      "detected_nucleus_fraction_in_expert_region": 0.9965635738831615,
+      "sheet": "large-macrophage-3.jpg"
+    },
+    {
+      "rank": 30,
+      "sample_id": "TCGA-V1-A8WL-01Z-00-DX1-2",
+      "split": "train",
+      "organ": "prostate",
+      "expert_area_native_px": 5905,
+      "detected_nucleus_fraction_in_expert_region": 1.0,
+      "sheet": "large-macrophage-3.jpg"
+    },
+    {
+      "rank": 31,
+      "sample_id": "TCGA-SX-A7SR-01Z-00-DX1_2",
+      "split": "development",
+      "organ": "kidney",
+      "expert_area_native_px": 5859,
+      "detected_nucleus_fraction_in_expert_region": 1.0,
+      "sheet": "large-macrophage-4.jpg"
+    },
+    {
+      "rank": 32,
+      "sample_id": "TCGA-DW-7841-01Z-00-DX1_3",
+      "split": "train",
+      "organ": "kidney",
+      "expert_area_native_px": 5579,
+      "detected_nucleus_fraction_in_expert_region": 0.9689476710753306,
+      "sheet": "large-macrophage-4.jpg"
+    },
+    {
+      "rank": 33,
+      "sample_id": "TCGA-S3-AA11-01Z-00-DX1_5",
+      "split": "train",
+      "organ": "breast",
+      "expert_area_native_px": 5572,
+      "detected_nucleus_fraction_in_expert_region": 0.9850968703427719,
+      "sheet": "large-macrophage-4.jpg"
+    },
+    {
+      "rank": 34,
+      "sample_id": "TCGA-V1-A8WL-01Z-00-DX1-2",
+      "split": "train",
+      "organ": "prostate",
+      "expert_area_native_px": 5520,
+      "detected_nucleus_fraction_in_expert_region": 1.0,
+      "sheet": "large-macrophage-4.jpg"
+    },
+    {
+      "rank": 35,
+      "sample_id": "TCGA-IZ-A6M9-01Z-00-DX1_3",
+      "split": "test",
+      "organ": "kidney",
+      "expert_area_native_px": 5489,
+      "detected_nucleus_fraction_in_expert_region": 1.0,
+      "sheet": "large-macrophage-4.jpg"
+    },
+    {
+      "rank": 36,
+      "sample_id": "TCGA-KK-A59X-01Z-00-DX1-2",
+      "split": "train",
+      "organ": "prostate",
+      "expert_area_native_px": 5365,
+      "detected_nucleus_fraction_in_expert_region": 1.0,
+      "sheet": "large-macrophage-4.jpg"
+    },
+    {
+      "rank": 37,
+      "sample_id": "TCGA-E2-A108-01Z-00-DX1_004",
+      "split": "test",
+      "organ": "breast",
+      "expert_area_native_px": 5174,
+      "detected_nucleus_fraction_in_expert_region": 0.9383333333333334,
+      "sheet": "large-macrophage-4.jpg"
+    },
+    {
+      "rank": 38,
+      "sample_id": "TCGA-IZ-A6M9-01Z-00-DX1_3",
+      "split": "test",
+      "organ": "kidney",
+      "expert_area_native_px": 5144,
+      "detected_nucleus_fraction_in_expert_region": 1.0,
+      "sheet": "large-macrophage-4.jpg"
+    },
+    {
+      "rank": 39,
+      "sample_id": "TCGA-E2-A108-01Z-00-DX1_004",
+      "split": "test",
+      "organ": "breast",
+      "expert_area_native_px": 5138,
+      "detected_nucleus_fraction_in_expert_region": 1.0,
+      "sheet": "large-macrophage-4.jpg"
+    },
+    {
+      "rank": 40,
+      "sample_id": "TCGA-IZ-A6M9-01Z-00-DX1_3",
+      "split": "test",
+      "organ": "kidney",
+      "expert_area_native_px": 5054,
+      "detected_nucleus_fraction_in_expert_region": 1.0,
+      "sheet": "large-macrophage-4.jpg"
+    }
+  ],
+  "visual_review": "All 40 overlays reviewed at contact-sheet scale. The oversized source regions are cell-scale and morphologically heterogeneous; a single matched StarDist nucleus does not by itself confirm macrophage identity. Retain a sensitivity flag and do not count these as unqualified primary examples without expert adjudication."
+}
