@@ -1,0 +1,33 @@
+{
+  "status": "stopped_after_predeclared_first_case",
+  "date": "2026-10-20",
+  "method": "Tissue-restricted Reinhard mean/std matching in uint8 CIELAB to one official GigaTIME H&E control, with Gaussian edge blending; no spatial resampling",
+  "case": "TCGA-EV-5903-01Z-00-DX1_2",
+  "model_split": "train",
+  "original": {
+    "auc": 0.750916295323236,
+    "nuclear_boundary_contrast": 0.03919585782319157,
+    "status": "fail"
+  },
+  "normalized": {
+    "auc": 0.7433353531180823,
+    "nuclear_boundary_contrast": 0.03849710997957245,
+    "status": "fail",
+    "alignment_status": "fail",
+    "border_shadow_status": "pass",
+    "spatial_shadow_status": "pass"
+  },
+  "change": {
+    "auc": -0.007580942205153707,
+    "nuclear_boundary_contrast": -0.0006987478436191186
+  },
+  "source_mpp_um": 0.252,
+  "normalized_effective_mpp_um": 0.25,
+  "visual_review": "Official-reference LAB matching visibly reduced hematoxylin contrast but retained nuclear coordinates. The virtual DAPI remained broad and confluent, with no improvement in the independent StarDist overlap. The blood-rich development preflight image became implausibly cyan after normalization, so it was not inferred.",
+  "decision": "reject_this_normalization_for_CellPhenotyper; preserve_original_RGB_and_frozen_QC_gate",
+  "cases_not_run": [
+    "TCGA-EV-5903-01Z-00-DX1_4",
+    "TCGA-G7-A8LD-01Z-00-DX1_7"
+  ],
+  "limit": "One failed fit-field inference does not exclude every stain normalization method; no test patient was used for tuning."
+}

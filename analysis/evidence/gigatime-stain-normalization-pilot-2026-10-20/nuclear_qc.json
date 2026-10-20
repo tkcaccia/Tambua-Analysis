@@ -1,0 +1,122 @@
+{
+  "schema_version": 2,
+  "scope": "virtual_DAPI_vs_HE_derived_nuclear_mask",
+  "sampling_stride_px": 1,
+  "sampled_windows": 1,
+  "nuclear_pixels": 135623,
+  "nearby_extranuclear_pixels": 194082,
+  "thresholds": {
+    "min_auc": 0.7,
+    "min_prevalence_matched_dice": 0.35,
+    "min_edge_to_core_nuclear_mean_ratio": 0.65,
+    "min_nuclear_boundary_contrast": 0.05,
+    "min_spatial_nuclear_auc": 0.6,
+    "min_spatial_positive_and_negative_pixels": 500
+  },
+  "interpretation_limit": "Agreement with H&E-derived nuclei does not establish measured DAPI accuracy. A poor StarDist mask can also lower this score. Inspect the overlay and mask.",
+  "status": "fail",
+  "alignment_status": "fail",
+  "border_shadow_status": "pass",
+  "spatial_shadow_status": "pass",
+  "spatial_regions": [
+    {
+      "row": 0,
+      "column": 0,
+      "nuclear_pixels": 11857,
+      "nearby_extranuclear_pixels": 17577,
+      "auc": 0.8139637348099116,
+      "status": "pass"
+    },
+    {
+      "row": 0,
+      "column": 1,
+      "nuclear_pixels": 18119,
+      "nearby_extranuclear_pixels": 25500,
+      "auc": 0.7350762107591533,
+      "status": "pass"
+    },
+    {
+      "row": 0,
+      "column": 2,
+      "nuclear_pixels": 14390,
+      "nearby_extranuclear_pixels": 20390,
+      "auc": 0.7459429570218815,
+      "status": "pass"
+    },
+    {
+      "row": 1,
+      "column": 0,
+      "nuclear_pixels": 14690,
+      "nearby_extranuclear_pixels": 21900,
+      "auc": 0.7637876758954465,
+      "status": "pass"
+    },
+    {
+      "row": 1,
+      "column": 1,
+      "nuclear_pixels": 18306,
+      "nearby_extranuclear_pixels": 23906,
+      "auc": 0.7606531431982738,
+      "status": "pass"
+    },
+    {
+      "row": 1,
+      "column": 2,
+      "nuclear_pixels": 12361,
+      "nearby_extranuclear_pixels": 18582,
+      "auc": 0.7186184203233945,
+      "status": "pass"
+    },
+    {
+      "row": 2,
+      "column": 0,
+      "nuclear_pixels": 13690,
+      "nearby_extranuclear_pixels": 21218,
+      "auc": 0.7762681271555685,
+      "status": "pass"
+    },
+    {
+      "row": 2,
+      "column": 1,
+      "nuclear_pixels": 18381,
+      "nearby_extranuclear_pixels": 24434,
+      "auc": 0.74387779054478,
+      "status": "pass"
+    },
+    {
+      "row": 2,
+      "column": 2,
+      "nuclear_pixels": 13829,
+      "nearby_extranuclear_pixels": 20575,
+      "auc": 0.6902716964640229,
+      "status": "pass"
+    }
+  ],
+  "eligible_spatial_regions": 9,
+  "failed_spatial_regions": 0,
+  "alignment_score": 0.44824588679482325,
+  "auc": 0.7433353531180823,
+  "prevalence_matched_dice": 0.6271565848091013,
+  "prevalence_matched_threshold": 0.8352941176470589,
+  "nuclear_boundary_contrast": 0.03849710997957245,
+  "nuclear_inner_boundary_pixels": 52388,
+  "nearby_outer_boundary_pixels": 57823,
+  "edge_to_core_nuclear_mean_ratio": 1.0262234211569838,
+  "edge_nuclear_pixels": 20218,
+  "core_nuclear_pixels": 115405,
+  "sampled_stratified_windows": 1,
+  "shadow_preview": "nuclear_qc_shadow_qc.png",
+  "preview": "nuclear_qc.png",
+  "preview_region_yxyx": [
+    0,
+    948,
+    0,
+    496
+  ],
+  "image": "/home/chiamaka/Tambua-gigatime-stain-normalization-pilot-2026-10-20-v1/TCGA-EV-5903-01Z-00-DX1_2/prediction/gigatime_probs.zarr",
+  "nuclei_mask": "/home/chiamaka/Tambua-monusac-stardist-fit-cpu-2026-10-20/TCGA-EV-5903-01Z-00-DX1_2/stardist_labels.tif",
+  "image_shape_yx": [
+    948,
+    496
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "original_shape_yx": [
+    940,
+    492
+  ],
+  "inference_shape_yx": [
+    948,
+    496
+  ],
+  "downsample_factor": 0.9920634920634921,
+  "resample_factor": 0.9920634920634921,
+  "resample_applied": true,
+  "downsample_applied": false,
+  "upsample_applied": true,
+  "target_mpp": 0.25,
+  "max_output_gib": 1.25,
+  "selected_factor": 0.9920634920634921,
+  "selected_shape_yx": [
+    948,
+    496
+  ],
+  "estimated_prediction_gib": 0.0008758306503295898,
+  "selection_reason": "target_mpp",
+  "source_mpp": 0.252,
+  "effective_mpp": 0.25,
+  "requested_downsample_factor": 0.9920634920634921,
+  "mpp_error_fraction": 0.0,
+  "channels": [
+    "DAPI",
+    "TRITC",
+    "Cy5",
+    "PD-1",
+    "CD14",
+    "CD4",
+    "T-bet",
+    "CD34",
+    "CD68",
+    "CD16",
+    "CD11c",
+    "CD138",
+    "CD20",
+    "CD3",
+    "CD8",
+    "PD-L1",
+    "CK",
+    "Ki67",
+    "Tryptase",
+    "Actin-D",
+    "Caspase3-D",
+    "PHH3-B",
+    "Transgelin"
+  ],
+  "store_channels": [
+    "DAPI"
+  ],
+  "jpg_markers": [
+    "DAPI"
+  ],
+  "model_channels": [
+    "DAPI",
+    "TRITC",
+    "Cy5",
+    "PD-1",
+    "CD14",
+    "CD4",
+    "T-bet",
+    "CD34",
+    "CD68",
+    "CD16",
+    "CD11c",
+    "CD138",
+    "CD20",
+    "CD3",
+    "CD8",
+    "PD-L1",
+    "CK",
+    "Ki67",
+    "Tryptase",
+    "Actin-D",
+    "Caspase3-D",
+    "PHH3-B",
+    "Transgelin"
+  ],
+  "value_semantics": {
+    "value_type": "uncalibrated_virtual_marker_score",
+    "bounded_range": [
+      0.0,
+      1.0
+    ],
+    "calibrated_probability": false,
+    "measured_protein_abundance": false,
+    "research_use_only": true,
+    "legacy_filename_note": "The compatibility filenames gigatime_probs.* do not imply probability calibration."
+  },
+  "quantification_channels": [],
+  "output_format": "zarr",
+  "output_dtype": "uint16",
+  "strict_target_mpp": true,
+  "resolution_contract": "exact_mpp_v2",
+  "blockwise": true,
+  "block_size": 768,
+  "hardware_adaptation": {
+    "enabled": true,
+    "profile": "balanced",
+    "requested": {
+      "batch_size": 2,
+      "block_size": 2048,
+      "max_output_gib": 32.0
+    },
+    "effective": {
+      "batch_size": 2,
+      "block_size": 768,
+      "max_output_gib": 1.25
+    },
+    "limits": {
+      "max_auto_batch": 16,
+      "max_auto_block_size": 3072,
+      "max_auto_output_gib": 16.0
+    },
+    "derived_caps": {
+      "memory_batch": 2,
+      "memory_block_size": 768,
+      "memory_output_gib": 1.25,
+      "gpu_batch": 16,
+      "gpu_block_size": 3072
+    },
+    "system_mem_available_gib": 15.94964599609375,
+    "task_memory_gb": null,
+    "min_free_system_gb": 6.0,
+    "usable_system_mem_gib": 9.94964599609375,
+    "cuda_mem_free_gib": null,
+    "cuda_mem_total_gib": null,
+    "requested_inference_batch_size": 2,
+    "final_runtime_batch_size": 2,
+    "cuda_oom_batch_reductions": 0
+  },
+  "auto_parameters": {
+    "enabled": true,
+    "profile": "pinned_cnn_physical_grid_v1",
+    "requested": {
+      "patch_size": 256,
+      "stride": 128,
+      "target_mpp": 0.25,
+      "strict_target_mpp": true,
+      "auto_hardware": false,
+      "blockwise": false,
+      "skip_background_blocks": false
+    },
+    "effective": {
+      "patch_size": 256,
+      "stride": 128,
+      "target_mpp": 0.25,
+      "strict_target_mpp": true,
+      "auto_hardware": true,
+      "blockwise": true,
+      "skip_background_blocks": false
+    },
+    "adaptive_components": [
+      "source_mpp_resampling",
+      "memory_and_batch",
+      "block_size",
+      "output_budget"
+    ]
+  },
+  "predictor": false,
+  "pyramidal": false,
+  "storage_scale_max": 65535.0,
+  "model_provenance": {
+    "source_repository": "https://huggingface.co/prov-gigatime/GigaTIME",
+    "repo_id": "prov-gigatime/GigaTIME",
+    "requested_revision": "a6556030bdb8071857559e12b921620aa1bbac5b",
+    "resolved_revision": "a6556030bdb8071857559e12b921620aa1bbac5b",
+    "cache_path": "/home/chiamaka/.cache/huggingface/hub/models--prov-gigatime--GigaTIME/snapshots/a6556030bdb8071857559e12b921620aa1bbac5b",
+    "checkpoints": [
+      {
+        "logical_name": "GigaTIME",
+        "cache_path": "/home/chiamaka/.cache/huggingface/hub/blobs/36/3620f69cd7bf66bb80f627d11ac618d61e27b4105964e6e8ac38bd98badf543a",
+        "filename": "3620f69cd7bf66bb80f627d11ac618d61e27b4105964e6e8ac38bd98badf543a",
+        "size_bytes": 36741978,
+        "sha256": "d200308302c7fefd13b259c62de546f2c859c28d1079e9f67dc8808915d95d0c",
+        "status": "verified"
+      }
+    ]
+  },
+  "background_skip": {
+    "enabled": false,
+    "min_fraction": 0.0,
+    "decision_region_halo_px": 256,
+    "decision_rule": "expanded_region_fraction_lte_threshold",
+    "skipped_tiles": 0,
+    "label_protected_tiles": 0,
+    "processed_tiles": 2,
+    "total_tiles": 2
+  },
+  "marker_score_qc": {
+    "status": "pass",
+    "report": "gigatime_marker_score_qc.json",
+    "table": "gigatime_marker_score_qc.tsv",
+    "preview": "gigatime_marker_score_qc.png",
+    "warnings": []
+  },
+  "seam_qc": {
+    "status": "pass",
+    "gate_mode": "warn",
+    "failed_channel_boundaries": 0,
+    "channel_boundary_tests": 1,
+    "report": "gigatime_seam_qc.json",
+    "preview": "gigatime_seam_qc.png"
+  }
+}

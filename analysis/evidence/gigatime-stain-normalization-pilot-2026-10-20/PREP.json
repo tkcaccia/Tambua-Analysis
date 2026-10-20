@@ -1,0 +1,120 @@
+{
+  "status": "prepared_cpu_only",
+  "reference": "/home/chiamaka/Tambua-gigatime-official-positive-control-2026-10-20/input/he.ome.tif",
+  "reference_sha256": "a114e5d5b902368e7cb5265765503c6adb7177734e8cc5de656af26d1496014a",
+  "method": "Tissue-restricted Reinhard mean/std matching in uint8 CIELAB to one official GigaTIME H&E control, with Gaussian edge blending; no spatial resampling",
+  "cases": [
+    {
+      "sample_id": "TCGA-EV-5903-01Z-00-DX1_2",
+      "model_split": "train",
+      "original_nuclear_qc": "fail",
+      "original_auc": 0.750916295323236,
+      "original_boundary_contrast": 0.03919585782319157,
+      "source_mpp_um": 0.252,
+      "shape_yx": [
+        940,
+        492
+      ],
+      "source_rgb_sha256": "dce4444c515646a6b852fd3550df234a773a808c1a548db6f22eb4399ec2a166",
+      "normalized_rgb_sha256": "9c5ed2493fb31840af2f1eed8646822e7c335d3c76f0a71ac8ef8a75c957415d",
+      "independent_stardist_mask_sha256": "a8f2b17d2c2e097f9ede2271a1497bb1dcce12fdeedc29e7fc0783ea98cb4813",
+      "source_lab_mean": [
+        152.1502685546875,
+        142.68031311035156,
+        113.62500762939453
+      ],
+      "source_lab_std": [
+        62.611568450927734,
+        5.835546016693115,
+        10.149970054626465
+      ],
+      "target_lab_mean": [
+        204.4398193359375,
+        139.6646270751953,
+        119.31592559814453
+      ],
+      "target_lab_std": [
+        20.284961700439453,
+        5.0709967613220215,
+        5.429624080657959
+      ],
+      "tissue_fraction": 0.9339409271752293,
+      "mean_absolute_rgb_change": 48.824975092357
+    },
+    {
+      "sample_id": "TCGA-EV-5903-01Z-00-DX1_4",
+      "model_split": "train",
+      "original_nuclear_qc": "pass",
+      "original_auc": 0.7899027883991128,
+      "original_boundary_contrast": 0.06798021470307536,
+      "source_mpp_um": 0.252,
+      "shape_yx": [
+        348,
+        271
+      ],
+      "source_rgb_sha256": "60323d9e6dbd9178db482d8fe40a83638304b8f8af5676745d4c927bba022400",
+      "normalized_rgb_sha256": "08afac4bfd3ae91aec2ab337437a9edf35741244d5190cd6bc99378009b50181",
+      "independent_stardist_mask_sha256": "25d2ed2104ca7acc4a6c722dc1ec507c9ce1b3a98988c70469903ccff9b2fcce",
+      "source_lab_mean": [
+        184.07745361328125,
+        144.77664184570312,
+        120.15204620361328
+      ],
+      "source_lab_std": [
+        44.81858825683594,
+        7.175436019897461,
+        7.24017858505249
+      ],
+      "target_lab_mean": [
+        204.4398193359375,
+        139.6646270751953,
+        119.31592559814453
+      ],
+      "target_lab_std": [
+        20.284961700439453,
+        5.0709967613220215,
+        5.429624080657959
+      ],
+      "tissue_fraction": 0.5095750095431989,
+      "mean_absolute_rgb_change": 20.568567881196635
+    },
+    {
+      "sample_id": "TCGA-G7-A8LD-01Z-00-DX1_7",
+      "model_split": "development",
+      "original_nuclear_qc": "fail",
+      "original_auc": 0.5587427466095186,
+      "original_boundary_contrast": 0.0433811231859369,
+      "source_mpp_um": 0.2527,
+      "shape_yx": [
+        398,
+        265
+      ],
+      "source_rgb_sha256": "dc7e950fe3c846eb52c732bd5d28d57f8dcfce8c24a2df8b935b6b4f63982de9",
+      "normalized_rgb_sha256": "3a8b6367ebed4e1828395d71858a143c37589699f80f7bcd6f059a270e26bf8e",
+      "independent_stardist_mask_sha256": "07bb0fa078d8964f2bb533de1db32b40b7b02697dc172b7421e7d7e9a5206e96",
+      "source_lab_mean": [
+        144.8592071533203,
+        176.4581756591797,
+        137.32003784179688
+      ],
+      "source_lab_std": [
+        26.75370979309082,
+        10.050178527832031,
+        13.048940658569336
+      ],
+      "target_lab_mean": [
+        204.4398193359375,
+        139.6646270751953,
+        119.31592559814453
+      ],
+      "target_lab_std": [
+        20.284961700439453,
+        5.0709967613220215,
+        5.429624080657959
+      ],
+      "tissue_fraction": 0.9882241395657533,
+      "mean_absolute_rgb_change": 63.60810594721828
+    }
+  ],
+  "limit": "Fixed training/development-only diagnostic. Original test images and frozen DAPI QC threshold remain untouched."
+}
