@@ -1,0 +1,1024 @@
+{
+  "status": "raw_spatial_diagnostic_complete_visual_reviewed",
+  "patients": [
+    "CRC04",
+    "CRC06",
+    "CRC08",
+    "CRC10",
+    "CRC12",
+    "CRC17",
+    "CRC19",
+    "CRC21",
+    "CRC23",
+    "CRC25"
+  ],
+  "source_mpp_um": 0.325,
+  "model_mpp_um": 0.25,
+  "sampling_stride_source_pixels": 4,
+  "per_patient": [
+    {
+      "patient": "CRC04",
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "mapping": "nuclear-dye family",
+      "pixel_spearman_rho": 0.7175390573978289,
+      "sampled_tissue_pixels": 248013,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC04",
+      "virtual": "CD68",
+      "measured": "CD68",
+      "mapping": "exact",
+      "pixel_spearman_rho": -0.30484534562888466,
+      "sampled_tissue_pixels": 248013,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC04",
+      "virtual": "CD4",
+      "measured": "CD4",
+      "mapping": "exact",
+      "pixel_spearman_rho": 0.17158517712036492,
+      "sampled_tissue_pixels": 248013,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC04",
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "mapping": "CD8 alpha target",
+      "pixel_spearman_rho": 0.05299115270495401,
+      "sampled_tissue_pixels": 248013,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC04",
+      "virtual": "CD20",
+      "measured": "CD20",
+      "mapping": "exact",
+      "pixel_spearman_rho": 0.06603834001725477,
+      "sampled_tissue_pixels": 248013,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC04",
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "mapping": "exact",
+      "pixel_spearman_rho": -0.024626686398770477,
+      "sampled_tissue_pixels": 248013,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC04",
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "mapping": "CD3 epsilon complex",
+      "pixel_spearman_rho": 0.21532094684640044,
+      "sampled_tissue_pixels": 248013,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC04",
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "mapping": "exact",
+      "pixel_spearman_rho": -0.001015975679250003,
+      "sampled_tissue_pixels": 248013,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC04",
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "mapping": "exact",
+      "pixel_spearman_rho": 0.4890618952693462,
+      "sampled_tissue_pixels": 248013,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC04",
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "mapping": "cytokeratin family",
+      "pixel_spearman_rho": 0.25659164473580964,
+      "sampled_tissue_pixels": 248013,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC06",
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "mapping": "nuclear-dye family",
+      "pixel_spearman_rho": 0.8581081919930134,
+      "sampled_tissue_pixels": 242255,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC06",
+      "virtual": "CD68",
+      "measured": "CD68",
+      "mapping": "exact",
+      "pixel_spearman_rho": -0.12432453021259723,
+      "sampled_tissue_pixels": 242255,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC06",
+      "virtual": "CD4",
+      "measured": "CD4",
+      "mapping": "exact",
+      "pixel_spearman_rho": 0.1926602004147403,
+      "sampled_tissue_pixels": 242255,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC06",
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "mapping": "CD8 alpha target",
+      "pixel_spearman_rho": 0.02635353466505461,
+      "sampled_tissue_pixels": 242255,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC06",
+      "virtual": "CD20",
+      "measured": "CD20",
+      "mapping": "exact",
+      "pixel_spearman_rho": 0.3225295845897775,
+      "sampled_tissue_pixels": 242255,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC06",
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "mapping": "exact",
+      "pixel_spearman_rho": 0.029230838959526207,
+      "sampled_tissue_pixels": 242255,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC06",
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "mapping": "CD3 epsilon complex",
+      "pixel_spearman_rho": 0.32896303236395513,
+      "sampled_tissue_pixels": 242255,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC06",
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "mapping": "exact",
+      "pixel_spearman_rho": 0.11560301030902187,
+      "sampled_tissue_pixels": 242255,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC06",
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "mapping": "exact",
+      "pixel_spearman_rho": 0.1697178304426861,
+      "sampled_tissue_pixels": 242255,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC06",
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "mapping": "cytokeratin family",
+      "pixel_spearman_rho": 0.08295998132797083,
+      "sampled_tissue_pixels": 242255,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC08",
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "mapping": "nuclear-dye family",
+      "pixel_spearman_rho": 0.7738827420454888,
+      "sampled_tissue_pixels": 255232,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC08",
+      "virtual": "CD68",
+      "measured": "CD68",
+      "mapping": "exact",
+      "pixel_spearman_rho": 0.2777631436827694,
+      "sampled_tissue_pixels": 255232,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC08",
+      "virtual": "CD4",
+      "measured": "CD4",
+      "mapping": "exact",
+      "pixel_spearman_rho": 0.2821972101475984,
+      "sampled_tissue_pixels": 255232,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC08",
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "mapping": "CD8 alpha target",
+      "pixel_spearman_rho": 0.09556334873577349,
+      "sampled_tissue_pixels": 255232,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC08",
+      "virtual": "CD20",
+      "measured": "CD20",
+      "mapping": "exact",
+      "pixel_spearman_rho": 0.5658077189550917,
+      "sampled_tissue_pixels": 255232,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC08",
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "mapping": "exact",
+      "pixel_spearman_rho": -0.19857815206640314,
+      "sampled_tissue_pixels": 255232,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC08",
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "mapping": "CD3 epsilon complex",
+      "pixel_spearman_rho": 0.46541831510517995,
+      "sampled_tissue_pixels": 255232,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC08",
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "mapping": "exact",
+      "pixel_spearman_rho": 0.13162185925643408,
+      "sampled_tissue_pixels": 255232,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC08",
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "mapping": "exact",
+      "pixel_spearman_rho": 0.0813843195377916,
+      "sampled_tissue_pixels": 255232,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC08",
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "mapping": "cytokeratin family",
+      "pixel_spearman_rho": 0.043210423756260254,
+      "sampled_tissue_pixels": 255232,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC10",
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "mapping": "nuclear-dye family",
+      "pixel_spearman_rho": 0.5196808379227387,
+      "sampled_tissue_pixels": 223486,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC10",
+      "virtual": "CD68",
+      "measured": "CD68",
+      "mapping": "exact",
+      "pixel_spearman_rho": -0.09088855826777231,
+      "sampled_tissue_pixels": 223486,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC10",
+      "virtual": "CD4",
+      "measured": "CD4",
+      "mapping": "exact",
+      "pixel_spearman_rho": -0.11887579015021085,
+      "sampled_tissue_pixels": 223486,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC10",
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "mapping": "CD8 alpha target",
+      "pixel_spearman_rho": -0.0710341764242395,
+      "sampled_tissue_pixels": 223486,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC10",
+      "virtual": "CD20",
+      "measured": "CD20",
+      "mapping": "exact",
+      "pixel_spearman_rho": -0.005900081377223353,
+      "sampled_tissue_pixels": 223486,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC10",
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "mapping": "exact",
+      "pixel_spearman_rho": 0.0760788070555483,
+      "sampled_tissue_pixels": 223486,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC10",
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "mapping": "CD3 epsilon complex",
+      "pixel_spearman_rho": 0.004901627858800585,
+      "sampled_tissue_pixels": 223486,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC10",
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "mapping": "exact",
+      "pixel_spearman_rho": 0.10748894660237485,
+      "sampled_tissue_pixels": 223486,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC10",
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "mapping": "exact",
+      "pixel_spearman_rho": 0.14079746315196345,
+      "sampled_tissue_pixels": 223486,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC10",
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "mapping": "cytokeratin family",
+      "pixel_spearman_rho": 0.024053685209284865,
+      "sampled_tissue_pixels": 223486,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC12",
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "mapping": "nuclear-dye family",
+      "pixel_spearman_rho": 0.8445235590137579,
+      "sampled_tissue_pixels": 245227,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC12",
+      "virtual": "CD68",
+      "measured": "CD68",
+      "mapping": "exact",
+      "pixel_spearman_rho": -0.05089058444817228,
+      "sampled_tissue_pixels": 245227,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC12",
+      "virtual": "CD4",
+      "measured": "CD4",
+      "mapping": "exact",
+      "pixel_spearman_rho": 0.19081190429453027,
+      "sampled_tissue_pixels": 245227,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC12",
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "mapping": "CD8 alpha target",
+      "pixel_spearman_rho": -0.005400031462690695,
+      "sampled_tissue_pixels": 245227,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC12",
+      "virtual": "CD20",
+      "measured": "CD20",
+      "mapping": "exact",
+      "pixel_spearman_rho": 0.08522620102909102,
+      "sampled_tissue_pixels": 245227,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC12",
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "mapping": "exact",
+      "pixel_spearman_rho": 0.02383502020519395,
+      "sampled_tissue_pixels": 245227,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC12",
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "mapping": "CD3 epsilon complex",
+      "pixel_spearman_rho": 0.08584894940071006,
+      "sampled_tissue_pixels": 245227,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC12",
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "mapping": "exact",
+      "pixel_spearman_rho": 0.15017559253131016,
+      "sampled_tissue_pixels": 245227,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC12",
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "mapping": "exact",
+      "pixel_spearman_rho": 0.3114916748865777,
+      "sampled_tissue_pixels": 245227,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC12",
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "mapping": "cytokeratin family",
+      "pixel_spearman_rho": 0.1419545516787454,
+      "sampled_tissue_pixels": 245227,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC17",
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "mapping": "nuclear-dye family",
+      "pixel_spearman_rho": 0.7376847027866174,
+      "sampled_tissue_pixels": 243459,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC17",
+      "virtual": "CD68",
+      "measured": "CD68",
+      "mapping": "exact",
+      "pixel_spearman_rho": -0.167609381278937,
+      "sampled_tissue_pixels": 243459,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC17",
+      "virtual": "CD4",
+      "measured": "CD4",
+      "mapping": "exact",
+      "pixel_spearman_rho": -0.21685609585693918,
+      "sampled_tissue_pixels": 243459,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC17",
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "mapping": "CD8 alpha target",
+      "pixel_spearman_rho": 0.05309125819732057,
+      "sampled_tissue_pixels": 243459,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC17",
+      "virtual": "CD20",
+      "measured": "CD20",
+      "mapping": "exact",
+      "pixel_spearman_rho": 0.08239539708485001,
+      "sampled_tissue_pixels": 243459,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC17",
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "mapping": "exact",
+      "pixel_spearman_rho": -0.07188402324727013,
+      "sampled_tissue_pixels": 243459,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC17",
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "mapping": "CD3 epsilon complex",
+      "pixel_spearman_rho": -0.022731175815598637,
+      "sampled_tissue_pixels": 243459,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC17",
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "mapping": "exact",
+      "pixel_spearman_rho": 0.10066936293108024,
+      "sampled_tissue_pixels": 243459,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC17",
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "mapping": "exact",
+      "pixel_spearman_rho": 0.16436303785091236,
+      "sampled_tissue_pixels": 243459,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC17",
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "mapping": "cytokeratin family",
+      "pixel_spearman_rho": -0.12007408281858727,
+      "sampled_tissue_pixels": 243459,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC19",
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "mapping": "nuclear-dye family",
+      "pixel_spearman_rho": 0.8093618999724868,
+      "sampled_tissue_pixels": 247070,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC19",
+      "virtual": "CD68",
+      "measured": "CD68",
+      "mapping": "exact",
+      "pixel_spearman_rho": -0.4685419549425073,
+      "sampled_tissue_pixels": 247070,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC19",
+      "virtual": "CD4",
+      "measured": "CD4",
+      "mapping": "exact",
+      "pixel_spearman_rho": 0.052298008171294874,
+      "sampled_tissue_pixels": 247070,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC19",
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "mapping": "CD8 alpha target",
+      "pixel_spearman_rho": 0.07364253035231472,
+      "sampled_tissue_pixels": 247070,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC19",
+      "virtual": "CD20",
+      "measured": "CD20",
+      "mapping": "exact",
+      "pixel_spearman_rho": -0.025103261039871677,
+      "sampled_tissue_pixels": 247070,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC19",
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "mapping": "exact",
+      "pixel_spearman_rho": -0.08411681494700594,
+      "sampled_tissue_pixels": 247070,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC19",
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "mapping": "CD3 epsilon complex",
+      "pixel_spearman_rho": 0.16862381863674955,
+      "sampled_tissue_pixels": 247070,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC19",
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "mapping": "exact",
+      "pixel_spearman_rho": -0.06133557907830468,
+      "sampled_tissue_pixels": 247070,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC19",
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "mapping": "exact",
+      "pixel_spearman_rho": 0.3444522728707186,
+      "sampled_tissue_pixels": 247070,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC19",
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "mapping": "cytokeratin family",
+      "pixel_spearman_rho": 0.17181580296023335,
+      "sampled_tissue_pixels": 247070,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC21",
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "mapping": "nuclear-dye family",
+      "pixel_spearman_rho": 0.7400831545840205,
+      "sampled_tissue_pixels": 249178,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC21",
+      "virtual": "CD68",
+      "measured": "CD68",
+      "mapping": "exact",
+      "pixel_spearman_rho": -0.09705770184900059,
+      "sampled_tissue_pixels": 249178,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC21",
+      "virtual": "CD4",
+      "measured": "CD4",
+      "mapping": "exact",
+      "pixel_spearman_rho": 0.343391528046777,
+      "sampled_tissue_pixels": 249178,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC21",
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "mapping": "CD8 alpha target",
+      "pixel_spearman_rho": 0.14050469824068834,
+      "sampled_tissue_pixels": 249178,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC21",
+      "virtual": "CD20",
+      "measured": "CD20",
+      "mapping": "exact",
+      "pixel_spearman_rho": 0.4092954438300991,
+      "sampled_tissue_pixels": 249178,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC21",
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "mapping": "exact",
+      "pixel_spearman_rho": 0.052892544641365884,
+      "sampled_tissue_pixels": 249178,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC21",
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "mapping": "CD3 epsilon complex",
+      "pixel_spearman_rho": 0.4428337294072472,
+      "sampled_tissue_pixels": 249178,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC21",
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "mapping": "exact",
+      "pixel_spearman_rho": 0.07054896449742627,
+      "sampled_tissue_pixels": 249178,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC21",
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "mapping": "exact",
+      "pixel_spearman_rho": 0.11646884467427131,
+      "sampled_tissue_pixels": 249178,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC21",
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "mapping": "cytokeratin family",
+      "pixel_spearman_rho": 0.06372685088879163,
+      "sampled_tissue_pixels": 249178,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC23",
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "mapping": "nuclear-dye family",
+      "pixel_spearman_rho": 0.8354360393408596,
+      "sampled_tissue_pixels": 253714,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC23",
+      "virtual": "CD68",
+      "measured": "CD68",
+      "mapping": "exact",
+      "pixel_spearman_rho": -0.34670505250110956,
+      "sampled_tissue_pixels": 253714,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC23",
+      "virtual": "CD4",
+      "measured": "CD4",
+      "mapping": "exact",
+      "pixel_spearman_rho": 0.12614551541529892,
+      "sampled_tissue_pixels": 253714,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC23",
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "mapping": "CD8 alpha target",
+      "pixel_spearman_rho": 0.09071979697353252,
+      "sampled_tissue_pixels": 253714,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC23",
+      "virtual": "CD20",
+      "measured": "CD20",
+      "mapping": "exact",
+      "pixel_spearman_rho": 0.02513216489402146,
+      "sampled_tissue_pixels": 253714,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC23",
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "mapping": "exact",
+      "pixel_spearman_rho": 0.07078337176389952,
+      "sampled_tissue_pixels": 253714,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC23",
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "mapping": "CD3 epsilon complex",
+      "pixel_spearman_rho": 0.15627220130504535,
+      "sampled_tissue_pixels": 253714,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC23",
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "mapping": "exact",
+      "pixel_spearman_rho": 0.2545894500426803,
+      "sampled_tissue_pixels": 253714,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC23",
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "mapping": "exact",
+      "pixel_spearman_rho": 0.5213607477285102,
+      "sampled_tissue_pixels": 253714,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC23",
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "mapping": "cytokeratin family",
+      "pixel_spearman_rho": 0.44942896597619136,
+      "sampled_tissue_pixels": 253714,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC25",
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "mapping": "nuclear-dye family",
+      "pixel_spearman_rho": 0.8226711989836506,
+      "sampled_tissue_pixels": 244175,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC25",
+      "virtual": "CD68",
+      "measured": "CD68",
+      "mapping": "exact",
+      "pixel_spearman_rho": -0.09780168419431795,
+      "sampled_tissue_pixels": 244175,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC25",
+      "virtual": "CD4",
+      "measured": "CD4",
+      "mapping": "exact",
+      "pixel_spearman_rho": 0.044703871820112304,
+      "sampled_tissue_pixels": 244175,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC25",
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "mapping": "CD8 alpha target",
+      "pixel_spearman_rho": 0.21950961648025336,
+      "sampled_tissue_pixels": 244175,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC25",
+      "virtual": "CD20",
+      "measured": "CD20",
+      "mapping": "exact",
+      "pixel_spearman_rho": -0.02181841207003631,
+      "sampled_tissue_pixels": 244175,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC25",
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "mapping": "exact",
+      "pixel_spearman_rho": -0.172220164360733,
+      "sampled_tissue_pixels": 244175,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC25",
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "mapping": "CD3 epsilon complex",
+      "pixel_spearman_rho": 0.04846957865901575,
+      "sampled_tissue_pixels": 244175,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC25",
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "mapping": "exact",
+      "pixel_spearman_rho": 0.299475061624331,
+      "sampled_tissue_pixels": 244175,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC25",
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "mapping": "exact",
+      "pixel_spearman_rho": 0.36229176229306165,
+      "sampled_tissue_pixels": 244175,
+      "sampling_stride_source_pixels": 4
+    },
+    {
+      "patient": "CRC25",
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "mapping": "cytokeratin family",
+      "pixel_spearman_rho": 0.6271443507284351,
+      "sampled_tissue_pixels": 244175,
+      "sampling_stride_source_pixels": 4
+    }
+  ],
+  "equal_patient_summary": [
+    {
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "mapping": "nuclear-dye family",
+      "patients": 10,
+      "patient_median_rho": 0.7916223210089878,
+      "positive_patients": 10,
+      "patient_min_rho": 0.5196808379227387,
+      "patient_max_rho": 0.8581081919930134
+    },
+    {
+      "virtual": "CD68",
+      "measured": "CD68",
+      "mapping": "exact",
+      "patients": 10,
+      "patient_median_rho": -0.11106310720345759,
+      "positive_patients": 1,
+      "patient_min_rho": -0.4685419549425073,
+      "patient_max_rho": 0.2777631436827694
+    },
+    {
+      "virtual": "CD4",
+      "measured": "CD4",
+      "mapping": "exact",
+      "patients": 10,
+      "patient_median_rho": 0.14886534626783193,
+      "positive_patients": 8,
+      "patient_min_rho": -0.21685609585693918,
+      "patient_max_rho": 0.343391528046777
+    },
+    {
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "mapping": "CD8 alpha target",
+      "patients": 10,
+      "patient_median_rho": 0.06336689427481765,
+      "positive_patients": 8,
+      "patient_min_rho": -0.0710341764242395,
+      "patient_max_rho": 0.21950961648025336
+    },
+    {
+      "virtual": "CD20",
+      "measured": "CD20",
+      "mapping": "exact",
+      "patients": 10,
+      "patient_median_rho": 0.07421686855105239,
+      "positive_patients": 7,
+      "patient_min_rho": -0.025103261039871677,
+      "patient_max_rho": 0.5658077189550917
+    },
+    {
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "mapping": "exact",
+      "patients": 10,
+      "patient_median_rho": -0.0003958330967882631,
+      "positive_patients": 5,
+      "patient_min_rho": -0.19857815206640314,
+      "patient_max_rho": 0.0760788070555483
+    },
+    {
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "mapping": "CD3 epsilon complex",
+      "patients": 10,
+      "patient_median_rho": 0.16244800997089745,
+      "positive_patients": 9,
+      "patient_min_rho": -0.022731175815598637,
+      "patient_max_rho": 0.46541831510517995
+    },
+    {
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "mapping": "exact",
+      "patients": 10,
+      "patient_median_rho": 0.11154597845569836,
+      "positive_patients": 8,
+      "patient_min_rho": -0.06133557907830468,
+      "patient_max_rho": 0.299475061624331
+    },
+    {
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "mapping": "exact",
+      "patients": 10,
+      "patient_median_rho": 0.24060475266463188,
+      "positive_patients": 10,
+      "patient_min_rho": 0.0813843195377916,
+      "patient_max_rho": 0.5213607477285102
+    },
+    {
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "mapping": "cytokeratin family",
+      "patients": 10,
+      "patient_median_rho": 0.11245726650335812,
+      "positive_patients": 9,
+      "patient_min_rho": -0.12007408281858727,
+      "patient_max_rho": 0.6271443507284351
+    }
+  ],
+  "limitation": "One registered 2048-pixel window per patient. Raw pixel rank agreement is distinct from cell-level protein agreement, phenotype prediction, and whole-slide validation. Biology and artifacts require visual review of each patient and all 23 channels.",
+  "visual_review_record": "analysis/evidence/gigatime-orion-source-domain-visual-review-2026-10-20.md"
+}

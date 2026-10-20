@@ -1,0 +1,1103 @@
+{
+  "status": "source_domain_paired_positive_control_complete_visual_reviewed",
+  "device": "CPU",
+  "source": "Official GigaTIME sample_test_data.zip, five fixed patches",
+  "archive_sha256": "cd1212b361f7bfe4f7f01779a59f437c691fd43a684d7b5f584c37bf7d0e2601",
+  "checkpoint_sha256": "d200308302c7fefd13b259c62de546f2c859c28d1079e9f67dc8808915d95d0c",
+  "pair_ids": [
+    "0_556_556_556",
+    "0_6116_556_556",
+    "0_10564_556_556",
+    "0_16680_556_556",
+    "0_30024_556_556"
+  ],
+  "target": "Authors' binary COMET labels after mask_noncell and cell_mask_label transformations from their public testing notebook, in official 23-channel order",
+  "input_contract": "556-pixel source resized to 512; four nonoverlapping 256-pixel model windows",
+  "rows": [
+    {
+      "pair": "0_556_556_556",
+      "channel": "DAPI",
+      "target_prevalence": 0.2671470642089844,
+      "positive_pixels": 70031,
+      "roc_auc": 0.8877124427055453,
+      "average_precision": 0.7058577991362335
+    },
+    {
+      "pair": "0_556_556_556",
+      "channel": "TRITC",
+      "target_prevalence": 0.032215118408203125,
+      "positive_pixels": 8445,
+      "roc_auc": 0.8749555987606195,
+      "average_precision": 0.14112637093997468
+    },
+    {
+      "pair": "0_556_556_556",
+      "channel": "Cy5",
+      "target_prevalence": 0.01792144775390625,
+      "positive_pixels": 4698,
+      "roc_auc": 0.8924507975943023,
+      "average_precision": 0.12758214523513234
+    },
+    {
+      "pair": "0_556_556_556",
+      "channel": "PD-1",
+      "target_prevalence": 0.019512176513671875,
+      "positive_pixels": 5115,
+      "roc_auc": 0.8119588804420277,
+      "average_precision": 0.060764532843096235
+    },
+    {
+      "pair": "0_556_556_556",
+      "channel": "CD14",
+      "target_prevalence": 0.04654693603515625,
+      "positive_pixels": 12202,
+      "roc_auc": 0.7816210726894213,
+      "average_precision": 0.10905105992612446
+    },
+    {
+      "pair": "0_556_556_556",
+      "channel": "CD4",
+      "target_prevalence": 0.09673309326171875,
+      "positive_pixels": 25358,
+      "roc_auc": 0.8892009405889287,
+      "average_precision": 0.48889692575784127
+    },
+    {
+      "pair": "0_556_556_556",
+      "channel": "T-bet",
+      "target_prevalence": 0.04952239990234375,
+      "positive_pixels": 12982,
+      "roc_auc": 0.7981437550043498,
+      "average_precision": 0.3934998010460896
+    },
+    {
+      "pair": "0_556_556_556",
+      "channel": "CD34",
+      "target_prevalence": 0.0147705078125,
+      "positive_pixels": 3872,
+      "roc_auc": 0.9270144830093279,
+      "average_precision": 0.10185749565813532
+    },
+    {
+      "pair": "0_556_556_556",
+      "channel": "CD68",
+      "target_prevalence": 0.34658050537109375,
+      "positive_pixels": 90854,
+      "roc_auc": 0.8276824085099582,
+      "average_precision": 0.6602809633197516
+    },
+    {
+      "pair": "0_556_556_556",
+      "channel": "CD16",
+      "target_prevalence": 0.0744476318359375,
+      "positive_pixels": 19516,
+      "roc_auc": 0.8712692375325601,
+      "average_precision": 0.33647323262293916
+    },
+    {
+      "pair": "0_556_556_556",
+      "channel": "CD11c",
+      "target_prevalence": 0.08728408813476562,
+      "positive_pixels": 22881,
+      "roc_auc": 0.8801572454651203,
+      "average_precision": 0.43952674813774845
+    },
+    {
+      "pair": "0_556_556_556",
+      "channel": "CD138",
+      "target_prevalence": 0.26673126220703125,
+      "positive_pixels": 69922,
+      "roc_auc": 0.8851881718965353,
+      "average_precision": 0.6945084350260213
+    },
+    {
+      "pair": "0_556_556_556",
+      "channel": "CD20",
+      "target_prevalence": 0.0,
+      "positive_pixels": 0,
+      "roc_auc": null,
+      "average_precision": null
+    },
+    {
+      "pair": "0_556_556_556",
+      "channel": "CD3",
+      "target_prevalence": 0.08648300170898438,
+      "positive_pixels": 22671,
+      "roc_auc": 0.8591097104195289,
+      "average_precision": 0.5308970079294063
+    },
+    {
+      "pair": "0_556_556_556",
+      "channel": "CD8",
+      "target_prevalence": 0.033847808837890625,
+      "positive_pixels": 8873,
+      "roc_auc": 0.8837464510434732,
+      "average_precision": 0.2677171919046904
+    },
+    {
+      "pair": "0_556_556_556",
+      "channel": "PD-L1",
+      "target_prevalence": 0.3931007385253906,
+      "positive_pixels": 103049,
+      "roc_auc": 0.8686691851832548,
+      "average_precision": 0.774617823506181
+    },
+    {
+      "pair": "0_556_556_556",
+      "channel": "CK",
+      "target_prevalence": 0.28675079345703125,
+      "positive_pixels": 75170,
+      "roc_auc": 0.9521147254146676,
+      "average_precision": 0.8626806801784638
+    },
+    {
+      "pair": "0_556_556_556",
+      "channel": "Ki67",
+      "target_prevalence": 0.0356292724609375,
+      "positive_pixels": 9340,
+      "roc_auc": 0.7022450295981344,
+      "average_precision": 0.06118091115708884
+    },
+    {
+      "pair": "0_556_556_556",
+      "channel": "Tryptase",
+      "target_prevalence": 0.02845001220703125,
+      "positive_pixels": 7458,
+      "roc_auc": 0.9176559900458838,
+      "average_precision": 0.3327698648711229
+    },
+    {
+      "pair": "0_556_556_556",
+      "channel": "Actin-D",
+      "target_prevalence": 0.022243499755859375,
+      "positive_pixels": 5831,
+      "roc_auc": 0.9288802670652669,
+      "average_precision": 0.2329302956546532
+    },
+    {
+      "pair": "0_556_556_556",
+      "channel": "Caspase3-D",
+      "target_prevalence": 0.3110504150390625,
+      "positive_pixels": 81540,
+      "roc_auc": 0.9072250987742452,
+      "average_precision": 0.8227614027622818
+    },
+    {
+      "pair": "0_556_556_556",
+      "channel": "PHH3-B",
+      "target_prevalence": 0.2515830993652344,
+      "positive_pixels": 65951,
+      "roc_auc": 0.7104404463726322,
+      "average_precision": 0.3954134459193108
+    },
+    {
+      "pair": "0_556_556_556",
+      "channel": "Transgelin",
+      "target_prevalence": 0.056911468505859375,
+      "positive_pixels": 14919,
+      "roc_auc": 0.9458769264907908,
+      "average_precision": 0.43597322702693975
+    },
+    {
+      "pair": "0_6116_556_556",
+      "channel": "DAPI",
+      "target_prevalence": 0.0490875244140625,
+      "positive_pixels": 12868,
+      "roc_auc": 0.9571168007741592,
+      "average_precision": 0.5944386363809502
+    },
+    {
+      "pair": "0_6116_556_556",
+      "channel": "TRITC",
+      "target_prevalence": 0.035961151123046875,
+      "positive_pixels": 9427,
+      "roc_auc": 0.9148154112300894,
+      "average_precision": 0.35282853196922437
+    },
+    {
+      "pair": "0_6116_556_556",
+      "channel": "Cy5",
+      "target_prevalence": 0.032928466796875,
+      "positive_pixels": 8632,
+      "roc_auc": 0.8631709394708583,
+      "average_precision": 0.16098400971839877
+    },
+    {
+      "pair": "0_6116_556_556",
+      "channel": "PD-1",
+      "target_prevalence": 0.0,
+      "positive_pixels": 0,
+      "roc_auc": null,
+      "average_precision": null
+    },
+    {
+      "pair": "0_6116_556_556",
+      "channel": "CD14",
+      "target_prevalence": 0.0213470458984375,
+      "positive_pixels": 5596,
+      "roc_auc": 0.8613992598915676,
+      "average_precision": 0.11645414597431097
+    },
+    {
+      "pair": "0_6116_556_556",
+      "channel": "CD4",
+      "target_prevalence": 0.00579833984375,
+      "positive_pixels": 1520,
+      "roc_auc": 0.9086422722106621,
+      "average_precision": 0.3751174692211593
+    },
+    {
+      "pair": "0_6116_556_556",
+      "channel": "T-bet",
+      "target_prevalence": 0.007572174072265625,
+      "positive_pixels": 1985,
+      "roc_auc": 0.9085081160839802,
+      "average_precision": 0.04460412527878264
+    },
+    {
+      "pair": "0_6116_556_556",
+      "channel": "CD34",
+      "target_prevalence": 0.036407470703125,
+      "positive_pixels": 9544,
+      "roc_auc": 0.8778381400907511,
+      "average_precision": 0.15106432589246832
+    },
+    {
+      "pair": "0_6116_556_556",
+      "channel": "CD68",
+      "target_prevalence": 0.004421234130859375,
+      "positive_pixels": 1159,
+      "roc_auc": 0.8860426839495683,
+      "average_precision": 0.5062112824954117
+    },
+    {
+      "pair": "0_6116_556_556",
+      "channel": "CD16",
+      "target_prevalence": 0.02031707763671875,
+      "positive_pixels": 5326,
+      "roc_auc": 0.8734891264364281,
+      "average_precision": 0.1761984934320056
+    },
+    {
+      "pair": "0_6116_556_556",
+      "channel": "CD11c",
+      "target_prevalence": 0.00646209716796875,
+      "positive_pixels": 1694,
+      "roc_auc": 0.8756750984752346,
+      "average_precision": 0.35052868763380474
+    },
+    {
+      "pair": "0_6116_556_556",
+      "channel": "CD138",
+      "target_prevalence": 0.0,
+      "positive_pixels": 0,
+      "roc_auc": null,
+      "average_precision": null
+    },
+    {
+      "pair": "0_6116_556_556",
+      "channel": "CD20",
+      "target_prevalence": 0.0056610107421875,
+      "positive_pixels": 1484,
+      "roc_auc": 0.8224155926599759,
+      "average_precision": 0.014168501931041369
+    },
+    {
+      "pair": "0_6116_556_556",
+      "channel": "CD3",
+      "target_prevalence": 0.00727081298828125,
+      "positive_pixels": 1906,
+      "roc_auc": 0.8658550516680561,
+      "average_precision": 0.025148121319587897
+    },
+    {
+      "pair": "0_6116_556_556",
+      "channel": "CD8",
+      "target_prevalence": 0.003875732421875,
+      "positive_pixels": 1016,
+      "roc_auc": 0.9223491109407351,
+      "average_precision": 0.023046588843328657
+    },
+    {
+      "pair": "0_6116_556_556",
+      "channel": "PD-L1",
+      "target_prevalence": 0.01012420654296875,
+      "positive_pixels": 2654,
+      "roc_auc": 0.8965495742431178,
+      "average_precision": 0.24818748998962165
+    },
+    {
+      "pair": "0_6116_556_556",
+      "channel": "CK",
+      "target_prevalence": 0.00327301025390625,
+      "positive_pixels": 858,
+      "roc_auc": 0.8878562201941563,
+      "average_precision": 0.013760753257656548
+    },
+    {
+      "pair": "0_6116_556_556",
+      "channel": "Ki67",
+      "target_prevalence": 0.0,
+      "positive_pixels": 0,
+      "roc_auc": null,
+      "average_precision": null
+    },
+    {
+      "pair": "0_6116_556_556",
+      "channel": "Tryptase",
+      "target_prevalence": 0.0,
+      "positive_pixels": 0,
+      "roc_auc": null,
+      "average_precision": null
+    },
+    {
+      "pair": "0_6116_556_556",
+      "channel": "Actin-D",
+      "target_prevalence": 0.0,
+      "positive_pixels": 0,
+      "roc_auc": null,
+      "average_precision": null
+    },
+    {
+      "pair": "0_6116_556_556",
+      "channel": "Caspase3-D",
+      "target_prevalence": 0.00327301025390625,
+      "positive_pixels": 858,
+      "roc_auc": 0.8058794994212506,
+      "average_precision": 0.007607158536161264
+    },
+    {
+      "pair": "0_6116_556_556",
+      "channel": "PHH3-B",
+      "target_prevalence": 0.004421234130859375,
+      "positive_pixels": 1159,
+      "roc_auc": 0.9005058357017831,
+      "average_precision": 0.5001470673440942
+    },
+    {
+      "pair": "0_6116_556_556",
+      "channel": "Transgelin",
+      "target_prevalence": 0.0,
+      "positive_pixels": 0,
+      "roc_auc": null,
+      "average_precision": null
+    },
+    {
+      "pair": "0_10564_556_556",
+      "channel": "DAPI",
+      "target_prevalence": 0.08965301513671875,
+      "positive_pixels": 23502,
+      "roc_auc": 0.9538445013033928,
+      "average_precision": 0.6310999262798186
+    },
+    {
+      "pair": "0_10564_556_556",
+      "channel": "TRITC",
+      "target_prevalence": 0.0532684326171875,
+      "positive_pixels": 13964,
+      "roc_auc": 0.8902876543355364,
+      "average_precision": 0.4105686725408516
+    },
+    {
+      "pair": "0_10564_556_556",
+      "channel": "Cy5",
+      "target_prevalence": 0.0538177490234375,
+      "positive_pixels": 14108,
+      "roc_auc": 0.9118959178406212,
+      "average_precision": 0.34980933727504504
+    },
+    {
+      "pair": "0_10564_556_556",
+      "channel": "PD-1",
+      "target_prevalence": 0.0,
+      "positive_pixels": 0,
+      "roc_auc": null,
+      "average_precision": null
+    },
+    {
+      "pair": "0_10564_556_556",
+      "channel": "CD14",
+      "target_prevalence": 0.02085113525390625,
+      "positive_pixels": 5466,
+      "roc_auc": 0.9204070937612127,
+      "average_precision": 0.21626860795778396
+    },
+    {
+      "pair": "0_10564_556_556",
+      "channel": "CD4",
+      "target_prevalence": 0.0082550048828125,
+      "positive_pixels": 2164,
+      "roc_auc": 0.9870075166808651,
+      "average_precision": 0.3167240470041956
+    },
+    {
+      "pair": "0_10564_556_556",
+      "channel": "T-bet",
+      "target_prevalence": 0.00388336181640625,
+      "positive_pixels": 1018,
+      "roc_auc": 0.933154158790658,
+      "average_precision": 0.040596152650925345
+    },
+    {
+      "pair": "0_10564_556_556",
+      "channel": "CD34",
+      "target_prevalence": 0.036495208740234375,
+      "positive_pixels": 9567,
+      "roc_auc": 0.9047110107212821,
+      "average_precision": 0.16309645058279781
+    },
+    {
+      "pair": "0_10564_556_556",
+      "channel": "CD68",
+      "target_prevalence": 0.0192718505859375,
+      "positive_pixels": 5052,
+      "roc_auc": 0.9621153810986067,
+      "average_precision": 0.5919147883172107
+    },
+    {
+      "pair": "0_10564_556_556",
+      "channel": "CD16",
+      "target_prevalence": 0.030658721923828125,
+      "positive_pixels": 8037,
+      "roc_auc": 0.8870493656379478,
+      "average_precision": 0.4418165170204674
+    },
+    {
+      "pair": "0_10564_556_556",
+      "channel": "CD11c",
+      "target_prevalence": 0.01158905029296875,
+      "positive_pixels": 3038,
+      "roc_auc": 0.9456804185925021,
+      "average_precision": 0.23893097733370436
+    },
+    {
+      "pair": "0_10564_556_556",
+      "channel": "CD138",
+      "target_prevalence": 0.0086822509765625,
+      "positive_pixels": 2276,
+      "roc_auc": 0.8849179340691635,
+      "average_precision": 0.038837362303695125
+    },
+    {
+      "pair": "0_10564_556_556",
+      "channel": "CD20",
+      "target_prevalence": 0.0,
+      "positive_pixels": 0,
+      "roc_auc": null,
+      "average_precision": null
+    },
+    {
+      "pair": "0_10564_556_556",
+      "channel": "CD3",
+      "target_prevalence": 0.002437591552734375,
+      "positive_pixels": 639,
+      "roc_auc": 0.9625212209846226,
+      "average_precision": 0.04649942999882168
+    },
+    {
+      "pair": "0_10564_556_556",
+      "channel": "CD8",
+      "target_prevalence": 0.012035369873046875,
+      "positive_pixels": 3155,
+      "roc_auc": 0.9819300385879974,
+      "average_precision": 0.45867037207793593
+    },
+    {
+      "pair": "0_10564_556_556",
+      "channel": "PD-L1",
+      "target_prevalence": 0.019153594970703125,
+      "positive_pixels": 5021,
+      "roc_auc": 0.9343573263106975,
+      "average_precision": 0.4378870507654097
+    },
+    {
+      "pair": "0_10564_556_556",
+      "channel": "CK",
+      "target_prevalence": 0.004383087158203125,
+      "positive_pixels": 1149,
+      "roc_auc": 0.9823142175777704,
+      "average_precision": 0.11661808286447473
+    },
+    {
+      "pair": "0_10564_556_556",
+      "channel": "Ki67",
+      "target_prevalence": 0.0095977783203125,
+      "positive_pixels": 2516,
+      "roc_auc": 0.9816137540606894,
+      "average_precision": 0.6289473791719414
+    },
+    {
+      "pair": "0_10564_556_556",
+      "channel": "Tryptase",
+      "target_prevalence": 0.010921478271484375,
+      "positive_pixels": 2863,
+      "roc_auc": 0.9334456690257025,
+      "average_precision": 0.09933237281452206
+    },
+    {
+      "pair": "0_10564_556_556",
+      "channel": "Actin-D",
+      "target_prevalence": 0.0,
+      "positive_pixels": 0,
+      "roc_auc": null,
+      "average_precision": null
+    },
+    {
+      "pair": "0_10564_556_556",
+      "channel": "Caspase3-D",
+      "target_prevalence": 0.0,
+      "positive_pixels": 0,
+      "roc_auc": null,
+      "average_precision": null
+    },
+    {
+      "pair": "0_10564_556_556",
+      "channel": "PHH3-B",
+      "target_prevalence": 0.02655792236328125,
+      "positive_pixels": 6962,
+      "roc_auc": 0.9270314093503189,
+      "average_precision": 0.47193047178830194
+    },
+    {
+      "pair": "0_10564_556_556",
+      "channel": "Transgelin",
+      "target_prevalence": 0.0,
+      "positive_pixels": 0,
+      "roc_auc": null,
+      "average_precision": null
+    },
+    {
+      "pair": "0_16680_556_556",
+      "channel": "DAPI",
+      "target_prevalence": 0.0536346435546875,
+      "positive_pixels": 14060,
+      "roc_auc": 0.9286073818249465,
+      "average_precision": 0.516773756576864
+    },
+    {
+      "pair": "0_16680_556_556",
+      "channel": "TRITC",
+      "target_prevalence": 0.029338836669921875,
+      "positive_pixels": 7691,
+      "roc_auc": 0.8852506444254082,
+      "average_precision": 0.3000171881662614
+    },
+    {
+      "pair": "0_16680_556_556",
+      "channel": "Cy5",
+      "target_prevalence": 0.031078338623046875,
+      "positive_pixels": 8147,
+      "roc_auc": 0.8706944876303301,
+      "average_precision": 0.2771650515655858
+    },
+    {
+      "pair": "0_16680_556_556",
+      "channel": "PD-1",
+      "target_prevalence": 0.008270263671875,
+      "positive_pixels": 2168,
+      "roc_auc": 0.8562463981560262,
+      "average_precision": 0.035327160498578064
+    },
+    {
+      "pair": "0_16680_556_556",
+      "channel": "CD14",
+      "target_prevalence": 0.00824737548828125,
+      "positive_pixels": 2162,
+      "roc_auc": 0.9399427529925558,
+      "average_precision": 0.12344209351438815
+    },
+    {
+      "pair": "0_16680_556_556",
+      "channel": "CD4",
+      "target_prevalence": 0.012935638427734375,
+      "positive_pixels": 3391,
+      "roc_auc": 0.9676556466339364,
+      "average_precision": 0.5680880423323253
+    },
+    {
+      "pair": "0_16680_556_556",
+      "channel": "T-bet",
+      "target_prevalence": 0.0,
+      "positive_pixels": 0,
+      "roc_auc": null,
+      "average_precision": null
+    },
+    {
+      "pair": "0_16680_556_556",
+      "channel": "CD34",
+      "target_prevalence": 0.06635284423828125,
+      "positive_pixels": 17394,
+      "roc_auc": 0.9408174018420402,
+      "average_precision": 0.562187201462135
+    },
+    {
+      "pair": "0_16680_556_556",
+      "channel": "CD68",
+      "target_prevalence": 0.013339996337890625,
+      "positive_pixels": 3497,
+      "roc_auc": 0.9976295371802486,
+      "average_precision": 0.8249826218777303
+    },
+    {
+      "pair": "0_16680_556_556",
+      "channel": "CD16",
+      "target_prevalence": 0.015178680419921875,
+      "positive_pixels": 3979,
+      "roc_auc": 0.9653696616823277,
+      "average_precision": 0.7108266073160538
+    },
+    {
+      "pair": "0_16680_556_556",
+      "channel": "CD11c",
+      "target_prevalence": 0.013339996337890625,
+      "positive_pixels": 3497,
+      "roc_auc": 0.9966348877830306,
+      "average_precision": 0.7579668337905692
+    },
+    {
+      "pair": "0_16680_556_556",
+      "channel": "CD138",
+      "target_prevalence": 0.0,
+      "positive_pixels": 0,
+      "roc_auc": null,
+      "average_precision": null
+    },
+    {
+      "pair": "0_16680_556_556",
+      "channel": "CD20",
+      "target_prevalence": 0.0,
+      "positive_pixels": 0,
+      "roc_auc": null,
+      "average_precision": null
+    },
+    {
+      "pair": "0_16680_556_556",
+      "channel": "CD3",
+      "target_prevalence": 0.008152008056640625,
+      "positive_pixels": 2137,
+      "roc_auc": 0.9671479607171369,
+      "average_precision": 0.6656007425759868
+    },
+    {
+      "pair": "0_16680_556_556",
+      "channel": "CD8",
+      "target_prevalence": 0.00478363037109375,
+      "positive_pixels": 1254,
+      "roc_auc": 0.9940017571430589,
+      "average_precision": 0.2839586242504681
+    },
+    {
+      "pair": "0_16680_556_556",
+      "channel": "PD-L1",
+      "target_prevalence": 0.0167083740234375,
+      "positive_pixels": 4380,
+      "roc_auc": 0.9481031758086172,
+      "average_precision": 0.46704335704603755
+    },
+    {
+      "pair": "0_16680_556_556",
+      "channel": "CK",
+      "target_prevalence": 0.0032196044921875,
+      "positive_pixels": 844,
+      "roc_auc": 0.9978600934445527,
+      "average_precision": 0.8016320050110797
+    },
+    {
+      "pair": "0_16680_556_556",
+      "channel": "Ki67",
+      "target_prevalence": 0.00807952880859375,
+      "positive_pixels": 2118,
+      "roc_auc": 0.9897820044028866,
+      "average_precision": 0.6596150746942858
+    },
+    {
+      "pair": "0_16680_556_556",
+      "channel": "Tryptase",
+      "target_prevalence": 0.00437164306640625,
+      "positive_pixels": 1146,
+      "roc_auc": 0.8512650134046482,
+      "average_precision": 0.01356716280738007
+    },
+    {
+      "pair": "0_16680_556_556",
+      "channel": "Actin-D",
+      "target_prevalence": 0.0,
+      "positive_pixels": 0,
+      "roc_auc": null,
+      "average_precision": null
+    },
+    {
+      "pair": "0_16680_556_556",
+      "channel": "Caspase3-D",
+      "target_prevalence": 0.0,
+      "positive_pixels": 0,
+      "roc_auc": null,
+      "average_precision": null
+    },
+    {
+      "pair": "0_16680_556_556",
+      "channel": "PHH3-B",
+      "target_prevalence": 0.014392852783203125,
+      "positive_pixels": 3773,
+      "roc_auc": 0.964371848713413,
+      "average_precision": 0.5162803938443152
+    },
+    {
+      "pair": "0_16680_556_556",
+      "channel": "Transgelin",
+      "target_prevalence": 0.0,
+      "positive_pixels": 0,
+      "roc_auc": null,
+      "average_precision": null
+    },
+    {
+      "pair": "0_30024_556_556",
+      "channel": "DAPI",
+      "target_prevalence": 0.0569000244140625,
+      "positive_pixels": 14916,
+      "roc_auc": 0.9740465540155423,
+      "average_precision": 0.6818220635350348
+    },
+    {
+      "pair": "0_30024_556_556",
+      "channel": "TRITC",
+      "target_prevalence": 0.033519744873046875,
+      "positive_pixels": 8787,
+      "roc_auc": 0.951991081421133,
+      "average_precision": 0.46047440738401774
+    },
+    {
+      "pair": "0_30024_556_556",
+      "channel": "Cy5",
+      "target_prevalence": 0.042083740234375,
+      "positive_pixels": 11032,
+      "roc_auc": 0.9185983851154214,
+      "average_precision": 0.46907471490891056
+    },
+    {
+      "pair": "0_30024_556_556",
+      "channel": "PD-1",
+      "target_prevalence": 0.0,
+      "positive_pixels": 0,
+      "roc_auc": null,
+      "average_precision": null
+    },
+    {
+      "pair": "0_30024_556_556",
+      "channel": "CD14",
+      "target_prevalence": 0.0304412841796875,
+      "positive_pixels": 7980,
+      "roc_auc": 0.9225599564037333,
+      "average_precision": 0.4296545814333339
+    },
+    {
+      "pair": "0_30024_556_556",
+      "channel": "CD4",
+      "target_prevalence": 0.00211334228515625,
+      "positive_pixels": 554,
+      "roc_auc": 0.8819743789817421,
+      "average_precision": 0.008231372764977483
+    },
+    {
+      "pair": "0_30024_556_556",
+      "channel": "T-bet",
+      "target_prevalence": 0.007965087890625,
+      "positive_pixels": 2088,
+      "roc_auc": 0.8611437144263181,
+      "average_precision": 0.04039854045812826
+    },
+    {
+      "pair": "0_30024_556_556",
+      "channel": "CD34",
+      "target_prevalence": 0.024776458740234375,
+      "positive_pixels": 6495,
+      "roc_auc": 0.8974423280288395,
+      "average_precision": 0.19105724977012686
+    },
+    {
+      "pair": "0_30024_556_556",
+      "channel": "CD68",
+      "target_prevalence": 0.004268646240234375,
+      "positive_pixels": 1119,
+      "roc_auc": 0.9997401972477546,
+      "average_precision": 0.95106041647143
+    },
+    {
+      "pair": "0_30024_556_556",
+      "channel": "CD16",
+      "target_prevalence": 0.012233734130859375,
+      "positive_pixels": 3207,
+      "roc_auc": 0.8931543598523246,
+      "average_precision": 0.380655479886676
+    },
+    {
+      "pair": "0_30024_556_556",
+      "channel": "CD11c",
+      "target_prevalence": 0.0,
+      "positive_pixels": 0,
+      "roc_auc": null,
+      "average_precision": null
+    },
+    {
+      "pair": "0_30024_556_556",
+      "channel": "CD138",
+      "target_prevalence": 0.0,
+      "positive_pixels": 0,
+      "roc_auc": null,
+      "average_precision": null
+    },
+    {
+      "pair": "0_30024_556_556",
+      "channel": "CD20",
+      "target_prevalence": 0.0,
+      "positive_pixels": 0,
+      "roc_auc": null,
+      "average_precision": null
+    },
+    {
+      "pair": "0_30024_556_556",
+      "channel": "CD3",
+      "target_prevalence": 0.00211334228515625,
+      "positive_pixels": 554,
+      "roc_auc": 0.8391981837535328,
+      "average_precision": 0.006127348341674053
+    },
+    {
+      "pair": "0_30024_556_556",
+      "channel": "CD8",
+      "target_prevalence": 0.004268646240234375,
+      "positive_pixels": 1119,
+      "roc_auc": 0.9986963061259407,
+      "average_precision": 0.8893592882202639
+    },
+    {
+      "pair": "0_30024_556_556",
+      "channel": "PD-L1",
+      "target_prevalence": 0.012664794921875,
+      "positive_pixels": 3320,
+      "roc_auc": 0.8752623357771332,
+      "average_precision": 0.3643801378159921
+    },
+    {
+      "pair": "0_30024_556_556",
+      "channel": "CK",
+      "target_prevalence": 0.0,
+      "positive_pixels": 0,
+      "roc_auc": null,
+      "average_precision": null
+    },
+    {
+      "pair": "0_30024_556_556",
+      "channel": "Ki67",
+      "target_prevalence": 0.004268646240234375,
+      "positive_pixels": 1119,
+      "roc_auc": 0.9950325857563487,
+      "average_precision": 0.7492478398190172
+    },
+    {
+      "pair": "0_30024_556_556",
+      "channel": "Tryptase",
+      "target_prevalence": 0.0,
+      "positive_pixels": 0,
+      "roc_auc": null,
+      "average_precision": null
+    },
+    {
+      "pair": "0_30024_556_556",
+      "channel": "Actin-D",
+      "target_prevalence": 0.0,
+      "positive_pixels": 0,
+      "roc_auc": null,
+      "average_precision": null
+    },
+    {
+      "pair": "0_30024_556_556",
+      "channel": "Caspase3-D",
+      "target_prevalence": 0.002933502197265625,
+      "positive_pixels": 769,
+      "roc_auc": 0.7093017831700539,
+      "average_precision": 0.005398364234707525
+    },
+    {
+      "pair": "0_30024_556_556",
+      "channel": "PHH3-B",
+      "target_prevalence": 0.0072021484375,
+      "positive_pixels": 1888,
+      "roc_auc": 0.8789242031102491,
+      "average_precision": 0.5094179062587048
+    },
+    {
+      "pair": "0_30024_556_556",
+      "channel": "Transgelin",
+      "target_prevalence": 0.0,
+      "positive_pixels": 0,
+      "roc_auc": null,
+      "average_precision": null
+    }
+  ],
+  "summary": [
+    {
+      "channel": "DAPI",
+      "eligible_patches": 5,
+      "median_auc": 0.9538445013033928,
+      "median_average_precision": 0.6310999262798186,
+      "median_target_prevalence": 0.0569000244140625
+    },
+    {
+      "channel": "TRITC",
+      "eligible_patches": 5,
+      "median_auc": 0.8902876543355364,
+      "median_average_precision": 0.35282853196922437,
+      "median_target_prevalence": 0.033519744873046875
+    },
+    {
+      "channel": "Cy5",
+      "eligible_patches": 5,
+      "median_auc": 0.8924507975943023,
+      "median_average_precision": 0.2771650515655858,
+      "median_target_prevalence": 0.032928466796875
+    },
+    {
+      "channel": "PD-1",
+      "eligible_patches": 2,
+      "median_auc": 0.834102639299027,
+      "median_average_precision": 0.04804584667083715,
+      "median_target_prevalence": 0.013891220092773438
+    },
+    {
+      "channel": "CD14",
+      "eligible_patches": 5,
+      "median_auc": 0.9204070937612127,
+      "median_average_precision": 0.12344209351438815,
+      "median_target_prevalence": 0.0213470458984375
+    },
+    {
+      "channel": "CD4",
+      "eligible_patches": 5,
+      "median_auc": 0.9086422722106621,
+      "median_average_precision": 0.3751174692211593,
+      "median_target_prevalence": 0.0082550048828125
+    },
+    {
+      "channel": "T-bet",
+      "eligible_patches": 4,
+      "median_auc": 0.8848259152551492,
+      "median_average_precision": 0.04260013896485399,
+      "median_target_prevalence": 0.0077686309814453125
+    },
+    {
+      "channel": "CD34",
+      "eligible_patches": 5,
+      "median_auc": 0.9047110107212821,
+      "median_average_precision": 0.16309645058279781,
+      "median_target_prevalence": 0.036407470703125
+    },
+    {
+      "channel": "CD68",
+      "eligible_patches": 5,
+      "median_auc": 0.9621153810986067,
+      "median_average_precision": 0.6602809633197516,
+      "median_target_prevalence": 0.013339996337890625
+    },
+    {
+      "channel": "CD16",
+      "eligible_patches": 5,
+      "median_auc": 0.8870493656379478,
+      "median_average_precision": 0.380655479886676,
+      "median_target_prevalence": 0.02031707763671875
+    },
+    {
+      "channel": "CD11c",
+      "eligible_patches": 4,
+      "median_auc": 0.9129188320288112,
+      "median_average_precision": 0.3950277178857766,
+      "median_target_prevalence": 0.012464523315429688
+    },
+    {
+      "channel": "CD138",
+      "eligible_patches": 2,
+      "median_auc": 0.8850530529828494,
+      "median_average_precision": 0.36667289866485825,
+      "median_target_prevalence": 0.13770675659179688
+    },
+    {
+      "channel": "CD20",
+      "eligible_patches": 1,
+      "median_auc": 0.8224155926599759,
+      "median_average_precision": 0.014168501931041369,
+      "median_target_prevalence": 0.0056610107421875
+    },
+    {
+      "channel": "CD3",
+      "eligible_patches": 5,
+      "median_auc": 0.8658550516680561,
+      "median_average_precision": 0.04649942999882168,
+      "median_target_prevalence": 0.00727081298828125
+    },
+    {
+      "channel": "CD8",
+      "eligible_patches": 5,
+      "median_auc": 0.9819300385879974,
+      "median_average_precision": 0.2839586242504681,
+      "median_target_prevalence": 0.00478363037109375
+    },
+    {
+      "channel": "PD-L1",
+      "eligible_patches": 5,
+      "median_auc": 0.8965495742431178,
+      "median_average_precision": 0.4378870507654097,
+      "median_target_prevalence": 0.0167083740234375
+    },
+    {
+      "channel": "CK",
+      "eligible_patches": 4,
+      "median_auc": 0.967214471496219,
+      "median_average_precision": 0.4591250439377772,
+      "median_target_prevalence": 0.0038280487060546875
+    },
+    {
+      "channel": "Ki67",
+      "eligible_patches": 4,
+      "median_auc": 0.985697879231788,
+      "median_average_precision": 0.6442812269331136,
+      "median_target_prevalence": 0.008838653564453125
+    },
+    {
+      "channel": "Tryptase",
+      "eligible_patches": 3,
+      "median_auc": 0.9176559900458838,
+      "median_average_precision": 0.09933237281452206,
+      "median_target_prevalence": 0.010921478271484375
+    },
+    {
+      "channel": "Actin-D",
+      "eligible_patches": 1,
+      "median_auc": 0.9288802670652669,
+      "median_average_precision": 0.2329302956546532,
+      "median_target_prevalence": 0.022243499755859375
+    },
+    {
+      "channel": "Caspase3-D",
+      "eligible_patches": 3,
+      "median_auc": 0.8058794994212506,
+      "median_average_precision": 0.007607158536161264,
+      "median_target_prevalence": 0.00327301025390625
+    },
+    {
+      "channel": "PHH3-B",
+      "eligible_patches": 5,
+      "median_auc": 0.9005058357017831,
+      "median_average_precision": 0.5001470673440942,
+      "median_target_prevalence": 0.014392852783203125
+    },
+    {
+      "channel": "Transgelin",
+      "eligible_patches": 1,
+      "median_auc": 0.9458769264907908,
+      "median_average_precision": 0.43597322702693975,
+      "median_target_prevalence": 0.056911468505859375
+    }
+  ],
+  "limit": "Five selected source-domain patches, possibly from the same specimen; not independent external ORION validation. AUROC/AP assess marker-positive localization against the model's binary training target, not raw fluorescence intensity.",
+  "visual_review_record": "analysis/evidence/gigatime-orion-source-domain-visual-review-2026-10-20.md"
+}

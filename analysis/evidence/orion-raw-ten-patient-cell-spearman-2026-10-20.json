@@ -1,0 +1,3034 @@
+{
+  "status": "fixed_compartment_cell_association_complete_visual_reviewed",
+  "patients": [
+    "CRC04",
+    "CRC06",
+    "CRC08",
+    "CRC10",
+    "CRC12",
+    "CRC17",
+    "CRC19",
+    "CRC21",
+    "CRC23",
+    "CRC25"
+  ],
+  "counts": [
+    {
+      "patient": "CRC04",
+      "common_cells": 4536
+    },
+    {
+      "patient": "CRC06",
+      "common_cells": 4212
+    },
+    {
+      "patient": "CRC08",
+      "common_cells": 4714
+    },
+    {
+      "patient": "CRC10",
+      "common_cells": 5833
+    },
+    {
+      "patient": "CRC12",
+      "common_cells": 3166
+    },
+    {
+      "patient": "CRC17",
+      "common_cells": 5042
+    },
+    {
+      "patient": "CRC19",
+      "common_cells": 2710
+    },
+    {
+      "patient": "CRC21",
+      "common_cells": 4215
+    },
+    {
+      "patient": "CRC23",
+      "common_cells": 2933
+    },
+    {
+      "patient": "CRC25",
+      "common_cells": 2193
+    }
+  ],
+  "per_patient": [
+    {
+      "patient": "CRC04",
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "mapping": "nuclear-dye family",
+      "compartment": "cell",
+      "cells": 4536,
+      "cell_spearman_rho": 0.20333805007798747
+    },
+    {
+      "patient": "CRC04",
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "mapping": "nuclear-dye family",
+      "compartment": "cyto",
+      "cells": 4536,
+      "cell_spearman_rho": 0.18921226419544185
+    },
+    {
+      "patient": "CRC04",
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "mapping": "nuclear-dye family",
+      "compartment": "nuclei",
+      "cells": 4536,
+      "cell_spearman_rho": 0.10104558434516767
+    },
+    {
+      "patient": "CRC04",
+      "virtual": "CD68",
+      "measured": "CD68",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 4536,
+      "cell_spearman_rho": -0.34348112744126846
+    },
+    {
+      "patient": "CRC04",
+      "virtual": "CD68",
+      "measured": "CD68",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 4536,
+      "cell_spearman_rho": -0.3288521156670068
+    },
+    {
+      "patient": "CRC04",
+      "virtual": "CD68",
+      "measured": "CD68",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 4536,
+      "cell_spearman_rho": -0.32923675839346056
+    },
+    {
+      "patient": "CRC04",
+      "virtual": "CD4",
+      "measured": "CD4",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 4536,
+      "cell_spearman_rho": 0.3951185274070663
+    },
+    {
+      "patient": "CRC04",
+      "virtual": "CD4",
+      "measured": "CD4",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 4536,
+      "cell_spearman_rho": 0.3822011088019709
+    },
+    {
+      "patient": "CRC04",
+      "virtual": "CD4",
+      "measured": "CD4",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 4536,
+      "cell_spearman_rho": 0.3998227881040156
+    },
+    {
+      "patient": "CRC04",
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "mapping": "CD8 alpha target",
+      "compartment": "cell",
+      "cells": 4536,
+      "cell_spearman_rho": 0.06063878863299163
+    },
+    {
+      "patient": "CRC04",
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "mapping": "CD8 alpha target",
+      "compartment": "cyto",
+      "cells": 4536,
+      "cell_spearman_rho": 0.05343388103678437
+    },
+    {
+      "patient": "CRC04",
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "mapping": "CD8 alpha target",
+      "compartment": "nuclei",
+      "cells": 4536,
+      "cell_spearman_rho": 0.05946420679927767
+    },
+    {
+      "patient": "CRC04",
+      "virtual": "CD20",
+      "measured": "CD20",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 4536,
+      "cell_spearman_rho": 0.1477894816541226
+    },
+    {
+      "patient": "CRC04",
+      "virtual": "CD20",
+      "measured": "CD20",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 4536,
+      "cell_spearman_rho": 0.14775206931853424
+    },
+    {
+      "patient": "CRC04",
+      "virtual": "CD20",
+      "measured": "CD20",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 4536,
+      "cell_spearman_rho": 0.1468803413784918
+    },
+    {
+      "patient": "CRC04",
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 4536,
+      "cell_spearman_rho": 0.2053200335351232
+    },
+    {
+      "patient": "CRC04",
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 4536,
+      "cell_spearman_rho": 0.19470842325630194
+    },
+    {
+      "patient": "CRC04",
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 4536,
+      "cell_spearman_rho": 0.21749342550643794
+    },
+    {
+      "patient": "CRC04",
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "mapping": "CD3 epsilon complex",
+      "compartment": "cell",
+      "cells": 4536,
+      "cell_spearman_rho": 0.3778018413212759
+    },
+    {
+      "patient": "CRC04",
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "mapping": "CD3 epsilon complex",
+      "compartment": "cyto",
+      "cells": 4536,
+      "cell_spearman_rho": 0.3684883086327696
+    },
+    {
+      "patient": "CRC04",
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "mapping": "CD3 epsilon complex",
+      "compartment": "nuclei",
+      "cells": 4536,
+      "cell_spearman_rho": 0.37623604668693206
+    },
+    {
+      "patient": "CRC04",
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 4536,
+      "cell_spearman_rho": 0.023898666458064415
+    },
+    {
+      "patient": "CRC04",
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 4536,
+      "cell_spearman_rho": 0.04604123762928541
+    },
+    {
+      "patient": "CRC04",
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 4536,
+      "cell_spearman_rho": 0.014004602449071259
+    },
+    {
+      "patient": "CRC04",
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 4536,
+      "cell_spearman_rho": 0.393255978659072
+    },
+    {
+      "patient": "CRC04",
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 4536,
+      "cell_spearman_rho": 0.37792114661258935
+    },
+    {
+      "patient": "CRC04",
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 4536,
+      "cell_spearman_rho": 0.3778590859390142
+    },
+    {
+      "patient": "CRC04",
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "mapping": "cytokeratin family",
+      "compartment": "cell",
+      "cells": 4536,
+      "cell_spearman_rho": 0.4181066242268039
+    },
+    {
+      "patient": "CRC04",
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "mapping": "cytokeratin family",
+      "compartment": "cyto",
+      "cells": 4536,
+      "cell_spearman_rho": 0.40858243218744006
+    },
+    {
+      "patient": "CRC04",
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "mapping": "cytokeratin family",
+      "compartment": "nuclei",
+      "cells": 4536,
+      "cell_spearman_rho": 0.43581981018379873
+    },
+    {
+      "patient": "CRC06",
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "mapping": "nuclear-dye family",
+      "compartment": "cell",
+      "cells": 4212,
+      "cell_spearman_rho": 0.5492576700739086
+    },
+    {
+      "patient": "CRC06",
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "mapping": "nuclear-dye family",
+      "compartment": "cyto",
+      "cells": 4212,
+      "cell_spearman_rho": 0.5177357684895756
+    },
+    {
+      "patient": "CRC06",
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "mapping": "nuclear-dye family",
+      "compartment": "nuclei",
+      "cells": 4212,
+      "cell_spearman_rho": 0.3365571854497725
+    },
+    {
+      "patient": "CRC06",
+      "virtual": "CD68",
+      "measured": "CD68",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 4212,
+      "cell_spearman_rho": -0.24462274776024515
+    },
+    {
+      "patient": "CRC06",
+      "virtual": "CD68",
+      "measured": "CD68",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 4212,
+      "cell_spearman_rho": -0.23369244929565805
+    },
+    {
+      "patient": "CRC06",
+      "virtual": "CD68",
+      "measured": "CD68",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 4212,
+      "cell_spearman_rho": -0.24044394748087222
+    },
+    {
+      "patient": "CRC06",
+      "virtual": "CD4",
+      "measured": "CD4",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 4212,
+      "cell_spearman_rho": 0.2716874175151527
+    },
+    {
+      "patient": "CRC06",
+      "virtual": "CD4",
+      "measured": "CD4",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 4212,
+      "cell_spearman_rho": 0.25678344932220426
+    },
+    {
+      "patient": "CRC06",
+      "virtual": "CD4",
+      "measured": "CD4",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 4212,
+      "cell_spearman_rho": 0.28013959094751234
+    },
+    {
+      "patient": "CRC06",
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "mapping": "CD8 alpha target",
+      "compartment": "cell",
+      "cells": 4212,
+      "cell_spearman_rho": 0.05643630825240302
+    },
+    {
+      "patient": "CRC06",
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "mapping": "CD8 alpha target",
+      "compartment": "cyto",
+      "cells": 4212,
+      "cell_spearman_rho": 0.04739092125189758
+    },
+    {
+      "patient": "CRC06",
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "mapping": "CD8 alpha target",
+      "compartment": "nuclei",
+      "cells": 4212,
+      "cell_spearman_rho": 0.06697050427921998
+    },
+    {
+      "patient": "CRC06",
+      "virtual": "CD20",
+      "measured": "CD20",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 4212,
+      "cell_spearman_rho": 0.5592975097462878
+    },
+    {
+      "patient": "CRC06",
+      "virtual": "CD20",
+      "measured": "CD20",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 4212,
+      "cell_spearman_rho": 0.5598169187918783
+    },
+    {
+      "patient": "CRC06",
+      "virtual": "CD20",
+      "measured": "CD20",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 4212,
+      "cell_spearman_rho": 0.5428619833718273
+    },
+    {
+      "patient": "CRC06",
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 4212,
+      "cell_spearman_rho": 0.13115767307790344
+    },
+    {
+      "patient": "CRC06",
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 4212,
+      "cell_spearman_rho": 0.13034762506241224
+    },
+    {
+      "patient": "CRC06",
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 4212,
+      "cell_spearman_rho": 0.1325587056837879
+    },
+    {
+      "patient": "CRC06",
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "mapping": "CD3 epsilon complex",
+      "compartment": "cell",
+      "cells": 4212,
+      "cell_spearman_rho": 0.43092722531021177
+    },
+    {
+      "patient": "CRC06",
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "mapping": "CD3 epsilon complex",
+      "compartment": "cyto",
+      "cells": 4212,
+      "cell_spearman_rho": 0.4171221452642336
+    },
+    {
+      "patient": "CRC06",
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "mapping": "CD3 epsilon complex",
+      "compartment": "nuclei",
+      "cells": 4212,
+      "cell_spearman_rho": 0.43316706969569563
+    },
+    {
+      "patient": "CRC06",
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 4212,
+      "cell_spearman_rho": 0.17083269236083512
+    },
+    {
+      "patient": "CRC06",
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 4212,
+      "cell_spearman_rho": 0.17139078130903304
+    },
+    {
+      "patient": "CRC06",
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 4212,
+      "cell_spearman_rho": 0.16200721051310663
+    },
+    {
+      "patient": "CRC06",
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 4212,
+      "cell_spearman_rho": 0.2479526857884886
+    },
+    {
+      "patient": "CRC06",
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 4212,
+      "cell_spearman_rho": 0.25601251224084376
+    },
+    {
+      "patient": "CRC06",
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 4212,
+      "cell_spearman_rho": 0.21817730732473786
+    },
+    {
+      "patient": "CRC06",
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "mapping": "cytokeratin family",
+      "compartment": "cell",
+      "cells": 4212,
+      "cell_spearman_rho": 0.11556606482674528
+    },
+    {
+      "patient": "CRC06",
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "mapping": "cytokeratin family",
+      "compartment": "cyto",
+      "cells": 4212,
+      "cell_spearman_rho": 0.12749353539668995
+    },
+    {
+      "patient": "CRC06",
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "mapping": "cytokeratin family",
+      "compartment": "nuclei",
+      "cells": 4212,
+      "cell_spearman_rho": 0.08736286829798817
+    },
+    {
+      "patient": "CRC08",
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "mapping": "nuclear-dye family",
+      "compartment": "cell",
+      "cells": 4714,
+      "cell_spearman_rho": 0.5865387127341175
+    },
+    {
+      "patient": "CRC08",
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "mapping": "nuclear-dye family",
+      "compartment": "cyto",
+      "cells": 4714,
+      "cell_spearman_rho": 0.6026329247461071
+    },
+    {
+      "patient": "CRC08",
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "mapping": "nuclear-dye family",
+      "compartment": "nuclei",
+      "cells": 4714,
+      "cell_spearman_rho": 0.19934153981882893
+    },
+    {
+      "patient": "CRC08",
+      "virtual": "CD68",
+      "measured": "CD68",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 4714,
+      "cell_spearman_rho": 0.16296510423280944
+    },
+    {
+      "patient": "CRC08",
+      "virtual": "CD68",
+      "measured": "CD68",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 4714,
+      "cell_spearman_rho": 0.18858053271688455
+    },
+    {
+      "patient": "CRC08",
+      "virtual": "CD68",
+      "measured": "CD68",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 4714,
+      "cell_spearman_rho": 0.14371981101705839
+    },
+    {
+      "patient": "CRC08",
+      "virtual": "CD4",
+      "measured": "CD4",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 4714,
+      "cell_spearman_rho": 0.09931424361421685
+    },
+    {
+      "patient": "CRC08",
+      "virtual": "CD4",
+      "measured": "CD4",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 4714,
+      "cell_spearman_rho": 0.09345232306720883
+    },
+    {
+      "patient": "CRC08",
+      "virtual": "CD4",
+      "measured": "CD4",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 4714,
+      "cell_spearman_rho": 0.10154652178239595
+    },
+    {
+      "patient": "CRC08",
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "mapping": "CD8 alpha target",
+      "compartment": "cell",
+      "cells": 4714,
+      "cell_spearman_rho": 0.04042187365891154
+    },
+    {
+      "patient": "CRC08",
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "mapping": "CD8 alpha target",
+      "compartment": "cyto",
+      "cells": 4714,
+      "cell_spearman_rho": 0.02330826248580101
+    },
+    {
+      "patient": "CRC08",
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "mapping": "CD8 alpha target",
+      "compartment": "nuclei",
+      "cells": 4714,
+      "cell_spearman_rho": 0.05669834765596036
+    },
+    {
+      "patient": "CRC08",
+      "virtual": "CD20",
+      "measured": "CD20",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 4714,
+      "cell_spearman_rho": 0.4952694438744735
+    },
+    {
+      "patient": "CRC08",
+      "virtual": "CD20",
+      "measured": "CD20",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 4714,
+      "cell_spearman_rho": 0.4992424311314948
+    },
+    {
+      "patient": "CRC08",
+      "virtual": "CD20",
+      "measured": "CD20",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 4714,
+      "cell_spearman_rho": 0.47958867275652917
+    },
+    {
+      "patient": "CRC08",
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 4714,
+      "cell_spearman_rho": -0.12475954473005772
+    },
+    {
+      "patient": "CRC08",
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 4714,
+      "cell_spearman_rho": -0.13987246692517694
+    },
+    {
+      "patient": "CRC08",
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 4714,
+      "cell_spearman_rho": -0.11092290282051612
+    },
+    {
+      "patient": "CRC08",
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "mapping": "CD3 epsilon complex",
+      "compartment": "cell",
+      "cells": 4714,
+      "cell_spearman_rho": 0.21500348921424814
+    },
+    {
+      "patient": "CRC08",
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "mapping": "CD3 epsilon complex",
+      "compartment": "cyto",
+      "cells": 4714,
+      "cell_spearman_rho": 0.219170118133981
+    },
+    {
+      "patient": "CRC08",
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "mapping": "CD3 epsilon complex",
+      "compartment": "nuclei",
+      "cells": 4714,
+      "cell_spearman_rho": 0.20336619778685372
+    },
+    {
+      "patient": "CRC08",
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 4714,
+      "cell_spearman_rho": -0.07285209438059068
+    },
+    {
+      "patient": "CRC08",
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 4714,
+      "cell_spearman_rho": -0.07354086656806773
+    },
+    {
+      "patient": "CRC08",
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 4714,
+      "cell_spearman_rho": -0.06909471193838994
+    },
+    {
+      "patient": "CRC08",
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 4714,
+      "cell_spearman_rho": -0.0801802707058688
+    },
+    {
+      "patient": "CRC08",
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 4714,
+      "cell_spearman_rho": -0.11051012134923718
+    },
+    {
+      "patient": "CRC08",
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 4714,
+      "cell_spearman_rho": -0.023585087750857135
+    },
+    {
+      "patient": "CRC08",
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "mapping": "cytokeratin family",
+      "compartment": "cell",
+      "cells": 4714,
+      "cell_spearman_rho": 0.12789382722350834
+    },
+    {
+      "patient": "CRC08",
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "mapping": "cytokeratin family",
+      "compartment": "cyto",
+      "cells": 4714,
+      "cell_spearman_rho": 0.11674816489169068
+    },
+    {
+      "patient": "CRC08",
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "mapping": "cytokeratin family",
+      "compartment": "nuclei",
+      "cells": 4714,
+      "cell_spearman_rho": 0.1461113478156938
+    },
+    {
+      "patient": "CRC10",
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "mapping": "nuclear-dye family",
+      "compartment": "cell",
+      "cells": 5833,
+      "cell_spearman_rho": 0.32188778719909167
+    },
+    {
+      "patient": "CRC10",
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "mapping": "nuclear-dye family",
+      "compartment": "cyto",
+      "cells": 5833,
+      "cell_spearman_rho": 0.3418752023495874
+    },
+    {
+      "patient": "CRC10",
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "mapping": "nuclear-dye family",
+      "compartment": "nuclei",
+      "cells": 5833,
+      "cell_spearman_rho": 0.024191111232805748
+    },
+    {
+      "patient": "CRC10",
+      "virtual": "CD68",
+      "measured": "CD68",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 5833,
+      "cell_spearman_rho": -0.039011484255200124
+    },
+    {
+      "patient": "CRC10",
+      "virtual": "CD68",
+      "measured": "CD68",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 5833,
+      "cell_spearman_rho": -0.06354770837760379
+    },
+    {
+      "patient": "CRC10",
+      "virtual": "CD68",
+      "measured": "CD68",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 5833,
+      "cell_spearman_rho": -0.0073798092443917405
+    },
+    {
+      "patient": "CRC10",
+      "virtual": "CD4",
+      "measured": "CD4",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 5833,
+      "cell_spearman_rho": -0.06283876074275808
+    },
+    {
+      "patient": "CRC10",
+      "virtual": "CD4",
+      "measured": "CD4",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 5833,
+      "cell_spearman_rho": -0.06611250947549036
+    },
+    {
+      "patient": "CRC10",
+      "virtual": "CD4",
+      "measured": "CD4",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 5833,
+      "cell_spearman_rho": -0.049495414650198105
+    },
+    {
+      "patient": "CRC10",
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "mapping": "CD8 alpha target",
+      "compartment": "cell",
+      "cells": 5833,
+      "cell_spearman_rho": -0.09904010219634865
+    },
+    {
+      "patient": "CRC10",
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "mapping": "CD8 alpha target",
+      "compartment": "cyto",
+      "cells": 5833,
+      "cell_spearman_rho": -0.09159297144585973
+    },
+    {
+      "patient": "CRC10",
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "mapping": "CD8 alpha target",
+      "compartment": "nuclei",
+      "cells": 5833,
+      "cell_spearman_rho": -0.10178284326443326
+    },
+    {
+      "patient": "CRC10",
+      "virtual": "CD20",
+      "measured": "CD20",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 5833,
+      "cell_spearman_rho": -0.0364329385599597
+    },
+    {
+      "patient": "CRC10",
+      "virtual": "CD20",
+      "measured": "CD20",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 5833,
+      "cell_spearman_rho": -0.03225956573286918
+    },
+    {
+      "patient": "CRC10",
+      "virtual": "CD20",
+      "measured": "CD20",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 5833,
+      "cell_spearman_rho": -0.04118837451722358
+    },
+    {
+      "patient": "CRC10",
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 5833,
+      "cell_spearman_rho": 0.13846630357470696
+    },
+    {
+      "patient": "CRC10",
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 5833,
+      "cell_spearman_rho": 0.1399111885476757
+    },
+    {
+      "patient": "CRC10",
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 5833,
+      "cell_spearman_rho": 0.13463700904819745
+    },
+    {
+      "patient": "CRC10",
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "mapping": "CD3 epsilon complex",
+      "compartment": "cell",
+      "cells": 5833,
+      "cell_spearman_rho": -0.002508789476524864
+    },
+    {
+      "patient": "CRC10",
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "mapping": "CD3 epsilon complex",
+      "compartment": "cyto",
+      "cells": 5833,
+      "cell_spearman_rho": 0.008148256283477498
+    },
+    {
+      "patient": "CRC10",
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "mapping": "CD3 epsilon complex",
+      "compartment": "nuclei",
+      "cells": 5833,
+      "cell_spearman_rho": -0.030382664955460215
+    },
+    {
+      "patient": "CRC10",
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 5833,
+      "cell_spearman_rho": 0.1502164961064179
+    },
+    {
+      "patient": "CRC10",
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 5833,
+      "cell_spearman_rho": 0.15669203550622673
+    },
+    {
+      "patient": "CRC10",
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 5833,
+      "cell_spearman_rho": 0.1292232630486087
+    },
+    {
+      "patient": "CRC10",
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 5833,
+      "cell_spearman_rho": 0.014366650224778683
+    },
+    {
+      "patient": "CRC10",
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 5833,
+      "cell_spearman_rho": 0.06622769557648799
+    },
+    {
+      "patient": "CRC10",
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 5833,
+      "cell_spearman_rho": -0.04454364551133224
+    },
+    {
+      "patient": "CRC10",
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "mapping": "cytokeratin family",
+      "compartment": "cell",
+      "cells": 5833,
+      "cell_spearman_rho": 0.03933645670678489
+    },
+    {
+      "patient": "CRC10",
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "mapping": "cytokeratin family",
+      "compartment": "cyto",
+      "cells": 5833,
+      "cell_spearman_rho": 0.042772580140037104
+    },
+    {
+      "patient": "CRC10",
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "mapping": "cytokeratin family",
+      "compartment": "nuclei",
+      "cells": 5833,
+      "cell_spearman_rho": 0.03319360559592087
+    },
+    {
+      "patient": "CRC12",
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "mapping": "nuclear-dye family",
+      "compartment": "cell",
+      "cells": 3166,
+      "cell_spearman_rho": 0.6410137429812189
+    },
+    {
+      "patient": "CRC12",
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "mapping": "nuclear-dye family",
+      "compartment": "cyto",
+      "cells": 3166,
+      "cell_spearman_rho": 0.6165162149438868
+    },
+    {
+      "patient": "CRC12",
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "mapping": "nuclear-dye family",
+      "compartment": "nuclei",
+      "cells": 3166,
+      "cell_spearman_rho": 0.4705663246105038
+    },
+    {
+      "patient": "CRC12",
+      "virtual": "CD68",
+      "measured": "CD68",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 3166,
+      "cell_spearman_rho": -0.1309602655061658
+    },
+    {
+      "patient": "CRC12",
+      "virtual": "CD68",
+      "measured": "CD68",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 3166,
+      "cell_spearman_rho": -0.1284086798705656
+    },
+    {
+      "patient": "CRC12",
+      "virtual": "CD68",
+      "measured": "CD68",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 3166,
+      "cell_spearman_rho": -0.12118403976706603
+    },
+    {
+      "patient": "CRC12",
+      "virtual": "CD4",
+      "measured": "CD4",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 3166,
+      "cell_spearman_rho": 0.24172147634565863
+    },
+    {
+      "patient": "CRC12",
+      "virtual": "CD4",
+      "measured": "CD4",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 3166,
+      "cell_spearman_rho": 0.26277836983102776
+    },
+    {
+      "patient": "CRC12",
+      "virtual": "CD4",
+      "measured": "CD4",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 3166,
+      "cell_spearman_rho": 0.20944066242936368
+    },
+    {
+      "patient": "CRC12",
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "mapping": "CD8 alpha target",
+      "compartment": "cell",
+      "cells": 3166,
+      "cell_spearman_rho": -0.033040979751644425
+    },
+    {
+      "patient": "CRC12",
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "mapping": "CD8 alpha target",
+      "compartment": "cyto",
+      "cells": 3166,
+      "cell_spearman_rho": -0.027073791431713557
+    },
+    {
+      "patient": "CRC12",
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "mapping": "CD8 alpha target",
+      "compartment": "nuclei",
+      "cells": 3166,
+      "cell_spearman_rho": -0.04079789608222119
+    },
+    {
+      "patient": "CRC12",
+      "virtual": "CD20",
+      "measured": "CD20",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 3166,
+      "cell_spearman_rho": 0.20438800321442915
+    },
+    {
+      "patient": "CRC12",
+      "virtual": "CD20",
+      "measured": "CD20",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 3166,
+      "cell_spearman_rho": 0.20615909968575855
+    },
+    {
+      "patient": "CRC12",
+      "virtual": "CD20",
+      "measured": "CD20",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 3166,
+      "cell_spearman_rho": 0.20286831738817201
+    },
+    {
+      "patient": "CRC12",
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 3166,
+      "cell_spearman_rho": 0.15717257050112068
+    },
+    {
+      "patient": "CRC12",
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 3166,
+      "cell_spearman_rho": 0.16057971673129748
+    },
+    {
+      "patient": "CRC12",
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 3166,
+      "cell_spearman_rho": 0.15096743886691527
+    },
+    {
+      "patient": "CRC12",
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "mapping": "CD3 epsilon complex",
+      "compartment": "cell",
+      "cells": 3166,
+      "cell_spearman_rho": 0.11015689315768697
+    },
+    {
+      "patient": "CRC12",
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "mapping": "CD3 epsilon complex",
+      "compartment": "cyto",
+      "cells": 3166,
+      "cell_spearman_rho": 0.11580210678560296
+    },
+    {
+      "patient": "CRC12",
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "mapping": "CD3 epsilon complex",
+      "compartment": "nuclei",
+      "cells": 3166,
+      "cell_spearman_rho": 0.1013082087543297
+    },
+    {
+      "patient": "CRC12",
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 3166,
+      "cell_spearman_rho": 0.21557327461511347
+    },
+    {
+      "patient": "CRC12",
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 3166,
+      "cell_spearman_rho": 0.21397911367858527
+    },
+    {
+      "patient": "CRC12",
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 3166,
+      "cell_spearman_rho": 0.2086790541270459
+    },
+    {
+      "patient": "CRC12",
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 3166,
+      "cell_spearman_rho": 0.08883103953501709
+    },
+    {
+      "patient": "CRC12",
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 3166,
+      "cell_spearman_rho": 0.09710895681999321
+    },
+    {
+      "patient": "CRC12",
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 3166,
+      "cell_spearman_rho": 0.030412588353439855
+    },
+    {
+      "patient": "CRC12",
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "mapping": "cytokeratin family",
+      "compartment": "cell",
+      "cells": 3166,
+      "cell_spearman_rho": 0.24923118792673118
+    },
+    {
+      "patient": "CRC12",
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "mapping": "cytokeratin family",
+      "compartment": "cyto",
+      "cells": 3166,
+      "cell_spearman_rho": 0.23493587430927737
+    },
+    {
+      "patient": "CRC12",
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "mapping": "cytokeratin family",
+      "compartment": "nuclei",
+      "cells": 3166,
+      "cell_spearman_rho": 0.26354093425671143
+    },
+    {
+      "patient": "CRC17",
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "mapping": "nuclear-dye family",
+      "compartment": "cell",
+      "cells": 5042,
+      "cell_spearman_rho": 0.39937698300153424
+    },
+    {
+      "patient": "CRC17",
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "mapping": "nuclear-dye family",
+      "compartment": "cyto",
+      "cells": 5042,
+      "cell_spearman_rho": 0.3919070298429775
+    },
+    {
+      "patient": "CRC17",
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "mapping": "nuclear-dye family",
+      "compartment": "nuclei",
+      "cells": 5042,
+      "cell_spearman_rho": 0.16564580670132117
+    },
+    {
+      "patient": "CRC17",
+      "virtual": "CD68",
+      "measured": "CD68",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 5042,
+      "cell_spearman_rho": -0.1583319360133531
+    },
+    {
+      "patient": "CRC17",
+      "virtual": "CD68",
+      "measured": "CD68",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 5042,
+      "cell_spearman_rho": -0.17555345331290068
+    },
+    {
+      "patient": "CRC17",
+      "virtual": "CD68",
+      "measured": "CD68",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 5042,
+      "cell_spearman_rho": -0.12976474986895517
+    },
+    {
+      "patient": "CRC17",
+      "virtual": "CD4",
+      "measured": "CD4",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 5042,
+      "cell_spearman_rho": -0.24338928522066317
+    },
+    {
+      "patient": "CRC17",
+      "virtual": "CD4",
+      "measured": "CD4",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 5042,
+      "cell_spearman_rho": -0.24522462159465042
+    },
+    {
+      "patient": "CRC17",
+      "virtual": "CD4",
+      "measured": "CD4",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 5042,
+      "cell_spearman_rho": -0.2339254102407112
+    },
+    {
+      "patient": "CRC17",
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "mapping": "CD8 alpha target",
+      "compartment": "cell",
+      "cells": 5042,
+      "cell_spearman_rho": 0.054634385272464135
+    },
+    {
+      "patient": "CRC17",
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "mapping": "CD8 alpha target",
+      "compartment": "cyto",
+      "cells": 5042,
+      "cell_spearman_rho": 0.07564084232908354
+    },
+    {
+      "patient": "CRC17",
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "mapping": "CD8 alpha target",
+      "compartment": "nuclei",
+      "cells": 5042,
+      "cell_spearman_rho": 0.01667525428218903
+    },
+    {
+      "patient": "CRC17",
+      "virtual": "CD20",
+      "measured": "CD20",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 5042,
+      "cell_spearman_rho": 0.3018563260805583
+    },
+    {
+      "patient": "CRC17",
+      "virtual": "CD20",
+      "measured": "CD20",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 5042,
+      "cell_spearman_rho": 0.3020068899954218
+    },
+    {
+      "patient": "CRC17",
+      "virtual": "CD20",
+      "measured": "CD20",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 5042,
+      "cell_spearman_rho": 0.29630903426713706
+    },
+    {
+      "patient": "CRC17",
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 5042,
+      "cell_spearman_rho": -0.0801186805156418
+    },
+    {
+      "patient": "CRC17",
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 5042,
+      "cell_spearman_rho": -0.08197681554065953
+    },
+    {
+      "patient": "CRC17",
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 5042,
+      "cell_spearman_rho": -0.07271963857652174
+    },
+    {
+      "patient": "CRC17",
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "mapping": "CD3 epsilon complex",
+      "compartment": "cell",
+      "cells": 5042,
+      "cell_spearman_rho": -0.06252948218194591
+    },
+    {
+      "patient": "CRC17",
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "mapping": "CD3 epsilon complex",
+      "compartment": "cyto",
+      "cells": 5042,
+      "cell_spearman_rho": -0.056203265501333
+    },
+    {
+      "patient": "CRC17",
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "mapping": "CD3 epsilon complex",
+      "compartment": "nuclei",
+      "cells": 5042,
+      "cell_spearman_rho": -0.06922383850838817
+    },
+    {
+      "patient": "CRC17",
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 5042,
+      "cell_spearman_rho": 0.21439282324455047
+    },
+    {
+      "patient": "CRC17",
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 5042,
+      "cell_spearman_rho": 0.20764346530390118
+    },
+    {
+      "patient": "CRC17",
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 5042,
+      "cell_spearman_rho": 0.21722199698446962
+    },
+    {
+      "patient": "CRC17",
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 5042,
+      "cell_spearman_rho": -0.03489840807686522
+    },
+    {
+      "patient": "CRC17",
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 5042,
+      "cell_spearman_rho": -0.02483260019648519
+    },
+    {
+      "patient": "CRC17",
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 5042,
+      "cell_spearman_rho": -0.06640963329519792
+    },
+    {
+      "patient": "CRC17",
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "mapping": "cytokeratin family",
+      "compartment": "cell",
+      "cells": 5042,
+      "cell_spearman_rho": -0.20236099415989586
+    },
+    {
+      "patient": "CRC17",
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "mapping": "cytokeratin family",
+      "compartment": "cyto",
+      "cells": 5042,
+      "cell_spearman_rho": -0.1944568746153901
+    },
+    {
+      "patient": "CRC17",
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "mapping": "cytokeratin family",
+      "compartment": "nuclei",
+      "cells": 5042,
+      "cell_spearman_rho": -0.2046480136188529
+    },
+    {
+      "patient": "CRC19",
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "mapping": "nuclear-dye family",
+      "compartment": "cell",
+      "cells": 2710,
+      "cell_spearman_rho": 0.47328445906151656
+    },
+    {
+      "patient": "CRC19",
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "mapping": "nuclear-dye family",
+      "compartment": "cyto",
+      "cells": 2710,
+      "cell_spearman_rho": 0.45524348539286547
+    },
+    {
+      "patient": "CRC19",
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "mapping": "nuclear-dye family",
+      "compartment": "nuclei",
+      "cells": 2710,
+      "cell_spearman_rho": 0.2875787189535194
+    },
+    {
+      "patient": "CRC19",
+      "virtual": "CD68",
+      "measured": "CD68",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 2710,
+      "cell_spearman_rho": -0.5743729649851765
+    },
+    {
+      "patient": "CRC19",
+      "virtual": "CD68",
+      "measured": "CD68",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 2710,
+      "cell_spearman_rho": -0.5745973041456964
+    },
+    {
+      "patient": "CRC19",
+      "virtual": "CD68",
+      "measured": "CD68",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 2710,
+      "cell_spearman_rho": -0.5437668976795036
+    },
+    {
+      "patient": "CRC19",
+      "virtual": "CD4",
+      "measured": "CD4",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 2710,
+      "cell_spearman_rho": 0.18151807801832368
+    },
+    {
+      "patient": "CRC19",
+      "virtual": "CD4",
+      "measured": "CD4",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 2710,
+      "cell_spearman_rho": 0.19087570698218898
+    },
+    {
+      "patient": "CRC19",
+      "virtual": "CD4",
+      "measured": "CD4",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 2710,
+      "cell_spearman_rho": 0.15704587788271873
+    },
+    {
+      "patient": "CRC19",
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "mapping": "CD8 alpha target",
+      "compartment": "cell",
+      "cells": 2710,
+      "cell_spearman_rho": 0.11966238290635756
+    },
+    {
+      "patient": "CRC19",
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "mapping": "CD8 alpha target",
+      "compartment": "cyto",
+      "cells": 2710,
+      "cell_spearman_rho": 0.11977467186858888
+    },
+    {
+      "patient": "CRC19",
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "mapping": "CD8 alpha target",
+      "compartment": "nuclei",
+      "cells": 2710,
+      "cell_spearman_rho": 0.11581218910459165
+    },
+    {
+      "patient": "CRC19",
+      "virtual": "CD20",
+      "measured": "CD20",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 2710,
+      "cell_spearman_rho": -0.056581239641250385
+    },
+    {
+      "patient": "CRC19",
+      "virtual": "CD20",
+      "measured": "CD20",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 2710,
+      "cell_spearman_rho": -0.05682602537043679
+    },
+    {
+      "patient": "CRC19",
+      "virtual": "CD20",
+      "measured": "CD20",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 2710,
+      "cell_spearman_rho": -0.062456397706854835
+    },
+    {
+      "patient": "CRC19",
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 2710,
+      "cell_spearman_rho": -0.03476694233821624
+    },
+    {
+      "patient": "CRC19",
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 2710,
+      "cell_spearman_rho": -0.04646943785493121
+    },
+    {
+      "patient": "CRC19",
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 2710,
+      "cell_spearman_rho": -0.020722898845337887
+    },
+    {
+      "patient": "CRC19",
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "mapping": "CD3 epsilon complex",
+      "compartment": "cell",
+      "cells": 2710,
+      "cell_spearman_rho": 0.2920719614482321
+    },
+    {
+      "patient": "CRC19",
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "mapping": "CD3 epsilon complex",
+      "compartment": "cyto",
+      "cells": 2710,
+      "cell_spearman_rho": 0.29090527252331566
+    },
+    {
+      "patient": "CRC19",
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "mapping": "CD3 epsilon complex",
+      "compartment": "nuclei",
+      "cells": 2710,
+      "cell_spearman_rho": 0.2505097410513376
+    },
+    {
+      "patient": "CRC19",
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 2710,
+      "cell_spearman_rho": -0.13216700651317764
+    },
+    {
+      "patient": "CRC19",
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 2710,
+      "cell_spearman_rho": -0.13122462087352044
+    },
+    {
+      "patient": "CRC19",
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 2710,
+      "cell_spearman_rho": -0.12046862786272512
+    },
+    {
+      "patient": "CRC19",
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 2710,
+      "cell_spearman_rho": 0.3136927785698713
+    },
+    {
+      "patient": "CRC19",
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 2710,
+      "cell_spearman_rho": 0.31815685629843793
+    },
+    {
+      "patient": "CRC19",
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 2710,
+      "cell_spearman_rho": 0.28691483117578437
+    },
+    {
+      "patient": "CRC19",
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "mapping": "cytokeratin family",
+      "compartment": "cell",
+      "cells": 2710,
+      "cell_spearman_rho": 0.2636375957012602
+    },
+    {
+      "patient": "CRC19",
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "mapping": "cytokeratin family",
+      "compartment": "cyto",
+      "cells": 2710,
+      "cell_spearman_rho": 0.2261576382440989
+    },
+    {
+      "patient": "CRC19",
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "mapping": "cytokeratin family",
+      "compartment": "nuclei",
+      "cells": 2710,
+      "cell_spearman_rho": 0.3610151008760112
+    },
+    {
+      "patient": "CRC21",
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "mapping": "nuclear-dye family",
+      "compartment": "cell",
+      "cells": 4215,
+      "cell_spearman_rho": 0.46495515747071925
+    },
+    {
+      "patient": "CRC21",
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "mapping": "nuclear-dye family",
+      "compartment": "cyto",
+      "cells": 4215,
+      "cell_spearman_rho": 0.4977591362783258
+    },
+    {
+      "patient": "CRC21",
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "mapping": "nuclear-dye family",
+      "compartment": "nuclei",
+      "cells": 4215,
+      "cell_spearman_rho": 0.09267437660404539
+    },
+    {
+      "patient": "CRC21",
+      "virtual": "CD68",
+      "measured": "CD68",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 4215,
+      "cell_spearman_rho": -0.20874934133658646
+    },
+    {
+      "patient": "CRC21",
+      "virtual": "CD68",
+      "measured": "CD68",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 4215,
+      "cell_spearman_rho": -0.18773067250057004
+    },
+    {
+      "patient": "CRC21",
+      "virtual": "CD68",
+      "measured": "CD68",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 4215,
+      "cell_spearman_rho": -0.20813431385430192
+    },
+    {
+      "patient": "CRC21",
+      "virtual": "CD4",
+      "measured": "CD4",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 4215,
+      "cell_spearman_rho": 0.4268741338077634
+    },
+    {
+      "patient": "CRC21",
+      "virtual": "CD4",
+      "measured": "CD4",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 4215,
+      "cell_spearman_rho": 0.41769220742502927
+    },
+    {
+      "patient": "CRC21",
+      "virtual": "CD4",
+      "measured": "CD4",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 4215,
+      "cell_spearman_rho": 0.4276804569030438
+    },
+    {
+      "patient": "CRC21",
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "mapping": "CD8 alpha target",
+      "compartment": "cell",
+      "cells": 4215,
+      "cell_spearman_rho": 0.24252547427842855
+    },
+    {
+      "patient": "CRC21",
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "mapping": "CD8 alpha target",
+      "compartment": "cyto",
+      "cells": 4215,
+      "cell_spearman_rho": 0.23954227468644967
+    },
+    {
+      "patient": "CRC21",
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "mapping": "CD8 alpha target",
+      "compartment": "nuclei",
+      "cells": 4215,
+      "cell_spearman_rho": 0.23430064827632208
+    },
+    {
+      "patient": "CRC21",
+      "virtual": "CD20",
+      "measured": "CD20",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 4215,
+      "cell_spearman_rho": 0.6035377158673015
+    },
+    {
+      "patient": "CRC21",
+      "virtual": "CD20",
+      "measured": "CD20",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 4215,
+      "cell_spearman_rho": 0.6077412507530876
+    },
+    {
+      "patient": "CRC21",
+      "virtual": "CD20",
+      "measured": "CD20",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 4215,
+      "cell_spearman_rho": 0.5869921401521315
+    },
+    {
+      "patient": "CRC21",
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 4215,
+      "cell_spearman_rho": 0.15824338407203525
+    },
+    {
+      "patient": "CRC21",
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 4215,
+      "cell_spearman_rho": 0.13876342329741698
+    },
+    {
+      "patient": "CRC21",
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 4215,
+      "cell_spearman_rho": 0.1832377245675218
+    },
+    {
+      "patient": "CRC21",
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "mapping": "CD3 epsilon complex",
+      "compartment": "cell",
+      "cells": 4215,
+      "cell_spearman_rho": 0.566197770792448
+    },
+    {
+      "patient": "CRC21",
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "mapping": "CD3 epsilon complex",
+      "compartment": "cyto",
+      "cells": 4215,
+      "cell_spearman_rho": 0.5677785495640594
+    },
+    {
+      "patient": "CRC21",
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "mapping": "CD3 epsilon complex",
+      "compartment": "nuclei",
+      "cells": 4215,
+      "cell_spearman_rho": 0.5529515301567444
+    },
+    {
+      "patient": "CRC21",
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 4215,
+      "cell_spearman_rho": 0.11158793245641634
+    },
+    {
+      "patient": "CRC21",
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 4215,
+      "cell_spearman_rho": 0.1132824540286129
+    },
+    {
+      "patient": "CRC21",
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 4215,
+      "cell_spearman_rho": 0.1084677292446401
+    },
+    {
+      "patient": "CRC21",
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 4215,
+      "cell_spearman_rho": 0.06576463343939565
+    },
+    {
+      "patient": "CRC21",
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 4215,
+      "cell_spearman_rho": 0.015603483699002076
+    },
+    {
+      "patient": "CRC21",
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 4215,
+      "cell_spearman_rho": 0.1050258642384706
+    },
+    {
+      "patient": "CRC21",
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "mapping": "cytokeratin family",
+      "compartment": "cell",
+      "cells": 4215,
+      "cell_spearman_rho": 0.1018323841979693
+    },
+    {
+      "patient": "CRC21",
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "mapping": "cytokeratin family",
+      "compartment": "cyto",
+      "cells": 4215,
+      "cell_spearman_rho": 0.06673740358432183
+    },
+    {
+      "patient": "CRC21",
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "mapping": "cytokeratin family",
+      "compartment": "nuclei",
+      "cells": 4215,
+      "cell_spearman_rho": 0.15625594481062452
+    },
+    {
+      "patient": "CRC23",
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "mapping": "nuclear-dye family",
+      "compartment": "cell",
+      "cells": 2933,
+      "cell_spearman_rho": 0.35698300535554073
+    },
+    {
+      "patient": "CRC23",
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "mapping": "nuclear-dye family",
+      "compartment": "cyto",
+      "cells": 2933,
+      "cell_spearman_rho": 0.3392687603262869
+    },
+    {
+      "patient": "CRC23",
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "mapping": "nuclear-dye family",
+      "compartment": "nuclei",
+      "cells": 2933,
+      "cell_spearman_rho": 0.20736632485542092
+    },
+    {
+      "patient": "CRC23",
+      "virtual": "CD68",
+      "measured": "CD68",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 2933,
+      "cell_spearman_rho": -0.4147333778599104
+    },
+    {
+      "patient": "CRC23",
+      "virtual": "CD68",
+      "measured": "CD68",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 2933,
+      "cell_spearman_rho": -0.4081973924442521
+    },
+    {
+      "patient": "CRC23",
+      "virtual": "CD68",
+      "measured": "CD68",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 2933,
+      "cell_spearman_rho": -0.40122564381673154
+    },
+    {
+      "patient": "CRC23",
+      "virtual": "CD4",
+      "measured": "CD4",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 2933,
+      "cell_spearman_rho": 0.29971258296408493
+    },
+    {
+      "patient": "CRC23",
+      "virtual": "CD4",
+      "measured": "CD4",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 2933,
+      "cell_spearman_rho": 0.27091681466094353
+    },
+    {
+      "patient": "CRC23",
+      "virtual": "CD4",
+      "measured": "CD4",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 2933,
+      "cell_spearman_rho": 0.311843861295427
+    },
+    {
+      "patient": "CRC23",
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "mapping": "CD8 alpha target",
+      "compartment": "cell",
+      "cells": 2933,
+      "cell_spearman_rho": 0.06661002427879185
+    },
+    {
+      "patient": "CRC23",
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "mapping": "CD8 alpha target",
+      "compartment": "cyto",
+      "cells": 2933,
+      "cell_spearman_rho": 0.06771641135596328
+    },
+    {
+      "patient": "CRC23",
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "mapping": "CD8 alpha target",
+      "compartment": "nuclei",
+      "cells": 2933,
+      "cell_spearman_rho": 0.06316678853865514
+    },
+    {
+      "patient": "CRC23",
+      "virtual": "CD20",
+      "measured": "CD20",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 2933,
+      "cell_spearman_rho": 0.06412184118270108
+    },
+    {
+      "patient": "CRC23",
+      "virtual": "CD20",
+      "measured": "CD20",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 2933,
+      "cell_spearman_rho": 0.07523995478091078
+    },
+    {
+      "patient": "CRC23",
+      "virtual": "CD20",
+      "measured": "CD20",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 2933,
+      "cell_spearman_rho": 0.04802944166649346
+    },
+    {
+      "patient": "CRC23",
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 2933,
+      "cell_spearman_rho": 0.0013646545604079367
+    },
+    {
+      "patient": "CRC23",
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 2933,
+      "cell_spearman_rho": 0.0025697284275353763
+    },
+    {
+      "patient": "CRC23",
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 2933,
+      "cell_spearman_rho": 0.0020171760025645535
+    },
+    {
+      "patient": "CRC23",
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "mapping": "CD3 epsilon complex",
+      "compartment": "cell",
+      "cells": 2933,
+      "cell_spearman_rho": 0.2560852490143446
+    },
+    {
+      "patient": "CRC23",
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "mapping": "CD3 epsilon complex",
+      "compartment": "cyto",
+      "cells": 2933,
+      "cell_spearman_rho": 0.2126341494925575
+    },
+    {
+      "patient": "CRC23",
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "mapping": "CD3 epsilon complex",
+      "compartment": "nuclei",
+      "cells": 2933,
+      "cell_spearman_rho": 0.2897746299302211
+    },
+    {
+      "patient": "CRC23",
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 2933,
+      "cell_spearman_rho": 0.09612638193169246
+    },
+    {
+      "patient": "CRC23",
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 2933,
+      "cell_spearman_rho": 0.10349452853903512
+    },
+    {
+      "patient": "CRC23",
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 2933,
+      "cell_spearman_rho": 0.07835024090238829
+    },
+    {
+      "patient": "CRC23",
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 2933,
+      "cell_spearman_rho": 0.3605554402327868
+    },
+    {
+      "patient": "CRC23",
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 2933,
+      "cell_spearman_rho": 0.3637012139993291
+    },
+    {
+      "patient": "CRC23",
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 2933,
+      "cell_spearman_rho": 0.3136238105167746
+    },
+    {
+      "patient": "CRC23",
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "mapping": "cytokeratin family",
+      "compartment": "cell",
+      "cells": 2933,
+      "cell_spearman_rho": 0.47574449368466504
+    },
+    {
+      "patient": "CRC23",
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "mapping": "cytokeratin family",
+      "compartment": "cyto",
+      "cells": 2933,
+      "cell_spearman_rho": 0.4654334967087724
+    },
+    {
+      "patient": "CRC23",
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "mapping": "cytokeratin family",
+      "compartment": "nuclei",
+      "cells": 2933,
+      "cell_spearman_rho": 0.501694795731029
+    },
+    {
+      "patient": "CRC25",
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "mapping": "nuclear-dye family",
+      "compartment": "cell",
+      "cells": 2193,
+      "cell_spearman_rho": 0.44232666676430493
+    },
+    {
+      "patient": "CRC25",
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "mapping": "nuclear-dye family",
+      "compartment": "cyto",
+      "cells": 2193,
+      "cell_spearman_rho": 0.4272302566184864
+    },
+    {
+      "patient": "CRC25",
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "mapping": "nuclear-dye family",
+      "compartment": "nuclei",
+      "cells": 2193,
+      "cell_spearman_rho": 0.29525853604135377
+    },
+    {
+      "patient": "CRC25",
+      "virtual": "CD68",
+      "measured": "CD68",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 2193,
+      "cell_spearman_rho": -0.30103999741164444
+    },
+    {
+      "patient": "CRC25",
+      "virtual": "CD68",
+      "measured": "CD68",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 2193,
+      "cell_spearman_rho": -0.30275246413296614
+    },
+    {
+      "patient": "CRC25",
+      "virtual": "CD68",
+      "measured": "CD68",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 2193,
+      "cell_spearman_rho": -0.28856911015374404
+    },
+    {
+      "patient": "CRC25",
+      "virtual": "CD4",
+      "measured": "CD4",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 2193,
+      "cell_spearman_rho": 0.07516015497645767
+    },
+    {
+      "patient": "CRC25",
+      "virtual": "CD4",
+      "measured": "CD4",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 2193,
+      "cell_spearman_rho": 0.06388678664693313
+    },
+    {
+      "patient": "CRC25",
+      "virtual": "CD4",
+      "measured": "CD4",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 2193,
+      "cell_spearman_rho": 0.07786751176257102
+    },
+    {
+      "patient": "CRC25",
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "mapping": "CD8 alpha target",
+      "compartment": "cell",
+      "cells": 2193,
+      "cell_spearman_rho": 0.41943281275340205
+    },
+    {
+      "patient": "CRC25",
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "mapping": "CD8 alpha target",
+      "compartment": "cyto",
+      "cells": 2193,
+      "cell_spearman_rho": 0.43073712180924484
+    },
+    {
+      "patient": "CRC25",
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "mapping": "CD8 alpha target",
+      "compartment": "nuclei",
+      "cells": 2193,
+      "cell_spearman_rho": 0.3990872797115861
+    },
+    {
+      "patient": "CRC25",
+      "virtual": "CD20",
+      "measured": "CD20",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 2193,
+      "cell_spearman_rho": -0.14924383634933347
+    },
+    {
+      "patient": "CRC25",
+      "virtual": "CD20",
+      "measured": "CD20",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 2193,
+      "cell_spearman_rho": -0.12619219069196186
+    },
+    {
+      "patient": "CRC25",
+      "virtual": "CD20",
+      "measured": "CD20",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 2193,
+      "cell_spearman_rho": -0.16588547501870377
+    },
+    {
+      "patient": "CRC25",
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 2193,
+      "cell_spearman_rho": -0.36123644663300863
+    },
+    {
+      "patient": "CRC25",
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 2193,
+      "cell_spearman_rho": -0.35199618466961036
+    },
+    {
+      "patient": "CRC25",
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 2193,
+      "cell_spearman_rho": -0.3615627900623171
+    },
+    {
+      "patient": "CRC25",
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "mapping": "CD3 epsilon complex",
+      "compartment": "cell",
+      "cells": 2193,
+      "cell_spearman_rho": 0.05099663704017811
+    },
+    {
+      "patient": "CRC25",
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "mapping": "CD3 epsilon complex",
+      "compartment": "cyto",
+      "cells": 2193,
+      "cell_spearman_rho": 0.05141194040020969
+    },
+    {
+      "patient": "CRC25",
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "mapping": "CD3 epsilon complex",
+      "compartment": "nuclei",
+      "cells": 2193,
+      "cell_spearman_rho": 0.037633524434669004
+    },
+    {
+      "patient": "CRC25",
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 2193,
+      "cell_spearman_rho": 0.4307866444985852
+    },
+    {
+      "patient": "CRC25",
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 2193,
+      "cell_spearman_rho": 0.4226750999185254
+    },
+    {
+      "patient": "CRC25",
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 2193,
+      "cell_spearman_rho": 0.42336353641277685
+    },
+    {
+      "patient": "CRC25",
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "mapping": "exact",
+      "compartment": "cell",
+      "cells": 2193,
+      "cell_spearman_rho": 0.36045787087934533
+    },
+    {
+      "patient": "CRC25",
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "cells": 2193,
+      "cell_spearman_rho": 0.3467486319343555
+    },
+    {
+      "patient": "CRC25",
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "cells": 2193,
+      "cell_spearman_rho": 0.3314928440594255
+    },
+    {
+      "patient": "CRC25",
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "mapping": "cytokeratin family",
+      "compartment": "cell",
+      "cells": 2193,
+      "cell_spearman_rho": 0.6863482137502175
+    },
+    {
+      "patient": "CRC25",
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "mapping": "cytokeratin family",
+      "compartment": "cyto",
+      "cells": 2193,
+      "cell_spearman_rho": 0.6821357881944535
+    },
+    {
+      "patient": "CRC25",
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "mapping": "cytokeratin family",
+      "compartment": "nuclei",
+      "cells": 2193,
+      "cell_spearman_rho": 0.6925703388762368
+    }
+  ],
+  "equal_patient_summary": [
+    {
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "mapping": "nuclear-dye family",
+      "compartment": "cell",
+      "patients": 10,
+      "patient_median_rho": 0.4536409121175121,
+      "positive_patients": 10
+    },
+    {
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "mapping": "nuclear-dye family",
+      "compartment": "cyto",
+      "patients": 10,
+      "patient_median_rho": 0.44123687100567593,
+      "positive_patients": 10
+    },
+    {
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "mapping": "nuclear-dye family",
+      "compartment": "nuclei",
+      "patients": 10,
+      "patient_median_rho": 0.20335393233712493,
+      "positive_patients": 10
+    },
+    {
+      "virtual": "CD68",
+      "measured": "CD68",
+      "mapping": "exact",
+      "compartment": "cell",
+      "patients": 10,
+      "patient_median_rho": -0.2266860445484158,
+      "positive_patients": 1
+    },
+    {
+      "virtual": "CD68",
+      "measured": "CD68",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "patients": 10,
+      "patient_median_rho": -0.21071156089811405,
+      "positive_patients": 1
+    },
+    {
+      "virtual": "CD68",
+      "measured": "CD68",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "patients": 10,
+      "patient_median_rho": -0.22428913066758707,
+      "positive_patients": 1
+    },
+    {
+      "virtual": "CD4",
+      "measured": "CD4",
+      "mapping": "exact",
+      "compartment": "cell",
+      "patients": 10,
+      "patient_median_rho": 0.21161977718199115,
+      "positive_patients": 8
+    },
+    {
+      "virtual": "CD4",
+      "measured": "CD4",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "patients": 10,
+      "patient_median_rho": 0.22382957815219662,
+      "positive_patients": 8
+    },
+    {
+      "virtual": "CD4",
+      "measured": "CD4",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "patients": 10,
+      "patient_median_rho": 0.1832432701560412,
+      "positive_patients": 8
+    },
+    {
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "mapping": "CD8 alpha target",
+      "compartment": "cell",
+      "patients": 10,
+      "patient_median_rho": 0.058537548442697325,
+      "positive_patients": 8
+    },
+    {
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "mapping": "CD8 alpha target",
+      "compartment": "cyto",
+      "patients": 10,
+      "patient_median_rho": 0.06057514619637382,
+      "positive_patients": 8
+    },
+    {
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "mapping": "CD8 alpha target",
+      "compartment": "nuclei",
+      "patients": 10,
+      "patient_median_rho": 0.06131549766896641,
+      "positive_patients": 8
+    },
+    {
+      "virtual": "CD20",
+      "measured": "CD20",
+      "mapping": "exact",
+      "compartment": "cell",
+      "patients": 10,
+      "patient_median_rho": 0.17608874243427586,
+      "positive_patients": 7
+    },
+    {
+      "virtual": "CD20",
+      "measured": "CD20",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "patients": 10,
+      "patient_median_rho": 0.17695558450214638,
+      "positive_patients": 7
+    },
+    {
+      "virtual": "CD20",
+      "measured": "CD20",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "patients": 10,
+      "patient_median_rho": 0.17487432938333192,
+      "positive_patients": 7
+    },
+    {
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "mapping": "exact",
+      "compartment": "cell",
+      "patients": 10,
+      "patient_median_rho": 0.06626116381915569,
+      "positive_patients": 6
+    },
+    {
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "patients": 10,
+      "patient_median_rho": 0.06645867674497381,
+      "positive_patients": 6
+    },
+    {
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "patients": 10,
+      "patient_median_rho": 0.06728794084317621,
+      "positive_patients": 6
+    },
+    {
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "mapping": "CD3 epsilon complex",
+      "compartment": "cell",
+      "patients": 10,
+      "patient_median_rho": 0.23554436911429638,
+      "positive_patients": 8
+    },
+    {
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "mapping": "CD3 epsilon complex",
+      "compartment": "cyto",
+      "patients": 10,
+      "patient_median_rho": 0.21590213381326923,
+      "positive_patients": 9
+    },
+    {
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "mapping": "CD3 epsilon complex",
+      "compartment": "nuclei",
+      "patients": 10,
+      "patient_median_rho": 0.22693796941909566,
+      "positive_patients": 8
+    },
+    {
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "mapping": "exact",
+      "compartment": "cell",
+      "patients": 10,
+      "patient_median_rho": 0.13090221428141713,
+      "positive_patients": 8
+    },
+    {
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "patients": 10,
+      "patient_median_rho": 0.1349872447674198,
+      "positive_patients": 8
+    },
+    {
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "patients": 10,
+      "patient_median_rho": 0.1188454961466244,
+      "positive_patients": 8
+    },
+    {
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "mapping": "exact",
+      "compartment": "cell",
+      "patients": 10,
+      "patient_median_rho": 0.16839186266175285,
+      "positive_patients": 8
+    },
+    {
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "mapping": "exact",
+      "compartment": "cyto",
+      "patients": 10,
+      "patient_median_rho": 0.17656073453041848,
+      "positive_patients": 8
+    },
+    {
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "mapping": "exact",
+      "compartment": "nuclei",
+      "patients": 10,
+      "patient_median_rho": 0.16160158578160422,
+      "positive_patients": 7
+    },
+    {
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "mapping": "cytokeratin family",
+      "compartment": "cell",
+      "patients": 10,
+      "patient_median_rho": 0.18856250757511978,
+      "positive_patients": 9
+    },
+    {
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "mapping": "cytokeratin family",
+      "compartment": "cyto",
+      "patients": 10,
+      "patient_median_rho": 0.17682558682039443,
+      "positive_patients": 9
+    },
+    {
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "mapping": "cytokeratin family",
+      "compartment": "nuclei",
+      "patients": 10,
+      "patient_median_rho": 0.209898439533668,
+      "positive_patients": 9
+    }
+  ],
+  "method": "Published ORION cell IDs matched to CellPhenotyper quantified full-panel GigaTIME means; no compartment optimized on these evaluation patients.",
+  "limitation": "Cell Spearman is not a marker-positive classification score and does not validate single-cell protein abundance. One field per patient and no independent tissue-domain calibration.",
+  "visual_review_record": "analysis/evidence/gigatime-orion-source-domain-visual-review-2026-10-20.md"
+}

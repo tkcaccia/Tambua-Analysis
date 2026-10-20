@@ -1,0 +1,46 @@
+{
+  "patient": "CRC04",
+  "rows": [
+    {
+      "marker": "DAPI",
+      "zero_shift_rho_stride8": 0.7145686557067248,
+      "optimistic_best_rho_within_16_source_pixels": 0.7145686557067248,
+      "best_shift_source_pixels_yx": [
+        0,
+        0
+      ],
+      "max_shift_source_pixels": 16
+    },
+    {
+      "marker": "CD68",
+      "zero_shift_rho_stride8": -0.30482905464553073,
+      "optimistic_best_rho_within_16_source_pixels": -0.17722812767839968,
+      "best_shift_source_pixels_yx": [
+        16,
+        -16
+      ],
+      "max_shift_source_pixels": 16
+    },
+    {
+      "marker": "CK",
+      "zero_shift_rho_stride8": 0.25925895194965254,
+      "optimistic_best_rho_within_16_source_pixels": 0.3572560127182351,
+      "best_shift_source_pixels_yx": [
+        -16,
+        -16
+      ],
+      "max_shift_source_pixels": 16
+    },
+    {
+      "marker": "Ki67",
+      "zero_shift_rho_stride8": 0.4900357436057906,
+      "optimistic_best_rho_within_16_source_pixels": 0.4900357436057906,
+      "best_shift_source_pixels_yx": [
+        0,
+        0
+      ],
+      "max_shift_source_pixels": 16
+    }
+  ],
+  "interpretation": "Post-hoc best shift is optimistic and not an accuracy estimate. It only tests whether a small rigid misregistration can account for the low zero-shift association."
+}
