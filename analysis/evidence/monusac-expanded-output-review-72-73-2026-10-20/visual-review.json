@@ -1,0 +1,15 @@
+{
+  "status": "partial_manual_review_complete",
+  "date": "2026-10-20",
+  "reviewed_cases": [
+    "TCGA-G9-6499-01Z-00-DX1-5",
+    "TCGA-UZ-A9PU-01Z-00-DX1_2"
+  ],
+  "automated_qc_counts": {
+    "pass": 0,
+    "fail": 2
+  },
+  "visual_findings": "Scanner RGB order looks plausible in both. Prostate TCGA-G9-6499-01Z-00-DX1-5 has some virtual-DAPI enrichment over nuclei but extensive diffuse signal and boundary contrast only 0.045; CK/CD68 remain broad, so the frozen QC failure is retained. Dense kidney TCGA-UZ-A9PU-01Z-00-DX1_2 shows virtual DAPI spanning adjacent nuclei, a broad brightness gradient, AUC 0.636 and contrast 0.013. This is a clear exclusion. Neither field has marker-specific measured truth.",
+  "publication_status": "exclude_from_classification_and_protein_validity_results",
+  "scope": "Preview-scale inspection of cases 72-73 from the active 93-case CPU bundle; no post-hoc QC threshold change."
+}
