@@ -1,0 +1,94 @@
+{
+  "status": "snapshot_manual_review_complete",
+  "source_full_manifest_sha256": "db3af52eb093d4dbd449d7cc468e9633c498bd74e94905377ed35f0ef2bef4dc",
+  "source_completed_cases": 68,
+  "expected_cases": 93,
+  "pages": [
+    {
+      "file": "output-qc-12.webp",
+      "sample_ids": [
+        "TCGA-UZ-A9PO-01Z-00-DX1_1",
+        "TCGA-G9-6499-01Z-00-DX1-2"
+      ]
+    }
+  ],
+  "reviewed_case_positions": [
+    67,
+    68
+  ],
+  "records": [
+    {
+      "sample_id": "TCGA-UZ-A9PO-01Z-00-DX1_1",
+      "patient_id": "TCGA-UZ-A9PO",
+      "organ": "kidney",
+      "split": "train",
+      "source_mpp": 0.2525,
+      "model_mpp": 0.25,
+      "qc_status": "fail",
+      "alignment_status": "fail",
+      "border_shadow_status": "pass",
+      "spatial_shadow_status": "pass",
+      "dapi_auc": 0.7512323993644647,
+      "dapi_boundary_contrast": 0.025179253673004,
+      "raw_quantiles_p01_p50_p997": {
+        "DAPI": [
+          224.0,
+          53156.0,
+          62682.437999999995
+        ],
+        "CK": [
+          67.0,
+          307.0,
+          61411.0
+        ],
+        "CD68": [
+          310.0,
+          18694.0,
+          54119.37999999995
+        ]
+      },
+      "visual_review_status": "pending"
+    },
+    {
+      "sample_id": "TCGA-G9-6499-01Z-00-DX1-2",
+      "patient_id": "TCGA-G9-6499",
+      "organ": "prostate",
+      "split": "train",
+      "source_mpp": 0.252,
+      "model_mpp": 0.25,
+      "qc_status": "fail",
+      "alignment_status": "fail",
+      "border_shadow_status": "pass",
+      "spatial_shadow_status": "pass",
+      "dapi_auc": 0.794099002180862,
+      "dapi_boundary_contrast": 0.026927107003018147,
+      "raw_quantiles_p01_p50_p997": {
+        "DAPI": [
+          6376.47,
+          48157.0,
+          59698.0
+        ],
+        "CK": [
+          215.0,
+          869.0,
+          22192.0
+        ],
+        "CD68": [
+          4514.47,
+          29356.0,
+          51725.959
+        ]
+      },
+      "visual_review_status": "pending"
+    }
+  ],
+  "panels": [
+    "Scanner RGB",
+    "Virtual DAPI",
+    "DAPI / StarDist",
+    "CK",
+    "CD68"
+  ],
+  "display": "Marker channels use per-image logit/1st\u201399.7th percentile display scaling; original uint16 scores remain unchanged. These previews cannot establish marker validity alone.",
+  "limit": "A partial bundle is diagnostic only. QC-failing cases are excluded from classifier analysis; human visual review is separately required before publication."
+}

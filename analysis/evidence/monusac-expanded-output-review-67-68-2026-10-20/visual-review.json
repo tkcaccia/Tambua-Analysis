@@ -1,0 +1,15 @@
+{
+  "status": "partial_manual_review_complete",
+  "date": "2026-10-20",
+  "reviewed_cases": [
+    "TCGA-UZ-A9PO-01Z-00-DX1_1",
+    "TCGA-G9-6499-01Z-00-DX1-2"
+  ],
+  "automated_qc_counts": {
+    "pass": 0,
+    "fail": 2
+  },
+  "visual_findings": "Scanner RGB order looks plausible in both dense fields. Virtual DAPI is broadly bright and blurred across many adjacent nuclei rather than resolving individual nuclear boundaries. The StarDist overlays show the mismatch; nuclear shell contrast is 0.025 in the kidney field and 0.027 in the prostate field, although global AUC exceeds 0.75. CK and CD68 appear diffuse and protein-specific validity remains unverified. Both failures remain excluded.",
+  "publication_status": "exclude_from_classification_and_protein_validity_results",
+  "scope": "Preview-scale inspection of cases 67-68 from an active 93-case CPU bundle; no test-label-guided QC threshold change."
+}
