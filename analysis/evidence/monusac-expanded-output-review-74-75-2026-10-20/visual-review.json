@@ -1,0 +1,15 @@
+{
+  "status": "partial_manual_review_complete",
+  "date": "2026-10-20",
+  "reviewed_cases": [
+    "TCGA-IZ-A6M9-01Z-00-DX1_3",
+    "TCGA-V1-A8WL-01Z-00-DX1-2"
+  ],
+  "automated_qc_counts": {
+    "pass": 0,
+    "fail": 2
+  },
+  "visual_findings": "Scanner RGB is plausible in both but the kidney test field is strongly eosin-red and the prostate training field is sparse with detached round cells. Kidney TCGA-IZ-A6M9-01Z-00-DX1_3 has virtual DAPI bright in broad cytoplasmic-looking regions rather than the sparse independent nuclei (AUC 0.593, contrast 0.030). Prostate TCGA-V1-A8WL-01Z-00-DX1-2 has scattered virtual-DAPI spots, only partial overlap with StarDist nuclei, and AUC 0.577/contrast 0.042. CK/CD68 patterns lack measured protein validation. Both retain frozen QC failure and are excluded.",
+  "publication_status": "exclude_from_classification_and_protein_validity_results",
+  "scope": "Preview-scale inspection of cases 74-75 in the active 93-case CPU bundle; no test-label-guided QC threshold change."
+}
