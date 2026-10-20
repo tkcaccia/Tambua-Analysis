@@ -1,0 +1,310 @@
+{
+  "status": "diagnostic_complete",
+  "device": "CPU",
+  "source": "https://github.com/prov-gigatime/GigaTIME/blob/main/scripts/db_train.py",
+  "target_transform": "F.interpolate(binary_nuclear_mask, scale_factor=1/8, bilinear, align_corners=False), then bilinear resize to source shape",
+  "completed_cases_examined": 21,
+  "actual_qc": {
+    "fail": 21
+  },
+  "ideal_coarsened_qc": {
+    "pass": 21
+  },
+  "interpretation": "An optimistic self-mask control isolates target smoothing from model errors. Passing does not prove the GigaTIME model is correct; failing would show the fixed QC rejects even this idealized training target. The model was not rerun and thresholds were not changed.",
+  "records": [
+    {
+      "sample_id": "TCGA-2Z-A9JN-01Z-00-DX1_1",
+      "shape_yx": [
+        426,
+        491
+      ],
+      "actual_virtual_DAPI_status": "fail",
+      "actual_auc": 0.7433034590162864,
+      "actual_boundary_contrast": 0.026295006482286554,
+      "ideal_eightfold_coarse_status": "pass",
+      "ideal_auc": 0.9092393423542803,
+      "ideal_boundary_contrast": 0.1603962909740399,
+      "ideal_spatial_status": "pass"
+    },
+    {
+      "sample_id": "TCGA-2Z-A9JN-01Z-00-DX1_3",
+      "shape_yx": [
+        374,
+        651
+      ],
+      "actual_virtual_DAPI_status": "fail",
+      "actual_auc": 0.4980591847499812,
+      "actual_boundary_contrast": 0.0019876074737893434,
+      "ideal_eightfold_coarse_status": "pass",
+      "ideal_auc": 0.9331024001613913,
+      "ideal_boundary_contrast": 0.1664965565000029,
+      "ideal_spatial_status": "pass"
+    },
+    {
+      "sample_id": "TCGA-49-6743-01Z-00-DX2_001",
+      "shape_yx": [
+        300,
+        300
+      ],
+      "actual_virtual_DAPI_status": "fail",
+      "actual_auc": 0.7716342054316222,
+      "actual_boundary_contrast": 0.04165157285614085,
+      "ideal_eightfold_coarse_status": "pass",
+      "ideal_auc": 0.9310824917735027,
+      "ideal_boundary_contrast": 0.17954982277824483,
+      "ideal_spatial_status": "pass"
+    },
+    {
+      "sample_id": "TCGA-49-6743-01Z-00-DX2_003",
+      "shape_yx": [
+        1000,
+        400
+      ],
+      "actual_virtual_DAPI_status": "fail",
+      "actual_auc": 0.6789790647388367,
+      "actual_boundary_contrast": 0.016931361184668536,
+      "ideal_eightfold_coarse_status": "pass",
+      "ideal_auc": 0.9369856014442457,
+      "ideal_boundary_contrast": 0.18067816763901223,
+      "ideal_spatial_status": "pass"
+    },
+    {
+      "sample_id": "TCGA-49-6743-01Z-00-DX2_005",
+      "shape_yx": [
+        2000,
+        475
+      ],
+      "actual_virtual_DAPI_status": "fail",
+      "actual_auc": 0.6815502691999709,
+      "actual_boundary_contrast": 0.06325888792775458,
+      "ideal_eightfold_coarse_status": "pass",
+      "ideal_auc": 0.9655903886177666,
+      "ideal_boundary_contrast": 0.36008724197012587,
+      "ideal_spatial_status": "pass"
+    },
+    {
+      "sample_id": "TCGA-55-7570-01Z-00-DX1_001",
+      "shape_yx": [
+        950,
+        310
+      ],
+      "actual_virtual_DAPI_status": "fail",
+      "actual_auc": 0.6835461183935148,
+      "actual_boundary_contrast": 0.016686197940884218,
+      "ideal_eightfold_coarse_status": "pass",
+      "ideal_auc": 0.7973862154321569,
+      "ideal_boundary_contrast": 0.10140757979311671,
+      "ideal_spatial_status": "pass"
+    },
+    {
+      "sample_id": "TCGA-55-7573-01Z-00-DX1_003",
+      "shape_yx": [
+        1200,
+        410
+      ],
+      "actual_virtual_DAPI_status": "fail",
+      "actual_auc": 0.7433646770243644,
+      "actual_boundary_contrast": 0.048662138324727655,
+      "ideal_eightfold_coarse_status": "pass",
+      "ideal_auc": 0.9327603965532049,
+      "ideal_boundary_contrast": 0.17362840509468574,
+      "ideal_spatial_status": "pass"
+    },
+    {
+      "sample_id": "TCGA-69-A59K-01Z-00-DX1_002",
+      "shape_yx": [
+        382,
+        298
+      ],
+      "actual_virtual_DAPI_status": "fail",
+      "actual_auc": 0.6938673622365524,
+      "actual_boundary_contrast": 0.04085825176053992,
+      "ideal_eightfold_coarse_status": "pass",
+      "ideal_auc": 0.9190651589792895,
+      "ideal_boundary_contrast": 0.16514947917743839,
+      "ideal_spatial_status": "pass"
+    },
+    {
+      "sample_id": "TCGA-73-4662-01Z-00-DX1_001",
+      "shape_yx": [
+        1000,
+        350
+      ],
+      "actual_virtual_DAPI_status": "fail",
+      "actual_auc": 0.8061277580737669,
+      "actual_boundary_contrast": 0.04489493012447132,
+      "ideal_eightfold_coarse_status": "pass",
+      "ideal_auc": 0.8743941241151758,
+      "ideal_boundary_contrast": 0.14349542807565419,
+      "ideal_spatial_status": "pass"
+    },
+    {
+      "sample_id": "TCGA-73-4662-01Z-00-DX1_002",
+      "shape_yx": [
+        277,
+        302
+      ],
+      "actual_virtual_DAPI_status": "fail",
+      "actual_auc": 0.6971801411013384,
+      "actual_boundary_contrast": 0.05603613702135479,
+      "ideal_eightfold_coarse_status": "pass",
+      "ideal_auc": 0.8357829357488998,
+      "ideal_boundary_contrast": 0.12280206312828429,
+      "ideal_spatial_status": "pass"
+    },
+    {
+      "sample_id": "TCGA-73-4668-01Z-00-DX1_004",
+      "shape_yx": [
+        358,
+        941
+      ],
+      "actual_virtual_DAPI_status": "fail",
+      "actual_auc": 0.7349164996977949,
+      "actual_boundary_contrast": 0.03654929478549318,
+      "ideal_eightfold_coarse_status": "pass",
+      "ideal_auc": 0.837915631437047,
+      "ideal_boundary_contrast": 0.11948545125548182,
+      "ideal_spatial_status": "pass"
+    },
+    {
+      "sample_id": "TCGA-78-7152-01Z-00-DX1_001",
+      "shape_yx": [
+        306,
+        443
+      ],
+      "actual_virtual_DAPI_status": "fail",
+      "actual_auc": 0.6955656791571438,
+      "actual_boundary_contrast": 0.05192455208690716,
+      "ideal_eightfold_coarse_status": "pass",
+      "ideal_auc": 0.9460339109272765,
+      "ideal_boundary_contrast": 0.18338428300778425,
+      "ideal_spatial_status": "pass"
+    },
+    {
+      "sample_id": "TCGA-86-7713-01Z-00-DX1_001",
+      "shape_yx": [
+        446,
+        627
+      ],
+      "actual_virtual_DAPI_status": "fail",
+      "actual_auc": 0.662642436371476,
+      "actual_boundary_contrast": 0.05529078667132736,
+      "ideal_eightfold_coarse_status": "pass",
+      "ideal_auc": 0.9000829067137855,
+      "ideal_boundary_contrast": 0.1627508871058257,
+      "ideal_spatial_status": "pass"
+    },
+    {
+      "sample_id": "TCGA-B9-A44B-01Z-00-DX1_1",
+      "shape_yx": [
+        464,
+        633
+      ],
+      "actual_virtual_DAPI_status": "fail",
+      "actual_auc": 0.6327903626520959,
+      "actual_boundary_contrast": 0.011564194044588416,
+      "ideal_eightfold_coarse_status": "pass",
+      "ideal_auc": 0.9228678244848588,
+      "ideal_boundary_contrast": 0.17503435959951863,
+      "ideal_spatial_status": "pass"
+    },
+    {
+      "sample_id": "TCGA-BH-A18T-01Z-00-DX1_3",
+      "shape_yx": [
+        419,
+        497
+      ],
+      "actual_virtual_DAPI_status": "fail",
+      "actual_auc": 0.6105274648515865,
+      "actual_boundary_contrast": 0.036394064678966664,
+      "ideal_eightfold_coarse_status": "pass",
+      "ideal_auc": 0.9545318928794145,
+      "ideal_boundary_contrast": 0.18455317960567114,
+      "ideal_spatial_status": "pass"
+    },
+    {
+      "sample_id": "TCGA-BH-A18T-01Z-00-DX1_4",
+      "shape_yx": [
+        447,
+        373
+      ],
+      "actual_virtual_DAPI_status": "fail",
+      "actual_auc": 0.6853361242553234,
+      "actual_boundary_contrast": 0.04009040295549826,
+      "ideal_eightfold_coarse_status": "pass",
+      "ideal_auc": 0.8648980791577945,
+      "ideal_boundary_contrast": 0.13699151621428568,
+      "ideal_spatial_status": "pass"
+    },
+    {
+      "sample_id": "TCGA-DW-7841-01Z-00-DX1_3",
+      "shape_yx": [
+        424,
+        375
+      ],
+      "actual_virtual_DAPI_status": "fail",
+      "actual_auc": 0.538118206189504,
+      "actual_boundary_contrast": 0.007356574097908575,
+      "ideal_eightfold_coarse_status": "pass",
+      "ideal_auc": 0.9419562911275176,
+      "ideal_boundary_contrast": 0.16268347136877054,
+      "ideal_spatial_status": "pass"
+    },
+    {
+      "sample_id": "TCGA-E2-A154-01Z-00-DX1_1",
+      "shape_yx": [
+        475,
+        469
+      ],
+      "actual_virtual_DAPI_status": "fail",
+      "actual_auc": 0.6801762361340041,
+      "actual_boundary_contrast": 0.03681667967860813,
+      "ideal_eightfold_coarse_status": "pass",
+      "ideal_auc": 0.8940016805969984,
+      "ideal_boundary_contrast": 0.15015507378636672,
+      "ideal_spatial_status": "pass"
+    },
+    {
+      "sample_id": "TCGA-E2-A154-01Z-00-DX1_5",
+      "shape_yx": [
+        402,
+        618
+      ],
+      "actual_virtual_DAPI_status": "fail",
+      "actual_auc": 0.6733086795186382,
+      "actual_boundary_contrast": 0.032694051881957176,
+      "ideal_eightfold_coarse_status": "pass",
+      "ideal_auc": 0.9286425010918979,
+      "ideal_boundary_contrast": 0.1703313138062808,
+      "ideal_spatial_status": "pass"
+    },
+    {
+      "sample_id": "TCGA-E9-A22B-01Z-00-DX1_6",
+      "shape_yx": [
+        268,
+        297
+      ],
+      "actual_virtual_DAPI_status": "fail",
+      "actual_auc": 0.820582472120333,
+      "actual_boundary_contrast": 0.04141257648795893,
+      "ideal_eightfold_coarse_status": "pass",
+      "ideal_auc": 0.9741738534736875,
+      "ideal_boundary_contrast": 0.20347759328057807,
+      "ideal_spatial_status": "pass"
+    },
+    {
+      "sample_id": "TCGA-EJ-5495-01Z-00-DX1-2",
+      "shape_yx": [
+        511,
+        705
+      ],
+      "actual_virtual_DAPI_status": "fail",
+      "actual_auc": 0.7780212376235986,
+      "actual_boundary_contrast": 0.04081892853602209,
+      "ideal_eightfold_coarse_status": "pass",
+      "ideal_auc": 0.8460311936142627,
+      "ideal_boundary_contrast": 0.13001129782670345,
+      "ideal_spatial_status": "pass"
+    }
+  ]
+}

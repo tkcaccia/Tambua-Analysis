@@ -1,0 +1,43 @@
+{
+  "scope": "Completed CPU-only expansion cases 14 through 20; all remain excluded from validated classifier evaluation",
+  "source_contact_sheets": ["first-twenty-03.webp", "first-twenty-04.webp"],
+  "source_manifest": "first-twenty-manifest.json",
+  "reviewed_cases": [
+    {
+      "sample_id": "TCGA-55-7573-01Z-00-DX1_003",
+      "visual_observation": "Some nuclei near one edge are bright, but a large densely nucleated portion of the H&E field has diffuse virtual DAPI with dark nuclear centers. Boundary contrast is 0.049, just under the fixed threshold; the regional pattern is not convincingly nuclear.",
+      "decision": "exclude"
+    },
+    {
+      "sample_id": "TCGA-E2-A154-01Z-00-DX1_1",
+      "visual_observation": "Virtual DAPI is broadly bright across cells and tissue, without crisp localization to many outlined H&E nuclei; AUC 0.680 and boundary contrast 0.037 fail.",
+      "decision": "exclude"
+    },
+    {
+      "sample_id": "TCGA-73-4662-01Z-00-DX1_001",
+      "visual_observation": "The dense lung field has many bright areas corresponding to nuclear-rich tissue; AUC 0.806 passes, while boundary contrast 0.045 narrowly fails. Some nuclear cores still look dark in the display. This is a candidate for an independent, preregistered QC-threshold calibration, not for retrospective rescue.",
+      "decision": "exclude_pending_independent_QC_calibration"
+    },
+    {
+      "sample_id": "TCGA-E2-A154-01Z-00-DX1_5",
+      "visual_observation": "The image contains large blank adipose-like spaces and cells along their borders. The virtual DAPI signal is spread over portions of the tissue border and does not consistently follow the red StarDist outlines; spatial QC also fails.",
+      "decision": "exclude"
+    },
+    {
+      "sample_id": "TCGA-73-4662-01Z-00-DX1_002",
+      "visual_observation": "A blood-rich region contains visible non-nuclear erythrocytes and a few nucleated cells. Virtual DAPI includes broad bright cell-sized spots with incomplete nuclear correspondence; AUC 0.697 is below the fixed gate.",
+      "decision": "exclude"
+    },
+    {
+      "sample_id": "TCGA-E9-A22B-01Z-00-DX1_6",
+      "visual_observation": "A small, pale breast field has several virtual DAPI bright spots near outlined nuclei. AUC 0.821 passes but boundary contrast 0.041 fails; the image is too sparse for a confident visual override. Keep excluded until any independent QC calibration is frozen.",
+      "decision": "exclude_pending_independent_QC_calibration"
+    },
+    {
+      "sample_id": "TCGA-78-7152-01Z-00-DX1_001",
+      "visual_observation": "The lung field is blood-rich, and the virtual DAPI map includes diffuse bright non-nuclear areas among erythrocytes. Nuclear AUC and spatial QC fail despite boundary contrast just above its gate.",
+      "decision": "exclude"
+    }
+  ],
+  "limits": "The first 20 expansion cases all fail the frozen automated nuclear QC. Visual review identifies possible borderline false negatives but does not change thresholds or include any case in the classifier cohort. Only DAPI, CK and CD68 are displayed in this first-pass contact sheet; all-channel validation would still be required for any proposed inclusion."
+}
