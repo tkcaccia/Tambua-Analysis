@@ -112,3 +112,14 @@ sheets ([record and images](https://github.com/tkcaccia/Tambua-Analysis/tree/mai
 Several DAPI fields show broad or diffuse bright signal around the outlined
 nuclei. These previews do not establish that the failed fields are reliable,
 so no image was requalified and the 47-image QC-passing cohort is unchanged.
+
+The prepared 93-image expansion already has CPU StarDist masks. A
+[patient-disjoint preflight](expansion-detected-preflight.json) matches those
+detected nuclei to expert regions: the 44 fit images contain 139 matched
+macrophages and 78 neutrophils; 15 development images contain 42 and 50; 34
+test images contain 122 and 24. The matching withheld 30 ambiguous macrophage
+regions across the splits and flagged 40 matched macrophage polygons larger
+than 5,000 native pixels for review. These are **candidates before GigaTIME
+inference and nuclear/shadow QC**, not additions to the validated cohort or
+four-class test score. The [CPU audit code](https://github.com/tkcaccia/Tambua-Analysis/blob/main/analysis/audit_expansion_detected_preflight.py)
+records input hashes, image identities, physical spacing and class counts.
