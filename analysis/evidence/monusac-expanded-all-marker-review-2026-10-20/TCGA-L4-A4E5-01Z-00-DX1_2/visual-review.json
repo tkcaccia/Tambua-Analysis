@@ -1,0 +1,9 @@
+{
+  "status": "technical_visual_review_complete_biological_review_pending",
+  "sample_id": "TCGA-L4-A4E5-01Z-00-DX1_2",
+  "date": "2026-10-20",
+  "all_23_channels_inspected": true,
+  "finding": "The scanner-RGB H&E and virtual-DAPI peaks show partial nuclear correspondence, consistent with the frozen DAPI/StarDist technical pass. No obvious rectangular tile-edge shadow is visible at contact-sheet scale. Multiple virtual-protein channels share broad tissue patterns after independent display stretching, but the native nuclear-pixel median cross-channel Spearman is 0.310, so the panels alone do not establish channel duplication. Marker-specific expression cannot be validated here without matched measured images or an independent marker-level reference.",
+  "publication_decision": "Do not present this field as validated protein-specific staining or cell-type prediction based on technical QC alone. Full-resolution shadow review and marker-level validation remain necessary.",
+  "related_diagnostic": "../../monusac-expanded-marker-redundancy-snapshot-79-2026-10-20.json"
+}

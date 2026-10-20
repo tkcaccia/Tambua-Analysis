@@ -1,0 +1,7 @@
+# Raw-marker spatial redundancy diagnostic
+
+Eight fields passed the frozen technical DAPI and seam checks among the first 79 completed MoNuSAC expansion fields. All 23 saved native GigaTIME channels were checked for identity and rank-correlated within independently detected StarDist nuclear pixels, using at most 20,000 deterministic pixels per field. The per-image median of 253 channel-pair Spearman coefficients ranges from **0.140 to 0.732**. The manually inspected lung field `TCGA-L4-A4E5-01Z-00-DX1_2` has median **0.310**; its visual similarity across stretched channel previews therefore does not mean that all native channels are duplicates. The kidney development field `TCGA-G7-A8LD-01Z-00-DX1_1` has a much higher median **0.732**, warranting a measured-protein comparison.
+
+This is a CPU-only, read-only diagnostic. The underlying uint16 predictions, QC decisions, and training/test splits were not changed. Within-nucleus spatial correlation cannot validate marker specificity, nor does a technical DAPI pass prove that a field is suitable for cell-type training. The approved ORION raw-channel pilot is needed to compare virtual and registered measured images. Do not turn this diagnostic into a protein-validity or >90% balanced-accuracy claim.
+
+Code: [`audit_expansion_marker_redundancy.py`](../audit_expansion_marker_redundancy.py); full per-pair results: [`monusac-expanded-marker-redundancy-snapshot-79-2026-10-20.json`](monusac-expanded-marker-redundancy-snapshot-79-2026-10-20.json). Dataset validation remains pending.

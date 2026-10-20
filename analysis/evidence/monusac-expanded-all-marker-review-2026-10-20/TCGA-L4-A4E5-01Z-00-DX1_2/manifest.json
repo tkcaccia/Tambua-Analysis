@@ -1,0 +1,255 @@
+{
+  "sample_id": "TCGA-L4-A4E5-01Z-00-DX1_2",
+  "status": "awaiting_manual_visual_review",
+  "source_rgb_sha256": "c7adf6f4619f58654a70efb08fc2391cb4b4df680bafc25e460303dfe09bfcd6",
+  "source_mpp": 0.2456,
+  "model_mpp": 0.25,
+  "model_shape_yx": [
+    433,
+    560
+  ],
+  "nuclear_qc": {
+    "schema_version": 2,
+    "scope": "virtual_DAPI_vs_HE_derived_nuclear_mask",
+    "sampling_stride_px": 1,
+    "sampled_windows": 1,
+    "nuclear_pixels": 22777,
+    "nearby_extranuclear_pixels": 32993,
+    "thresholds": {
+      "min_auc": 0.7,
+      "min_prevalence_matched_dice": 0.35,
+      "min_edge_to_core_nuclear_mean_ratio": 0.65,
+      "min_nuclear_boundary_contrast": 0.05,
+      "min_spatial_nuclear_auc": 0.6,
+      "min_spatial_positive_and_negative_pixels": 500
+    },
+    "interpretation_limit": "Agreement with H&E-derived nuclei does not establish measured DAPI accuracy. A poor StarDist mask can also lower this score. Inspect the overlay and mask.",
+    "status": "pass",
+    "alignment_status": "pass",
+    "border_shadow_status": "pass",
+    "spatial_shadow_status": "pass",
+    "spatial_regions": [
+      {
+        "row": 0,
+        "column": 0,
+        "nuclear_pixels": 3295,
+        "nearby_extranuclear_pixels": 4674,
+        "auc": 0.7663899283350313,
+        "status": "pass"
+      },
+      {
+        "row": 0,
+        "column": 1,
+        "nuclear_pixels": 5637,
+        "nearby_extranuclear_pixels": 7034,
+        "auc": 0.7674089040338246,
+        "status": "pass"
+      },
+      {
+        "row": 0,
+        "column": 2,
+        "nuclear_pixels": 2916,
+        "nearby_extranuclear_pixels": 5560,
+        "auc": 0.7362142693252806,
+        "status": "pass"
+      },
+      {
+        "row": 1,
+        "column": 0,
+        "nuclear_pixels": 2208,
+        "nearby_extranuclear_pixels": 3101,
+        "auc": 0.822834513995018,
+        "status": "pass"
+      },
+      {
+        "row": 1,
+        "column": 1,
+        "nuclear_pixels": 2052,
+        "nearby_extranuclear_pixels": 2506,
+        "auc": 0.6612879576346203,
+        "status": "pass"
+      },
+      {
+        "row": 1,
+        "column": 2,
+        "nuclear_pixels": 3576,
+        "nearby_extranuclear_pixels": 4980,
+        "auc": 0.8464582884109143,
+        "status": "pass"
+      },
+      {
+        "row": 2,
+        "column": 0,
+        "nuclear_pixels": 366,
+        "nearby_extranuclear_pixels": 992,
+        "auc": null,
+        "status": "insufficient"
+      },
+      {
+        "row": 2,
+        "column": 1,
+        "nuclear_pixels": 924,
+        "nearby_extranuclear_pixels": 1691,
+        "auc": 0.7604148266478249,
+        "status": "pass"
+      },
+      {
+        "row": 2,
+        "column": 2,
+        "nuclear_pixels": 1803,
+        "nearby_extranuclear_pixels": 2455,
+        "auc": 0.6603055780533237,
+        "status": "pass"
+      }
+    ],
+    "eligible_spatial_regions": 8,
+    "failed_spatial_regions": 0,
+    "alignment_score": 0.47005736512898966,
+    "auc": 0.7449452841598065,
+    "prevalence_matched_dice": 0.6354701417226098,
+    "prevalence_matched_threshold": 0.8980392156862745,
+    "nuclear_boundary_contrast": 0.0529956364308245,
+    "nuclear_inner_boundary_pixels": 7054,
+    "nearby_outer_boundary_pixels": 7738,
+    "edge_to_core_nuclear_mean_ratio": 0.9372073075428582,
+    "edge_nuclear_pixels": 3881,
+    "core_nuclear_pixels": 18896,
+    "sampled_stratified_windows": 1,
+    "shadow_preview": "stardist_qc_shadow_qc.png",
+    "preview": "stardist_qc.png",
+    "preview_region_yxyx": [
+      0,
+      433,
+      0,
+      560
+    ],
+    "image": "/home/chiamaka/Tambua-monusac-expanded-cpu-inference-2026-10-20/TCGA-L4-A4E5-01Z-00-DX1_2/gigatime_output",
+    "nuclei_mask": "/home/chiamaka/Tambua-monusac-stardist-cpu-2026-10-20/TCGA-L4-A4E5-01Z-00-DX1_2/stardist_labels.tif",
+    "image_shape_yx": [
+      433,
+      560
+    ]
+  },
+  "all_channel_seam_qc": "pass",
+  "marker_distribution_qc": "pass",
+  "marker_distribution_warnings": [],
+  "native_uint16_quantiles_p01_p50_p997": {
+    "DAPI": [
+      6.0,
+      970.0,
+      64814.562999999995
+    ],
+    "TRITC": [
+      3.0,
+      1230.0,
+      64950.0
+    ],
+    "Cy5": [
+      2.0,
+      213.0,
+      62442.562999999995
+    ],
+    "PD-1": [
+      1.0,
+      341.0,
+      57569.12599999999
+    ],
+    "CD14": [
+      4.0,
+      247.0,
+      57557.881999999925
+    ],
+    "CD4": [
+      2.0,
+      188.0,
+      59901.12599999999
+    ],
+    "T-bet": [
+      1.0,
+      91.0,
+      20106.940999999963
+    ],
+    "CD34": [
+      1.0,
+      129.0,
+      6512.814999999973
+    ],
+    "CD68": [
+      3.0,
+      383.0,
+      64876.688999999984
+    ],
+    "CD16": [
+      4.0,
+      213.0,
+      64029.81499999997
+    ],
+    "CD11c": [
+      3.0,
+      140.0,
+      64856.688999999984
+    ],
+    "CD138": [
+      3.0,
+      266.0,
+      63542.562999999995
+    ],
+    "CD20": [
+      1.0,
+      47.0,
+      21294.44499999992
+    ],
+    "CD3": [
+      1.0,
+      85.0,
+      54365.881999999925
+    ],
+    "CD8": [
+      3.0,
+      144.0,
+      50768.688999999984
+    ],
+    "PD-L1": [
+      3.0,
+      305.0,
+      63443.0
+    ],
+    "CK": [
+      7.0,
+      1715.0,
+      65060.562999999995
+    ],
+    "Ki67": [
+      4.0,
+      258.0,
+      63964.12599999999
+    ],
+    "Tryptase": [
+      1.0,
+      89.0,
+      4674.562999999995
+    ],
+    "Actin-D": [
+      1.0,
+      55.0,
+      6717.0
+    ],
+    "Caspase3-D": [
+      5.0,
+      912.0,
+      64873.0
+    ],
+    "PHH3-B": [
+      1.0,
+      204.0,
+      54710.19299999994
+    ],
+    "Transgelin": [
+      1.0,
+      63.0,
+      3717.5629999999946
+    ]
+  },
+  "display": "Each marker is independently logit/1st\u201399.7th percentile stretched for visual review only; native uint16 scores remain unchanged.",
+  "limit": "DAPI technical QC and all-channel seam QC passed; this is not protein-specific biological validation."
+}
