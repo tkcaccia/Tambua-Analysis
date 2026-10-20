@@ -1,0 +1,686 @@
+{
+  "status": "diagnostic_only",
+  "device": "CPU",
+  "stride": 8,
+  "prior_qc_pass_fields": 47,
+  "expansion_qc_pass_fields": 1,
+  "method": "Rank native uint16 values of each spatial channel at every eighth model-grid pixel restricted to scanner-RGB tissue; compare all 23 channels. No display stretch or cell labels are used.",
+  "interpretation_limit": "High spatial correlation may reflect common anatomy; this diagnostic alone cannot reject or validate a protein channel. The contrast between historical and expansion fields can reveal gross channel collapse.",
+  "prior_median_absolute_pairwise_spatial_spearman": 0.7180715576350611,
+  "prior_records": [
+    {
+      "sample_id": "TCGA-69-7760-01Z-00-DX1_004",
+      "sampled_tissue_pixels": 16455,
+      "median_absolute_pairwise_spatial_spearman": 0.8040227629252604,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.18972332015810275,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": 0.8242629376812255,
+        "DAPI__Cy5": 0.8386299269175056,
+        "DAPI__CK": 0.4762660293244332,
+        "CK__CD68": 0.47381706212451213,
+        "CK__CD3": 0.34087208907944566,
+        "CD68__CD3": 0.8847870924465272
+      }
+    },
+    {
+      "sample_id": "TCGA-69-A59K-01Z-00-DX1_003",
+      "sampled_tissue_pixels": 45611,
+      "median_absolute_pairwise_spatial_spearman": 0.9261217709660913,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.6956521739130435,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": 0.9395722571261267,
+        "DAPI__Cy5": 0.9230304602062601,
+        "DAPI__CK": 0.8640488100188899,
+        "CK__CD68": 0.8125586496878304,
+        "CK__CD3": 0.7917484764656038,
+        "CD68__CD3": 0.9611467054431723
+      }
+    },
+    {
+      "sample_id": "TCGA-78-7220-01Z-00-DX1_003",
+      "sampled_tissue_pixels": 16849,
+      "median_absolute_pairwise_spatial_spearman": 0.8324902732068726,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.3438735177865613,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": 0.9009203653485701,
+        "DAPI__Cy5": 0.9086713170957453,
+        "DAPI__CK": 0.2821542273535665,
+        "CK__CD68": 0.08964458336510404,
+        "CK__CD3": 0.12718156718319978,
+        "CD68__CD3": 0.8913652965347134
+      }
+    },
+    {
+      "sample_id": "TCGA-A2-A0CV-01Z-00-DX1_4",
+      "sampled_tissue_pixels": 8189,
+      "median_absolute_pairwise_spatial_spearman": 0.7380422326562361,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.1541501976284585,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": 0.5527821665457344,
+        "DAPI__Cy5": 0.5692393729009,
+        "DAPI__CK": 0.44694561500735186,
+        "CK__CD68": 0.3390945260264531,
+        "CK__CD3": 0.27562736848655156,
+        "CD68__CD3": 0.953686639311031
+      }
+    },
+    {
+      "sample_id": "TCGA-B6-A0WZ-01Z-00-DX1_1",
+      "sampled_tissue_pixels": 34244,
+      "median_absolute_pairwise_spatial_spearman": 0.8567411250258191,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.308300395256917,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": 0.7652442322280627,
+        "DAPI__Cy5": 0.8091814984267715,
+        "DAPI__CK": 0.8483571777634714,
+        "CK__CD68": 0.870148304525022,
+        "CK__CD3": 0.7720493150139637,
+        "CD68__CD3": 0.9164929512535444
+      }
+    },
+    {
+      "sample_id": "TCGA-B9-A8YI-01Z-00-DX1_1",
+      "sampled_tissue_pixels": 29119,
+      "median_absolute_pairwise_spatial_spearman": 0.8403692282521392,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.2490118577075099,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": 0.8759911908231556,
+        "DAPI__Cy5": 0.8328450694712732,
+        "DAPI__CK": 0.8872845243915379,
+        "CK__CD68": 0.9118115936432531,
+        "CK__CD3": 0.6960147191254149,
+        "CD68__CD3": 0.7294522719295746
+      }
+    },
+    {
+      "sample_id": "TCGA-B9-A8YI-01Z-00-DX1_2",
+      "sampled_tissue_pixels": 13382,
+      "median_absolute_pairwise_spatial_spearman": 0.8207835561908321,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.15810276679841898,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": 0.8624445127129003,
+        "DAPI__Cy5": 0.83401316741455,
+        "DAPI__CK": 0.8607099766558903,
+        "CK__CD68": 0.8784049206492395,
+        "CK__CD3": 0.6734494270755483,
+        "CD68__CD3": 0.701351455164387
+      }
+    },
+    {
+      "sample_id": "TCGA-B9-A8YI-01Z-00-DX1_3",
+      "sampled_tissue_pixels": 32882,
+      "median_absolute_pairwise_spatial_spearman": 0.8232366075978595,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.20553359683794467,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": 0.8526134564410247,
+        "DAPI__Cy5": 0.8544893332610938,
+        "DAPI__CK": 0.6256853019912418,
+        "CK__CD68": 0.7501119484640303,
+        "CK__CD3": 0.5979823326355043,
+        "CD68__CD3": 0.8370818455470428
+      }
+    },
+    {
+      "sample_id": "TCGA-BH-A18T-01Z-00-DX1_1",
+      "sampled_tissue_pixels": 15315,
+      "median_absolute_pairwise_spatial_spearman": 0.5315595853040735,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.043478260869565216,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": 0.24457093039862549,
+        "DAPI__Cy5": 0.25244834549137546,
+        "DAPI__CK": 0.3060597114926214,
+        "CK__CD68": 0.022860722935368963,
+        "CK__CD3": -0.26211281479062226,
+        "CD68__CD3": 0.7880539978801195
+      }
+    },
+    {
+      "sample_id": "TCGA-BH-A18T-01Z-00-DX1_5",
+      "sampled_tissue_pixels": 9563,
+      "median_absolute_pairwise_spatial_spearman": 0.4330578997470255,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.007905138339920948,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": 0.4340754070604296,
+        "DAPI__Cy5": 0.2961035808213278,
+        "DAPI__CK": 0.8072676858338261,
+        "CK__CD68": 0.1553500190477947,
+        "CK__CD3": -0.43069177490575344,
+        "CD68__CD3": 0.40966818070517114
+      }
+    },
+    {
+      "sample_id": "TCGA-BH-A18T-01Z-00-DX1_6",
+      "sampled_tissue_pixels": 17622,
+      "median_absolute_pairwise_spatial_spearman": 0.459833323800955,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.019762845849802372,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": 0.6033799332855797,
+        "DAPI__Cy5": 0.5990106300035702,
+        "DAPI__CK": 0.6081953350816778,
+        "CK__CD68": 0.32958587599284744,
+        "CK__CD3": -0.22080520885634053,
+        "CD68__CD3": 0.4531558409366376
+      }
+    },
+    {
+      "sample_id": "TCGA-D8-A1X5-01Z-00-DX2_2",
+      "sampled_tissue_pixels": 13857,
+      "median_absolute_pairwise_spatial_spearman": 0.6813688682533088,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.09486166007905138,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": 0.37631351386691286,
+        "DAPI__Cy5": 0.47916757368547486,
+        "DAPI__CK": 0.5842135744362938,
+        "CK__CD68": 0.5302578835622005,
+        "CK__CD3": 0.1726963638941041,
+        "CD68__CD3": 0.7891371871956836
+      }
+    },
+    {
+      "sample_id": "TCGA-D8-A1X5-01Z-00-DX2_3",
+      "sampled_tissue_pixels": 33065,
+      "median_absolute_pairwise_spatial_spearman": 0.5522115290742065,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.02766798418972332,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": 0.5564198651236621,
+        "DAPI__Cy5": 0.5921173381477651,
+        "DAPI__CK": 0.6674470326762078,
+        "CK__CD68": 0.638814038971694,
+        "CK__CD3": 0.02361814146909295,
+        "CD68__CD3": 0.4485558543027012
+      }
+    },
+    {
+      "sample_id": "TCGA-E9-A22B-01Z-00-DX1_1",
+      "sampled_tissue_pixels": 26468,
+      "median_absolute_pairwise_spatial_spearman": 0.8951863536120956,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.4743083003952569,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": 0.803480784559965,
+        "DAPI__Cy5": 0.7668016757822865,
+        "DAPI__CK": 0.9024267139859513,
+        "CK__CD68": 0.9096876253376687,
+        "CK__CD3": 0.8593154873081364,
+        "CD68__CD3": 0.9317326958897323
+      }
+    },
+    {
+      "sample_id": "TCGA-E9-A22B-01Z-00-DX1_3",
+      "sampled_tissue_pixels": 8807,
+      "median_absolute_pairwise_spatial_spearman": 0.559909784405807,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.02766798418972332,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": -0.006929397869190878,
+        "DAPI__Cy5": 0.12169637359242629,
+        "DAPI__CK": 0.8958837919507843,
+        "CK__CD68": 0.23373206318328552,
+        "CK__CD3": -0.4432207255568955,
+        "CD68__CD3": 0.5629024805513008
+      }
+    },
+    {
+      "sample_id": "TCGA-E9-A22B-01Z-00-DX1_8",
+      "sampled_tissue_pixels": 14725,
+      "median_absolute_pairwise_spatial_spearman": 0.6625468684468501,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.06324110671936758,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": 0.019865186218497855,
+        "DAPI__Cy5": 0.11169408256807237,
+        "DAPI__CK": 0.7539970609916001,
+        "CK__CD68": 0.12396050733572257,
+        "CK__CD3": -0.40628361574143185,
+        "CD68__CD3": 0.7204025312662468
+      }
+    },
+    {
+      "sample_id": "TCGA-EJ-5495-01Z-00-DX1-1",
+      "sampled_tissue_pixels": 35903,
+      "median_absolute_pairwise_spatial_spearman": 0.7180715576350611,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.1541501976284585,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": 0.8608708296463403,
+        "DAPI__Cy5": 0.893690540364948,
+        "DAPI__CK": 0.7195749969536054,
+        "CK__CD68": 0.7204153161718597,
+        "CK__CD3": 0.3997743584689784,
+        "CD68__CD3": 0.677490626682726
+      }
+    },
+    {
+      "sample_id": "TCGA-EJ-5505-01Z-00-DX1-1",
+      "sampled_tissue_pixels": 17460,
+      "median_absolute_pairwise_spatial_spearman": 0.530468018065703,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.039525691699604744,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": 0.6900518214060205,
+        "DAPI__Cy5": 0.7805463876915456,
+        "DAPI__CK": 0.466275141708085,
+        "CK__CD68": 0.39392878526341035,
+        "CK__CD3": -0.04962801309235991,
+        "CD68__CD3": 0.4533260672281288
+      }
+    },
+    {
+      "sample_id": "TCGA-EJ-5517-01Z-00-DX1-4",
+      "sampled_tissue_pixels": 46441,
+      "median_absolute_pairwise_spatial_spearman": 0.8167894027741187,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.22134387351778656,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": 0.8803995128974449,
+        "DAPI__Cy5": 0.8945827633081452,
+        "DAPI__CK": 0.8227096079806553,
+        "CK__CD68": 0.8345502496299506,
+        "CK__CD3": 0.7116889787279393,
+        "CD68__CD3": 0.8330124786792596
+      }
+    },
+    {
+      "sample_id": "TCGA-EV-5903-01Z-00-DX1_1",
+      "sampled_tissue_pixels": 15054,
+      "median_absolute_pairwise_spatial_spearman": 0.739385330861765,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.14624505928853754,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": 0.8721583439344536,
+        "DAPI__Cy5": 0.8972460142804862,
+        "DAPI__CK": 0.3896597095813746,
+        "CK__CD68": 0.213409585004709,
+        "CK__CD3": 0.03844386548847045,
+        "CD68__CD3": 0.7358878962006256
+      }
+    },
+    {
+      "sample_id": "TCGA-EW-A6SD-01Z-00-DX1_3",
+      "sampled_tissue_pixels": 11162,
+      "median_absolute_pairwise_spatial_spearman": 0.37312479953536637,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.02766798418972332,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": 0.0901368553993059,
+        "DAPI__Cy5": 0.02438014676441685,
+        "DAPI__CK": 0.6335869049981551,
+        "CK__CD68": 0.13091429890575595,
+        "CK__CD3": -0.5204535171213597,
+        "CD68__CD3": 0.5554012867896556
+      }
+    },
+    {
+      "sample_id": "TCGA-EW-A6SD-01Z-00-DX1_4",
+      "sampled_tissue_pixels": 10193,
+      "median_absolute_pairwise_spatial_spearman": 0.7163896566384543,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.09881422924901186,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": 0.7105935103393647,
+        "DAPI__Cy5": 0.5812073632649619,
+        "DAPI__CK": 0.8105548133890257,
+        "CK__CD68": 0.6139456774404185,
+        "CK__CD3": 0.2762921974093943,
+        "CD68__CD3": 0.7738200281886771
+      }
+    },
+    {
+      "sample_id": "TCGA-G9-6499-01Z-00-DX1-4",
+      "sampled_tissue_pixels": 27023,
+      "median_absolute_pairwise_spatial_spearman": 0.850311588493693,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.25296442687747034,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": 0.8760979079576512,
+        "DAPI__Cy5": 0.8444606629539388,
+        "DAPI__CK": 0.7736195676416113,
+        "CK__CD68": 0.805511756217228,
+        "CK__CD3": 0.7112915604969193,
+        "CD68__CD3": 0.8660141968885322
+      }
+    },
+    {
+      "sample_id": "TCGA-J4-A67Q-01Z-00-DX1-1",
+      "sampled_tissue_pixels": 11015,
+      "median_absolute_pairwise_spatial_spearman": 0.7880993180466163,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.1857707509881423,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": 0.8590002890320773,
+        "DAPI__Cy5": 0.8706759920039027,
+        "DAPI__CK": 0.534310456091643,
+        "CK__CD68": 0.49807196589804853,
+        "CK__CD3": 0.3022626234674657,
+        "CD68__CD3": 0.8500361366001856
+      }
+    },
+    {
+      "sample_id": "TCGA-J4-A67T-01Z-00-DX1-2",
+      "sampled_tissue_pixels": 14428,
+      "median_absolute_pairwise_spatial_spearman": 0.6389672154847276,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.07114624505928854,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": 0.7632258328334052,
+        "DAPI__Cy5": 0.8219218945119414,
+        "DAPI__CK": 0.5170341603395605,
+        "CK__CD68": 0.49223827128719216,
+        "CK__CD3": 0.2629442062518612,
+        "CD68__CD3": 0.7201664606751137
+      }
+    },
+    {
+      "sample_id": "TCGA-KK-A6E0-01Z-00-DX1-1",
+      "sampled_tissue_pixels": 8329,
+      "median_absolute_pairwise_spatial_spearman": 0.6185853836763274,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.05928853754940711,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": 0.7499014354730678,
+        "DAPI__Cy5": 0.8083815809831634,
+        "DAPI__CK": 0.6477432700969777,
+        "CK__CD68": 0.329707816806542,
+        "CK__CD3": 0.16825991604948382,
+        "CD68__CD3": 0.6712191627225752
+      }
+    },
+    {
+      "sample_id": "TCGA-KK-A6E0-01Z-00-DX1-2",
+      "sampled_tissue_pixels": 13939,
+      "median_absolute_pairwise_spatial_spearman": 0.6378654023804188,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.07905138339920949,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": 0.8151307924047142,
+        "DAPI__Cy5": 0.8461934743437343,
+        "DAPI__CK": 0.5160278499523433,
+        "CK__CD68": 0.48351515051787225,
+        "CK__CD3": 0.3270640501492971,
+        "CD68__CD3": 0.7443298159704935
+      }
+    },
+    {
+      "sample_id": "TCGA-L4-A4E5-01Z-00-DX1_1",
+      "sampled_tissue_pixels": 8577,
+      "median_absolute_pairwise_spatial_spearman": 0.7456667034151933,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.1383399209486166,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": 0.6143309571124544,
+        "DAPI__Cy5": 0.49227064793149444,
+        "DAPI__CK": 0.6009993291514735,
+        "CK__CD68": 0.6424322876606817,
+        "CK__CD3": 0.4534759156228971,
+        "CD68__CD3": 0.8454963206537067
+      }
+    },
+    {
+      "sample_id": "TCGA-MH-A560-01Z-00-DX2_2",
+      "sampled_tissue_pixels": 42470,
+      "median_absolute_pairwise_spatial_spearman": 0.7311986467312424,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.14624505928853754,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": 0.8947908171142093,
+        "DAPI__Cy5": 0.8757538471686446,
+        "DAPI__CK": 0.8944522744370608,
+        "CK__CD68": 0.9135575542588193,
+        "CK__CD3": 0.4719792183859625,
+        "CD68__CD3": 0.5090479993810876
+      }
+    },
+    {
+      "sample_id": "TCGA-P4-AAVK-01Z-00-DX1_3",
+      "sampled_tissue_pixels": 38744,
+      "median_absolute_pairwise_spatial_spearman": 0.5928385297527446,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.03557312252964427,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": 0.8433008747485158,
+        "DAPI__Cy5": 0.818216915750277,
+        "DAPI__CK": 0.7058171784668279,
+        "CK__CD68": 0.7982158054788032,
+        "CK__CD3": 0.009995742938194985,
+        "CD68__CD3": 0.23920928752412768
+      }
+    },
+    {
+      "sample_id": "TCGA-S3-AA11-01Z-00-DX1_1",
+      "sampled_tissue_pixels": 15668,
+      "median_absolute_pairwise_spatial_spearman": 0.5160236083521917,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.05138339920948617,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": 0.03677503317046446,
+        "DAPI__Cy5": -0.11597018933604986,
+        "DAPI__CK": 0.774616101987419,
+        "CK__CD68": 0.47996781533947086,
+        "CK__CD3": 0.1596197034802282,
+        "CD68__CD3": 0.6480111266345671
+      }
+    },
+    {
+      "sample_id": "TCGA-S3-AA11-01Z-00-DX1_2",
+      "sampled_tissue_pixels": 24890,
+      "median_absolute_pairwise_spatial_spearman": 0.40453174627946326,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.007905138339920948,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": -0.03366940192524208,
+        "DAPI__Cy5": -0.27487662836349525,
+        "DAPI__CK": 0.7353727981253143,
+        "CK__CD68": -0.028575786363988737,
+        "CK__CD3": -0.30818525871261815,
+        "CD68__CD3": 0.5636082310047019
+      }
+    },
+    {
+      "sample_id": "TCGA-S3-AA11-01Z-00-DX1_4",
+      "sampled_tissue_pixels": 6786,
+      "median_absolute_pairwise_spatial_spearman": 0.760001684814623,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.20553359683794467,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": -0.11895524518375461,
+        "DAPI__Cy5": -0.06334513734612991,
+        "DAPI__CK": 0.2910612095899451,
+        "CK__CD68": 0.22867334283383456,
+        "CK__CD3": 0.06698647966218664,
+        "CD68__CD3": 0.9135752610606497
+      }
+    },
+    {
+      "sample_id": "TCGA-UZ-A9PO-01Z-00-DX1_3",
+      "sampled_tissue_pixels": 13757,
+      "median_absolute_pairwise_spatial_spearman": 0.7013622058492762,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.039525691699604744,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": 0.8009000886550908,
+        "DAPI__Cy5": 0.7311045295559717,
+        "DAPI__CK": 0.898550412655331,
+        "CK__CD68": 0.7090530150215635,
+        "CK__CD3": 0.3714329672375526,
+        "CD68__CD3": 0.5399983544649691
+      }
+    },
+    {
+      "sample_id": "TCGA-V1-A9O9-01Z-00-DX1-3",
+      "sampled_tissue_pixels": 11052,
+      "median_absolute_pairwise_spatial_spearman": 0.5914956445082493,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.043478260869565216,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": 0.3556782515038393,
+        "DAPI__Cy5": 0.4679826798471901,
+        "DAPI__CK": 0.7220152459936402,
+        "CK__CD68": 0.19165332127603896,
+        "CK__CD3": -0.2469538162172704,
+        "CD68__CD3": 0.6182080042042534
+      }
+    },
+    {
+      "sample_id": "TCGA-YL-A9WY-01Z-00-DX1-1",
+      "sampled_tissue_pixels": 18706,
+      "median_absolute_pairwise_spatial_spearman": 0.8388228389061576,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.21739130434782608,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": 0.8944375427307215,
+        "DAPI__Cy5": 0.8668472827909874,
+        "DAPI__CK": 0.7756420475534928,
+        "CK__CD68": 0.8265943136548154,
+        "CK__CD3": 0.6586768881420512,
+        "CD68__CD3": 0.7935905112540633
+      }
+    },
+    {
+      "sample_id": "TCGA-YL-A9WY-01Z-00-DX1-2",
+      "sampled_tissue_pixels": 9845,
+      "median_absolute_pairwise_spatial_spearman": 0.7760477157712143,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.07509881422924901,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": 0.8605903858691925,
+        "DAPI__Cy5": 0.8398301390635814,
+        "DAPI__CK": 0.8172465188337141,
+        "CK__CD68": 0.7871255957673065,
+        "CK__CD3": 0.566824826504491,
+        "CD68__CD3": 0.6420046055066159
+      }
+    },
+    {
+      "sample_id": "TCGA-2Z-A9JG-01Z-00-DX1_5",
+      "sampled_tissue_pixels": 7352,
+      "median_absolute_pairwise_spatial_spearman": 0.3805341489281394,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.003952569169960474,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": -0.17915555567827254,
+        "DAPI__Cy5": -0.015232748691706805,
+        "DAPI__CK": -0.1910261552925418,
+        "CK__CD68": -0.15328283338913024,
+        "CK__CD3": -0.3485018487417363,
+        "CD68__CD3": 0.7969016543751084
+      }
+    },
+    {
+      "sample_id": "TCGA-2Z-A9JN-01Z-00-DX1_2",
+      "sampled_tissue_pixels": 48924,
+      "median_absolute_pairwise_spatial_spearman": 0.8986133329924605,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.4980237154150198,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": 0.8358140435583629,
+        "DAPI__Cy5": 0.8493317218284595,
+        "DAPI__CK": 0.8359545473674134,
+        "CK__CD68": 0.8155543537930969,
+        "CK__CD3": 0.7763883848893656,
+        "CD68__CD3": 0.9037613385372453
+      }
+    },
+    {
+      "sample_id": "TCGA-55-7573-01Z-00-DX1_004",
+      "sampled_tissue_pixels": 26410,
+      "median_absolute_pairwise_spatial_spearman": 0.7635944412908965,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.16600790513833993,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": 0.7523584504369601,
+        "DAPI__Cy5": 0.7469746562993335,
+        "DAPI__CK": 0.5776980596598283,
+        "CK__CD68": 0.44101372186835053,
+        "CK__CD3": 0.20041515673047244,
+        "CD68__CD3": 0.7829841124787142
+      }
+    },
+    {
+      "sample_id": "TCGA-73-4662-01Z-00-DX1_003",
+      "sampled_tissue_pixels": 26648,
+      "median_absolute_pairwise_spatial_spearman": 0.5024299030675243,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.04743083003952569,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": 0.568678573561743,
+        "DAPI__Cy5": 0.6453152947595462,
+        "DAPI__CK": 0.5979507212020713,
+        "CK__CD68": 0.2917665845195301,
+        "CK__CD3": -0.13115787363530731,
+        "CD68__CD3": 0.4445065346932306
+      }
+    },
+    {
+      "sample_id": "TCGA-D8-A3Z6-01Z-00-DX2_002",
+      "sampled_tissue_pixels": 16493,
+      "median_absolute_pairwise_spatial_spearman": 0.38426952412474313,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.023715415019762844,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": 0.5482704188545736,
+        "DAPI__Cy5": 0.18000080773328644,
+        "DAPI__CK": 0.8866915987017748,
+        "CK__CD68": -0.38472257007718624,
+        "CK__CD3": -0.4995339643682376,
+        "CD68__CD3": 0.4956470204289122
+      }
+    },
+    {
+      "sample_id": "TCGA-E2-A108-01Z-00-DX1_001",
+      "sampled_tissue_pixels": 8979,
+      "median_absolute_pairwise_spatial_spearman": 0.40325379982094756,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.05533596837944664,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": 0.2994657315492439,
+        "DAPI__Cy5": 0.3953176151400455,
+        "DAPI__CK": 0.322044425894362,
+        "CK__CD68": -0.2148714222212086,
+        "CK__CD3": -0.5026254311385157,
+        "CD68__CD3": 0.7937365594929563
+      }
+    },
+    {
+      "sample_id": "TCGA-G9-6356-01Z-00-DX1_1",
+      "sampled_tissue_pixels": 18526,
+      "median_absolute_pairwise_spatial_spearman": 0.7916156478373543,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.17786561264822134,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": 0.8146982178230251,
+        "DAPI__Cy5": 0.8416862116076306,
+        "DAPI__CK": 0.4686762182341238,
+        "CK__CD68": 0.17503988012619495,
+        "CK__CD3": 0.29651034308317764,
+        "CD68__CD3": 0.8455525900640491
+      }
+    },
+    {
+      "sample_id": "TCGA-G9-6367-01Z-00-DX1_2",
+      "sampled_tissue_pixels": 11197,
+      "median_absolute_pairwise_spatial_spearman": 0.7728397072638774,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.1383399209486166,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": 0.7818453467046338,
+        "DAPI__Cy5": 0.8209159316837344,
+        "DAPI__CK": 0.7201333620544379,
+        "CK__CD68": 0.45884787019307466,
+        "CK__CD3": 0.39213448655090044,
+        "CD68__CD3": 0.72852001574642
+      }
+    },
+    {
+      "sample_id": "TCGA-VP-A87H-01Z-00-DX1_2",
+      "sampled_tissue_pixels": 29961,
+      "median_absolute_pairwise_spatial_spearman": 0.853554362220531,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.26877470355731226,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": 0.8884934930427,
+        "DAPI__Cy5": 0.8697667230529955,
+        "DAPI__CK": 0.8327925682150624,
+        "CK__CD68": 0.7736671872097238,
+        "CK__CD3": 0.6974490619911736,
+        "CD68__CD3": 0.8540085120310889
+      }
+    },
+    {
+      "sample_id": "TCGA-X4-A8KS-01Z-00-DX3_1",
+      "sampled_tissue_pixels": 7831,
+      "median_absolute_pairwise_spatial_spearman": 0.31897970403087367,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.003952569169960474,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": 0.10518241367533925,
+        "DAPI__Cy5": 0.41666114011918487,
+        "DAPI__CK": 0.08420052405791578,
+        "CK__CD68": 0.254623700040501,
+        "CK__CD3": -0.006385764063140282,
+        "CD68__CD3": 0.5950863995881074
+      }
+    }
+  ],
+  "expansion_records": [
+    {
+      "sample_id": "TCGA-EV-5903-01Z-00-DX1_4",
+      "sampled_tissue_pixels": 767,
+      "median_absolute_pairwise_spatial_spearman": 0.858854209771333,
+      "fraction_channel_pairs_absolute_rho_gt_0_90": 0.3438735177865613,
+      "selected_pair_spatial_spearman": {
+        "DAPI__TRITC": 0.9100854064128784,
+        "DAPI__Cy5": 0.9179303731665662,
+        "DAPI__CK": 0.8575613187151097,
+        "CK__CD68": 0.8673796814412228,
+        "CK__CD3": 0.7882057551650933,
+        "CD68__CD3": 0.8897007593794157
+      }
+    }
+  ]
+}

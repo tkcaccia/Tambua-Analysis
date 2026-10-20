@@ -1,0 +1,41 @@
+{
+  "scope": "Completed CPU-only expansion cases 29 through 32; inspected scanner RGB H&E, virtual DAPI/StarDist overlay, CK and CD68, and all 23 spatial channels of the one automated-QC pass",
+  "source_contact_sheets": [
+    "first-thirty-two-05.webp",
+    "first-thirty-two-06.webp"
+  ],
+  "source_manifest": "first-thirty-two-manifest.json",
+  "reviewed_cases": [
+    {
+      "sample_id": "TCGA-EV-5903-01Z-00-DX1_2",
+      "visual_observation": "In a dense kidney field, many nuclei are bright but virtual DAPI is broad across adjacent cells. Boundary contrast is 0.039, below the fixed gate.",
+      "decision": "exclude_pending_independent_QC_calibration"
+    },
+    {
+      "sample_id": "TCGA-D8-A3Z6-01Z-00-DX2_001",
+      "visual_observation": "The breast field has plausible nuclear-rich signal, but many StarDist outlines are embedded in diffuse virtual DAPI. AUC 0.719 and boundary contrast 0.046 do not jointly pass the frozen gate.",
+      "decision": "exclude_pending_independent_QC_calibration"
+    },
+    {
+      "sample_id": "TCGA-EV-5903-01Z-00-DX1_4",
+      "visual_observation": "This small kidney field passes the numerical DAPI, spatial-shadow and all-channel seam checks. Virtual DAPI overlaps several StarDist nuclei, and no obvious tiling seam appears. The 23 display-stretched virtual channels look unusually similar, including TRITC and Cy5. This visual impression requires comparison with native scores and historical pass fields before using the case for cell typing.",
+      "decision": "hold_technical_pass_pending_channel_specificity_audit",
+      "all_marker_contact_sheet": "TCGA-EV-5903-01Z-00-DX1_4/all-23-markers.webp",
+      "native_channel_specificity": {
+        "median_absolute_pairwise_spatial_spearman": 0.858854209771333,
+        "prior_47_qc_pass_median_absolute_pairwise_spatial_spearman": 0.7180715576350611,
+        "dapi_tritc_spatial_spearman": 0.9100854064128784,
+        "dapi_cy5_spatial_spearman": 0.9179303731665662,
+        "ck_cd68_spatial_spearman": 0.8673796814412228,
+        "source": "channel-specificity-first-pass.json",
+        "interpretation": "High shared spatial signal, within the historical 47-field range. This cannot independently reject or validate a marker; it reinforces the hold for protein-specific evidence."
+      }
+    },
+    {
+      "sample_id": "TCGA-D8-A3Z6-01Z-00-DX2_003",
+      "visual_observation": "The breast field contains H&E nuclei next to erythrocytes, whereas virtual DAPI has broad bright tissue and several nuclei with weak signal. AUC 0.621 and contrast 0.019 fail.",
+      "decision": "exclude"
+    }
+  ],
+  "limits": "The single automated-QC pass is a sparse training field with 19 expert nuclei; it is not a test-set accuracy result. Protein-specific validity has not been established. The other three cases remain excluded by frozen QC."
+}
