@@ -1,0 +1,135 @@
+{
+  "status": "complete_technical_and_descriptive_summary_pending_all_image_visual_review",
+  "dataset": "HEMIT official test / published nonoverlapping, nonempty subset; 287 source-eligible image pairs",
+  "source_archive_sha256": "efe7dd5dc50ec0f789b0ce8a5258f5281a38001ac3dca81620f2a4be7041c943",
+  "source_mpp_um": 0.25,
+  "mpp_evidence": "MIPHEI-ViT study, because HEMIT TIFF pixel-size tags are absent",
+  "images": 287,
+  "technical_seam_qc_pass": 287,
+  "distinct_roi_coordinate_prefixes_not_patient_ids": 15,
+  "image_seconds": {
+    "n": 287,
+    "median": 1.833,
+    "q1": 1.7065000000000001,
+    "q3": 1.9615
+  },
+  "total_inference_and_checkpoint_seconds": 520.885,
+  "markers": [
+    {
+      "measured": "Pan-CK",
+      "images": 287,
+      "roi_coordinate_prefixes_not_patient_ids": 15,
+      "patch_spearman": {
+        "n": 287,
+        "median": 0.23435667196274812,
+        "q1": 0.09169787297355737,
+        "q3": 0.3792815517878396
+      },
+      "roi_median_spearman": {
+        "n": 15,
+        "median": 0.25623357956679205,
+        "q1": 0.1822629142843466,
+        "q3": 0.2910544292637707
+      },
+      "patch_auroc": {
+        "n": 287,
+        "median": 0.6694403252814669,
+        "q1": 0.594733486915149,
+        "q3": 0.7853066713341366
+      },
+      "patch_average_precision": {
+        "n": 287,
+        "median": 0.8141915727249405,
+        "q1": 0.5489037469979829,
+        "q3": 0.9452665298944982
+      },
+      "patch_positive_prevalence": {
+        "n": 287,
+        "median": 0.6334321696880783,
+        "q1": 0.3337501617828168,
+        "q3": 0.8142974660495734
+      },
+      "patches_auroc_above_half": 272
+    },
+    {
+      "measured": "CD3",
+      "images": 287,
+      "roi_coordinate_prefixes_not_patient_ids": 15,
+      "patch_spearman": {
+        "n": 287,
+        "median": 0.12660695127906832,
+        "q1": 0.05839424467306152,
+        "q3": 0.17502798258946595
+      },
+      "roi_median_spearman": {
+        "n": 15,
+        "median": 0.12986181887930798,
+        "q1": 0.10106491496515047,
+        "q3": 0.16003779073962354
+      },
+      "patch_auroc": {
+        "n": 287,
+        "median": 0.6448576929700742,
+        "q1": 0.5657801217944619,
+        "q3": 0.6930401291256478
+      },
+      "patch_average_precision": {
+        "n": 287,
+        "median": 0.144288627211285,
+        "q1": 0.09866625498915199,
+        "q3": 0.2030007150903727
+      },
+      "patch_positive_prevalence": {
+        "n": 287,
+        "median": 0.07786185267154068,
+        "q1": 0.051712064457200606,
+        "q3": 0.1127280642865827
+      },
+      "patches_auroc_above_half": 253
+    },
+    {
+      "measured": "DAPI",
+      "images": 287,
+      "roi_coordinate_prefixes_not_patient_ids": 15,
+      "patch_spearman": {
+        "n": 287,
+        "median": 0.7676395327459269,
+        "q1": 0.7366587683054152,
+        "q3": 0.7934225196354252
+      },
+      "roi_median_spearman": {
+        "n": 15,
+        "median": 0.7731252648985942,
+        "q1": 0.7521214085312933,
+        "q3": 0.7846012935011718
+      },
+      "patch_auroc": {
+        "n": 0,
+        "median": null,
+        "q1": null,
+        "q3": null
+      },
+      "patch_average_precision": {
+        "n": 0,
+        "median": null,
+        "q1": null,
+        "q3": null
+      },
+      "patch_positive_prevalence": {
+        "n": 287,
+        "median": 1.0,
+        "q1": 1.0,
+        "q3": 1.0
+      },
+      "patches_auroc_above_half": 0
+    }
+  ],
+  "interpretation_limits": [
+    "Pan-CK/CD3 AUROC uses released mIHC pixels greater than zero as positive; the threshold is provisional.",
+    "Patch scores are descriptive because patches within a source patient can be correlated.",
+    "Coordinate prefixes are ROI locations, not verified independent patients; no patient-level confidence interval is claimed.",
+    "One image was previously inspected as a CPU feasibility pilot; report a 286-image sensitivity if needed.",
+    "GigaTIME probabilities and measured mIHC intensities have different semantics; rank correlation is a spatial diagnostic.",
+    "DAPI nuclear localization does not establish CD3 or cytokeratin protein accuracy."
+  ]
+}

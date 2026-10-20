@@ -1,0 +1,54 @@
+{
+  "status": "one_case_exploratory_cpu_pilot_pending_visual_review",
+  "device": "CPU",
+  "dataset": "HEMIT official test split",
+  "pair": "[16705,49971]_patch_4_4.tif",
+  "source_mpp_um": 0.25,
+  "source_mpp_evidence": "MIPHEI-ViT reports HEMIT at 0.25 um/pixel; released TIFF tags do not encode mpp",
+  "model_mpp_um": 0.25,
+  "model_revision": "a6556030bdb8071857559e12b921620aa1bbac5b",
+  "checkpoint_sha256": "d200308302c7fefd13b259c62de546f2c859c28d1079e9f67dc8808915d95d0c",
+  "runner_sha256": "16d381d9cb13cc44c32b80a672c8617b80514bf622bda4616757ba96d9cc3ac9",
+  "input_sha256": "c94bc7907b4a4b1b2253d47eac6723de6f6cb7f61a3a4c490966747f6b02e980",
+  "label_sha256": "7bdf43c87da12173e9251db931974a2d640ee7388b07dfd3145ce2082d8966c7",
+  "tiling": {
+    "patch_px": 256,
+    "stride_px": 128,
+    "windows": 49,
+    "weighted_overlap": "CellPhenotyper raised-cosine; divide by accumulated weights"
+  },
+  "seconds_including_model_load": 717.086,
+  "rows": [
+    {
+      "measured": "Pan-CK",
+      "virtual": "CK",
+      "label_band": 0,
+      "tissue_pixels": 1038599,
+      "positive_prevalence_gt_zero": 0.2727915201150781,
+      "spearman_rho": 0.061918230708634364,
+      "auroc": 0.5274440570998549,
+      "average_precision": 0.33107559040433177
+    },
+    {
+      "measured": "CD3",
+      "virtual": "CD3",
+      "label_band": 1,
+      "tissue_pixels": 1038599,
+      "positive_prevalence_gt_zero": 0.11088880308954659,
+      "spearman_rho": 0.13262261085531862,
+      "auroc": 0.6205405300809406,
+      "average_precision": 0.16496233031679244
+    },
+    {
+      "measured": "DAPI",
+      "virtual": "DAPI",
+      "label_band": 2,
+      "tissue_pixels": 1038599,
+      "positive_prevalence_gt_zero": 1.0,
+      "spearman_rho": 0.7680048917209493,
+      "auroc": null,
+      "average_precision": null
+    }
+  ],
+  "limitations": "One deliberately fixed test patch, exploratory only. Label >0 is a provisional Pan-CK/CD3 positivity rule; it needs dataset-level review. Raw mIHC intensity and GigaTIME binary probability are different quantities. No patient-level inference, full-set accuracy, or cell-type prediction is claimed."
+}

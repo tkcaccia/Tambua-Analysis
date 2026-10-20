@@ -1,0 +1,4464 @@
+{
+  "status": "cpu_only_source_image_eligibility_audit_after_stopped_bundle",
+  "threshold_tissue_pixels": 100000,
+  "cases": [
+    {
+      "id": "[16705,49971]_patch_4_4.tif",
+      "tissue_pixels": 1038599,
+      "tissue_fraction": 0.9904851913452148,
+      "channel_ranges": [
+        153,
+        220,
+        103
+      ],
+      "positive_pixels": [
+        283321,
+        115169,
+        1038599
+      ]
+    },
+    {
+      "id": "[7941,48408]_patch_4_8.tif",
+      "tissue_pixels": 1026953,
+      "tissue_fraction": 0.9793787002563477,
+      "channel_ranges": [
+        120,
+        230,
+        107
+      ],
+      "positive_pixels": [
+        110255,
+        146880,
+        1026953
+      ]
+    },
+    {
+      "id": "[8942,53607]_patch_6_0.tif",
+      "tissue_pixels": 1027836,
+      "tissue_fraction": 0.9802207946777344,
+      "channel_ranges": [
+        126,
+        229,
+        93
+      ],
+      "positive_pixels": [
+        995872,
+        88554,
+        1027836
+      ]
+    },
+    {
+      "id": "[8942,53607]_patch_4_2.tif",
+      "tissue_pixels": 985291,
+      "tissue_fraction": 0.9396467208862305,
+      "channel_ranges": [
+        173,
+        229,
+        104
+      ],
+      "positive_pixels": [
+        843701,
+        118634,
+        985291
+      ]
+    },
+    {
+      "id": "[9364,55222]_patch_4_0.tif",
+      "tissue_pixels": 858369,
+      "tissue_fraction": 0.8186044692993164,
+      "channel_ranges": [
+        89,
+        229,
+        105
+      ],
+      "positive_pixels": [
+        515461,
+        112127,
+        858369
+      ]
+    },
+    {
+      "id": "[8047,49901]_patch_6_8.tif",
+      "tissue_pixels": 979234,
+      "tissue_fraction": 0.9338703155517578,
+      "channel_ranges": [
+        128,
+        230,
+        89
+      ],
+      "positive_pixels": [
+        805836,
+        139690,
+        979234
+      ]
+    },
+    {
+      "id": "[7941,48408]_patch_2_0.tif",
+      "tissue_pixels": 676715,
+      "tissue_fraction": 0.6453657150268555,
+      "channel_ranges": [
+        143,
+        229,
+        99
+      ],
+      "positive_pixels": [
+        618185,
+        123043,
+        676715
+      ]
+    },
+    {
+      "id": "[18778,52957]_patch_4_2.tif",
+      "tissue_pixels": 1008809,
+      "tissue_fraction": 0.9620752334594727,
+      "channel_ranges": [
+        139,
+        209,
+        107
+      ],
+      "positive_pixels": [
+        823682,
+        25642,
+        1008809
+      ]
+    },
+    {
+      "id": "[8047,49901]_patch_2_8.tif",
+      "tissue_pixels": 1008481,
+      "tissue_fraction": 0.9617624282836914,
+      "channel_ranges": [
+        82,
+        228,
+        93
+      ],
+      "positive_pixels": [
+        956979,
+        44967,
+        1008481
+      ]
+    },
+    {
+      "id": "[7941,48408]_patch_0_8.tif",
+      "tissue_pixels": 1032913,
+      "tissue_fraction": 0.9850625991821289,
+      "channel_ranges": [
+        184,
+        228,
+        111
+      ],
+      "positive_pixels": [
+        251482,
+        70540,
+        1032913
+      ]
+    },
+    {
+      "id": "[10962,52167]_patch_0_0.tif",
+      "tissue_pixels": 993423,
+      "tissue_fraction": 0.9474020004272461,
+      "channel_ranges": [
+        122,
+        229,
+        90
+      ],
+      "positive_pixels": [
+        898631,
+        135257,
+        993423
+      ]
+    },
+    {
+      "id": "[17039,52008]_patch_4_6.tif",
+      "tissue_pixels": 744907,
+      "tissue_fraction": 0.7103986740112305,
+      "channel_ranges": [
+        140,
+        228,
+        102
+      ],
+      "positive_pixels": [
+        201586,
+        105595,
+        744907
+      ]
+    },
+    {
+      "id": "[8187,46863]_patch_6_6.tif",
+      "tissue_pixels": 470243,
+      "tissue_fraction": 0.4484586715698242,
+      "channel_ranges": [
+        124,
+        170,
+        104
+      ],
+      "positive_pixels": [
+        32479,
+        16946,
+        470243
+      ]
+    },
+    {
+      "id": "[9364,55222]_patch_4_2.tif",
+      "tissue_pixels": 901701,
+      "tissue_fraction": 0.859929084777832,
+      "channel_ranges": [
+        98,
+        230,
+        108
+      ],
+      "positive_pixels": [
+        134376,
+        147986,
+        901701
+      ]
+    },
+    {
+      "id": "[10962,52167]_patch_6_6.tif",
+      "tissue_pixels": 898837,
+      "tissue_fraction": 0.8571977615356445,
+      "channel_ranges": [
+        181,
+        184,
+        92
+      ],
+      "positive_pixels": [
+        586622,
+        30146,
+        898837
+      ]
+    },
+    {
+      "id": "[9241,45651]_patch_4_2.tif",
+      "tissue_pixels": 829345,
+      "tissue_fraction": 0.7909250259399414,
+      "channel_ranges": [
+        179,
+        229,
+        105
+      ],
+      "positive_pixels": [
+        554879,
+        99681,
+        829345
+      ]
+    },
+    {
+      "id": "[8942,53607]_patch_2_4.tif",
+      "tissue_pixels": 870434,
+      "tissue_fraction": 0.8301105499267578,
+      "channel_ranges": [
+        180,
+        229,
+        103
+      ],
+      "positive_pixels": [
+        717908,
+        132034,
+        870434
+      ]
+    },
+    {
+      "id": "[21061,52430]_patch_4_6.tif",
+      "tissue_pixels": 970628,
+      "tissue_fraction": 0.9256629943847656,
+      "channel_ranges": [
+        178,
+        227,
+        101
+      ],
+      "positive_pixels": [
+        614827,
+        63614,
+        970628
+      ]
+    },
+    {
+      "id": "[8942,53607]_patch_2_0.tif",
+      "tissue_pixels": 618066,
+      "tissue_fraction": 0.5894336700439453,
+      "channel_ranges": [
+        181,
+        230,
+        83
+      ],
+      "positive_pixels": [
+        587366,
+        93745,
+        618066
+      ]
+    },
+    {
+      "id": "[10962,52167]_patch_2_4.tif",
+      "tissue_pixels": 1028499,
+      "tissue_fraction": 0.9808530807495117,
+      "channel_ranges": [
+        165,
+        229,
+        104
+      ],
+      "positive_pixels": [
+        488490,
+        166497,
+        1028499
+      ]
+    },
+    {
+      "id": "[21517,53870]_patch_0_0.tif",
+      "tissue_pixels": 1014160,
+      "tissue_fraction": 0.9671783447265625,
+      "channel_ranges": [
+        178,
+        228,
+        111
+      ],
+      "positive_pixels": [
+        579150,
+        139981,
+        1014160
+      ]
+    },
+    {
+      "id": "[10382,50252]_patch_6_0.tif",
+      "tissue_pixels": 620842,
+      "tissue_fraction": 0.5920810699462891,
+      "channel_ranges": [
+        146,
+        201,
+        94
+      ],
+      "positive_pixels": [
+        441303,
+        67948,
+        620842
+      ]
+    },
+    {
+      "id": "[21517,53870]_patch_6_4.tif",
+      "tissue_pixels": 947403,
+      "tissue_fraction": 0.9035139083862305,
+      "channel_ranges": [
+        131,
+        232,
+        100
+      ],
+      "positive_pixels": [
+        343857,
+        55199,
+        947403
+      ]
+    },
+    {
+      "id": "[8187,46863]_patch_0_8.tif",
+      "tissue_pixels": 883914,
+      "tissue_fraction": 0.8429660797119141,
+      "channel_ranges": [
+        159,
+        230,
+        110
+      ],
+      "positive_pixels": [
+        405484,
+        103317,
+        883914
+      ]
+    },
+    {
+      "id": "[19129,51780]_patch_0_0.tif",
+      "tissue_pixels": 1043366,
+      "tissue_fraction": 0.9950313568115234,
+      "channel_ranges": [
+        109,
+        230,
+        93
+      ],
+      "positive_pixels": [
+        803934,
+        113549,
+        1043366
+      ]
+    },
+    {
+      "id": "[7941,48408]_patch_4_2.tif",
+      "tissue_pixels": 682590,
+      "tissue_fraction": 0.6509685516357422,
+      "channel_ranges": [
+        96,
+        230,
+        107
+      ],
+      "positive_pixels": [
+        556315,
+        42007,
+        682590
+      ]
+    },
+    {
+      "id": "[10962,52167]_patch_0_6.tif",
+      "tissue_pixels": 996222,
+      "tissue_fraction": 0.9500713348388672,
+      "channel_ranges": [
+        181,
+        224,
+        108
+      ],
+      "positive_pixels": [
+        473813,
+        87053,
+        996222
+      ]
+    },
+    {
+      "id": "[17039,52008]_patch_6_6.tif",
+      "tissue_pixels": 712487,
+      "tissue_fraction": 0.6794805526733398,
+      "channel_ranges": [
+        147,
+        231,
+        107
+      ],
+      "positive_pixels": [
+        352051,
+        43330,
+        712487
+      ]
+    },
+    {
+      "id": "[16705,49971]_patch_0_6.tif",
+      "tissue_pixels": 1025954,
+      "tissue_fraction": 0.9784259796142578,
+      "channel_ranges": [
+        132,
+        228,
+        109
+      ],
+      "positive_pixels": [
+        371644,
+        72012,
+        1025954
+      ]
+    },
+    {
+      "id": "[9364,55222]_patch_6_2.tif",
+      "tissue_pixels": 885083,
+      "tissue_fraction": 0.844080924987793,
+      "channel_ranges": [
+        102,
+        229,
+        99
+      ],
+      "positive_pixels": [
+        534023,
+        65802,
+        885083
+      ]
+    },
+    {
+      "id": "[10962,52167]_patch_2_0.tif",
+      "tissue_pixels": 1044469,
+      "tissue_fraction": 0.9960832595825195,
+      "channel_ranges": [
+        150,
+        230,
+        92
+      ],
+      "positive_pixels": [
+        803688,
+        119776,
+        1044469
+      ]
+    },
+    {
+      "id": "[21061,52430]_patch_0_6.tif",
+      "tissue_pixels": 974333,
+      "tissue_fraction": 0.9291963577270508,
+      "channel_ranges": [
+        166,
+        231,
+        109
+      ],
+      "positive_pixels": [
+        574185,
+        178045,
+        974333
+      ]
+    },
+    {
+      "id": "[9241,45651]_patch_2_4.tif",
+      "tissue_pixels": 142895,
+      "tissue_fraction": 0.1362752914428711,
+      "channel_ranges": [
+        113,
+        76,
+        69
+      ],
+      "positive_pixels": [
+        140599,
+        2484,
+        142895
+      ]
+    },
+    {
+      "id": "[8942,53607]_patch_4_6.tif",
+      "tissue_pixels": 1044728,
+      "tissue_fraction": 0.9963302612304688,
+      "channel_ranges": [
+        153,
+        232,
+        98
+      ],
+      "positive_pixels": [
+        973208,
+        50212,
+        1044728
+      ]
+    },
+    {
+      "id": "[19129,51780]_patch_0_4.tif",
+      "tissue_pixels": 1028535,
+      "tissue_fraction": 0.9808874130249023,
+      "channel_ranges": [
+        97,
+        228,
+        93
+      ],
+      "positive_pixels": [
+        865941,
+        47056,
+        1028535
+      ]
+    },
+    {
+      "id": "[9820,48478]_patch_4_6.tif",
+      "tissue_pixels": 420300,
+      "tissue_fraction": 0.4008293151855469,
+      "channel_ranges": [
+        142,
+        228,
+        95
+      ],
+      "positive_pixels": [
+        279738,
+        34828,
+        420300
+      ]
+    },
+    {
+      "id": "[19129,51780]_patch_2_6.tif",
+      "tissue_pixels": 1046384,
+      "tissue_fraction": 0.9979095458984375,
+      "channel_ranges": [
+        86,
+        230,
+        105
+      ],
+      "positive_pixels": [
+        808230,
+        63886,
+        1046384
+      ]
+    },
+    {
+      "id": "[19129,51780]_patch_4_0.tif",
+      "tissue_pixels": 1046435,
+      "tissue_fraction": 0.9979581832885742,
+      "channel_ranges": [
+        70,
+        230,
+        110
+      ],
+      "positive_pixels": [
+        562799,
+        73289,
+        1046435
+      ]
+    },
+    {
+      "id": "[8187,46863]_patch_2_4.tif",
+      "tissue_pixels": 888626,
+      "tissue_fraction": 0.8474597930908203,
+      "channel_ranges": [
+        167,
+        230,
+        99
+      ],
+      "positive_pixels": [
+        340387,
+        140947,
+        888626
+      ]
+    },
+    {
+      "id": "[21061,52430]_patch_0_8.tif",
+      "tissue_pixels": 542536,
+      "tissue_fraction": 0.5174026489257812,
+      "channel_ranges": [
+        182,
+        229,
+        84
+      ],
+      "positive_pixels": [
+        448480,
+        71202,
+        542536
+      ]
+    },
+    {
+      "id": "[9241,45651]_patch_0_0.tif",
+      "tissue_pixels": 25411,
+      "tissue_fraction": 0.02423381805419922,
+      "channel_ranges": [
+        170,
+        150,
+        68
+      ],
+      "positive_pixels": [
+        24555,
+        1287,
+        25411
+      ]
+    },
+    {
+      "id": "[9364,55222]_patch_6_0.tif",
+      "tissue_pixels": 757688,
+      "tissue_fraction": 0.7225875854492188,
+      "channel_ranges": [
+        67,
+        228,
+        85
+      ],
+      "positive_pixels": [
+        608918,
+        42937,
+        757688
+      ]
+    },
+    {
+      "id": "[10382,50252]_patch_2_2.tif",
+      "tissue_pixels": 611278,
+      "tissue_fraction": 0.5829601287841797,
+      "channel_ranges": [
+        105,
+        227,
+        90
+      ],
+      "positive_pixels": [
+        583093,
+        19619,
+        611278
+      ]
+    },
+    {
+      "id": "[21061,52430]_patch_0_2.tif",
+      "tissue_pixels": 980885,
+      "tissue_fraction": 0.9354448318481445,
+      "channel_ranges": [
+        133,
+        227,
+        97
+      ],
+      "positive_pixels": [
+        736146,
+        45815,
+        980885
+      ]
+    },
+    {
+      "id": "[18778,52957]_patch_6_8.tif",
+      "tissue_pixels": 946962,
+      "tissue_fraction": 0.9030933380126953,
+      "channel_ranges": [
+        26,
+        229,
+        113
+      ],
+      "positive_pixels": [
+        15546,
+        243233,
+        946962
+      ]
+    },
+    {
+      "id": "[10382,50252]_patch_2_6.tif",
+      "tissue_pixels": 1020558,
+      "tissue_fraction": 0.9732799530029297,
+      "channel_ranges": [
+        124,
+        230,
+        105
+      ],
+      "positive_pixels": [
+        566567,
+        44507,
+        1020558
+      ]
+    },
+    {
+      "id": "[21517,53870]_patch_0_8.tif",
+      "tissue_pixels": 835170,
+      "tissue_fraction": 0.7964801788330078,
+      "channel_ranges": [
+        182,
+        230,
+        93
+      ],
+      "positive_pixels": [
+        682909,
+        80376,
+        835170
+      ]
+    },
+    {
+      "id": "[18778,52957]_patch_4_0.tif",
+      "tissue_pixels": 1029194,
+      "tissue_fraction": 0.9815158843994141,
+      "channel_ranges": [
+        151,
+        227,
+        106
+      ],
+      "positive_pixels": [
+        275328,
+        115720,
+        1029194
+      ]
+    },
+    {
+      "id": "[7941,48408]_patch_2_2.tif",
+      "tissue_pixels": 877580,
+      "tissue_fraction": 0.8369255065917969,
+      "channel_ranges": [
+        98,
+        230,
+        105
+      ],
+      "positive_pixels": [
+        491154,
+        71423,
+        877580
+      ]
+    },
+    {
+      "id": "[21517,53870]_patch_4_0.tif",
+      "tissue_pixels": 787352,
+      "tissue_fraction": 0.7508773803710938,
+      "channel_ranges": [
+        29,
+        224,
+        97
+      ],
+      "positive_pixels": [
+        43911,
+        16979,
+        787352
+      ]
+    },
+    {
+      "id": "[16705,49971]_patch_4_6.tif",
+      "tissue_pixels": 1024183,
+      "tissue_fraction": 0.9767370223999023,
+      "channel_ranges": [
+        107,
+        229,
+        107
+      ],
+      "positive_pixels": [
+        237651,
+        102383,
+        1024183
+      ]
+    },
+    {
+      "id": "[8942,53607]_patch_0_6.tif",
+      "tissue_pixels": 733547,
+      "tissue_fraction": 0.6995649337768555,
+      "channel_ranges": [
+        174,
+        231,
+        109
+      ],
+      "positive_pixels": [
+        579142,
+        90599,
+        733547
+      ]
+    },
+    {
+      "id": "[9364,55222]_patch_4_4.tif",
+      "tissue_pixels": 992779,
+      "tissue_fraction": 0.9467878341674805,
+      "channel_ranges": [
+        30,
+        230,
+        111
+      ],
+      "positive_pixels": [
+        135965,
+        411411,
+        992779
+      ]
+    },
+    {
+      "id": "[9820,48478]_patch_0_2.tif",
+      "tissue_pixels": 955602,
+      "tissue_fraction": 0.9113330841064453,
+      "channel_ranges": [
+        183,
+        230,
+        108
+      ],
+      "positive_pixels": [
+        131941,
+        192426,
+        955602
+      ]
+    },
+    {
+      "id": "[17039,52008]_patch_0_0.tif",
+      "tissue_pixels": 960022,
+      "tissue_fraction": 0.9155483245849609,
+      "channel_ranges": [
+        158,
+        227,
+        103
+      ],
+      "positive_pixels": [
+        128923,
+        119590,
+        960022
+      ]
+    },
+    {
+      "id": "[17039,52008]_patch_2_4.tif",
+      "tissue_pixels": 880756,
+      "tissue_fraction": 0.8399543762207031,
+      "channel_ranges": [
+        144,
+        229,
+        94
+      ],
+      "positive_pixels": [
+        470540,
+        29348,
+        880756
+      ]
+    },
+    {
+      "id": "[17039,52008]_patch_4_0.tif",
+      "tissue_pixels": 952973,
+      "tissue_fraction": 0.9088258743286133,
+      "channel_ranges": [
+        165,
+        228,
+        93
+      ],
+      "positive_pixels": [
+        582148,
+        78889,
+        952973
+      ]
+    },
+    {
+      "id": "[9364,55222]_patch_0_4.tif",
+      "tissue_pixels": 991031,
+      "tissue_fraction": 0.9451208114624023,
+      "channel_ranges": [
+        92,
+        228,
+        92
+      ],
+      "positive_pixels": [
+        883493,
+        69082,
+        991031
+      ]
+    },
+    {
+      "id": "[21061,52430]_patch_6_8.tif",
+      "tissue_pixels": 905814,
+      "tissue_fraction": 0.8638515472412109,
+      "channel_ranges": [
+        183,
+        230,
+        99
+      ],
+      "positive_pixels": [
+        753647,
+        68047,
+        905814
+      ]
+    },
+    {
+      "id": "[16705,49971]_patch_2_8.tif",
+      "tissue_pixels": 1036325,
+      "tissue_fraction": 0.988316535949707,
+      "channel_ranges": [
+        100,
+        229,
+        99
+      ],
+      "positive_pixels": [
+        534520,
+        120171,
+        1036325
+      ]
+    },
+    {
+      "id": "[8047,49901]_patch_4_2.tif",
+      "tissue_pixels": 137609,
+      "tissue_fraction": 0.13123416900634766,
+      "channel_ranges": [
+        184,
+        229,
+        83
+      ],
+      "positive_pixels": [
+        132889,
+        18649,
+        137609
+      ]
+    },
+    {
+      "id": "[21061,52430]_patch_0_4.tif",
+      "tissue_pixels": 993286,
+      "tissue_fraction": 0.9472713470458984,
+      "channel_ranges": [
+        152,
+        229,
+        105
+      ],
+      "positive_pixels": [
+        670076,
+        82041,
+        993286
+      ]
+    },
+    {
+      "id": "[21061,52430]_patch_6_6.tif",
+      "tissue_pixels": 934035,
+      "tissue_fraction": 0.8907651901245117,
+      "channel_ranges": [
+        123,
+        230,
+        104
+      ],
+      "positive_pixels": [
+        206677,
+        118087,
+        934035
+      ]
+    },
+    {
+      "id": "[10382,50252]_patch_6_6.tif",
+      "tissue_pixels": 1016715,
+      "tissue_fraction": 0.9696149826049805,
+      "channel_ranges": [
+        120,
+        224,
+        96
+      ],
+      "positive_pixels": [
+        714428,
+        58181,
+        1016715
+      ]
+    },
+    {
+      "id": "[8047,49901]_patch_2_6.tif",
+      "tissue_pixels": 873525,
+      "tissue_fraction": 0.8330583572387695,
+      "channel_ranges": [
+        119,
+        228,
+        89
+      ],
+      "positive_pixels": [
+        822747,
+        72482,
+        873525
+      ]
+    },
+    {
+      "id": "[10382,50252]_patch_4_4.tif",
+      "tissue_pixels": 683570,
+      "tissue_fraction": 0.6519031524658203,
+      "channel_ranges": [
+        111,
+        229,
+        103
+      ],
+      "positive_pixels": [
+        456438,
+        117355,
+        683570
+      ]
+    },
+    {
+      "id": "[17039,52008]_patch_0_6.tif",
+      "tissue_pixels": 936074,
+      "tissue_fraction": 0.8927097320556641,
+      "channel_ranges": [
+        131,
+        228,
+        103
+      ],
+      "positive_pixels": [
+        567652,
+        63032,
+        936074
+      ]
+    },
+    {
+      "id": "[21061,52430]_patch_4_4.tif",
+      "tissue_pixels": 929240,
+      "tissue_fraction": 0.8861923217773438,
+      "channel_ranges": [
+        41,
+        220,
+        112
+      ],
+      "positive_pixels": [
+        127325,
+        80735,
+        929240
+      ]
+    },
+    {
+      "id": "[7941,48408]_patch_0_0.tif",
+      "tissue_pixels": 537792,
+      "tissue_fraction": 0.51287841796875,
+      "channel_ranges": [
+        144,
+        228,
+        97
+      ],
+      "positive_pixels": [
+        452999,
+        53896,
+        537792
+      ]
+    },
+    {
+      "id": "[9820,48478]_patch_4_0.tif",
+      "tissue_pixels": 527425,
+      "tissue_fraction": 0.5029916763305664,
+      "channel_ranges": [
+        173,
+        228,
+        112
+      ],
+      "positive_pixels": [
+        335022,
+        19457,
+        527425
+      ]
+    },
+    {
+      "id": "[8187,46863]_patch_6_2.tif",
+      "tissue_pixels": 945612,
+      "tissue_fraction": 0.9018058776855469,
+      "channel_ranges": [
+        154,
+        223,
+        106
+      ],
+      "positive_pixels": [
+        242142,
+        79396,
+        945612
+      ]
+    },
+    {
+      "id": "[21517,53870]_patch_4_2.tif",
+      "tissue_pixels": 771180,
+      "tissue_fraction": 0.7354545593261719,
+      "channel_ranges": [
+        68,
+        173,
+        110
+      ],
+      "positive_pixels": [
+        49463,
+        11982,
+        771180
+      ]
+    },
+    {
+      "id": "[8047,49901]_patch_0_0.tif",
+      "tissue_pixels": 656808,
+      "tissue_fraction": 0.6263809204101562,
+      "channel_ranges": [
+        182,
+        229,
+        97
+      ],
+      "positive_pixels": [
+        640346,
+        81765,
+        656808
+      ]
+    },
+    {
+      "id": "[7941,48408]_patch_4_6.tif",
+      "tissue_pixels": 957018,
+      "tissue_fraction": 0.9126834869384766,
+      "channel_ranges": [
+        94,
+        229,
+        106
+      ],
+      "positive_pixels": [
+        86087,
+        141199,
+        957018
+      ]
+    },
+    {
+      "id": "[10382,50252]_patch_0_4.tif",
+      "tissue_pixels": 1035067,
+      "tissue_fraction": 0.987116813659668,
+      "channel_ranges": [
+        98,
+        229,
+        111
+      ],
+      "positive_pixels": [
+        809235,
+        44897,
+        1035067
+      ]
+    },
+    {
+      "id": "[8942,53607]_patch_6_2.tif",
+      "tissue_pixels": 961591,
+      "tissue_fraction": 0.9170446395874023,
+      "channel_ranges": [
+        135,
+        228,
+        94
+      ],
+      "positive_pixels": [
+        914682,
+        65314,
+        961591
+      ]
+    },
+    {
+      "id": "[21517,53870]_patch_6_6.tif",
+      "tissue_pixels": 923883,
+      "tissue_fraction": 0.8810834884643555,
+      "channel_ranges": [
+        131,
+        225,
+        109
+      ],
+      "positive_pixels": [
+        488620,
+        70947,
+        923883
+      ]
+    },
+    {
+      "id": "[9820,48478]_patch_0_0.tif",
+      "tissue_pixels": 995669,
+      "tissue_fraction": 0.9495439529418945,
+      "channel_ranges": [
+        95,
+        232,
+        108
+      ],
+      "positive_pixels": [
+        158365,
+        265780,
+        995669
+      ]
+    },
+    {
+      "id": "[21517,53870]_patch_2_0.tif",
+      "tissue_pixels": 971925,
+      "tissue_fraction": 0.9268999099731445,
+      "channel_ranges": [
+        156,
+        228,
+        110
+      ],
+      "positive_pixels": [
+        312667,
+        56866,
+        971925
+      ]
+    },
+    {
+      "id": "[21061,52430]_patch_2_2.tif",
+      "tissue_pixels": 955979,
+      "tissue_fraction": 0.9116926193237305,
+      "channel_ranges": [
+        157,
+        228,
+        106
+      ],
+      "positive_pixels": [
+        236988,
+        97770,
+        955979
+      ]
+    },
+    {
+      "id": "[9820,48478]_patch_6_6.tif",
+      "tissue_pixels": 669418,
+      "tissue_fraction": 0.6384067535400391,
+      "channel_ranges": [
+        114,
+        228,
+        95
+      ],
+      "positive_pixels": [
+        631256,
+        29431,
+        669418
+      ]
+    },
+    {
+      "id": "[21517,53870]_patch_2_2.tif",
+      "tissue_pixels": 876912,
+      "tissue_fraction": 0.8362884521484375,
+      "channel_ranges": [
+        39,
+        214,
+        103
+      ],
+      "positive_pixels": [
+        29888,
+        15419,
+        876912
+      ]
+    },
+    {
+      "id": "[16705,49971]_patch_6_6.tif",
+      "tissue_pixels": 981397,
+      "tissue_fraction": 0.9359331130981445,
+      "channel_ranges": [
+        103,
+        227,
+        93
+      ],
+      "positive_pixels": [
+        838608,
+        23187,
+        981397
+      ]
+    },
+    {
+      "id": "[19129,51780]_patch_6_6.tif",
+      "tissue_pixels": 1027588,
+      "tissue_fraction": 0.9799842834472656,
+      "channel_ranges": [
+        76,
+        220,
+        98
+      ],
+      "positive_pixels": [
+        755524,
+        42910,
+        1027588
+      ]
+    },
+    {
+      "id": "[10962,52167]_patch_0_8.tif",
+      "tissue_pixels": 974871,
+      "tissue_fraction": 0.9297094345092773,
+      "channel_ranges": [
+        185,
+        229,
+        106
+      ],
+      "positive_pixels": [
+        264719,
+        106388,
+        974871
+      ]
+    },
+    {
+      "id": "[9820,48478]_patch_2_2.tif",
+      "tissue_pixels": 976326,
+      "tissue_fraction": 0.9310970306396484,
+      "channel_ranges": [
+        183,
+        229,
+        109
+      ],
+      "positive_pixels": [
+        142196,
+        92935,
+        976326
+      ]
+    },
+    {
+      "id": "[18778,52957]_patch_0_2.tif",
+      "tissue_pixels": 1037279,
+      "tissue_fraction": 0.9892263412475586,
+      "channel_ranges": [
+        92,
+        229,
+        92
+      ],
+      "positive_pixels": [
+        946152,
+        32237,
+        1037279
+      ]
+    },
+    {
+      "id": "[9241,45651]_patch_6_8.tif",
+      "tissue_pixels": 783083,
+      "tissue_fraction": 0.7468061447143555,
+      "channel_ranges": [
+        183,
+        225,
+        111
+      ],
+      "positive_pixels": [
+        187559,
+        32351,
+        783083
+      ]
+    },
+    {
+      "id": "[18778,52957]_patch_6_0.tif",
+      "tissue_pixels": 1027579,
+      "tissue_fraction": 0.979975700378418,
+      "channel_ranges": [
+        39,
+        228,
+        101
+      ],
+      "positive_pixels": [
+        36825,
+        329285,
+        1027579
+      ]
+    },
+    {
+      "id": "[21061,52430]_patch_4_2.tif",
+      "tissue_pixels": 781137,
+      "tissue_fraction": 0.7449502944946289,
+      "channel_ranges": [
+        28,
+        183,
+        109
+      ],
+      "positive_pixels": [
+        67172,
+        20883,
+        781137
+      ]
+    },
+    {
+      "id": "[8187,46863]_patch_0_4.tif",
+      "tissue_pixels": 536232,
+      "tissue_fraction": 0.5113906860351562,
+      "channel_ranges": [
+        134,
+        229,
+        86
+      ],
+      "positive_pixels": [
+        390702,
+        61209,
+        536232
+      ]
+    },
+    {
+      "id": "[8187,46863]_patch_2_8.tif",
+      "tissue_pixels": 877940,
+      "tissue_fraction": 0.8372688293457031,
+      "channel_ranges": [
+        182,
+        230,
+        99
+      ],
+      "positive_pixels": [
+        222451,
+        62052,
+        877940
+      ]
+    },
+    {
+      "id": "[18778,52957]_patch_2_6.tif",
+      "tissue_pixels": 1012437,
+      "tissue_fraction": 0.9655351638793945,
+      "channel_ranges": [
+        104,
+        227,
+        100
+      ],
+      "positive_pixels": [
+        811411,
+        46923,
+        1012437
+      ]
+    },
+    {
+      "id": "[9364,55222]_patch_0_6.tif",
+      "tissue_pixels": 980226,
+      "tissue_fraction": 0.9348163604736328,
+      "channel_ranges": [
+        112,
+        230,
+        112
+      ],
+      "positive_pixels": [
+        445320,
+        151993,
+        980226
+      ]
+    },
+    {
+      "id": "[8187,46863]_patch_4_6.tif",
+      "tissue_pixels": 825604,
+      "tissue_fraction": 0.7873573303222656,
+      "channel_ranges": [
+        182,
+        229,
+        107
+      ],
+      "positive_pixels": [
+        172259,
+        47965,
+        825604
+      ]
+    },
+    {
+      "id": "[21061,52430]_patch_4_8.tif",
+      "tissue_pixels": 886177,
+      "tissue_fraction": 0.8451242446899414,
+      "channel_ranges": [
+        177,
+        230,
+        92
+      ],
+      "positive_pixels": [
+        784442,
+        56827,
+        886177
+      ]
+    },
+    {
+      "id": "[21517,53870]_patch_4_6.tif",
+      "tissue_pixels": 912434,
+      "tissue_fraction": 0.8701648712158203,
+      "channel_ranges": [
+        143,
+        229,
+        104
+      ],
+      "positive_pixels": [
+        505399,
+        101802,
+        912434
+      ]
+    },
+    {
+      "id": "[7941,48408]_patch_2_4.tif",
+      "tissue_pixels": 973790,
+      "tissue_fraction": 0.9286785125732422,
+      "channel_ranges": [
+        116,
+        229,
+        107
+      ],
+      "positive_pixels": [
+        550801,
+        87817,
+        973790
+      ]
+    },
+    {
+      "id": "[9364,55222]_patch_0_0.tif",
+      "tissue_pixels": 965446,
+      "tissue_fraction": 0.9207210540771484,
+      "channel_ranges": [
+        85,
+        227,
+        105
+      ],
+      "positive_pixels": [
+        672674,
+        86599,
+        965446
+      ]
+    },
+    {
+      "id": "[10382,50252]_patch_0_8.tif",
+      "tissue_pixels": 1021257,
+      "tissue_fraction": 0.9739465713500977,
+      "channel_ranges": [
+        125,
+        229,
+        104
+      ],
+      "positive_pixels": [
+        521243,
+        66459,
+        1021257
+      ]
+    },
+    {
+      "id": "[8047,49901]_patch_2_0.tif",
+      "tissue_pixels": 242281,
+      "tissue_fraction": 0.23105716705322266,
+      "channel_ranges": [
+        183,
+        200,
+        92
+      ],
+      "positive_pixels": [
+        241763,
+        20496,
+        242281
+      ]
+    },
+    {
+      "id": "[18778,52957]_patch_4_6.tif",
+      "tissue_pixels": 985743,
+      "tissue_fraction": 0.9400777816772461,
+      "channel_ranges": [
+        175,
+        227,
+        98
+      ],
+      "positive_pixels": [
+        450989,
+        99267,
+        985743
+      ]
+    },
+    {
+      "id": "[19129,51780]_patch_0_8.tif",
+      "tissue_pixels": 892762,
+      "tissue_fraction": 0.8514041900634766,
+      "channel_ranges": [
+        121,
+        230,
+        104
+      ],
+      "positive_pixels": [
+        845604,
+        36053,
+        892762
+      ]
+    },
+    {
+      "id": "[8047,49901]_patch_0_2.tif",
+      "tissue_pixels": 909863,
+      "tissue_fraction": 0.8677129745483398,
+      "channel_ranges": [
+        165,
+        218,
+        112
+      ],
+      "positive_pixels": [
+        809578,
+        37428,
+        909863
+      ]
+    },
+    {
+      "id": "[8942,53607]_patch_4_4.tif",
+      "tissue_pixels": 863604,
+      "tissue_fraction": 0.8235969543457031,
+      "channel_ranges": [
+        160,
+        230,
+        100
+      ],
+      "positive_pixels": [
+        669770,
+        84900,
+        863604
+      ]
+    },
+    {
+      "id": "[16705,49971]_patch_6_4.tif",
+      "tissue_pixels": 824153,
+      "tissue_fraction": 0.7859735488891602,
+      "channel_ranges": [
+        166,
+        227,
+        91
+      ],
+      "positive_pixels": [
+        535746,
+        45479,
+        824153
+      ]
+    },
+    {
+      "id": "[16705,49971]_patch_0_8.tif",
+      "tissue_pixels": 986871,
+      "tissue_fraction": 0.9411535263061523,
+      "channel_ranges": [
+        116,
+        229,
+        93
+      ],
+      "positive_pixels": [
+        687622,
+        46866,
+        986871
+      ]
+    },
+    {
+      "id": "[19129,51780]_patch_2_2.tif",
+      "tissue_pixels": 1046848,
+      "tissue_fraction": 0.99835205078125,
+      "channel_ranges": [
+        102,
+        228,
+        104
+      ],
+      "positive_pixels": [
+        636224,
+        64760,
+        1046848
+      ]
+    },
+    {
+      "id": "[21517,53870]_patch_2_6.tif",
+      "tissue_pixels": 730442,
+      "tissue_fraction": 0.6966037750244141,
+      "channel_ranges": [
+        137,
+        221,
+        104
+      ],
+      "positive_pixels": [
+        507879,
+        46579,
+        730442
+      ]
+    },
+    {
+      "id": "[21517,53870]_patch_4_8.tif",
+      "tissue_pixels": 889767,
+      "tissue_fraction": 0.8485479354858398,
+      "channel_ranges": [
+        179,
+        229,
+        93
+      ],
+      "positive_pixels": [
+        683683,
+        100133,
+        889767
+      ]
+    },
+    {
+      "id": "[8187,46863]_patch_4_4.tif",
+      "tissue_pixels": 796998,
+      "tissue_fraction": 0.7600765228271484,
+      "channel_ranges": [
+        181,
+        200,
+        105
+      ],
+      "positive_pixels": [
+        546908,
+        41158,
+        796998
+      ]
+    },
+    {
+      "id": "[16705,49971]_patch_2_6.tif",
+      "tissue_pixels": 1031478,
+      "tissue_fraction": 0.9836940765380859,
+      "channel_ranges": [
+        103,
+        229,
+        107
+      ],
+      "positive_pixels": [
+        725424,
+        155224,
+        1031478
+      ]
+    },
+    {
+      "id": "[10382,50252]_patch_0_6.tif",
+      "tissue_pixels": 1019185,
+      "tissue_fraction": 0.9719705581665039,
+      "channel_ranges": [
+        105,
+        228,
+        105
+      ],
+      "positive_pixels": [
+        583045,
+        70798,
+        1019185
+      ]
+    },
+    {
+      "id": "[18778,52957]_patch_6_6.tif",
+      "tissue_pixels": 985351,
+      "tissue_fraction": 0.9397039413452148,
+      "channel_ranges": [
+        159,
+        227,
+        109
+      ],
+      "positive_pixels": [
+        52846,
+        327482,
+        985351
+      ]
+    },
+    {
+      "id": "[9820,48478]_patch_6_2.tif",
+      "tissue_pixels": 941570,
+      "tissue_fraction": 0.8979511260986328,
+      "channel_ranges": [
+        112,
+        225,
+        106
+      ],
+      "positive_pixels": [
+        623407,
+        38663,
+        941570
+      ]
+    },
+    {
+      "id": "[9241,45651]_patch_6_0.tif",
+      "tissue_pixels": 526261,
+      "tissue_fraction": 0.5018815994262695,
+      "channel_ranges": [
+        163,
+        229,
+        97
+      ],
+      "positive_pixels": [
+        418800,
+        55869,
+        526261
+      ]
+    },
+    {
+      "id": "[7941,48408]_patch_6_4.tif",
+      "tissue_pixels": 922920,
+      "tissue_fraction": 0.8801651000976562,
+      "channel_ranges": [
+        137,
+        227,
+        111
+      ],
+      "positive_pixels": [
+        514858,
+        96055,
+        922920
+      ]
+    },
+    {
+      "id": "[19129,51780]_patch_6_2.tif",
+      "tissue_pixels": 1037051,
+      "tissue_fraction": 0.989008903503418,
+      "channel_ranges": [
+        72,
+        213,
+        107
+      ],
+      "positive_pixels": [
+        715028,
+        52961,
+        1037051
+      ]
+    },
+    {
+      "id": "[8187,46863]_patch_0_2.tif",
+      "tissue_pixels": 95050,
+      "tissue_fraction": 0.09064674377441406,
+      "channel_ranges": [
+        130,
+        177,
+        69
+      ],
+      "positive_pixels": [
+        86765,
+        6725,
+        95050
+      ]
+    },
+    {
+      "id": "[10382,50252]_patch_0_2.tif",
+      "tissue_pixels": 813061,
+      "tissue_fraction": 0.775395393371582,
+      "channel_ranges": [
+        84,
+        229,
+        96
+      ],
+      "positive_pixels": [
+        657705,
+        56356,
+        813061
+      ]
+    },
+    {
+      "id": "[17039,52008]_patch_0_4.tif",
+      "tissue_pixels": 604199,
+      "tissue_fraction": 0.5762090682983398,
+      "channel_ranges": [
+        168,
+        227,
+        112
+      ],
+      "positive_pixels": [
+        211970,
+        36239,
+        604199
+      ]
+    },
+    {
+      "id": "[8942,53607]_patch_4_0.tif",
+      "tissue_pixels": 1034859,
+      "tissue_fraction": 0.9869184494018555,
+      "channel_ranges": [
+        180,
+        229,
+        90
+      ],
+      "positive_pixels": [
+        998873,
+        83117,
+        1034859
+      ]
+    },
+    {
+      "id": "[10382,50252]_patch_0_0.tif",
+      "tissue_pixels": 650527,
+      "tissue_fraction": 0.6203908920288086,
+      "channel_ranges": [
+        86,
+        230,
+        96
+      ],
+      "positive_pixels": [
+        451647,
+        42186,
+        650527
+      ]
+    },
+    {
+      "id": "[10962,52167]_patch_6_4.tif",
+      "tissue_pixels": 818968,
+      "tissue_fraction": 0.7810287475585938,
+      "channel_ranges": [
+        182,
+        229,
+        105
+      ],
+      "positive_pixels": [
+        478474,
+        93333,
+        818968
+      ]
+    },
+    {
+      "id": "[8187,46863]_patch_0_6.tif",
+      "tissue_pixels": 812904,
+      "tissue_fraction": 0.7752456665039062,
+      "channel_ranges": [
+        141,
+        220,
+        88
+      ],
+      "positive_pixels": [
+        708535,
+        19444,
+        812904
+      ]
+    },
+    {
+      "id": "[16705,49971]_patch_6_0.tif",
+      "tissue_pixels": 1004576,
+      "tissue_fraction": 0.958038330078125,
+      "channel_ranges": [
+        183,
+        228,
+        85
+      ],
+      "positive_pixels": [
+        628531,
+        121832,
+        1004576
+      ]
+    },
+    {
+      "id": "[16705,49971]_patch_2_4.tif",
+      "tissue_pixels": 1031882,
+      "tissue_fraction": 0.9840793609619141,
+      "channel_ranges": [
+        181,
+        228,
+        105
+      ],
+      "positive_pixels": [
+        706104,
+        70500,
+        1031882
+      ]
+    },
+    {
+      "id": "[10962,52167]_patch_0_4.tif",
+      "tissue_pixels": 980095,
+      "tissue_fraction": 0.9346914291381836,
+      "channel_ranges": [
+        179,
+        228,
+        99
+      ],
+      "positive_pixels": [
+        605272,
+        125496,
+        980095
+      ]
+    },
+    {
+      "id": "[8187,46863]_patch_6_8.tif",
+      "tissue_pixels": 271813,
+      "tissue_fraction": 0.25922107696533203,
+      "channel_ranges": [
+        59,
+        229,
+        98
+      ],
+      "positive_pixels": [
+        45894,
+        13177,
+        271813
+      ]
+    },
+    {
+      "id": "[8942,53607]_patch_4_8.tif",
+      "tissue_pixels": 1043091,
+      "tissue_fraction": 0.9947690963745117,
+      "channel_ranges": [
+        146,
+        228,
+        90
+      ],
+      "positive_pixels": [
+        964273,
+        72508,
+        1043091
+      ]
+    },
+    {
+      "id": "[21061,52430]_patch_6_0.tif",
+      "tissue_pixels": 724742,
+      "tissue_fraction": 0.6911678314208984,
+      "channel_ranges": [
+        37,
+        227,
+        89
+      ],
+      "positive_pixels": [
+        132884,
+        17775,
+        724742
+      ]
+    },
+    {
+      "id": "[17039,52008]_patch_2_2.tif",
+      "tissue_pixels": 795550,
+      "tissue_fraction": 0.7586956024169922,
+      "channel_ranges": [
+        145,
+        221,
+        100
+      ],
+      "positive_pixels": [
+        278316,
+        43264,
+        795550
+      ]
+    },
+    {
+      "id": "[16705,49971]_patch_2_2.tif",
+      "tissue_pixels": 1029290,
+      "tissue_fraction": 0.9816074371337891,
+      "channel_ranges": [
+        168,
+        228,
+        108
+      ],
+      "positive_pixels": [
+        583372,
+        74620,
+        1029290
+      ]
+    },
+    {
+      "id": "[10962,52167]_patch_4_0.tif",
+      "tissue_pixels": 664059,
+      "tissue_fraction": 0.633296012878418,
+      "channel_ranges": [
+        161,
+        229,
+        108
+      ],
+      "positive_pixels": [
+        462490,
+        74984,
+        664059
+      ]
+    },
+    {
+      "id": "[17039,52008]_patch_4_2.tif",
+      "tissue_pixels": 725593,
+      "tissue_fraction": 0.6919794082641602,
+      "channel_ranges": [
+        121,
+        180,
+        98
+      ],
+      "positive_pixels": [
+        584187,
+        8998,
+        725593
+      ]
+    },
+    {
+      "id": "[9241,45651]_patch_2_8.tif",
+      "tissue_pixels": 849237,
+      "tissue_fraction": 0.8098955154418945,
+      "channel_ranges": [
+        183,
+        229,
+        111
+      ],
+      "positive_pixels": [
+        431196,
+        73981,
+        849237
+      ]
+    },
+    {
+      "id": "[7941,48408]_patch_4_4.tif",
+      "tissue_pixels": 999925,
+      "tissue_fraction": 0.9536027908325195,
+      "channel_ranges": [
+        114,
+        229,
+        106
+      ],
+      "positive_pixels": [
+        521614,
+        101640,
+        999925
+      ]
+    },
+    {
+      "id": "[8942,53607]_patch_2_8.tif",
+      "tissue_pixels": 1026398,
+      "tissue_fraction": 0.9788494110107422,
+      "channel_ranges": [
+        132,
+        230,
+        107
+      ],
+      "positive_pixels": [
+        913437,
+        75972,
+        1026398
+      ]
+    },
+    {
+      "id": "[19129,51780]_patch_4_2.tif",
+      "tissue_pixels": 1038375,
+      "tissue_fraction": 0.9902715682983398,
+      "channel_ranges": [
+        96,
+        229,
+        106
+      ],
+      "positive_pixels": [
+        481789,
+        75867,
+        1038375
+      ]
+    },
+    {
+      "id": "[16705,49971]_patch_2_0.tif",
+      "tissue_pixels": 1014033,
+      "tissue_fraction": 0.9670572280883789,
+      "channel_ranges": [
+        182,
+        226,
+        107
+      ],
+      "positive_pixels": [
+        354502,
+        110499,
+        1014033
+      ]
+    },
+    {
+      "id": "[8187,46863]_patch_4_0.tif",
+      "tissue_pixels": 620226,
+      "tissue_fraction": 0.5914936065673828,
+      "channel_ranges": [
+        182,
+        229,
+        97
+      ],
+      "positive_pixels": [
+        496586,
+        178780,
+        620226
+      ]
+    },
+    {
+      "id": "[21517,53870]_patch_6_0.tif",
+      "tissue_pixels": 518017,
+      "tissue_fraction": 0.4940195083618164,
+      "channel_ranges": [
+        36,
+        150,
+        86
+      ],
+      "positive_pixels": [
+        48065,
+        5038,
+        518017
+      ]
+    },
+    {
+      "id": "[21061,52430]_patch_4_0.tif",
+      "tissue_pixels": 701908,
+      "tissue_fraction": 0.6693916320800781,
+      "channel_ranges": [
+        34,
+        227,
+        112
+      ],
+      "positive_pixels": [
+        76806,
+        15569,
+        701908
+      ]
+    },
+    {
+      "id": "[9364,55222]_patch_2_6.tif",
+      "tissue_pixels": 886824,
+      "tissue_fraction": 0.8457412719726562,
+      "channel_ranges": [
+        116,
+        226,
+        104
+      ],
+      "positive_pixels": [
+        377203,
+        149622,
+        886824
+      ]
+    },
+    {
+      "id": "[21061,52430]_patch_2_0.tif",
+      "tissue_pixels": 794124,
+      "tissue_fraction": 0.7573356628417969,
+      "channel_ranges": [
+        108,
+        202,
+        102
+      ],
+      "positive_pixels": [
+        160889,
+        41122,
+        794124
+      ]
+    },
+    {
+      "id": "[10382,50252]_patch_6_8.tif",
+      "tissue_pixels": 1042232,
+      "tissue_fraction": 0.9939498901367188,
+      "channel_ranges": [
+        131,
+        231,
+        106
+      ],
+      "positive_pixels": [
+        579613,
+        34948,
+        1042232
+      ]
+    },
+    {
+      "id": "[9241,45651]_patch_6_2.tif",
+      "tissue_pixels": 911969,
+      "tissue_fraction": 0.8697214126586914,
+      "channel_ranges": [
+        143,
+        230,
+        110
+      ],
+      "positive_pixels": [
+        479412,
+        96825,
+        911969
+      ]
+    },
+    {
+      "id": "[16705,49971]_patch_4_8.tif",
+      "tissue_pixels": 1023851,
+      "tissue_fraction": 0.9764204025268555,
+      "channel_ranges": [
+        109,
+        227,
+        103
+      ],
+      "positive_pixels": [
+        355954,
+        60449,
+        1023851
+      ]
+    },
+    {
+      "id": "[10962,52167]_patch_6_2.tif",
+      "tissue_pixels": 708224,
+      "tissue_fraction": 0.6754150390625,
+      "channel_ranges": [
+        169,
+        227,
+        108
+      ],
+      "positive_pixels": [
+        534696,
+        53690,
+        708224
+      ]
+    },
+    {
+      "id": "[21517,53870]_patch_6_2.tif",
+      "tissue_pixels": 804820,
+      "tissue_fraction": 0.7675361633300781,
+      "channel_ranges": [
+        70,
+        179,
+        107
+      ],
+      "positive_pixels": [
+        51178,
+        18346,
+        804820
+      ]
+    },
+    {
+      "id": "[9820,48478]_patch_4_8.tif",
+      "tissue_pixels": 404613,
+      "tissue_fraction": 0.38586902618408203,
+      "channel_ranges": [
+        148,
+        229,
+        100
+      ],
+      "positive_pixels": [
+        349951,
+        17924,
+        404613
+      ]
+    },
+    {
+      "id": "[16705,49971]_patch_0_2.tif",
+      "tissue_pixels": 1025104,
+      "tissue_fraction": 0.9776153564453125,
+      "channel_ranges": [
+        154,
+        229,
+        99
+      ],
+      "positive_pixels": [
+        637089,
+        59870,
+        1025104
+      ]
+    },
+    {
+      "id": "[9241,45651]_patch_0_4.tif",
+      "tissue_pixels": 644620,
+      "tissue_fraction": 0.6147575378417969,
+      "channel_ranges": [
+        138,
+        228,
+        102
+      ],
+      "positive_pixels": [
+        584062,
+        36325,
+        644620
+      ]
+    },
+    {
+      "id": "[19129,51780]_patch_2_0.tif",
+      "tissue_pixels": 1047918,
+      "tissue_fraction": 0.9993724822998047,
+      "channel_ranges": [
+        87,
+        230,
+        106
+      ],
+      "positive_pixels": [
+        554995,
+        74591,
+        1047918
+      ]
+    },
+    {
+      "id": "[8187,46863]_patch_2_6.tif",
+      "tissue_pixels": 930507,
+      "tissue_fraction": 0.8874006271362305,
+      "channel_ranges": [
+        176,
+        228,
+        103
+      ],
+      "positive_pixels": [
+        528432,
+        45137,
+        930507
+      ]
+    },
+    {
+      "id": "[10962,52167]_patch_4_6.tif",
+      "tissue_pixels": 947800,
+      "tissue_fraction": 0.9038925170898438,
+      "channel_ranges": [
+        169,
+        228,
+        90
+      ],
+      "positive_pixels": [
+        869981,
+        27032,
+        947800
+      ]
+    },
+    {
+      "id": "[9820,48478]_patch_0_8.tif",
+      "tissue_pixels": 702460,
+      "tissue_fraction": 0.6699180603027344,
+      "channel_ranges": [
+        124,
+        228,
+        101
+      ],
+      "positive_pixels": [
+        373389,
+        55964,
+        702460
+      ]
+    },
+    {
+      "id": "[9364,55222]_patch_2_8.tif",
+      "tissue_pixels": 989452,
+      "tissue_fraction": 0.9436149597167969,
+      "channel_ranges": [
+        102,
+        229,
+        105
+      ],
+      "positive_pixels": [
+        479309,
+        119269,
+        989452
+      ]
+    },
+    {
+      "id": "[10382,50252]_patch_4_0.tif",
+      "tissue_pixels": 1040831,
+      "tissue_fraction": 0.9926137924194336,
+      "channel_ranges": [
+        91,
+        228,
+        108
+      ],
+      "positive_pixels": [
+        666194,
+        76088,
+        1040831
+      ]
+    },
+    {
+      "id": "[17039,52008]_patch_6_4.tif",
+      "tissue_pixels": 202667,
+      "tissue_fraction": 0.19327831268310547,
+      "channel_ranges": [
+        97,
+        229,
+        87
+      ],
+      "positive_pixels": [
+        197349,
+        3105,
+        202667
+      ]
+    },
+    {
+      "id": "[7941,48408]_patch_6_6.tif",
+      "tissue_pixels": 987551,
+      "tissue_fraction": 0.9418020248413086,
+      "channel_ranges": [
+        98,
+        230,
+        112
+      ],
+      "positive_pixels": [
+        255408,
+        172281,
+        987551
+      ]
+    },
+    {
+      "id": "[16705,49971]_patch_6_2.tif",
+      "tissue_pixels": 1015071,
+      "tissue_fraction": 0.9680471420288086,
+      "channel_ranges": [
+        182,
+        225,
+        111
+      ],
+      "positive_pixels": [
+        649615,
+        57291,
+        1015071
+      ]
+    },
+    {
+      "id": "[8047,49901]_patch_6_6.tif",
+      "tissue_pixels": 230265,
+      "tissue_fraction": 0.21959781646728516,
+      "channel_ranges": [
+        157,
+        230,
+        76
+      ],
+      "positive_pixels": [
+        225404,
+        44578,
+        230265
+      ]
+    },
+    {
+      "id": "[17039,52008]_patch_4_4.tif",
+      "tissue_pixels": 786279,
+      "tissue_fraction": 0.7498540878295898,
+      "channel_ranges": [
+        124,
+        193,
+        98
+      ],
+      "positive_pixels": [
+        735890,
+        10545,
+        786279
+      ]
+    },
+    {
+      "id": "[9820,48478]_patch_2_4.tif",
+      "tissue_pixels": 987631,
+      "tissue_fraction": 0.9418783187866211,
+      "channel_ranges": [
+        52,
+        230,
+        106
+      ],
+      "positive_pixels": [
+        114194,
+        60824,
+        987631
+      ]
+    },
+    {
+      "id": "[21061,52430]_patch_2_8.tif",
+      "tissue_pixels": 813873,
+      "tissue_fraction": 0.7761697769165039,
+      "channel_ranges": [
+        181,
+        229,
+        86
+      ],
+      "positive_pixels": [
+        662158,
+        63750,
+        813873
+      ]
+    },
+    {
+      "id": "[21061,52430]_patch_2_6.tif",
+      "tissue_pixels": 877671,
+      "tissue_fraction": 0.8370122909545898,
+      "channel_ranges": [
+        137,
+        226,
+        101
+      ],
+      "positive_pixels": [
+        584849,
+        57294,
+        877671
+      ]
+    },
+    {
+      "id": "[10962,52167]_patch_0_2.tif",
+      "tissue_pixels": 1013688,
+      "tissue_fraction": 0.9667282104492188,
+      "channel_ranges": [
+        155,
+        227,
+        103
+      ],
+      "positive_pixels": [
+        649428,
+        130048,
+        1013688
+      ]
+    },
+    {
+      "id": "[8047,49901]_patch_0_6.tif",
+      "tissue_pixels": 929648,
+      "tissue_fraction": 0.8865814208984375,
+      "channel_ranges": [
+        104,
+        232,
+        86
+      ],
+      "positive_pixels": [
+        897584,
+        60733,
+        929648
+      ]
+    },
+    {
+      "id": "[7941,48408]_patch_6_2.tif",
+      "tissue_pixels": 924220,
+      "tissue_fraction": 0.8814048767089844,
+      "channel_ranges": [
+        142,
+        230,
+        106
+      ],
+      "positive_pixels": [
+        618920,
+        81681,
+        924220
+      ]
+    },
+    {
+      "id": "[7941,48408]_patch_0_2.tif",
+      "tissue_pixels": 898275,
+      "tissue_fraction": 0.8566617965698242,
+      "channel_ranges": [
+        84,
+        229,
+        93
+      ],
+      "positive_pixels": [
+        624955,
+        42924,
+        898275
+      ]
+    },
+    {
+      "id": "[9241,45651]_patch_6_6.tif",
+      "tissue_pixels": 938279,
+      "tissue_fraction": 0.8948125839233398,
+      "channel_ranges": [
+        182,
+        229,
+        107
+      ],
+      "positive_pixels": [
+        490575,
+        89799,
+        938279
+      ]
+    },
+    {
+      "id": "[10962,52167]_patch_6_8.tif",
+      "tissue_pixels": 668972,
+      "tissue_fraction": 0.6379814147949219,
+      "channel_ranges": [
+        163,
+        228,
+        108
+      ],
+      "positive_pixels": [
+        66756,
+        27906,
+        668972
+      ]
+    },
+    {
+      "id": "[21517,53870]_patch_4_4.tif",
+      "tissue_pixels": 938122,
+      "tissue_fraction": 0.8946628570556641,
+      "channel_ranges": [
+        142,
+        229,
+        103
+      ],
+      "positive_pixels": [
+        361768,
+        54699,
+        938122
+      ]
+    },
+    {
+      "id": "[16705,49971]_patch_6_8.tif",
+      "tissue_pixels": 1036625,
+      "tissue_fraction": 0.9886026382446289,
+      "channel_ranges": [
+        92,
+        199,
+        103
+      ],
+      "positive_pixels": [
+        890310,
+        23674,
+        1036625
+      ]
+    },
+    {
+      "id": "[7941,48408]_patch_2_8.tif",
+      "tissue_pixels": 1027028,
+      "tissue_fraction": 0.9794502258300781,
+      "channel_ranges": [
+        185,
+        229,
+        102
+      ],
+      "positive_pixels": [
+        590451,
+        49100,
+        1027028
+      ]
+    },
+    {
+      "id": "[8942,53607]_patch_2_2.tif",
+      "tissue_pixels": 691324,
+      "tissue_fraction": 0.6592979431152344,
+      "channel_ranges": [
+        183,
+        227,
+        94
+      ],
+      "positive_pixels": [
+        659387,
+        70420,
+        691324
+      ]
+    },
+    {
+      "id": "[19129,51780]_patch_6_8.tif",
+      "tissue_pixels": 980132,
+      "tissue_fraction": 0.9347267150878906,
+      "channel_ranges": [
+        106,
+        229,
+        90
+      ],
+      "positive_pixels": [
+        746795,
+        53054,
+        980132
+      ]
+    },
+    {
+      "id": "[19129,51780]_patch_2_8.tif",
+      "tissue_pixels": 976488,
+      "tissue_fraction": 0.9312515258789062,
+      "channel_ranges": [
+        123,
+        228,
+        98
+      ],
+      "positive_pixels": [
+        903889,
+        32247,
+        976488
+      ]
+    },
+    {
+      "id": "[17039,52008]_patch_0_8.tif",
+      "tissue_pixels": 1025394,
+      "tissue_fraction": 0.9778919219970703,
+      "channel_ranges": [
+        105,
+        228,
+        109
+      ],
+      "positive_pixels": [
+        333194,
+        121412,
+        1025394
+      ]
+    },
+    {
+      "id": "[8047,49901]_patch_2_2.tif",
+      "tissue_pixels": 999052,
+      "tissue_fraction": 0.9527702331542969,
+      "channel_ranges": [
+        184,
+        229,
+        104
+      ],
+      "positive_pixels": [
+        811987,
+        119753,
+        999052
+      ]
+    },
+    {
+      "id": "[10962,52167]_patch_6_0.tif",
+      "tissue_pixels": 680180,
+      "tissue_fraction": 0.6486701965332031,
+      "channel_ranges": [
+        167,
+        228,
+        101
+      ],
+      "positive_pixels": [
+        322854,
+        79863,
+        680180
+      ]
+    },
+    {
+      "id": "[10962,52167]_patch_2_8.tif",
+      "tissue_pixels": 960116,
+      "tissue_fraction": 0.9156379699707031,
+      "channel_ranges": [
+        181,
+        228,
+        102
+      ],
+      "positive_pixels": [
+        612613,
+        127373,
+        960116
+      ]
+    },
+    {
+      "id": "[9364,55222]_patch_2_2.tif",
+      "tissue_pixels": 946925,
+      "tissue_fraction": 0.9030580520629883,
+      "channel_ranges": [
+        76,
+        229,
+        109
+      ],
+      "positive_pixels": [
+        160538,
+        255754,
+        946925
+      ]
+    },
+    {
+      "id": "[18778,52957]_patch_2_8.tif",
+      "tissue_pixels": 979716,
+      "tissue_fraction": 0.9343299865722656,
+      "channel_ranges": [
+        133,
+        230,
+        105
+      ],
+      "positive_pixels": [
+        721355,
+        41109,
+        979716
+      ]
+    },
+    {
+      "id": "[8047,49901]_patch_4_6.tif",
+      "tissue_pixels": 887436,
+      "tissue_fraction": 0.8463249206542969,
+      "channel_ranges": [
+        143,
+        230,
+        91
+      ],
+      "positive_pixels": [
+        816568,
+        121527,
+        887436
+      ]
+    },
+    {
+      "id": "[9364,55222]_patch_6_8.tif",
+      "tissue_pixels": 893851,
+      "tissue_fraction": 0.852442741394043,
+      "channel_ranges": [
+        38,
+        230,
+        110
+      ],
+      "positive_pixels": [
+        65430,
+        215208,
+        893851
+      ]
+    },
+    {
+      "id": "[10962,52167]_patch_4_8.tif",
+      "tissue_pixels": 804546,
+      "tissue_fraction": 0.7672748565673828,
+      "channel_ranges": [
+        159,
+        228,
+        109
+      ],
+      "positive_pixels": [
+        324509,
+        105508,
+        804546
+      ]
+    },
+    {
+      "id": "[9241,45651]_patch_2_6.tif",
+      "tissue_pixels": 785285,
+      "tissue_fraction": 0.748906135559082,
+      "channel_ranges": [
+        122,
+        228,
+        103
+      ],
+      "positive_pixels": [
+        471407,
+        72371,
+        785285
+      ]
+    },
+    {
+      "id": "[10962,52167]_patch_4_4.tif",
+      "tissue_pixels": 862129,
+      "tissue_fraction": 0.8221902847290039,
+      "channel_ranges": [
+        181,
+        228,
+        99
+      ],
+      "positive_pixels": [
+        437643,
+        79350,
+        862129
+      ]
+    },
+    {
+      "id": "[9241,45651]_patch_4_8.tif",
+      "tissue_pixels": 847246,
+      "tissue_fraction": 0.8079967498779297,
+      "channel_ranges": [
+        177,
+        229,
+        113
+      ],
+      "positive_pixels": [
+        424036,
+        48877,
+        847246
+      ]
+    },
+    {
+      "id": "[17039,52008]_patch_2_8.tif",
+      "tissue_pixels": 968961,
+      "tissue_fraction": 0.9240732192993164,
+      "channel_ranges": [
+        119,
+        228,
+        112
+      ],
+      "positive_pixels": [
+        291328,
+        89601,
+        968961
+      ]
+    },
+    {
+      "id": "[8047,49901]_patch_0_8.tif",
+      "tissue_pixels": 1020723,
+      "tissue_fraction": 0.9734373092651367,
+      "channel_ranges": [
+        89,
+        230,
+        102
+      ],
+      "positive_pixels": [
+        980507,
+        53676,
+        1020723
+      ]
+    },
+    {
+      "id": "[9820,48478]_patch_2_8.tif",
+      "tissue_pixels": 349249,
+      "tissue_fraction": 0.3330698013305664,
+      "channel_ranges": [
+        113,
+        222,
+        91
+      ],
+      "positive_pixels": [
+        287182,
+        28924,
+        349249
+      ]
+    },
+    {
+      "id": "[21517,53870]_patch_2_4.tif",
+      "tissue_pixels": 957613,
+      "tissue_fraction": 0.9132509231567383,
+      "channel_ranges": [
+        165,
+        227,
+        109
+      ],
+      "positive_pixels": [
+        315733,
+        75213,
+        957613
+      ]
+    },
+    {
+      "id": "[10962,52167]_patch_4_2.tif",
+      "tissue_pixels": 902053,
+      "tissue_fraction": 0.860264778137207,
+      "channel_ranges": [
+        181,
+        229,
+        102
+      ],
+      "positive_pixels": [
+        279047,
+        138224,
+        902053
+      ]
+    },
+    {
+      "id": "[8187,46863]_patch_6_0.tif",
+      "tissue_pixels": 865356,
+      "tissue_fraction": 0.8252677917480469,
+      "channel_ranges": [
+        160,
+        230,
+        98
+      ],
+      "positive_pixels": [
+        438171,
+        160907,
+        865356
+      ]
+    },
+    {
+      "id": "[18778,52957]_patch_4_4.tif",
+      "tissue_pixels": 1015831,
+      "tissue_fraction": 0.9687719345092773,
+      "channel_ranges": [
+        175,
+        207,
+        99
+      ],
+      "positive_pixels": [
+        446417,
+        87160,
+        1015831
+      ]
+    },
+    {
+      "id": "[17039,52008]_patch_6_8.tif",
+      "tissue_pixels": 1025486,
+      "tissue_fraction": 0.9779796600341797,
+      "channel_ranges": [
+        136,
+        228,
+        111
+      ],
+      "positive_pixels": [
+        339683,
+        96845,
+        1025486
+      ]
+    },
+    {
+      "id": "[19129,51780]_patch_0_6.tif",
+      "tissue_pixels": 953434,
+      "tissue_fraction": 0.9092655181884766,
+      "channel_ranges": [
+        113,
+        230,
+        95
+      ],
+      "positive_pixels": [
+        832628,
+        26160,
+        953434
+      ]
+    },
+    {
+      "id": "[10382,50252]_patch_4_2.tif",
+      "tissue_pixels": 715639,
+      "tissue_fraction": 0.6824865341186523,
+      "channel_ranges": [
+        98,
+        230,
+        102
+      ],
+      "positive_pixels": [
+        595421,
+        52359,
+        715639
+      ]
+    },
+    {
+      "id": "[21061,52430]_patch_6_4.tif",
+      "tissue_pixels": 675460,
+      "tissue_fraction": 0.6441688537597656,
+      "channel_ranges": [
+        25,
+        199,
+        100
+      ],
+      "positive_pixels": [
+        65297,
+        28116,
+        675460
+      ]
+    },
+    {
+      "id": "[8187,46863]_patch_4_2.tif",
+      "tissue_pixels": 801307,
+      "tissue_fraction": 0.764185905456543,
+      "channel_ranges": [
+        155,
+        230,
+        104
+      ],
+      "positive_pixels": [
+        629116,
+        34909,
+        801307
+      ]
+    },
+    {
+      "id": "[8187,46863]_patch_2_0.tif",
+      "tissue_pixels": 57761,
+      "tissue_fraction": 0.055085182189941406,
+      "channel_ranges": [
+        130,
+        174,
+        93
+      ],
+      "positive_pixels": [
+        55277,
+        6056,
+        57761
+      ]
+    },
+    {
+      "id": "[17039,52008]_patch_4_8.tif",
+      "tissue_pixels": 995943,
+      "tissue_fraction": 0.9498052597045898,
+      "channel_ranges": [
+        160,
+        231,
+        104
+      ],
+      "positive_pixels": [
+        272015,
+        95960,
+        995943
+      ]
+    },
+    {
+      "id": "[7941,48408]_patch_2_6.tif",
+      "tissue_pixels": 929631,
+      "tissue_fraction": 0.8865652084350586,
+      "channel_ranges": [
+        117,
+        230,
+        110
+      ],
+      "positive_pixels": [
+        56507,
+        74666,
+        929631
+      ]
+    },
+    {
+      "id": "[21517,53870]_patch_6_8.tif",
+      "tissue_pixels": 945017,
+      "tissue_fraction": 0.9012384414672852,
+      "channel_ranges": [
+        137,
+        230,
+        102
+      ],
+      "positive_pixels": [
+        494779,
+        103348,
+        945017
+      ]
+    },
+    {
+      "id": "[7941,48408]_patch_6_0.tif",
+      "tissue_pixels": 769313,
+      "tissue_fraction": 0.7336740493774414,
+      "channel_ranges": [
+        141,
+        229,
+        106
+      ],
+      "positive_pixels": [
+        665222,
+        72081,
+        769313
+      ]
+    },
+    {
+      "id": "[9820,48478]_patch_2_0.tif",
+      "tissue_pixels": 380038,
+      "tissue_fraction": 0.36243247985839844,
+      "channel_ranges": [
+        32,
+        229,
+        105
+      ],
+      "positive_pixels": [
+        82115,
+        55953,
+        380038
+      ]
+    },
+    {
+      "id": "[19129,51780]_patch_6_0.tif",
+      "tissue_pixels": 1045625,
+      "tissue_fraction": 0.9971857070922852,
+      "channel_ranges": [
+        69,
+        228,
+        91
+      ],
+      "positive_pixels": [
+        823788,
+        35408,
+        1045625
+      ]
+    },
+    {
+      "id": "[21517,53870]_patch_0_6.tif",
+      "tissue_pixels": 959084,
+      "tissue_fraction": 0.9146537780761719,
+      "channel_ranges": [
+        155,
+        231,
+        108
+      ],
+      "positive_pixels": [
+        685125,
+        45096,
+        959084
+      ]
+    },
+    {
+      "id": "[9364,55222]_patch_0_2.tif",
+      "tissue_pixels": 1042690,
+      "tissue_fraction": 0.9943866729736328,
+      "channel_ranges": [
+        100,
+        229,
+        91
+      ],
+      "positive_pixels": [
+        1005960,
+        36771,
+        1042690
+      ]
+    },
+    {
+      "id": "[8187,46863]_patch_4_8.tif",
+      "tissue_pixels": 366178,
+      "tissue_fraction": 0.3492145538330078,
+      "channel_ranges": [
+        37,
+        213,
+        107
+      ],
+      "positive_pixels": [
+        36936,
+        9665,
+        366178
+      ]
+    },
+    {
+      "id": "[16705,49971]_patch_4_0.tif",
+      "tissue_pixels": 1017079,
+      "tissue_fraction": 0.9699621200561523,
+      "channel_ranges": [
+        159,
+        229,
+        98
+      ],
+      "positive_pixels": [
+        204007,
+        269157,
+        1017079
+      ]
+    },
+    {
+      "id": "[10382,50252]_patch_2_4.tif",
+      "tissue_pixels": 1030950,
+      "tissue_fraction": 0.9831905364990234,
+      "channel_ranges": [
+        87,
+        226,
+        100
+      ],
+      "positive_pixels": [
+        834848,
+        62504,
+        1030950
+      ]
+    },
+    {
+      "id": "[8942,53607]_patch_6_6.tif",
+      "tissue_pixels": 1043507,
+      "tissue_fraction": 0.9951658248901367,
+      "channel_ranges": [
+        117,
+        224,
+        94
+      ],
+      "positive_pixels": [
+        944223,
+        48361,
+        1043507
+      ]
+    },
+    {
+      "id": "[18778,52957]_patch_4_8.tif",
+      "tissue_pixels": 1000912,
+      "tissue_fraction": 0.9545440673828125,
+      "channel_ranges": [
+        183,
+        226,
+        105
+      ],
+      "positive_pixels": [
+        336566,
+        78826,
+        1000912
+      ]
+    },
+    {
+      "id": "[8047,49901]_patch_4_4.tif",
+      "tissue_pixels": 355440,
+      "tissue_fraction": 0.3389739990234375,
+      "channel_ranges": [
+        184,
+        230,
+        85
+      ],
+      "positive_pixels": [
+        329123,
+        112172,
+        355440
+      ]
+    },
+    {
+      "id": "[8047,49901]_patch_0_4.tif",
+      "tissue_pixels": 1025939,
+      "tissue_fraction": 0.9784116744995117,
+      "channel_ranges": [
+        181,
+        228,
+        104
+      ],
+      "positive_pixels": [
+        785992,
+        131249,
+        1025939
+      ]
+    },
+    {
+      "id": "[10382,50252]_patch_4_6.tif",
+      "tissue_pixels": 943368,
+      "tissue_fraction": 0.8996658325195312,
+      "channel_ranges": [
+        127,
+        227,
+        101
+      ],
+      "positive_pixels": [
+        650691,
+        53005,
+        943368
+      ]
+    },
+    {
+      "id": "[9820,48478]_patch_6_0.tif",
+      "tissue_pixels": 976548,
+      "tissue_fraction": 0.9313087463378906,
+      "channel_ranges": [
+        96,
+        228,
+        102
+      ],
+      "positive_pixels": [
+        697748,
+        32346,
+        976548
+      ]
+    },
+    {
+      "id": "[19129,51780]_patch_2_4.tif",
+      "tissue_pixels": 1039263,
+      "tissue_fraction": 0.9911184310913086,
+      "channel_ranges": [
+        86,
+        226,
+        100
+      ],
+      "positive_pixels": [
+        861921,
+        29743,
+        1039263
+      ]
+    },
+    {
+      "id": "[7941,48408]_patch_6_8.tif",
+      "tissue_pixels": 992117,
+      "tissue_fraction": 0.9461565017700195,
+      "channel_ranges": [
+        101,
+        229,
+        104
+      ],
+      "positive_pixels": [
+        888945,
+        63291,
+        992117
+      ]
+    },
+    {
+      "id": "[10962,52167]_patch_2_6.tif",
+      "tissue_pixels": 1013421,
+      "tissue_fraction": 0.9664735794067383,
+      "channel_ranges": [
+        155,
+        215,
+        101
+      ],
+      "positive_pixels": [
+        524241,
+        76824,
+        1013421
+      ]
+    },
+    {
+      "id": "[9820,48478]_patch_0_6.tif",
+      "tissue_pixels": 933067,
+      "tissue_fraction": 0.8898420333862305,
+      "channel_ranges": [
+        177,
+        228,
+        105
+      ],
+      "positive_pixels": [
+        283450,
+        62338,
+        933067
+      ]
+    },
+    {
+      "id": "[9820,48478]_patch_6_8.tif",
+      "tissue_pixels": 764908,
+      "tissue_fraction": 0.7294731140136719,
+      "channel_ranges": [
+        98,
+        207,
+        92
+      ],
+      "positive_pixels": [
+        562153,
+        23443,
+        764908
+      ]
+    },
+    {
+      "id": "[8047,49901]_patch_2_4.tif",
+      "tissue_pixels": 1027409,
+      "tissue_fraction": 0.9798135757446289,
+      "channel_ranges": [
+        180,
+        231,
+        107
+      ],
+      "positive_pixels": [
+        944105,
+        167852,
+        1027409
+      ]
+    },
+    {
+      "id": "[7941,48408]_patch_0_6.tif",
+      "tissue_pixels": 811099,
+      "tissue_fraction": 0.773524284362793,
+      "channel_ranges": [
+        27,
+        229,
+        106
+      ],
+      "positive_pixels": [
+        26664,
+        61754,
+        811099
+      ]
+    },
+    {
+      "id": "[8942,53607]_patch_6_8.tif",
+      "tissue_pixels": 1031928,
+      "tissue_fraction": 0.9841232299804688,
+      "channel_ranges": [
+        127,
+        230,
+        100
+      ],
+      "positive_pixels": [
+        970708,
+        88707,
+        1031928
+      ]
+    },
+    {
+      "id": "[18778,52957]_patch_0_0.tif",
+      "tissue_pixels": 1044388,
+      "tissue_fraction": 0.9960060119628906,
+      "channel_ranges": [
+        81,
+        214,
+        99
+      ],
+      "positive_pixels": [
+        794172,
+        41497,
+        1044388
+      ]
+    },
+    {
+      "id": "[8187,46863]_patch_6_4.tif",
+      "tissue_pixels": 905959,
+      "tissue_fraction": 0.8639898300170898,
+      "channel_ranges": [
+        184,
+        228,
+        110
+      ],
+      "positive_pixels": [
+        234715,
+        53524,
+        905959
+      ]
+    },
+    {
+      "id": "[17039,52008]_patch_6_2.tif",
+      "tissue_pixels": 971413,
+      "tissue_fraction": 0.9264116287231445,
+      "channel_ranges": [
+        158,
+        219,
+        98
+      ],
+      "positive_pixels": [
+        923935,
+        16196,
+        971413
+      ]
+    },
+    {
+      "id": "[9820,48478]_patch_2_6.tif",
+      "tissue_pixels": 432285,
+      "tissue_fraction": 0.4122591018676758,
+      "channel_ranges": [
+        149,
+        228,
+        99
+      ],
+      "positive_pixels": [
+        363545,
+        41423,
+        432285
+      ]
+    },
+    {
+      "id": "[18778,52957]_patch_0_4.tif",
+      "tissue_pixels": 1006439,
+      "tissue_fraction": 0.9598150253295898,
+      "channel_ranges": [
+        80,
+        215,
+        98
+      ],
+      "positive_pixels": [
+        870452,
+        25172,
+        1006439
+      ]
+    },
+    {
+      "id": "[9241,45651]_patch_4_4.tif",
+      "tissue_pixels": 628199,
+      "tissue_fraction": 0.5990972518920898,
+      "channel_ranges": [
+        142,
+        228,
+        104
+      ],
+      "positive_pixels": [
+        493094,
+        69110,
+        628199
+      ]
+    },
+    {
+      "id": "[9364,55222]_patch_0_8.tif",
+      "tissue_pixels": 1022677,
+      "tissue_fraction": 0.9753007888793945,
+      "channel_ranges": [
+        92,
+        230,
+        112
+      ],
+      "positive_pixels": [
+        774593,
+        64961,
+        1022677
+      ]
+    },
+    {
+      "id": "[18778,52957]_patch_2_0.tif",
+      "tissue_pixels": 1039946,
+      "tissue_fraction": 0.9917697906494141,
+      "channel_ranges": [
+        119,
+        227,
+        100
+      ],
+      "positive_pixels": [
+        814270,
+        31816,
+        1039946
+      ]
+    },
+    {
+      "id": "[19129,51780]_patch_4_6.tif",
+      "tissue_pixels": 1020287,
+      "tissue_fraction": 0.9730215072631836,
+      "channel_ranges": [
+        74,
+        229,
+        111
+      ],
+      "positive_pixels": [
+        782547,
+        58998,
+        1020287
+      ]
+    },
+    {
+      "id": "[21061,52430]_patch_2_4.tif",
+      "tissue_pixels": 944460,
+      "tissue_fraction": 0.9007072448730469,
+      "channel_ranges": [
+        151,
+        228,
+        99
+      ],
+      "positive_pixels": [
+        673436,
+        55074,
+        944460
+      ]
+    },
+    {
+      "id": "[9364,55222]_patch_2_4.tif",
+      "tissue_pixels": 991563,
+      "tissue_fraction": 0.9456281661987305,
+      "channel_ranges": [
+        114,
+        230,
+        99
+      ],
+      "positive_pixels": [
+        535041,
+        190690,
+        991563
+      ]
+    },
+    {
+      "id": "[19129,51780]_patch_4_8.tif",
+      "tissue_pixels": 1046508,
+      "tissue_fraction": 0.9980278015136719,
+      "channel_ranges": [
+        111,
+        230,
+        79
+      ],
+      "positive_pixels": [
+        1004317,
+        22913,
+        1046508
+      ]
+    },
+    {
+      "id": "[21517,53870]_patch_0_2.tif",
+      "tissue_pixels": 961040,
+      "tissue_fraction": 0.9165191650390625,
+      "channel_ranges": [
+        175,
+        227,
+        108
+      ],
+      "positive_pixels": [
+        102626,
+        111786,
+        961040
+      ]
+    },
+    {
+      "id": "[10962,52167]_patch_2_2.tif",
+      "tissue_pixels": 1022176,
+      "tissue_fraction": 0.974822998046875,
+      "channel_ranges": [
+        160,
+        229,
+        98
+      ],
+      "positive_pixels": [
+        898146,
+        57828,
+        1022176
+      ]
+    },
+    {
+      "id": "[7941,48408]_patch_0_4.tif",
+      "tissue_pixels": 996500,
+      "tissue_fraction": 0.9503364562988281,
+      "channel_ranges": [
+        149,
+        229,
+        109
+      ],
+      "positive_pixels": [
+        394074,
+        79288,
+        996500
+      ]
+    },
+    {
+      "id": "[18778,52957]_patch_0_6.tif",
+      "tissue_pixels": 1012601,
+      "tissue_fraction": 0.9656915664672852,
+      "channel_ranges": [
+        95,
+        200,
+        102
+      ],
+      "positive_pixels": [
+        727831,
+        61013,
+        1012601
+      ]
+    },
+    {
+      "id": "[8187,46863]_patch_2_2.tif",
+      "tissue_pixels": 662130,
+      "tissue_fraction": 0.6314563751220703,
+      "channel_ranges": [
+        141,
+        228,
+        96
+      ],
+      "positive_pixels": [
+        555479,
+        79616,
+        662130
+      ]
+    },
+    {
+      "id": "[9241,45651]_patch_6_4.tif",
+      "tissue_pixels": 927076,
+      "tissue_fraction": 0.8841285705566406,
+      "channel_ranges": [
+        137,
+        228,
+        111
+      ],
+      "positive_pixels": [
+        493028,
+        80683,
+        927076
+      ]
+    },
+    {
+      "id": "[21517,53870]_patch_2_8.tif",
+      "tissue_pixels": 746207,
+      "tissue_fraction": 0.7116384506225586,
+      "channel_ranges": [
+        164,
+        230,
+        99
+      ],
+      "positive_pixels": [
+        605731,
+        92420,
+        746207
+      ]
+    },
+    {
+      "id": "[17039,52008]_patch_0_2.tif",
+      "tissue_pixels": 525507,
+      "tissue_fraction": 0.5011625289916992,
+      "channel_ranges": [
+        183,
+        217,
+        99
+      ],
+      "positive_pixels": [
+        117153,
+        47223,
+        525507
+      ]
+    },
+    {
+      "id": "[18778,52957]_patch_2_2.tif",
+      "tissue_pixels": 1041445,
+      "tissue_fraction": 0.993199348449707,
+      "channel_ranges": [
+        97,
+        218,
+        95
+      ],
+      "positive_pixels": [
+        863732,
+        32088,
+        1041445
+      ]
+    },
+    {
+      "id": "[9364,55222]_patch_2_0.tif",
+      "tissue_pixels": 870868,
+      "tissue_fraction": 0.8305244445800781,
+      "channel_ranges": [
+        67,
+        230,
+        97
+      ],
+      "positive_pixels": [
+        117676,
+        131162,
+        870868
+      ]
+    },
+    {
+      "id": "[16705,49971]_patch_0_0.tif",
+      "tissue_pixels": 986389,
+      "tissue_fraction": 0.9406938552856445,
+      "channel_ranges": [
+        156,
+        228,
+        96
+      ],
+      "positive_pixels": [
+        314845,
+        63577,
+        986389
+      ]
+    },
+    {
+      "id": "[9364,55222]_patch_6_6.tif",
+      "tissue_pixels": 964698,
+      "tissue_fraction": 0.9200077056884766,
+      "channel_ranges": [
+        136,
+        230,
+        106
+      ],
+      "positive_pixels": [
+        107055,
+        212861,
+        964698
+      ]
+    },
+    {
+      "id": "[21061,52430]_patch_0_0.tif",
+      "tissue_pixels": 971367,
+      "tissue_fraction": 0.9263677597045898,
+      "channel_ranges": [
+        133,
+        228,
+        110
+      ],
+      "positive_pixels": [
+        586652,
+        48829,
+        971367
+      ]
+    },
+    {
+      "id": "[9820,48478]_patch_4_4.tif",
+      "tissue_pixels": 995672,
+      "tissue_fraction": 0.9495468139648438,
+      "channel_ranges": [
+        111,
+        231,
+        106
+      ],
+      "positive_pixels": [
+        162598,
+        79382,
+        995672
+      ]
+    },
+    {
+      "id": "[19129,51780]_patch_4_4.tif",
+      "tissue_pixels": 1037048,
+      "tissue_fraction": 0.9890060424804688,
+      "channel_ranges": [
+        89,
+        230,
+        107
+      ],
+      "positive_pixels": [
+        798025,
+        49619,
+        1037048
+      ]
+    },
+    {
+      "id": "[16705,49971]_patch_4_2.tif",
+      "tissue_pixels": 1029471,
+      "tissue_fraction": 0.9817800521850586,
+      "channel_ranges": [
+        162,
+        229,
+        103
+      ],
+      "positive_pixels": [
+        215015,
+        94150,
+        1029471
+      ]
+    },
+    {
+      "id": "[9364,55222]_patch_4_8.tif",
+      "tissue_pixels": 1015824,
+      "tissue_fraction": 0.9687652587890625,
+      "channel_ranges": [
+        121,
+        228,
+        99
+      ],
+      "positive_pixels": [
+        706582,
+        97495,
+        1015824
+      ]
+    },
+    {
+      "id": "[9241,45651]_patch_0_2.tif",
+      "tissue_pixels": 611115,
+      "tissue_fraction": 0.5828046798706055,
+      "channel_ranges": [
+        177,
+        228,
+        87
+      ],
+      "positive_pixels": [
+        500379,
+        48197,
+        611115
+      ]
+    },
+    {
+      "id": "[18778,52957]_patch_6_4.tif",
+      "tissue_pixels": 1017476,
+      "tissue_fraction": 0.9703407287597656,
+      "channel_ranges": [
+        183,
+        229,
+        109
+      ],
+      "positive_pixels": [
+        65167,
+        307345,
+        1017476
+      ]
+    },
+    {
+      "id": "[9364,55222]_patch_6_4.tif",
+      "tissue_pixels": 948346,
+      "tissue_fraction": 0.9044132232666016,
+      "channel_ranges": [
+        79,
+        229,
+        109
+      ],
+      "positive_pixels": [
+        144645,
+        97031,
+        948346
+      ]
+    },
+    {
+      "id": "[16705,49971]_patch_0_4.tif",
+      "tissue_pixels": 1028399,
+      "tissue_fraction": 0.9807577133178711,
+      "channel_ranges": [
+        156,
+        228,
+        99
+      ],
+      "positive_pixels": [
+        603785,
+        94573,
+        1028399
+      ]
+    },
+    {
+      "id": "[9241,45651]_patch_0_6.tif",
+      "tissue_pixels": 864855,
+      "tissue_fraction": 0.8247900009155273,
+      "channel_ranges": [
+        143,
+        228,
+        111
+      ],
+      "positive_pixels": [
+        438075,
+        88615,
+        864855
+      ]
+    },
+    {
+      "id": "[17039,52008]_patch_2_6.tif",
+      "tissue_pixels": 1016521,
+      "tissue_fraction": 0.9694299697875977,
+      "channel_ranges": [
+        153,
+        229,
+        110
+      ],
+      "positive_pixels": [
+        261953,
+        121917,
+        1016521
+      ]
+    },
+    {
+      "id": "[9364,55222]_patch_4_6.tif",
+      "tissue_pixels": 995307,
+      "tissue_fraction": 0.9491987228393555,
+      "channel_ranges": [
+        146,
+        229,
+        108
+      ],
+      "positive_pixels": [
+        218396,
+        301608,
+        995307
+      ]
+    },
+    {
+      "id": "[17039,52008]_patch_6_0.tif",
+      "tissue_pixels": 961973,
+      "tissue_fraction": 0.9174089431762695,
+      "channel_ranges": [
+        182,
+        228,
+        94
+      ],
+      "positive_pixels": [
+        401434,
+        74901,
+        961973
+      ]
+    },
+    {
+      "id": "[9820,48478]_patch_6_4.tif",
+      "tissue_pixels": 955976,
+      "tissue_fraction": 0.9116897583007812,
+      "channel_ranges": [
+        97,
+        230,
+        96
+      ],
+      "positive_pixels": [
+        776196,
+        83186,
+        955976
+      ]
+    },
+    {
+      "id": "[9820,48478]_patch_4_2.tif",
+      "tissue_pixels": 1005853,
+      "tissue_fraction": 0.9592561721801758,
+      "channel_ranges": [
+        182,
+        230,
+        108
+      ],
+      "positive_pixels": [
+        293934,
+        86888,
+        1005853
+      ]
+    },
+    {
+      "id": "[9241,45651]_patch_0_8.tif",
+      "tissue_pixels": 727313,
+      "tissue_fraction": 0.6936197280883789,
+      "channel_ranges": [
+        172,
+        230,
+        107
+      ],
+      "positive_pixels": [
+        260189,
+        59687,
+        727313
+      ]
+    },
+    {
+      "id": "[21517,53870]_patch_0_4.tif",
+      "tissue_pixels": 993793,
+      "tissue_fraction": 0.9477548599243164,
+      "channel_ranges": [
+        159,
+        219,
+        109
+      ],
+      "positive_pixels": [
+        492966,
+        63575,
+        993793
+      ]
+    },
+    {
+      "id": "[10382,50252]_patch_2_0.tif",
+      "tissue_pixels": 859387,
+      "tissue_fraction": 0.819575309753418,
+      "channel_ranges": [
+        101,
+        229,
+        105
+      ],
+      "positive_pixels": [
+        508155,
+        59099,
+        859387
+      ]
+    },
+    {
+      "id": "[10382,50252]_patch_4_8.tif",
+      "tissue_pixels": 1028262,
+      "tissue_fraction": 0.9806270599365234,
+      "channel_ranges": [
+        149,
+        224,
+        108
+      ],
+      "positive_pixels": [
+        57011,
+        41944,
+        1028262
+      ]
+    },
+    {
+      "id": "[19129,51780]_patch_6_4.tif",
+      "tissue_pixels": 1029870,
+      "tissue_fraction": 0.9821605682373047,
+      "channel_ranges": [
+        82,
+        229,
+        110
+      ],
+      "positive_pixels": [
+        698588,
+        81600,
+        1029870
+      ]
+    },
+    {
+      "id": "[17039,52008]_patch_2_0.tif",
+      "tissue_pixels": 584016,
+      "tissue_fraction": 0.5569610595703125,
+      "channel_ranges": [
+        164,
+        231,
+        88
+      ],
+      "positive_pixels": [
+        310388,
+        43574,
+        584016
+      ]
+    },
+    {
+      "id": "[8047,49901]_patch_4_8.tif",
+      "tissue_pixels": 1036113,
+      "tissue_fraction": 0.9881143569946289,
+      "channel_ranges": [
+        102,
+        229,
+        94
+      ],
+      "positive_pixels": [
+        956033,
+        101336,
+        1036113
+      ]
+    },
+    {
+      "id": "[10382,50252]_patch_2_8.tif",
+      "tissue_pixels": 1031220,
+      "tissue_fraction": 0.9834480285644531,
+      "channel_ranges": [
+        118,
+        228,
+        106
+      ],
+      "positive_pixels": [
+        326032,
+        68539,
+        1031220
+      ]
+    },
+    {
+      "id": "[18778,52957]_patch_6_2.tif",
+      "tissue_pixels": 1007392,
+      "tissue_fraction": 0.960723876953125,
+      "channel_ranges": [
+        136,
+        233,
+        109
+      ],
+      "positive_pixels": [
+        73748,
+        286068,
+        1007392
+      ]
+    },
+    {
+      "id": "[9241,45651]_patch_4_6.tif",
+      "tissue_pixels": 773170,
+      "tissue_fraction": 0.7373523712158203,
+      "channel_ranges": [
+        111,
+        230,
+        99
+      ],
+      "positive_pixels": [
+        457734,
+        88696,
+        773170
+      ]
+    },
+    {
+      "id": "[9241,45651]_patch_4_0.tif",
+      "tissue_pixels": 232212,
+      "tissue_fraction": 0.22145462036132812,
+      "channel_ranges": [
+        182,
+        227,
+        75
+      ],
+      "positive_pixels": [
+        223112,
+        20280,
+        232212
+      ]
+    },
+    {
+      "id": "[8942,53607]_patch_0_8.tif",
+      "tissue_pixels": 1034517,
+      "tissue_fraction": 0.9865922927856445,
+      "channel_ranges": [
+        108,
+        230,
+        97
+      ],
+      "positive_pixels": [
+        981127,
+        48452,
+        1034517
+      ]
+    },
+    {
+      "id": "[7941,48408]_patch_4_0.tif",
+      "tissue_pixels": 822857,
+      "tissue_fraction": 0.7847375869750977,
+      "channel_ranges": [
+        134,
+        231,
+        95
+      ],
+      "positive_pixels": [
+        712138,
+        120495,
+        822857
+      ]
+    },
+    {
+      "id": "[10382,50252]_patch_6_4.tif",
+      "tissue_pixels": 254726,
+      "tissue_fraction": 0.24292564392089844,
+      "channel_ranges": [
+        112,
+        143,
+        90
+      ],
+      "positive_pixels": [
+        250778,
+        8423,
+        254726
+      ]
+    },
+    {
+      "id": "[9820,48478]_patch_0_4.tif",
+      "tissue_pixels": 919856,
+      "tissue_fraction": 0.8772430419921875,
+      "channel_ranges": [
+        183,
+        231,
+        107
+      ],
+      "positive_pixels": [
+        202955,
+        95934,
+        919856
+      ]
+    },
+    {
+      "id": "[8942,53607]_patch_2_6.tif",
+      "tissue_pixels": 999587,
+      "tissue_fraction": 0.9532804489135742,
+      "channel_ranges": [
+        139,
+        229,
+        104
+      ],
+      "positive_pixels": [
+        755028,
+        63947,
+        999587
+      ]
+    },
+    {
+      "id": "[8187,46863]_patch_0_0.tif",
+      "tissue_pixels": 493,
+      "tissue_fraction": 0.00047016143798828125,
+      "channel_ranges": [
+        0,
+        46,
+        7
+      ],
+      "positive_pixels": [
+        0,
+        199,
+        493
+      ]
+    },
+    {
+      "id": "[18778,52957]_patch_2_4.tif",
+      "tissue_pixels": 1021936,
+      "tissue_fraction": 0.9745941162109375,
+      "channel_ranges": [
+        165,
+        219,
+        107
+      ],
+      "positive_pixels": [
+        702679,
+        53857,
+        1021936
+      ]
+    },
+    {
+      "id": "[8942,53607]_patch_6_4.tif",
+      "tissue_pixels": 1030781,
+      "tissue_fraction": 0.9830293655395508,
+      "channel_ranges": [
+        146,
+        230,
+        104
+      ],
+      "positive_pixels": [
+        770201,
+        79708,
+        1030781
+      ]
+    },
+    {
+      "id": "[21061,52430]_patch_6_2.tif",
+      "tissue_pixels": 902996,
+      "tissue_fraction": 0.8611640930175781,
+      "channel_ranges": [
+        29,
+        229,
+        106
+      ],
+      "positive_pixels": [
+        82869,
+        23579,
+        902996
+      ]
+    },
+    {
+      "id": "[18778,52957]_patch_0_8.tif",
+      "tissue_pixels": 963869,
+      "tissue_fraction": 0.9192171096801758,
+      "channel_ranges": [
+        129,
+        228,
+        93
+      ],
+      "positive_pixels": [
+        905865,
+        29923,
+        963869
+      ]
+    },
+    {
+      "id": "[8942,53607]_patch_0_4.tif",
+      "tissue_pixels": 81786,
+      "tissue_fraction": 0.07799720764160156,
+      "channel_ranges": [
+        182,
+        229,
+        58
+      ],
+      "positive_pixels": [
+        79094,
+        15055,
+        81786
+      ]
+    },
+    {
+      "id": "[10382,50252]_patch_6_2.tif",
+      "tissue_pixels": 199701,
+      "tissue_fraction": 0.19044971466064453,
+      "channel_ranges": [
+        164,
+        114,
+        81
+      ],
+      "positive_pixels": [
+        168687,
+        19925,
+        199701
+      ]
+    },
+    {
+      "id": "[19129,51780]_patch_0_2.tif",
+      "tissue_pixels": 1047905,
+      "tissue_fraction": 0.9993600845336914,
+      "channel_ranges": [
+        99,
+        230,
+        101
+      ],
+      "positive_pixels": [
+        681622,
+        64620,
+        1047905
+      ]
+    }
+  ],
+  "below_threshold": [
+    {
+      "id": "[9241,45651]_patch_0_0.tif",
+      "tissue_pixels": 25411,
+      "tissue_fraction": 0.02423381805419922,
+      "channel_ranges": [
+        170,
+        150,
+        68
+      ],
+      "positive_pixels": [
+        24555,
+        1287,
+        25411
+      ]
+    },
+    {
+      "id": "[8187,46863]_patch_0_2.tif",
+      "tissue_pixels": 95050,
+      "tissue_fraction": 0.09064674377441406,
+      "channel_ranges": [
+        130,
+        177,
+        69
+      ],
+      "positive_pixels": [
+        86765,
+        6725,
+        95050
+      ]
+    },
+    {
+      "id": "[8187,46863]_patch_2_0.tif",
+      "tissue_pixels": 57761,
+      "tissue_fraction": 0.055085182189941406,
+      "channel_ranges": [
+        130,
+        174,
+        93
+      ],
+      "positive_pixels": [
+        55277,
+        6056,
+        57761
+      ]
+    },
+    {
+      "id": "[8187,46863]_patch_0_0.tif",
+      "tissue_pixels": 493,
+      "tissue_fraction": 0.00047016143798828125,
+      "channel_ranges": [
+        0,
+        46,
+        7
+      ],
+      "positive_pixels": [
+        0,
+        199,
+        493
+      ]
+    },
+    {
+      "id": "[8942,53607]_patch_0_4.tif",
+      "tissue_pixels": 81786,
+      "tissue_fraction": 0.07799720764160156,
+      "channel_ranges": [
+        182,
+        229,
+        58
+      ],
+      "positive_pixels": [
+        79094,
+        15055,
+        81786
+      ]
+    }
+  ],
+  "eligible_constant_channels": []
+}

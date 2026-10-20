@@ -1,0 +1,362 @@
+{
+  "status": "cpu_input_audit_only_no_gigatime_inference",
+  "source": "https://data.mendeley.com/datasets/3gx53zm49d/1",
+  "official_test_pairs": 945,
+  "even_even_nonoverlapping_candidates": 300,
+  "published_nonoverlap_nonempty_pairs": 292,
+  "published_ids_sha256": "788656b2b9fcd4254bd65a8c1903ad4fed3014e089b61f220674d4293af50183",
+  "inspected_pairs": [
+    {
+      "id": "[16705,49971]_patch_4_4.tif",
+      "input_sha256": "c94bc7907b4a4b1b2253d47eac6723de6f6cb7f61a3a4c490966747f6b02e980",
+      "label_sha256": "7bdf43c87da12173e9251db931974a2d640ee7388b07dfd3145ce2082d8966c7",
+      "input": {
+        "shape": [
+          1024,
+          1024,
+          3
+        ],
+        "dtype": "uint8",
+        "photometric": "PHOTOMETRIC.RGB",
+        "samples_per_pixel": 3,
+        "resolution_unit": null,
+        "x_resolution": null,
+        "y_resolution": null,
+        "tag_implied_um_per_pixel_unverified": [
+          null,
+          null
+        ],
+        "channel_min": [
+          37.0,
+          15.0,
+          69.0
+        ],
+        "channel_median": [
+          231.0,
+          184.0,
+          209.0
+        ],
+        "channel_max": [
+          255.0,
+          255.0,
+          255.0
+        ]
+      },
+      "label": {
+        "shape": [
+          1024,
+          1024,
+          3
+        ],
+        "dtype": "uint8",
+        "photometric": "PHOTOMETRIC.RGB",
+        "samples_per_pixel": 3,
+        "resolution_unit": "NONE",
+        "x_resolution": 1.0,
+        "y_resolution": 1.0,
+        "tag_implied_um_per_pixel_unverified": [
+          null,
+          null
+        ],
+        "channel_min": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "channel_median": [
+          0.0,
+          0.0,
+          9.0
+        ],
+        "channel_max": [
+          88.0,
+          220.0,
+          102.0
+        ]
+      }
+    },
+    {
+      "id": "[7941,48408]_patch_4_8.tif",
+      "input_sha256": "7274403e3e3039e8e57e61389bb099298039835743dbd0074915dc5230f0efd5",
+      "label_sha256": "810e2dbbc3b782a24dc29217f759f9fe1c9f4ee3b38226c33b42f9e2b0794695",
+      "input": {
+        "shape": [
+          1024,
+          1024,
+          3
+        ],
+        "dtype": "uint8",
+        "photometric": "PHOTOMETRIC.RGB",
+        "samples_per_pixel": 3,
+        "resolution_unit": null,
+        "x_resolution": null,
+        "y_resolution": null,
+        "tag_implied_um_per_pixel_unverified": [
+          null,
+          null
+        ],
+        "channel_min": [
+          37.0,
+          14.0,
+          66.0
+        ],
+        "channel_median": [
+          235.0,
+          191.0,
+          213.0
+        ],
+        "channel_max": [
+          255.0,
+          251.0,
+          255.0
+        ]
+      },
+      "label": {
+        "shape": [
+          1024,
+          1024,
+          3
+        ],
+        "dtype": "uint8",
+        "photometric": "PHOTOMETRIC.RGB",
+        "samples_per_pixel": 3,
+        "resolution_unit": "NONE",
+        "x_resolution": 1.0,
+        "y_resolution": 1.0,
+        "tag_implied_um_per_pixel_unverified": [
+          null,
+          null
+        ],
+        "channel_min": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "channel_median": [
+          0.0,
+          0.0,
+          7.0
+        ],
+        "channel_max": [
+          23.0,
+          229.0,
+          108.0
+        ]
+      }
+    },
+    {
+      "id": "[8942,53607]_patch_6_0.tif",
+      "input_sha256": "67f366b5c82c66caa4a829aabfd82acd8fe12c59465eb28b4ea949a3814386b5",
+      "label_sha256": "402eff0915728064715d667abd89430b5cb13357589df34a3553d50123b4a3b6",
+      "input": {
+        "shape": [
+          1024,
+          1024,
+          3
+        ],
+        "dtype": "uint8",
+        "photometric": "PHOTOMETRIC.RGB",
+        "samples_per_pixel": 3,
+        "resolution_unit": null,
+        "x_resolution": null,
+        "y_resolution": null,
+        "tag_implied_um_per_pixel_unverified": [
+          null,
+          null
+        ],
+        "channel_min": [
+          34.0,
+          19.0,
+          72.0
+        ],
+        "channel_median": [
+          188.0,
+          140.0,
+          183.0
+        ],
+        "channel_max": [
+          255.0,
+          253.0,
+          255.0
+        ]
+      },
+      "label": {
+        "shape": [
+          1024,
+          1024,
+          3
+        ],
+        "dtype": "uint8",
+        "photometric": "PHOTOMETRIC.RGB",
+        "samples_per_pixel": 3,
+        "resolution_unit": "NONE",
+        "x_resolution": 1.0,
+        "y_resolution": 1.0,
+        "tag_implied_um_per_pixel_unverified": [
+          null,
+          null
+        ],
+        "channel_min": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "channel_median": [
+          32.0,
+          0.0,
+          18.0
+        ],
+        "channel_max": [
+          126.0,
+          227.0,
+          87.0
+        ]
+      }
+    },
+    {
+      "id": "[8942,53607]_patch_4_2.tif",
+      "input_sha256": "b2b66f7c4a6d55a145632d5e379faf41a357f20c98bf2935d7e89a78a5e388d1",
+      "label_sha256": "5ca03ec670187c66afff315c957569faaa837f8542a482aab8dc01f854703ec5",
+      "input": {
+        "shape": [
+          1024,
+          1024,
+          3
+        ],
+        "dtype": "uint8",
+        "photometric": "PHOTOMETRIC.RGB",
+        "samples_per_pixel": 3,
+        "resolution_unit": null,
+        "x_resolution": null,
+        "y_resolution": null,
+        "tag_implied_um_per_pixel_unverified": [
+          null,
+          null
+        ],
+        "channel_min": [
+          23.0,
+          1.0,
+          51.0
+        ],
+        "channel_median": [
+          187.0,
+          128.0,
+          172.0
+        ],
+        "channel_max": [
+          255.0,
+          255.0,
+          255.0
+        ]
+      },
+      "label": {
+        "shape": [
+          1024,
+          1024,
+          3
+        ],
+        "dtype": "uint8",
+        "photometric": "PHOTOMETRIC.RGB",
+        "samples_per_pixel": 3,
+        "resolution_unit": "NONE",
+        "x_resolution": 1.0,
+        "y_resolution": 1.0,
+        "tag_implied_um_per_pixel_unverified": [
+          null,
+          null
+        ],
+        "channel_min": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "channel_median": [
+          28.0,
+          0.0,
+          18.0
+        ],
+        "channel_max": [
+          151.0,
+          229.0,
+          104.0
+        ]
+      }
+    },
+    {
+      "id": "[9364,55222]_patch_4_0.tif",
+      "input_sha256": "1f6a77c0fb119b4d71c98ccb54444f7418d9259d314cfa13da784cf6f47c91aa",
+      "label_sha256": "ae55014c8a18cc7a1e182e7370bdd78fb51690489e8659c50ccc4c1f40936ad4",
+      "input": {
+        "shape": [
+          1024,
+          1024,
+          3
+        ],
+        "dtype": "uint8",
+        "photometric": "PHOTOMETRIC.RGB",
+        "samples_per_pixel": 3,
+        "resolution_unit": null,
+        "x_resolution": null,
+        "y_resolution": null,
+        "tag_implied_um_per_pixel_unverified": [
+          null,
+          null
+        ],
+        "channel_min": [
+          38.0,
+          13.0,
+          63.0
+        ],
+        "channel_median": [
+          241.0,
+          208.0,
+          224.0
+        ],
+        "channel_max": [
+          255.0,
+          255.0,
+          255.0
+        ]
+      },
+      "label": {
+        "shape": [
+          1024,
+          1024,
+          3
+        ],
+        "dtype": "uint8",
+        "photometric": "PHOTOMETRIC.RGB",
+        "samples_per_pixel": 3,
+        "resolution_unit": "NONE",
+        "x_resolution": 1.0,
+        "y_resolution": 1.0,
+        "tag_implied_um_per_pixel_unverified": [
+          null,
+          null
+        ],
+        "channel_min": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "channel_median": [
+          8.0,
+          0.0,
+          6.0
+        ],
+        "channel_max": [
+          89.0,
+          229.0,
+          84.0
+        ]
+      }
+    }
+  ],
+  "physical_scale_status": "unverified_until_source_and_tiff_metadata_are_reconciled",
+  "provisional_label_band_order": [
+    "Pan-CK",
+    "CD3",
+    "DAPI"
+  ],
+  "channel_semantics_status": "MIPHEI_preprocessing_mapping_requires_pixel_review"
+}
