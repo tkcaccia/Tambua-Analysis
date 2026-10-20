@@ -1,0 +1,23 @@
+{
+  "scope": "Completed CPU-only expansion cases 33 through 35; scanner RGB H&E, virtual DAPI, DAPI/StarDist overlay, CK and CD68 visually inspected",
+  "source_contact_sheet": "first-thirty-five-06.webp",
+  "source_manifest": "first-thirty-five-manifest.json",
+  "reviewed_cases": [
+    {
+      "sample_id": "TCGA-EW-A6SD-01Z-00-DX1_5",
+      "visual_observation": "This densely nucleated breast field shows bright virtual-DAPI tissue near most H&E nuclei, but neighboring cells merge and the fixed boundary contrast is 0.039. AUC is 0.763. It may be useful for an independent QC calibration, not a retrospective pass.",
+      "decision": "exclude_pending_independent_QC_calibration"
+    },
+    {
+      "sample_id": "TCGA-D8-A3Z6-01Z-00-DX2_004",
+      "visual_observation": "Several StarDist nuclei lie in broad diffuse virtual-DAPI signal rather than distinct nuclear peaks. CK and CD68 have different display patterns, but that does not repair the failed DAPI boundary contrast of 0.028.",
+      "decision": "exclude"
+    },
+    {
+      "sample_id": "TCGA-F9-A97G-01Z-00-DX1_4",
+      "visual_observation": "The kidney field is erythrocyte-rich with few visible H&E nuclei. Virtual DAPI is bright in only a small subset of outlined nuclei and has broader non-nuclear patches; AUC 0.619 fails.",
+      "decision": "exclude"
+    }
+  ],
+  "limits": "All three fail frozen nuclear QC and remain excluded. Contact sheets show only DAPI, CK and CD68, not all 23 virtual channels. No case was added to the fastPLS test set."
+}
