@@ -1,0 +1,25 @@
+{
+  "status": "preflight_only_no_model_inference",
+  "reference": "50 author-supplied unlabelled H&E patches from the official GigaTIME sample_test_data.zip",
+  "contact_sheet": "bounded-luminance-contact.webp",
+  "report": "bounded-luminance-report.json",
+  "visual_observations": [
+    {
+      "sample": "sample-01",
+      "source": "MoNuSAC TCGA-55-7570-01Z-00-DX1_001 (lung)",
+      "assessment": "Bounded luminance adjustment makes the dense field paler while preserving H&E hues and visible nuclear structures. The tissue gap remains a tissue gap rather than a new seam. A virtual DAPI improvement is not established."
+    },
+    {
+      "sample": "sample-02",
+      "source": "MoNuSAC TCGA-DW-7841-01Z-00-DX1_3 (kidney)",
+      "assessment": "The full-LAB prototype visibly introduced cyan nuclei and was rejected. The bounded luminance-only preview preserves the original pink/purple hues but remains far from the reference chroma profile (LAB a/b mean distance 32.0). It is flagged as out of reference range and is not accepted as a corrected model input."
+    },
+    {
+      "sample": "sample-03",
+      "source": "ORION CRC33 (colon)",
+      "assessment": "The source was already close to the author's stain profile; bounded lightness adjustment is mild and the gland architecture remains visible. Measured-versus-predicted marker validity is not established by this preview."
+    }
+  ],
+  "data_integrity": "The optional normalized OME-TIFF exports use lossless Deflate, preserve RGB pixels and the per-source x/y microns-per-pixel metadata (0.252 for MoNuSAC; 0.325 for ORION), and round-trip exactly. They are isolated diagnostics and do not replace the frozen inputs of the live 93-image run.",
+  "next_gate": "Run one separately authorized bounded CPU paired-control diagnostic with the author's measured DAPI labels and the original-versus-luminance-adjusted MoNuSAC field. Retain current QC thresholds and reject any new shadow. Do not use this preflight as evidence for classifier accuracy."
+}

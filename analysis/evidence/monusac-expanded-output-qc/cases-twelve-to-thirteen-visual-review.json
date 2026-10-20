@@ -1,0 +1,18 @@
+{
+  "scope": "Completed CPU-only expansion cases 12 and 13; both excluded from validated evaluation",
+  "source_contact_sheets": ["first-thirteen-02.webp", "first-thirteen-03.webp"],
+  "source_manifest": "first-thirteen-manifest.json",
+  "reviewed_cases": [
+    {
+      "sample_id": "TCGA-55-7570-01Z-00-DX1_001",
+      "visual_observation": "The lung field contains densely packed dark H&E nuclei, while virtual DAPI is broadly pale with many dark nuclear centers. The map does not reliably localize to the outlined nuclei; AUC 0.684 and boundary contrast 0.017 fail. A horizontal tissue gap appears in H&E and multiple marker previews, so it is not identified as a stitching shadow from this contact sheet alone.",
+      "decision": "exclude"
+    },
+    {
+      "sample_id": "TCGA-DW-7841-01Z-00-DX1_3",
+      "visual_observation": "The kidney field contains large cells with heterogeneous staining. Virtual DAPI highlights only some visible nuclei and is bright in several broad cell-sized areas; the outlined objects are not consistently aligned. AUC 0.538 and boundary contrast 0.007 fail.",
+      "decision": "exclude"
+    }
+  ],
+  "limits": "This is review of display-scaled, verified-identity previews. It does not rescue failed cases or establish biological accuracy for the other predicted proteins."
+}

@@ -1,0 +1,595 @@
+{
+  "status": "preflight_only",
+  "device": "CPU",
+  "profile": {
+    "method": "bounded_luminance_only_tissue_stats_v2",
+    "reference_images": 50,
+    "reference": [
+      {
+        "name": "0_10564_556_556_he.png",
+        "sha256": "2f72497ee02f0ceeaf9ad2526181eeff272c3491be1279bbd8cb1669c052cab6",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 101710
+      },
+      {
+        "name": "0_15568_556_556_he.png",
+        "sha256": "b55e933c077df0ca916357690a43fc098fddfb6bd2dbc350f3e05d5d81bed54a",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 43024
+      },
+      {
+        "name": "0_16124_556_556_he.png",
+        "sha256": "d04b172a5abaa96c76776356625c05c68644501b93ed94bfda4f58998683a2b3",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 73949
+      },
+      {
+        "name": "0_16680_556_556_he.png",
+        "sha256": "4f071403cfcc3c5f2aa67e174290a24200e14db256532fab24bd34fc71c82769",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 81794
+      },
+      {
+        "name": "0_18348_556_556_he.png",
+        "sha256": "20ea50062901e68b9f265c69e4d32fe5a9153529dec6838e0c8f04eeb47267aa",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 62044
+      },
+      {
+        "name": "0_24464_556_556_he.png",
+        "sha256": "16b2fc313a30bacaf15cd5228ee2615f9d3063504d6a15ba1f7a756535d63c4f",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 119137
+      },
+      {
+        "name": "0_26132_556_556_he.png",
+        "sha256": "42d3b2ea41f69103481b189af6871811558662e2c260dd51c04772cb6d21557e",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 67145
+      },
+      {
+        "name": "0_27800_556_556_he.png",
+        "sha256": "a0a78eb1cf131b1864926b2b567646467f8774bf9abe798c0485fcab92f4aed7",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 64745
+      },
+      {
+        "name": "0_2780_556_556_he.png",
+        "sha256": "9eb0d4151f7dbe216e4ffe9dd8f62edfecd8c94e7a6c9f2bf97feec591d3c21e",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 154048
+      },
+      {
+        "name": "0_30024_556_556_he.png",
+        "sha256": "d98f2fc1c465e82a4c276368e0c27ccd329652dfd9be7d7edd886737300f6192",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 68272
+      },
+      {
+        "name": "0_37252_556_556_he.png",
+        "sha256": "dacdab7293a7a0b32a7892373fd5d7ef0f140743a03ac1af9b27717b384a3fa3",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 79401
+      },
+      {
+        "name": "0_4448_556_556_he.png",
+        "sha256": "f66675f180dae9a456fdc73fb57a6c78a88da1296183f37e661e8db96e74c012",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 104841
+      },
+      {
+        "name": "0_5560_556_556_he.png",
+        "sha256": "ad515410c05b11dc9de63674d066b154c1b8eb0d46b74e19e7125976873f5629",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 104304
+      },
+      {
+        "name": "0_556_556_556_he.png",
+        "sha256": "ae5cc2df9710e69362a2b6c5f20a4e2388cbbcf556a9e2acb78267c843f2f61d",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 226056
+      },
+      {
+        "name": "0_6116_556_556_he.png",
+        "sha256": "3e836e271352b74993dfc04a19ff2a667628dd665cf611925c03679d6f0b70ca",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 58202
+      },
+      {
+        "name": "0_6672_556_556_he.png",
+        "sha256": "6be28614ada3c438d5b46c348ff0149730c3718d16279bf0ae697af9b1910d07",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 52873
+      },
+      {
+        "name": "0_7228_556_556_he.png",
+        "sha256": "24dcde76c34f66962c820d541c6b73fca40fbc709f4c8ef6bfc72408caf086e9",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 97812
+      },
+      {
+        "name": "10008_16680_556_556_he.png",
+        "sha256": "117902ead61c1f636decf4eab657bf68fc70be2691029da24555570abf553944",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 144683
+      },
+      {
+        "name": "10008_18904_556_556_he.png",
+        "sha256": "4d443eb85dc611df1d0fda8b9c9c783a075058b5979311b1c7bb523121c59610",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 109853
+      },
+      {
+        "name": "10008_21128_556_556_he.png",
+        "sha256": "e7e9dacdafc1ecd1cce3125b8123a72f08ca705d33a37cf84e7a0f9f36a6053e",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 116083
+      },
+      {
+        "name": "10008_21684_556_556_he.png",
+        "sha256": "30349cf7a4afa41f579e9fd5731b79fe2ad4a1c749e673e63f27a8ce760e8d09",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 78514
+      },
+      {
+        "name": "10008_24464_556_556_he.png",
+        "sha256": "796b76de223e04162db6227b444b4b5f52a133f762faa55254fab8bc909ce34d",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 38310
+      },
+      {
+        "name": "10008_25576_556_556_he.png",
+        "sha256": "0527e783fd2817397cd210084b740019323d7fa2ab8b58497f73af431be03866",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 143448
+      },
+      {
+        "name": "10008_27244_556_556_he.png",
+        "sha256": "a360d1268b748b65c452d3f0cee22188c6994678c3dfd6ab4a8fc34295585928",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 124825
+      },
+      {
+        "name": "10008_29468_556_556_he.png",
+        "sha256": "7fbf5eaf82f88c11472c4a5ba7205b7b47f03a578e246e10829394620dd73bbd",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 66684
+      },
+      {
+        "name": "10008_3336_556_556_he.png",
+        "sha256": "e0b147816f807399593feeccdaaa81aeda245f6999b217699b8d1fec4f0584c7",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 196789
+      },
+      {
+        "name": "10008_34472_556_556_he.png",
+        "sha256": "c448d394d090112f27f6c47006ff14b98a7bcae082eb83d8ea06eefda661cc4d",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 45981
+      },
+      {
+        "name": "10008_35028_556_556_he.png",
+        "sha256": "59df1d11ecdde1fc9e4827617986534e2fe9552385f36970cffabfd97d1ad203",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 33944
+      },
+      {
+        "name": "10008_35584_556_556_he.png",
+        "sha256": "abb5f2d399b20810543e91c5407b05b914b8931c21907a83442051543ee9b703",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 30565
+      },
+      {
+        "name": "10008_36140_556_556_he.png",
+        "sha256": "3ea0f91750a8396517b8f5b456f88c0793d54cb64ac936edd1edc72226bb9655",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 56031
+      },
+      {
+        "name": "10008_36696_556_556_he.png",
+        "sha256": "3d3ca2633433b1df0ab7e68918044eec9909bb2a83697ecee862c0091439d394",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 59880
+      },
+      {
+        "name": "10008_37808_556_556_he.png",
+        "sha256": "cf6cb5ed9b6361a6b54bf96a2264c8fe405fbea8ea2cc7f5b4bfdadcb917be38",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 110747
+      },
+      {
+        "name": "10008_38920_556_556_he.png",
+        "sha256": "567240d872baede60b9345998a5fb07d8a57656e2b302c5a353cfbe45183e202",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 85885
+      },
+      {
+        "name": "10008_6116_556_556_he.png",
+        "sha256": "e01c0acb8361e779a5026bf1b1d68a578675181ccbc94f6cab83977346f63268",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 202572
+      },
+      {
+        "name": "10008_6672_556_556_he.png",
+        "sha256": "e481ae986adc36a25cceab6faca3b3e06a9909e607cc3d7b1b3fc5d4c32a5d69",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 240980
+      },
+      {
+        "name": "10564_12232_556_556_he.png",
+        "sha256": "1ae3991723bf8f222cf02e72f9db6a2864e5a34bb8270b9ccd74aaefefc48e90",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 79858
+      },
+      {
+        "name": "10564_25576_556_556_he.png",
+        "sha256": "99c1875f9eff16af365d96291958683a1a4502f69cbd3c125e042fd2b9ddaf77",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 37339
+      },
+      {
+        "name": "10564_26688_556_556_he.png",
+        "sha256": "a7a1f854f674e180f919aaa7e07b9e6d18e015cc2b1b80f5ea174deeca10ebab",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 40609
+      },
+      {
+        "name": "10564_29468_556_556_he.png",
+        "sha256": "82ac1095fe52d70bf126fd01ea241fec45378772efbd8d160a44ec30c29ee9df",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 80154
+      },
+      {
+        "name": "10564_3336_556_556_he.png",
+        "sha256": "77b2ba16217ea548e02b79aeb486e7cca15d0d0c720fd9a985fa92c59a8b7834",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 90847
+      },
+      {
+        "name": "10564_33916_556_556_he.png",
+        "sha256": "2e1f1e5284650b9dc0469567ce419e458d8e11c485df8c2d8e890bc7a1e86b93",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 71768
+      },
+      {
+        "name": "10564_36696_556_556_he.png",
+        "sha256": "3a4b9106d1d81791111df716b6714591d13d88d9f16e5b1d989ace96b16c48d5",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 97694
+      },
+      {
+        "name": "10564_38920_556_556_he.png",
+        "sha256": "ac242aafd54d27f4e3be933042c2e71c87231c00f2d0c10c93a4778c20ddc794",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 60373
+      },
+      {
+        "name": "10564_6116_556_556_he.png",
+        "sha256": "fb9308dd80ee493599cf691b8e752939376ad885de5e63d320d8b5bab7d80cf3",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 183173
+      },
+      {
+        "name": "10564_6672_556_556_he.png",
+        "sha256": "9159dde13005d7ded734d2d583d92a4cc60401451c27dd8ba42fe3eaa1a96451",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 190996
+      },
+      {
+        "name": "10564_7228_556_556_he.png",
+        "sha256": "c80c5dfc675ba855ed66d8a464a6953f8eb1834243806c9d78be5decda73311a",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 167508
+      },
+      {
+        "name": "11120_17236_556_556_he.png",
+        "sha256": "8327613d71530333277991bbdd90018b1b2137742afa62aad541134da4ed5499",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 98130
+      },
+      {
+        "name": "11120_18904_556_556_he.png",
+        "sha256": "d65c465d8717e236045888477073a5f2fb68fcebf6eea5d4eac2d440a801fc0c",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 182238
+      },
+      {
+        "name": "11120_22796_556_556_he.png",
+        "sha256": "93522aa56ed67d9dc16da6034b6589f8b72cff12c9f2dd835c557cd2c536348e",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 86402
+      },
+      {
+        "name": "11120_23908_556_556_he.png",
+        "sha256": "d0005c0b1e7d2a44aaac31d8f0849b0c10835624a5c3e58a4c34b6b991de4479",
+        "shape_yx": [
+          556,
+          556
+        ],
+        "tissue_pixels": 66547
+      }
+    ],
+    "target_lab_mean": [
+      77.34502522650035,
+      15.677945908375538,
+      -8.37148287071283
+    ],
+    "target_lab_std": [
+      9.803119341099574,
+      7.71598349649518,
+      6.01544177536024
+    ],
+    "notes": "Median of per-patch tissue LAB means and standard deviations. Only the L target is used for the bounded preview transform; no cell labels or model outputs are used."
+  },
+  "cases": [
+    {
+      "name": "sample-01",
+      "source": "/home/chiamaka/Tambua-monusac-expanded-prepared-2026-10-20/samples/TCGA-55-7570-01Z-00-DX1_001/he.ome.tif",
+      "source_sha256": "3f20b66520aa02fa56719301981f50a78e144fb8cdde5c40b51e88071004c0a7",
+      "shape_yx": [
+        950,
+        310
+      ],
+      "output": "sample-01-normalized.png",
+      "calibrated_ome": {
+        "x_um_per_px": 0.252,
+        "y_um_per_px": 0.252,
+        "compression": "lossless_deflate"
+      },
+      "tissue_pixels": 277280,
+      "source_lab_mean": [
+        51.83458852846646,
+        27.55691023554268,
+        -17.912447483455782
+      ],
+      "source_lab_std": [
+        19.321186912416454,
+        7.814805213564119,
+        9.60046911181307
+      ],
+      "bounded_lightness_shift": 25.0,
+      "source_to_reference_chroma_distance": 15.236134655079772,
+      "chroma_out_of_reference_range": false,
+      "normalized_lab_mean": [
+        69.3417494997712,
+        29.20513681284012,
+        -21.010159033643262
+      ],
+      "normalized_lab_std": [
+        14.50000072321771,
+        6.029601802556371,
+        7.661346577623031
+      ],
+      "pure_white_unchanged": true
+    },
+    {
+      "name": "sample-02",
+      "source": "/home/chiamaka/Tambua-monusac-expanded-prepared-2026-10-20/samples/TCGA-DW-7841-01Z-00-DX1_3/he.ome.tif",
+      "source_sha256": "b3df51c1a3da6cc1c5de8f64538d43ade49004c311bcc352efbcb5ac905ef1e4",
+      "shape_yx": [
+        424,
+        375
+      ],
+      "output": "sample-02-normalized.png",
+      "calibrated_ome": {
+        "x_um_per_px": 0.252,
+        "y_um_per_px": 0.252,
+        "compression": "lossless_deflate"
+      },
+      "tissue_pixels": 158509,
+      "source_lab_mean": [
+        52.78664421221414,
+        47.71698087646759,
+        -8.2046550095156
+      ],
+      "source_lab_std": [
+        7.700985536714216,
+        6.8958500350995084,
+        5.202733631459802
+      ],
+      "bounded_lightness_shift": 24.558381014286212,
+      "source_to_reference_chroma_distance": 32.039469303062695,
+      "chroma_out_of_reference_range": true,
+      "normalized_lab_mean": [
+        74.7799045285555,
+        41.609266577928295,
+        -11.837310469980252
+      ],
+      "normalized_lab_std": [
+        6.292297595286217,
+        5.154956492954518,
+        4.443525201551951
+      ],
+      "pure_white_unchanged": true
+    },
+    {
+      "name": "sample-03",
+      "source": "/mnt/sata_ssd/Tambua-orion-all-patient-2026-10-19/cpu-prep/CRC33/he.ome.tif",
+      "source_sha256": "cad36932cb4421991ec7960b93144d7423531d165bc3d9d9169f8bdc5cc1f819",
+      "shape_yx": [
+        2048,
+        2048
+      ],
+      "output": "sample-03-normalized.png",
+      "calibrated_ome": {
+        "x_um_per_px": 0.325,
+        "y_um_per_px": 0.325,
+        "compression": "lossless_deflate"
+      },
+      "tissue_pixels": 3827320,
+      "source_lab_mean": [
+        70.87126332427684,
+        14.829211036066493,
+        -10.869831522448122
+      ],
+      "source_lab_std": [
+        10.588268833074348,
+        2.9735086480499455,
+        4.343563063949062
+      ],
+      "bounded_lightness_shift": 6.473761902223515,
+      "source_to_reference_chroma_distance": 2.6385785698176583,
+      "chroma_out_of_reference_range": false,
+      "normalized_lab_mean": [
+        76.4420123278911,
+        15.008701723777497,
+        -11.090406598687125
+      ],
+      "normalized_lab_std": [
+        10.105813467039274,
+        2.840290204145792,
+        4.339257358786155
+      ],
+      "pure_white_unchanged": true
+    }
+  ],
+  "model_inference": "not_run",
+  "interpretation": "A visually plausible color transform is not evidence that GigaTIME DAPI or proteins improve. Source RGB, spatial dimensions and model input calibration must be reverified before any inference."
+}
