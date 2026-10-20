@@ -1,0 +1,160 @@
+{
+  "status": "partial_read_only_diagnostic",
+  "timestamp_utc": "2026-10-20T06:28:04.704994+00:00",
+  "source_inference": "/home/chiamaka/Tambua-monusac-expanded-cpu-inference-2026-10-20",
+  "counts": {
+    "complete": 79,
+    "qc_fail": 71,
+    "qc_pass": 8,
+    "qc_pass_test": 3,
+    "qc_pass_development": 3,
+    "qc_pass_train": 2
+  },
+  "matched_cell_counts_by_split": {
+    "test": {
+      "epithelial": 0,
+      "lymphocyte": 148,
+      "macrophage": 16,
+      "neutrophil": 5
+    },
+    "development": {
+      "epithelial": 12,
+      "lymphocyte": 10,
+      "macrophage": 9,
+      "neutrophil": 9
+    },
+    "train": {
+      "epithelial": 13,
+      "lymphocyte": 2,
+      "macrophage": 8,
+      "neutrophil": 4
+    }
+  },
+  "patient_count_by_split": {
+    "test": 3,
+    "development": 3,
+    "train": 2
+  },
+  "organs_by_split": {
+    "test": [
+      "breast",
+      "prostate"
+    ],
+    "development": [
+      "breast",
+      "kidney",
+      "lung"
+    ],
+    "train": [
+      "kidney",
+      "prostate"
+    ]
+  },
+  "qc_passing_fields": [
+    {
+      "sample_id": "TCGA-E2-A108-01Z-00-DX1_004",
+      "split": "test",
+      "organ": "breast",
+      "patient_id": "TCGA-E2-A108",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 0,
+        "macrophage": 12,
+        "neutrophil": 0
+      },
+      "qc_auc": 0.8890424527208419
+    },
+    {
+      "sample_id": "TCGA-E9-A22G-01Z-00-DX1_3",
+      "split": "development",
+      "organ": "breast",
+      "patient_id": "TCGA-E9-A22G",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 6,
+        "macrophage": 2,
+        "neutrophil": 2
+      },
+      "qc_auc": 0.7216636592877806
+    },
+    {
+      "sample_id": "TCGA-EV-5903-01Z-00-DX1_4",
+      "split": "train",
+      "organ": "kidney",
+      "patient_id": "TCGA-EV-5903",
+      "matched_by_type": {
+        "epithelial": 7,
+        "lymphocyte": 2,
+        "macrophage": 2,
+        "neutrophil": 4
+      },
+      "qc_auc": 0.7899027883991128
+    },
+    {
+      "sample_id": "TCGA-EW-A6SB-01Z-00-DX1_003",
+      "split": "test",
+      "organ": "breast",
+      "patient_id": "TCGA-EW-A6SB",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 0,
+        "macrophage": 4,
+        "neutrophil": 5
+      },
+      "qc_auc": 0.8668414080546808
+    },
+    {
+      "sample_id": "TCGA-G7-A8LD-01Z-00-DX1_1",
+      "split": "development",
+      "organ": "kidney",
+      "patient_id": "TCGA-G7-A8LD",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 1,
+        "macrophage": 0,
+        "neutrophil": 7
+      },
+      "qc_auc": 0.7145412839106405
+    },
+    {
+      "sample_id": "TCGA-G9-6356-01Z-00-DX1_3",
+      "split": "test",
+      "organ": "prostate",
+      "patient_id": "TCGA-G9-6356",
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 148,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "qc_auc": 0.7686097519847738
+    },
+    {
+      "sample_id": "TCGA-KK-A59X-01Z-00-DX1-2",
+      "split": "train",
+      "organ": "prostate",
+      "patient_id": "TCGA-KK-A59X",
+      "matched_by_type": {
+        "epithelial": 6,
+        "lymphocyte": 0,
+        "macrophage": 6,
+        "neutrophil": 0
+      },
+      "qc_auc": 0.8391649942622138
+    },
+    {
+      "sample_id": "TCGA-L4-A4E5-01Z-00-DX1_2",
+      "split": "development",
+      "organ": "lung",
+      "patient_id": "TCGA-L4-A4E5",
+      "matched_by_type": {
+        "epithelial": 12,
+        "lymphocyte": 3,
+        "macrophage": 7,
+        "neutrophil": 0
+      },
+      "qc_auc": 0.7449452841598065
+    }
+  ],
+  "interpretation": "Partial 93-case CPU expansion only. Matched cells are candidates, not a new classifier score. QC pass does not establish marker specificity or expert-label plausibility. Subsequent cases may change totals. The organizer test was previously used for pipeline diagnostics, so any adaptive reuse is development evaluation."
+}

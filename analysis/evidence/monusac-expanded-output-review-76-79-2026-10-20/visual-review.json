@@ -1,0 +1,15 @@
+{
+  "status": "partial_manual_review_complete",
+  "date": "2026-10-20",
+  "reviewed_positions": [76, 77, 78, 79],
+  "reviewed_cases": [
+    "TCGA-L4-A4E5-01Z-00-DX1_2",
+    "TCGA-V1-A9O9-01Z-00-DX1-4",
+    "TCGA-MP-A4T7-01Z-00-DX1_002",
+    "TCGA-V1-A9O9-01Z-00-DX1-5"
+  ],
+  "automated_qc_counts": {"pass": 1, "fail": 3},
+  "visual_findings": "The lung field TCGA-L4-A4E5-01Z-00-DX1_2 shows partial agreement of virtual-DAPI peaks with independent StarDist outlines and passes the frozen nuclear and shadow gates, but its DAPI is visibly broader than many nuclei. The prostate fields TCGA-V1-A9O9-01Z-00-DX1-4 and -5 show diffuse, enlarged virtual-DAPI structures relative to their sparse scanner-RGB nuclei; the lung field TCGA-MP-A4T7-01Z-00-DX1_002 has diffuse virtual-DAPI signal over a cellular cluster. Those three fail frozen QC. CK and CD68 remain unverified virtual proteins; display brightness alone cannot establish cell-type specificity.",
+  "publication_status": "Do not use three failing fields. The passing lung field is a candidate for downstream classification only after complete 23-channel and annotation plausibility audit; this visual inspection is not protein validation.",
+  "scope": "Preview-scale manual inspection of positions 76-79 in the active 93-case CPU bundle; no QC threshold tuning using held-out labels."
+}
