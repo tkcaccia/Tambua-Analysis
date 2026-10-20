@@ -1,0 +1,20 @@
+{
+  "status": "partial_manual_review_complete",
+  "date": "2026-10-20",
+  "reviewed_cases": [
+    "TCGA-G7-A8LD-01Z-00-DX1_1",
+    "TCGA-MP-A4SY-01Z-00-DX1_4",
+    "TCGA-G7-A8LD-01Z-00-DX1_7",
+    "TCGA-P4-AAVK-01Z-00-DX1_1",
+    "TCGA-G7-A8LD-01Z-00-DX1_8",
+    "TCGA-P4-AAVK-01Z-00-DX1_2",
+    "TCGA-G9-6356-01Z-00-DX1_3"
+  ],
+  "automated_qc_counts": {
+    "pass": 2,
+    "fail": 5
+  },
+  "visual_findings": "Scanner RGB order appears plausible in all seven. The two automated passes include a blood-rich kidney field (TCGA-G7-A8LD-01Z-00-DX1_1) with sparse nuclei, and a prostate field (TCGA-G9-6356-01Z-00-DX1_3) with partial virtual-DAPI/StarDist correspondence. Both still have diffuse CK/CD68 patterns and no marker-specific ground truth; hold them from protein-validity claims. The five failures show blur, weak nuclear contrast, broad shading or mismatched DAPI. In particular, the two dense kidney TCGA-P4-AAVK fields have high global AUC but contrast below the QC threshold and visible diffuse DAPI; do not override their failures.",
+  "publication_status": "do_not_use_as_validated_protein_or_classifier_results",
+  "scope": "Preview-scale inspection of cases 58-64 from an active 93-case CPU bundle. No protein-specific reference exists for these MoNuSAC fields."
+}
