@@ -34,6 +34,16 @@ PAIRS = {
 COMPARTMENTS = ("full_field", "registered_nuclei", "registered_cytoplasm")
 
 
+def measured_patients(source: dict) -> list[str]:
+    if source.get("status") != "complete" or source.get("device") != "CPU" or \
+            source.get("patients") != 10 or source.get("measured_marker_images") != 100:
+        raise ValueError("Measured spatial-image cohort is incomplete")
+    patients = [item["patient"] for item in source["records"]]
+    if len(patients) != 10 or len(set(patients)) != 10:
+        raise ValueError("Expected ten distinct reserved QC-pass patients")
+    return patients
+
+
 def safe_spearman(a: np.ndarray, b: np.ndarray) -> float | None:
     if len(a) < 100 or np.ptp(a) == 0 or np.ptp(b) == 0:
         return None
@@ -60,7 +70,11 @@ def score_patient(study: Path, measured_root: Path, virtual_root: Path,
     store = zarr.open(str(case / "gigatime/gigatime_probs.zarr"), mode="r")
     meta = dict(store.attrs)["gigatime"]
     names = meta["store_channels"]
-    if len(set(names)) != len(names) or any(marker not in names for marker in markers) or \
+    missing = sorted(set(markers) - set(names))
+    if missing:
+        raise ValueError(f"Saved GigaTIME spatial output for {patient} has only {names}; "
+                         f"missing {missing}. All-marker inference is needed before protein pixel scoring")
+    if len(set(names)) != len(names) or \
             abs(meta["source_mpp"] - prep["mpp_x"]) > 1e-6 or \
             abs(meta["effective_mpp"] - .25) > 1e-6:
         raise ValueError(f"GigaTIME channel identity or physical scale changed: {patient}")
@@ -105,9 +119,7 @@ def run(study: Path, measured: Path, virtual: Path, markers: list[str], output: 
     if stride < 1:
         raise ValueError("Pixel stride must be positive")
     source = json.loads((measured / "COHORT_COMPLETE.json").read_text())
-    patients = [item["patient"] for item in source["patients"]]
-    if len(patients) != 10 or len(set(patients)) != 10:
-        raise ValueError("Expected ten distinct reserved QC-pass patients")
+    patients = measured_patients(source)
     rows = [row for patient in patients for row in
             score_patient(study, measured, virtual, patient, markers, stride)]
     aggregates = []
