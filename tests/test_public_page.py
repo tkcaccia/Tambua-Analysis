@@ -21,8 +21,9 @@ class References(HTMLParser):
 def test_page_labels_corrected_benchmark_and_quality_limits() -> None:
     html = PAGE.read_text(encoding="utf-8")
     assert "corrected-monusac.html" in html
-    assert "38 training and 10 test images pass every required check" in html
-    assert "conditional on expert-drawn regions and QC selection" in html
+    assert "47 / 120" in html
+    assert "The previous classifier score is archival" in html
+    assert "not been retrained or evaluated as a corrected StarDist-cell classifier" in html
     assert 'id="dapi-qc"' not in html
     for stale in ("85.2%", "pre-fix", "monusac-matched/", "monusac-transfer/", "orion-crc33-01/"):
         assert stale not in html.lower()
@@ -43,6 +44,11 @@ def test_corrected_gallery_assets_cover_every_test_image() -> None:
 
     gallery = PAGE.parent / "corrected-monusac.html"
     assert gallery.is_file()
+    revised = json.loads((PAGE.parent / "assets/monusac-corrected/stardist-nuclear-qc-summary.json").read_text())
+    assert len(revised["records"]) == 120
+    assert sum(all(value == "pass" for value in row["stardist_nuclear_qc"].values())
+               for row in revised["records"]) == 47
+    assert "stardist-nuclear-qc-summary.json" in gallery.read_text()
     for split, folder, expected in (("train", "monusac-corrected-train", 88),
                                     ("test", "monusac-corrected", 32)):
         assets = PAGE.parent / "assets" / folder
