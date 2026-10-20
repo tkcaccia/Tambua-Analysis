@@ -1,0 +1,23 @@
+{
+  "scope": "Additional completed CPU-only expansion cases 6 through 8; all remain excluded",
+  "source_contact_sheets": ["first-eight-01.webp", "first-eight-02.webp"],
+  "source_manifest": "first-eight-manifest.json",
+  "reviewed_cases": [
+    {
+      "sample_id": "TCGA-49-6743-01Z-00-DX2_001",
+      "visual_observation": "H&E contains large cells with distinct dark nuclei; virtual DAPI is broad within and around cells rather than crisply nuclear. Although overall AUC passes, the fixed nuclear-boundary contrast does not.",
+      "decision": "exclude"
+    },
+    {
+      "sample_id": "TCGA-B9-A44B-01Z-00-DX1_1",
+      "visual_observation": "Dense H&E nuclei; virtual DAPI shows broad pale texture and dark nuclear cores in many outlined objects. Nuclear alignment, boundary contrast and spatial QC fail.",
+      "decision": "exclude"
+    },
+    {
+      "sample_id": "TCGA-49-6743-01Z-00-DX2_003",
+      "visual_observation": "Dense H&E nuclei; virtual DAPI is diffuse, with inconsistent localization to the StarDist outlines. Alignment and contrast gates fail.",
+      "decision": "exclude"
+    }
+  ],
+  "limits": "Review is based on display-scaled previews paired with native-score QC. It neither rescues failed images nor validates other marker channels."
+}
