@@ -1,0 +1,89 @@
+{
+  "status": "complete",
+  "device": "CPU",
+  "scope": "Exploratory measured-pixel check of existing ORION GigaTIME DAPI QC failures; no QC threshold changed",
+  "patients": 4,
+  "by_original_qc_status": {
+    "pass": {
+      "patients": 0,
+      "equal_patient_median_spearman": null
+    },
+    "fail": {
+      "patients": 4,
+      "equal_patient_median_spearman": 0.5704271816980555
+    }
+  },
+  "pixel_stride": 4,
+  "metric": "Within-patient raw registered Hoechst versus native virtual DAPI Spearman; equal-patient medians by original QC status",
+  "records": [
+    {
+      "patient": "CRC01",
+      "source_mpp": 0.325,
+      "model_mpp": 0.25,
+      "source_xy": [
+        25600,
+        37888
+      ],
+      "pixels_sampled": 262144,
+      "measured_virtual_pixel_spearman": 0.7757889455659784,
+      "native_qc_status": "fail",
+      "native_nuclear_auc": 0.6910421858868151,
+      "native_boundary_contrast": 0.08708204496614247,
+      "native_spatial_shadow_status": "pass",
+      "original_case_technical_qc_passed": false,
+      "measured_source_url": "https://lin-2023-orion-crc.s3.amazonaws.com/data/CRC01/P37_S29_A24_C59kX_E15_20220106_014304_946511-zlib.ome.tiff"
+    },
+    {
+      "patient": "CRC03",
+      "source_mpp": 0.325,
+      "model_mpp": 0.25,
+      "source_xy": [
+        38912,
+        30720
+      ],
+      "pixels_sampled": 262144,
+      "measured_virtual_pixel_spearman": 0.7365877403771347,
+      "native_qc_status": "fail",
+      "native_nuclear_auc": 0.6791899845372389,
+      "native_boundary_contrast": 0.0604365664264882,
+      "native_spatial_shadow_status": "pass",
+      "original_case_technical_qc_passed": false,
+      "measured_source_url": "https://lin-2023-orion-crc.s3.amazonaws.com/data/CRC03/P37_S31_A24_C59kX_E15_20220106_014409_014236-zlib.ome.tiff"
+    },
+    {
+      "patient": "CRC15",
+      "source_mpp": 0.325,
+      "model_mpp": 0.25,
+      "source_xy": [
+        31744,
+        24576
+      ],
+      "pixels_sampled": 262144,
+      "measured_virtual_pixel_spearman": 0.11610605125370807,
+      "native_qc_status": "fail",
+      "native_nuclear_auc": 0.567417499375773,
+      "native_boundary_contrast": 0.023265651395855458,
+      "native_spatial_shadow_status": "fail",
+      "original_case_technical_qc_passed": false,
+      "measured_source_url": "https://lin-2023-orion-crc.s3.amazonaws.com/data/CRC15/P37_S47_Full_A24_C59mX_E15_20220128_020654_901143-zlib.ome.tiff"
+    },
+    {
+      "patient": "CRC16",
+      "source_mpp": 0.325,
+      "model_mpp": 0.25,
+      "source_xy": [
+        61440,
+        8192
+      ],
+      "pixels_sampled": 262144,
+      "measured_virtual_pixel_spearman": 0.40426662301897637,
+      "native_qc_status": "fail",
+      "native_nuclear_auc": 0.6252560517651373,
+      "native_boundary_contrast": 0.04421263065370973,
+      "native_spatial_shadow_status": "fail",
+      "original_case_technical_qc_passed": false,
+      "measured_source_url": "https://lin-2023-orion-crc.s3.amazonaws.com/data/CRC16/P37_S48_Full_A24_C59mX_E15_20220129_015105_865195-zlib.ome.tiff"
+    }
+  ],
+  "limit": "Using measured data to inspect a QC gate makes this a development audit, not independent validation. Do not admit failing cases solely because their correlation is high."
+}

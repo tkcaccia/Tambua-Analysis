@@ -123,6 +123,32 @@ def test_detected_cell_gallery_has_complete_predictions_and_qualified_score() ->
         assert contact.read_bytes()[:4] == b"RIFF"
 
 
+def test_prepared_expansion_reports_rare_classes_without_claiming_results() -> None:
+    import json
+
+    audit = json.loads((PAGE.parent / "assets/monusac-corrected/expansion-rare-coverage.json").read_text())
+    assert audit["additional_images"] == 93
+    assert audit["counts"]["train_additional"]["images"] == 59
+    assert audit["counts"]["test_additional"]["images"] == 34
+    assert audit["counts"]["train_additional"]["source_polygons_by_class"]["neutrophil"] == 201
+    assert audit["counts"]["test_additional"]["source_polygons_by_class"]["neutrophil"] == 46
+    assert "precede independent nuclear detection" in audit["limit"]
+    assert "precede StarDist matching" in PAGE.read_text(encoding="utf-8")
+
+
+def test_development_qc_fail_audit_does_not_promote_rejected_orion_cases() -> None:
+    import json
+
+    audit = json.loads((PAGE.parent / "assets/orion-pixel-dapi/development-qc-fail-audit.json").read_text())
+    assert audit["patients"] == 4
+    assert audit["device"] == "CPU"
+    assert {row["patient"] for row in audit["records"]} == {"CRC01", "CRC03", "CRC15", "CRC16"}
+    assert all(row["native_qc_status"] == "fail" and not row["original_case_technical_qc_passed"]
+               for row in audit["records"])
+    assert "not independent validation" in audit["limit"]
+    assert "remain excluded" in PAGE.read_text(encoding="utf-8")
+
+
 def test_orion_pixel_gallery_is_registered_and_complete() -> None:
     import json
 

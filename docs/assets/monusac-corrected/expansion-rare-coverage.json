@@ -1,0 +1,189 @@
+{
+  "status": "complete",
+  "scope": "CPU audit of source annotations only",
+  "candidate_images": 213,
+  "current_images": 120,
+  "additional_images": 93,
+  "counts": {
+    "train_current": {
+      "images": 88,
+      "patients": 40,
+      "source_polygons_by_class": {
+        "epithelial": 13448,
+        "lymphocyte": 9400,
+        "macrophage": 211,
+        "neutrophil": 157
+      },
+      "images_with_neutrophils": 29,
+      "images_with_macrophages": 16
+    },
+    "train_additional": {
+      "images": 59,
+      "patients": 35,
+      "source_polygons_by_class": {
+        "epithelial": 466,
+        "lymphocyte": 4928,
+        "macrophage": 251,
+        "neutrophil": 201
+      },
+      "images_with_neutrophils": 24,
+      "images_with_macrophages": 23
+    },
+    "train_expanded": {
+      "images": 147,
+      "patients": 44,
+      "source_polygons_by_class": {
+        "epithelial": 13914,
+        "lymphocyte": 14328,
+        "macrophage": 462,
+        "neutrophil": 358
+      },
+      "images_with_neutrophils": 53,
+      "images_with_macrophages": 39
+    },
+    "test_current": {
+      "images": 32,
+      "patients": 19,
+      "source_polygons_by_class": {
+        "epithelial": 6550,
+        "lymphocyte": 4179,
+        "macrophage": 46,
+        "neutrophil": 4
+      },
+      "images_with_neutrophils": 3,
+      "images_with_macrophages": 4
+    },
+    "test_additional": {
+      "images": 34,
+      "patients": 18,
+      "source_polygons_by_class": {
+        "epithelial": 644,
+        "lymphocyte": 3312,
+        "macrophage": 163,
+        "neutrophil": 46
+      },
+      "images_with_neutrophils": 9,
+      "images_with_macrophages": 9
+    },
+    "test_expanded": {
+      "images": 66,
+      "patients": 24,
+      "source_polygons_by_class": {
+        "epithelial": 7194,
+        "lymphocyte": 7491,
+        "macrophage": 209,
+        "neutrophil": 50
+      },
+      "images_with_neutrophils": 12,
+      "images_with_macrophages": 13
+    }
+  },
+  "rare_additional_test_cases": [
+    {
+      "sample_id": "TCGA-2Z-A9JN-01Z-00-DX1_3",
+      "patient_id": "TCGA-2Z-A9JN",
+      "organ": "kidney",
+      "macrophages": 0,
+      "neutrophils": 6
+    },
+    {
+      "sample_id": "TCGA-49-6743-01Z-00-DX2_001",
+      "patient_id": "TCGA-49-6743",
+      "organ": "lung",
+      "macrophages": 17,
+      "neutrophils": 1
+    },
+    {
+      "sample_id": "TCGA-49-6743-01Z-00-DX2_003",
+      "patient_id": "TCGA-49-6743",
+      "organ": "lung",
+      "macrophages": 0,
+      "neutrophils": 1
+    },
+    {
+      "sample_id": "TCGA-73-4662-01Z-00-DX1_002",
+      "patient_id": "TCGA-73-4662",
+      "organ": "lung",
+      "macrophages": 0,
+      "neutrophils": 5
+    },
+    {
+      "sample_id": "TCGA-78-7152-01Z-00-DX1_001",
+      "patient_id": "TCGA-78-7152",
+      "organ": "lung",
+      "macrophages": 0,
+      "neutrophils": 5
+    },
+    {
+      "sample_id": "TCGA-D8-A3Z6-01Z-00-DX2_003",
+      "patient_id": "TCGA-D8-A3Z6",
+      "organ": "breast",
+      "macrophages": 0,
+      "neutrophils": 4
+    },
+    {
+      "sample_id": "TCGA-DW-7838-01Z-00-DX1_3",
+      "patient_id": "TCGA-DW-7838",
+      "organ": "kidney",
+      "macrophages": 5,
+      "neutrophils": 0
+    },
+    {
+      "sample_id": "TCGA-E2-A108-01Z-00-DX1_004",
+      "patient_id": "TCGA-E2-A108",
+      "organ": "breast",
+      "macrophages": 14,
+      "neutrophils": 0
+    },
+    {
+      "sample_id": "TCGA-EW-A6SB-01Z-00-DX1_003",
+      "patient_id": "TCGA-EW-A6SB",
+      "organ": "breast",
+      "macrophages": 5,
+      "neutrophils": 15
+    },
+    {
+      "sample_id": "TCGA-IZ-A6M9-01Z-00-DX1_3",
+      "patient_id": "TCGA-IZ-A6M9",
+      "organ": "kidney",
+      "macrophages": 23,
+      "neutrophils": 0
+    },
+    {
+      "sample_id": "TCGA-MP-A4T7-01Z-00-DX1_002",
+      "patient_id": "TCGA-MP-A4T7",
+      "organ": "lung",
+      "macrophages": 12,
+      "neutrophils": 0
+    },
+    {
+      "sample_id": "TCGA-MP-A4T7-01Z-00-DX1_005",
+      "patient_id": "TCGA-MP-A4T7",
+      "organ": "lung",
+      "macrophages": 0,
+      "neutrophils": 4
+    },
+    {
+      "sample_id": "TCGA-VP-A87E-01Z-00-DX1_4",
+      "patient_id": "TCGA-VP-A87E",
+      "organ": "prostate",
+      "macrophages": 10,
+      "neutrophils": 5
+    },
+    {
+      "sample_id": "TCGA-VP-A87H-01Z-00-DX1_6",
+      "patient_id": "TCGA-VP-A87H",
+      "organ": "prostate",
+      "macrophages": 61,
+      "neutrophils": 0
+    },
+    {
+      "sample_id": "TCGA-YL-A9WL-01Z-00-DX1_2",
+      "patient_id": "TCGA-YL-A9WL",
+      "organ": "prostate",
+      "macrophages": 16,
+      "neutrophils": 0
+    }
+  ],
+  "limit": "Source polygon counts precede independent nuclear detection, one-to-one matching, GigaTIME inference and DAPI/shadow QC. Rare-class evaluability may be much lower."
+}
