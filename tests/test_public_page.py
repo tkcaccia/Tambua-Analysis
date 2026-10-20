@@ -136,6 +136,36 @@ def test_prepared_expansion_reports_rare_classes_without_claiming_results() -> N
     assert "precede StarDist matching" in PAGE.read_text(encoding="utf-8")
 
 
+def test_expansion_input_preflight_covers_every_prepared_image_without_claiming_qc() -> None:
+    import json
+
+    page = (PAGE.parent / "expansion-input-preflight.html").read_text(encoding="utf-8")
+    root = PAGE.parent / "assets/monusac-expansion-preflight"
+    manifest = json.loads((root / "manifest.json").read_text())
+    ids = [sample for part in manifest["pages"] for sample in part["sample_ids"]]
+    assert manifest["cases"] == len(ids) == len(set(ids)) == 93
+    assert len(manifest["pages"]) == 4
+    assert "Input preflight only" in page and "not virtual markers" in page
+    for part in manifest["pages"]:
+        path = root / part["file"]
+        assert path.stat().st_size > 10000
+        assert path.read_bytes()[:4] == b"RIFF"
+        assert part["file"] in page
+
+
+def test_rare_balance_audit_is_fit_patient_held_out_development_only() -> None:
+    import json
+
+    audit = json.loads((PAGE.parent / "assets/monusac-development-balance/RARE_BALANCE_AUDIT.json").read_text())
+    assert audit["device"] == "CPU"
+    assert len(audit["patients"]) == 21
+    assert "fit cells only" in audit["scope"]
+    assert audit["strategies"]["original"]["support"]["neutrophil"] == 8
+    assert audit["strategies"]["original"]["recall"]["neutrophil"] == 0
+    assert all(item["balanced_accuracy"] < .9 for item in audit["strategies"].values())
+    assert "cannot establish final four-class accuracy" in audit["limit"]
+
+
 def test_development_qc_fail_audit_does_not_promote_rejected_orion_cases() -> None:
     import json
 

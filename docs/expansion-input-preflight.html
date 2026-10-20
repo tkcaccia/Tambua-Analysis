@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tambua — prepared RGB expansion inputs</title>
+<style>
+  :root{font-family:Inter,system-ui,sans-serif;color:#17313c;background:#f4f8f8;line-height:1.5}
+  body{margin:0}.wrap{max-width:1380px;margin:auto;padding:24px}header{background:#102d3b;color:white}header a{color:#aee5e5}
+  h1{line-height:1.1;margin:13px 0}p{max-width:1000px}section{background:white;border:1px solid #d6e3e4;border-radius:12px;margin:24px 0;padding:14px}
+  img{width:100%;height:auto;display:block}small{color:#516a73}.warning{border-left:5px solid #be753d;background:#fff3e5;padding:15px 19px}
+</style></head><body>
+<header><div class="wrap"><a href="index.html">← Tambua Analysis</a><h1>Prepared scanner-RGB expansion inputs</h1><p>All 93 additional MoNuSAC ROIs, 59 training and 34 patient-separated test, shown before GigaTIME inference.</p></div></header>
+<main class="wrap"><p class="warning"><strong>Input preflight only.</strong> These are scanner RGB H&amp;E images, not virtual markers, cell predictions or QC-passing results. The current benchmark score excludes all 93 images. Each was visually inspected here at contact-sheet resolution: nuclei appear purple, eosin-rich tissue pink and erythrocytes red, with no obvious red/blue inversion. Cellularity varies; 16 prepared ROIs have fewer than ten expert annotations. GigaTIME DAPI alignment, shadows and marker fidelity remain to be checked after inference.</p>
+<p>Every image carries its source tissue, train/test split and pixel spacing. Read the <a href="assets/monusac-expansion-preflight/manifest.json">93-image manifest</a> and <a href="assets/monusac-corrected/expansion-rare-coverage.json">source-annotation class audit</a>.</p>
+<section><h2>Images 1–25</h2><img src="assets/monusac-expansion-preflight/rgb-preflight-01.webp" alt="First 25 prepared scanner-RGB MoNuSAC ROIs" loading="lazy"></section>
+<section><h2>Images 26–50</h2><img src="assets/monusac-expansion-preflight/rgb-preflight-02.webp" alt="Prepared scanner-RGB MoNuSAC ROIs 26 to 50" loading="lazy"></section>
+<section><h2>Images 51–75</h2><img src="assets/monusac-expansion-preflight/rgb-preflight-03.webp" alt="Prepared scanner-RGB MoNuSAC ROIs 51 to 75" loading="lazy"></section>
+<section><h2>Images 76–93</h2><img src="assets/monusac-expansion-preflight/rgb-preflight-04.webp" alt="Final 18 prepared scanner-RGB MoNuSAC ROIs" loading="lazy"></section>
+<small>MoNuSAC source imagery and annotations retain CC BY-NC-SA 4.0 terms. The contact sheets are for visual acquisition and color preflight.</small></main></body></html>
