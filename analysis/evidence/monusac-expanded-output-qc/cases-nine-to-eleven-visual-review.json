@@ -1,0 +1,23 @@
+{
+  "scope": "Completed CPU-only expansion cases 9 through 11; all remain excluded from classifier evaluation and the validated public gallery",
+  "source_contact_sheet": "first-eleven-02.webp",
+  "source_manifest": "first-eleven-manifest.json",
+  "reviewed_cases": [
+    {
+      "sample_id": "TCGA-BH-A18T-01Z-00-DX1_3",
+      "visual_observation": "The breast field contains only scattered nuclei. Virtual DAPI has large bright, poorly resolved blobs, including signal outside many StarDist outlines. Spatial QC and nuclear alignment fail.",
+      "decision": "exclude"
+    },
+    {
+      "sample_id": "TCGA-49-6743-01Z-00-DX2_005",
+      "visual_observation": "The tall lung field has many visible H&E nuclei, but virtual DAPI has uneven broad bright areas and does not consistently peak within StarDist outlines. The global AUC is 0.682, below the fixed 0.700 gate. No severe edge shadow is evident in the display preview, but that does not rescue nuclear alignment.",
+      "decision": "exclude"
+    },
+    {
+      "sample_id": "TCGA-BH-A18T-01Z-00-DX1_4",
+      "visual_observation": "Many breast-field nuclei are highlighted, but virtual DAPI remains diffuse across cell-sized areas and the predicted nuclear boundary contrast is weak. The global AUC is 0.685 and boundary contrast 0.040, both below the fixed gates; no apparent edge shadow in the preview.",
+      "decision": "exclude"
+    }
+  ],
+  "limits": "The source image and native virtual-marker score identities, RGB provenance, microscopy resolution and seam checks were verified by the renderer. These display-scaled previews cannot independently establish biological validity of CK, CD68 or other channels; the QC decisions do not change preset thresholds."
+}
