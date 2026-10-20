@@ -1,0 +1,241 @@
+{
+  "status": "pending_manual_visual_review",
+  "patient": "CRC04",
+  "source_mpp_um": 0.325,
+  "model_mpp_um": 0.25,
+  "source_rgb_sha256": "5629a814cc11550e71a2d160d0c41f7e631dc965ad054f6a47713c0c71514ad9",
+  "channels": [
+    {
+      "marker": "DAPI",
+      "native_min": 64,
+      "native_max": 65151,
+      "native_nonconstant": true
+    },
+    {
+      "marker": "TRITC",
+      "native_min": 26,
+      "native_max": 64843,
+      "native_nonconstant": true
+    },
+    {
+      "marker": "Cy5",
+      "native_min": 11,
+      "native_max": 62349,
+      "native_nonconstant": true
+    },
+    {
+      "marker": "PD-1",
+      "native_min": 114,
+      "native_max": 62164,
+      "native_nonconstant": true
+    },
+    {
+      "marker": "CD14",
+      "native_min": 22,
+      "native_max": 57842,
+      "native_nonconstant": true
+    },
+    {
+      "marker": "CD4",
+      "native_min": 16,
+      "native_max": 63121,
+      "native_nonconstant": true
+    },
+    {
+      "marker": "T-bet",
+      "native_min": 14,
+      "native_max": 41091,
+      "native_nonconstant": true
+    },
+    {
+      "marker": "CD34",
+      "native_min": 7,
+      "native_max": 54683,
+      "native_nonconstant": true
+    },
+    {
+      "marker": "CD68",
+      "native_min": 13,
+      "native_max": 58459,
+      "native_nonconstant": true
+    },
+    {
+      "marker": "CD16",
+      "native_min": 6,
+      "native_max": 38659,
+      "native_nonconstant": true
+    },
+    {
+      "marker": "CD11c",
+      "native_min": 10,
+      "native_max": 31540,
+      "native_nonconstant": true
+    },
+    {
+      "marker": "CD138",
+      "native_min": 96,
+      "native_max": 63945,
+      "native_nonconstant": true
+    },
+    {
+      "marker": "CD20",
+      "native_min": 6,
+      "native_max": 48615,
+      "native_nonconstant": true
+    },
+    {
+      "marker": "CD3",
+      "native_min": 25,
+      "native_max": 62105,
+      "native_nonconstant": true
+    },
+    {
+      "marker": "CD8",
+      "native_min": 15,
+      "native_max": 57489,
+      "native_nonconstant": true
+    },
+    {
+      "marker": "PD-L1",
+      "native_min": 67,
+      "native_max": 61063,
+      "native_nonconstant": true
+    },
+    {
+      "marker": "CK",
+      "native_min": 52,
+      "native_max": 64991,
+      "native_nonconstant": true
+    },
+    {
+      "marker": "Ki67",
+      "native_min": 44,
+      "native_max": 51245,
+      "native_nonconstant": true
+    },
+    {
+      "marker": "Tryptase",
+      "native_min": 23,
+      "native_max": 15794,
+      "native_nonconstant": true
+    },
+    {
+      "marker": "Actin-D",
+      "native_min": 13,
+      "native_max": 56576,
+      "native_nonconstant": true
+    },
+    {
+      "marker": "Caspase3-D",
+      "native_min": 123,
+      "native_max": 65097,
+      "native_nonconstant": true
+    },
+    {
+      "marker": "PHH3-B",
+      "native_min": 19,
+      "native_max": 54735,
+      "native_nonconstant": true
+    },
+    {
+      "marker": "Transgelin",
+      "native_min": 15,
+      "native_max": 61010,
+      "native_nonconstant": true
+    }
+  ],
+  "paired_markers": [
+    {
+      "virtual": "DAPI",
+      "measured": "Hoechst",
+      "mapping": "nuclear-dye family",
+      "sampled_tissue_pixels": 248013,
+      "pixel_spearman_rho": 0.7175390573978289,
+      "sampling_stride_source_pixels": 4,
+      "scope": "One CRC04 window; raw spatial pixels only, no cell tables"
+    },
+    {
+      "virtual": "PD-1",
+      "measured": "PD-1",
+      "mapping": "exact",
+      "sampled_tissue_pixels": 248013,
+      "pixel_spearman_rho": -0.001015975679250003,
+      "sampling_stride_source_pixels": 4,
+      "scope": "One CRC04 window; raw spatial pixels only, no cell tables"
+    },
+    {
+      "virtual": "CD4",
+      "measured": "CD4",
+      "mapping": "exact",
+      "sampled_tissue_pixels": 248013,
+      "pixel_spearman_rho": 0.17158517712036492,
+      "sampling_stride_source_pixels": 4,
+      "scope": "One CRC04 window; raw spatial pixels only, no cell tables"
+    },
+    {
+      "virtual": "CD68",
+      "measured": "CD68",
+      "mapping": "exact",
+      "sampled_tissue_pixels": 248013,
+      "pixel_spearman_rho": -0.30484534562888466,
+      "sampling_stride_source_pixels": 4,
+      "scope": "One CRC04 window; raw spatial pixels only, no cell tables"
+    },
+    {
+      "virtual": "CD20",
+      "measured": "CD20",
+      "mapping": "exact",
+      "sampled_tissue_pixels": 248013,
+      "pixel_spearman_rho": 0.06603834001725477,
+      "sampling_stride_source_pixels": 4,
+      "scope": "One CRC04 window; raw spatial pixels only, no cell tables"
+    },
+    {
+      "virtual": "CD3",
+      "measured": "CD3e",
+      "mapping": "CD3 epsilon complex",
+      "sampled_tissue_pixels": 248013,
+      "pixel_spearman_rho": 0.21532094684640044,
+      "sampling_stride_source_pixels": 4,
+      "scope": "One CRC04 window; raw spatial pixels only, no cell tables"
+    },
+    {
+      "virtual": "CD8",
+      "measured": "CD8a",
+      "mapping": "CD8 alpha target",
+      "sampled_tissue_pixels": 248013,
+      "pixel_spearman_rho": 0.05299115270495401,
+      "sampling_stride_source_pixels": 4,
+      "scope": "One CRC04 window; raw spatial pixels only, no cell tables"
+    },
+    {
+      "virtual": "PD-L1",
+      "measured": "PD-L1",
+      "mapping": "exact",
+      "sampled_tissue_pixels": 248013,
+      "pixel_spearman_rho": -0.024626686398770477,
+      "sampling_stride_source_pixels": 4,
+      "scope": "One CRC04 window; raw spatial pixels only, no cell tables"
+    },
+    {
+      "virtual": "CK",
+      "measured": "Pan-CK",
+      "mapping": "cytokeratin family",
+      "sampled_tissue_pixels": 248013,
+      "pixel_spearman_rho": 0.25659164473580964,
+      "sampling_stride_source_pixels": 4,
+      "scope": "One CRC04 window; raw spatial pixels only, no cell tables"
+    },
+    {
+      "virtual": "Ki67",
+      "measured": "Ki67",
+      "mapping": "exact",
+      "sampled_tissue_pixels": 248013,
+      "pixel_spearman_rho": 0.4890618952693462,
+      "sampling_stride_source_pixels": 4,
+      "scope": "One CRC04 window; raw spatial pixels only, no cell tables"
+    }
+  ],
+  "display": "Measured asinh and virtual logit, each 1st\u201399.7th percentile; visualization only. Magenta measured, green virtual in overlap.",
+  "limit": "One previously QC-passing ORION field. Pixel rho does not establish cell-level protein validity or cross-patient association. Each image and shadow pattern requires manual review before site publication."
+}

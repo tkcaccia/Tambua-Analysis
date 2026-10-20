@@ -1,0 +1,22 @@
+{
+  "status": "manual_image_review_complete_biological_validation_failed",
+  "date": "2026-10-20",
+  "patient": "CRC04",
+  "reviewed_virtual_channels": 23,
+  "reviewed_measured_pairs": 10,
+  "source_mpp_um": 0.325,
+  "model_mpp_um": 0.25,
+  "scanner_rgb_and_channel_order": "verified by the frozen RGB SHA-256, tagged RGB OME-TIFF, and all-23-channel store metadata",
+  "technical_qc": {
+    "nuclear_qc": "pass from previously frozen CRC04 case; new DAPI exactly equal to prior native DAPI",
+    "full_channel_seam_qc": "pass",
+    "marker_distribution_qc": "pass",
+    "gpu_cleanup": "verified: owned process group and assigned GPU context absent"
+  },
+  "visual_shadow_review": "Inspected all 23 virtual images at overview and four-to-eight-channel detail scale, all ten measured/virtual pairs in the contact sheet, and a registered 512-pixel crop of H&E, DAPI/Hoechst and CD68. No straight rectangular tiling seam or border shadow is apparent. The dark upper-left tissue/empty-field area follows the source field rather than a rectangular processing border. This finding is limited to this CRC04 window.",
+  "dapi_review": "Virtual DAPI follows many measured Hoechst nuclear regions, but peaks are much broader and brighter than individual nuclei. Full-tissue pixel rank agreement does not measure nuclear intensity fidelity.",
+  "protein_review": "Several virtual protein channels share broad morphology and fail to reproduce sparse measured immunofluorescence. The raw-pixel Spearman values include CD68 -0.305, PD-1 -0.001, CD20 0.066, CD8 0.053, CK/Pan-CK 0.257, and Ki67 0.489. The CK and DAPI pair names are antigen-family mappings, not exact quantitative equivalents. Protein-specific validity is not established.",
+  "decision": "publish_only_as_clearly_labelled_diagnostic_raw_images; exclude_from_validated_protein_claims_and_classifier_training",
+  "evidence": ["REPORT.json", "CRC04-all-23-virtual.webp", "CRC04-paired-contact.webp", "CRC04-registered-512px-crop.webp", "CRC04-virtual-detail-1.webp", "CRC04-virtual-detail-2.webp", "CRC04-virtual-detail-3.webp"],
+  "limit": "One previously QC-passing patient is insufficient for the required cross-patient protein correlation. Technical DAPI and seam passes cannot certify the biological accuracy of every virtual marker."
+}

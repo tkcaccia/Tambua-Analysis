@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tambua · raw ORION protein images</title>
+  <style>
+    :root{font-family:Inter,ui-sans-serif,system-ui,sans-serif;color:#17313c;background:#f4f8f8;line-height:1.5}*{box-sizing:border-box}body{margin:0}header{background:#102d3b;color:white;padding:26px max(20px,calc((100vw - 1380px)/2)) 32px}header a{color:#bceaf0}h1{margin:10px 0 6px;font-size:clamp(2rem,4vw,3rem)}main{max-width:1420px;margin:auto;padding:24px 22px 70px}.notice{background:#fff1df;border-left:5px solid #b9652b;padding:15px 20px;border-radius:0 10px 10px 0}.good{background:#e8f4ee;border-left-color:#3a8167}.controls{display:flex;flex-wrap:wrap;gap:18px;align-items:end;margin:22px 0}.controls label{display:grid;gap:5px;font-weight:700}.controls select{font:inherit;padding:10px;border:1px solid #96b9c0;border-radius:7px;background:white;min-width:230px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:18px 0}figure{margin:0;background:white;border:1px solid #d4e3e5;border-radius:12px;overflow:hidden}figure img{width:100%;display:block;image-rendering:auto}figcaption{padding:12px 16px;font-weight:650}.fine{color:#526d76}.metric{font-weight:700}a{color:#09617e}@media(max-width:700px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<header><a href="./">← Tambua Analysis</a><h1>Raw measured and virtual protein images</h1><p>One registered ORION CRC04 tissue window. Choose any of the 23 GigaTIME channels; ten have measured fluorescence counterparts.</p></header>
+<main>
+  <p class="notice"><strong>Diagnostic, not a validated protein benchmark.</strong> The source RGB, 0.325 → 0.25 µm/pixel conversion, virtual DAPI alignment and all-channel seam checks passed, and all 23 virtual images were visually inspected. No rectangular processing shadow was apparent in this window. Several protein images nevertheless disagree strongly with the registered measured fluorescence: CD68 has pixel Spearman ρ = −0.305 and PD-1 is near zero. This field is excluded from protein-validity and cell-type accuracy claims. It is shown so the failure is inspectable.</p>
+  <p class="notice good"><strong>Native spatial images.</strong> The measured panels are the released ORION fluorescence pixels, and the virtual panels are saved GigaTIME spatial output resampled onto the H&amp;E grid. They are not cell-table values painted onto masks. Display contrast is adjusted separately for viewing; the reported rank associations use native values within tissue pixels. The scanner image is RGB. Both source and model spacing are recorded for every image.</p>
+  <div class="controls"><label>Virtual marker<select id="marker"><option>Loading…</option></select></label><span id="metric" class="metric" aria-live="polite"></span></div>
+  <div id="gallery" class="grid"></div>
+  <p class="fine">Source: <a href="https://github.com/labsyspharm/orion-crc/blob/main/datarelease-README.md">ORION CRC data release</a>. This single window cannot establish a cross-patient protein correlation. The <a href="orion-pixel-dapi.html">ten-patient DAPI image viewer</a> and the separate <a href="orion-measured-preflight.html">measured-protein gallery</a> cover more patients, but their other virtual protein images have not passed paired review. <a href="assets/orion-raw-crc04/REPORT.json">Pixel metrics and image manifest</a> · <a href="assets/orion-raw-crc04/visual-review.json">Visual review decision</a>.</p>
+</main>
+<script>
+const root='assets/orion-raw-crc04/';
+let report;
+function card(filename,title){const figure=document.createElement('figure'),link=document.createElement('a'),img=document.createElement('img'),caption=document.createElement('figcaption');link.href=root+encodeURIComponent(filename);link.target='_blank';link.rel='noopener';img.src=link.href;img.loading='lazy';img.alt=title+' in the registered CRC04 tissue window';caption.textContent=title;link.append(img);figure.append(link,caption);return figure}
+function show(name){const pair=report.paired_markers.find(p=>p.virtual===name),gallery=document.getElementById('gallery');gallery.replaceChildren();gallery.append(card('CRC04-HE.webp','Scanner RGB H&E · 0.325 µm/pixel'));if(pair)gallery.append(card('CRC04-measured-'+pair.measured+'.webp','Measured '+pair.measured+' · raw fluorescence'));gallery.append(card('CRC04-virtual-'+name+'.webp','GigaTIME '+name+' · 0.25 µm/pixel model grid'));if(pair)gallery.append(card('CRC04-overlap-'+name+'.webp','Measured magenta / virtual green'));document.getElementById('metric').textContent=pair?`${name} → ${pair.measured}: within-tissue native-pixel Spearman ρ = ${pair.pixel_spearman_rho.toFixed(3)}; one patient only`:`${name}: no verified measured ORION counterpart for this pilot`;location.hash=encodeURIComponent(name)}
+fetch(root+'REPORT.json').then(r=>{if(!r.ok)throw Error('Images unavailable');return r.json()}).then(data=>{report=data;const selector=document.getElementById('marker');selector.replaceChildren();for(const row of data.channels){const option=document.createElement('option');option.value=row.marker;option.textContent=row.marker;selector.append(option)}selector.addEventListener('change',()=>show(selector.value));let chosen;try{chosen=decodeURIComponent(location.hash.slice(1))}catch{chosen='DAPI'}selector.value=data.channels.some(x=>x.marker===chosen)?chosen:'DAPI';show(selector.value)}).catch(e=>document.getElementById('metric').textContent=e.message);
+</script>
+</body>
+</html>

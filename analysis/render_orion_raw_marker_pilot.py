@@ -134,11 +134,14 @@ def run(input_case: Path, measured_root: Path, pilot_root: Path, output: Path) -
             continue
         measured_name, mapping = PAIRS[marker]
         path = measured_root / "CRC04" / f"{measured_name}.tif"
-        if sha(path) != source_by_name[measured_name]["sha256"]:
-            raise ValueError(f"Registered measured source hash changed: {measured_name}")
         measured = tifffile.imread(path)
         if measured.shape != (2048, 2048) or measured.dtype != np.uint16:
             raise ValueError(f"Measured spatial channel changed: {measured_name}")
+        # The acquisition manifest hashes the decoded native pixel buffer,
+        # rather than TIFF container bytes (whose metadata/compression vary).
+        if hashlib.sha256(measured.tobytes()).hexdigest() != \
+                source_by_name[measured_name]["sha256"]:
+            raise ValueError(f"Registered measured pixels changed: {measured_name}")
         md = Image.fromarray(display(measured, virtual=False), "L")
         md.save(output / f"CRC04-measured-{measured_name}.webp", "WEBP", quality=88)
         overlap = Image.fromarray(np.stack((np.asarray(md), np.asarray(vd),

@@ -1,0 +1,23 @@
+{
+  "archive_sha256": "cd1212b361f7bfe4f7f01779a59f437c691fd43a684d7b5f584c37bf7d0e2601",
+  "sample": "0_556_556_556",
+  "source_url": "https://www.dropbox.com/scl/fi/8ampg43fs2yowt9y6vvr1/sample_test_data.zip?dl=1&rlkey=bkg4w183qnvkh2dudqy3d8lsg",
+  "official_source_mpp_um": 0.2302158273381295,
+  "rgb_shape": [
+    556,
+    556,
+    3
+  ],
+  "comet_shape": [
+    556,
+    556,
+    25
+  ],
+  "rgb_sha256": "18e721f32b1e8e38661b48df57b3c7f6fd262da71bf8937daf79519a9e5b20a9",
+  "raw_channel0_p01_p50_p997": [
+    0.0,
+    30.0,
+    250.0
+  ],
+  "status": "prepared_official_positive_control_no_inference"
+}

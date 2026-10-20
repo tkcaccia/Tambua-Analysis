@@ -1,0 +1,17 @@
+{
+  "status": "manual_review_complete",
+  "date": "2026-10-20",
+  "reviewed_position": 93,
+  "sample_id": "TCGA-YL-A9WL-01Z-00-DX1_4",
+  "organ": "prostate",
+  "split": "test",
+  "source_mpp_um": 0.2485,
+  "model_mpp_um": 0.25,
+  "automated_nuclear_qc": "fail",
+  "dapi_auc": 0.7787592127323804,
+  "nuclear_boundary_contrast": 0.04257699793256442,
+  "finding": "The scanner RGB shows densely packed purple nuclei. The virtual DAPI image has broad, frequently connected bright nuclear-region peaks; some StarDist outlines fall inside them, but individual boundaries are insufficiently resolved. The independent nuclear alignment gate fails. No rectangular border shadow is apparent in the inspected overlay, and automated seam and spatial-shadow checks pass.",
+  "decision": "exclude_frozen_qc_fail",
+  "evidence": ["source-review.webp", "stardist_qc.png"],
+  "publication_limit": "This image is excluded from the cell-type classifier and validated public gallery. A visual impression of nuclear proximity does not override the prespecified contrast gate."
+}

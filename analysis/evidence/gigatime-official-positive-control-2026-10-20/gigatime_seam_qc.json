@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "interpretation": "Block boundaries are compared with adjacent within-block gradients. This is an image-continuity QC metric, not a biological accuracy estimate.",
+  "prediction_shape_cyx": [
+    1,
+    512,
+    512
+  ],
+  "prediction_dtype": "uint16",
+  "probability_scale": 65535.0,
+  "block_size_px": 768,
+  "thresholds": {
+    "max_p95_excess": 0.1,
+    "min_affected_fraction": 0.05,
+    "max_samples_per_boundary": 4096,
+    "neighborhood_radius": 4
+  },
+  "boundaries_evaluated": 0,
+  "channel_boundary_tests": 0,
+  "failed_channel_boundaries": 0,
+  "worst_channel_boundary": null,
+  "records": [],
+  "prediction_path": "/home/chiamaka/Tambua-gigatime-official-positive-control-2026-10-20/output/gigatime_probs.zarr",
+  "gate_mode": "warn"
+}

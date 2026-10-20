@@ -1,0 +1,18 @@
+[INFO] GigaTIME hardware adaptation enabled=True profile=balanced requested={'batch_size': 2, 'block_size': 2048, 'max_output_gib': 32.0} effective={'batch_size': 2, 'block_size': 768, 'max_output_gib': 1.25} system_mem_available_gib=15.554153442382812 cuda_mem_free_gib=None cuda_mem_total_gib=None
+[INFO] GigaTIME source MPP recovered from crop TIFF /home/chiamaka/Tambua-gigatime-official-positive-control-2026-10-20/input/he.ome.tif
+[INFO] GigaTIME input image shape=(512, 512, 3) dtype=uint8
+[INFO] GigaTIME downsampled large image (556, 556) -> (512, 512) (factor=1.0859375)
+[INFO] GigaTIME physical scale source_mpp=0.2302 effective_mpp=0.2500 target_mpp=0.2500
+[INFO] GigaTIME device=cpu repo_id=prov-gigatime/GigaTIME offline=True
+[INFO] GigaTIME tiling patch_size=256 stride=128 blend=raised_cosine
+[INFO] GigaTIME saving JPEG markers=DAPI (count=1)
+[INFO] GigaTIME persisted store channels=DAPI (count=1)
+[INFO] GigaTIME output budget estimated_output_gib=0.00 selection_reason=target_mpp output_format=zarr output_dtype=uint16
+[INFO] GigaTIME accumulation mode=blockwise_tiled tile_size=768
+[INFO] GigaTIME zarr init shape=(1, 512, 512) chunks=(1, 512, 512)
+[INFO] GigaTIME zarr dataset created
+[INFO] GigaTIME reader ready final_shape=(512, 512) using=pyvips
+[INFO] GigaTIME first tile region y=(0,512) x=(0,512)
+[INFO] GigaTIME blockwise tile 1/1
+[OK] GigaTIME wrote /home/chiamaka/Tambua-gigatime-official-positive-control-2026-10-20/output/gigatime_probs.zarr shape=(1, 512, 512)
+[INFO] GigaTIME seam QC status=pass failed=0 tests=0 report=/home/chiamaka/Tambua-gigatime-official-positive-control-2026-10-20/output/gigatime_seam_qc.json
