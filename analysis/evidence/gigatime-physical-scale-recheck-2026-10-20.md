@@ -1,0 +1,9 @@
+# GigaTIME physical-scale recheck during MoNuSAC expansion
+
+The authors [clarified their preprocessing](https://github.com/prov-gigatime/GigaTIME/issues/4): each paired H&E/mIF field spans 128 × 128 µm and is 556 × 556 source pixels; they resize it to 512 × 512, then train and infer on 256 × 256 windows. The effective model grid is therefore **128/512 = 0.25 µm/pixel**. The 256-pixel model input spans 64 µm. The apparent 256-pixels-per-128-µm statement quoted from the paper is not the actual preprocessing described by the model contributor.
+
+The frozen CellPhenotyper run records source spacing 0.2525 µm/pixel for `TCGA-UZ-A9PO-01Z-00-DX1_1`, effective spacing **0.25 µm/pixel**, 256-pixel patches, and 128-pixel stride. Its input is uint8 RGB, TIFF `Photometric=RGB`, lossless Deflate compression. The frozen source uses RGB, ImageNet channel normalization, and the same 23-channel order as the authors' example. These observations argue against a simple factor-of-two scale, BGR swap, or lossy-input error for this case. They do **not** establish accurate virtual proteins or explain the broad DAPI signal.
+
+At a completed 68-case snapshot, only seven fields passed the existing nuclear and shadow gates; 60 of 61 failures failed the nuclear-alignment gate. The physical-scale check does not justify changing that gate. The next useful discriminator is a paired measured/virtual spatial image comparison and, on training fields only, a controlled input-stain experiment. The live 93-case CPU bundle remains source-frozen; this audit did not modify it or launch inference.
+
+Evidence: [authors' issue](https://github.com/prov-gigatime/GigaTIME/issues/4), [model card](https://huggingface.co/prov-gigatime/GigaTIME), frozen Chiamaka case `gigatime_metadata.json`, and [68-case QC audit](monusac-expanded-qc-reasons-snapshot-68-2026-10-20.json).
