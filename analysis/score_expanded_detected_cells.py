@@ -128,6 +128,19 @@ def matched_metrics(table: Path, predicted: Path, classes: list[str]) -> dict:
     patient_indices = {patient: np.asarray([i for i, row in enumerate(labels)
                                            if row["patient_id"] == patient], dtype=np.int64)
                        for patient in patients}
+    per_class_patient = {}
+    for name in classes:
+        recalls = []
+        for patient in patients:
+            idx = patient_indices[patient]
+            selected = y[idx] == name
+            if np.any(selected):
+                recalls.append(float(np.mean(pred[idx][selected] == name)))
+        per_class_patient[name] = {"patients_with_expert_class": len(recalls),
+                                   "equal_patient_recall": float(np.mean(recalls))
+                                   if recalls else None}
+    patient_macro = [per_class_patient[name]["equal_patient_recall"]
+                     for name in classes]
     rng = np.random.default_rng(20261020)
     bootstrap = []
     for draw in rng.choice(patients, size=(2000, len(patients)), replace=True):
@@ -136,6 +149,9 @@ def matched_metrics(table: Path, predicted: Path, classes: list[str]) -> dict:
         if score is not None:
             bootstrap.append(score)
     return {"pooled": pooled, "by_organ": by_organ, "patients": len(patients),
+            "equal_patient_per_class_recall": per_class_patient,
+            "equal_patient_balanced_accuracy": float(np.mean(patient_macro))
+                if all(value is not None for value in patient_macro) else None,
             "patient_bootstrap_valid_draws": len(bootstrap),
             "balanced_accuracy_95pct_patient_bootstrap":
                 [float(x) for x in np.quantile(bootstrap, [.025, .975])]
