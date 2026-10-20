@@ -1,0 +1,48 @@
+{
+  "scope": "Completed CPU-only expansion cases 21 through 28; manually inspected scanner RGB H&E, virtual DAPI, DAPI/StarDist overlay, CK and CD68 contact sheets",
+  "source_contact_sheets": ["first-twenty-eight-04.webp", "first-twenty-eight-05.webp"],
+  "source_manifest": "first-twenty-eight-manifest.json",
+  "reviewed_cases": [
+    {
+      "sample_id": "TCGA-EJ-5495-01Z-00-DX1-2",
+      "visual_observation": "The dense prostate field shows many bright virtual-DAPI structures near H&E nuclei, but the signal is broad and the fixed nuclear-boundary contrast is 0.041. It may be informative for an independently defined QC calibration, not a retrospective pass.",
+      "decision": "exclude_pending_independent_QC_calibration"
+    },
+    {
+      "sample_id": "TCGA-A2-A0ES-01Z-00-DX1_001",
+      "visual_observation": "Dense breast nuclei are visible in H&E; virtual DAPI follows the cell-rich region but lacks sharp nuclear localization at many StarDist outlines. Boundary contrast is 0.032.",
+      "decision": "exclude"
+    },
+    {
+      "sample_id": "TCGA-EJ-5495-01Z-00-DX1-3",
+      "visual_observation": "Several sparse prostate nuclei are bright, while others have weak or displaced virtual-DAPI signal. AUC 0.671 is below the fixed gate.",
+      "decision": "exclude"
+    },
+    {
+      "sample_id": "TCGA-B6-A0WZ-01Z-00-DX1_2",
+      "visual_observation": "In a sparse breast field, virtual-DAPI blobs extend well beyond several outlined nuclei and merge along tissue borders. AUC and boundary contrast fail.",
+      "decision": "exclude"
+    },
+    {
+      "sample_id": "TCGA-EJ-5505-01Z-00-DX1-2",
+      "visual_observation": "The blood-rich prostate field contains many non-nucleated erythrocytes. Virtual DAPI is bright in some non-nuclear areas and misses several outlined nuclei.",
+      "decision": "exclude"
+    },
+    {
+      "sample_id": "TCGA-B6-A0WZ-01Z-00-DX1_3",
+      "visual_observation": "This erythrocyte-rich breast field has prominent dark H&E nuclei that remain dark in virtual DAPI, while several non-nuclear red-cell regions are bright. AUC is near chance at 0.510.",
+      "decision": "exclude"
+    },
+    {
+      "sample_id": "TCGA-EJ-5505-01Z-00-DX1-4",
+      "visual_observation": "Many prostate nuclei are bright in the virtual-DAPI panel, but several bright regions join adjacent cells and the fixed boundary contrast is 0.040. It is a candidate for independent QC calibration only.",
+      "decision": "exclude_pending_independent_QC_calibration"
+    },
+    {
+      "sample_id": "TCGA-B6-A0WZ-01Z-00-DX1_4",
+      "visual_observation": "Virtual DAPI highlights some nuclei in a sparse breast field, but there are broad cytoplasmic/tissue-edge signals and inconsistent agreement with StarDist outlines. Boundary contrast is 0.026.",
+      "decision": "exclude"
+    }
+  ],
+  "limits": "All eight fail the frozen automated QC and remain excluded. Only DAPI, CK and CD68 spatial channels are shown in these contact sheets; complete 23-channel visual inspection would be required before inclusion. Border-shadow or seam metrics alone cannot establish marker accuracy."
+}
