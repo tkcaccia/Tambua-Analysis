@@ -1,0 +1,30 @@
+{
+  "status": "partial_manual_review_complete",
+  "date": "2026-10-20",
+  "reviewed_positions": [81, 82, 83],
+  "automated_qc_counts": {"pass": 0, "fail": 3},
+  "records": [
+    {
+      "sample_id": "TCGA-X4-A8KQ-01Z-00-DX8-1",
+      "organ": "prostate",
+      "split": "train",
+      "finding": "Dense nuclei in scanner RGB; virtual DAPI is broad and partly confluent over the cluster, with less distinct signal at some StarDist boundaries. AUC 0.815 but boundary contrast 0.047 is below the frozen gate.",
+      "decision": "exclude_frozen_qc_fail"
+    },
+    {
+      "sample_id": "TCGA-MP-A4T7-01Z-00-DX1_005",
+      "organ": "lung",
+      "split": "test",
+      "finding": "Blood-rich field with some DAPI peaks corresponding to nuclei but diffuse bright virtual signal in adjacent structures. AUC 0.674 and contrast 0.045 fail nuclear alignment.",
+      "decision": "exclude_frozen_qc_fail"
+    },
+    {
+      "sample_id": "TCGA-X4-A8KQ-01Z-00-DX8-2",
+      "organ": "prostate",
+      "split": "train",
+      "finding": "Dense lymphoid-looking region: virtual DAPI is nearly confluent white over many separate dark H&E nuclei and StarDist outlines. AUC 0.723 and contrast 0.018 fail alignment decisively.",
+      "decision": "exclude_frozen_qc_fail"
+    }
+  ],
+  "scope": "Contact-sheet visual review of completed positions 81-83. No failed case was requalified or added to a classifier."
+}
