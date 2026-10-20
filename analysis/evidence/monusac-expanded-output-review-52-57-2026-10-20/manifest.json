@@ -1,0 +1,238 @@
+{
+  "status": "partial_six_new_cases_review",
+  "source_full_manifest_sha256": "14331063b066b59412fba2bafd99f04d629d8e842543ea634e7426bebc1becb3",
+  "source_completed_cases": 57,
+  "expected_cases": 93,
+  "pages": [
+    {
+      "file": "output-qc-09.webp",
+      "sample_ids": [
+        "TCGA-KK-A6E0-01Z-00-DX1-3",
+        "TCGA-EW-A6SB-01Z-00-DX1_002",
+        "TCGA-KK-A6E0-01Z-00-DX1-5",
+        "TCGA-EW-A6SB-01Z-00-DX1_003",
+        "TCGA-MH-A560-01Z-00-DX2_1",
+        "TCGA-EW-A6SB-01Z-00-DX1_004"
+      ]
+    },
+    {
+      "file": "output-qc-10.webp",
+      "sample_ids": [
+        "TCGA-MH-A560-01Z-00-DX2_3",
+        "TCGA-EW-A6SB-01Z-00-DX1_005",
+        "TCGA-MP-A4SY-01Z-00-DX1_1"
+      ]
+    }
+  ],
+  "reviewed_case_positions": [
+    52,
+    53,
+    54,
+    55,
+    56,
+    57
+  ],
+  "records": [
+    {
+      "sample_id": "TCGA-EW-A6SB-01Z-00-DX1_003",
+      "patient_id": "TCGA-EW-A6SB",
+      "organ": "breast",
+      "split": "test",
+      "source_mpp": 0.2525,
+      "model_mpp": 0.25,
+      "qc_status": "pass",
+      "alignment_status": "pass",
+      "border_shadow_status": "pass",
+      "spatial_shadow_status": "pass",
+      "dapi_auc": 0.8668414080546808,
+      "dapi_boundary_contrast": 0.07882748665511685,
+      "raw_quantiles_p01_p50_p997": {
+        "DAPI": [
+          80.0,
+          3632.0,
+          63019.413
+        ],
+        "CK": [
+          31.0,
+          8607.0,
+          63733.0
+        ],
+        "CD68": [
+          13.0,
+          487.0,
+          46368.652
+        ]
+      },
+      "visual_review_status": "pending"
+    },
+    {
+      "sample_id": "TCGA-MH-A560-01Z-00-DX2_1",
+      "patient_id": "TCGA-MH-A560",
+      "organ": "kidney",
+      "split": "train",
+      "source_mpp": 0.2527,
+      "model_mpp": 0.25,
+      "qc_status": "fail",
+      "alignment_status": "fail",
+      "border_shadow_status": "pass",
+      "spatial_shadow_status": "pass",
+      "dapi_auc": 0.7282347346661667,
+      "dapi_boundary_contrast": 0.02754150211868489,
+      "raw_quantiles_p01_p50_p997": {
+        "DAPI": [
+          978.0,
+          49188.0,
+          61866.234999999986
+        ],
+        "CK": [
+          63.0,
+          409.0,
+          17720.114999999874
+        ],
+        "CD68": [
+          689.55,
+          15096.0,
+          41594.234999999986
+        ]
+      },
+      "visual_review_status": "pending"
+    },
+    {
+      "sample_id": "TCGA-EW-A6SB-01Z-00-DX1_004",
+      "patient_id": "TCGA-EW-A6SB",
+      "organ": "breast",
+      "split": "test",
+      "source_mpp": 0.2525,
+      "model_mpp": 0.25,
+      "qc_status": "fail",
+      "alignment_status": "fail",
+      "border_shadow_status": "pass",
+      "spatial_shadow_status": "pass",
+      "dapi_auc": 0.7212573632946456,
+      "dapi_boundary_contrast": 0.020291503932518884,
+      "raw_quantiles_p01_p50_p997": {
+        "DAPI": [
+          6617.2,
+          55348.0,
+          63640.18400000001
+        ],
+        "CK": [
+          26.0,
+          89.0,
+          1055.0
+        ],
+        "CD68": [
+          2307.24,
+          8398.0,
+          38093.91200000001
+        ]
+      },
+      "visual_review_status": "pending"
+    },
+    {
+      "sample_id": "TCGA-MH-A560-01Z-00-DX2_3",
+      "patient_id": "TCGA-MH-A560",
+      "organ": "kidney",
+      "split": "train",
+      "source_mpp": 0.2527,
+      "model_mpp": 0.25,
+      "qc_status": "fail",
+      "alignment_status": "pass",
+      "border_shadow_status": "pass",
+      "spatial_shadow_status": "fail",
+      "dapi_auc": 0.7984818088230302,
+      "dapi_boundary_contrast": 0.06331407320973137,
+      "raw_quantiles_p01_p50_p997": {
+        "DAPI": [
+          110.88,
+          764.0,
+          63460.071999999986
+        ],
+        "CK": [
+          195.0,
+          2753.0,
+          62601.10799999998
+        ],
+        "CD68": [
+          53.0,
+          370.0,
+          60978.93599999981
+        ]
+      },
+      "visual_review_status": "pending"
+    },
+    {
+      "sample_id": "TCGA-EW-A6SB-01Z-00-DX1_005",
+      "patient_id": "TCGA-EW-A6SB",
+      "organ": "breast",
+      "split": "test",
+      "source_mpp": 0.2525,
+      "model_mpp": 0.25,
+      "qc_status": "fail",
+      "alignment_status": "fail",
+      "border_shadow_status": "pass",
+      "spatial_shadow_status": "pass",
+      "dapi_auc": 0.758079650938085,
+      "dapi_boundary_contrast": 0.022706262991615267,
+      "raw_quantiles_p01_p50_p997": {
+        "DAPI": [
+          7819.02,
+          56955.0,
+          63289.48200000002
+        ],
+        "CK": [
+          22.0,
+          76.0,
+          1106.4820000000182
+        ],
+        "CD68": [
+          1662.0,
+          7575.0,
+          37966.9040000001
+        ]
+      },
+      "visual_review_status": "pending"
+    },
+    {
+      "sample_id": "TCGA-MP-A4SY-01Z-00-DX1_1",
+      "patient_id": "TCGA-MP-A4SY",
+      "organ": "lung",
+      "split": "train",
+      "source_mpp": 0.2525,
+      "model_mpp": 0.25,
+      "qc_status": "fail",
+      "alignment_status": "fail",
+      "border_shadow_status": "pass",
+      "spatial_shadow_status": "fail",
+      "dapi_auc": 0.5755122131454957,
+      "dapi_boundary_contrast": 0.012891868084499714,
+      "raw_quantiles_p01_p50_p997": {
+        "DAPI": [
+          41.0,
+          1317.0,
+          63238.788
+        ],
+        "CK": [
+          26.0,
+          862.0,
+          46093.94
+        ],
+        "CD68": [
+          11.0,
+          308.0,
+          24729.152000000002
+        ]
+      },
+      "visual_review_status": "pending"
+    }
+  ],
+  "panels": [
+    "Scanner RGB",
+    "Virtual DAPI",
+    "DAPI / StarDist",
+    "CK",
+    "CD68"
+  ],
+  "display": "Marker channels use per-image logit/1st\u201399.7th percentile display scaling; original uint16 scores remain unchanged. These previews cannot establish marker validity alone.",
+  "limit": "Contact-sheet visual review of six newly completed CPU cases only; not a validated marker or classification result."
+}

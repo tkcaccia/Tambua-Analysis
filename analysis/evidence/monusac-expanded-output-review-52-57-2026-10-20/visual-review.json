@@ -1,0 +1,19 @@
+{
+  "status": "partial_manual_review_complete",
+  "date": "2026-10-20",
+  "reviewed_cases": [
+    "TCGA-EW-A6SB-01Z-00-DX1_003",
+    "TCGA-MH-A560-01Z-00-DX2_1",
+    "TCGA-EW-A6SB-01Z-00-DX1_004",
+    "TCGA-MH-A560-01Z-00-DX2_3",
+    "TCGA-EW-A6SB-01Z-00-DX1_005",
+    "TCGA-MP-A4SY-01Z-00-DX1_1"
+  ],
+  "automated_qc_counts": {
+    "pass": 1,
+    "fail": 5
+  },
+  "visual_findings": "Scanner RGB order appears plausible in all six. TCGA-EW-A6SB-01Z-00-DX1_003 shows the strongest virtual-DAPI/nuclear overlap and passes automated gates; protein specificity remains unproven. The other five show blur, diffuse virtual signal, or broad uneven shading. TCGA-MH-A560-01Z-00-DX2_3 has respectable global nuclear AUC yet fails spatial-shadow QC; its visible broad shading supports retaining that failure.",
+  "publication_status": "do_not_use_as_validated_protein_or_classifier_results",
+  "scope": "Preview-scale inspection of cases 52-57 from an active 93-case CPU bundle. No protein-specific reference exists for these MoNuSAC fields."
+}
