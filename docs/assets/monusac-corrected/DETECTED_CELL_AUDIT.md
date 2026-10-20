@@ -72,9 +72,10 @@ historical and **must not** be read as a corrected StarDist-cell score.
 Reproduction code: [`score_monusac_stardist_detection.py`](../../../analysis/score_monusac_stardist_detection.py),
 [`match_monusac_expert_to_detected.py`](../../../analysis/match_monusac_expert_to_detected.py),
 [`quantify_detected_monusac_cells.py`](../../../analysis/quantify_detected_monusac_cells.py),
-[`run_detected_quantification_cpu.py`](../../../analysis/run_detected_quantification_cpu.py)
+[`run_detected_quantification_cpu.py`](../../../analysis/run_detected_quantification_cpu.py),
 [`score_monusac_detected_cells.py`](../../../analysis/score_monusac_detected_cells.py),
 [`build_detected_cell_gallery.py`](../../../analysis/build_detected_cell_gallery.py)
+[`render_all_monusac_markers.py`](../../../analysis/render_all_monusac_markers.py)
 and [`recheck_monusac_nuclear_qc_with_stardist.py`](../../../analysis/recheck_monusac_nuclear_qc_with_stardist.py).
 The [CPU quantification record](detected-cell-quantification-summary.json) and
 [revised 47-image quantification record](../monusac-detected/quantification-summary.json),
@@ -86,3 +87,14 @@ virtual DAPI, StarDist nuclei, predicted-cell overlay and source expert
 annotations. No obvious border shadow was seen at that scale; some DAPI
 signals remain broad or saturated, and this visual check does not prove that
 every cell is anatomically correct. No UCT HPC GPU job was run for this audit.
+
+The viewer additionally exposes all **23 saved spatial GigaTIME channels** for
+each of those 47 images. Their [manifest](../monusac-all-markers/manifest.json)
+records native uint16 quantiles, physical pixel spacing and per-case quality
+flags. WebP previews are contrast-stretched independently for anatomy review;
+the saved pixel values, not the previews, supplied cell quantification. The
+all-channel block-seam QC passed in all 47 cases. The marker-distribution check
+returned `review` in four cases because selected channels had a sampled
+5th–95th percentile range below 0.005; the viewer displays the affected
+channel warnings. This flag is not proof of a border shadow, and passing DAPI
+shadow QC is not proof that every virtual marker is biologically valid.

@@ -99,6 +99,21 @@ def test_detected_cell_gallery_has_complete_predictions_and_qualified_score() ->
             assert path.stat().st_size > 1000
             assert path.read_bytes()[:4] == b"RIFF"
 
+    markers = PAGE.parent / "assets/monusac-all-markers"
+    marker_manifest = json.loads((markers / "manifest.json").read_text())
+    assert marker_manifest["cases"] == 47
+    assert len(marker_manifest["channel_names"]) == 23
+    assert {row["sample_id"] for row in marker_manifest["records"]} == \
+           {row["sample_id"] for row in manifest["records"]}
+    assert "All 23 spatial GigaTIME channels" in html
+    for row in marker_manifest["records"]:
+        assert row["all_channel_seam_qc"] == "pass"
+        assert row["marker_distribution_qc"] in {"pass", "review"}
+        for index in range(23):
+            path = markers / f'{row["sample_id"]}--{index:02d}.webp'
+            assert path.stat().st_size > 1000
+            assert path.read_bytes()[:4] == b"RIFF"
+
 
 def test_orion_pixel_gallery_is_registered_and_complete() -> None:
     import json
