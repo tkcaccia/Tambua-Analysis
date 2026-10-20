@@ -70,12 +70,18 @@ def run(args: argparse.Namespace) -> dict:
         counts = Counter(row["cell_type"] for row in labels)
         if sum(counts.values()) != result["expert_types_conservatively_matched"]:
             raise ValueError("Matched label count differs from quantified case")
+        if any(counts[name] != matched["matched_by_type"][name] or
+               counts[name] > matched["expert_by_type"][name] for name in CLASSES):
+            raise ValueError("Matched-cell or expert support differs from frozen nuclear matching")
         flagged = sum(row["cell_type"] == "macrophage" and
                       int(row["expert_area_native_px"]) > 5000 for row in labels)
         rows.append({"sample_id": sample, "patient_id": matched["patient_id"],
                      "split": matched["split"], "organ": matched["organ"],
                      "detected_cells": result["detected_cells_quantified"],
+                     "expert_by_type": {name: matched["expert_by_type"][name]
+                                        for name in CLASSES},
                      "matched_by_type": {name: counts[name] for name in CLASSES},
+                     "unmatched_detected_instances": matched["unmatched_detected_instances"],
                      "large_macrophage_regions_flagged": flagged})
         print(f"QUANTIFIED {index}/93 {sample} matched={len(labels)}", flush=True)
     split_patients = {split: {row["patient_id"] for row in rows if row["split"] == split}
@@ -90,6 +96,10 @@ def run(args: argparse.Namespace) -> dict:
                                                          for row in rows if row["split"] == split)
                                          for name in CLASSES}
                                   for split in ("train", "development", "test")},
+              "expert_by_type": {split: {name: sum(row["expert_by_type"][name]
+                                                        for row in rows if row["split"] == split)
+                                        for name in CLASSES}
+                                 for split in ("train", "development", "test")},
               "large_macrophage_regions_flagged": sum(
                   row["large_macrophage_regions_flagged"] for row in rows),
               "records": rows,
