@@ -1,0 +1,13 @@
+{
+  "status": "partial_manual_review_complete",
+  "date": "2026-10-20",
+  "reviewed_position": 80,
+  "sample_id": "TCGA-MP-A4T7-01Z-00-DX1_004",
+  "organ": "lung",
+  "split": "test",
+  "source_mpp_um": 0.2525,
+  "automated_nuclear_qc": "fail",
+  "finding": "The source is a very wide, shallow 1987-by-430-pixel tissue strip. At contact-sheet scale virtual DAPI is broad and confluent rather than cleanly separated at many independent StarDist nuclei; nuclear AUC is 0.702 and boundary contrast 0.043, below the frozen alignment gate. Long-axis thumbnail compression limits fine visual assessment, but there is no basis to override the numeric failure.",
+  "decision": "exclude_from_classification_and_protein_validity_results",
+  "limit": "Preview-scale inspection only; no marker-specific measured reference."
+}
