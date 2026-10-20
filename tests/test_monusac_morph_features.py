@@ -28,6 +28,11 @@ def test_single_nucleus_uses_native_spacing_and_scanner_rgb(tmp_path):
     assert cell["morph_od_red_mean"] < cell["morph_od_green_mean"]
     assert cell["morph_od_green_mean"] < cell["morph_od_blue_mean"]
 
+    provenance_path.write_text(json.dumps({"mpp": 0.19448,
+                                          "source_color_reference": "scanner_svs_rgb"}))
+    finer = image_features(image_path, mask_path, provenance_path)[1]
+    assert finer["morph_area_um2"] == pytest.approx(0.19448**2)
+
     provenance_path.write_text(json.dumps({"mpp": 0.25,
                                           "source_color_reference": "unverified"}))
     with pytest.raises(ValueError, match="scanner RGB"):

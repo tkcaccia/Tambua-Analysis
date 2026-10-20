@@ -38,7 +38,7 @@ def image_features(rgb_path: Path, mask_path: Path, provenance_path: Path) -> di
     if rgb.shape[:2] != mask.shape or mask.min() < 0:
         raise ValueError("H&E and StarDist pixel grids differ")
     mpp = float(provenance["mpp"])
-    if not .2 <= mpp <= .4:
+    if not .15 <= mpp <= .4:
         raise ValueError("Unexpected physical pixel spacing")
     valid = mask > 0
     ids = mask[valid]
