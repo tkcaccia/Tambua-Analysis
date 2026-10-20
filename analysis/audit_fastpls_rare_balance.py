@@ -75,7 +75,7 @@ def confusion(rows: list[dict], predictions: list[str]) -> dict:
                        for actual in CLASSES], "classes": CLASSES}
 
 
-def run(input_path: Path, bridge: Path, output: Path) -> dict:
+def run(input_path: Path, bridge: Path, output: Path, *, include_morph: bool = False) -> dict:
     if os.environ.get("CUDA_VISIBLE_DEVICES") != "-1":
         raise RuntimeError("This audit requires CUDA_VISIBLE_DEVICES=-1")
     if output.exists():
@@ -84,10 +84,13 @@ def run(input_path: Path, bridge: Path, output: Path) -> dict:
         reader = csv.DictReader(stream)
         names = [name for name in reader.fieldnames or []
                  if name.startswith("nuclei_") or
-                 (name.startswith("cell_") and name != "cell_type")]
+                 (name.startswith("cell_") and name != "cell_type") or
+                 (include_morph and name.startswith("morph_"))]
         rows = [row for row in reader if row["split"] == "train"]
-    if len(names) != 46 or len(rows) != 10049:
+    if len(names) != (56 if include_morph else 46) or len(rows) != 10049:
         raise ValueError("Saved complete-channel fit cohort changed")
+    if include_morph and len([name for name in names if name.startswith("morph_")]) != 10:
+        raise ValueError("Expected exactly ten H&E morphology features")
     patients = sorted({row["patient_id"] for row in rows})
     if len(patients) != 21:
         raise ValueError("Saved fit-patient set changed")
@@ -130,6 +133,8 @@ def run(input_path: Path, bridge: Path, output: Path) -> dict:
                              "fit_rows_per_fold_max": max(fit_sizes)}
     result = {"status": "complete", "device": "CPU",
               "scope": "21-patient leave-one-out development evaluation on 10,049 saved QC-pass matched fit cells only",
+              "feature_set": "all-23-GigaTIME-markers-plus-10-H&E-morphology" if include_morph else "all-23-GigaTIME-markers",
+              "feature_count": len(names),
               "input_sha256": hashlib.sha256(input_path.read_bytes()).hexdigest(),
               "patients": patients, "strategies": results,
               "limit": "Repeated rare rows are class weights, not independent examples. No organizer-test labels entered training or selection. This development audit cannot establish final four-class accuracy."}
@@ -145,8 +150,10 @@ if __name__ == "__main__":
     ap.add_argument("--input", type=Path, required=True)
     ap.add_argument("--bridge", type=Path, required=True)
     ap.add_argument("--output", type=Path, required=True)
+    ap.add_argument("--include-morph", action="store_true",
+                    help="Append ten label-free scanner-RGB H&E nuclear features")
     args = ap.parse_args()
-    report = run(args.input, args.bridge, args.output)
+    report = run(args.input, args.bridge, args.output, include_morph=args.include_morph)
     print(json.dumps({name: {key: value for key, value in score.items()
                               if key in ("balanced_accuracy", "accuracy", "support", "recall")}
                       for name, score in report["strategies"].items()}, indent=2))

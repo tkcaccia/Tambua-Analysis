@@ -1,0 +1,184 @@
+{
+  "status": "complete",
+  "device": "CPU",
+  "scope": "21-patient leave-one-out development evaluation on 10,049 saved QC-pass matched fit cells only",
+  "feature_set": "all-23-GigaTIME-markers-plus-10-H&E-morphology",
+  "feature_count": 56,
+  "input_sha256": "6b504d67db15f8f9d0c59f39b965e0a6e5a010ac60d79f4207154f363829c1fe",
+  "patients": [
+    "TCGA-69-7760",
+    "TCGA-69-A59K",
+    "TCGA-78-7220",
+    "TCGA-A2-A0CV",
+    "TCGA-B9-A8YI",
+    "TCGA-BH-A18T",
+    "TCGA-D8-A1X5",
+    "TCGA-E9-A22B",
+    "TCGA-EJ-5495",
+    "TCGA-EJ-5505",
+    "TCGA-EV-5903",
+    "TCGA-EW-A6SD",
+    "TCGA-J4-A67Q",
+    "TCGA-J4-A67T",
+    "TCGA-KK-A6E0",
+    "TCGA-MH-A560",
+    "TCGA-P4-AAVK",
+    "TCGA-S3-AA11",
+    "TCGA-UZ-A9PO",
+    "TCGA-V1-A9O9",
+    "TCGA-YL-A9WY"
+  ],
+  "strategies": {
+    "original": {
+      "support": {
+        "epithelial": 7397,
+        "lymphocyte": 2625,
+        "macrophage": 19,
+        "neutrophil": 8
+      },
+      "recall": {
+        "epithelial": 0.9610652967419224,
+        "lymphocyte": 0.7851428571428571,
+        "macrophage": 0.0,
+        "neutrophil": 0.0
+      },
+      "balanced_accuracy": 0.4365520384711949,
+      "accuracy": 0.9125286098119216,
+      "matrix": [
+        [
+          7109,
+          288,
+          0,
+          0
+        ],
+        [
+          564,
+          2061,
+          0,
+          0
+        ],
+        [
+          17,
+          2,
+          0,
+          0
+        ],
+        [
+          3,
+          5,
+          0,
+          0
+        ]
+      ],
+      "classes": [
+        "epithelial",
+        "lymphocyte",
+        "macrophage",
+        "neutrophil"
+      ],
+      "fit_rows_per_fold_min": 8778,
+      "fit_rows_per_fold_max": 9850
+    },
+    "capped_500_rare_50": {
+      "support": {
+        "epithelial": 7397,
+        "lymphocyte": 2625,
+        "macrophage": 19,
+        "neutrophil": 8
+      },
+      "recall": {
+        "epithelial": 0.9094227389482222,
+        "lymphocyte": 0.8666666666666667,
+        "macrophage": 0.05263157894736842,
+        "neutrophil": 0.0
+      },
+      "balanced_accuracy": 0.45718024614056435,
+      "accuracy": 0.8959100408000796,
+      "matrix": [
+        [
+          6727,
+          595,
+          61,
+          14
+        ],
+        [
+          254,
+          2275,
+          86,
+          10
+        ],
+        [
+          11,
+          7,
+          1,
+          0
+        ],
+        [
+          1,
+          7,
+          0,
+          0
+        ]
+      ],
+      "classes": [
+        "epithelial",
+        "lymphocyte",
+        "macrophage",
+        "neutrophil"
+      ],
+      "fit_rows_per_fold_min": 1100,
+      "fit_rows_per_fold_max": 1100
+    },
+    "equal_250": {
+      "support": {
+        "epithelial": 7397,
+        "lymphocyte": 2625,
+        "macrophage": 19,
+        "neutrophil": 8
+      },
+      "recall": {
+        "epithelial": 0.7905907800459646,
+        "lymphocyte": 0.5813333333333334,
+        "macrophage": 0.21052631578947367,
+        "neutrophil": 0.25
+      },
+      "balanced_accuracy": 0.4581126072921929,
+      "accuracy": 0.7344014329784058,
+      "matrix": [
+        [
+          5848,
+          136,
+          1202,
+          211
+        ],
+        [
+          89,
+          1526,
+          383,
+          627
+        ],
+        [
+          11,
+          1,
+          4,
+          3
+        ],
+        [
+          0,
+          2,
+          4,
+          2
+        ]
+      ],
+      "classes": [
+        "epithelial",
+        "lymphocyte",
+        "macrophage",
+        "neutrophil"
+      ],
+      "fit_rows_per_fold_min": 1000,
+      "fit_rows_per_fold_max": 1000
+    }
+  },
+  "limit": "Repeated rare rows are class weights, not independent examples. No organizer-test labels entered training or selection. This development audit cannot establish final four-class accuracy."
+}

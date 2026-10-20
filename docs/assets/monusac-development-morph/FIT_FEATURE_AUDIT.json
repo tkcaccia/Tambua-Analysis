@@ -1,0 +1,23 @@
+{
+  "status": "complete",
+  "device": "CPU",
+  "fit_images": 33,
+  "fit_cells": 10049,
+  "marker_features_preserved": 46,
+  "morphology_features_added": [
+    "morph_area_um2",
+    "morph_perimeter_um",
+    "morph_elongation",
+    "morph_compactness",
+    "morph_od_red_mean",
+    "morph_od_green_mean",
+    "morph_od_blue_mean",
+    "morph_od_red_sd",
+    "morph_od_green_sd",
+    "morph_od_blue_sd"
+  ],
+  "original_table_sha256": "29487bd95616eef25962a8e346377e8d1e4faee375b654ac6407ee8c97ac5ba1",
+  "output_table_sha256": "6b504d67db15f8f9d0c59f39b965e0a6e5a010ac60d79f4207154f363829c1fe",
+  "scope": "Label-free scanner-RGB H&E and StarDist morphology appended to all-channel fit-cell table",
+  "limit": "No new biological examples or independent test result; morphology utility must be assessed by patient-held-out evaluation."
+}
