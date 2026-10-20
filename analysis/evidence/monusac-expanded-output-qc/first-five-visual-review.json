@@ -1,0 +1,34 @@
+{
+  "scope": "First five completed cases in the 93-image CPU-only expansion; partial review, not a cohort-wide conclusion",
+  "source_contact_sheet": "first-five.webp",
+  "source_manifest": "first-five-manifest.json",
+  "panels_reviewed": ["scanner RGB H&E", "display-scaled virtual DAPI", "raw-score DAPI with independent StarDist outlines", "display-scaled CK", "display-scaled CD68"],
+  "reviewed_cases": [
+    {
+      "sample_id": "TCGA-69-A59K-01Z-00-DX1_002",
+      "visual_observation": "Bright virtual DAPI foci align with several dark H&E nuclei, but intensity and boundary contrast vary; it does not clear the fixed AUC or contrast gates.",
+      "decision": "exclude"
+    },
+    {
+      "sample_id": "TCGA-2Z-A9JN-01Z-00-DX1_1",
+      "visual_observation": "Dense H&E nuclear field; virtual DAPI is diffuse and contains dark cores in many outlined nuclei. The boundary-contrast gate fails.",
+      "decision": "exclude"
+    },
+    {
+      "sample_id": "TCGA-73-4668-01Z-00-DX1_004",
+      "visual_observation": "Dense H&E nuclear field; the DAPI panel has bright inter-nuclear texture and weak nuclear localization. The boundary-contrast gate fails.",
+      "decision": "exclude"
+    },
+    {
+      "sample_id": "TCGA-2Z-A9JN-01Z-00-DX1_3",
+      "visual_observation": "H&E includes a large pale lumen; virtual DAPI forms a bright rim near it and is nearly flat over many StarDist outlines. Spatial-shadow and alignment gates fail.",
+      "decision": "exclude"
+    },
+    {
+      "sample_id": "TCGA-86-7713-01Z-00-DX1_001",
+      "visual_observation": "Sparse nucleated tissue surrounds a red-cell-rich region; some DAPI foci coincide with nuclei, but a localized broad bright patch and the spatial gate raise concern.",
+      "decision": "exclude"
+    }
+  ],
+  "limits": "Visual observations are from thumbnails, not raw virtual marker histology. No failed case is qualified by this review. All remaining completed cases and all channels of any QC-passing case require later review."
+}

@@ -1,0 +1,192 @@
+{
+  "status": "partial",
+  "completed_cases_rendered": 5,
+  "expected_cases": 93,
+  "qc_status_counts": {
+    "fail": 5
+  },
+  "visual_review_status": "pending for every rendered case",
+  "panels": [
+    "Scanner RGB",
+    "Virtual DAPI",
+    "DAPI / StarDist",
+    "CK",
+    "CD68"
+  ],
+  "pages": [
+    {
+      "file": "output-qc-01.webp",
+      "sample_ids": [
+        "TCGA-69-A59K-01Z-00-DX1_002",
+        "TCGA-2Z-A9JN-01Z-00-DX1_1",
+        "TCGA-73-4668-01Z-00-DX1_004",
+        "TCGA-2Z-A9JN-01Z-00-DX1_3",
+        "TCGA-86-7713-01Z-00-DX1_001"
+      ]
+    }
+  ],
+  "records": [
+    {
+      "sample_id": "TCGA-69-A59K-01Z-00-DX1_002",
+      "patient_id": "TCGA-69-A59K",
+      "organ": "lung",
+      "split": "train",
+      "source_mpp": 0.2468,
+      "model_mpp": 0.25,
+      "qc_status": "fail",
+      "alignment_status": "fail",
+      "border_shadow_status": "pass",
+      "spatial_shadow_status": "pass",
+      "dapi_auc": 0.6938673622365524,
+      "dapi_boundary_contrast": 0.04085825176053992,
+      "raw_quantiles_p01_p50_p997": {
+        "DAPI": [
+          10.0,
+          57.0,
+          63094.418999999994
+        ],
+        "CK": [
+          14.0,
+          95.0,
+          9956.891999999993
+        ],
+        "CD68": [
+          2.0,
+          20.0,
+          56161.716999999946
+        ]
+      },
+      "visual_review_status": "pending"
+    },
+    {
+      "sample_id": "TCGA-2Z-A9JN-01Z-00-DX1_1",
+      "patient_id": "TCGA-2Z-A9JN",
+      "organ": "kidney",
+      "split": "test",
+      "source_mpp": 0.2524,
+      "model_mpp": 0.25,
+      "qc_status": "fail",
+      "alignment_status": "fail",
+      "border_shadow_status": "pass",
+      "spatial_shadow_status": "pass",
+      "dapi_auc": 0.7433034590162864,
+      "dapi_boundary_contrast": 0.026295006482286554,
+      "raw_quantiles_p01_p50_p997": {
+        "DAPI": [
+          1647.75,
+          45620.0,
+          61985.024999999965
+        ],
+        "CK": [
+          512.0,
+          3650.0,
+          53353.04999999993
+        ],
+        "CD68": [
+          953.0,
+          14986.5,
+          46450.34999999998
+        ]
+      },
+      "visual_review_status": "pending"
+    },
+    {
+      "sample_id": "TCGA-73-4668-01Z-00-DX1_004",
+      "patient_id": "TCGA-73-4668",
+      "organ": "lung",
+      "split": "train",
+      "source_mpp": 0.252,
+      "model_mpp": 0.25,
+      "qc_status": "fail",
+      "alignment_status": "fail",
+      "border_shadow_status": "pass",
+      "spatial_shadow_status": "pass",
+      "dapi_auc": 0.7349164996977949,
+      "dapi_boundary_contrast": 0.03654929478549318,
+      "raw_quantiles_p01_p50_p997": {
+        "DAPI": [
+          175.0,
+          42211.0,
+          63810.0
+        ],
+        "CK": [
+          126.0,
+          2672.0,
+          54995.47199999995
+        ],
+        "CD68": [
+          93.0,
+          14209.0,
+          64549.235999999975
+        ]
+      },
+      "visual_review_status": "pending"
+    },
+    {
+      "sample_id": "TCGA-2Z-A9JN-01Z-00-DX1_3",
+      "patient_id": "TCGA-2Z-A9JN",
+      "organ": "kidney",
+      "split": "test",
+      "source_mpp": 0.2524,
+      "model_mpp": 0.25,
+      "qc_status": "fail",
+      "alignment_status": "fail",
+      "border_shadow_status": "pass",
+      "spatial_shadow_status": "fail",
+      "dapi_auc": 0.4980591847499812,
+      "dapi_boundary_contrast": 0.0019876074737893434,
+      "raw_quantiles_p01_p50_p997": {
+        "DAPI": [
+          12.0,
+          43.0,
+          54783.944000000134
+        ],
+        "CK": [
+          10.0,
+          38.0,
+          1721.0
+        ],
+        "CD68": [
+          4.0,
+          12.0,
+          249.0
+        ]
+      },
+      "visual_review_status": "pending"
+    },
+    {
+      "sample_id": "TCGA-86-7713-01Z-00-DX1_001",
+      "patient_id": "TCGA-86-7713",
+      "organ": "lung",
+      "split": "train",
+      "source_mpp": 0.252,
+      "model_mpp": 0.25,
+      "qc_status": "fail",
+      "alignment_status": "fail",
+      "border_shadow_status": "pass",
+      "spatial_shadow_status": "fail",
+      "dapi_auc": 0.662642436371476,
+      "dapi_boundary_contrast": 0.05529078667132736,
+      "raw_quantiles_p01_p50_p997": {
+        "DAPI": [
+          11.0,
+          101.0,
+          64340.0
+        ],
+        "CK": [
+          10.0,
+          111.0,
+          17457.717999999877
+        ],
+        "CD68": [
+          3.0,
+          68.0,
+          60744.45299999998
+        ]
+      },
+      "visual_review_status": "pending"
+    }
+  ],
+  "display": "Marker channels use per-image logit/1st\u201399.7th percentile display scaling; original uint16 scores remain unchanged. These previews cannot establish marker validity alone.",
+  "limit": "A partial bundle is diagnostic only. QC-failing cases are excluded from classifier analysis; human visual review is separately required before publication."
+}
