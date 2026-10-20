@@ -1,0 +1,173 @@
+{
+  "status": "complete",
+  "device": "CPU",
+  "patients": [
+    {
+      "patient": "CRC04",
+      "zero_shift_full_spearman": 0.739492789806054,
+      "zero_shift_nuclear_spearman": 0.1288235072418305,
+      "best_shift_downsampled_pixels_yx": [
+        0,
+        0
+      ],
+      "best_shift_source_pixels_yx": [
+        0,
+        0
+      ],
+      "best_shift_full_spearman": 0.739492789806054,
+      "best_shift_nuclear_spearman": 0.1288235072418305,
+      "nuclear_pixels_sampled": 69377
+    },
+    {
+      "patient": "CRC06",
+      "zero_shift_full_spearman": 0.8756523713083835,
+      "zero_shift_nuclear_spearman": 0.2071209264552921,
+      "best_shift_downsampled_pixels_yx": [
+        0,
+        0
+      ],
+      "best_shift_source_pixels_yx": [
+        0,
+        0
+      ],
+      "best_shift_full_spearman": 0.8756523713083835,
+      "best_shift_nuclear_spearman": 0.2071209264552921,
+      "nuclear_pixels_sampled": 49696
+    },
+    {
+      "patient": "CRC08",
+      "zero_shift_full_spearman": 0.7818046448038424,
+      "zero_shift_nuclear_spearman": 0.04993171323684157,
+      "best_shift_downsampled_pixels_yx": [
+        0,
+        0
+      ],
+      "best_shift_source_pixels_yx": [
+        0,
+        0
+      ],
+      "best_shift_full_spearman": 0.7818046448038424,
+      "best_shift_nuclear_spearman": 0.04993171323684157,
+      "nuclear_pixels_sampled": 48297
+    },
+    {
+      "patient": "CRC10",
+      "zero_shift_full_spearman": 0.6268198385180666,
+      "zero_shift_nuclear_spearman": 0.16091140651213517,
+      "best_shift_downsampled_pixels_yx": [
+        0,
+        0
+      ],
+      "best_shift_source_pixels_yx": [
+        0,
+        0
+      ],
+      "best_shift_full_spearman": 0.6268198385180666,
+      "best_shift_nuclear_spearman": 0.16091140651213517,
+      "nuclear_pixels_sampled": 57228
+    },
+    {
+      "patient": "CRC12",
+      "zero_shift_full_spearman": 0.859827903738723,
+      "zero_shift_nuclear_spearman": 0.2500976933635992,
+      "best_shift_downsampled_pixels_yx": [
+        0,
+        0
+      ],
+      "best_shift_source_pixels_yx": [
+        0,
+        0
+      ],
+      "best_shift_full_spearman": 0.859827903738723,
+      "best_shift_nuclear_spearman": 0.2500976933635992,
+      "nuclear_pixels_sampled": 36833
+    },
+    {
+      "patient": "CRC17",
+      "zero_shift_full_spearman": 0.7629496209891239,
+      "zero_shift_nuclear_spearman": 0.18768882258145494,
+      "best_shift_downsampled_pixels_yx": [
+        0,
+        0
+      ],
+      "best_shift_source_pixels_yx": [
+        0,
+        0
+      ],
+      "best_shift_full_spearman": 0.7629496209891239,
+      "best_shift_nuclear_spearman": 0.18768882258145494,
+      "nuclear_pixels_sampled": 44113
+    },
+    {
+      "patient": "CRC19",
+      "zero_shift_full_spearman": 0.8308423605981167,
+      "zero_shift_nuclear_spearman": 0.26811610460827856,
+      "best_shift_downsampled_pixels_yx": [
+        0,
+        0
+      ],
+      "best_shift_source_pixels_yx": [
+        0,
+        0
+      ],
+      "best_shift_full_spearman": 0.8308423605981167,
+      "best_shift_nuclear_spearman": 0.26811610460827856,
+      "nuclear_pixels_sampled": 45749
+    },
+    {
+      "patient": "CRC21",
+      "zero_shift_full_spearman": 0.7657658307101066,
+      "zero_shift_nuclear_spearman": 0.026327290087871342,
+      "best_shift_downsampled_pixels_yx": [
+        0,
+        0
+      ],
+      "best_shift_source_pixels_yx": [
+        0,
+        0
+      ],
+      "best_shift_full_spearman": 0.7657658307101066,
+      "best_shift_nuclear_spearman": 0.026327290087871342,
+      "nuclear_pixels_sampled": 45250
+    },
+    {
+      "patient": "CRC23",
+      "zero_shift_full_spearman": 0.8429749985598556,
+      "zero_shift_nuclear_spearman": 0.27475833397782906,
+      "best_shift_downsampled_pixels_yx": [
+        0,
+        0
+      ],
+      "best_shift_source_pixels_yx": [
+        0,
+        0
+      ],
+      "best_shift_full_spearman": 0.8429749985598556,
+      "best_shift_nuclear_spearman": 0.27475833397782906,
+      "nuclear_pixels_sampled": 47499
+    },
+    {
+      "patient": "CRC25",
+      "zero_shift_full_spearman": 0.8392198457020407,
+      "zero_shift_nuclear_spearman": 0.11965470460649079,
+      "best_shift_downsampled_pixels_yx": [
+        0,
+        0
+      ],
+      "best_shift_source_pixels_yx": [
+        0,
+        0
+      ],
+      "best_shift_full_spearman": 0.8392198457020407,
+      "best_shift_nuclear_spearman": 0.11965470460649079,
+      "nuclear_pixels_sampled": 33117
+    }
+  ],
+  "shift_search_source_pixels": [
+    -8,
+    8
+  ],
+  "shift_step_source_pixels": 4,
+  "scope": "Sensitivity of registered raw Hoechst and virtual DAPI to small integer-grid shifts",
+  "limit": "Each best shift is fitted to the same measured patient image. Its correlations are optimistic and cannot be published as independent GigaTIME accuracy or used to silently alter registered imagery."
+}

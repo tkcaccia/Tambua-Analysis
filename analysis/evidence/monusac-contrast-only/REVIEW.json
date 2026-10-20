@@ -1,0 +1,286 @@
+{
+  "status": "complete",
+  "device": "CPU",
+  "source_reports": "/home/chiamaka/Tambua-monusac-stardist-nuclear-qc-all-2026-10-20/*_nuclear_qc.json",
+  "source_report_count": 120,
+  "selected_cases": 27,
+  "selection": "Failed only min_nuclear_boundary_contrast=0.05 with other recorded components passing",
+  "visual_review": "All 27 saved DAPI plus StarDist-outline previews and regional AUC grids were inspected in three nine-case contact sheets at thumbnail scale. Several show broad or diffuse high DAPI around outlined nuclei. Thumbnail review is insufficient to override the predeclared boundary-contrast gate. No images were requalified.",
+  "contact_sheets": [
+    "contrast-only-1.jpg",
+    "contrast-only-2.jpg",
+    "contrast-only-3.jpg"
+  ],
+  "records": [
+    {
+      "sample_id": "TCGA-2Z-A9JG-01Z-00-DX1_4",
+      "nuclear_auc": 0.8176126751237832,
+      "prevalence_matched_dice": 0.7511685589519651,
+      "nuclear_boundary_contrast": 0.035045580695473255,
+      "edge_to_core_nuclear_mean_ratio": 1.0050466695041005,
+      "failed_component": [
+        "boundary_contrast"
+      ]
+    },
+    {
+      "sample_id": "TCGA-2Z-A9JG-01Z-00-DX1_6",
+      "nuclear_auc": 0.7992970442146041,
+      "prevalence_matched_dice": 0.7354680635349781,
+      "nuclear_boundary_contrast": 0.04361423750767379,
+      "edge_to_core_nuclear_mean_ratio": 0.9215323626996615,
+      "failed_component": [
+        "boundary_contrast"
+      ]
+    },
+    {
+      "sample_id": "TCGA-55-1594-01Z-00-DX1_002",
+      "nuclear_auc": 0.723878186245361,
+      "prevalence_matched_dice": 0.6050037252594185,
+      "nuclear_boundary_contrast": 0.02587954557383565,
+      "edge_to_core_nuclear_mean_ratio": 0.9792937139165867,
+      "failed_component": [
+        "boundary_contrast"
+      ]
+    },
+    {
+      "sample_id": "TCGA-69-A59K-01Z-00-DX1_004",
+      "nuclear_auc": 0.7009048894337626,
+      "prevalence_matched_dice": 0.5821940760032747,
+      "nuclear_boundary_contrast": 0.03992253016779279,
+      "edge_to_core_nuclear_mean_ratio": 1.0410040709971697,
+      "failed_component": [
+        "boundary_contrast"
+      ]
+    },
+    {
+      "sample_id": "TCGA-86-7713-01Z-00-DX1_003",
+      "nuclear_auc": 0.8081352128607372,
+      "prevalence_matched_dice": 0.7283074273996778,
+      "nuclear_boundary_contrast": 0.046590664096393786,
+      "edge_to_core_nuclear_mean_ratio": 0.9409663757448808,
+      "failed_component": [
+        "boundary_contrast"
+      ]
+    },
+    {
+      "sample_id": "TCGA-A2-A04X-01Z-00-DX1_001",
+      "nuclear_auc": 0.7065016257762509,
+      "prevalence_matched_dice": 0.6062435322525008,
+      "nuclear_boundary_contrast": 0.04693582788654416,
+      "edge_to_core_nuclear_mean_ratio": 0.9982455120659315,
+      "failed_component": [
+        "boundary_contrast"
+      ]
+    },
+    {
+      "sample_id": "TCGA-A2-A04X-01Z-00-DX1_004",
+      "nuclear_auc": 0.8284831901275103,
+      "prevalence_matched_dice": 0.7332177985948478,
+      "nuclear_boundary_contrast": 0.03135239391688571,
+      "edge_to_core_nuclear_mean_ratio": 0.9880841258030376,
+      "failed_component": [
+        "boundary_contrast"
+      ]
+    },
+    {
+      "sample_id": "TCGA-A2-A0CV-01Z-00-DX1_1",
+      "nuclear_auc": 0.8054247154503087,
+      "prevalence_matched_dice": 0.721090387374462,
+      "nuclear_boundary_contrast": 0.012533693680969127,
+      "edge_to_core_nuclear_mean_ratio": 1.0041519633794294,
+      "failed_component": [
+        "boundary_contrast"
+      ]
+    },
+    {
+      "sample_id": "TCGA-A2-A0CV-01Z-00-DX1_2",
+      "nuclear_auc": 0.7236670376527052,
+      "prevalence_matched_dice": 0.6732974015754694,
+      "nuclear_boundary_contrast": 0.011121374663509043,
+      "edge_to_core_nuclear_mean_ratio": 0.8460596156827882,
+      "failed_component": [
+        "boundary_contrast"
+      ]
+    },
+    {
+      "sample_id": "TCGA-DW-7838-01Z-00-DX1_2",
+      "nuclear_auc": 0.7614800856398094,
+      "prevalence_matched_dice": 0.6531794505565849,
+      "nuclear_boundary_contrast": 0.02004513575298128,
+      "edge_to_core_nuclear_mean_ratio": 0.9973636567197066,
+      "failed_component": [
+        "boundary_contrast"
+      ]
+    },
+    {
+      "sample_id": "TCGA-DW-7841-01Z-00-DX1_2",
+      "nuclear_auc": 0.7570779603188598,
+      "prevalence_matched_dice": 0.6958086733810958,
+      "nuclear_boundary_contrast": 0.04309901658315096,
+      "edge_to_core_nuclear_mean_ratio": 1.0098239868042158,
+      "failed_component": [
+        "boundary_contrast"
+      ]
+    },
+    {
+      "sample_id": "TCGA-E2-A154-01Z-00-DX1_3",
+      "nuclear_auc": 0.7810050772905277,
+      "prevalence_matched_dice": 0.6806181354858457,
+      "nuclear_boundary_contrast": 0.03703280681672838,
+      "edge_to_core_nuclear_mean_ratio": 1.0061803094293904,
+      "failed_component": [
+        "boundary_contrast"
+      ]
+    },
+    {
+      "sample_id": "TCGA-E2-A154-01Z-00-DX1_4",
+      "nuclear_auc": 0.8705908048013342,
+      "prevalence_matched_dice": 0.7799928624372032,
+      "nuclear_boundary_contrast": 0.03624888987819619,
+      "edge_to_core_nuclear_mean_ratio": 0.9976668374501767,
+      "failed_component": [
+        "boundary_contrast"
+      ]
+    },
+    {
+      "sample_id": "TCGA-E9-A22G-01Z-00-DX1_1",
+      "nuclear_auc": 0.7553424245604633,
+      "prevalence_matched_dice": 0.6443010261054594,
+      "nuclear_boundary_contrast": 0.03514054135545164,
+      "edge_to_core_nuclear_mean_ratio": 1.013185858545231,
+      "failed_component": [
+        "boundary_contrast"
+      ]
+    },
+    {
+      "sample_id": "TCGA-E9-A22G-01Z-00-DX1_2",
+      "nuclear_auc": 0.790257359168002,
+      "prevalence_matched_dice": 0.7096627489843779,
+      "nuclear_boundary_contrast": 0.03132794821828855,
+      "edge_to_core_nuclear_mean_ratio": 1.0121629593561,
+      "failed_component": [
+        "boundary_contrast"
+      ]
+    },
+    {
+      "sample_id": "TCGA-E9-A22G-01Z-00-DX1_5",
+      "nuclear_auc": 0.7664017558335535,
+      "prevalence_matched_dice": 0.7011906996142216,
+      "nuclear_boundary_contrast": 0.021192846267680032,
+      "edge_to_core_nuclear_mean_ratio": 1.0036180264757095,
+      "failed_component": [
+        "boundary_contrast"
+      ]
+    },
+    {
+      "sample_id": "TCGA-G9-6367-01Z-00-DX1_1",
+      "nuclear_auc": 0.7046736121572285,
+      "prevalence_matched_dice": 0.567570302573732,
+      "nuclear_boundary_contrast": 0.0377130236019505,
+      "edge_to_core_nuclear_mean_ratio": 0.9875894773847205,
+      "failed_component": [
+        "boundary_contrast"
+      ]
+    },
+    {
+      "sample_id": "TCGA-IZ-A6M9-01Z-00-DX1_1",
+      "nuclear_auc": 0.7160759323054436,
+      "prevalence_matched_dice": 0.645881636572285,
+      "nuclear_boundary_contrast": 0.034585807372685795,
+      "edge_to_core_nuclear_mean_ratio": 1.0196564464225437,
+      "failed_component": [
+        "boundary_contrast"
+      ]
+    },
+    {
+      "sample_id": "TCGA-J4-A67T-01Z-00-DX1-6",
+      "nuclear_auc": 0.7397983336110514,
+      "prevalence_matched_dice": 0.6966549913409548,
+      "nuclear_boundary_contrast": 0.02908368632083691,
+      "edge_to_core_nuclear_mean_ratio": 0.9878383555122165,
+      "failed_component": [
+        "boundary_contrast"
+      ]
+    },
+    {
+      "sample_id": "TCGA-KK-A59X-01Z-00-DX1-1",
+      "nuclear_auc": 0.7590054262736633,
+      "prevalence_matched_dice": 0.6539963854719291,
+      "nuclear_boundary_contrast": 0.03585956495704523,
+      "edge_to_core_nuclear_mean_ratio": 1.0001378227244955,
+      "failed_component": [
+        "boundary_contrast"
+      ]
+    },
+    {
+      "sample_id": "TCGA-KK-A7AW-01Z-00-DX1-1",
+      "nuclear_auc": 0.7127941654489376,
+      "prevalence_matched_dice": 0.6289369989991254,
+      "nuclear_boundary_contrast": 0.02532148571556736,
+      "edge_to_core_nuclear_mean_ratio": 0.9520011697301219,
+      "failed_component": [
+        "boundary_contrast"
+      ]
+    },
+    {
+      "sample_id": "TCGA-MP-A4SY-01Z-00-DX1_3",
+      "nuclear_auc": 0.7590523791329215,
+      "prevalence_matched_dice": 0.6643103354854306,
+      "nuclear_boundary_contrast": 0.028657890936551134,
+      "edge_to_core_nuclear_mean_ratio": 0.9761257943964153,
+      "failed_component": [
+        "boundary_contrast"
+      ]
+    },
+    {
+      "sample_id": "TCGA-S3-AA11-01Z-00-DX1_3",
+      "nuclear_auc": 0.7650109416687134,
+      "prevalence_matched_dice": 0.6339331380480774,
+      "nuclear_boundary_contrast": 0.04661002475781206,
+      "edge_to_core_nuclear_mean_ratio": 0.8929054193697599,
+      "failed_component": [
+        "boundary_contrast"
+      ]
+    },
+    {
+      "sample_id": "TCGA-V1-A8WL-01Z-00-DX1-1",
+      "nuclear_auc": 0.8228393564028944,
+      "prevalence_matched_dice": 0.7323979110300132,
+      "nuclear_boundary_contrast": 0.044627655111836195,
+      "edge_to_core_nuclear_mean_ratio": 0.9858470889046008,
+      "failed_component": [
+        "boundary_contrast"
+      ]
+    },
+    {
+      "sample_id": "TCGA-V1-A9O9-01Z-00-DX1-1",
+      "nuclear_auc": 0.717878291167544,
+      "prevalence_matched_dice": 0.5890551538149448,
+      "nuclear_boundary_contrast": 0.04234165922872424,
+      "edge_to_core_nuclear_mean_ratio": 1.0140920158110363,
+      "failed_component": [
+        "boundary_contrast"
+      ]
+    },
+    {
+      "sample_id": "TCGA-V1-A9O9-01Z-00-DX1-2",
+      "nuclear_auc": 0.7121818894358117,
+      "prevalence_matched_dice": 0.6024818637479148,
+      "nuclear_boundary_contrast": 0.028580851168696797,
+      "edge_to_core_nuclear_mean_ratio": 1.0042910544227832,
+      "failed_component": [
+        "boundary_contrast"
+      ]
+    },
+    {
+      "sample_id": "TCGA-YL-A9WL-01Z-00-DX1_1",
+      "nuclear_auc": 0.7194486950559928,
+      "prevalence_matched_dice": 0.667820127441707,
+      "nuclear_boundary_contrast": 0.029428487970148964,
+      "edge_to_core_nuclear_mean_ratio": 0.8418915958104031,
+      "failed_component": [
+        "boundary_contrast"
+      ]
+    }
+  ]
+}

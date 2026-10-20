@@ -34,3 +34,12 @@ than the measured image in some fields. This experiment covers one field per
 patient, not the entire slides, and tests DAPI only. It does not validate
 virtual protein pixels, compartment-specific protein abundance, or cell-type
 classification.
+
+A separate [CPU-only registration sensitivity audit](registration-audit.json)
+searched shifts from −8 to +8 source pixels in four-pixel increments using the same ten
+registered measured/virtual DAPI pairs. A zero shift maximized whole-field
+linear alignment for every patient. This makes a simple global pixel offset an
+unlikely explanation for low within-nucleus rank correlation. The shift search
+used each measured patient image to choose its own candidate and is a
+diagnostic, not an independent corrected accuracy estimate; the displayed
+and primary-scored images remain at their frozen registration.

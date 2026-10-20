@@ -103,3 +103,12 @@ was visually reviewed, covering all 47 images and all 23 channels at thumbnail
 scale. No obvious periodic block seams appeared at that scale; tissue-dependent
 dark regions and diffuse nuclear signals remain, so this inspection cannot
 exclude subtle shading or certify protein localization.
+
+A further CPU-only audit inspected the 27 images that failed only the
+predeclared nuclear boundary-contrast threshold of 0.05 while passing the
+other recorded nuclear and shadow components. Their saved DAPI/StarDist
+overlays and nine-region AUC grids were viewed in three nine-case contact
+sheets ([record and images](https://github.com/tkcaccia/Tambua-Analysis/tree/main/analysis/evidence/monusac-contrast-only)).
+Several DAPI fields show broad or diffuse bright signal around the outlined
+nuclei. These previews do not establish that the failed fields are reliable,
+so no image was requalified and the 47-image QC-passing cohort is unchanged.
