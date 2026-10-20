@@ -1,0 +1,15 @@
+{
+  "status": "partial_manual_review_complete",
+  "date": "2026-10-20",
+  "reviewed_cases": [
+    "TCGA-S3-AA11-01Z-00-DX1_5",
+    "TCGA-G9-6356-01Z-00-DX1_4"
+  ],
+  "automated_qc_counts": {
+    "pass": 0,
+    "fail": 2
+  },
+  "visual_findings": "Scanner RGB order is plausible in both. Breast/adipose TCGA-S3-AA11-01Z-00-DX1_5 has sparse nuclei whose virtual DAPI is visibly brighter than much of the surrounding tissue; its local spatial AUCs on sufficient regions are all at least 0.618, but global AUC 0.689, shell contrast 0.047 and edge/core nuclear intensity ratio 0.555 fail the predeclared gates. This is a borderline image worth blinded QC-adjudication study, not an automatic override. Prostate TCGA-G9-6356-01Z-00-DX1_4 shows diffuse virtual DAPI and protein signal; nuclear contrast 0.045 fails and it remains excluded. Neither field has marker-specific ground truth.",
+  "publication_status": "exclude_from_classification_and_protein_validity_results_pending_prespecified_qc_reassessment",
+  "scope": "Preview-scale inspection of cases 65-66 from an active 93-case CPU bundle. No test-label-guided QC threshold changes."
+}
