@@ -1,12 +1,14 @@
 """Mask geometry and conservative labels for CPU-only detected-cell quantification."""
 from pathlib import Path
 import sys
+import json
 
 import numpy as np
 import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "analysis"))
-from quantify_detected_monusac_cells import cell_proxy, validated_assignments  # noqa: E402
+from quantify_detected_monusac_cells import (  # noqa: E402
+    cell_proxy, load_inference_validation, sha256, validated_assignments)
 
 
 def test_cell_proxy_uses_physical_halo_without_changing_nuclei() -> None:
@@ -30,3 +32,26 @@ def test_assignments_reject_missing_or_duplicate_detected_ids() -> None:
         validated_assignments({"assignments": [pair, pair]}, detected)
     with pytest.raises(ValueError, match="not unique"):
         validated_assignments({"assignments": [{**pair, "detected_id": 3}]}, detected)
+
+
+def test_cpu_case_validation_requires_source_identity_and_pinned_model(tmp_path: Path) -> None:
+    prepared = tmp_path / "prepared"
+    prepared.mkdir()
+    (prepared / "he.ome.tif").write_bytes(b"scanner-rgb-source")
+    (prepared / "provenance.json").write_text(json.dumps({"mpp": .2527}))
+    parent = tmp_path / "bundle"
+    case = parent / "sample"
+    case.mkdir(parents=True)
+    (parent / "BUNDLE_IDENTITY.json").write_text(json.dumps({
+        "device": "CPU", "model_revision": "a6556030bdb8071857559e12b921620aa1bbac5b"}))
+    row = {"sample_id": "sample", "source_rgb_sha256": sha256(prepared / "he.ome.tif"),
+           "source_mpp": .2527, "model_mpp": .25,
+           "channels": [f"marker-{index}" for index in range(23)]}
+    (case / "CASE_COMPLETE.json").write_text(json.dumps(row))
+    validation, path = load_inference_validation(case, prepared, "sample")
+    assert validation == {"source_color_reference": "scanner_svs_rgb",
+                          "effective_mpp": .25}
+    assert path == case / "CASE_COMPLETE.json"
+    (prepared / "he.ome.tif").write_bytes(b"different-source")
+    with pytest.raises(ValueError, match="identity"):
+        load_inference_validation(case, prepared, "sample")

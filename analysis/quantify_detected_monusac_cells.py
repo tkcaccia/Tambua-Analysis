@@ -65,6 +65,26 @@ def write_mask(path: Path, array: np.ndarray, mpp: float) -> None:
                                "PhysicalSizeYUnit": "µm"})
 
 
+def load_inference_validation(case: Path, prepared: Path, sample: str) -> tuple[dict, Path]:
+    """Accept either the original validated case or a checked CPU-only case."""
+    original = case / "VALIDATION.json"
+    if original.exists():
+        return json.loads(original.read_text()), original
+    checkpoint = case / "CASE_COMPLETE.json"
+    row = json.loads(checkpoint.read_text())
+    bundle = json.loads((case.parent / "BUNDLE_IDENTITY.json").read_text())
+    if row.get("sample_id") != sample or row.get("source_rgb_sha256") != \
+            sha256(prepared / "he.ome.tif") or row.get("channels") is None or \
+            len(row["channels"]) != 23 or \
+            bundle.get("model_revision") != "a6556030bdb8071857559e12b921620aa1bbac5b" or \
+            bundle.get("device") != "CPU" or \
+            abs(float(row.get("source_mpp", -1)) -
+                float(json.loads((prepared / "provenance.json").read_text())["mpp"])) > 1e-6:
+        raise ValueError("CPU GigaTIME case identity or 23-channel panel changed")
+    return {"source_color_reference": "scanner_svs_rgb",
+            "effective_mpp": row["model_mpp"]}, checkpoint
+
+
 def quantify(quantifier: Path, image: Path, mask: Path, name: str,
              output: Path) -> None:
     prefix = output / f"detected_{name}"
@@ -86,7 +106,7 @@ def run(sample: str, detected_path: Path, matched_path: Path,
         raise FileExistsError(output)
     provenance = json.loads((prepared / "provenance.json").read_text())
     matched = json.loads(matched_path.read_text())
-    validation = json.loads((gigatime_case / "VALIDATION.json").read_text())
+    validation, validation_path = load_inference_validation(gigatime_case, prepared, sample)
     qc_path = (qc_report_path if qc_report_path is not None else
                gigatime_case / "gigatime_output" /
                "output_gigatime_nuclear_qc.json")
@@ -110,6 +130,13 @@ def run(sample: str, detected_path: Path, matched_path: Path,
     if nuclei.shape != source_shape:
         raise ValueError("StarDist labels and scanner image geometry differ")
     assignments = validated_assignments(matched, nuclei)
+    expert = tifffile.imread(prepared / "expert_nuclei.ome.tif")
+    if expert.shape != nuclei.shape:
+        raise ValueError("Expert geometry and detected-cell grid differ")
+    expert_areas = np.bincount(expert.ravel())
+    if any(int(row["expert_id"]) >= len(expert_areas) or
+           expert_areas[int(row["expert_id"])] == 0 for row in assignments):
+        raise ValueError("Matched expert region is absent from source mask")
     mpp = float(provenance["mpp"])
     cells = cell_proxy(nuclei, mpp, halo_um)
     if not np.array_equal(cells[nuclei > 0], nuclei[nuclei > 0]):
@@ -121,12 +148,16 @@ def run(sample: str, detected_path: Path, matched_path: Path,
     write_mask(cell_mask, cells, mpp)
     with (output / "expert_types_on_detected.csv").open("w", newline="") as stream:
         writer = csv.DictWriter(stream, fieldnames=("label_id", "cell_type",
-                                                     "expert_id", "matching_rule"))
+                                                     "expert_id", "matching_rule",
+                                                     "expert_area_native_px"))
         writer.writeheader()
         writer.writerows({"label_id": row["detected_id"],
                           "cell_type": row["cell_type"],
                           "expert_id": row["expert_id"],
-                          "matching_rule": row["rule"]} for row in assignments)
+                          "matching_rule": row["rule"],
+                          "expert_area_native_px":
+                              int(expert_areas[int(row["expert_id"])])}
+                         for row in assignments)
     image = gigatime_case / "gigatime_output"
     for mask, name in ((nuclear_mask, "nuclei"), (cell_mask, "cell")):
         quantify(quantifier, image, mask, name, output)
@@ -150,7 +181,7 @@ def run(sample: str, detected_path: Path, matched_path: Path,
               "nuclear_qc_reference": ("stardist_detected_nuclei" if qc_report_path is not None
                                         else "original_case_reference"),
               "nuclear_qc_sha256": sha256(qc_path),
-              "gigatime_validation_sha256": sha256(gigatime_case / "VALIDATION.json")}
+              "gigatime_validation_sha256": sha256(validation_path)}
     (output / "CASE_COMPLETE.json.tmp").write_text(json.dumps(result, indent=2) + "\n")
     (output / "CASE_COMPLETE.json.tmp").replace(output / "CASE_COMPLETE.json")
     return result
