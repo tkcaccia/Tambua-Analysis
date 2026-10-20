@@ -31,6 +31,13 @@ calibrated protein-concentration measurements, so the primary endpoints should
 be spatial localization and marker-positive-cell discrimination. Raw intensity
 correlation is secondary and must be interpreted cautiously.
 
+The [GigaTIME paper](https://www.microsoft.com/en-us/research/wp-content/uploads/2025/12/Multimodal-AI-generates-virtual-population-for-tumor.pdf)
+describes model training on 21 in-house paired lung slides generated with the
+COMET platform. HEMIT is a separate colorectal release and is not described
+as part of that training corpus. The pinned checkpoint's full private
+training-image manifest is unavailable, so dataset non-overlap is supported
+by the published acquisition descriptions rather than proven by a hash audit.
+
 ## Frozen evaluation design before inference
 
 1. Verify the downloaded archive checksum, exact input/label pair count, TIFF
