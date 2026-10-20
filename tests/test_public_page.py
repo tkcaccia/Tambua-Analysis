@@ -133,7 +133,9 @@ def test_prepared_expansion_reports_rare_classes_without_claiming_results() -> N
     assert audit["counts"]["train_additional"]["source_polygons_by_class"]["neutrophil"] == 201
     assert audit["counts"]["test_additional"]["source_polygons_by_class"]["neutrophil"] == 46
     assert "precede independent nuclear detection" in audit["limit"]
-    assert "precede StarDist matching" in PAGE.read_text(encoding="utf-8")
+    page = PAGE.read_text(encoding="utf-8")
+    assert "source-region counts do not reflect the nine QC-passing images" in page
+    assert "pre-GigaTIME, pre-QC candidates" in page
 
 
 def test_expansion_input_preflight_covers_every_prepared_image_without_claiming_qc() -> None:

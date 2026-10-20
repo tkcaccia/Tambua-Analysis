@@ -186,6 +186,11 @@ def matched_metrics(table: Path, predicted: Path, classes: list[str],
 
 
 def run(args: argparse.Namespace) -> dict:
+    if not args.exploratory:
+        raise RuntimeError(
+            "Expanded panels have technical DAPI passes but no measured-marker "
+            "validation. Use --exploratory only for a clearly labelled "
+            "diagnostic score; do not publish it as cell-type accuracy.")
     if os.environ.get("CUDA_VISIBLE_DEVICES") != "-1":
         raise RuntimeError("Expanded classifier scoring must hide GPUs")
     if args.output.exists():
@@ -273,8 +278,8 @@ def run(args: argparse.Namespace) -> dict:
                                  if row["split"] == "test" and
                                  not row["patient_seen_in_original_test"]}),
               "all_detected_new_test_cells_predicted": len(predicted),
-              "publication_status": "preliminary_until_all_included_images_pass_documented_manual_visual_review",
-              "limit": "All additional test patients are held out from fitting, but some were seen in prior organizer-test auditing. The unseen-patient subset excludes every patient in the original 32-image organizer test; its tissue and class coverage may be incomplete. Matched-cell metrics do not measure false-positive detection in incompletely annotated tissue. Every included image still requires documented visual RGB, nuclear and shadow review before website publication."}
+              "publication_status": "exploratory_do_not_publish_as_validated_cell_type_accuracy",
+              "limit": "All additional test patients are held out from fitting, but some were seen in prior organizer-test auditing. The unseen-patient subset excludes every patient in the original 32-image organizer test; its tissue and class coverage may be incomplete. Matched-cell metrics do not measure false-positive detection in incompletely annotated tissue. The nine added fields have technical nuclear and shadow QC passes, but several marker panels have review holds and none has measured-marker validation. This result is exploratory even if its numeric accuracy is high."}
     staged = args.output / "STUDY_COMPLETE.json.tmp"
     staged.write_text(json.dumps(result, indent=2) + "\n")
     staged.replace(args.output / "STUDY_COMPLETE.json")
@@ -286,6 +291,8 @@ if __name__ == "__main__":
     for name in ("old-qc", "old-quant", "new-quant", "tambua-src", "output"):
         parser.add_argument("--" + name, type=Path, required=True)
     parser.add_argument("--r-library", type=Path)
+    parser.add_argument("--exploratory", action="store_true",
+                        help="Explicitly permit an unvalidated diagnostic score only")
     summary = run(parser.parse_args())
     print(json.dumps({key: summary[key] for key in
                       ("qc_passing_expansion_images", "images_by_split", "new_test")}, indent=2))

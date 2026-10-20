@@ -1,0 +1,151 @@
+{
+  "status": "read_only_scope_preflight",
+  "date": "2026-10-20",
+  "patients": 9,
+  "case_ids": [
+    "CRC06",
+    "CRC08",
+    "CRC10",
+    "CRC12",
+    "CRC17",
+    "CRC19",
+    "CRC21",
+    "CRC23",
+    "CRC25"
+  ],
+  "checkpoint_revision": "a6556030bdb8071857559e12b921620aa1bbac5b",
+  "pinned_runner_sha256": "e8d0bc2e261d6e2eb6627798649584a1fe0ad5e5c18420caea00663a132560ff",
+  "crc04_pilot_zarr_mib": 205,
+  "estimated_nine_zarr_gib": 1.8017578125,
+  "source_and_existing_dapi_qc_verified": true,
+  "cases": [
+    {
+      "patient": "CRC06",
+      "input_sha256": {
+        "he.ome.tif": "c644b157932b4426349b7ad7f4bb838e4e1f628b4ad0ae88e0fba71d73c339e3",
+        "nuclei_orion_ids.ome.tif": "b5a4ac6567c7043d5d695b36d6d32b815e46c928389ba57a34d71ab0009ab582",
+        "cytoplasm_orion_ids.ome.tif": "c63f8882472ca9ab21c9f8c278dc7cf6b3055b1ed51031ac34bc85df3f057dfe",
+        "cells.ome.tif": "0082bc96b2715b1d33164c41c959670380662fe6ba21bd4c09815a6773e6708c",
+        "PROVENANCE.json": "5197c608256c69aa7d9700bebd1278b8866bcb7d45372df201e3f61ccd0a033f"
+      },
+      "prior_complete_sha256": "5bb43dbdf072ab0cd5e6818503327441aa1e4dadc43c08dfd7e169531ce6710f",
+      "registered_measured_source_sha256": "0be2bce84323ea104a2c66bf89c6ec9c920cf6af39122fe89cfff2c1fb45b303",
+      "source_mpp_um": 0.325,
+      "model_mpp_um": 0.25
+    },
+    {
+      "patient": "CRC08",
+      "input_sha256": {
+        "he.ome.tif": "3450b20e254ce6fbe2e74909fedcfbfe170b33e743cb204420dc7a2e74ee92ac",
+        "nuclei_orion_ids.ome.tif": "01476a4e1ba412862120399c92e733d5a1f170cec48c7ddc20b6aad39987b4b1",
+        "cytoplasm_orion_ids.ome.tif": "04679a7a3d396ef828e782f01eb7d8cc42e5fefe448489998d678155e9b0599d",
+        "cells.ome.tif": "4bd8c746f08a459e210b4215559e1de7ce9c4b77e0b5f96bfdc9ff0c160122f7",
+        "PROVENANCE.json": "e67ddf1ad2e73eea690d55c8273f173fd638db0842df85105ddc7c49dd8e06ac"
+      },
+      "prior_complete_sha256": "25843081ffbd789344dbae2cc5c5a5ea765951b64fe7f9c3654deca57f6a5844",
+      "registered_measured_source_sha256": "b92eceb53a4f9cab45be6334c9ad9b049ae4718d9c5f93107e1591a0f5ae3c28",
+      "source_mpp_um": 0.325,
+      "model_mpp_um": 0.25
+    },
+    {
+      "patient": "CRC10",
+      "input_sha256": {
+        "he.ome.tif": "e4dabf6d9b128fb7e38fb7971db806e38f4c83cd2e63fb9fbb9be2d9bebca039",
+        "nuclei_orion_ids.ome.tif": "e21a7af323a4ac6655ef105ca30625f4a359f47c3dffb6027350c78da4e6b30f",
+        "cytoplasm_orion_ids.ome.tif": "4b7e562f3594a730e0f7998aad44440f4d3298511f3faf117225afe36f27788d",
+        "cells.ome.tif": "013fa4aa407abaef2c1ac6993613031a2c762affd71abfadb4f9b67bf8acb2b3",
+        "PROVENANCE.json": "0305b9e36b932f82306f99ecae93fc70717dce95cc552c5fdcfe235b44087d04"
+      },
+      "prior_complete_sha256": "dad3b82fc5c6647c5a24de9cd9ae616d1240deb783c6383f77f351154a448a6e",
+      "registered_measured_source_sha256": "c5d8603d606b11a950b4dbdcc69242bf013887880e7f962f4f41d195bc577386",
+      "source_mpp_um": 0.325,
+      "model_mpp_um": 0.25
+    },
+    {
+      "patient": "CRC12",
+      "input_sha256": {
+        "he.ome.tif": "bbe63089c4d0a6e67edf0008c1a137f1dc641545dd05b6955ceb27b6772c15e2",
+        "nuclei_orion_ids.ome.tif": "9c21880e3ba9d27de1674788183feb00eaae9f26898dfe3d4bedd36efc0f1048",
+        "cytoplasm_orion_ids.ome.tif": "a4c5f01c1342a9bf27eb30a02b09af4b9d163372603d0653a2efde3c07e5973e",
+        "cells.ome.tif": "eca338d724e710cf3b531cc496527111a9efe59e3ccaca3b1faa8dfa5b805434",
+        "PROVENANCE.json": "a02bc9380602131567c233bdee3545243d9a95ef1ae840f0b46e3a0860fca3b9"
+      },
+      "prior_complete_sha256": "ea25c51a2c5f7a609b7b68e0eeabf6f2b553571ea69a237aa6ddf09037e0ea45",
+      "registered_measured_source_sha256": "7e4054dca6f61aa31e9803ba19d90d5e62f0a812c0d2b0285aa6ed3653157199",
+      "source_mpp_um": 0.325,
+      "model_mpp_um": 0.25
+    },
+    {
+      "patient": "CRC17",
+      "input_sha256": {
+        "he.ome.tif": "856548418bf2b9d2a4a1c06a08d240558c13386119c336c234390decda6751de",
+        "nuclei_orion_ids.ome.tif": "3b6b42c2c2f48618f575b037cca3999ec1205824cf92ce6f9cc8be2657d3c391",
+        "cytoplasm_orion_ids.ome.tif": "85ada572d4174be8fd644df5e80a0bf058e0e1284ba3956abe8fa558ab68282c",
+        "cells.ome.tif": "db9acfb98692c84ec72ebe0f7bd8bc4906920dc4ed449a185fc7c4e6acece1cd",
+        "PROVENANCE.json": "9cae2e14a5afb4094fb02c4fc0de82607f9975b33ab3413f5f7394b8d3e7deb8"
+      },
+      "prior_complete_sha256": "8fb38a1a4785699e67a42c34ef68fd1d8a34194d0f881fdd71cd56aed67324e9",
+      "registered_measured_source_sha256": "f001191852c6d84e75653a6a97b13fd0cbb456255abb89262817ff1074031899",
+      "source_mpp_um": 0.325,
+      "model_mpp_um": 0.25
+    },
+    {
+      "patient": "CRC19",
+      "input_sha256": {
+        "he.ome.tif": "20f9378e86b6d925f087cc499c7b406a450c2878d5edc8332f4395e84b279b47",
+        "nuclei_orion_ids.ome.tif": "168643d44e8efb87043366d0d56914aacbf0c9bcb20103d6a139b4e8d2506d97",
+        "cytoplasm_orion_ids.ome.tif": "1ff9a29e44534d62c1175e85a97abc56315db5602b8e5ceb1d6fee787247637c",
+        "cells.ome.tif": "4a7ba9f08c98904ff476053981bc9c56cd27cefac661b11fc0ca18504ed947df",
+        "PROVENANCE.json": "2bc4b92a239c8be8d1a79c1c66dcea6224e143c999f9e4a9df227676e044190c"
+      },
+      "prior_complete_sha256": "e803a352fb7bf253af6adc5aa87001ce0f0fd32a48241434cfaf2f87f70558a8",
+      "registered_measured_source_sha256": "e64e5f12ef6a336049d354e4eba711c1c222aa4caebd4156667d43c040c75438",
+      "source_mpp_um": 0.325,
+      "model_mpp_um": 0.25
+    },
+    {
+      "patient": "CRC21",
+      "input_sha256": {
+        "he.ome.tif": "789e0b98551013f07e14febb4fa7d583d9097ead05824f746f7a967995f75682",
+        "nuclei_orion_ids.ome.tif": "9c5526a7327c2f9013f8c1646f8477f4796a7253f731deeadb34852d60bceb29",
+        "cytoplasm_orion_ids.ome.tif": "49deea19ec34d305fca979cc22ea951a1ed6b7acd29e5a0e38be96c20d314141",
+        "cells.ome.tif": "deaa27e5c5c0d31d36bafc810b55d7d646f9ca0d36271cbb4bb3d6615284b37a",
+        "PROVENANCE.json": "f864c7f023e05e0d4638ecfeb93239ffca830da7b5faad8f21b8b41b9f6de599"
+      },
+      "prior_complete_sha256": "b06ed0e4c99d21b899198a5c1bb001c8bc71a972b732870914903c33834e9f96",
+      "registered_measured_source_sha256": "37ba61371c760b0d64e7665ad5c809f61874ed154486711223e4f297d379c815",
+      "source_mpp_um": 0.325,
+      "model_mpp_um": 0.25
+    },
+    {
+      "patient": "CRC23",
+      "input_sha256": {
+        "he.ome.tif": "192a3b82bec0e69847580fddd8fd3a8c3b14728000cf284f1005cd8d23a43673",
+        "nuclei_orion_ids.ome.tif": "5d0d811fa7619b31e83a42f0a8bb71200e121e0f5dc9c3a272b79f599bc8f7bc",
+        "cytoplasm_orion_ids.ome.tif": "40b50a1850ab91bead8fabca519dc265d18abcc53ebc9d7c16b6af763d454fbb",
+        "cells.ome.tif": "88099169c035f2be557c0adac9b54466cd893f42e0e0779337f54362ec91766a",
+        "PROVENANCE.json": "338ed87696a47ab497c70af2cd5beca94ae2745ac73cf7762d21c99aa5164a7a"
+      },
+      "prior_complete_sha256": "4d5d90c7796727b84ea523d9ae245732bbac8d410d3e59ae71ef91610dfa79f7",
+      "registered_measured_source_sha256": "c0030c013f2ef4b52c51d26d38e8190fe92274b776feda516ebd7d9a08826f53",
+      "source_mpp_um": 0.325,
+      "model_mpp_um": 0.25
+    },
+    {
+      "patient": "CRC25",
+      "input_sha256": {
+        "he.ome.tif": "7691fde27cfea2531dfe1b9d2cb74eee98df0ed5ec4d58bca309e188a48c25d4",
+        "nuclei_orion_ids.ome.tif": "2ae8838e8ca8b975602f1bceacc3da3b1dec2fac674d5e978a35edbf44141475",
+        "cytoplasm_orion_ids.ome.tif": "61502a39dd04ea4522431d0e3fe64b9b535e4de1f57d503aedca834adafae79c",
+        "cells.ome.tif": "45ea1d2c5be4990c444b0e1b91fa0a499f5251468a6ebb7b5e7bbe284ca2feb7",
+        "PROVENANCE.json": "48c37ebabc4f344be3218e9f1eedc264bc457d9e53720dd413d44a0db33908b7"
+      },
+      "prior_complete_sha256": "576ccc3c862d52a19593f546f461a1f97291fd835576e670908f8f9c5f8aa520",
+      "registered_measured_source_sha256": "c8007f847fce2d08493b6cca4392d1693e191f17066e22f27995963bbc8788ed",
+      "source_mpp_um": 0.325,
+      "model_mpp_um": 0.25
+    }
+  ],
+  "execution_status": "not_authorized_not_launched",
+  "limitation": "Only Chiamaka, sequential bounded cases with fail-fast and verified GPU cleanup after each; no UCT HPC jobs. A separate user authorization is required before writing or launching the new GPU bundle."
+}

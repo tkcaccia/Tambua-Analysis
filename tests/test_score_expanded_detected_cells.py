@@ -1,13 +1,19 @@
 import copy
+import argparse
 import json
 from pathlib import Path
 
 import pytest
 
-from analysis.score_expanded_detected_cells import plan
+from analysis.score_expanded_detected_cells import plan, run
 
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+def test_expanded_score_requires_explicit_exploratory_label():
+    with pytest.raises(RuntimeError, match="no measured-marker validation"):
+        run(argparse.Namespace(exploratory=False))
 
 
 def test_expanded_plan_keeps_old_test_retrospective_and_blocks_patient_leakage():
