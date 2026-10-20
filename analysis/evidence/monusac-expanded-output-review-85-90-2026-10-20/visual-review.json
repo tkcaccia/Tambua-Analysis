@@ -1,0 +1,15 @@
+{
+  "status": "partial_manual_review_complete",
+  "date": "2026-10-20",
+  "reviewed_positions": [85, 86, 87, 88, 89, 90],
+  "automated_qc_counts": {"pass": 0, "fail": 6},
+  "records": [
+    {"sample_id": "TCGA-YL-A9WY-01Z-00-DX1-3", "split": "train", "finding": "Dense prostate nuclei have broad, partially confluent virtual DAPI; the boundary contrast 0.049 is just below the frozen gate, so the visual preview does not requalify it.", "decision": "exclude_frozen_qc_fail"},
+    {"sample_id": "TCGA-SX-A7SR-01Z-00-DX1_2", "split": "train", "finding": "Kidney field is blood-rich; virtual DAPI has scattered peaks and diffuse surrounding signal, with incomplete correspondence to independent outlines (AUC 0.654).", "decision": "exclude_frozen_qc_fail"},
+    {"sample_id": "TCGA-YL-A9WY-01Z-00-DX1-4", "split": "train", "finding": "Dense prostate region has blurred virtual-DAPI peaks bridging separately outlined nuclei (AUC 0.711, contrast 0.040).", "decision": "exclude_frozen_qc_fail"},
+    {"sample_id": "TCGA-VP-A87E-01Z-00-DX1_1", "split": "test", "finding": "Dense prostate lymphoid-looking field shows almost confluent virtual DAPI across many separate H&E nuclei, with contrast 0.019.", "decision": "exclude_frozen_qc_fail"},
+    {"sample_id": "TCGA-VP-A87E-01Z-00-DX1_2", "split": "test", "finding": "Dense prostate nuclei remain distinct in scanner RGB while virtual DAPI is broad and low-contrast at their edges (contrast 0.017).", "decision": "exclude_frozen_qc_fail"},
+    {"sample_id": "TCGA-VP-A87E-01Z-00-DX1_4", "split": "test", "finding": "Mixed prostate tissue has several virtual-DAPI peaks near outlined nuclei, but broad peaks and unmatched bright structures yield AUC 0.698 and contrast 0.029.", "decision": "exclude_frozen_qc_fail"}
+  ],
+  "scope": "Contact-sheet review of positions 85-90 at calibrated 0.25 µm/model pixel; no QC threshold change, marker-validity claim or test-label-guided selection."
+}
