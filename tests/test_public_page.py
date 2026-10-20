@@ -138,6 +138,36 @@ def test_prepared_expansion_reports_rare_classes_without_claiming_results() -> N
     assert "pre-GigaTIME, pre-QC candidates" in page
 
 
+def test_expanded_exploratory_gallery_covers_every_qc_passing_field_and_marker() -> None:
+    import json
+
+    page = (PAGE.parent / "expanded-monusac-classifier.html").read_text(encoding="utf-8")
+    root = PAGE.parent / "assets/monusac-expanded-exploratory"
+    manifest = json.loads((root / "manifest.json").read_text())
+    report = json.loads((root / "study-summary.json").read_text())
+    assert manifest["status"] == "complete_diagnostic_not_biologically_validated"
+    assert report["publication_status"] == \
+        "exploratory_do_not_publish_as_validated_cell_type_accuracy"
+    assert len(manifest["records"]) == 9
+    assert len(manifest["channels"]) == 23
+    assert {row["split"] for row in manifest["records"]} == \
+        {"train", "development", "test"}
+    assert sum(row["detected_cells"] for row in manifest["records"]) == 469
+    assert manifest["new_test_matched_cells"] == 184
+    assert manifest["new_test_confusion_matrix"] == \
+        report["new_test"]["pooled"]["confusion_matrix"]
+    assert "44.6%" in page and "0% recall for macrophages and neutrophils" in page
+    for row in manifest["records"]:
+        sample = row["sample_id"]
+        for name in ("he", "source-expert", "detected", "matched-expert",
+                     "predicted", "errors"):
+            assert (root / "assets" / f"{sample}--{name}.webp").stat().st_size > 100
+        for index in range(23):
+            for mode in ("linear", "contrast"):
+                assert (root / "assets" /
+                        f"{sample}--marker-{index:02d}-{mode}.webp").stat().st_size > 100
+
+
 def test_expansion_input_preflight_covers_every_prepared_image_without_claiming_qc() -> None:
     import json
 

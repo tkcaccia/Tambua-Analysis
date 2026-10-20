@@ -1,0 +1,1469 @@
+{
+  "status": "complete_diagnostic_not_biologically_validated",
+  "cases": 9,
+  "channels": [
+    "DAPI",
+    "TRITC",
+    "Cy5",
+    "PD-1",
+    "CD14",
+    "CD4",
+    "T-bet",
+    "CD34",
+    "CD68",
+    "CD16",
+    "CD11c",
+    "CD138",
+    "CD20",
+    "CD3",
+    "CD8",
+    "PD-L1",
+    "CK",
+    "Ki67",
+    "Tryptase",
+    "Actin-D",
+    "Caspase3-D",
+    "PHH3-B",
+    "Transgelin"
+  ],
+  "classes": [
+    "epithelial",
+    "lymphocyte",
+    "macrophage",
+    "neutrophil"
+  ],
+  "records": [
+    {
+      "sample_id": "TCGA-EV-5903-01Z-00-DX1_4",
+      "patient_id": "TCGA-EV-5903",
+      "organ": "kidney",
+      "split": "train",
+      "source_shape_yx": [
+        348,
+        271
+      ],
+      "source_mpp": 0.252,
+      "model_mpp": 0.25,
+      "model_shape_yx": [
+        351,
+        274
+      ],
+      "detected_cells": 22,
+      "matched_cells": 15,
+      "matched_accuracy": 0.4666666666666667,
+      "expert_support": {
+        "epithelial": 7,
+        "lymphocyte": 2,
+        "macrophage": 2,
+        "neutrophil": 4
+      },
+      "expert_recall": {
+        "epithelial": 1.0,
+        "lymphocyte": 0.0,
+        "macrophage": 0.0,
+        "neutrophil": 0.0
+      },
+      "confusion_matrix": [
+        [
+          7,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          2,
+          0,
+          0
+        ]
+      ],
+      "marker_distribution_qc": "pass",
+      "marker_distribution_warnings": [],
+      "marker_display_p1_p997_uint16": {
+        "DAPI": [
+          26,
+          65091
+        ],
+        "TRITC": [
+          40,
+          65044
+        ],
+        "Cy5": [
+          29,
+          62448
+        ],
+        "PD-1": [
+          55,
+          57670
+        ],
+        "CD14": [
+          51,
+          59942
+        ],
+        "CD4": [
+          32,
+          56979
+        ],
+        "T-bet": [
+          24,
+          55146
+        ],
+        "CD34": [
+          16,
+          32185
+        ],
+        "CD68": [
+          32,
+          60601
+        ],
+        "CD16": [
+          38,
+          52750
+        ],
+        "CD11c": [
+          34,
+          50159
+        ],
+        "CD138": [
+          22,
+          30514
+        ],
+        "CD20": [
+          13,
+          19818
+        ],
+        "CD3": [
+          23,
+          61702
+        ],
+        "CD8": [
+          28,
+          57199
+        ],
+        "PD-L1": [
+          59,
+          62502
+        ],
+        "CK": [
+          33,
+          62949
+        ],
+        "Ki67": [
+          23,
+          49884
+        ],
+        "Tryptase": [
+          18,
+          6858
+        ],
+        "Actin-D": [
+          14,
+          4598
+        ],
+        "Caspase3-D": [
+          59,
+          64770
+        ],
+        "PHH3-B": [
+          41,
+          48974
+        ],
+        "Transgelin": [
+          14,
+          4402
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-E2-A108-01Z-00-DX1_004",
+      "patient_id": "TCGA-E2-A108",
+      "organ": "breast",
+      "split": "test",
+      "source_shape_yx": [
+        373,
+        299
+      ],
+      "source_mpp": 0.248,
+      "model_mpp": 0.25,
+      "model_shape_yx": [
+        371,
+        297
+      ],
+      "detected_cells": 19,
+      "matched_cells": 12,
+      "matched_accuracy": 0.0,
+      "expert_support": {
+        "epithelial": 0,
+        "lymphocyte": 0,
+        "macrophage": 12,
+        "neutrophil": 0
+      },
+      "expert_recall": {
+        "epithelial": null,
+        "lymphocyte": null,
+        "macrophage": 0.0,
+        "neutrophil": null
+      },
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          11,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "marker_distribution_qc": "review",
+      "marker_distribution_warnings": [
+        "CD20: sampled p05-p95 range below 0.005"
+      ],
+      "marker_display_p1_p997_uint16": {
+        "DAPI": [
+          14,
+          65161
+        ],
+        "TRITC": [
+          67,
+          65024
+        ],
+        "Cy5": [
+          40,
+          63956
+        ],
+        "PD-1": [
+          17,
+          22976
+        ],
+        "CD14": [
+          28,
+          57650
+        ],
+        "CD4": [
+          17,
+          52948
+        ],
+        "T-bet": [
+          13,
+          13649
+        ],
+        "CD34": [
+          17,
+          26748
+        ],
+        "CD68": [
+          19,
+          61089
+        ],
+        "CD16": [
+          20,
+          59999
+        ],
+        "CD11c": [
+          16,
+          37459
+        ],
+        "CD138": [
+          8,
+          18784
+        ],
+        "CD20": [
+          9,
+          914
+        ],
+        "CD3": [
+          11,
+          51846
+        ],
+        "CD8": [
+          12,
+          15865
+        ],
+        "PD-L1": [
+          17,
+          46997
+        ],
+        "CK": [
+          14,
+          56354
+        ],
+        "Ki67": [
+          13,
+          7399
+        ],
+        "Tryptase": [
+          14,
+          8442
+        ],
+        "Actin-D": [
+          13,
+          2506
+        ],
+        "Caspase3-D": [
+          29,
+          63417
+        ],
+        "PHH3-B": [
+          19,
+          8970
+        ],
+        "Transgelin": [
+          12,
+          3233
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-E9-A22G-01Z-00-DX1_3",
+      "patient_id": "TCGA-E9-A22G",
+      "organ": "breast",
+      "split": "development",
+      "source_shape_yx": [
+        344,
+        399
+      ],
+      "source_mpp": 0.2468,
+      "model_mpp": 0.25,
+      "model_shape_yx": [
+        340,
+        394
+      ],
+      "detected_cells": 50,
+      "matched_cells": 10,
+      "matched_accuracy": 0.3,
+      "expert_support": {
+        "epithelial": 0,
+        "lymphocyte": 6,
+        "macrophage": 2,
+        "neutrophil": 2
+      },
+      "expert_recall": {
+        "epithelial": null,
+        "lymphocyte": 0.5,
+        "macrophage": 0.0,
+        "neutrophil": 0.0
+      },
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          3,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0
+        ]
+      ],
+      "marker_distribution_qc": "pass",
+      "marker_distribution_warnings": [],
+      "marker_display_p1_p997_uint16": {
+        "DAPI": [
+          66,
+          64879
+        ],
+        "TRITC": [
+          127,
+          65191
+        ],
+        "Cy5": [
+          63,
+          63213
+        ],
+        "PD-1": [
+          123,
+          63453
+        ],
+        "CD14": [
+          111,
+          64363
+        ],
+        "CD4": [
+          93,
+          63392
+        ],
+        "T-bet": [
+          36,
+          44775
+        ],
+        "CD34": [
+          43,
+          44590
+        ],
+        "CD68": [
+          76,
+          65349
+        ],
+        "CD16": [
+          77,
+          64988
+        ],
+        "CD11c": [
+          82,
+          65032
+        ],
+        "CD138": [
+          49,
+          63199
+        ],
+        "CD20": [
+          11,
+          11066
+        ],
+        "CD3": [
+          78,
+          62290
+        ],
+        "CD8": [
+          33,
+          47523
+        ],
+        "PD-L1": [
+          97,
+          65197
+        ],
+        "CK": [
+          64,
+          64637
+        ],
+        "Ki67": [
+          46,
+          64530
+        ],
+        "Tryptase": [
+          50,
+          58563
+        ],
+        "Actin-D": [
+          32,
+          23424
+        ],
+        "Caspase3-D": [
+          100,
+          64648
+        ],
+        "PHH3-B": [
+          70,
+          63530
+        ],
+        "Transgelin": [
+          41,
+          12460
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-KK-A59X-01Z-00-DX1-2",
+      "patient_id": "TCGA-KK-A59X",
+      "organ": "prostate",
+      "split": "train",
+      "source_shape_yx": [
+        420,
+        590
+      ],
+      "source_mpp": 0.2468,
+      "model_mpp": 0.25,
+      "model_shape_yx": [
+        415,
+        583
+      ],
+      "detected_cells": 16,
+      "matched_cells": 12,
+      "matched_accuracy": 0.4166666666666667,
+      "expert_support": {
+        "epithelial": 6,
+        "lymphocyte": 0,
+        "macrophage": 6,
+        "neutrophil": 0
+      },
+      "expert_recall": {
+        "epithelial": 0.8333333333333334,
+        "lymphocyte": null,
+        "macrophage": 0.0,
+        "neutrophil": null
+      },
+      "confusion_matrix": [
+        [
+          5,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          6,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "marker_distribution_qc": "review",
+      "marker_distribution_warnings": [
+        "CD138: sampled p05-p95 range below 0.005",
+        "CD20: sampled p05-p95 range below 0.005",
+        "Actin-D: sampled p05-p95 range below 0.005",
+        "Transgelin: sampled p05-p95 range below 0.005"
+      ],
+      "marker_display_p1_p997_uint16": {
+        "DAPI": [
+          13,
+          64578
+        ],
+        "TRITC": [
+          70,
+          65223
+        ],
+        "Cy5": [
+          44,
+          64312
+        ],
+        "PD-1": [
+          15,
+          53550
+        ],
+        "CD14": [
+          10,
+          63418
+        ],
+        "CD4": [
+          7,
+          56391
+        ],
+        "T-bet": [
+          9,
+          7855
+        ],
+        "CD34": [
+          10,
+          43247
+        ],
+        "CD68": [
+          5,
+          64863
+        ],
+        "CD16": [
+          8,
+          63364
+        ],
+        "CD11c": [
+          7,
+          64446
+        ],
+        "CD138": [
+          4,
+          30297
+        ],
+        "CD20": [
+          6,
+          2886
+        ],
+        "CD3": [
+          7,
+          41403
+        ],
+        "CD8": [
+          11,
+          5635
+        ],
+        "PD-L1": [
+          13,
+          60883
+        ],
+        "CK": [
+          9,
+          62337
+        ],
+        "Ki67": [
+          16,
+          57483
+        ],
+        "Tryptase": [
+          8,
+          7704
+        ],
+        "Actin-D": [
+          11,
+          2357
+        ],
+        "Caspase3-D": [
+          13,
+          64323
+        ],
+        "PHH3-B": [
+          10,
+          30439
+        ],
+        "Transgelin": [
+          9,
+          4391
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-EW-A6SB-01Z-00-DX1_003",
+      "patient_id": "TCGA-EW-A6SB",
+      "organ": "breast",
+      "split": "test",
+      "source_shape_yx": [
+        496,
+        524
+      ],
+      "source_mpp": 0.2525,
+      "model_mpp": 0.25,
+      "model_shape_yx": [
+        501,
+        530
+      ],
+      "detected_cells": 61,
+      "matched_cells": 9,
+      "matched_accuracy": 0.0,
+      "expert_support": {
+        "epithelial": 0,
+        "lymphocyte": 0,
+        "macrophage": 4,
+        "neutrophil": 5
+      },
+      "expert_recall": {
+        "epithelial": null,
+        "lymphocyte": null,
+        "macrophage": 0.0,
+        "neutrophil": 0.0
+      },
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          4,
+          0,
+          0,
+          0
+        ],
+        [
+          4,
+          1,
+          0,
+          0
+        ]
+      ],
+      "marker_distribution_qc": "pass",
+      "marker_distribution_warnings": [],
+      "marker_display_p1_p997_uint16": {
+        "DAPI": [
+          80,
+          63019
+        ],
+        "TRITC": [
+          59,
+          63327
+        ],
+        "Cy5": [
+          25,
+          50362
+        ],
+        "PD-1": [
+          86,
+          62197
+        ],
+        "CD14": [
+          14,
+          49930
+        ],
+        "CD4": [
+          24,
+          51773
+        ],
+        "T-bet": [
+          28,
+          32139
+        ],
+        "CD34": [
+          13,
+          5913
+        ],
+        "CD68": [
+          13,
+          46369
+        ],
+        "CD16": [
+          12,
+          32121
+        ],
+        "CD11c": [
+          12,
+          30744
+        ],
+        "CD138": [
+          72,
+          61792
+        ],
+        "CD20": [
+          20,
+          15133
+        ],
+        "CD3": [
+          27,
+          53018
+        ],
+        "CD8": [
+          31,
+          39606
+        ],
+        "PD-L1": [
+          51,
+          58170
+        ],
+        "CK": [
+          31,
+          63733
+        ],
+        "Ki67": [
+          39,
+          44586
+        ],
+        "Tryptase": [
+          16,
+          16961
+        ],
+        "Actin-D": [
+          16,
+          7486
+        ],
+        "Caspase3-D": [
+          52,
+          64797
+        ],
+        "PHH3-B": [
+          37,
+          34431
+        ],
+        "Transgelin": [
+          19,
+          9087
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-G7-A8LD-01Z-00-DX1_1",
+      "patient_id": "TCGA-G7-A8LD",
+      "organ": "kidney",
+      "split": "development",
+      "source_shape_yx": [
+        816,
+        360
+      ],
+      "source_mpp": 0.2527,
+      "model_mpp": 0.25,
+      "model_shape_yx": [
+        825,
+        364
+      ],
+      "detected_cells": 13,
+      "matched_cells": 8,
+      "matched_accuracy": 0.0,
+      "expert_support": {
+        "epithelial": 0,
+        "lymphocyte": 1,
+        "macrophage": 0,
+        "neutrophil": 7
+      },
+      "expert_recall": {
+        "epithelial": null,
+        "lymphocyte": 0.0,
+        "macrophage": null,
+        "neutrophil": 0.0
+      },
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          6,
+          1,
+          0,
+          0
+        ]
+      ],
+      "marker_distribution_qc": "review",
+      "marker_distribution_warnings": [
+        "PD-1: sampled p05-p95 range below 0.005",
+        "CD14: sampled p05-p95 range below 0.005",
+        "CD4: sampled p05-p95 range below 0.005",
+        "T-bet: sampled p05-p95 range below 0.005",
+        "CD34: sampled p05-p95 range below 0.005",
+        "CD68: sampled p05-p95 range below 0.005",
+        "CD16: sampled p05-p95 range below 0.005",
+        "CD11c: sampled p05-p95 range below 0.005",
+        "CD138: sampled p05-p95 range below 0.005",
+        "CD20: sampled p05-p95 range below 0.005",
+        "CD3: sampled p05-p95 range below 0.005",
+        "CD8: sampled p05-p95 range below 0.005",
+        "PD-L1: sampled p05-p95 range below 0.005",
+        "Ki67: sampled p05-p95 range below 0.005",
+        "Tryptase: sampled p05-p95 range below 0.005",
+        "Actin-D: sampled p05-p95 range below 0.005",
+        "PHH3-B: sampled p05-p95 range below 0.005",
+        "Transgelin: sampled p05-p95 range below 0.005"
+      ],
+      "marker_display_p1_p997_uint16": {
+        "DAPI": [
+          16,
+          62289
+        ],
+        "TRITC": [
+          16,
+          64955
+        ],
+        "Cy5": [
+          12,
+          62923
+        ],
+        "PD-1": [
+          15,
+          11832
+        ],
+        "CD14": [
+          7,
+          39014
+        ],
+        "CD4": [
+          5,
+          5157
+        ],
+        "T-bet": [
+          9,
+          5708
+        ],
+        "CD34": [
+          4,
+          2313
+        ],
+        "CD68": [
+          3,
+          9752
+        ],
+        "CD16": [
+          4,
+          9926
+        ],
+        "CD11c": [
+          5,
+          5430
+        ],
+        "CD138": [
+          9,
+          1611
+        ],
+        "CD20": [
+          4,
+          540
+        ],
+        "CD3": [
+          8,
+          3589
+        ],
+        "CD8": [
+          7,
+          2607
+        ],
+        "PD-L1": [
+          18,
+          26067
+        ],
+        "CK": [
+          14,
+          6657
+        ],
+        "Ki67": [
+          20,
+          8987
+        ],
+        "Tryptase": [
+          7,
+          773
+        ],
+        "Actin-D": [
+          10,
+          8266
+        ],
+        "Caspase3-D": [
+          25,
+          61899
+        ],
+        "PHH3-B": [
+          8,
+          8902
+        ],
+        "Transgelin": [
+          12,
+          15063
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-G9-6356-01Z-00-DX1_3",
+      "patient_id": "TCGA-G9-6356",
+      "organ": "prostate",
+      "split": "test",
+      "source_shape_yx": [
+        460,
+        500
+      ],
+      "source_mpp": 0.252,
+      "model_mpp": 0.25,
+      "model_shape_yx": [
+        464,
+        504
+      ],
+      "detected_cells": 204,
+      "matched_cells": 148,
+      "matched_accuracy": 0.7837837837837838,
+      "expert_support": {
+        "epithelial": 0,
+        "lymphocyte": 148,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "expert_recall": {
+        "epithelial": null,
+        "lymphocyte": 0.7837837837837838,
+        "macrophage": null,
+        "neutrophil": null
+      },
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          32,
+          116,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "marker_distribution_qc": "pass",
+      "marker_distribution_warnings": [],
+      "marker_display_p1_p997_uint16": {
+        "DAPI": [
+          68,
+          63256
+        ],
+        "TRITC": [
+          475,
+          65059
+        ],
+        "Cy5": [
+          141,
+          62318
+        ],
+        "PD-1": [
+          183,
+          63699
+        ],
+        "CD14": [
+          225,
+          63635
+        ],
+        "CD4": [
+          137,
+          63313
+        ],
+        "T-bet": [
+          74,
+          54810
+        ],
+        "CD34": [
+          57,
+          15836
+        ],
+        "CD68": [
+          180,
+          63892
+        ],
+        "CD16": [
+          174,
+          61312
+        ],
+        "CD11c": [
+          168,
+          63161
+        ],
+        "CD138": [
+          41,
+          53948
+        ],
+        "CD20": [
+          36,
+          61447
+        ],
+        "CD3": [
+          80,
+          64440
+        ],
+        "CD8": [
+          62,
+          47455
+        ],
+        "PD-L1": [
+          204,
+          63053
+        ],
+        "CK": [
+          60,
+          50266
+        ],
+        "Ki67": [
+          71,
+          52513
+        ],
+        "Tryptase": [
+          69,
+          13447
+        ],
+        "Actin-D": [
+          39,
+          14963
+        ],
+        "Caspase3-D": [
+          147,
+          64506
+        ],
+        "PHH3-B": [
+          134,
+          58433
+        ],
+        "Transgelin": [
+          37,
+          10244
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-L4-A4E5-01Z-00-DX1_2",
+      "patient_id": "TCGA-L4-A4E5",
+      "organ": "lung",
+      "split": "development",
+      "source_shape_yx": [
+        440,
+        570
+      ],
+      "source_mpp": 0.2456,
+      "model_mpp": 0.25,
+      "model_shape_yx": [
+        433,
+        560
+      ],
+      "detected_cells": 60,
+      "matched_cells": 22,
+      "matched_accuracy": 0.5909090909090909,
+      "expert_support": {
+        "epithelial": 12,
+        "lymphocyte": 3,
+        "macrophage": 7,
+        "neutrophil": 0
+      },
+      "expert_recall": {
+        "epithelial": 1.0,
+        "lymphocyte": 0.3333333333333333,
+        "macrophage": 0.0,
+        "neutrophil": null
+      },
+      "confusion_matrix": [
+        [
+          12,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          1,
+          0,
+          0
+        ],
+        [
+          5,
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "marker_distribution_qc": "pass",
+      "marker_distribution_warnings": [],
+      "marker_display_p1_p997_uint16": {
+        "DAPI": [
+          6,
+          64815
+        ],
+        "TRITC": [
+          3,
+          64950
+        ],
+        "Cy5": [
+          2,
+          62443
+        ],
+        "PD-1": [
+          1,
+          57569
+        ],
+        "CD14": [
+          4,
+          57558
+        ],
+        "CD4": [
+          2,
+          59901
+        ],
+        "T-bet": [
+          1,
+          20107
+        ],
+        "CD34": [
+          1,
+          6513
+        ],
+        "CD68": [
+          3,
+          64877
+        ],
+        "CD16": [
+          4,
+          64030
+        ],
+        "CD11c": [
+          3,
+          64857
+        ],
+        "CD138": [
+          3,
+          63543
+        ],
+        "CD20": [
+          1,
+          21294
+        ],
+        "CD3": [
+          1,
+          54366
+        ],
+        "CD8": [
+          3,
+          50769
+        ],
+        "PD-L1": [
+          3,
+          63443
+        ],
+        "CK": [
+          7,
+          65061
+        ],
+        "Ki67": [
+          4,
+          63964
+        ],
+        "Tryptase": [
+          1,
+          4675
+        ],
+        "Actin-D": [
+          1,
+          6717
+        ],
+        "Caspase3-D": [
+          5,
+          64873
+        ],
+        "PHH3-B": [
+          1,
+          54710
+        ],
+        "Transgelin": [
+          1,
+          3718
+        ]
+      }
+    },
+    {
+      "sample_id": "TCGA-YL-A9WL-01Z-00-DX1_2",
+      "patient_id": "TCGA-YL-A9WL",
+      "organ": "prostate",
+      "split": "test",
+      "source_shape_yx": [
+        384,
+        497
+      ],
+      "source_mpp": 0.2485,
+      "model_mpp": 0.25,
+      "model_shape_yx": [
+        382,
+        495
+      ],
+      "detected_cells": 24,
+      "matched_cells": 15,
+      "matched_accuracy": 0.4,
+      "expert_support": {
+        "epithelial": 6,
+        "lymphocyte": 0,
+        "macrophage": 9,
+        "neutrophil": 0
+      },
+      "expert_recall": {
+        "epithelial": 1.0,
+        "lymphocyte": null,
+        "macrophage": 0.0,
+        "neutrophil": null
+      },
+      "confusion_matrix": [
+        [
+          6,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          6,
+          3,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "marker_distribution_qc": "pass",
+      "marker_distribution_warnings": [],
+      "marker_display_p1_p997_uint16": {
+        "DAPI": [
+          17,
+          64462
+        ],
+        "TRITC": [
+          101,
+          65135
+        ],
+        "Cy5": [
+          58,
+          62878
+        ],
+        "PD-1": [
+          16,
+          64728
+        ],
+        "CD14": [
+          15,
+          63071
+        ],
+        "CD4": [
+          13,
+          63500
+        ],
+        "T-bet": [
+          18,
+          62491
+        ],
+        "CD34": [
+          21,
+          6708
+        ],
+        "CD68": [
+          8,
+          64720
+        ],
+        "CD16": [
+          13,
+          57484
+        ],
+        "CD11c": [
+          13,
+          63003
+        ],
+        "CD138": [
+          7,
+          63448
+        ],
+        "CD20": [
+          14,
+          7812
+        ],
+        "CD3": [
+          13,
+          63360
+        ],
+        "CD8": [
+          21,
+          60073
+        ],
+        "PD-L1": [
+          18,
+          64988
+        ],
+        "CK": [
+          7,
+          64154
+        ],
+        "Ki67": [
+          21,
+          64359
+        ],
+        "Tryptase": [
+          11,
+          17875
+        ],
+        "Actin-D": [
+          15,
+          24572
+        ],
+        "Caspase3-D": [
+          14,
+          65014
+        ],
+        "PHH3-B": [
+          23,
+          64142
+        ],
+        "Transgelin": [
+          17,
+          21248
+        ]
+      }
+    }
+  ],
+  "new_test_balanced_accuracy": 0.44594594594594594,
+  "new_test_matched_cells": 184,
+  "new_test_confusion_matrix": [
+    [
+      6,
+      0,
+      0,
+      0
+    ],
+    [
+      32,
+      116,
+      0,
+      0
+    ],
+    [
+      21,
+      4,
+      0,
+      0
+    ],
+    [
+      4,
+      1,
+      0,
+      0
+    ]
+  ],
+  "publication_limit": "Exploratory diagnosis only. Technical DAPI/shadow passes do not validate virtual marker identity; source polygons can enclose multiple cells; accuracy conditions on conservative StarDist/expert matching. Development and fit images were used during model development."
+}

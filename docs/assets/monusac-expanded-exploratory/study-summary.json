@@ -1,0 +1,427 @@
+{
+  "status": "complete",
+  "device": "CPU",
+  "method": "GitHub fastPLS 0.4 SIMPLS-LDA, full 23-channel nucleus plus cell panel",
+  "model_sha256": "dc431bf0a0f1d04a7d11add82aa5476783bdf0d99fbd5f813d5b822119fb0f9d",
+  "qc_passing_expansion_images": 9,
+  "images_by_split": {
+    "train": 35,
+    "development": 7,
+    "historical_test": 10,
+    "test": 4
+  },
+  "development": {
+    "n": 1867,
+    "accuracy": 0.8109266202463846,
+    "balanced_accuracy": 0.398815754059631,
+    "macro_f1": 0.40021452656799594,
+    "missing_reference_classes": [],
+    "support": {
+      "epithelial": 1124,
+      "lymphocyte": 714,
+      "macrophage": 9,
+      "neutrophil": 20
+    },
+    "recall": {
+      "epithelial": 0.9145907473309609,
+      "lymphocyte": 0.680672268907563,
+      "macrophage": 0.0,
+      "neutrophil": 0.0
+    },
+    "f1": {
+      "epithelial": 0.8577388402169378,
+      "lymphocyte": 0.7431192660550459,
+      "macrophage": 0.0,
+      "neutrophil": 0.0
+    },
+    "confusion_matrix": [
+      [
+        1028,
+        96,
+        0,
+        0
+      ],
+      [
+        228,
+        486,
+        0,
+        0
+      ],
+      [
+        7,
+        2,
+        0,
+        0
+      ],
+      [
+        10,
+        10,
+        0,
+        0
+      ]
+    ],
+    "classes": [
+      "epithelial",
+      "lymphocyte",
+      "macrophage",
+      "neutrophil"
+    ]
+  },
+  "new_test": {
+    "pooled": {
+      "n": 184,
+      "accuracy": 0.6630434782608695,
+      "balanced_accuracy": 0.44594594594594594,
+      "macro_f1": 0.25909164376919347,
+      "missing_reference_classes": [],
+      "support": {
+        "epithelial": 6,
+        "lymphocyte": 148,
+        "macrophage": 25,
+        "neutrophil": 5
+      },
+      "recall": {
+        "epithelial": 1.0,
+        "lymphocyte": 0.7837837837837838,
+        "macrophage": 0.0,
+        "neutrophil": 0.0
+      },
+      "f1": {
+        "epithelial": 0.17391304347826086,
+        "lymphocyte": 0.862453531598513,
+        "macrophage": 0.0,
+        "neutrophil": 0.0
+      },
+      "confusion_matrix": [
+        [
+          6,
+          0,
+          0,
+          0
+        ],
+        [
+          32,
+          116,
+          0,
+          0
+        ],
+        [
+          21,
+          4,
+          0,
+          0
+        ],
+        [
+          4,
+          1,
+          0,
+          0
+        ]
+      ],
+      "classes": [
+        "epithelial",
+        "lymphocyte",
+        "macrophage",
+        "neutrophil"
+      ]
+    },
+    "by_organ": {
+      "breast": {
+        "n": 21,
+        "accuracy": 0.0,
+        "balanced_accuracy": null,
+        "macro_f1": null,
+        "missing_reference_classes": [
+          "epithelial",
+          "lymphocyte"
+        ],
+        "support": {
+          "epithelial": 0,
+          "lymphocyte": 0,
+          "macrophage": 16,
+          "neutrophil": 5
+        },
+        "recall": {
+          "epithelial": null,
+          "lymphocyte": null,
+          "macrophage": 0.0,
+          "neutrophil": 0.0
+        },
+        "f1": {
+          "epithelial": 0.0,
+          "lymphocyte": 0.0,
+          "macrophage": 0.0,
+          "neutrophil": 0.0
+        },
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            15,
+            1,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            0,
+            0
+          ]
+        ],
+        "classes": [
+          "epithelial",
+          "lymphocyte",
+          "macrophage",
+          "neutrophil"
+        ]
+      },
+      "prostate": {
+        "n": 163,
+        "accuracy": 0.7484662576687117,
+        "balanced_accuracy": null,
+        "macro_f1": null,
+        "missing_reference_classes": [
+          "neutrophil"
+        ],
+        "support": {
+          "epithelial": 6,
+          "lymphocyte": 148,
+          "macrophage": 9,
+          "neutrophil": 0
+        },
+        "recall": {
+          "epithelial": 1.0,
+          "lymphocyte": 0.7837837837837838,
+          "macrophage": 0.0,
+          "neutrophil": null
+        },
+        "f1": {
+          "epithelial": 0.24,
+          "lymphocyte": 0.8689138576779026,
+          "macrophage": 0.0,
+          "neutrophil": null
+        },
+        "confusion_matrix": [
+          [
+            6,
+            0,
+            0,
+            0
+          ],
+          [
+            32,
+            116,
+            0,
+            0
+          ],
+          [
+            6,
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "classes": [
+          "epithelial",
+          "lymphocyte",
+          "macrophage",
+          "neutrophil"
+        ]
+      }
+    },
+    "patients": 4,
+    "equal_patient_per_class_recall": {
+      "epithelial": {
+        "patients_with_expert_class": 1,
+        "equal_patient_recall": 1.0
+      },
+      "lymphocyte": {
+        "patients_with_expert_class": 1,
+        "equal_patient_recall": 0.7837837837837838
+      },
+      "macrophage": {
+        "patients_with_expert_class": 3,
+        "equal_patient_recall": 0.0
+      },
+      "neutrophil": {
+        "patients_with_expert_class": 1,
+        "equal_patient_recall": 0.0
+      }
+    },
+    "equal_patient_balanced_accuracy": 0.44594594594594594,
+    "patient_bootstrap_valid_draws": 489,
+    "balanced_accuracy_95pct_patient_bootstrap": [
+      0.44594594594594594,
+      0.44594594594594594
+    ],
+    "interpretation": "Classification conditional on independently detected, conservatively matched nuclei. A class absent from test makes four-class balanced accuracy undefined; a bootstrap draw missing a class is excluded and its count reported."
+  },
+  "unseen_patient_test": {
+    "pooled": {
+      "n": 9,
+      "accuracy": 0.0,
+      "balanced_accuracy": null,
+      "macro_f1": null,
+      "missing_reference_classes": [
+        "epithelial",
+        "lymphocyte"
+      ],
+      "support": {
+        "epithelial": 0,
+        "lymphocyte": 0,
+        "macrophage": 4,
+        "neutrophil": 5
+      },
+      "recall": {
+        "epithelial": null,
+        "lymphocyte": null,
+        "macrophage": 0.0,
+        "neutrophil": 0.0
+      },
+      "f1": {
+        "epithelial": 0.0,
+        "lymphocyte": 0.0,
+        "macrophage": 0.0,
+        "neutrophil": 0.0
+      },
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          4,
+          0,
+          0,
+          0
+        ],
+        [
+          4,
+          1,
+          0,
+          0
+        ]
+      ],
+      "classes": [
+        "epithelial",
+        "lymphocyte",
+        "macrophage",
+        "neutrophil"
+      ]
+    },
+    "by_organ": {
+      "breast": {
+        "n": 9,
+        "accuracy": 0.0,
+        "balanced_accuracy": null,
+        "macro_f1": null,
+        "missing_reference_classes": [
+          "epithelial",
+          "lymphocyte"
+        ],
+        "support": {
+          "epithelial": 0,
+          "lymphocyte": 0,
+          "macrophage": 4,
+          "neutrophil": 5
+        },
+        "recall": {
+          "epithelial": null,
+          "lymphocyte": null,
+          "macrophage": 0.0,
+          "neutrophil": 0.0
+        },
+        "f1": {
+          "epithelial": 0.0,
+          "lymphocyte": 0.0,
+          "macrophage": 0.0,
+          "neutrophil": 0.0
+        },
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            0,
+            0
+          ]
+        ],
+        "classes": [
+          "epithelial",
+          "lymphocyte",
+          "macrophage",
+          "neutrophil"
+        ]
+      }
+    },
+    "patients": 1,
+    "equal_patient_per_class_recall": {
+      "epithelial": {
+        "patients_with_expert_class": 0,
+        "equal_patient_recall": null
+      },
+      "lymphocyte": {
+        "patients_with_expert_class": 0,
+        "equal_patient_recall": null
+      },
+      "macrophage": {
+        "patients_with_expert_class": 1,
+        "equal_patient_recall": 0.0
+      },
+      "neutrophil": {
+        "patients_with_expert_class": 1,
+        "equal_patient_recall": 0.0
+      }
+    },
+    "equal_patient_balanced_accuracy": null,
+    "patient_bootstrap_valid_draws": 0,
+    "balanced_accuracy_95pct_patient_bootstrap": null,
+    "interpretation": "Classification conditional on independently detected, conservatively matched nuclei. A class absent from test makes four-class balanced accuracy undefined; a bootstrap draw missing a class is excluded and its count reported."
+  },
+  "all_detected_new_test_cells_predicted": 308,
+  "all_detected_expansion_cells_predicted": 469,
+  "publication_status": "exploratory_do_not_publish_as_validated_cell_type_accuracy",
+  "limit": "All additional test patients are held out from fitting, but some were seen in prior organizer-test auditing. The unseen-patient subset excludes every patient in the original 32-image organizer test; its tissue and class coverage may be incomplete. Matched-cell metrics do not measure false-positive detection in incompletely annotated tissue. The nine added fields have technical nuclear and shadow QC passes, but several marker panels have review holds and none has measured-marker validation. This result is exploratory even if its numeric accuracy is high."
+}

@@ -1,0 +1,24 @@
+{
+  "status": "manual_visual_review_complete_for_diagnostic_publication_only",
+  "date": "2026-10-20",
+  "scope": "Nine corrected scanner-RGB MoNuSAC fields with frozen StarDist-reference DAPI, border-shadow and spatial-shadow technical QC passes. Reviewed the six classifier panels for all nine fields, all 23 native GigaTIME channels in three contact sheets, and each virtual DAPI image at its native model-grid resolution.",
+  "contact_sheets": [
+    "contact-classifier.webp",
+    "contact-markers-00.webp",
+    "contact-markers-08.webp",
+    "contact-markers-16.webp"
+  ],
+  "source_rgb": "The nine H&E panels have plausible scanner RGB and match the frozen prepared-image provenance; no BGR inversion is apparent.",
+  "shadow_review": "No sharp rectangular tile seam or dark frame was apparent in the nine virtual DAPI images and 23-channel contact sheets at their inspected scales. This does not certify full-resolution absence of every marker-specific artifact. The GigaTIME shadow tests all passed, while biological marker validation remains separate.",
+  "nuclear_review": "Several DAPI maps are broad or saturated relative to H&E nuclei. The dense TCGA-G9-6356 field has especially confluent nuclear signal. Thus technical DAPI-QC pass does not certify independent single-nucleus discrimination by the virtual signal.",
+  "classification_review": "Prediction panels use only epithelial and lymphocyte colors on the additional test fields; the matched-error panels show macrophage and neutrophil misses. The original expert source-region panel is distinct from the conservatively matched StarDist-nucleus panel because some macrophage polygons include cytoplasm or multiple nuclei.",
+  "panel_limit": "The TCGA-G7-A8LD development field has many near-flat marker distributions; other fields have unverified protein specificity. A separate registered ORION raw-image check found several weak or negative measured/virtual marker associations despite DAPI passing. All nine remain diagnostic rather than validated cell-typing evidence.",
+  "numeric_result": {
+    "additional_test_images": 4,
+    "matched_test_cells": 184,
+    "four_class_balanced_accuracy": 0.44594594594594594,
+    "macrophage_recall": 0,
+    "neutrophil_recall": 0
+  },
+  "public_viewer_decision": "Show all nine fields and all channels with prominent exploratory and marker-validation warnings; do not report 90% balanced accuracy or use this result as biological validation."
+}

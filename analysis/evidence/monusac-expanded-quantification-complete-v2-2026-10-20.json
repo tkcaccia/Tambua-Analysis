@@ -1,0 +1,245 @@
+{
+  "status": "complete",
+  "device": "CPU",
+  "quantifier_sha256": "84c2d4eb2addba7a8561372cb23b979f34f833e90dd0a5c036352ced30aec0d9",
+  "source_images": 93,
+  "qc_passing_images": 9,
+  "by_split": {
+    "train": 2,
+    "test": 4,
+    "development": 3
+  },
+  "matched_by_type": {
+    "train": {
+      "epithelial": 13,
+      "lymphocyte": 2,
+      "macrophage": 8,
+      "neutrophil": 4
+    },
+    "development": {
+      "epithelial": 12,
+      "lymphocyte": 10,
+      "macrophage": 9,
+      "neutrophil": 9
+    },
+    "test": {
+      "epithelial": 6,
+      "lymphocyte": 148,
+      "macrophage": 25,
+      "neutrophil": 5
+    }
+  },
+  "expert_by_type": {
+    "train": {
+      "epithelial": 15,
+      "lymphocyte": 2,
+      "macrophage": 21,
+      "neutrophil": 6
+    },
+    "development": {
+      "epithelial": 12,
+      "lymphocyte": 12,
+      "macrophage": 14,
+      "neutrophil": 21
+    },
+    "test": {
+      "epithelial": 6,
+      "lymphocyte": 152,
+      "macrophage": 35,
+      "neutrophil": 15
+    }
+  },
+  "large_macrophage_regions_flagged": 12,
+  "records": [
+    {
+      "sample_id": "TCGA-EV-5903-01Z-00-DX1_4",
+      "patient_id": "TCGA-EV-5903",
+      "split": "train",
+      "organ": "kidney",
+      "detected_cells": 22,
+      "expert_by_type": {
+        "epithelial": 7,
+        "lymphocyte": 2,
+        "macrophage": 4,
+        "neutrophil": 6
+      },
+      "matched_by_type": {
+        "epithelial": 7,
+        "lymphocyte": 2,
+        "macrophage": 2,
+        "neutrophil": 4
+      },
+      "unmatched_detected_instances": 7,
+      "large_macrophage_regions_flagged": 1
+    },
+    {
+      "sample_id": "TCGA-E2-A108-01Z-00-DX1_004",
+      "patient_id": "TCGA-E2-A108",
+      "split": "test",
+      "organ": "breast",
+      "detected_cells": 19,
+      "expert_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 0,
+        "macrophage": 14,
+        "neutrophil": 0
+      },
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 0,
+        "macrophage": 12,
+        "neutrophil": 0
+      },
+      "unmatched_detected_instances": 7,
+      "large_macrophage_regions_flagged": 4
+    },
+    {
+      "sample_id": "TCGA-E9-A22G-01Z-00-DX1_3",
+      "patient_id": "TCGA-E9-A22G",
+      "split": "development",
+      "organ": "breast",
+      "detected_cells": 50,
+      "expert_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 7,
+        "macrophage": 3,
+        "neutrophil": 14
+      },
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 6,
+        "macrophage": 2,
+        "neutrophil": 2
+      },
+      "unmatched_detected_instances": 40,
+      "large_macrophage_regions_flagged": 0
+    },
+    {
+      "sample_id": "TCGA-KK-A59X-01Z-00-DX1-2",
+      "patient_id": "TCGA-KK-A59X",
+      "split": "train",
+      "organ": "prostate",
+      "detected_cells": 16,
+      "expert_by_type": {
+        "epithelial": 8,
+        "lymphocyte": 0,
+        "macrophage": 17,
+        "neutrophil": 0
+      },
+      "matched_by_type": {
+        "epithelial": 6,
+        "lymphocyte": 0,
+        "macrophage": 6,
+        "neutrophil": 0
+      },
+      "unmatched_detected_instances": 4,
+      "large_macrophage_regions_flagged": 6
+    },
+    {
+      "sample_id": "TCGA-EW-A6SB-01Z-00-DX1_003",
+      "patient_id": "TCGA-EW-A6SB",
+      "split": "test",
+      "organ": "breast",
+      "detected_cells": 61,
+      "expert_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 0,
+        "macrophage": 5,
+        "neutrophil": 15
+      },
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 0,
+        "macrophage": 4,
+        "neutrophil": 5
+      },
+      "unmatched_detected_instances": 52,
+      "large_macrophage_regions_flagged": 1
+    },
+    {
+      "sample_id": "TCGA-G7-A8LD-01Z-00-DX1_1",
+      "patient_id": "TCGA-G7-A8LD",
+      "split": "development",
+      "organ": "kidney",
+      "detected_cells": 13,
+      "expert_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 1,
+        "macrophage": 0,
+        "neutrophil": 7
+      },
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 1,
+        "macrophage": 0,
+        "neutrophil": 7
+      },
+      "unmatched_detected_instances": 5,
+      "large_macrophage_regions_flagged": 0
+    },
+    {
+      "sample_id": "TCGA-G9-6356-01Z-00-DX1_3",
+      "patient_id": "TCGA-G9-6356",
+      "split": "test",
+      "organ": "prostate",
+      "detected_cells": 204,
+      "expert_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 152,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "matched_by_type": {
+        "epithelial": 0,
+        "lymphocyte": 148,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "unmatched_detected_instances": 56,
+      "large_macrophage_regions_flagged": 0
+    },
+    {
+      "sample_id": "TCGA-L4-A4E5-01Z-00-DX1_2",
+      "patient_id": "TCGA-L4-A4E5",
+      "split": "development",
+      "organ": "lung",
+      "detected_cells": 60,
+      "expert_by_type": {
+        "epithelial": 12,
+        "lymphocyte": 4,
+        "macrophage": 11,
+        "neutrophil": 0
+      },
+      "matched_by_type": {
+        "epithelial": 12,
+        "lymphocyte": 3,
+        "macrophage": 7,
+        "neutrophil": 0
+      },
+      "unmatched_detected_instances": 38,
+      "large_macrophage_regions_flagged": 0
+    },
+    {
+      "sample_id": "TCGA-YL-A9WL-01Z-00-DX1_2",
+      "patient_id": "TCGA-YL-A9WL",
+      "split": "test",
+      "organ": "prostate",
+      "detected_cells": 24,
+      "expert_by_type": {
+        "epithelial": 6,
+        "lymphocyte": 0,
+        "macrophage": 16,
+        "neutrophil": 0
+      },
+      "matched_by_type": {
+        "epithelial": 6,
+        "lymphocyte": 0,
+        "macrophage": 9,
+        "neutrophil": 0
+      },
+      "unmatched_detected_instances": 9,
+      "large_macrophage_regions_flagged": 0
+    }
+  ],
+  "limit": "No fastPLS score yet. Matched labels remain conditional on StarDist detection and expert-region matching; oversized macrophage labels require sensitivity analysis."
+}

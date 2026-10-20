@@ -12,6 +12,7 @@ import argparse
 import csv
 import hashlib
 import json
+import math
 import os
 from pathlib import Path
 import subprocess
@@ -20,6 +21,15 @@ import sys
 import numpy as np
 from scipy.ndimage import distance_transform_edt
 import tifffile
+
+
+GIGATIME_CHANNELS = (
+    "DAPI", "TRITC", "Cy5", "PD-1", "CD14", "CD4", "T-bet", "CD34",
+    "CD68", "CD16", "CD11c", "CD138", "CD20", "CD3", "CD8", "PD-L1",
+    "CK", "Ki67", "Tryptase", "Actin-D", "Caspase3-D", "PHH3-B",
+    "Transgelin",
+)
+VALUE_SEMANTICS = "uncalibrated_virtual_marker_score"
 
 
 def sha256(path: Path) -> str:
@@ -94,6 +104,45 @@ def quantify(quantifier: Path, image: Path, mask: Path, name: str,
                     "--out-mean-csv", str(prefix) + "_mean_intensity.csv",
                     "--out-stats-csv", str(prefix) + "_intensity_stats.csv",
                     "--out-summary-json", str(prefix) + "_summary.json"], check=True)
+    validate_quantified_table(prefix.with_name(prefix.name + "_mean_intensity.csv"),
+                              prefix.with_name(prefix.name + "_summary.json"), name)
+
+
+def validate_quantified_table(table_path: Path, summary_path: Path,
+                              mask_name: str) -> int:
+    """Reject old quantifiers that silently drop the virtual-score contract."""
+    summary = json.loads(summary_path.read_text())
+    semantics = summary.get("value_semantics", {})
+    if summary.get("mask_name") != mask_name or \
+            summary.get("channel_names") != list(GIGATIME_CHANNELS) or \
+            semantics.get("value_type") != VALUE_SEMANTICS or \
+            semantics.get("calibrated_probability") is not False or \
+            semantics.get("measured_protein_abundance") is not False:
+        raise ValueError(f"Quantifier omitted virtual-score provenance for {mask_name}")
+    with table_path.open(newline="", encoding="utf-8-sig") as stream:
+        reader = csv.DictReader(stream)
+        if reader.fieldnames is None or not set(("label_id", "mask_name",
+                "value_semantics", "calibrated_probability",
+                "measured_protein_abundance", *GIGATIME_CHANNELS)) <= \
+                set(reader.fieldnames):
+            raise ValueError(f"Quantifier omitted virtual-score columns for {mask_name}")
+        rows = list(reader)
+    ids = set()
+    for row in rows:
+        label_id = int(row["label_id"])
+        if label_id <= 0 or label_id in ids or row["mask_name"] != mask_name or \
+                row["value_semantics"] != VALUE_SEMANTICS or \
+                row["calibrated_probability"].lower() not in ("false", "0") or \
+                row["measured_protein_abundance"].lower() not in ("false", "0"):
+            raise ValueError(f"Invalid quantified cell metadata for {mask_name}")
+        ids.add(label_id)
+        values = [float(row[channel]) for channel in GIGATIME_CHANNELS]
+        if any(not math.isfinite(value) or value < 0 or value > 1
+               for value in values):
+            raise ValueError(f"Invalid virtual-marker score for {mask_name}")
+    if len(rows) != summary.get("objects_quantified"):
+        raise ValueError(f"Quantifier row count differs from summary for {mask_name}")
+    return len(rows)
 
 
 def run(sample: str, detected_path: Path, matched_path: Path,
@@ -182,6 +231,7 @@ def run(sample: str, detected_path: Path, matched_path: Path,
                                         else "original_case_reference"),
               "nuclear_qc_sha256": sha256(qc_path),
               "gigatime_validation_sha256": sha256(validation_path)}
+    result["quantifier_sha256"] = sha256(quantifier)
     (output / "CASE_COMPLETE.json.tmp").write_text(json.dumps(result, indent=2) + "\n")
     (output / "CASE_COMPLETE.json.tmp").replace(output / "CASE_COMPLETE.json")
     return result

@@ -13,7 +13,9 @@ import json
 import os
 from pathlib import Path
 
-from quantify_detected_monusac_cells import run as quantify_one
+from quantify_detected_monusac_cells import (
+    run as quantify_one, sha256, validate_quantified_table,
+)
 
 
 CLASSES = ("epithelial", "lymphocyte", "macrophage", "neutrophil")
@@ -58,13 +60,18 @@ def run(args: argparse.Namespace) -> dict:
             if not marker.is_file():
                 raise ValueError(f"Incomplete existing quantification: {sample}")
             result = json.loads(marker.read_text())
-            if result["sample_id"] != sample or result["status"] != "complete":
+            if result["sample_id"] != sample or result["status"] != "complete" or \
+                    result.get("quantifier_sha256") != sha256(args.quantifier):
                 raise ValueError("Invalid reused quantification checkpoint")
         else:
             result = quantify_one(sample, detected, match_root / f"{sample}.json",
                                   args.prepared / "samples" / sample,
                                   case, args.quantifier, output,
                                   qc_report_path=case / "stardist_qc.json")
+        for compartment in ("nuclei", "cell"):
+            validate_quantified_table(
+                output / f"detected_{compartment}_mean_intensity.csv",
+                output / f"detected_{compartment}_summary.json", compartment)
         with (output / "expert_types_on_detected.csv").open(newline="") as stream:
             labels = list(csv.DictReader(stream))
         counts = Counter(row["cell_type"] for row in labels)
@@ -90,6 +97,7 @@ def run(args: argparse.Namespace) -> dict:
            (("train", "development"), ("train", "test"), ("development", "test"))):
         raise ValueError("Patient leakage among QC-passing expansion cases")
     report = {"status": "complete", "device": "CPU",
+              "quantifier_sha256": sha256(args.quantifier),
               "source_images": 93, "qc_passing_images": len(rows),
               "by_split": dict(Counter(row["split"] for row in rows)),
               "matched_by_type": {split: {name: sum(row["matched_by_type"][name]

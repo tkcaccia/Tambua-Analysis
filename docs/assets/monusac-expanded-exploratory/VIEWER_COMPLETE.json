@@ -1,0 +1,8 @@
+{
+  "status": "complete",
+  "cases": 9,
+  "channels": 23,
+  "test_confusion_verified": true,
+  "all_469_predictions_verified": true,
+  "requires_manual_review_before_publication": true
+}

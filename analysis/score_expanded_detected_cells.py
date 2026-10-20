@@ -95,11 +95,13 @@ def plan(old_qc: dict, expansion: dict) -> list[dict]:
 
 
 def manifest(cases: list[dict], old_root: Path, new_root: Path,
-             destination: Path, selected: set[str], *, labelled: bool) -> None:
+             destination: Path, selected: set[str], *, labelled: bool,
+             only_source: str | None = None) -> None:
     fields = (["sample_id", "patient_id", "organ", "split", "labels_csv"] if labelled
               else ["sample_id", "patient_id"])
     fields += ["nuclei_csv", "cell_csv"]
-    chosen = [row for row in cases if row["split"] in selected]
+    chosen = [row for row in cases if row["split"] in selected and
+              (only_source is None or row["source"] == only_source)]
     if not chosen:
         raise ValueError(f"No cases selected for {destination}")
     with destination.open("w", newline="", encoding="utf-8") as stream:
@@ -233,6 +235,10 @@ def run(args: argparse.Namespace) -> dict:
              args.output / "new_test_manifest.csv", {"test"}, labelled=True)
     manifest(cases, args.old_quant, args.new_quant,
              args.output / "new_test_all_detected_manifest.csv", {"test"}, labelled=False)
+    manifest(cases, args.old_quant, args.new_quant,
+             args.output / "all_expansion_detected_manifest.csv",
+             {"train", "development", "test"}, labelled=False,
+             only_source="expansion")
     def cli(*command: str) -> None:
         subprocess.run([sys.executable, "-m", "tambua.cli", *command],
                        check=True, env=env)
@@ -254,6 +260,13 @@ def run(args: argparse.Namespace) -> dict:
     all_prediction = args.output / "new_test_all_detected_predictions.csv"
     cli("predict", "--table", str(all_table), "--model", str(model),
         "--output", str(all_prediction))
+    expansion_table = args.output / "all_expansion_detected_cells.csv"
+    cli("build-inference", "--manifest",
+        str(args.output / "all_expansion_detected_manifest.csv"),
+        "--output", str(expansion_table), "--compartments", "nuclei-cell")
+    expansion_prediction = args.output / "all_expansion_detected_predictions.csv"
+    cli("predict", "--table", str(expansion_table), "--model", str(model),
+        "--output", str(expansion_prediction))
     development = json.loads((args.output / "development_report.json").read_text())
     if development["fastpls_version"] != "0.4" or len(development["feature_names"]) != 46 or \
             set(development["test_patients"]) & set(development["train_patients"]) or \
@@ -265,6 +278,14 @@ def run(args: argparse.Namespace) -> dict:
             {(r["sample_id"], r["label_id"]) for r in inferred} != \
             {(r["sample_id"], r["label_id"]) for r in predicted}:
         raise ValueError("All-detected test predictions differ from marker-table IDs")
+    expansion_inferred = rows(expansion_table)
+    expansion_called = rows(expansion_prediction)
+    if len(expansion_inferred) != len(expansion_called) or \
+            len(expansion_called) != sum(row["detected_cells"]
+                                         for row in expanded["records"]) or \
+            {(r["sample_id"], r["label_id"]) for r in expansion_inferred} != \
+            {(r["sample_id"], r["label_id"]) for r in expansion_called}:
+        raise ValueError("Expansion predictions differ from quantified detected cells")
     result = {"status": "complete", "device": "CPU",
               "method": "GitHub fastPLS 0.4 SIMPLS-LDA, full 23-channel nucleus plus cell panel",
               "model_sha256": sha(model), "qc_passing_expansion_images": len(expanded["records"]),
@@ -278,6 +299,7 @@ def run(args: argparse.Namespace) -> dict:
                                  if row["split"] == "test" and
                                  not row["patient_seen_in_original_test"]}),
               "all_detected_new_test_cells_predicted": len(predicted),
+              "all_detected_expansion_cells_predicted": len(expansion_called),
               "publication_status": "exploratory_do_not_publish_as_validated_cell_type_accuracy",
               "limit": "All additional test patients are held out from fitting, but some were seen in prior organizer-test auditing. The unseen-patient subset excludes every patient in the original 32-image organizer test; its tissue and class coverage may be incomplete. Matched-cell metrics do not measure false-positive detection in incompletely annotated tissue. The nine added fields have technical nuclear and shadow QC passes, but several marker panels have review holds and none has measured-marker validation. This result is exploratory even if its numeric accuracy is high."}
     staged = args.output / "STUDY_COMPLETE.json.tmp"
