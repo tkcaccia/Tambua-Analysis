@@ -21,9 +21,12 @@ class References(HTMLParser):
 def test_page_labels_corrected_benchmark_and_quality_limits() -> None:
     html = PAGE.read_text(encoding="utf-8")
     assert "corrected-monusac.html" in html
+    assert "detected-cells.html" in html
     assert "47 / 120" in html
-    assert "The previous classifier score is archival" in html
-    assert "not been retrained or evaluated as a corrected StarDist-cell classifier" in html
+    assert "94.26%" in html
+    assert "both matched macrophages were missed" in html
+    assert "no matched neutrophils" in html
+    assert "four-class balanced accuracy" in html.lower()
     assert 'id="dapi-qc"' not in html
     for stale in ("85.2%", "pre-fix", "monusac-matched/", "monusac-transfer/", "orion-crc33-01/"):
         assert stale not in html.lower()
@@ -68,6 +71,33 @@ def test_corrected_gallery_assets_cover_every_test_image() -> None:
     assert strict["qc_selection"]["test_pass"] == 10
     test_data = json.loads((PAGE.parent / "assets/monusac-corrected/results.json").read_text())
     assert test_data["strict_qc_test"]["confusion_matrix"] == strict["test"]["confusion_matrix"]
+
+
+def test_detected_cell_gallery_has_complete_predictions_and_qualified_score() -> None:
+    import json
+    root = PAGE.parent / "assets/monusac-detected"
+    gallery = PAGE.parent / "detected-cells.html"
+    html = gallery.read_text(encoding="utf-8")
+    manifest = json.loads((root / "manifest.json").read_text())
+    report = json.loads((root / "study-summary.json").read_text())
+    assert manifest["cases"] == len(manifest["records"]) == 47
+    assert report["fit_images"] == 33
+    assert report["development_images_not_used"] == 4
+    assert report["organizer_test_images"] == 10
+    assert report["matched_test_cells"] == 3975
+    assert report["all_detected_test_cells_predicted"] == 5916
+    metrics = report["test_metrics_on_conservatively_matched_cells"]
+    assert metrics["balanced_accuracy"] is None
+    assert metrics["support"]["neutrophil"] == 0
+    assert metrics["recall"]["macrophage"] == 0
+    assert "Rare-cell validation remains incomplete" in html
+    assert sum(row["detected_cells_predicted"] for row in manifest["records"]
+               if row["split"] == "test") == 5916
+    for row in manifest["records"]:
+        for panel in ("detected", "predicted", "matched-errors"):
+            path = root / f'{row["sample_id"]}-{panel}.webp'
+            assert path.stat().st_size > 1000
+            assert path.read_bytes()[:4] == b"RIFF"
 
 
 def test_orion_pixel_gallery_is_registered_and_complete() -> None:

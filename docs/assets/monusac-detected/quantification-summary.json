@@ -1,0 +1,391 @@
+{
+  "status": "complete",
+  "device": "CPU",
+  "scope": "existing corrected-RGB and StarDist-reference strict-QC-passing cases",
+  "cases": 47,
+  "by_split": {
+    "fit": 33,
+    "development": 4,
+    "test": 10
+  },
+  "detected_cells": 22436,
+  "expert_matched_cells": 15851,
+  "records": [
+    {
+      "sample_id": "TCGA-69-7760-01Z-00-DX1_004",
+      "patient_id": "TCGA-69-7760",
+      "split": "fit",
+      "organ": "lung",
+      "detected_cells": 359,
+      "expert_matched_cells": 213
+    },
+    {
+      "sample_id": "TCGA-69-A59K-01Z-00-DX1_003",
+      "patient_id": "TCGA-69-A59K",
+      "split": "fit",
+      "organ": "lung",
+      "detected_cells": 529,
+      "expert_matched_cells": 359
+    },
+    {
+      "sample_id": "TCGA-78-7220-01Z-00-DX1_003",
+      "patient_id": "TCGA-78-7220",
+      "split": "fit",
+      "organ": "lung",
+      "detected_cells": 333,
+      "expert_matched_cells": 258
+    },
+    {
+      "sample_id": "TCGA-A2-A0CV-01Z-00-DX1_4",
+      "patient_id": "TCGA-A2-A0CV",
+      "split": "fit",
+      "organ": "breast",
+      "detected_cells": 455,
+      "expert_matched_cells": 391
+    },
+    {
+      "sample_id": "TCGA-B6-A0WZ-01Z-00-DX1_1",
+      "patient_id": "TCGA-B6-A0WZ",
+      "split": "development",
+      "organ": "breast",
+      "detected_cells": 588,
+      "expert_matched_cells": 442
+    },
+    {
+      "sample_id": "TCGA-B9-A8YI-01Z-00-DX1_1",
+      "patient_id": "TCGA-B9-A8YI",
+      "split": "fit",
+      "organ": "kidney",
+      "detected_cells": 335,
+      "expert_matched_cells": 249
+    },
+    {
+      "sample_id": "TCGA-B9-A8YI-01Z-00-DX1_2",
+      "patient_id": "TCGA-B9-A8YI",
+      "split": "fit",
+      "organ": "kidney",
+      "detected_cells": 177,
+      "expert_matched_cells": 108
+    },
+    {
+      "sample_id": "TCGA-B9-A8YI-01Z-00-DX1_3",
+      "patient_id": "TCGA-B9-A8YI",
+      "split": "fit",
+      "organ": "kidney",
+      "detected_cells": 574,
+      "expert_matched_cells": 383
+    },
+    {
+      "sample_id": "TCGA-BH-A18T-01Z-00-DX1_1",
+      "patient_id": "TCGA-BH-A18T",
+      "split": "fit",
+      "organ": "breast",
+      "detected_cells": 812,
+      "expert_matched_cells": 669
+    },
+    {
+      "sample_id": "TCGA-BH-A18T-01Z-00-DX1_5",
+      "patient_id": "TCGA-BH-A18T",
+      "split": "fit",
+      "organ": "breast",
+      "detected_cells": 170,
+      "expert_matched_cells": 115
+    },
+    {
+      "sample_id": "TCGA-BH-A18T-01Z-00-DX1_6",
+      "patient_id": "TCGA-BH-A18T",
+      "split": "fit",
+      "organ": "breast",
+      "detected_cells": 374,
+      "expert_matched_cells": 229
+    },
+    {
+      "sample_id": "TCGA-D8-A1X5-01Z-00-DX2_2",
+      "patient_id": "TCGA-D8-A1X5",
+      "split": "fit",
+      "organ": "breast",
+      "detected_cells": 592,
+      "expert_matched_cells": 489
+    },
+    {
+      "sample_id": "TCGA-D8-A1X5-01Z-00-DX2_3",
+      "patient_id": "TCGA-D8-A1X5",
+      "split": "fit",
+      "organ": "breast",
+      "detected_cells": 487,
+      "expert_matched_cells": 375
+    },
+    {
+      "sample_id": "TCGA-E9-A22B-01Z-00-DX1_1",
+      "patient_id": "TCGA-E9-A22B",
+      "split": "fit",
+      "organ": "breast",
+      "detected_cells": 410,
+      "expert_matched_cells": 262
+    },
+    {
+      "sample_id": "TCGA-E9-A22B-01Z-00-DX1_3",
+      "patient_id": "TCGA-E9-A22B",
+      "split": "fit",
+      "organ": "breast",
+      "detected_cells": 192,
+      "expert_matched_cells": 174
+    },
+    {
+      "sample_id": "TCGA-E9-A22B-01Z-00-DX1_8",
+      "patient_id": "TCGA-E9-A22B",
+      "split": "fit",
+      "organ": "breast",
+      "detected_cells": 299,
+      "expert_matched_cells": 198
+    },
+    {
+      "sample_id": "TCGA-EJ-5495-01Z-00-DX1-1",
+      "patient_id": "TCGA-EJ-5495",
+      "split": "fit",
+      "organ": "prostate",
+      "detected_cells": 940,
+      "expert_matched_cells": 625
+    },
+    {
+      "sample_id": "TCGA-EJ-5505-01Z-00-DX1-1",
+      "patient_id": "TCGA-EJ-5505",
+      "split": "fit",
+      "organ": "prostate",
+      "detected_cells": 446,
+      "expert_matched_cells": 326
+    },
+    {
+      "sample_id": "TCGA-EJ-5517-01Z-00-DX1-4",
+      "patient_id": "TCGA-EJ-5517",
+      "split": "development",
+      "organ": "prostate",
+      "detected_cells": 1285,
+      "expert_matched_cells": 754
+    },
+    {
+      "sample_id": "TCGA-EV-5903-01Z-00-DX1_1",
+      "patient_id": "TCGA-EV-5903",
+      "split": "fit",
+      "organ": "kidney",
+      "detected_cells": 417,
+      "expert_matched_cells": 329
+    },
+    {
+      "sample_id": "TCGA-EW-A6SD-01Z-00-DX1_3",
+      "patient_id": "TCGA-EW-A6SD",
+      "split": "fit",
+      "organ": "breast",
+      "detected_cells": 321,
+      "expert_matched_cells": 251
+    },
+    {
+      "sample_id": "TCGA-EW-A6SD-01Z-00-DX1_4",
+      "patient_id": "TCGA-EW-A6SD",
+      "split": "fit",
+      "organ": "breast",
+      "detected_cells": 186,
+      "expert_matched_cells": 126
+    },
+    {
+      "sample_id": "TCGA-G9-6499-01Z-00-DX1-4",
+      "patient_id": "TCGA-G9-6499",
+      "split": "development",
+      "organ": "prostate",
+      "detected_cells": 482,
+      "expert_matched_cells": 312
+    },
+    {
+      "sample_id": "TCGA-J4-A67Q-01Z-00-DX1-1",
+      "patient_id": "TCGA-J4-A67Q",
+      "split": "fit",
+      "organ": "prostate",
+      "detected_cells": 286,
+      "expert_matched_cells": 206
+    },
+    {
+      "sample_id": "TCGA-J4-A67T-01Z-00-DX1-2",
+      "patient_id": "TCGA-J4-A67T",
+      "split": "fit",
+      "organ": "prostate",
+      "detected_cells": 375,
+      "expert_matched_cells": 199
+    },
+    {
+      "sample_id": "TCGA-KK-A6E0-01Z-00-DX1-1",
+      "patient_id": "TCGA-KK-A6E0",
+      "split": "fit",
+      "organ": "prostate",
+      "detected_cells": 194,
+      "expert_matched_cells": 157
+    },
+    {
+      "sample_id": "TCGA-KK-A6E0-01Z-00-DX1-2",
+      "patient_id": "TCGA-KK-A6E0",
+      "split": "fit",
+      "organ": "prostate",
+      "detected_cells": 310,
+      "expert_matched_cells": 222
+    },
+    {
+      "sample_id": "TCGA-L4-A4E5-01Z-00-DX1_1",
+      "patient_id": "TCGA-L4-A4E5",
+      "split": "development",
+      "organ": "lung",
+      "detected_cells": 413,
+      "expert_matched_cells": 319
+    },
+    {
+      "sample_id": "TCGA-MH-A560-01Z-00-DX2_2",
+      "patient_id": "TCGA-MH-A560",
+      "split": "fit",
+      "organ": "kidney",
+      "detected_cells": 544,
+      "expert_matched_cells": 353
+    },
+    {
+      "sample_id": "TCGA-P4-AAVK-01Z-00-DX1_3",
+      "patient_id": "TCGA-P4-AAVK",
+      "split": "fit",
+      "organ": "kidney",
+      "detected_cells": 865,
+      "expert_matched_cells": 556
+    },
+    {
+      "sample_id": "TCGA-S3-AA11-01Z-00-DX1_1",
+      "patient_id": "TCGA-S3-AA11",
+      "split": "fit",
+      "organ": "breast",
+      "detected_cells": 358,
+      "expert_matched_cells": 270
+    },
+    {
+      "sample_id": "TCGA-S3-AA11-01Z-00-DX1_2",
+      "patient_id": "TCGA-S3-AA11",
+      "split": "fit",
+      "organ": "breast",
+      "detected_cells": 819,
+      "expert_matched_cells": 708
+    },
+    {
+      "sample_id": "TCGA-S3-AA11-01Z-00-DX1_4",
+      "patient_id": "TCGA-S3-AA11",
+      "split": "fit",
+      "organ": "breast",
+      "detected_cells": 332,
+      "expert_matched_cells": 293
+    },
+    {
+      "sample_id": "TCGA-UZ-A9PO-01Z-00-DX1_3",
+      "patient_id": "TCGA-UZ-A9PO",
+      "split": "fit",
+      "organ": "kidney",
+      "detected_cells": 368,
+      "expert_matched_cells": 281
+    },
+    {
+      "sample_id": "TCGA-V1-A9O9-01Z-00-DX1-3",
+      "patient_id": "TCGA-V1-A9O9",
+      "split": "fit",
+      "organ": "prostate",
+      "detected_cells": 404,
+      "expert_matched_cells": 330
+    },
+    {
+      "sample_id": "TCGA-YL-A9WY-01Z-00-DX1-1",
+      "patient_id": "TCGA-YL-A9WY",
+      "split": "fit",
+      "organ": "prostate",
+      "detected_cells": 299,
+      "expert_matched_cells": 213
+    },
+    {
+      "sample_id": "TCGA-YL-A9WY-01Z-00-DX1-2",
+      "patient_id": "TCGA-YL-A9WY",
+      "split": "fit",
+      "organ": "prostate",
+      "detected_cells": 190,
+      "expert_matched_cells": 132
+    },
+    {
+      "sample_id": "TCGA-2Z-A9JG-01Z-00-DX1_5",
+      "patient_id": "TCGA-2Z-A9JG",
+      "split": "test",
+      "organ": "kidney",
+      "detected_cells": 710,
+      "expert_matched_cells": 576
+    },
+    {
+      "sample_id": "TCGA-2Z-A9JN-01Z-00-DX1_2",
+      "patient_id": "TCGA-2Z-A9JN",
+      "split": "test",
+      "organ": "kidney",
+      "detected_cells": 564,
+      "expert_matched_cells": 446
+    },
+    {
+      "sample_id": "TCGA-55-7573-01Z-00-DX1_004",
+      "patient_id": "TCGA-55-7573",
+      "split": "test",
+      "organ": "lung",
+      "detected_cells": 612,
+      "expert_matched_cells": 300
+    },
+    {
+      "sample_id": "TCGA-73-4662-01Z-00-DX1_003",
+      "patient_id": "TCGA-73-4662",
+      "split": "test",
+      "organ": "lung",
+      "detected_cells": 763,
+      "expert_matched_cells": 301
+    },
+    {
+      "sample_id": "TCGA-D8-A3Z6-01Z-00-DX2_002",
+      "patient_id": "TCGA-D8-A3Z6",
+      "split": "test",
+      "organ": "breast",
+      "detected_cells": 362,
+      "expert_matched_cells": 290
+    },
+    {
+      "sample_id": "TCGA-E2-A108-01Z-00-DX1_001",
+      "patient_id": "TCGA-E2-A108",
+      "split": "test",
+      "organ": "breast",
+      "detected_cells": 616,
+      "expert_matched_cells": 437
+    },
+    {
+      "sample_id": "TCGA-G9-6356-01Z-00-DX1_1",
+      "patient_id": "TCGA-G9-6356",
+      "split": "test",
+      "organ": "prostate",
+      "detected_cells": 552,
+      "expert_matched_cells": 368
+    },
+    {
+      "sample_id": "TCGA-G9-6367-01Z-00-DX1_2",
+      "patient_id": "TCGA-G9-6367",
+      "split": "test",
+      "organ": "prostate",
+      "detected_cells": 283,
+      "expert_matched_cells": 238
+    },
+    {
+      "sample_id": "TCGA-VP-A87H-01Z-00-DX1_2",
+      "patient_id": "TCGA-VP-A87H",
+      "split": "test",
+      "organ": "prostate",
+      "detected_cells": 785,
+      "expert_matched_cells": 508
+    },
+    {
+      "sample_id": "TCGA-X4-A8KS-01Z-00-DX3_1",
+      "patient_id": "TCGA-X4-A8KS",
+      "split": "test",
+      "organ": "prostate",
+      "detected_cells": 669,
+      "expert_matched_cells": 511
+    }
+  ]
+}

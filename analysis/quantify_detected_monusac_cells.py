@@ -78,7 +78,8 @@ def quantify(quantifier: Path, image: Path, mask: Path, name: str,
 
 def run(sample: str, detected_path: Path, matched_path: Path,
         prepared: Path, gigatime_case: Path, quantifier: Path,
-        output: Path, *, halo_um: float = 3.0) -> dict:
+        output: Path, *, halo_um: float = 3.0,
+        qc_report_path: Path | None = None) -> dict:
     if os.environ.get("CUDA_VISIBLE_DEVICES") != "-1":
         raise RuntimeError("This postprocessing must explicitly hide all GPUs")
     if output.exists():
@@ -86,12 +87,17 @@ def run(sample: str, detected_path: Path, matched_path: Path,
     provenance = json.loads((prepared / "provenance.json").read_text())
     matched = json.loads(matched_path.read_text())
     validation = json.loads((gigatime_case / "VALIDATION.json").read_text())
-    qc = json.loads((gigatime_case / "gigatime_output" /
-                     "output_gigatime_nuclear_qc.json").read_text())
+    qc_path = (qc_report_path if qc_report_path is not None else
+               gigatime_case / "gigatime_output" /
+               "output_gigatime_nuclear_qc.json")
+    qc = json.loads(qc_path.read_text())
     fields = ("status", "alignment_status", "border_shadow_status",
               "spatial_shadow_status")
     if any(qc.get(name) != "pass" for name in fields):
         raise ValueError(f"GigaTIME DAPI/shadow QC failed for {sample}")
+    if qc_report_path is not None and Path(qc.get("nuclei_mask", "")).resolve() != \
+            detected_path.resolve():
+        raise ValueError("Corrected DAPI QC did not use the supplied StarDist nuclei")
     if provenance.get("sample_id") != sample or matched.get("sample_id") != sample:
         raise ValueError("Sample identity differs across inputs")
     if provenance.get("source_color_reference") != "scanner_svs_rgb" or \
@@ -141,6 +147,9 @@ def run(sample: str, detected_path: Path, matched_path: Path,
               "detected_mask_sha256": sha256(detected_path),
               "source_provenance_sha256": sha256(prepared / "provenance.json"),
               "matching_sha256": sha256(matched_path),
+              "nuclear_qc_reference": ("stardist_detected_nuclei" if qc_report_path is not None
+                                        else "original_case_reference"),
+              "nuclear_qc_sha256": sha256(qc_path),
               "gigatime_validation_sha256": sha256(gigatime_case / "VALIDATION.json")}
     (output / "CASE_COMPLETE.json.tmp").write_text(json.dumps(result, indent=2) + "\n")
     (output / "CASE_COMPLETE.json.tmp").replace(output / "CASE_COMPLETE.json")
@@ -155,8 +164,11 @@ if __name__ == "__main__":
     ap.add_argument("--prepared", type=Path, required=True)
     ap.add_argument("--gigatime-case", type=Path, required=True)
     ap.add_argument("--quantifier", type=Path, required=True)
+    ap.add_argument("--qc-report", type=Path,
+                    help="Corrected DAPI QC report using the supplied StarDist mask")
     ap.add_argument("--output", type=Path, required=True)
     args = ap.parse_args()
     print(json.dumps(run(args.sample, args.detected, args.matched,
                          args.prepared, args.gigatime_case,
-                         args.quantifier, args.output), indent=2))
+                         args.quantifier, args.output,
+                         qc_report_path=args.qc_report), indent=2))

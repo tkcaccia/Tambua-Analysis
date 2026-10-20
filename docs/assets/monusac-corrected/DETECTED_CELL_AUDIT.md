@@ -42,20 +42,47 @@ scanner RGB provenance, pixel spacing, input hashes, marker count and CPU
 completion. These 48 images are **not** a final corrected-QC cohort because
 the two reference definitions select different cases.
 
-The original strict-QC fit has only 5 matched macrophages and 6 neutrophils;
-its development set has no matched macrophages and its test set has only 2
-matched macrophages and no neutrophils. The corrected StarDist-QC selection
-also lacks macrophages in development and neutrophils in the organizer test.
-Consequently, no credible four-class balanced accuracy or end-to-end
-cell-identification score can be reported from the existing strict-QC subset.
-The earlier 96.01% expert-region result is historical and **must not** be read
-as a corrected StarDist-cell score.
+We then re-quantified the **47 corrected StarDist-reference QC-passing images**
+from their saved 23-channel GigaTIME model-grid arrays, without new GPU
+inference. The current CellPhenotyper quantifier recorded scanner-RGB input,
+physical spacing, the corrected-QC report hash, nuclear means and calibrated
+3 µm nearest-nucleus cell-proxy means for every detected nucleus. This yielded
+22,436 detected-cell feature rows; 15,851 had conservative expert-type matches.
+The 33 fit, 4 development and 10 organizer-test images are patient-disjoint.
+
+A CPU-only fastPLS **0.4** SIMPLS-LDA fit used all 23 GigaTIME channels in each
+compartment (46 predictors) from 10,049 matched fit cells. It did not use the
+four development images. On ten organizer-test images it assigned a cell type
+to **all 5,916 detected nuclei**. Among the **3,975 nuclei conservatively
+matched to expert labels**, accuracy is **94.26%**: epithelial recall
+2305/2447 (94.20%), lymphocyte recall 1442/1526 (94.50%), macrophage recall
+0/2, with **no matched test neutrophils**. Therefore, four-class balanced
+accuracy and macro F1 are undefined. Unmatched detections are not counted as
+correct or incorrect because MoNuSAC annotation coverage varies. This is
+classification conditional on detection and matching, not detection precision
+or an end-to-end four-class score. The organizer test was used in retrospective
+pipeline audit, so it is development evaluation rather than an independent
+final holdout. The target of >90% four-class balanced accuracy remains unmet.
+
+The prior 48-image detected-cell quantification above is preserved as an audit
+of the *original* QC selection. Its features and counts are not mixed with
+this revised 47-image cohort. The earlier 96.01% expert-region result remains
+historical and **must not** be read as a corrected StarDist-cell score.
 
 Reproduction code: [`score_monusac_stardist_detection.py`](../../../analysis/score_monusac_stardist_detection.py),
 [`match_monusac_expert_to_detected.py`](../../../analysis/match_monusac_expert_to_detected.py),
 [`quantify_detected_monusac_cells.py`](../../../analysis/quantify_detected_monusac_cells.py),
 [`run_detected_quantification_cpu.py`](../../../analysis/run_detected_quantification_cpu.py)
+[`score_monusac_detected_cells.py`](../../../analysis/score_monusac_detected_cells.py),
+[`build_detected_cell_gallery.py`](../../../analysis/build_detected_cell_gallery.py)
 and [`recheck_monusac_nuclear_qc_with_stardist.py`](../../../analysis/recheck_monusac_nuclear_qc_with_stardist.py).
 The [CPU quantification record](detected-cell-quantification-summary.json) and
+[revised 47-image quantification record](../monusac-detected/quantification-summary.json),
+[machine-readable fastPLS score](../monusac-detected/study-summary.json) and
 [frozen development fold](candidate-development-fold-256.json) preserve counts
-and split identities. No UCT HPC GPU job was run for this audit.
+and split identities. [The image viewer](../../detected-cells.html) shows all
+47 cases. All 47 images were visually inspected in contact sheets of H&E,
+virtual DAPI, StarDist nuclei, predicted-cell overlay and source expert
+annotations. No obvious border shadow was seen at that scale; some DAPI
+signals remain broad or saturated, and this visual check does not prove that
+every cell is anatomically correct. No UCT HPC GPU job was run for this audit.

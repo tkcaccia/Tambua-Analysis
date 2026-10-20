@@ -1,0 +1,85 @@
+{
+  "status": "complete",
+  "device": "CPU",
+  "method": "fastPLS 0.4 SIMPLS-LDA; 23 GigaTIME channels in each of nucleus and detected-cell proxy",
+  "qc_reference": "StarDist H&E nuclei; DAPI/border/spatial thresholds unchanged",
+  "qc_summary_sha256": "6739178a6549d3e98fac260ec9302277c8aa9a7c68798a93a3766d72d3f8543b",
+  "fit_images": 33,
+  "development_images_not_used": 4,
+  "organizer_test_images": 10,
+  "matched_fit_cells": 10049,
+  "matched_test_cells": 3975,
+  "all_detected_test_cells_predicted": 5916,
+  "test_detected_cells_by_image": {
+    "TCGA-2Z-A9JG-01Z-00-DX1_5": 710,
+    "TCGA-2Z-A9JN-01Z-00-DX1_2": 564,
+    "TCGA-55-7573-01Z-00-DX1_004": 612,
+    "TCGA-73-4662-01Z-00-DX1_003": 763,
+    "TCGA-D8-A3Z6-01Z-00-DX2_002": 362,
+    "TCGA-E2-A108-01Z-00-DX1_001": 616,
+    "TCGA-G9-6356-01Z-00-DX1_1": 552,
+    "TCGA-G9-6367-01Z-00-DX1_2": 283,
+    "TCGA-VP-A87H-01Z-00-DX1_2": 785,
+    "TCGA-X4-A8KS-01Z-00-DX3_1": 669
+  },
+  "test_metrics_on_conservatively_matched_cells": {
+    "n": 3975,
+    "accuracy": 0.9426415094339623,
+    "balanced_accuracy": null,
+    "macro_f1": null,
+    "missing_reference_classes": [
+      "neutrophil"
+    ],
+    "support": {
+      "epithelial": 2447,
+      "lymphocyte": 1526,
+      "macrophage": 2,
+      "neutrophil": 0
+    },
+    "recall": {
+      "epithelial": 0.9419697588884348,
+      "lymphocyte": 0.944954128440367,
+      "macrophage": 0.0,
+      "neutrophil": null
+    },
+    "f1": {
+      "epithelial": 0.9528730880529144,
+      "lymphocyte": 0.9273311897106109,
+      "macrophage": 0.0,
+      "neutrophil": null
+    },
+    "confusion_matrix": [
+      [
+        2305,
+        142,
+        0,
+        0
+      ],
+      [
+        84,
+        1442,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "classes": [
+      "epithelial",
+      "lymphocyte",
+      "macrophage",
+      "neutrophil"
+    ]
+  },
+  "interpretation": "Matched-cell classification conditional on H&E StarDist detection, not full detection precision. Organizer test has no matched neutrophils; four-class balanced accuracy is undefined. This retrospective test set has already been used for pipeline auditing, so it is not a pristine final holdout."
+}

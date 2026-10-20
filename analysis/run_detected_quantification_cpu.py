@@ -36,6 +36,10 @@ def main() -> None:
     ap.add_argument("--matched-fit", type=Path, required=True)
     ap.add_argument("--matched-eval", type=Path, required=True)
     ap.add_argument("--quantifier", type=Path, required=True)
+    ap.add_argument("--qc-summary", type=Path,
+                    help="Frozen corrected StarDist-reference QC summary")
+    ap.add_argument("--qc-root", type=Path,
+                    help="Case-level corrected StarDist-reference QC reports")
     ap.add_argument("--output", type=Path, required=True)
     args = ap.parse_args()
     cohort = json.loads((args.source / "input" / "COHORT.json").read_text())
@@ -44,9 +48,23 @@ def main() -> None:
             (args.source / "evidence" / "BUNDLE_COMPLETE.json").is_file():
         raise ValueError("The corrected-RGB source bundle is incomplete")
     dev_patients = set(fold["development_patients"])
-    selected = [row for row in cohort["records"]
-                if quality_pass(args.source / "output" / row["sample_id"])]
-    if len(selected) != 48:
+    if bool(args.qc_summary) != bool(args.qc_root):
+        raise ValueError("Corrected QC summary and case-report root must be supplied together")
+    if args.qc_summary:
+        corrected = json.loads(args.qc_summary.read_text())
+        status = {row["sample_id"]: row for row in corrected["records"]}
+        if corrected.get("cases") != 120 or set(status) != \
+                {row["sample_id"] for row in cohort["records"]}:
+            raise ValueError("Corrected QC summary does not cover the source cohort")
+        selected = [row for row in cohort["records"]
+                    if all(value == "pass" for value in
+                           status[row["sample_id"]]["stardist_nuclear_qc"].values())]
+        expected = 47
+    else:
+        selected = [row for row in cohort["records"]
+                    if quality_pass(args.source / "output" / row["sample_id"])]
+        expected = 48
+    if len(selected) != expected:
         raise ValueError(f"Strict QC pass count changed: {len(selected)}")
     args.output.mkdir(parents=True, exist_ok=True)
     if (args.output / "COHORT_COMPLETE.json").exists():
@@ -66,19 +84,24 @@ def main() -> None:
             if result.get("sample_id") != sample or result.get("status") != "complete":
                 raise ValueError(f"Invalid existing CPU checkpoint: {sample}")
         else:
+            qc_report = (args.qc_root / f"{sample}_nuclear_qc.json"
+                         if args.qc_root else None)
             result = run(sample, detected_root / sample / "stardist_labels.tif",
                          matched_root / f"{sample}.json", args.source / "prepared" / sample,
-                         args.source / "output" / sample, args.quantifier, output)
+                         args.source / "output" / sample, args.quantifier, output,
+                         qc_report_path=qc_report)
         results.append(dict(sample_id=sample, patient_id=row["patient_id"],
                             split=("test" if row["split"] == "test" else
                                    "fit" if fit else "development"),
                             organ=row["organ"],
                             detected_cells=result["detected_cells_quantified"],
                             expert_matched_cells=result["expert_types_conservatively_matched"]))
-    if len(results) != 48:
+    if len(results) != expected:
         raise ValueError("Not all QC-passing cases completed")
     report = {"status": "complete", "device": "CPU",
-              "scope": "existing corrected-RGB and strict-QC-passing MoNuSAC cases only",
+              "scope": ("existing corrected-RGB and StarDist-reference strict-QC-passing cases"
+                        if args.qc_summary else
+                        "existing corrected-RGB and source-reference strict-QC-passing cases"),
               "cases": len(results),
               "by_split": dict(Counter(row["split"] for row in results)),
               "detected_cells": sum(row["detected_cells"] for row in results),

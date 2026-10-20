@@ -1,0 +1,1484 @@
+{
+  "status": "complete",
+  "device": "CPU",
+  "cases": 47,
+  "cohort": "corrected scanner RGB, 0.25 \u00b5m/pixel GigaTIME, StarDist-reference QC",
+  "prediction_status": {
+    "fit": "in-sample fitted predictions",
+    "development": "patient-separated exploratory predictions",
+    "test": "patient-separated organizer-test predictions"
+  },
+  "all_detected_test_cells_predicted": 5916,
+  "test_metrics_on_matched_cells": {
+    "n": 3975,
+    "accuracy": 0.9426415094339623,
+    "balanced_accuracy": null,
+    "macro_f1": null,
+    "missing_reference_classes": [
+      "neutrophil"
+    ],
+    "support": {
+      "epithelial": 2447,
+      "lymphocyte": 1526,
+      "macrophage": 2,
+      "neutrophil": 0
+    },
+    "recall": {
+      "epithelial": 0.9419697588884348,
+      "lymphocyte": 0.944954128440367,
+      "macrophage": 0.0,
+      "neutrophil": null
+    },
+    "f1": {
+      "epithelial": 0.9528730880529144,
+      "lymphocyte": 0.9273311897106109,
+      "macrophage": 0.0,
+      "neutrophil": null
+    },
+    "confusion_matrix": [
+      [
+        2305,
+        142,
+        0,
+        0
+      ],
+      [
+        84,
+        1442,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "classes": [
+      "epithelial",
+      "lymphocyte",
+      "macrophage",
+      "neutrophil"
+    ]
+  },
+  "limit": "Unmatched detections have predictions but no expert type; their accuracy is unknown. No matched test neutrophils, so four-class balanced accuracy is undefined.",
+  "records": [
+    {
+      "sample_id": "TCGA-69-7760-01Z-00-DX1_004",
+      "patient_id": "TCGA-69-7760",
+      "organ": "lung",
+      "split": "fit",
+      "detected_cells_predicted": 359,
+      "conservatively_matched_expert_cells": 213,
+      "matched_accuracy": 0.9342723004694836,
+      "expert_support": {
+        "epithelial": 196,
+        "lymphocyte": 16,
+        "macrophage": 0,
+        "neutrophil": 1
+      },
+      "expert_recall": {
+        "epithelial": 0.9948979591836735,
+        "lymphocyte": 0.25,
+        "macrophage": null,
+        "neutrophil": 0.0
+      },
+      "source_mpp": 0.252,
+      "width": 1024,
+      "height": 1024,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    },
+    {
+      "sample_id": "TCGA-69-A59K-01Z-00-DX1_003",
+      "patient_id": "TCGA-69-A59K",
+      "organ": "lung",
+      "split": "fit",
+      "detected_cells_predicted": 529,
+      "conservatively_matched_expert_cells": 359,
+      "matched_accuracy": 0.935933147632312,
+      "expert_support": {
+        "epithelial": 346,
+        "lymphocyte": 12,
+        "macrophage": 0,
+        "neutrophil": 1
+      },
+      "expert_recall": {
+        "epithelial": 0.9595375722543352,
+        "lymphocyte": 0.3333333333333333,
+        "macrophage": null,
+        "neutrophil": 0.0
+      },
+      "source_mpp": 0.2468,
+      "width": 2162,
+      "height": 1422,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    },
+    {
+      "sample_id": "TCGA-78-7220-01Z-00-DX1_003",
+      "patient_id": "TCGA-78-7220",
+      "organ": "lung",
+      "split": "fit",
+      "detected_cells_predicted": 333,
+      "conservatively_matched_expert_cells": 258,
+      "matched_accuracy": 0.9767441860465116,
+      "expert_support": {
+        "epithelial": 257,
+        "lymphocyte": 1,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "expert_recall": {
+        "epithelial": 0.9766536964980544,
+        "lymphocyte": 1.0,
+        "macrophage": null,
+        "neutrophil": null
+      },
+      "source_mpp": 0.252,
+      "width": 1024,
+      "height": 1024,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    },
+    {
+      "sample_id": "TCGA-A2-A0CV-01Z-00-DX1_4",
+      "patient_id": "TCGA-A2-A0CV",
+      "organ": "breast",
+      "split": "fit",
+      "detected_cells_predicted": 455,
+      "conservatively_matched_expert_cells": 391,
+      "matched_accuracy": 0.9258312020460358,
+      "expert_support": {
+        "epithelial": 0,
+        "lymphocyte": 391,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "expert_recall": {
+        "epithelial": null,
+        "lymphocyte": 0.9258312020460358,
+        "macrophage": null,
+        "neutrophil": null
+      },
+      "source_mpp": 0.2505,
+      "width": 769,
+      "height": 677,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    },
+    {
+      "sample_id": "TCGA-B6-A0WZ-01Z-00-DX1_1",
+      "patient_id": "TCGA-B6-A0WZ",
+      "organ": "breast",
+      "split": "development",
+      "detected_cells_predicted": 588,
+      "conservatively_matched_expert_cells": 442,
+      "matched_accuracy": 0.8529411764705882,
+      "expert_support": {
+        "epithelial": 442,
+        "lymphocyte": 0,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "expert_recall": {
+        "epithelial": 0.8529411764705882,
+        "lymphocyte": null,
+        "macrophage": null,
+        "neutrophil": null
+      },
+      "source_mpp": 0.2485,
+      "width": 1463,
+      "height": 1678,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    },
+    {
+      "sample_id": "TCGA-B9-A8YI-01Z-00-DX1_1",
+      "patient_id": "TCGA-B9-A8YI",
+      "organ": "kidney",
+      "split": "fit",
+      "detected_cells_predicted": 335,
+      "conservatively_matched_expert_cells": 249,
+      "matched_accuracy": 0.9317269076305221,
+      "expert_support": {
+        "epithelial": 236,
+        "lymphocyte": 13,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "expert_recall": {
+        "epithelial": 0.961864406779661,
+        "lymphocyte": 0.38461538461538464,
+        "macrophage": null,
+        "neutrophil": null
+      },
+      "source_mpp": 0.2472,
+      "width": 1449,
+      "height": 1311,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    },
+    {
+      "sample_id": "TCGA-B9-A8YI-01Z-00-DX1_2",
+      "patient_id": "TCGA-B9-A8YI",
+      "organ": "kidney",
+      "split": "fit",
+      "detected_cells_predicted": 177,
+      "conservatively_matched_expert_cells": 108,
+      "matched_accuracy": 0.9907407407407407,
+      "expert_support": {
+        "epithelial": 108,
+        "lymphocyte": 0,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "expert_recall": {
+        "epithelial": 0.9907407407407407,
+        "lymphocyte": null,
+        "macrophage": null,
+        "neutrophil": null
+      },
+      "source_mpp": 0.2472,
+      "width": 1042,
+      "height": 843,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    },
+    {
+      "sample_id": "TCGA-B9-A8YI-01Z-00-DX1_3",
+      "patient_id": "TCGA-B9-A8YI",
+      "organ": "kidney",
+      "split": "fit",
+      "detected_cells_predicted": 574,
+      "conservatively_matched_expert_cells": 383,
+      "matched_accuracy": 0.4699738903394256,
+      "expert_support": {
+        "epithelial": 19,
+        "lymphocyte": 359,
+        "macrophage": 3,
+        "neutrophil": 2
+      },
+      "expert_recall": {
+        "epithelial": 0.7368421052631579,
+        "lymphocyte": 0.4623955431754875,
+        "macrophage": 0.0,
+        "neutrophil": 0.0
+      },
+      "source_mpp": 0.2472,
+      "width": 1730,
+      "height": 1302,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    },
+    {
+      "sample_id": "TCGA-BH-A18T-01Z-00-DX1_1",
+      "patient_id": "TCGA-BH-A18T",
+      "organ": "breast",
+      "split": "fit",
+      "detected_cells_predicted": 812,
+      "conservatively_matched_expert_cells": 669,
+      "matched_accuracy": 0.8998505231689088,
+      "expert_support": {
+        "epithelial": 21,
+        "lymphocyte": 648,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "expert_recall": {
+        "epithelial": 0.6190476190476191,
+        "lymphocyte": 0.9089506172839507,
+        "macrophage": null,
+        "neutrophil": null
+      },
+      "source_mpp": 0.2485,
+      "width": 1301,
+      "height": 917,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    },
+    {
+      "sample_id": "TCGA-BH-A18T-01Z-00-DX1_5",
+      "patient_id": "TCGA-BH-A18T",
+      "organ": "breast",
+      "split": "fit",
+      "detected_cells_predicted": 170,
+      "conservatively_matched_expert_cells": 115,
+      "matched_accuracy": 0.8434782608695652,
+      "expert_support": {
+        "epithelial": 93,
+        "lymphocyte": 22,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "expert_recall": {
+        "epithelial": 1.0,
+        "lymphocyte": 0.18181818181818182,
+        "macrophage": null,
+        "neutrophil": null
+      },
+      "source_mpp": 0.2485,
+      "width": 771,
+      "height": 922,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    },
+    {
+      "sample_id": "TCGA-BH-A18T-01Z-00-DX1_6",
+      "patient_id": "TCGA-BH-A18T",
+      "organ": "breast",
+      "split": "fit",
+      "detected_cells_predicted": 374,
+      "conservatively_matched_expert_cells": 229,
+      "matched_accuracy": 0.9475982532751092,
+      "expert_support": {
+        "epithelial": 225,
+        "lymphocyte": 4,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "expert_recall": {
+        "epithelial": 0.9511111111111111,
+        "lymphocyte": 0.75,
+        "macrophage": null,
+        "neutrophil": null
+      },
+      "source_mpp": 0.2485,
+      "width": 1211,
+      "height": 961,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    },
+    {
+      "sample_id": "TCGA-D8-A1X5-01Z-00-DX2_2",
+      "patient_id": "TCGA-D8-A1X5",
+      "organ": "breast",
+      "split": "fit",
+      "detected_cells_predicted": 592,
+      "conservatively_matched_expert_cells": 489,
+      "matched_accuracy": 0.8977505112474438,
+      "expert_support": {
+        "epithelial": 73,
+        "lymphocyte": 415,
+        "macrophage": 0,
+        "neutrophil": 1
+      },
+      "expert_recall": {
+        "epithelial": 0.6164383561643836,
+        "lymphocyte": 0.9493975903614458,
+        "macrophage": null,
+        "neutrophil": 0.0
+      },
+      "source_mpp": 0.2527,
+      "width": 1236,
+      "height": 1104,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    },
+    {
+      "sample_id": "TCGA-D8-A1X5-01Z-00-DX2_3",
+      "patient_id": "TCGA-D8-A1X5",
+      "organ": "breast",
+      "split": "fit",
+      "detected_cells_predicted": 487,
+      "conservatively_matched_expert_cells": 375,
+      "matched_accuracy": 0.8693333333333333,
+      "expert_support": {
+        "epithelial": 330,
+        "lymphocyte": 45,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "expert_recall": {
+        "epithelial": 0.9575757575757575,
+        "lymphocyte": 0.2222222222222222,
+        "macrophage": null,
+        "neutrophil": null
+      },
+      "source_mpp": 0.2527,
+      "width": 1796,
+      "height": 1254,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    },
+    {
+      "sample_id": "TCGA-E9-A22B-01Z-00-DX1_1",
+      "patient_id": "TCGA-E9-A22B",
+      "organ": "breast",
+      "split": "fit",
+      "detected_cells_predicted": 410,
+      "conservatively_matched_expert_cells": 262,
+      "matched_accuracy": 0.549618320610687,
+      "expert_support": {
+        "epithelial": 3,
+        "lymphocyte": 259,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "expert_recall": {
+        "epithelial": 1.0,
+        "lymphocyte": 0.5444015444015444,
+        "macrophage": null,
+        "neutrophil": null
+      },
+      "source_mpp": 0.2468,
+      "width": 1398,
+      "height": 1956,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    },
+    {
+      "sample_id": "TCGA-E9-A22B-01Z-00-DX1_3",
+      "patient_id": "TCGA-E9-A22B",
+      "organ": "breast",
+      "split": "fit",
+      "detected_cells_predicted": 192,
+      "conservatively_matched_expert_cells": 174,
+      "matched_accuracy": 0.9885057471264368,
+      "expert_support": {
+        "epithelial": 174,
+        "lymphocyte": 0,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "expert_recall": {
+        "epithelial": 0.9885057471264368,
+        "lymphocyte": null,
+        "macrophage": null,
+        "neutrophil": null
+      },
+      "source_mpp": 0.2468,
+      "width": 859,
+      "height": 706,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    },
+    {
+      "sample_id": "TCGA-E9-A22B-01Z-00-DX1_8",
+      "patient_id": "TCGA-E9-A22B",
+      "organ": "breast",
+      "split": "fit",
+      "detected_cells_predicted": 299,
+      "conservatively_matched_expert_cells": 198,
+      "matched_accuracy": 0.9141414141414141,
+      "expert_support": {
+        "epithelial": 197,
+        "lymphocyte": 1,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "expert_recall": {
+        "epithelial": 0.9187817258883249,
+        "lymphocyte": 0.0,
+        "macrophage": null,
+        "neutrophil": null
+      },
+      "source_mpp": 0.2468,
+      "width": 951,
+      "height": 1310,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    },
+    {
+      "sample_id": "TCGA-EJ-5495-01Z-00-DX1-1",
+      "patient_id": "TCGA-EJ-5495",
+      "organ": "prostate",
+      "split": "fit",
+      "detected_cells_predicted": 940,
+      "conservatively_matched_expert_cells": 625,
+      "matched_accuracy": 0.9488,
+      "expert_support": {
+        "epithelial": 593,
+        "lymphocyte": 32,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "expert_recall": {
+        "epithelial": 0.9915682967959528,
+        "lymphocyte": 0.15625,
+        "macrophage": null,
+        "neutrophil": null
+      },
+      "source_mpp": 0.252,
+      "width": 1619,
+      "height": 1423,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    },
+    {
+      "sample_id": "TCGA-EJ-5505-01Z-00-DX1-1",
+      "patient_id": "TCGA-EJ-5505",
+      "organ": "prostate",
+      "split": "fit",
+      "detected_cells_predicted": 446,
+      "conservatively_matched_expert_cells": 326,
+      "matched_accuracy": 0.9601226993865031,
+      "expert_support": {
+        "epithelial": 319,
+        "lymphocyte": 7,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "expert_recall": {
+        "epithelial": 0.9749216300940439,
+        "lymphocyte": 0.2857142857142857,
+        "macrophage": null,
+        "neutrophil": null
+      },
+      "source_mpp": 0.252,
+      "width": 1022,
+      "height": 1087,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    },
+    {
+      "sample_id": "TCGA-EJ-5517-01Z-00-DX1-4",
+      "patient_id": "TCGA-EJ-5517",
+      "organ": "prostate",
+      "split": "development",
+      "detected_cells_predicted": 1285,
+      "conservatively_matched_expert_cells": 754,
+      "matched_accuracy": 0.726790450928382,
+      "expert_support": {
+        "epithelial": 362,
+        "lymphocyte": 391,
+        "macrophage": 0,
+        "neutrophil": 1
+      },
+      "expert_recall": {
+        "epithelial": 0.9419889502762431,
+        "lymphocyte": 0.5294117647058824,
+        "macrophage": null,
+        "neutrophil": 0.0
+      },
+      "source_mpp": 0.252,
+      "width": 1772,
+      "height": 1731,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    },
+    {
+      "sample_id": "TCGA-EV-5903-01Z-00-DX1_1",
+      "patient_id": "TCGA-EV-5903",
+      "organ": "kidney",
+      "split": "fit",
+      "detected_cells_predicted": 417,
+      "conservatively_matched_expert_cells": 329,
+      "matched_accuracy": 0.9574468085106383,
+      "expert_support": {
+        "epithelial": 317,
+        "lymphocyte": 12,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "expert_recall": {
+        "epithelial": 0.9936908517350158,
+        "lymphocyte": 0.0,
+        "macrophage": null,
+        "neutrophil": null
+      },
+      "source_mpp": 0.252,
+      "width": 1177,
+      "height": 841,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    },
+    {
+      "sample_id": "TCGA-EW-A6SD-01Z-00-DX1_3",
+      "patient_id": "TCGA-EW-A6SD",
+      "organ": "breast",
+      "split": "fit",
+      "detected_cells_predicted": 321,
+      "conservatively_matched_expert_cells": 251,
+      "matched_accuracy": 0.8924302788844621,
+      "expert_support": {
+        "epithelial": 243,
+        "lymphocyte": 8,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "expert_recall": {
+        "epithelial": 0.897119341563786,
+        "lymphocyte": 0.75,
+        "macrophage": null,
+        "neutrophil": null
+      },
+      "source_mpp": 0.2525,
+      "width": 1074,
+      "height": 709,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    },
+    {
+      "sample_id": "TCGA-EW-A6SD-01Z-00-DX1_4",
+      "patient_id": "TCGA-EW-A6SD",
+      "organ": "breast",
+      "split": "fit",
+      "detected_cells_predicted": 186,
+      "conservatively_matched_expert_cells": 126,
+      "matched_accuracy": 0.753968253968254,
+      "expert_support": {
+        "epithelial": 101,
+        "lymphocyte": 14,
+        "macrophage": 11,
+        "neutrophil": 0
+      },
+      "expert_recall": {
+        "epithelial": 0.8514851485148515,
+        "lymphocyte": 0.6428571428571429,
+        "macrophage": 0.0,
+        "neutrophil": null
+      },
+      "source_mpp": 0.2525,
+      "width": 881,
+      "height": 785,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    },
+    {
+      "sample_id": "TCGA-G9-6499-01Z-00-DX1-4",
+      "patient_id": "TCGA-G9-6499",
+      "organ": "prostate",
+      "split": "development",
+      "detected_cells_predicted": 482,
+      "conservatively_matched_expert_cells": 312,
+      "matched_accuracy": 0.9487179487179487,
+      "expert_support": {
+        "epithelial": 307,
+        "lymphocyte": 5,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "expert_recall": {
+        "epithelial": 0.9641693811074918,
+        "lymphocyte": 0.0,
+        "macrophage": null,
+        "neutrophil": null
+      },
+      "source_mpp": 0.252,
+      "width": 1411,
+      "height": 1256,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    },
+    {
+      "sample_id": "TCGA-J4-A67Q-01Z-00-DX1-1",
+      "patient_id": "TCGA-J4-A67Q",
+      "organ": "prostate",
+      "split": "fit",
+      "detected_cells_predicted": 286,
+      "conservatively_matched_expert_cells": 206,
+      "matched_accuracy": 0.9611650485436893,
+      "expert_support": {
+        "epithelial": 200,
+        "lymphocyte": 6,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "expert_recall": {
+        "epithelial": 0.97,
+        "lymphocyte": 0.6666666666666666,
+        "macrophage": null,
+        "neutrophil": null
+      },
+      "source_mpp": 0.2485,
+      "width": 915,
+      "height": 783,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    },
+    {
+      "sample_id": "TCGA-J4-A67T-01Z-00-DX1-2",
+      "patient_id": "TCGA-J4-A67T",
+      "organ": "prostate",
+      "split": "fit",
+      "detected_cells_predicted": 375,
+      "conservatively_matched_expert_cells": 199,
+      "matched_accuracy": 0.9045226130653267,
+      "expert_support": {
+        "epithelial": 189,
+        "lymphocyte": 5,
+        "macrophage": 5,
+        "neutrophil": 0
+      },
+      "expert_recall": {
+        "epithelial": 0.9417989417989417,
+        "lymphocyte": 0.4,
+        "macrophage": 0.0,
+        "neutrophil": null
+      },
+      "source_mpp": 0.2485,
+      "width": 878,
+      "height": 1087,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    },
+    {
+      "sample_id": "TCGA-KK-A6E0-01Z-00-DX1-1",
+      "patient_id": "TCGA-KK-A6E0",
+      "organ": "prostate",
+      "split": "fit",
+      "detected_cells_predicted": 194,
+      "conservatively_matched_expert_cells": 157,
+      "matched_accuracy": 0.8407643312101911,
+      "expert_support": {
+        "epithelial": 156,
+        "lymphocyte": 1,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "expert_recall": {
+        "epithelial": 0.8461538461538461,
+        "lymphocyte": 0.0,
+        "macrophage": null,
+        "neutrophil": null
+      },
+      "source_mpp": 0.2468,
+      "width": 744,
+      "height": 804,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    },
+    {
+      "sample_id": "TCGA-KK-A6E0-01Z-00-DX1-2",
+      "patient_id": "TCGA-KK-A6E0",
+      "organ": "prostate",
+      "split": "fit",
+      "detected_cells_predicted": 310,
+      "conservatively_matched_expert_cells": 222,
+      "matched_accuracy": 0.8693693693693694,
+      "expert_support": {
+        "epithelial": 221,
+        "lymphocyte": 0,
+        "macrophage": 0,
+        "neutrophil": 1
+      },
+      "expert_recall": {
+        "epithelial": 0.8733031674208145,
+        "lymphocyte": null,
+        "macrophage": null,
+        "neutrophil": 0.0
+      },
+      "source_mpp": 0.2468,
+      "width": 1101,
+      "height": 865,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    },
+    {
+      "sample_id": "TCGA-L4-A4E5-01Z-00-DX1_1",
+      "patient_id": "TCGA-L4-A4E5",
+      "organ": "lung",
+      "split": "development",
+      "detected_cells_predicted": 413,
+      "conservatively_matched_expert_cells": 319,
+      "matched_accuracy": 0.8620689655172413,
+      "expert_support": {
+        "epithelial": 1,
+        "lymphocyte": 308,
+        "macrophage": 0,
+        "neutrophil": 10
+      },
+      "expert_recall": {
+        "epithelial": 0.0,
+        "lymphocyte": 0.8928571428571429,
+        "macrophage": null,
+        "neutrophil": 0.0
+      },
+      "source_mpp": 0.2456,
+      "width": 759,
+      "height": 846,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    },
+    {
+      "sample_id": "TCGA-MH-A560-01Z-00-DX2_2",
+      "patient_id": "TCGA-MH-A560",
+      "organ": "kidney",
+      "split": "fit",
+      "detected_cells_predicted": 544,
+      "conservatively_matched_expert_cells": 353,
+      "matched_accuracy": 0.9858356940509915,
+      "expert_support": {
+        "epithelial": 350,
+        "lymphocyte": 3,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "expert_recall": {
+        "epithelial": 0.9942857142857143,
+        "lymphocyte": 0.0,
+        "macrophage": null,
+        "neutrophil": null
+      },
+      "source_mpp": 0.2527,
+      "width": 1878,
+      "height": 1415,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    },
+    {
+      "sample_id": "TCGA-P4-AAVK-01Z-00-DX1_3",
+      "patient_id": "TCGA-P4-AAVK",
+      "organ": "kidney",
+      "split": "fit",
+      "detected_cells_predicted": 865,
+      "conservatively_matched_expert_cells": 556,
+      "matched_accuracy": 0.9910071942446043,
+      "expert_support": {
+        "epithelial": 555,
+        "lymphocyte": 0,
+        "macrophage": 0,
+        "neutrophil": 1
+      },
+      "expert_recall": {
+        "epithelial": 0.9927927927927928,
+        "lymphocyte": null,
+        "macrophage": null,
+        "neutrophil": 0.0
+      },
+      "source_mpp": 0.2526,
+      "width": 1525,
+      "height": 1602,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    },
+    {
+      "sample_id": "TCGA-S3-AA11-01Z-00-DX1_1",
+      "patient_id": "TCGA-S3-AA11",
+      "organ": "breast",
+      "split": "fit",
+      "detected_cells_predicted": 358,
+      "conservatively_matched_expert_cells": 270,
+      "matched_accuracy": 0.9148148148148149,
+      "expert_support": {
+        "epithelial": 258,
+        "lymphocyte": 12,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "expert_recall": {
+        "epithelial": 0.9418604651162791,
+        "lymphocyte": 0.3333333333333333,
+        "macrophage": null,
+        "neutrophil": null
+      },
+      "source_mpp": 0.2527,
+      "width": 1489,
+      "height": 1225,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    },
+    {
+      "sample_id": "TCGA-S3-AA11-01Z-00-DX1_2",
+      "patient_id": "TCGA-S3-AA11",
+      "organ": "breast",
+      "split": "fit",
+      "detected_cells_predicted": 819,
+      "conservatively_matched_expert_cells": 708,
+      "matched_accuracy": 0.963276836158192,
+      "expert_support": {
+        "epithelial": 683,
+        "lymphocyte": 25,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "expert_recall": {
+        "epithelial": 0.9897510980966325,
+        "lymphocyte": 0.24,
+        "macrophage": null,
+        "neutrophil": null
+      },
+      "source_mpp": 0.2527,
+      "width": 1599,
+      "height": 1225,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    },
+    {
+      "sample_id": "TCGA-S3-AA11-01Z-00-DX1_4",
+      "patient_id": "TCGA-S3-AA11",
+      "organ": "breast",
+      "split": "fit",
+      "detected_cells_predicted": 332,
+      "conservatively_matched_expert_cells": 293,
+      "matched_accuracy": 0.825938566552901,
+      "expert_support": {
+        "epithelial": 18,
+        "lymphocyte": 275,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "expert_recall": {
+        "epithelial": 0.6666666666666666,
+        "lymphocyte": 0.8363636363636363,
+        "macrophage": null,
+        "neutrophil": null
+      },
+      "source_mpp": 0.2527,
+      "width": 636,
+      "height": 788,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    },
+    {
+      "sample_id": "TCGA-UZ-A9PO-01Z-00-DX1_3",
+      "patient_id": "TCGA-UZ-A9PO",
+      "organ": "kidney",
+      "split": "fit",
+      "detected_cells_predicted": 368,
+      "conservatively_matched_expert_cells": 281,
+      "matched_accuracy": 0.9893238434163701,
+      "expert_support": {
+        "epithelial": 280,
+        "lymphocyte": 0,
+        "macrophage": 0,
+        "neutrophil": 1
+      },
+      "expert_recall": {
+        "epithelial": 0.9928571428571429,
+        "lymphocyte": null,
+        "macrophage": null,
+        "neutrophil": 0.0
+      },
+      "source_mpp": 0.2525,
+      "width": 917,
+      "height": 951,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    },
+    {
+      "sample_id": "TCGA-V1-A9O9-01Z-00-DX1-3",
+      "patient_id": "TCGA-V1-A9O9",
+      "organ": "prostate",
+      "split": "fit",
+      "detected_cells_predicted": 404,
+      "conservatively_matched_expert_cells": 330,
+      "matched_accuracy": 0.9727272727272728,
+      "expert_support": {
+        "epithelial": 325,
+        "lymphocyte": 5,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "expert_recall": {
+        "epithelial": 0.9784615384615385,
+        "lymphocyte": 0.6,
+        "macrophage": null,
+        "neutrophil": null
+      },
+      "source_mpp": 0.2527,
+      "width": 989,
+      "height": 833,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    },
+    {
+      "sample_id": "TCGA-YL-A9WY-01Z-00-DX1-1",
+      "patient_id": "TCGA-YL-A9WY",
+      "organ": "prostate",
+      "split": "fit",
+      "detected_cells_predicted": 299,
+      "conservatively_matched_expert_cells": 213,
+      "matched_accuracy": 0.8497652582159625,
+      "expert_support": {
+        "epithelial": 195,
+        "lymphocyte": 18,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "expert_recall": {
+        "epithelial": 0.9025641025641026,
+        "lymphocyte": 0.2777777777777778,
+        "macrophage": null,
+        "neutrophil": null
+      },
+      "source_mpp": 0.2485,
+      "width": 1090,
+      "height": 1170,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    },
+    {
+      "sample_id": "TCGA-YL-A9WY-01Z-00-DX1-2",
+      "patient_id": "TCGA-YL-A9WY",
+      "organ": "prostate",
+      "split": "fit",
+      "detected_cells_predicted": 190,
+      "conservatively_matched_expert_cells": 132,
+      "matched_accuracy": 0.8257575757575758,
+      "expert_support": {
+        "epithelial": 116,
+        "lymphocyte": 16,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "expert_recall": {
+        "epithelial": 0.9310344827586207,
+        "lymphocyte": 0.0625,
+        "macrophage": null,
+        "neutrophil": null
+      },
+      "source_mpp": 0.2485,
+      "width": 802,
+      "height": 877,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    },
+    {
+      "sample_id": "TCGA-2Z-A9JG-01Z-00-DX1_5",
+      "patient_id": "TCGA-2Z-A9JG",
+      "organ": "kidney",
+      "split": "test",
+      "detected_cells_predicted": 710,
+      "conservatively_matched_expert_cells": 576,
+      "matched_accuracy": 1.0,
+      "expert_support": {
+        "epithelial": 0,
+        "lymphocyte": 576,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "expert_recall": {
+        "epithelial": null,
+        "lymphocyte": 1.0,
+        "macrophage": null,
+        "neutrophil": null
+      },
+      "source_mpp": 0.2524,
+      "width": 839,
+      "height": 585,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    },
+    {
+      "sample_id": "TCGA-2Z-A9JN-01Z-00-DX1_2",
+      "patient_id": "TCGA-2Z-A9JN",
+      "organ": "kidney",
+      "split": "test",
+      "detected_cells_predicted": 564,
+      "conservatively_matched_expert_cells": 446,
+      "matched_accuracy": 0.8251121076233184,
+      "expert_support": {
+        "epithelial": 446,
+        "lymphocyte": 0,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "expert_recall": {
+        "epithelial": 0.8251121076233184,
+        "lymphocyte": null,
+        "macrophage": null,
+        "neutrophil": null
+      },
+      "source_mpp": 0.2524,
+      "width": 1760,
+      "height": 1771,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    },
+    {
+      "sample_id": "TCGA-55-7573-01Z-00-DX1_004",
+      "patient_id": "TCGA-55-7573",
+      "organ": "lung",
+      "split": "test",
+      "detected_cells_predicted": 612,
+      "conservatively_matched_expert_cells": 300,
+      "matched_accuracy": 0.9433333333333334,
+      "expert_support": {
+        "epithelial": 281,
+        "lymphocyte": 19,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "expert_recall": {
+        "epithelial": 0.9786476868327402,
+        "lymphocyte": 0.42105263157894735,
+        "macrophage": null,
+        "neutrophil": null
+      },
+      "source_mpp": 0.252,
+      "width": 868,
+      "height": 1974,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    },
+    {
+      "sample_id": "TCGA-73-4662-01Z-00-DX1_003",
+      "patient_id": "TCGA-73-4662",
+      "organ": "lung",
+      "split": "test",
+      "detected_cells_predicted": 763,
+      "conservatively_matched_expert_cells": 301,
+      "matched_accuracy": 0.9069767441860465,
+      "expert_support": {
+        "epithelial": 272,
+        "lymphocyte": 29,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "expert_recall": {
+        "epithelial": 0.9963235294117647,
+        "lymphocyte": 0.06896551724137931,
+        "macrophage": null,
+        "neutrophil": null
+      },
+      "source_mpp": 0.252,
+      "width": 735,
+      "height": 2500,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    },
+    {
+      "sample_id": "TCGA-D8-A3Z6-01Z-00-DX2_002",
+      "patient_id": "TCGA-D8-A3Z6",
+      "organ": "breast",
+      "split": "test",
+      "detected_cells_predicted": 362,
+      "conservatively_matched_expert_cells": 290,
+      "matched_accuracy": 0.9724137931034482,
+      "expert_support": {
+        "epithelial": 283,
+        "lymphocyte": 7,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "expert_recall": {
+        "epithelial": 0.9929328621908127,
+        "lymphocyte": 0.14285714285714285,
+        "macrophage": null,
+        "neutrophil": null
+      },
+      "source_mpp": 0.248,
+      "width": 1079,
+      "height": 992,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    },
+    {
+      "sample_id": "TCGA-E2-A108-01Z-00-DX1_001",
+      "patient_id": "TCGA-E2-A108",
+      "organ": "breast",
+      "split": "test",
+      "detected_cells_predicted": 616,
+      "conservatively_matched_expert_cells": 437,
+      "matched_accuracy": 0.9473684210526315,
+      "expert_support": {
+        "epithelial": 87,
+        "lymphocyte": 350,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "expert_recall": {
+        "epithelial": 0.8505747126436781,
+        "lymphocyte": 0.9714285714285714,
+        "macrophage": null,
+        "neutrophil": null
+      },
+      "source_mpp": 0.248,
+      "width": 748,
+      "height": 833,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    },
+    {
+      "sample_id": "TCGA-G9-6356-01Z-00-DX1_1",
+      "patient_id": "TCGA-G9-6356",
+      "organ": "prostate",
+      "split": "test",
+      "detected_cells_predicted": 552,
+      "conservatively_matched_expert_cells": 368,
+      "matched_accuracy": 0.9130434782608695,
+      "expert_support": {
+        "epithelial": 338,
+        "lymphocyte": 30,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "expert_recall": {
+        "epithelial": 0.9822485207100592,
+        "lymphocyte": 0.13333333333333333,
+        "macrophage": null,
+        "neutrophil": null
+      },
+      "source_mpp": 0.252,
+      "width": 1158,
+      "height": 1026,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    },
+    {
+      "sample_id": "TCGA-G9-6367-01Z-00-DX1_2",
+      "patient_id": "TCGA-G9-6367",
+      "organ": "prostate",
+      "split": "test",
+      "detected_cells_predicted": 283,
+      "conservatively_matched_expert_cells": 238,
+      "matched_accuracy": 0.9831932773109243,
+      "expert_support": {
+        "epithelial": 237,
+        "lymphocyte": 1,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "expert_recall": {
+        "epithelial": 0.9873417721518988,
+        "lymphocyte": 0.0,
+        "macrophage": null,
+        "neutrophil": null
+      },
+      "source_mpp": 0.252,
+      "width": 1164,
+      "height": 1005,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    },
+    {
+      "sample_id": "TCGA-VP-A87H-01Z-00-DX1_2",
+      "patient_id": "TCGA-VP-A87H",
+      "organ": "prostate",
+      "split": "test",
+      "detected_cells_predicted": 785,
+      "conservatively_matched_expert_cells": 508,
+      "matched_accuracy": 0.9251968503937008,
+      "expert_support": {
+        "epithelial": 503,
+        "lymphocyte": 3,
+        "macrophage": 2,
+        "neutrophil": 0
+      },
+      "expert_recall": {
+        "epithelial": 0.9343936381709742,
+        "lymphocyte": 0.0,
+        "macrophage": 0.0,
+        "neutrophil": null
+      },
+      "source_mpp": 0.2501,
+      "width": 1460,
+      "height": 1315,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    },
+    {
+      "sample_id": "TCGA-X4-A8KS-01Z-00-DX3_1",
+      "patient_id": "TCGA-X4-A8KS",
+      "organ": "prostate",
+      "split": "test",
+      "detected_cells_predicted": 669,
+      "conservatively_matched_expert_cells": 511,
+      "matched_accuracy": 1.0,
+      "expert_support": {
+        "epithelial": 0,
+        "lymphocyte": 511,
+        "macrophage": 0,
+        "neutrophil": 0
+      },
+      "expert_recall": {
+        "epithelial": null,
+        "lymphocyte": 1.0,
+        "macrophage": null,
+        "neutrophil": null
+      },
+      "source_mpp": 0.2527,
+      "width": 787,
+      "height": 655,
+      "star_dist_reference_qc": {
+        "status": "pass",
+        "alignment_status": "pass",
+        "border_shadow_status": "pass",
+        "spatial_shadow_status": "pass"
+      }
+    }
+  ]
+}
