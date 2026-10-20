@@ -1,0 +1,30 @@
+{
+  "status": "validated_source_preparation_no_inference",
+  "cases": 192,
+  "source_mpp_um": 0.2,
+  "model_target_mpp_um": 0.25,
+  "split": {
+    "train": {
+      "images": 138,
+      "patients": 59,
+      "typed_polylines": {
+        "tumor_epithelial": 217,
+        "lymphocyte": 1351,
+        "macrophage": 359,
+        "plasma_cell": 276
+      }
+    },
+    "test": {
+      "images": 54,
+      "patients": 12,
+      "typed_polylines": {
+        "lymphocyte": 248,
+        "tumor_epithelial": 94,
+        "plasma_cell": 105,
+        "macrophage": 108
+      }
+    }
+  },
+  "checks": "Every prepared OME RGB/target/excluded mask has matching native dimensions and 0.2-\u00b5m pixel size; typed CSV IDs, areas and classes match nonoverlapping mask pixels; RGB hashes and patient split match the frozen source plan.",
+  "limit": "Validated data preparation only. No model inference, independent nuclear QC, classifier prediction, or balanced-accuracy estimate."
+}

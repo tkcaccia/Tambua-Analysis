@@ -1,0 +1,4905 @@
+{
+  "status": "source_prepared_no_inference",
+  "cases": 192,
+  "plan_sha256": "af5e8216ec77c46c26d0f2945a7b9833c4bd123244bf2bbeea96dd268975c921",
+  "source_shard_sha256": {
+    "train-00000-of-00003.parquet": "9f59987fe978f8c8d9f1adf4fc87549d3d15de02a8241f4d403b46e2cfa52b46",
+    "train-00001-of-00003.parquet": "abdfd25673abdfc03cbffd9b3d74eb79c5e08819baf9d259d90fc2b81261c3da",
+    "train-00002-of-00003.parquet": "6bbc9f31954dc8f91f1d149dd3aa100a17596d61919cb2930f5c8e17e123a026"
+  },
+  "physical_resolution": "0.2 \u00b5m/pixel in source OME-TIFF; future GigaTIME must resample to 0.25 \u00b5m/pixel, with no claim of gained detail",
+  "annotation_geometry": "Only intact target-class polylines become typed instances; rectangles, points, ambiguous and all conflicting polygons are excluded from the typed target mask",
+  "records": [
+    {
+      "fov_id": "TCGA-A1-A0SP-DX1_id-5ea4095addda5f8398977ebc_left-8325_top-57028_bottom-57311_right-8600",
+      "patient_id": "TCGA-A1-A0SP",
+      "split": "test",
+      "height": 356,
+      "width": 346,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "f6793816ef345c5012a91fb300c453da457ecba986c916bafad10fae8e00d234",
+      "prepared_rgb_sha256": "fa92ab6380d477a65fc1a21eb0484571113fb70ae5f8e561479e3fa22afd5233",
+      "target_polyline_counts_before_geometry_qc": {
+        "lymphocyte": 11,
+        "plasma_cell": 2,
+        "tumor_epithelial": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "lymphocyte": 8
+      },
+      "typed_instance_count": 8,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 13,
+        "non_polyline_rectangle": 8,
+        "overlapping_target_polyline": 4,
+        "non_polyline_point": 2
+      }
+    },
+    {
+      "fov_id": "TCGA-A2-A04T-DX1_id-5ea40961ddda5f8398979057_left-73665_top-40353_bottom-40624_right-73954",
+      "patient_id": "TCGA-A2-A04T",
+      "split": "train",
+      "height": 339,
+      "width": 361,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "e2a7553738463a9051f048042c7ca92f4390a880026b1884ae77f94cd8db54cf",
+      "prepared_rgb_sha256": "17159b355e2f5c5a44cce349444c8dae84f6789066f79d985b7893eb8feea0f1",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 2,
+        "lymphocyte": 3
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 2,
+        "lymphocyte": 3
+      },
+      "typed_instance_count": 5,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 2,
+        "non_polyline_rectangle": 14
+      }
+    },
+    {
+      "fov_id": "TCGA-A2-A04T-DX1_id-5ea40961ddda5f8398979057_left-73680_top-39835_bottom-40101_right-73937",
+      "patient_id": "TCGA-A2-A04T",
+      "split": "train",
+      "height": 333,
+      "width": 321,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "ac21a080825cefd62dd275f4915b31b06a417b3bc6e4f2e63bddd6b3204b630e",
+      "prepared_rgb_sha256": "158f9334bf5498a52bdc0545d0913d6d9ee3033d439bc2d6a55fdd8e13e471bf",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 1,
+        "lymphocyte": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 1,
+        "lymphocyte": 1
+      },
+      "typed_instance_count": 2,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 10,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 3
+      }
+    },
+    {
+      "fov_id": "TCGA-A2-A0CM-DX1_id-5ea40963ddda5f8398979473_left-20097_top-57088_bottom-57366_right-20364",
+      "patient_id": "TCGA-A2-A0CM",
+      "split": "train",
+      "height": 345,
+      "width": 331,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "ae715a7a78c60f3cd35515d72ab333849c443119ba095c6e5c3deb64f298361e",
+      "prepared_rgb_sha256": "fe2f589723598c5e7ea1882ef18c39c1abc7ef4a4e6e5967e8603ca69287813f",
+      "target_polyline_counts_before_geometry_qc": {
+        "lymphocyte": 4,
+        "macrophage": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "lymphocyte": 4,
+        "macrophage": 1
+      },
+      "typed_instance_count": 5,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 9,
+        "non_polyline_rectangle": 14
+      }
+    },
+    {
+      "fov_id": "TCGA-A2-A0D0-DX1_id-5ea40b17ddda5f839899849a_left-72833_top-42910_bottom-43170_right-73094",
+      "patient_id": "TCGA-A2-A0D0",
+      "split": "train",
+      "height": 323,
+      "width": 323,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "e6dedd1bbf5263392416e78bdab4d505e7562aa28b535747892976fda7baf61a",
+      "prepared_rgb_sha256": "1ee9b7f111d643a0f1f7716fb8914c9456db3f9b67cffdcad1911f8ced0f4e3c",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 2
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 2
+      },
+      "typed_instance_count": 2,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 21,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 1
+      }
+    },
+    {
+      "fov_id": "TCGA-A2-A0D0-DX1_id-5ea40b17ddda5f839899849a_left-73583_top-44429_bottom-44711_right-73870",
+      "patient_id": "TCGA-A2-A0D0",
+      "split": "train",
+      "height": 349,
+      "width": 356,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "02562ee1959dd27c8e9e2d08032b72a580060436cbe6cdbd8cad84d1eed81928",
+      "prepared_rgb_sha256": "d7fdf79c87e209b9f170956cfe1efd5afb17d0a7e84df88fbfd32e6101e69b92",
+      "target_polyline_counts_before_geometry_qc": {
+        "lymphocyte": 21,
+        "macrophage": 5
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "lymphocyte": 15,
+        "macrophage": 3
+      },
+      "typed_instance_count": 18,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 39,
+        "overlapping_target_polyline": 5,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 1
+      }
+    },
+    {
+      "fov_id": "TCGA-A2-A0ST-DX1_id-5ea40aedddda5f83989960e1_left-109938_top-21322_bottom-21618_right-110226",
+      "patient_id": "TCGA-A2-A0ST",
+      "split": "train",
+      "height": 366,
+      "width": 356,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "b2434cbf6ba41e190c08c6f3557ffe1a40ee46b4470c14f7f60641fc9984ff2c",
+      "prepared_rgb_sha256": "85664923cd9857d1aa482276f04f016b1ec60afdda02b56dd8b89f4a4fa865ca",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 30,
+        "plasma_cell": 1,
+        "lymphocyte": 8
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 28,
+        "plasma_cell": 1,
+        "lymphocyte": 8
+      },
+      "typed_instance_count": 37,
+      "excluded_reasons": {
+        "overlapping_target_polyline": 1,
+        "non_polyline_rectangle": 20,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 1
+      }
+    },
+    {
+      "fov_id": "TCGA-A2-A0SX-DX1_id-5ea40b05ddda5f839899743b_left-54250_top-61025_bottom-61306_right-54568",
+      "patient_id": "TCGA-A2-A0SX",
+      "split": "train",
+      "height": 348,
+      "width": 394,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "cb4bd646093edb3125d640287ee67504ebfa779ddbf5011fea8379448727dcdc",
+      "prepared_rgb_sha256": "474c393620529e8feb1131a5bb3c4aad34f80530191aeca5c5167fb48f53e480",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 3,
+        "tumor_epithelial": 1,
+        "lymphocyte": 2
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 3,
+        "tumor_epithelial": 1,
+        "lymphocyte": 2
+      },
+      "typed_instance_count": 6,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 43,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 6
+      }
+    },
+    {
+      "fov_id": "TCGA-A2-A0SX-DX1_id-5ea40b05ddda5f839899743b_left-55056_top-59480_bottom-59784_right-55352",
+      "patient_id": "TCGA-A2-A0SX",
+      "split": "train",
+      "height": 376,
+      "width": 366,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "06ac086481d21e04547aa7e4c8d65fed17012fbc7afa06b36884ecb435f48725",
+      "prepared_rgb_sha256": "679029be4ab5cbc0c002ce04611b0ccbd6ce7fd180c1d2ceb0d4aea5cd6aa5b1",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 4,
+        "macrophage": 5,
+        "lymphocyte": 10
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 4,
+        "macrophage": 5,
+        "lymphocyte": 9
+      },
+      "typed_instance_count": 18,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 12,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 3,
+        "overlapping_target_polyline": 1
+      }
+    },
+    {
+      "fov_id": "TCGA-A2-A0SX-DX1_id-5ea40b05ddda5f839899743b_left-55303_top-60751_bottom-61071_right-55613",
+      "patient_id": "TCGA-A2-A0SX",
+      "split": "train",
+      "height": 396,
+      "width": 384,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "c7409e93c1d167dd5b2fc31e8670de189e1f9a69d6b51cfe8f1579d30ba80487",
+      "prepared_rgb_sha256": "99cfd3d30e06017ef2ab5128ea048c32b470b4b42fa23df50e73c859f0afa60d",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 1,
+        "lymphocyte": 3
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 1,
+        "lymphocyte": 3
+      },
+      "typed_instance_count": 4,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 29,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 1
+      }
+    },
+    {
+      "fov_id": "TCGA-A2-A0SX-DX1_id-5ea40b05ddda5f839899743b_left-55825_top-57448_bottom-57731_right-56096",
+      "patient_id": "TCGA-A2-A0SX",
+      "split": "train",
+      "height": 350,
+      "width": 335,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "5396affc1c181c12dc2aa4a81f6a36701f165c4acb8b95b40231e023c0d0e0b3",
+      "prepared_rgb_sha256": "a9c048e6e104968d574c8f9a6db9fb56c9a1f226d25be0fc228e89d51063dd54",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 3,
+        "lymphocyte": 4,
+        "plasma_cell": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 3,
+        "lymphocyte": 4,
+        "plasma_cell": 1
+      },
+      "typed_instance_count": 8,
+      "excluded_reasons": {
+        "non_polyline_point": 2,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 6,
+        "non_polyline_rectangle": 20
+      }
+    },
+    {
+      "fov_id": "TCGA-A2-A0SX-DX1_id-5ea40b05ddda5f839899743b_left-56076_top-59738_bottom-60014_right-56355",
+      "patient_id": "TCGA-A2-A0SX",
+      "split": "train",
+      "height": 342,
+      "width": 345,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "f842745a23c8d7b559fcc0af9e0b4a3f76552f198fdd92e730afe30492743c8e",
+      "prepared_rgb_sha256": "64976c731c0a2320fa79ca8e2ac8437623d1c1c42562fa9454632330e67d0a43",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 4,
+        "lymphocyte": 11
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 4,
+        "lymphocyte": 9
+      },
+      "typed_instance_count": 13,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 32,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 3,
+        "overlapping_target_polyline": 1
+      }
+    },
+    {
+      "fov_id": "TCGA-A2-A0SX-DX1_id-5ea40b05ddda5f839899743b_left-56081_top-57443_bottom-57731_right-56368",
+      "patient_id": "TCGA-A2-A0SX",
+      "split": "train",
+      "height": 356,
+      "width": 355,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "4821a6132eb0eaad6887246fdedd85ce8192b81a382f34bb31268935c222f448",
+      "prepared_rgb_sha256": "e19bae4c2f3f33c9c657f3c6609e3b921b4c1620e28fd086c95268a8a9bfb3ea",
+      "target_polyline_counts_before_geometry_qc": {
+        "plasma_cell": 2,
+        "macrophage": 1,
+        "lymphocyte": 10
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "plasma_cell": 2,
+        "macrophage": 1,
+        "lymphocyte": 10
+      },
+      "typed_instance_count": 13,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 45
+      }
+    },
+    {
+      "fov_id": "TCGA-A2-A0SX-DX1_id-5ea40b05ddda5f839899743b_left-56297_top-58968_bottom-59253_right-56614",
+      "patient_id": "TCGA-A2-A0SX",
+      "split": "train",
+      "height": 353,
+      "width": 393,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "446c4aadd2f79d8bc6a5cb48af3c0b832230ea335f73f8c4625549c4d59f845c",
+      "prepared_rgb_sha256": "60a37c4f1536b1c36115735a8803a638328a5d1113ce595e9f5958528bc31285",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 3,
+        "lymphocyte": 37
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 3,
+        "lymphocyte": 36
+      },
+      "typed_instance_count": 39,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 51,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 3,
+        "overlapping_target_polyline": 1
+      }
+    },
+    {
+      "fov_id": "TCGA-A2-A0T0-DX1_id-5ea40989ddda5f839897f293_left-75412_top-60225_bottom-60498_right-75682",
+      "patient_id": "TCGA-A2-A0T0",
+      "split": "train",
+      "height": 338,
+      "width": 334,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "02edfcd25c9593df7e69c0694ad5df64bb7f79f596f23d70ea8b22411201b05a",
+      "prepared_rgb_sha256": "0a9547a8914e6a4b3a29fb0c04d8e4cb63fed4bce9fa042df77b0d9bfe319688",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 3,
+        "lymphocyte": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 3,
+        "lymphocyte": 1
+      },
+      "typed_instance_count": 4,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 1,
+        "non_polyline_rectangle": 15
+      }
+    },
+    {
+      "fov_id": "TCGA-A2-A0T0-DX1_id-5ea40989ddda5f839897f293_left-76950_top-61480_bottom-61778_right-77225",
+      "patient_id": "TCGA-A2-A0T0",
+      "split": "train",
+      "height": 369,
+      "width": 340,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "5159dbdfe5cea2342f3ae5b95ae6801242246734b98b2b8b250fd4ed63d3de8b",
+      "prepared_rgb_sha256": "31e90ec912f0610f82ce6cb6f490f8787a9b926ea9037e6ed65817974aa69847",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 15,
+        "lymphocyte": 2
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 15,
+        "lymphocyte": 2
+      },
+      "typed_instance_count": 17,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 17,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 3
+      }
+    },
+    {
+      "fov_id": "TCGA-A2-A0T2-DX1_id-5ea40a2cddda5f839898b7e9_left-64565_top-59528_bottom-59842_right-64857",
+      "patient_id": "TCGA-A2-A0T2",
+      "split": "train",
+      "height": 389,
+      "width": 362,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "06973a45780e3447a55845b0b7d6347f5040579cb619e1d63373aa97f9823d4c",
+      "prepared_rgb_sha256": "2723e57ab8757553bc12b21171416e4f1c5fd794d2f41ddb7a79666d5fd42f2a",
+      "target_polyline_counts_before_geometry_qc": {
+        "lymphocyte": 44,
+        "tumor_epithelial": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "lymphocyte": 33,
+        "tumor_epithelial": 1
+      },
+      "typed_instance_count": 34,
+      "excluded_reasons": {
+        "overlapping_target_polyline": 6,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 2,
+        "non_polyline_rectangle": 13
+      }
+    },
+    {
+      "fov_id": "TCGA-A2-A0YE-DX1_id-5ea40a24ddda5f839898afb8_left-60720_top-36064_bottom-36349_right-61027",
+      "patient_id": "TCGA-A2-A0YE",
+      "split": "train",
+      "height": 356,
+      "width": 383,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "e54d8f1eb4054cdeb08fc70cf64c0c4320e0f258df05a68d84287758521d4b24",
+      "prepared_rgb_sha256": "77dacc6ce2b7dbd293f84f700f73d75c1a90ba1260b067be77edcda64a24409c",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 9,
+        "lymphocyte": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 7,
+        "lymphocyte": 1
+      },
+      "typed_instance_count": 8,
+      "excluded_reasons": {
+        "overlapping_target_polyline": 1,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 1,
+        "non_polyline_rectangle": 17
+      }
+    },
+    {
+      "fov_id": "TCGA-A2-A0YE-DX1_id-5ea40a24ddda5f839898afb8_left-61758_top-36811_bottom-37110_right-62025",
+      "patient_id": "TCGA-A2-A0YE",
+      "split": "train",
+      "height": 374,
+      "width": 334,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "50517c3d3775bb0ea755a2d3b2fe4649a890f778f4ca46fd27fd4a248628303e",
+      "prepared_rgb_sha256": "996b45b23024fec1e1d01bdbf22afa8023ed8e2cf6d71f150bf4c3e701d7b91c",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 1,
+        "plasma_cell": 4,
+        "lymphocyte": 5
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 1,
+        "plasma_cell": 2,
+        "lymphocyte": 5
+      },
+      "typed_instance_count": 8,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 15,
+        "overlapping_target_polyline": 1,
+        "non_polyline_rectangle": 35
+      }
+    },
+    {
+      "fov_id": "TCGA-A2-A0YE-DX1_id-5ea40a24ddda5f839898afb8_left-62765_top-36052_bottom-36321_right-63060",
+      "patient_id": "TCGA-A2-A0YE",
+      "split": "train",
+      "height": 336,
+      "width": 369,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "a4f8fe26a726794e1fb662c23bb203c311612f036b2b296a8b4986d578b2c3f1",
+      "prepared_rgb_sha256": "4f1b45549a0f5a48c26085f6f98dbd0582bf6264815859f5084776a7b202336f",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 6,
+        "plasma_cell": 23
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 6,
+        "plasma_cell": 19
+      },
+      "typed_instance_count": 25,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 47,
+        "overlapping_target_polyline": 2
+      }
+    },
+    {
+      "fov_id": "TCGA-A2-A0YM-DX1_id-5ea40969ddda5f839897a3ea_left-48865_top-68934_bottom-69240_right-49200",
+      "patient_id": "TCGA-A2-A0YM",
+      "split": "train",
+      "height": 382,
+      "width": 419,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "ada3261084bfb2306008ceaf58513434f2563db0df393c503b25f8c2478b57cc",
+      "prepared_rgb_sha256": "86191fd9fe25e15c00492796a250f05463e3161fa9cbcb9b10a22aac46e70a06",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 3,
+        "lymphocyte": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 3,
+        "lymphocyte": 1
+      },
+      "typed_instance_count": 4,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 6,
+        "non_polyline_rectangle": 41
+      }
+    },
+    {
+      "fov_id": "TCGA-A2-A1G6-DX1_id-5ea409adddda5f839898410a_left-57935_top-69751_bottom-70051_right-58236",
+      "patient_id": "TCGA-A2-A1G6",
+      "split": "train",
+      "height": 372,
+      "width": 373,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "55da9684ba1685d57630ea96cec0f37a8f39cd7985c54b81e7ef5fcaa05c41bb",
+      "prepared_rgb_sha256": "612b72b519c27ea93751d020c2ca9f3b6bc55b6c88853ca8d7fffda726ba9d63",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 2,
+        "macrophage": 6,
+        "lymphocyte": 22
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 2,
+        "macrophage": 6,
+        "lymphocyte": 18
+      },
+      "typed_instance_count": 26,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 26,
+        "overlapping_target_polyline": 2
+      }
+    },
+    {
+      "fov_id": "TCGA-A2-A1G6-DX1_id-5ea409adddda5f839898410a_left-57945_top-70262_bottom-70551_right-58232",
+      "patient_id": "TCGA-A2-A1G6",
+      "split": "train",
+      "height": 359,
+      "width": 356,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "43032f874b1e64020e278479ada996dfa2ecab5d00cbfdeb1bcd453893a80a80",
+      "prepared_rgb_sha256": "cae3bb372c6a5409d99bd7e8d849196557b17381908f09e436c5c47948ee8415",
+      "target_polyline_counts_before_geometry_qc": {
+        "lymphocyte": 15,
+        "macrophage": 32
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "lymphocyte": 13,
+        "macrophage": 25
+      },
+      "typed_instance_count": 38,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 22,
+        "overlapping_target_polyline": 4,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 1
+      }
+    },
+    {
+      "fov_id": "TCGA-A2-A1G6-DX1_id-5ea409adddda5f839898410a_left-58193_top-71277_bottom-71582_right-58491",
+      "patient_id": "TCGA-A2-A1G6",
+      "split": "train",
+      "height": 378,
+      "width": 369,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "5894cfe612c1c72fac8b7285ce8554135a716ec4aa59982564c79cba4575575f",
+      "prepared_rgb_sha256": "9cf0a237f4d07b2f5c73a9c7999fec5606f05727f037d6db12ea07f9b82928fb",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 8,
+        "lymphocyte": 34
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 5,
+        "lymphocyte": 23
+      },
+      "typed_instance_count": 28,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 20,
+        "target_overlaps_excluded_polyline": 1,
+        "excluded_fine_class": 2,
+        "overlapping_target_polyline": 8
+      }
+    },
+    {
+      "fov_id": "TCGA-A2-A3XS-DX1_id-5ea4096dddda5f839897afad_left-21663_top-37707_bottom-38010_right-21932",
+      "patient_id": "TCGA-A2-A3XS",
+      "split": "train",
+      "height": 371,
+      "width": 330,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "4d34be12d343b6b89b4a188fccdc7d5d915bba68a0d5efe3a62bfec29757ec54",
+      "prepared_rgb_sha256": "ca6924822346d3721e7c7467c574c852f7c383873c2ce29e0d3fab60de635b3e",
+      "target_polyline_counts_before_geometry_qc": {
+        "plasma_cell": 7,
+        "tumor_epithelial": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "plasma_cell": 7,
+        "tumor_epithelial": 1
+      },
+      "typed_instance_count": 8,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 4,
+        "non_polyline_rectangle": 12
+      }
+    },
+    {
+      "fov_id": "TCGA-A2-A3XT-DX1_id-5ea409a1ddda5f839898268e_left-88412_top-32477_bottom-32760_right-88696",
+      "patient_id": "TCGA-A2-A3XT",
+      "split": "train",
+      "height": 347,
+      "width": 348,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "f7cc4786ee069256dfc98cf87103980c821366a124f82812f310f4dcf544907b",
+      "prepared_rgb_sha256": "893a4f5d84f479f6d9a3fd14765bbd89a2a204c2935cae920447c2af5aa23675",
+      "target_polyline_counts_before_geometry_qc": {
+        "plasma_cell": 8,
+        "lymphocyte": 5
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "plasma_cell": 8,
+        "lymphocyte": 4
+      },
+      "typed_instance_count": 12,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 1,
+        "excluded_fine_class": 7,
+        "non_polyline_rectangle": 27
+      }
+    },
+    {
+      "fov_id": "TCGA-A2-A3XT-DX1_id-5ea409a1ddda5f839898268e_left-88926_top-32226_bottom-32515_right-89207",
+      "patient_id": "TCGA-A2-A3XT",
+      "split": "train",
+      "height": 354,
+      "width": 344,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "5f4bf8c994e07eae8ee064148be87313a8e6f04f45d7c55de3efcc5839ff3fac",
+      "prepared_rgb_sha256": "17a8c94d5738aee267dbdab37403c50fe73c18ceb081f7f7fd949ab3df0fd550",
+      "target_polyline_counts_before_geometry_qc": {
+        "lymphocyte": 12,
+        "plasma_cell": 17
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "lymphocyte": 12,
+        "plasma_cell": 17
+      },
+      "typed_instance_count": 29,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 3,
+        "non_polyline_rectangle": 12
+      }
+    },
+    {
+      "fov_id": "TCGA-A2-A3XX-DX1_id-5ea40a53ddda5f839898dd0a_left-70687_top-42327_bottom-42606_right-70971",
+      "patient_id": "TCGA-A2-A3XX",
+      "split": "train",
+      "height": 342,
+      "width": 348,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "9252d1b41f9c0991c3d3f8e6f962e7638b20c44a506f8a065de626a359fb8e24",
+      "prepared_rgb_sha256": "9bbbd688bd0555ceec5a9d8cea205d05db24636de18a144bb2fcb65d0f6862f6",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 5,
+        "plasma_cell": 3
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 3,
+        "plasma_cell": 3
+      },
+      "typed_instance_count": 6,
+      "excluded_reasons": {
+        "overlapping_target_polyline": 1,
+        "non_polyline_rectangle": 17,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 1
+      }
+    },
+    {
+      "fov_id": "TCGA-A2-A3XX-DX1_id-5ea40a53ddda5f839898dd0a_left-70698_top-42579_bottom-42875_right-70967",
+      "patient_id": "TCGA-A2-A3XX",
+      "split": "train",
+      "height": 362,
+      "width": 330,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "3b43938972f753e55a5d4c6b419855e4ed97c2f43ededaea1fe5e0f48c59a897",
+      "prepared_rgb_sha256": "e1b9143b7faaddda86d6cf48b9704a89f02dcda5ac61814577d0c2dbe7331b2e",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 6,
+        "lymphocyte": 2
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 6,
+        "lymphocyte": 2
+      },
+      "typed_instance_count": 8,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 20
+      }
+    },
+    {
+      "fov_id": "TCGA-A7-A0CE-DX1_id-5ea409d9ddda5f8398987058_left-58948_top-19236_bottom-19533_right-59249",
+      "patient_id": "TCGA-A7-A0CE",
+      "split": "train",
+      "height": 365,
+      "width": 370,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "7b50e072d938dd2267b52c4129feb7359e2991a044bbf01544ef31163df13d08",
+      "prepared_rgb_sha256": "ff547d5f9228613ca489f910af790ac3f2edbf8c0008f8e1456594f5a45f42d9",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 3,
+        "plasma_cell": 6,
+        "lymphocyte": 18
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 1,
+        "plasma_cell": 4,
+        "lymphocyte": 16
+      },
+      "typed_instance_count": 21,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 24,
+        "overlapping_target_polyline": 3
+      }
+    },
+    {
+      "fov_id": "TCGA-A7-A0CE-DX1_id-5ea409d9ddda5f8398987058_left-58964_top-19510_bottom-19790_right-59228",
+      "patient_id": "TCGA-A7-A0CE",
+      "split": "train",
+      "height": 344,
+      "width": 325,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "c16ddbe0098f0145d54414ccb9698f8ab822d6e46aaa15a8818150a8996e6bd6",
+      "prepared_rgb_sha256": "718eb6a5336fbf16d3e1d9f130ddbba38ba1963b56aeacebbdc8a4c26f9086a6",
+      "target_polyline_counts_before_geometry_qc": {
+        "plasma_cell": 2,
+        "lymphocyte": 19
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "plasma_cell": 2,
+        "lymphocyte": 19
+      },
+      "typed_instance_count": 21,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 2,
+        "non_polyline_rectangle": 14
+      }
+    },
+    {
+      "fov_id": "TCGA-A7-A0CE-DX1_id-5ea409d9ddda5f8398987058_left-60233_top-20012_bottom-20321_right-60526",
+      "patient_id": "TCGA-A7-A0CE",
+      "split": "train",
+      "height": 380,
+      "width": 360,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "8c61a2be4a77b1845406aa5c51df0bfdb77574c7a661a7914bca68f9121f3fe6",
+      "prepared_rgb_sha256": "fab1d67ba2dca7fe362e6a009b45c15b9b5a78fde37cc25d2fdd406d1579b4af",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 3,
+        "lymphocyte": 7
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 3,
+        "lymphocyte": 7
+      },
+      "typed_instance_count": 10,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 22,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 5
+      }
+    },
+    {
+      "fov_id": "TCGA-A7-A0CE-DX1_id-5ea409d9ddda5f8398987058_left-60237_top-21538_bottom-21831_right-60528",
+      "patient_id": "TCGA-A7-A0CE",
+      "split": "train",
+      "height": 361,
+      "width": 358,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "94391679dab0703299dd0c17b9dd320d988b1cb31d87d2b20ec7980a0a5db0fb",
+      "prepared_rgb_sha256": "4787be6d0a46ae7f818cba57226ae4f1d28b9a667e012fab49e3d77f42ccb1b4",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 15,
+        "lymphocyte": 8
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 15,
+        "lymphocyte": 8
+      },
+      "typed_instance_count": 23,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 17,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 2
+      }
+    },
+    {
+      "fov_id": "TCGA-A7-A0CE-DX1_id-5ea409d9ddda5f8398987058_left-60494_top-21294_bottom-21602_right-60776",
+      "patient_id": "TCGA-A7-A0CE",
+      "split": "train",
+      "height": 378,
+      "width": 347,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "a5847e419deea28a809d4df8128401802fe80790a3f3c49dcc206a118fcbb550",
+      "prepared_rgb_sha256": "fedf09a88c35b7539ceb6ad073d3937beb473216c1cf3ac3d3275eaac5d1b2c5",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 12,
+        "plasma_cell": 5,
+        "lymphocyte": 8
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 9,
+        "plasma_cell": 4,
+        "lymphocyte": 8
+      },
+      "typed_instance_count": 21,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 17,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 1,
+        "overlapping_target_polyline": 2
+      }
+    },
+    {
+      "fov_id": "TCGA-A7-A0CE-DX1_id-5ea409d9ddda5f8398987058_left-60739_top-20024_bottom-20324_right-61033",
+      "patient_id": "TCGA-A7-A0CE",
+      "split": "train",
+      "height": 369,
+      "width": 361,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "b4c917666a0a2bf2e2e0bd75eeb3ecceb08de331cb4d98e4ed74a15bebd8aa6e",
+      "prepared_rgb_sha256": "d6cd31ef1ed25f3056399a372529cbb3e422fce2a5a0357637b37ca45229eae8",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 8,
+        "lymphocyte": 9
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 8,
+        "lymphocyte": 9
+      },
+      "typed_instance_count": 17,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 23
+      }
+    },
+    {
+      "fov_id": "TCGA-A7-A0CE-DX1_id-5ea409d9ddda5f8398987058_left-60758_top-21282_bottom-21576_right-61042",
+      "patient_id": "TCGA-A7-A0CE",
+      "split": "train",
+      "height": 362,
+      "width": 349,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "fbc4335e4423e780c1670d0d601abc23b3f51722e3360adcf7f7ae279dc91828",
+      "prepared_rgb_sha256": "9195ad9bbb882b5702bc0daefae75d13eb4100cf287363e715bee7851ff2158d",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 12,
+        "lymphocyte": 7
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 11,
+        "lymphocyte": 4
+      },
+      "typed_instance_count": 15,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 17,
+        "overlapping_target_polyline": 2
+      }
+    },
+    {
+      "fov_id": "TCGA-A7-A0CE-DX1_id-5ea409d9ddda5f8398987058_left-60971_top-21553_bottom-21854_right-61313",
+      "patient_id": "TCGA-A7-A0CE",
+      "split": "train",
+      "height": 370,
+      "width": 421,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "29b166175be92f796dcf44d548c0021fc7b6101a015270593c1d256488571c60",
+      "prepared_rgb_sha256": "02dab029a9369e94f37d5fdbcd414701af7c7bac2bda99a8876eb60d5c7ccb17",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 8,
+        "lymphocyte": 2
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 5,
+        "lymphocyte": 2
+      },
+      "typed_instance_count": 7,
+      "excluded_reasons": {
+        "overlapping_target_polyline": 2,
+        "non_polyline_rectangle": 18
+      }
+    },
+    {
+      "fov_id": "TCGA-A7-A0CE-DX1_id-5ea409d9ddda5f8398987058_left-61014_top-20778_bottom-21054_right-61287",
+      "patient_id": "TCGA-A7-A0CE",
+      "split": "train",
+      "height": 339,
+      "width": 336,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "35a630e56939c0df14a382c4ebc6a90ad3f96a82030c77a5cc603feb18d143f4",
+      "prepared_rgb_sha256": "7f2bba69c8f9d1f303e268cd580fb764f174fdecaa11922b9b907a3f50da6978",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 7,
+        "macrophage": 2
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 7,
+        "macrophage": 2
+      },
+      "typed_instance_count": 9,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 12
+      }
+    },
+    {
+      "fov_id": "TCGA-A7-A26I-DX1_id-5ea40a12ddda5f839898a0ef_left-10681_top-26138_bottom-26436_right-10971",
+      "patient_id": "TCGA-A7-A26I",
+      "split": "train",
+      "height": 369,
+      "width": 359,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "9f8421f380661cb45f9eeddf177c255b99d04b262b902c72e7597d49a0252d3e",
+      "prepared_rgb_sha256": "0d8931ff4e241e1a4f727309528adf1021c8971913b8af3b4128ee8a4cbd0191",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 2,
+        "macrophage": 12,
+        "lymphocyte": 4
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 2,
+        "macrophage": 11,
+        "lymphocyte": 3
+      },
+      "typed_instance_count": 16,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 14,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 3,
+        "overlapping_target_polyline": 1
+      }
+    },
+    {
+      "fov_id": "TCGA-A7-A26I-DX1_id-5ea40a12ddda5f839898a0ef_left-9938_top-25898_bottom-26193_right-10213",
+      "patient_id": "TCGA-A7-A26I",
+      "split": "train",
+      "height": 365,
+      "width": 340,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "102a1f16f7b89d72d3373e70f628a59d6a53ae9586c1c06f1d017cefbd78f4c8",
+      "prepared_rgb_sha256": "9de15829d652cac5fde7376a05234c2cfab19e110a2226e2290148e9490fcbce",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 1,
+        "lymphocyte": 38
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 1,
+        "lymphocyte": 33
+      },
+      "typed_instance_count": 34,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 26,
+        "overlapping_target_polyline": 2
+      }
+    },
+    {
+      "fov_id": "TCGA-A7-A4SD-DX1_id-5ea40b0dddda5f8398997bf0_left-55570_top-12876_bottom-13187_right-55879",
+      "patient_id": "TCGA-A7-A4SD",
+      "split": "train",
+      "height": 383,
+      "width": 381,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "ee5f85e70ea0ab64d1a5e0392f5998177cabc5b8a9555afe072fa97bdbd55d04",
+      "prepared_rgb_sha256": "a4224082235c134dd824e89770fc39b4c1681ed66b57aeeaf94ce9a4456afb74",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 11,
+        "lymphocyte": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 11,
+        "lymphocyte": 1
+      },
+      "typed_instance_count": 12,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 1,
+        "non_polyline_rectangle": 24
+      }
+    },
+    {
+      "fov_id": "TCGA-A7-A6VV-DX1_id-5ea40ac8ddda5f8398994163_left-49686_top-37695_bottom-37986_right-49980",
+      "patient_id": "TCGA-A7-A6VV",
+      "split": "train",
+      "height": 359,
+      "width": 362,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "95c996c7debac7dd061275f5ad6af9962208e89f623955c36c4f872714897df4",
+      "prepared_rgb_sha256": "68d9c15dd2375ddd70082d348736efada34d25e29c795bcd6498a7df1abdf6f6",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 3,
+        "plasma_cell": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 3,
+        "plasma_cell": 1
+      },
+      "typed_instance_count": 4,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 9,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 12
+      }
+    },
+    {
+      "fov_id": "TCGA-A7-A6VV-DX1_id-5ea40ac8ddda5f8398994163_left-52001_top-38496_bottom-38759_right-52271",
+      "patient_id": "TCGA-A7-A6VV",
+      "split": "train",
+      "height": 324,
+      "width": 332,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "6c14a075e21f4a907b1c19b08304ecb359dbd2ca7ba824b82f9807ab9a78c884",
+      "prepared_rgb_sha256": "a90eef2ac9605160135fab5ecbcb67b24edad7de7c6baa2f52198820c1c5a4f4",
+      "target_polyline_counts_before_geometry_qc": {
+        "plasma_cell": 3,
+        "lymphocyte": 4
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "plasma_cell": 3,
+        "lymphocyte": 3
+      },
+      "typed_instance_count": 6,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 7,
+        "overlapping_target_polyline": 1,
+        "non_polyline_rectangle": 7
+      }
+    },
+    {
+      "fov_id": "TCGA-A7-A6VV-DX1_id-5ea40ac8ddda5f8398994163_left-53520_top-38474_bottom-38757_right-53809",
+      "patient_id": "TCGA-A7-A6VV",
+      "split": "train",
+      "height": 349,
+      "width": 356,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "9cd76d25a1c744c8ef58f3fa8d78475e2d71a80e8fb17e421df62292c63a616f",
+      "prepared_rgb_sha256": "976ba44a60c10578b13346b324f6b0135cf2a74fc319a874fabd5655049678e3",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 1,
+        "plasma_cell": 4,
+        "lymphocyte": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 1,
+        "plasma_cell": 4,
+        "lymphocyte": 1
+      },
+      "typed_instance_count": 6,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 8,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 14
+      }
+    },
+    {
+      "fov_id": "TCGA-AC-A2BK-DX1_id-5ea40a4dddda5f839898d7d9_left-15932_top-8581_bottom-8868_right-16224",
+      "patient_id": "TCGA-AC-A2BK",
+      "split": "test",
+      "height": 361,
+      "width": 367,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "57e2dce03fc92b07241fddf504b4a727de4b97442371b25550af9a43e0982feb",
+      "prepared_rgb_sha256": "7761a2fdf361fde9dcd2848f60392a71f06a4d813d488f6f793be01bce990d02",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 4,
+        "lymphocyte": 7
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 4,
+        "lymphocyte": 7
+      },
+      "typed_instance_count": 11,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 10,
+        "non_polyline_rectangle": 21
+      }
+    },
+    {
+      "fov_id": "TCGA-AC-A2BK-DX1_id-5ea40a4dddda5f839898d7d9_left-16686_top-9611_bottom-9894_right-16968",
+      "patient_id": "TCGA-AC-A2BK",
+      "split": "test",
+      "height": 356,
+      "width": 355,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "d000ffdcdfabc77dbce44f9c42059223e100a7a9ede9eb7b6c38cbd147d87167",
+      "prepared_rgb_sha256": "836715050a3c05dcea6beb85a6ef41b52c5f0815e28b4d741285e4ae16629dbf",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 2,
+        "lymphocyte": 13,
+        "plasma_cell": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 2,
+        "lymphocyte": 13,
+        "plasma_cell": 1
+      },
+      "typed_instance_count": 16,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 8,
+        "non_polyline_rectangle": 25
+      }
+    },
+    {
+      "fov_id": "TCGA-AC-A2BK-DX1_id-5ea40a4dddda5f839898d7d9_left-16943_top-9080_bottom-9378_right-17250",
+      "patient_id": "TCGA-AC-A2BK",
+      "split": "test",
+      "height": 374,
+      "width": 386,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "a78281cda437fbece22b4a08d5b111d4c9324cb8700f0e68b887ccee981e69cf",
+      "prepared_rgb_sha256": "0266d7eefe19a6f88a8c0f1ee08ba67f884a07ab54d1def6d2d2959662f8e027",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 4,
+        "lymphocyte": 2
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 4,
+        "lymphocyte": 2
+      },
+      "typed_instance_count": 6,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 32
+      }
+    },
+    {
+      "fov_id": "TCGA-AC-A2BK-DX1_id-5ea40a4dddda5f839898d7d9_left-16957_top-9598_bottom-9887_right-17217",
+      "patient_id": "TCGA-AC-A2BK",
+      "split": "test",
+      "height": 364,
+      "width": 327,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "71f80f00999522e656e6c5a8691db266ff489cc37beb1f998e8901cc9bebccea",
+      "prepared_rgb_sha256": "2ba5f6b865e6397ff51fa3ebd14cf1d9dbe8da3b71f1471a96e379c010fdad17",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 2,
+        "lymphocyte": 17
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 2,
+        "lymphocyte": 17
+      },
+      "typed_instance_count": 19,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 1,
+        "non_polyline_rectangle": 31
+      }
+    },
+    {
+      "fov_id": "TCGA-AC-A2BK-DX1_id-5ea40a4dddda5f839898d7d9_left-18740_top-9355_bottom-9635_right-19024",
+      "patient_id": "TCGA-AC-A2BK",
+      "split": "test",
+      "height": 352,
+      "width": 357,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "04c6367d572e192431e8bb6258f2258487f26b186cac1e861c7c65e825125b80",
+      "prepared_rgb_sha256": "2434f92529852f9ed5e1843a238529668a1f077086f7fa211c49b908dedd2a81",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 5,
+        "lymphocyte": 2
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 5,
+        "lymphocyte": 2
+      },
+      "typed_instance_count": 7,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 21
+      }
+    },
+    {
+      "fov_id": "TCGA-AC-A6IW-DX1_id-5ea40997ddda5f83989810a2_left-15625_top-6976_bottom-7255_right-15909",
+      "patient_id": "TCGA-AC-A6IW",
+      "split": "test",
+      "height": 351,
+      "width": 357,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "d500566c601286204fbc22cd19e9e9eb39f7986670abc98a113f43d2a1adbd5b",
+      "prepared_rgb_sha256": "89c124e445964b3a6db39d7b971287a400d88e40d6fbaf68c420881685de2591",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 16,
+        "lymphocyte": 8
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 14,
+        "lymphocyte": 6
+      },
+      "typed_instance_count": 20,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 25,
+        "overlapping_target_polyline": 2
+      }
+    },
+    {
+      "fov_id": "TCGA-AN-A0AR-DX1_id-5ea40994ddda5f8398980909_left-10755_top-21653_bottom-21964_right-11043",
+      "patient_id": "TCGA-AN-A0AR",
+      "split": "train",
+      "height": 385,
+      "width": 357,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "a2c9f225ebde8fb35f5c1ef7f9e4b28cceee07f57734f90e765b498b2938dd0a",
+      "prepared_rgb_sha256": "8378a2a248136f1ee41b4a3f4df86be6307d0ecdacf0b862ad2bf38cf889a4dd",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 2,
+        "macrophage": 3,
+        "lymphocyte": 8
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 2,
+        "macrophage": 2,
+        "lymphocyte": 7
+      },
+      "typed_instance_count": 11,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 31,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 5,
+        "overlapping_target_polyline": 1
+      }
+    },
+    {
+      "fov_id": "TCGA-AN-A0AR-DX1_id-5ea40994ddda5f8398980909_left-11017_top-21658_bottom-21943_right-11284",
+      "patient_id": "TCGA-AN-A0AR",
+      "split": "train",
+      "height": 353,
+      "width": 330,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "a03d5c887fd025377902856e83e00d8d006581e9fb009bfe7a60db675ef08e63",
+      "prepared_rgb_sha256": "5170863935f55376589623514faa3c9324660543121ebd5a3cc3eaf998cf55a5",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 6,
+        "macrophage": 2,
+        "lymphocyte": 12
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 5,
+        "macrophage": 2,
+        "lymphocyte": 9
+      },
+      "typed_instance_count": 16,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 35,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 1,
+        "overlapping_target_polyline": 2
+      }
+    },
+    {
+      "fov_id": "TCGA-AN-A0AT-DX1_id-5ea40a18ddda5f839898a4f0_left-31677_top-35988_bottom-36290_right-31964",
+      "patient_id": "TCGA-AN-A0AT",
+      "split": "train",
+      "height": 374,
+      "width": 355,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "7864ff625d540b99d0c946885f0c773069b6de03e6c0000082078b946be3e99d",
+      "prepared_rgb_sha256": "005ae960b02de0469b82c2725cc0984adc0a7fb69d6a5a1cb130323cf99c7056",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 4,
+        "lymphocyte": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 4,
+        "lymphocyte": 1
+      },
+      "typed_instance_count": 5,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 1,
+        "non_polyline_rectangle": 30
+      }
+    },
+    {
+      "fov_id": "TCGA-AN-A0AT-DX1_id-5ea40a18ddda5f839898a4f0_left-31919_top-39067_bottom-39365_right-32210",
+      "patient_id": "TCGA-AN-A0AT",
+      "split": "train",
+      "height": 369,
+      "width": 360,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "5d56c0c475231a1c19198cf8ea87a3e9acbf5bde12d8e1c7734065a57e17e990",
+      "prepared_rgb_sha256": "1dae76857736921764dd434751d9e71a1e727732840326b0ab56b7fe17d1deda",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 4,
+        "lymphocyte": 18,
+        "plasma_cell": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 4,
+        "lymphocyte": 16,
+        "plasma_cell": 1
+      },
+      "typed_instance_count": 21,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 49,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 5,
+        "overlapping_target_polyline": 1
+      }
+    },
+    {
+      "fov_id": "TCGA-AN-A0AT-DX1_id-5ea40a18ddda5f839898a4f0_left-32175_top-38313_bottom-38589_right-32475",
+      "patient_id": "TCGA-AN-A0AT",
+      "split": "train",
+      "height": 342,
+      "width": 371,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "7997e3f1e2876220ed38ac12f113ae0b1a7f10811f8dbed92be3997b05886b8c",
+      "prepared_rgb_sha256": "400370eee72316c77adab81ac2e64ad3254bd94a832f9add27ed714e792ca14b",
+      "target_polyline_counts_before_geometry_qc": {
+        "lymphocyte": 24,
+        "plasma_cell": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "lymphocyte": 22,
+        "plasma_cell": 1
+      },
+      "typed_instance_count": 23,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 3,
+        "overlapping_target_polyline": 1,
+        "non_polyline_rectangle": 49
+      }
+    },
+    {
+      "fov_id": "TCGA-AN-A0AT-DX1_id-5ea40a18ddda5f839898a4f0_left-32175_top-38811_bottom-39100_right-32460",
+      "patient_id": "TCGA-AN-A0AT",
+      "split": "train",
+      "height": 358,
+      "width": 353,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "f7db600895c12d78566665ed425fd1e5dd00b2a21f96d7d12ee66ad3ed58f77c",
+      "prepared_rgb_sha256": "f0ba1a9395a5bc4320245bc80a83953193fa014cfa3333d49c01b60b3266f0de",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 1,
+        "lymphocyte": 56
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 1,
+        "lymphocyte": 41
+      },
+      "typed_instance_count": 42,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 43,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 1,
+        "overlapping_target_polyline": 8
+      }
+    },
+    {
+      "fov_id": "TCGA-AN-A0AT-DX1_id-5ea40a18ddda5f839898a4f0_left-32177_top-35982_bottom-36276_right-32480",
+      "patient_id": "TCGA-AN-A0AT",
+      "split": "train",
+      "height": 364,
+      "width": 375,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "6d6c2f01666f64299b93f14eba19e4a4fb05da82eac7be83f863a98a28ef23e3",
+      "prepared_rgb_sha256": "c428b625c1bc3288a598c57391e8ae772c469a85f23d69bd06334ab13171bb37",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 3,
+        "lymphocyte": 2
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 3,
+        "lymphocyte": 2
+      },
+      "typed_instance_count": 5,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 4,
+        "non_polyline_rectangle": 32
+      }
+    },
+    {
+      "fov_id": "TCGA-AN-A0G0-DX1_id-5ea409a4ddda5f8398982bfa_left-36815_top-15021_bottom-15340_right-37103",
+      "patient_id": "TCGA-AN-A0G0",
+      "split": "train",
+      "height": 395,
+      "width": 357,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "b4e69766e034b0fdf180c33dfe1eba12df8f238068bd1095f18928016fb05826",
+      "prepared_rgb_sha256": "dd45ec8f903282fdd8b77b596f1b5e83a97553484c35cc1e943341600bdecda9",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 3,
+        "plasma_cell": 1,
+        "lymphocyte": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 3,
+        "plasma_cell": 1,
+        "lymphocyte": 1
+      },
+      "typed_instance_count": 5,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 24,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 1
+      }
+    },
+    {
+      "fov_id": "TCGA-AN-A0XU-DX1_id-5ea40b25ddda5f83989991fd_left-26629_top-21492_bottom-21774_right-26898",
+      "patient_id": "TCGA-AN-A0XU",
+      "split": "train",
+      "height": 356,
+      "width": 339,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "51869ed48bf4f0d36b0282364c8333f8f88bcdd2b79a43a9b358775776e11a68",
+      "prepared_rgb_sha256": "87033c2036d66de3b62875cc49226c0b00e42e9a90e0aee8385028ba5c94a7b0",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 1,
+        "lymphocyte": 24,
+        "plasma_cell": 2
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 1,
+        "lymphocyte": 23,
+        "plasma_cell": 2
+      },
+      "typed_instance_count": 26,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 41,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 6,
+        "overlapping_target_polyline": 1
+      }
+    },
+    {
+      "fov_id": "TCGA-AN-A0XU-DX1_id-5ea40b25ddda5f83989991fd_left-30703_top-21491_bottom-21777_right-30992",
+      "patient_id": "TCGA-AN-A0XU",
+      "split": "train",
+      "height": 361,
+      "width": 364,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "98f50cb6cf58ea2fd7fee0ebbd7ecc1b6e00424d3a67ba807bb1a5f391497f5a",
+      "prepared_rgb_sha256": "d013787a8fe93b069b295f9fdcdaa660deb30e46f07703319a85f9d7d8d9855e",
+      "target_polyline_counts_before_geometry_qc": {
+        "plasma_cell": 7,
+        "lymphocyte": 12
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "plasma_cell": 5,
+        "lymphocyte": 12
+      },
+      "typed_instance_count": 17,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 36,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 4,
+        "overlapping_target_polyline": 1
+      }
+    },
+    {
+      "fov_id": "TCGA-AN-A0XU-DX1_id-5ea40b25ddda5f83989991fd_left-30713_top-22015_bottom-22291_right-30993",
+      "patient_id": "TCGA-AN-A0XU",
+      "split": "train",
+      "height": 348,
+      "width": 353,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "7650b86cde200ebef549bc016dcd9fe89346a535b86e77c4ab4f5b808f91d200",
+      "prepared_rgb_sha256": "4d0535071b8aedba35667b51169c90e4612b58c2c623ae8d204aed48335d6e66",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 8,
+        "lymphocyte": 15
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 6,
+        "lymphocyte": 12
+      },
+      "typed_instance_count": 18,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 40,
+        "overlapping_target_polyline": 3
+      }
+    },
+    {
+      "fov_id": "TCGA-AN-A0XU-DX1_id-5ea40b25ddda5f83989991fd_left-30970_top-21742_bottom-22036_right-31243",
+      "patient_id": "TCGA-AN-A0XU",
+      "split": "train",
+      "height": 371,
+      "width": 344,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "12cb4053c4350254ccc40d56391bed3f2fcfb33f7b2db07874cb7469ac748253",
+      "prepared_rgb_sha256": "ccbfcb8d1ffe9925f41dda491cf4449afbb7279f787ec3bb2b1fcf8ef50e4aa0",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 2,
+        "macrophage": 1,
+        "lymphocyte": 17,
+        "plasma_cell": 5
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 2,
+        "macrophage": 1,
+        "lymphocyte": 17,
+        "plasma_cell": 5
+      },
+      "typed_instance_count": 25,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 2,
+        "non_polyline_rectangle": 28
+      }
+    },
+    {
+      "fov_id": "TCGA-AQ-A04J-DX1_id-5ea40996ddda5f8398980f76_left-65889_top-14596_bottom-14939_right-66186",
+      "patient_id": "TCGA-AQ-A04J",
+      "split": "train",
+      "height": 424,
+      "width": 368,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "427932f76002c1ae37c3e01f546d12c8c9f6988aeadc19c91295325d27ba2468",
+      "prepared_rgb_sha256": "6aeef3c9e35b0c7ba4993f452212a16f873a0d1a58193b8434bee2aa26979d4e",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 8,
+        "lymphocyte": 1,
+        "macrophage": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 8,
+        "lymphocyte": 1,
+        "macrophage": 1
+      },
+      "typed_instance_count": 10,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 27,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 4
+      }
+    },
+    {
+      "fov_id": "TCGA-AQ-A54N-DX1_id-5ea40a47ddda5f839898d34a_left-34950_top-26780_bottom-27096_right-35285",
+      "patient_id": "TCGA-AQ-A54N",
+      "split": "train",
+      "height": 390,
+      "width": 413,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "0024189f326e15ec91d28195032c936ef99ca95d5b968f1e698586334af82a9a",
+      "prepared_rgb_sha256": "48d53107f287b32e251da3a970d2670742171594aa0b37dbb520bd61a3f5583c",
+      "target_polyline_counts_before_geometry_qc": {
+        "lymphocyte": 9,
+        "plasma_cell": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "lymphocyte": 7,
+        "plasma_cell": 1
+      },
+      "typed_instance_count": 8,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 34,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 2,
+        "overlapping_target_polyline": 1
+      }
+    },
+    {
+      "fov_id": "TCGA-AR-A0TS-DX1_id-5ea40971ddda5f839897b6f4_left-119083_top-23568_bottom-23852_right-119361",
+      "patient_id": "TCGA-AR-A0TS",
+      "split": "train",
+      "height": 350,
+      "width": 343,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "afd52578ca5c928436cf04fd00c21bfc4f75222233c7203038fc91ded1ba98b7",
+      "prepared_rgb_sha256": "7ab48e1bb79c135638b0f126c374acf93e2f5a17df669a31b527f21ba0985087",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 2,
+        "lymphocyte": 13
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 1,
+        "lymphocyte": 12
+      },
+      "typed_instance_count": 13,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 27,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 8,
+        "overlapping_target_polyline": 1
+      }
+    },
+    {
+      "fov_id": "TCGA-AR-A0TS-DX1_id-5ea40971ddda5f839897b6f4_left-119598_top-24850_bottom-25130_right-119879",
+      "patient_id": "TCGA-AR-A0TS",
+      "split": "train",
+      "height": 344,
+      "width": 346,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "efd96ea3f5aeaa8ab15d03f55ec8ffb69f3cf001e842d44a4a9046f7cdbb88f7",
+      "prepared_rgb_sha256": "16ce2d67f09e2dc61a0b1196781fb389333b9ea41548dcf407469a1f41467833",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 1,
+        "lymphocyte": 34,
+        "plasma_cell": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 1,
+        "lymphocyte": 30,
+        "plasma_cell": 1
+      },
+      "typed_instance_count": 32,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 2,
+        "non_polyline_rectangle": 43,
+        "overlapping_target_polyline": 2
+      }
+    },
+    {
+      "fov_id": "TCGA-AR-A0TS-DX1_id-5ea40971ddda5f839897b6f4_left-120882_top-23304_bottom-23587_right-121160",
+      "patient_id": "TCGA-AR-A0TS",
+      "split": "train",
+      "height": 348,
+      "width": 343,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "5952b858391208077251c20667024314b0b106799dfeb0a94228eecaa245403b",
+      "prepared_rgb_sha256": "4ea617bc75348453a06f57cf038b48f50e339c8e7dc4605908b1e3ce1d301837",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 2,
+        "plasma_cell": 3,
+        "lymphocyte": 14,
+        "macrophage": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 1,
+        "plasma_cell": 3,
+        "lymphocyte": 13,
+        "macrophage": 1
+      },
+      "typed_instance_count": 18,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 9,
+        "overlapping_target_polyline": 1,
+        "non_polyline_rectangle": 17
+      }
+    },
+    {
+      "fov_id": "TCGA-AR-A0TS-DX1_id-5ea40971ddda5f839897b6f4_left-121133_top-23823_bottom-24108_right-121424",
+      "patient_id": "TCGA-AR-A0TS",
+      "split": "train",
+      "height": 351,
+      "width": 358,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "bce7daa5353f26a6e08a8b3eedaef98d7ceb25bbaa72443f0f4ee568341a214f",
+      "prepared_rgb_sha256": "f4c03a6d883551906f62be28fcf9e0918e2cc25eb91f1042ca743a55563ddb7d",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 2,
+        "plasma_cell": 3,
+        "lymphocyte": 7
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 2,
+        "plasma_cell": 2,
+        "lymphocyte": 6
+      },
+      "typed_instance_count": 10,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 11,
+        "overlapping_target_polyline": 1,
+        "non_polyline_rectangle": 19
+      }
+    },
+    {
+      "fov_id": "TCGA-AR-A0TS-DX1_id-5ea40971ddda5f839897b6f4_left-124193_top-24082_bottom-24366_right-124485",
+      "patient_id": "TCGA-AR-A0TS",
+      "split": "train",
+      "height": 350,
+      "width": 360,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "15953688dad1c6bcd1f923c267a66e0d875d7bd37a45a53dd7e861da38eec85e",
+      "prepared_rgb_sha256": "f64053b167a508d336cfa47ebe7c557a5b0586e1f055998acc3ee276d55e1590",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 1,
+        "lymphocyte": 26
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 1,
+        "lymphocyte": 24
+      },
+      "typed_instance_count": 25,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 23,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 8,
+        "overlapping_target_polyline": 1
+      }
+    },
+    {
+      "fov_id": "TCGA-AR-A0TS-DX1_id-5ea40971ddda5f839897b6f4_left-124462_top-24317_bottom-24640_right-124749",
+      "patient_id": "TCGA-AR-A0TS",
+      "split": "train",
+      "height": 398,
+      "width": 353,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "c0d2cb4fbcf1787bdd70f362fa313e666a09e8b9eebc36a967c56b98700c0b61",
+      "prepared_rgb_sha256": "a6ff18fb87b9950746314fecea4e760e05314fd330cece0d8faba2411c9021bc",
+      "target_polyline_counts_before_geometry_qc": {
+        "lymphocyte": 31,
+        "macrophage": 1,
+        "plasma_cell": 2
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "lymphocyte": 22,
+        "macrophage": 1,
+        "plasma_cell": 2
+      },
+      "typed_instance_count": 25,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 7,
+        "overlapping_target_polyline": 5,
+        "non_polyline_rectangle": 39
+      }
+    },
+    {
+      "fov_id": "TCGA-AR-A0U1-DX1_id-5ea40987ddda5f839897edd8_left-64419_top-26692_bottom-27006_right-64721",
+      "patient_id": "TCGA-AR-A0U1",
+      "split": "train",
+      "height": 387,
+      "width": 372,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "0f0b2805c942263c4345a00983b95851e6d4f9ee7e551f933454bdd4d3314111",
+      "prepared_rgb_sha256": "fa2d0b1ec7bedf58e44961f68a349bf2059c75d3ca542decc026772d22053472",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 9,
+        "lymphocyte": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 9,
+        "lymphocyte": 1
+      },
+      "typed_instance_count": 10,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 11
+      }
+    },
+    {
+      "fov_id": "TCGA-AR-A0U1-DX1_id-5ea40987ddda5f839897edd8_left-65195_top-25412_bottom-25694_right-65488",
+      "patient_id": "TCGA-AR-A0U1",
+      "split": "train",
+      "height": 347,
+      "width": 361,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "0315c755be16b2790fd9f9dbdab05e89de3761d854ee8b3c6cdf606f52722df2",
+      "prepared_rgb_sha256": "9778b99366baafacc8f45313371a73f2b1797a88b9247b92789269eb32994efc",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 10,
+        "lymphocyte": 15
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 10,
+        "lymphocyte": 15
+      },
+      "typed_instance_count": 25,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 34,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 3
+      }
+    },
+    {
+      "fov_id": "TCGA-AR-A0U1-DX1_id-5ea40987ddda5f839897edd8_left-66238_top-25433_bottom-25704_right-66505",
+      "patient_id": "TCGA-AR-A0U1",
+      "split": "train",
+      "height": 334,
+      "width": 329,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "40b4b03e55f999a7170c449a94a8e80598b374846ad8088a8f04c9729775d9c1",
+      "prepared_rgb_sha256": "7706b21bd70193d6388037452a3eb8f8152814f4be264d83ffe0034340a23c2d",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 12
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 12
+      },
+      "typed_instance_count": 12,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 16
+      }
+    },
+    {
+      "fov_id": "TCGA-AR-A0U1-DX1_id-5ea40987ddda5f839897edd8_left-66490_top-25171_bottom-25439_right-66763",
+      "patient_id": "TCGA-AR-A0U1",
+      "split": "train",
+      "height": 330,
+      "width": 336,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "44b25cdecad5a932bdbd28551edadbf8d8f47e467b203ec3974569d3fc4e7a12",
+      "prepared_rgb_sha256": "2ffbdb74197cd11f7163b504f7d4365a2db88ddcf2754c057ef12fefd1be892a",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 3
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 3
+      },
+      "typed_instance_count": 3,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 15
+      }
+    },
+    {
+      "fov_id": "TCGA-AR-A0U1-DX1_id-5ea40987ddda5f839897edd8_left-67255_top-25165_bottom-25445_right-67543",
+      "patient_id": "TCGA-AR-A0U1",
+      "split": "train",
+      "height": 345,
+      "width": 355,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "9efa6b7b590c9ea419f985f4e1aaea61013e4b98669026c5304705cd3a1f52dc",
+      "prepared_rgb_sha256": "f2f88fd10d1f7790720e739981e7bfb1180d1607197e0405e9cffa19bcdcf3f5",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 2
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 2
+      },
+      "typed_instance_count": 2,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 28
+      }
+    },
+    {
+      "fov_id": "TCGA-AR-A0U4-DX1_id-5ea40a88ddda5f8398990ccf_left-41880_top-70798_bottom-71087_right-42167",
+      "patient_id": "TCGA-AR-A0U4",
+      "split": "train",
+      "height": 356,
+      "width": 353,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "4a27128a1d42cc5264772fb26fdedd1a2dc3fc69ec22e76c52572ec2ea4a9eeb",
+      "prepared_rgb_sha256": "f039d84fafa08cc29108b89d53cd242e6b1b8b5700f9cb597eff36f2affe8f0c",
+      "target_polyline_counts_before_geometry_qc": {
+        "lymphocyte": 13,
+        "tumor_epithelial": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "lymphocyte": 13,
+        "tumor_epithelial": 1
+      },
+      "typed_instance_count": 14,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 44
+      }
+    },
+    {
+      "fov_id": "TCGA-AR-A256-DX1_id-5ea40990ddda5f83989802f3_left-41832_top-17319_bottom-17605_right-42103",
+      "patient_id": "TCGA-AR-A256",
+      "split": "train",
+      "height": 354,
+      "width": 336,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "f7f2e1a3509a38f9a39d219df69679d7b80bea74f4131d26ab344ac031317237",
+      "prepared_rgb_sha256": "656652ca3187efbde72a01c72fbde6ef7e479b6b651e3a31ec444459cec34585",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 5,
+        "lymphocyte": 48
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 5,
+        "lymphocyte": 42
+      },
+      "typed_instance_count": 47,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 2,
+        "overlapping_target_polyline": 3,
+        "non_polyline_rectangle": 21
+      }
+    },
+    {
+      "fov_id": "TCGA-AR-A256-DX1_id-5ea40990ddda5f83989802f3_left-43346_top-18839_bottom-19140_right-43626",
+      "patient_id": "TCGA-AR-A256",
+      "split": "train",
+      "height": 373,
+      "width": 346,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "0fd54884d043c0a6b6f27c8a74cdd54cd1d17137086e6fb31b8e571a4cdc520e",
+      "prepared_rgb_sha256": "cd8fd4e158bc944d18acab0c95c290f6e6fa6d181b6912ff746f545c8eba9201",
+      "target_polyline_counts_before_geometry_qc": {
+        "plasma_cell": 3,
+        "lymphocyte": 2
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "plasma_cell": 1,
+        "lymphocyte": 2
+      },
+      "typed_instance_count": 3,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 15,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 3,
+        "overlapping_target_polyline": 1
+      }
+    },
+    {
+      "fov_id": "TCGA-BH-A0AV-DX1_id-5ea4099dddda5f8398981d96_left-82013_top-58694_bottom-58981_right-82302",
+      "patient_id": "TCGA-BH-A0AV",
+      "split": "test",
+      "height": 359,
+      "width": 361,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "869e3a3604a8307702963da2c74a3ba05a822574122d8e9060a115ac0260b4ab",
+      "prepared_rgb_sha256": "1c715c5c8d83b7baa77519cb919aa05208c7ce82349a12eac5625e2008d67e6c",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 1,
+        "lymphocyte": 6
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 1,
+        "lymphocyte": 6
+      },
+      "typed_instance_count": 7,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 62,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 5
+      }
+    },
+    {
+      "fov_id": "TCGA-BH-A0B9-DX1_id-5ea409afddda5f8398984518_left-65731_top-58455_bottom-58757_right-66063",
+      "patient_id": "TCGA-BH-A0B9",
+      "split": "test",
+      "height": 375,
+      "width": 412,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "4859af53e6e50e20ac41430e2f66279d65bc1822e65028afa4c8a1bb0762a824",
+      "prepared_rgb_sha256": "ae46142bb4d9e28bf5912c9bfebaa58a3f9a6aeb966fc8d4a309864b60024361",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 4,
+        "lymphocyte": 2
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 4,
+        "lymphocyte": 2
+      },
+      "typed_instance_count": 6,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 25
+      }
+    },
+    {
+      "fov_id": "TCGA-BH-A0BG-DX1_id-5ea40b3addda5f839899a696_left-65020_top-29039_bottom-29328_right-65298",
+      "patient_id": "TCGA-BH-A0BG",
+      "split": "test",
+      "height": 361,
+      "width": 348,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "3a19e71bc8ef2fe1ce03adc1137dcc74de26b863ca42e56352ec2c87e6564131",
+      "prepared_rgb_sha256": "9e0391d871ed9c1140a584f81a9585013352070270c53ea0edc2d2992052ce4d",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 4,
+        "lymphocyte": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 4,
+        "lymphocyte": 1
+      },
+      "typed_instance_count": 5,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 17
+      }
+    },
+    {
+      "fov_id": "TCGA-BH-A0BG-DX1_id-5ea40b3addda5f839899a696_left-65035_top-29826_bottom-30098_right-65316",
+      "patient_id": "TCGA-BH-A0BG",
+      "split": "test",
+      "height": 340,
+      "width": 351,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "a9962072b491cbe22d5257ce5a0f4b96b2fd2daee0f7ceec0ab38f560ad944c4",
+      "prepared_rgb_sha256": "0f9b6133adec39f7f4ebbd87e909d1673ba131f8325bd3b4fc98a35c06bac725",
+      "target_polyline_counts_before_geometry_qc": {
+        "plasma_cell": 8,
+        "lymphocyte": 14,
+        "macrophage": 3
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "plasma_cell": 5,
+        "lymphocyte": 14,
+        "macrophage": 3
+      },
+      "typed_instance_count": 22,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 1,
+        "excluded_fine_class": 9,
+        "overlapping_target_polyline": 1,
+        "non_polyline_rectangle": 9
+      }
+    },
+    {
+      "fov_id": "TCGA-BH-A0BG-DX1_id-5ea40b3addda5f839899a696_left-65801_top-29326_bottom-29589_right-66104",
+      "patient_id": "TCGA-BH-A0BG",
+      "split": "test",
+      "height": 328,
+      "width": 379,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "5c0193beb5086281bf2ae2c165d65d5b1868f3468c01ba6db3d921db5c7f538c",
+      "prepared_rgb_sha256": "08d47569f1cc56efd10cbd27079d3ea0dc16aefe3d3e5f015999c190d104df0b",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 8,
+        "plasma_cell": 15,
+        "lymphocyte": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 8,
+        "plasma_cell": 14
+      },
+      "typed_instance_count": 22,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 3,
+        "overlapping_target_polyline": 1,
+        "non_polyline_rectangle": 9
+      }
+    },
+    {
+      "fov_id": "TCGA-BH-A0E6-DX1_id-5ea40afeddda5f8398996f64_left-58853_top-20757_bottom-21035_right-59144",
+      "patient_id": "TCGA-BH-A0E6",
+      "split": "test",
+      "height": 345,
+      "width": 360,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "649831a03a161ac3c3a44657e4d862e6a6d2fe3ff50d13dc43af26719395cc93",
+      "prepared_rgb_sha256": "4ae0bf9904bfe2c1193d2585b9864ad454c0e78b8b2d9ea7e693f0eaba8ecd1d",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 8,
+        "lymphocyte": 14
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 7,
+        "lymphocyte": 13
+      },
+      "typed_instance_count": 20,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 30,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 1,
+        "overlapping_target_polyline": 1
+      }
+    },
+    {
+      "fov_id": "TCGA-BH-A18G-DX1_id-5ea40b1eddda5f8398998d16_left-17066_top-729_bottom-1037_right-17347",
+      "patient_id": "TCGA-BH-A18G",
+      "split": "test",
+      "height": 382,
+      "width": 349,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "48fcb034e40559724b7ba7cb4fbebc594aec1cc514223557d12b3268401f8964",
+      "prepared_rgb_sha256": "dcae4d154d3e19fd7a771e72e941a668f062f891ca5f315a4f49ad9f3a7ff95e",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 2,
+        "lymphocyte": 9,
+        "macrophage": 2,
+        "plasma_cell": 6
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 2,
+        "lymphocyte": 9,
+        "macrophage": 2,
+        "plasma_cell": 6
+      },
+      "typed_instance_count": 19,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 18,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 5
+      }
+    },
+    {
+      "fov_id": "TCGA-BH-A18G-DX1_id-5ea40b1eddda5f8398998d16_left-17086_top-2754_bottom-3070_right-17363",
+      "patient_id": "TCGA-BH-A18G",
+      "split": "test",
+      "height": 391,
+      "width": 344,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "e2ce69a41be6be560cafe74c0abcbd0abb8f4bd7cbdb485a422c1fe6ae1d069f",
+      "prepared_rgb_sha256": "ce90da589f3f329f6f274d33dddb28fc3a03cc7a7fe6009e53ed6e5cfa5c6830",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 1,
+        "lymphocyte": 7,
+        "plasma_cell": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 1,
+        "lymphocyte": 7,
+        "plasma_cell": 1
+      },
+      "typed_instance_count": 9,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 24,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 6
+      }
+    },
+    {
+      "fov_id": "TCGA-BH-A18G-DX1_id-5ea40b1eddda5f8398998d16_left-17580_top-3044_bottom-3332_right-17907",
+      "patient_id": "TCGA-BH-A18G",
+      "split": "test",
+      "height": 357,
+      "width": 405,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "4ece73e2dddf23b8ddf146f23474b93e5e8cc6bbee42168e156205060103d1fe",
+      "prepared_rgb_sha256": "9aec0da3b01534d5f29b8b76c876e5ea60504ec4a0fb1779a7bccf7b527e8a6f",
+      "target_polyline_counts_before_geometry_qc": {
+        "lymphocyte": 10,
+        "plasma_cell": 6
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "lymphocyte": 10,
+        "plasma_cell": 6
+      },
+      "typed_instance_count": 16,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 1,
+        "non_polyline_rectangle": 31
+      }
+    },
+    {
+      "fov_id": "TCGA-C8-A12V-DX1_id-5ea40b30ddda5f8398999de2_left-12332_top-56174_bottom-56464_right-12595",
+      "patient_id": "TCGA-C8-A12V",
+      "split": "train",
+      "height": 360,
+      "width": 326,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "9c5bb863f9d80ef9e9b029463e1566365cf07e8948afa94eb248de7eb4c613e5",
+      "prepared_rgb_sha256": "eb156acb4b6f95c40fdcfe62b91dac19677cf3a26c2a3074c4459419d4a19718",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 12,
+        "lymphocyte": 28
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 11,
+        "lymphocyte": 25
+      },
+      "typed_instance_count": 36,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 15,
+        "overlapping_target_polyline": 2,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 1
+      }
+    },
+    {
+      "fov_id": "TCGA-C8-A27B-DX1_id-5ea40a77ddda5f839898fc2d_left-52887_top-12370_bottom-12643_right-53148",
+      "patient_id": "TCGA-C8-A27B",
+      "split": "train",
+      "height": 335,
+      "width": 320,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "fab471a5bb4e03b6b02ccc66c5a726ae7148081975abae29b8d3534fbc876b9f",
+      "prepared_rgb_sha256": "82db7d4e5492fc134e2df0ae672b9873f505eabcd63cfb9efc9bfb8fe0696da4",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 8,
+        "lymphocyte": 7
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 6,
+        "lymphocyte": 7
+      },
+      "typed_instance_count": 13,
+      "excluded_reasons": {
+        "overlapping_target_polyline": 1,
+        "non_polyline_rectangle": 16
+      }
+    },
+    {
+      "fov_id": "TCGA-D8-A13Z-DX1_id-5ea40980ddda5f839897de6e_left-34800_top-50862_bottom-51139_right-35088",
+      "patient_id": "TCGA-D8-A13Z",
+      "split": "train",
+      "height": 343,
+      "width": 357,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "d924fe2d6c901670a1211473ac0276879ab61c2b2c9fe0a0df83a4e17be4e327",
+      "prepared_rgb_sha256": "c530c2760adc9335cf84805c20de7a342cd39e9de5f13e840e3242f8198fec92",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 7,
+        "lymphocyte": 12
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 7,
+        "lymphocyte": 10
+      },
+      "typed_instance_count": 17,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 20,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 13,
+        "overlapping_target_polyline": 1
+      }
+    },
+    {
+      "fov_id": "TCGA-D8-A13Z-DX1_id-5ea40980ddda5f839897de6e_left-35325_top-50608_bottom-50885_right-35613",
+      "patient_id": "TCGA-D8-A13Z",
+      "split": "train",
+      "height": 343,
+      "width": 356,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "0a5101e573bcb2660af7ef87bed075d1536ba7bf75d7aaa13e5349958c62087b",
+      "prepared_rgb_sha256": "c331a4860253b0a690c3a73ef63d710981fb576d86fcc7991f941a9dbe92fc75",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 13,
+        "lymphocyte": 14
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 11,
+        "lymphocyte": 14
+      },
+      "typed_instance_count": 25,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 16,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 7,
+        "overlapping_target_polyline": 1
+      }
+    },
+    {
+      "fov_id": "TCGA-D8-A142-DX1_id-5ea4095dddda5f8398978433_left-69301_top-42858_bottom-43156_right-69593",
+      "patient_id": "TCGA-D8-A142",
+      "split": "train",
+      "height": 369,
+      "width": 362,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "04463f410566f7f1810be7d7900bcc8fa06376e737f9baf879e276c0d7ccc31e",
+      "prepared_rgb_sha256": "96c27e276e3c01dcdd8516c5ab2a563dc1727a44c6184ef143df24ccd77e7895",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 1,
+        "plasma_cell": 19
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 1,
+        "plasma_cell": 17
+      },
+      "typed_instance_count": 18,
+      "excluded_reasons": {
+        "overlapping_target_polyline": 1,
+        "non_polyline_rectangle": 33
+      }
+    },
+    {
+      "fov_id": "TCGA-D8-A147-DX1_id-5ea40991ddda5f8398980535_left-67137_top-19787_bottom-20089_right-67439",
+      "patient_id": "TCGA-D8-A147",
+      "split": "train",
+      "height": 374,
+      "width": 373,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "27610169955b14c0d33d73f0959d472a1accd6b2344c72cac78fef4cfd4b39dd",
+      "prepared_rgb_sha256": "61592c9c58e855c3e8dba665ae66690b4d6c0ed794cc8d451acdf6a6251f3456",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 5,
+        "lymphocyte": 4
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 3,
+        "lymphocyte": 4
+      },
+      "typed_instance_count": 7,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 14,
+        "overlapping_target_polyline": 1
+      }
+    },
+    {
+      "fov_id": "TCGA-D8-A147-DX1_id-5ea40991ddda5f8398980535_left-67391_top-20306_bottom-20619_right-67682",
+      "patient_id": "TCGA-D8-A147",
+      "split": "train",
+      "height": 388,
+      "width": 360,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "aa52b3354c5ac9766fa4a54cfcbfc90e6d5d3048844007f4a937bd5c92ac8380",
+      "prepared_rgb_sha256": "ccfed8b59e2cc4aa3f1aeb25c03e26e34ec86212cfcd639bbe6602d6d13f1b78",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 3,
+        "macrophage": 1,
+        "plasma_cell": 2,
+        "lymphocyte": 2
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 3,
+        "macrophage": 1,
+        "plasma_cell": 2,
+        "lymphocyte": 2
+      },
+      "typed_instance_count": 8,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 18
+      }
+    },
+    {
+      "fov_id": "TCGA-D8-A147-DX1_id-5ea40991ddda5f8398980535_left-67673_top-20298_bottom-20589_right-67930",
+      "patient_id": "TCGA-D8-A147",
+      "split": "train",
+      "height": 360,
+      "width": 318,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "a16c59be4fda9ceb9a444cbe5c39b70c04eaf637d1da2ae7266a8262ae0d6919",
+      "prepared_rgb_sha256": "17e76cc4c6f9f2e650615599101b7d6d0d416ff7b8c17f4be2a90ae48fef86d0",
+      "target_polyline_counts_before_geometry_qc": {
+        "lymphocyte": 14,
+        "macrophage": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "lymphocyte": 14,
+        "macrophage": 1
+      },
+      "typed_instance_count": 15,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 28,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 1
+      }
+    },
+    {
+      "fov_id": "TCGA-D8-A1JF-DX1_id-5ea40a71ddda5f839898f744_left-26631_top-55920_bottom-56185_right-26918",
+      "patient_id": "TCGA-D8-A1JF",
+      "split": "train",
+      "height": 327,
+      "width": 355,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "6aba79564a1390894206e02048eec235b5d2a59bec1512c08f1a3e62a222812b",
+      "prepared_rgb_sha256": "0e2221c3b0c64f02dac1243f73b80563110b7c401f05bdb592441f6ce4f858de",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 2,
+        "lymphocyte": 9
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 2,
+        "lymphocyte": 7
+      },
+      "typed_instance_count": 9,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 18,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 4,
+        "overlapping_target_polyline": 1
+      }
+    },
+    {
+      "fov_id": "TCGA-D8-A1JF-DX1_id-5ea40a71ddda5f839898f744_left-27151_top-56173_bottom-56457_right-27431",
+      "patient_id": "TCGA-D8-A1JF",
+      "split": "train",
+      "height": 352,
+      "width": 346,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "8347a955b26a981bf28477bc795309b843ab19cd7800e2fe1dbacd978c6f3d17",
+      "prepared_rgb_sha256": "b8ae4a69c24565561c7e6e867e44d0bd6b152a49c908cbdf09326a89bef44747",
+      "target_polyline_counts_before_geometry_qc": {
+        "plasma_cell": 15,
+        "lymphocyte": 17
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "plasma_cell": 15,
+        "lymphocyte": 17
+      },
+      "typed_instance_count": 32,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 25
+      }
+    },
+    {
+      "fov_id": "TCGA-D8-A1JF-DX1_id-5ea40a71ddda5f839898f744_left-28431_top-53614_bottom-53902_right-28732",
+      "patient_id": "TCGA-D8-A1JF",
+      "split": "train",
+      "height": 356,
+      "width": 373,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "31a9a1fec0e8bebc66795b4e504ee78d0194846c87d8f6c8075457ca29120688",
+      "prepared_rgb_sha256": "7b42849f619abb3d975b7eaececbdb480a45ba66d53103c39d2ee6077302c515",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 3,
+        "lymphocyte": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 3,
+        "lymphocyte": 1
+      },
+      "typed_instance_count": 4,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 3
+      }
+    },
+    {
+      "fov_id": "TCGA-D8-A1JG-DX1_id-5ea40993ddda5f83989807c0_left-16943_top-72523_bottom-72802_right-17228",
+      "patient_id": "TCGA-D8-A1JG",
+      "split": "train",
+      "height": 345,
+      "width": 353,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "9d46431dc4e2f12bc83024890573f37e0ad8413e058d8f03e1aa94a177964478",
+      "prepared_rgb_sha256": "ab790e2cc5c2d2b29de79aeda04df351b560e0bd5652f4bb546b31986e0e759d",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 30,
+        "lymphocyte": 4
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 28,
+        "lymphocyte": 3
+      },
+      "typed_instance_count": 31,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 52,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 2,
+        "overlapping_target_polyline": 2
+      }
+    },
+    {
+      "fov_id": "TCGA-D8-A1JL-DX1_id-5ea40a9bddda5f839899203f_left-41011_top-26873_bottom-27168_right-41334",
+      "patient_id": "TCGA-D8-A1JL",
+      "split": "train",
+      "height": 365,
+      "width": 400,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "6b0f38f0c9c1e14ed933a77ff6bb50606737a3dc5661945e2f38fcdf37510ad3",
+      "prepared_rgb_sha256": "894b14c07589d74253a58222a07b54f336d1a713935a2ca630d253dd3fb90fa6",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 6
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 6
+      },
+      "typed_instance_count": 6,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 23,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 3
+      }
+    },
+    {
+      "fov_id": "TCGA-D8-A1JL-DX1_id-5ea40a9bddda5f839899203f_left-48979_top-31471_bottom-31752_right-49240",
+      "patient_id": "TCGA-D8-A1JL",
+      "split": "train",
+      "height": 348,
+      "width": 323,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "4c3ec10e9bc8d31c3dea410ab86be9ffd1280cceb922eb82750215682e6e9b2a",
+      "prepared_rgb_sha256": "6db732128a367d425059e4072b93e2399fa6773b72161c4ce8b09aa1f63ad1be",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 7,
+        "lymphocyte": 41
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "lymphocyte": 35,
+        "macrophage": 3
+      },
+      "typed_instance_count": 38,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 18,
+        "overlapping_target_polyline": 5
+      }
+    },
+    {
+      "fov_id": "TCGA-D8-A1JL-DX1_id-5ea40a9bddda5f839899203f_left-49469_top-31217_bottom-31494_right-49759",
+      "patient_id": "TCGA-D8-A1JL",
+      "split": "train",
+      "height": 343,
+      "width": 359,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "e56de5ba44709c1f48c22734e2bbeadbce029b99359e979a9084b957cb3b6d15",
+      "prepared_rgb_sha256": "c839250d6f8a59f7065678378a0aad0b757eacf8105a93c189ec56c66ba3795f",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 9,
+        "lymphocyte": 47
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 7,
+        "lymphocyte": 42
+      },
+      "typed_instance_count": 49,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 14,
+        "overlapping_target_polyline": 4,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 2
+      }
+    },
+    {
+      "fov_id": "TCGA-D8-A1JL-DX1_id-5ea40a9bddda5f839899203f_left-49476_top-31727_bottom-32021_right-49760",
+      "patient_id": "TCGA-D8-A1JL",
+      "split": "train",
+      "height": 364,
+      "width": 352,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "a080562a1e336c84ba760950356ae8ec0e60d550c3440f0c2ec7d7782eb05806",
+      "prepared_rgb_sha256": "eeaf9f5ffc7f4838d36bb74debdc2179e5a32001dc3c15bf69d880c1f05d3288",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 5,
+        "lymphocyte": 32
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 4,
+        "lymphocyte": 27
+      },
+      "typed_instance_count": 31,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 19,
+        "target_overlaps_excluded_polyline": 1,
+        "excluded_fine_class": 3,
+        "overlapping_target_polyline": 3
+      }
+    },
+    {
+      "fov_id": "TCGA-D8-A1XQ-DX1_id-5ea4098fddda5f83989800a7_left-63025_top-35071_bottom-35396_right-63341",
+      "patient_id": "TCGA-D8-A1XQ",
+      "split": "train",
+      "height": 401,
+      "width": 389,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "1b7f1e10a9c4b4a03ee8709422dde5949853c2d9f76ccb74af2bb7ca4ff4590d",
+      "prepared_rgb_sha256": "ab6b931078e04dfac51453af9900504b4a18a2de208813c175a6f3d45e06465f",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 1,
+        "tumor_epithelial": 3,
+        "lymphocyte": 2
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 3,
+        "lymphocyte": 2
+      },
+      "typed_instance_count": 5,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 22,
+        "target_overlaps_excluded_polyline": 1,
+        "excluded_fine_class": 4
+      }
+    },
+    {
+      "fov_id": "TCGA-D8-A27M-DX1_id-5ea40965ddda5f83989797ff_left-58817_top-16868_bottom-17133_right-59103",
+      "patient_id": "TCGA-D8-A27M",
+      "split": "train",
+      "height": 326,
+      "width": 352,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "0c042621c3e3ee6a788dd023b05ed61c6c09079f5d3ded668fb01f226a293c92",
+      "prepared_rgb_sha256": "8baa564ebb4af1e3906a50a6c74b489f2777164bf647c786f5c68fdaff011fc7",
+      "target_polyline_counts_before_geometry_qc": {
+        "lymphocyte": 20,
+        "plasma_cell": 3
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "lymphocyte": 17,
+        "plasma_cell": 2
+      },
+      "typed_instance_count": 19,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 3,
+        "overlapping_target_polyline": 2,
+        "non_polyline_rectangle": 14
+      }
+    },
+    {
+      "fov_id": "TCGA-E2-A14R-DX1_id-5ea40976ddda5f839897c149_left-9281_top-61076_bottom-61374_right-9556",
+      "patient_id": "TCGA-E2-A14R",
+      "split": "train",
+      "height": 367,
+      "width": 339,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "4eb74d69642e69e2fa3841ee53b0c50d86a88d2a4b9675057ee3ed2a1e6cbe8f",
+      "prepared_rgb_sha256": "075f99fd53ca68ede0a14d270bca2090969d71d964cb118469109f3932ff83fb",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 3,
+        "lymphocyte": 21
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "lymphocyte": 17,
+        "macrophage": 1
+      },
+      "typed_instance_count": 18,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 23,
+        "overlapping_target_polyline": 3
+      }
+    },
+    {
+      "fov_id": "TCGA-E2-A14R-DX1_id-5ea40976ddda5f839897c149_left-9526_top-60831_bottom-61118_right-9806",
+      "patient_id": "TCGA-E2-A14R",
+      "split": "train",
+      "height": 354,
+      "width": 345,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "657bf37b59e2d2b998d5be0b671aae76449cc643bc20b49324fee7be9009c5dd",
+      "prepared_rgb_sha256": "6f5cadf63f195580fa6f93c8defaa03b77e6c64a633446708e5be7b32075da30",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 4,
+        "plasma_cell": 6,
+        "lymphocyte": 2
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 2,
+        "plasma_cell": 6,
+        "lymphocyte": 2
+      },
+      "typed_instance_count": 10,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 41,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 1,
+        "overlapping_target_polyline": 1
+      }
+    },
+    {
+      "fov_id": "TCGA-E2-A14X-DX1_id-5ea40af5ddda5f83989966cf_left-89325_top-69459_bottom-69745_right-89617",
+      "patient_id": "TCGA-E2-A14X",
+      "split": "train",
+      "height": 352,
+      "width": 360,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "bdc327a620b75dfd95f041329403e5862bc7194bf2255b265eadc045b884dba5",
+      "prepared_rgb_sha256": "7b1fc7edbc99fd47c0d40c8cb1a89a56286fd479fa23433014a26d70fdc5dbb7",
+      "target_polyline_counts_before_geometry_qc": {
+        "plasma_cell": 8,
+        "macrophage": 1,
+        "lymphocyte": 15
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "plasma_cell": 6,
+        "macrophage": 1,
+        "lymphocyte": 13
+      },
+      "typed_instance_count": 20,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 3,
+        "overlapping_target_polyline": 2,
+        "non_polyline_rectangle": 35
+      }
+    },
+    {
+      "fov_id": "TCGA-E2-A14X-DX1_id-5ea40af5ddda5f83989966cf_left-89331_top-69177_bottom-69469_right-89609",
+      "patient_id": "TCGA-E2-A14X",
+      "split": "train",
+      "height": 360,
+      "width": 343,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "c884400307fe5e9b3b8fc04c23f768f00467f35f6a043ffb656363fd0c8ad262",
+      "prepared_rgb_sha256": "a939eae11e0337bd996a3dc8412303e1b4c1756cc4ff069a374dc82e47b6292d",
+      "target_polyline_counts_before_geometry_qc": {
+        "plasma_cell": 3,
+        "lymphocyte": 11
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "plasma_cell": 3,
+        "lymphocyte": 11
+      },
+      "typed_instance_count": 14,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 30
+      }
+    },
+    {
+      "fov_id": "TCGA-E2-A14X-DX1_id-5ea40af5ddda5f83989966cf_left-90838_top-68908_bottom-69232_right-91177",
+      "patient_id": "TCGA-E2-A14X",
+      "split": "train",
+      "height": 399,
+      "width": 417,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "80ff2f6d71c90b108d7c14da783f70ccb4487874b001396e04d550164352ff74",
+      "prepared_rgb_sha256": "2196b2af10f3c63489cff8019e7fa27275e3dd714973172084054776d90fe6a1",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 11,
+        "lymphocyte": 2
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 11,
+        "lymphocyte": 2
+      },
+      "typed_instance_count": 13,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 25
+      }
+    },
+    {
+      "fov_id": "TCGA-E2-A1AZ-DX1_id-5ea409c8ddda5f8398986084_left-52326_top-19120_bottom-19378_right-52607",
+      "patient_id": "TCGA-E2-A1AZ",
+      "split": "train",
+      "height": 318,
+      "width": 346,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "f24b9b58c8692af484f2216dcaafebf10e7a080f06a53fbf4cbae45ba13a20f9",
+      "prepared_rgb_sha256": "8d8d97b3b91be3e5f3a99184ab7d62ef4aa743bb9fa5b205e40426fb93811fe4",
+      "target_polyline_counts_before_geometry_qc": {
+        "plasma_cell": 16,
+        "macrophage": 1,
+        "lymphocyte": 19
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "plasma_cell": 15,
+        "lymphocyte": 14
+      },
+      "typed_instance_count": 29,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 2,
+        "excluded_fine_class": 8,
+        "overlapping_target_polyline": 3
+      }
+    },
+    {
+      "fov_id": "TCGA-E2-A1B6-DX1_id-5ea40abeddda5f83989937f1_left-18044_top-54985_bottom-55267_right-18326",
+      "patient_id": "TCGA-E2-A1B6",
+      "split": "train",
+      "height": 347,
+      "width": 347,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "a612d913017145f917a574f4ae78eed227bd9407ab0d6b8efca768f7856c07bf",
+      "prepared_rgb_sha256": "586acc274fd042aa41a4ca608697d87a33750c2aaf5cd6934933bd638f8b1012",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 4,
+        "lymphocyte": 6,
+        "plasma_cell": 2
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 4,
+        "lymphocyte": 6,
+        "plasma_cell": 2
+      },
+      "typed_instance_count": 12,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 31,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 8
+      }
+    },
+    {
+      "fov_id": "TCGA-E2-A1B6-DX1_id-5ea40abeddda5f83989937f1_left-19062_top-54450_bottom-54746_right-19357",
+      "patient_id": "TCGA-E2-A1B6",
+      "split": "train",
+      "height": 365,
+      "width": 364,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "780586dcd362f056a3cc5a92ad1ce9b790a2a4c85577812147c2cdef8b79337d",
+      "prepared_rgb_sha256": "c742038d68f2a74cb850b10297aa9634fb7b33bfc3b1729502ed686db0f78adc",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 4,
+        "lymphocyte": 4
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 4,
+        "lymphocyte": 4
+      },
+      "typed_instance_count": 8,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 29,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 2
+      }
+    },
+    {
+      "fov_id": "TCGA-E2-A1L7-DX1_id-5ea40ae5ddda5f8398995967_left-53323_top-18200_bottom-18506_right-53617",
+      "patient_id": "TCGA-E2-A1L7",
+      "split": "train",
+      "height": 379,
+      "width": 364,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "3dbaabe6444015c28d107df2d98a1b3a1aa463a1c5fbf0bc3a578c8431a60e5b",
+      "prepared_rgb_sha256": "de26a43e669d8079b5dc5fd3a674c24b864d73f78a0fd11c1da7d79b765fbfb4",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 18,
+        "lymphocyte": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 18,
+        "lymphocyte": 1
+      },
+      "typed_instance_count": 19,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 28
+      }
+    },
+    {
+      "fov_id": "TCGA-E2-A1L7-DX1_id-5ea40ae5ddda5f8398995967_left-56639_top-17966_bottom-18257_right-56930",
+      "patient_id": "TCGA-E2-A1L7",
+      "split": "train",
+      "height": 360,
+      "width": 360,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "d8c24ce18acb993f99a38f740722afc1381e86d94e2d2e77ec04efc19fd5fc7e",
+      "prepared_rgb_sha256": "0d3bf55a7db3ca7a1ade60c7d1278da66121b61cc0771cb85d96852a513e0d99",
+      "target_polyline_counts_before_geometry_qc": {
+        "plasma_cell": 5,
+        "macrophage": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "plasma_cell": 5,
+        "macrophage": 1
+      },
+      "typed_instance_count": 6,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 7,
+        "non_polyline_rectangle": 9
+      }
+    },
+    {
+      "fov_id": "TCGA-E2-A1L7-DX1_id-5ea40ae5ddda5f8398995967_left-56654_top-15915_bottom-16206_right-56950",
+      "patient_id": "TCGA-E2-A1L7",
+      "split": "train",
+      "height": 360,
+      "width": 366,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "c8c59a85589ef4f557aeadafeaf515613cbbba7aa58ebf7fa2b17a41a64e03d1",
+      "prepared_rgb_sha256": "cf6c8a6583fbc64eef17faba274d88101262776941a2a033c1e01272144d2557",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 2,
+        "plasma_cell": 5,
+        "lymphocyte": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 2,
+        "plasma_cell": 4
+      },
+      "typed_instance_count": 6,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 1,
+        "excluded_fine_class": 10,
+        "overlapping_target_polyline": 1,
+        "non_polyline_rectangle": 19
+      }
+    },
+    {
+      "fov_id": "TCGA-E2-A1L7-DX1_id-5ea40ae5ddda5f8398995967_left-56925_top-15926_bottom-16207_right-57197",
+      "patient_id": "TCGA-E2-A1L7",
+      "split": "train",
+      "height": 348,
+      "width": 337,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "7a495d787e824d9ebe5d18f2d35e6a38dffb2060d50d848fbd76f1dd9541521e",
+      "prepared_rgb_sha256": "41da1bba34db78d2171312d59151854eead6bc9e2d8adf753a5fd19e9f32ec4a",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 7,
+        "plasma_cell": 4
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 6,
+        "plasma_cell": 3
+      },
+      "typed_instance_count": 9,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 1,
+        "overlapping_target_polyline": 1,
+        "non_polyline_rectangle": 29
+      }
+    },
+    {
+      "fov_id": "TCGA-E2-A1LH-DX1_id-5ea40a58ddda5f839898e0ed_left-23023_top-25673_bottom-25959_right-23311",
+      "patient_id": "TCGA-E2-A1LH",
+      "split": "train",
+      "height": 354,
+      "width": 357,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "2ad6bb6549a161d89e3bba1fc25e6f3b1628239ae893a85b23a83c4ba6e5f7c5",
+      "prepared_rgb_sha256": "4247202652218e6e29b4974a4ce9482baaa8f896da7090c94a153687e463926b",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 5,
+        "plasma_cell": 1,
+        "macrophage": 2,
+        "lymphocyte": 3
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 5,
+        "plasma_cell": 1,
+        "macrophage": 2,
+        "lymphocyte": 3
+      },
+      "typed_instance_count": 11,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 18,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 1
+      }
+    },
+    {
+      "fov_id": "TCGA-E2-A1LH-DX1_id-5ea40a58ddda5f839898e0ed_left-24277_top-25684_bottom-25968_right-24568",
+      "patient_id": "TCGA-E2-A1LH",
+      "split": "train",
+      "height": 351,
+      "width": 360,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "b2374bf5fab3bb4779af5311487eaf492effd2bc8760fe90b66242aa825daf62",
+      "prepared_rgb_sha256": "398f2a6a1327f1c443992ae6042221ec39835ad16f1f4b6120064ff06941ada7",
+      "target_polyline_counts_before_geometry_qc": {
+        "plasma_cell": 5,
+        "macrophage": 4
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "plasma_cell": 5,
+        "macrophage": 4
+      },
+      "typed_instance_count": 9,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 29,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 3
+      }
+    },
+    {
+      "fov_id": "TCGA-E2-A1LH-DX1_id-5ea40a58ddda5f839898e0ed_left-25312_top-26964_bottom-27235_right-25597",
+      "patient_id": "TCGA-E2-A1LH",
+      "split": "train",
+      "height": 336,
+      "width": 353,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "972d07cf4905d3e6ac1b04841d49f125bba649c3957a67bafb963219c93f1f5b",
+      "prepared_rgb_sha256": "49f1fb047ac7cce24d6ec218a603d6ddef3de5f05faaacad24580bdc46a26406",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 4,
+        "plasma_cell": 6
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 4,
+        "plasma_cell": 6
+      },
+      "typed_instance_count": 10,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 4,
+        "non_polyline_rectangle": 19
+      }
+    },
+    {
+      "fov_id": "TCGA-E2-A1LH-DX1_id-5ea40a58ddda5f839898e0ed_left-25822_top-25418_bottom-25694_right-26127",
+      "patient_id": "TCGA-E2-A1LH",
+      "split": "train",
+      "height": 342,
+      "width": 378,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "3ccc7f9ff1ef4747ca3adabb645df777808179963f39311f75eb0840c323f74c",
+      "prepared_rgb_sha256": "382e4cdd32a23ab694d02c887e9ca76ffc20d021ee0294971a0e53777a8de362",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 1,
+        "lymphocyte": 11
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 1,
+        "lymphocyte": 11
+      },
+      "typed_instance_count": 12,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 38,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 3
+      }
+    },
+    {
+      "fov_id": "TCGA-E2-A574-DX1_id-5ea40a05ddda5f83989895aa_left-58537_top-51570_bottom-51835_right-58815",
+      "patient_id": "TCGA-E2-A574",
+      "split": "train",
+      "height": 328,
+      "width": 344,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "9a2d3af7ca6cd2a2c2bfd36051cf46e061541f1c545c649432ee268f366f7d32",
+      "prepared_rgb_sha256": "c657c1f7ed8512bb0173d75a272e268a1e128fe4c1f6102eabaf45186fcfe455",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 4,
+        "lymphocyte": 9
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 3,
+        "lymphocyte": 8
+      },
+      "typed_instance_count": 11,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 14,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 7,
+        "overlapping_target_polyline": 1
+      }
+    },
+    {
+      "fov_id": "TCGA-EW-A1P1-DX1_id-5ea409bdddda5f8398985857_left-52339_top-40757_bottom-41042_right-52628",
+      "patient_id": "TCGA-EW-A1P1",
+      "split": "train",
+      "height": 354,
+      "width": 358,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "e76024ea9cdeb9f1102214dac2e608b6e7187bd2b5819c601cfdf9cfb5f816da",
+      "prepared_rgb_sha256": "48aeb47b72bbc247a99898b21503ca763e99678ec2093e959db6c044a032d10d",
+      "target_polyline_counts_before_geometry_qc": {
+        "plasma_cell": 1,
+        "lymphocyte": 9
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "plasma_cell": 1,
+        "lymphocyte": 9
+      },
+      "typed_instance_count": 10,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 8,
+        "non_polyline_rectangle": 34
+      }
+    },
+    {
+      "fov_id": "TCGA-EW-A1P1-DX1_id-5ea409bdddda5f8398985857_left-52862_top-39235_bottom-39507_right-53141",
+      "patient_id": "TCGA-EW-A1P1",
+      "split": "train",
+      "height": 337,
+      "width": 346,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "bc2bb21c270a5007271e08b51999111bcb1c6a6cf23cf217831b82a335e90bb5",
+      "prepared_rgb_sha256": "ac6bac5181ffe1b77955b04fe10ca574e5fe75902a6e0667415a8c0ee38392bb",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 2,
+        "lymphocyte": 17,
+        "plasma_cell": 8
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 2,
+        "lymphocyte": 13,
+        "plasma_cell": 8
+      },
+      "typed_instance_count": 23,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 32,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 5,
+        "overlapping_target_polyline": 2
+      }
+    },
+    {
+      "fov_id": "TCGA-EW-A1P1-DX1_id-5ea409bdddda5f8398985857_left-52862_top-39488_bottom-39767_right-53137",
+      "patient_id": "TCGA-EW-A1P1",
+      "split": "train",
+      "height": 345,
+      "width": 341,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "06f324c271fbaba0131ee1c9d557655bb3bb383745d09e64d7a4a834d664a2c5",
+      "prepared_rgb_sha256": "851494a2625878a68c3c455700319c67ea2741435ac318b39d3d586007b8a24f",
+      "target_polyline_counts_before_geometry_qc": {
+        "lymphocyte": 22,
+        "plasma_cell": 14
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "lymphocyte": 20,
+        "plasma_cell": 11
+      },
+      "typed_instance_count": 31,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 28,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 3,
+        "overlapping_target_polyline": 3
+      }
+    },
+    {
+      "fov_id": "TCGA-EW-A1P1-DX1_id-5ea409bdddda5f8398985857_left-53121_top-39499_bottom-39771_right-53383",
+      "patient_id": "TCGA-EW-A1P1",
+      "split": "train",
+      "height": 337,
+      "width": 324,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "16b56530ece450474d0a721052c3d91141932a28f1cdcc8cbe7cf01f4e53d1ee",
+      "prepared_rgb_sha256": "61386ac8dbf9f29991448789e2ba6f985857c070b458200ab974368b627b966e",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 4,
+        "lymphocyte": 15
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 4,
+        "lymphocyte": 13
+      },
+      "typed_instance_count": 17,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 31,
+        "overlapping_target_polyline": 1
+      }
+    },
+    {
+      "fov_id": "TCGA-EW-A1P1-DX1_id-5ea409bdddda5f8398985857_left-53122_top-39221_bottom-39499_right-53411",
+      "patient_id": "TCGA-EW-A1P1",
+      "split": "train",
+      "height": 345,
+      "width": 358,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "c4a4c7a8131000904e63cc93ed9f2016074a8d630e47c33b8538ada1e9e1c77d",
+      "prepared_rgb_sha256": "78c806cbc773b3dc92bb2742d0acb8ca2ea7c0f3bf52ef7ff2471f94769b20fb",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 3,
+        "lymphocyte": 6
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 3,
+        "lymphocyte": 6
+      },
+      "typed_instance_count": 9,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 20,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 5
+      }
+    },
+    {
+      "fov_id": "TCGA-EW-A1P8-DX1_id-5ea409d1ddda5f83989868a3_left-17297_top-28640_bottom-28960_right-17568",
+      "patient_id": "TCGA-EW-A1P8",
+      "split": "train",
+      "height": 397,
+      "width": 336,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "92309e52c280cfa427ca14a7608a7bfbc29f6d5f9c0011d444371a8d4df70b7c",
+      "prepared_rgb_sha256": "0eca3e5160323bf842645aa79e52df97c5011d12cf14494fe7299f2e9dd5b2b4",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 1,
+        "lymphocyte": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 1,
+        "lymphocyte": 1
+      },
+      "typed_instance_count": 2,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 22,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 2
+      }
+    },
+    {
+      "fov_id": "TCGA-EW-A1PB-DX1_id-5ea409f2ddda5f839898836d_left-58483_top-27721_bottom-28001_right-58755",
+      "patient_id": "TCGA-EW-A1PB",
+      "split": "train",
+      "height": 346,
+      "width": 336,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "77bc951da499f43b9e3e5e987c0e695cfb9ddf22b6d184dc1e8a2a698aced0c6",
+      "prepared_rgb_sha256": "8f4b7559ab71420f2d08fb1b384e83863206439268e8b64ab2c72a5fdde07a2e",
+      "target_polyline_counts_before_geometry_qc": {
+        "plasma_cell": 33,
+        "macrophage": 4
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "plasma_cell": 26,
+        "macrophage": 4
+      },
+      "typed_instance_count": 30,
+      "excluded_reasons": {
+        "overlapping_target_polyline": 3,
+        "target_overlaps_excluded_polyline": 1,
+        "excluded_fine_class": 4,
+        "non_polyline_rectangle": 50
+      }
+    },
+    {
+      "fov_id": "TCGA-EW-A1PB-DX1_id-5ea409f2ddda5f839898836d_left-58736_top-30003_bottom-30325_right-59013",
+      "patient_id": "TCGA-EW-A1PB",
+      "split": "train",
+      "height": 399,
+      "width": 343,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "f221d32122cfe40cee3246bffe4a5b56633eb53ef58f49d19e9744712087b258",
+      "prepared_rgb_sha256": "34432911f7000a095b91b53c02fae3e460ae9a9ec7c0c235b3caf27e79cf829f",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 3,
+        "plasma_cell": 2
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 3,
+        "plasma_cell": 2
+      },
+      "typed_instance_count": 5,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 1,
+        "non_polyline_rectangle": 28
+      }
+    },
+    {
+      "fov_id": "TCGA-EW-A1PH-DX1_id-5ea40978ddda5f839897c52c_left-5495_top-56651_bottom-56922_right-5770",
+      "patient_id": "TCGA-EW-A1PH",
+      "split": "train",
+      "height": 336,
+      "width": 340,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "089bee64e1514b7c07c2aacac98a616d515b46055aa0e632e7499701d30e7fbe",
+      "prepared_rgb_sha256": "3fe32811974a400acb19d11cd5aefa963be0e5b97581f5c5180aacd026d7643e",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 8,
+        "lymphocyte": 9,
+        "plasma_cell": 3
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 8,
+        "lymphocyte": 7,
+        "plasma_cell": 3
+      },
+      "typed_instance_count": 18,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 36,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 4,
+        "overlapping_target_polyline": 1
+      }
+    },
+    {
+      "fov_id": "TCGA-GM-A2DB-DX1_id-5ea409baddda5f8398985662_left-56963_top-45906_bottom-46194_right-57262",
+      "patient_id": "TCGA-GM-A2DB",
+      "split": "train",
+      "height": 354,
+      "width": 368,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "8a5bd722a0b25d357ca46bac7a11b1928a97b15637c3829f0d2f264704dd8908",
+      "prepared_rgb_sha256": "5f6f4a5e6599090ac2020e31433a60b310fa0cbcc25a396b3dd71b7817b66532",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 1,
+        "lymphocyte": 4
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 1,
+        "lymphocyte": 2
+      },
+      "typed_instance_count": 3,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 31,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 2,
+        "overlapping_target_polyline": 1
+      }
+    },
+    {
+      "fov_id": "TCGA-GM-A2DD-DX1_id-5ea40aa8ddda5f8398992acd_left-47501_top-22897_bottom-23176_right-47801",
+      "patient_id": "TCGA-GM-A2DD",
+      "split": "train",
+      "height": 343,
+      "width": 370,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "c76b64bde846dd7e17fb58df00ee91ed04051e3f2aa604a526688267c62a2e36",
+      "prepared_rgb_sha256": "003194de1ecd5d9ba6e75b2701d17f16e56ede135cbda82c53993615cabf57ea",
+      "target_polyline_counts_before_geometry_qc": {
+        "lymphocyte": 20,
+        "plasma_cell": 5
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "lymphocyte": 20,
+        "plasma_cell": 5
+      },
+      "typed_instance_count": 25,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 31,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 2
+      }
+    },
+    {
+      "fov_id": "TCGA-GM-A2DF-DX1_id-5ea409faddda5f8398988c32_left-50865_top-46574_bottom-46855_right-51154",
+      "patient_id": "TCGA-GM-A2DF",
+      "split": "train",
+      "height": 346,
+      "width": 356,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "100dae95bf6073367c9e322247822ee808f282eca81c4ea1f3970f95f26f378a",
+      "prepared_rgb_sha256": "cbad13b1407514815c16c744903c9ed9d06aaa011ac0ceabcce9354e4e128b95",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 1,
+        "lymphocyte": 30
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 1,
+        "lymphocyte": 30
+      },
+      "typed_instance_count": 31,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 59,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 1
+      }
+    },
+    {
+      "fov_id": "TCGA-GM-A2DF-DX1_id-5ea409faddda5f8398988c32_left-51130_top-45027_bottom-45326_right-51413",
+      "patient_id": "TCGA-GM-A2DF",
+      "split": "train",
+      "height": 368,
+      "width": 349,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "2714a6aa9af3cf0d8de53e866114c2c3907dedf11480a9cc1fa61f76ad0cd2e0",
+      "prepared_rgb_sha256": "5271870bd9f76efea93b7dd796dadfd998fd56b0570f0be91049de15f411197e",
+      "target_polyline_counts_before_geometry_qc": {
+        "lymphocyte": 15,
+        "macrophage": 5,
+        "plasma_cell": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "lymphocyte": 15,
+        "macrophage": 5,
+        "plasma_cell": 1
+      },
+      "typed_instance_count": 21,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 44,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 1
+      }
+    },
+    {
+      "fov_id": "TCGA-GM-A2DF-DX1_id-5ea409faddda5f8398988c32_left-51140_top-46573_bottom-46860_right-51420",
+      "patient_id": "TCGA-GM-A2DF",
+      "split": "train",
+      "height": 353,
+      "width": 345,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "6cedcf57d22b6cce14638c00640e811e56f774f33f09f74fb9e12550f99edf6c",
+      "prepared_rgb_sha256": "6df526d86511185c8b12f4c348ff04fe91576d95c28c9e40ce4caac7af653378",
+      "target_polyline_counts_before_geometry_qc": {
+        "lymphocyte": 29,
+        "macrophage": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "lymphocyte": 21
+      },
+      "typed_instance_count": 21,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 46,
+        "overlapping_target_polyline": 4,
+        "target_overlaps_excluded_polyline": 1,
+        "excluded_fine_class": 1
+      }
+    },
+    {
+      "fov_id": "TCGA-GM-A2DF-DX1_id-5ea409faddda5f8398988c32_left-53185_top-44788_bottom-45075_right-53476",
+      "patient_id": "TCGA-GM-A2DF",
+      "split": "train",
+      "height": 354,
+      "width": 359,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "40da44c0ba205c863e29a6ede76e3b737fe230b19cbb5796994503799383daa4",
+      "prepared_rgb_sha256": "ad99555d43122073077a575db3d70aa07f99de0773a2738b5588b06db1a83e6c",
+      "target_polyline_counts_before_geometry_qc": {
+        "lymphocyte": 9,
+        "macrophage": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "lymphocyte": 9,
+        "macrophage": 1
+      },
+      "typed_instance_count": 10,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 27,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 2
+      }
+    },
+    {
+      "fov_id": "TCGA-GM-A2DF-DX1_id-5ea409faddda5f8398988c32_left-53688_top-44273_bottom-44565_right-53997",
+      "patient_id": "TCGA-GM-A2DF",
+      "split": "train",
+      "height": 360,
+      "width": 380,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "1e902f1254fffd346e4d3c13a393442bc899e65983472c61d79659c65d5bd93d",
+      "prepared_rgb_sha256": "82810a2db49ebc0a5e8a432bf5fbe6035488d13b85cc824707e284c4d1178f47",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 1,
+        "lymphocyte": 4
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 1,
+        "lymphocyte": 4
+      },
+      "typed_instance_count": 5,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 40
+      }
+    },
+    {
+      "fov_id": "TCGA-GM-A2DH-DX1_id-5ea40adcddda5f83989951a2_left-53773_top-59370_bottom-59650_right-54063",
+      "patient_id": "TCGA-GM-A2DH",
+      "split": "train",
+      "height": 345,
+      "width": 357,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "cce86641b7f79bcac74196472c24504d2221a21d02354ec2a1830f49792b16fc",
+      "prepared_rgb_sha256": "2fe547a382d8644a6c94ad4eb66124d19f663f8735892aa19941543424ca9f37",
+      "target_polyline_counts_before_geometry_qc": {
+        "lymphocyte": 17,
+        "macrophage": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "lymphocyte": 16
+      },
+      "typed_instance_count": 16,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 16,
+        "overlapping_target_polyline": 1,
+        "non_polyline_rectangle": 42
+      }
+    },
+    {
+      "fov_id": "TCGA-GM-A2DH-DX1_id-5ea40adcddda5f83989951a2_left-54790_top-58848_bottom-59139_right-55058",
+      "patient_id": "TCGA-GM-A2DH",
+      "split": "train",
+      "height": 359,
+      "width": 330,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "105b0c6d8c635c913fd2ddd4252b1605acb7fe225efcca8ae5a34cbdb7fc966b",
+      "prepared_rgb_sha256": "abd302ddf6a201e67fbf4d3a3858e468c4b65654f0c033c5d6c6bcdf3a381f43",
+      "target_polyline_counts_before_geometry_qc": {
+        "lymphocyte": 6,
+        "tumor_epithelial": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "lymphocyte": 6,
+        "tumor_epithelial": 1
+      },
+      "typed_instance_count": 7,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 2,
+        "non_polyline_rectangle": 32
+      }
+    },
+    {
+      "fov_id": "TCGA-GM-A3XL-DX1_id-5ea40a3bddda5f839898c578_left-36279_top-18882_bottom-19159_right-36582",
+      "patient_id": "TCGA-GM-A3XL",
+      "split": "train",
+      "height": 341,
+      "width": 372,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "25cbdd892d891d35a1c30ac5c6719707c8d13afed8c98d5c3c7e1c4f6cb57e5e",
+      "prepared_rgb_sha256": "9391e1f7b113cd32ca1df1a1c68e15b6c5d51e04e6c4da17e4df73a9ce6726ff",
+      "target_polyline_counts_before_geometry_qc": {
+        "lymphocyte": 14,
+        "macrophage": 10
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "lymphocyte": 11,
+        "macrophage": 8
+      },
+      "typed_instance_count": 19,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 35,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 2,
+        "overlapping_target_polyline": 3
+      }
+    },
+    {
+      "fov_id": "TCGA-LL-A441-DX1_id-5ea40984ddda5f839897e7e2_left-85065_top-44643_bottom-44927_right-85348",
+      "patient_id": "TCGA-LL-A441",
+      "split": "train",
+      "height": 348,
+      "width": 347,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "6466f5f55f55b16a350ad0ef04b70b7d5659a8302793a62b71f5cc0755e29626",
+      "prepared_rgb_sha256": "8a0e99b24add5182b02fb70cebd8ceac55883dc19b576977aeb86be4d418e9e4",
+      "target_polyline_counts_before_geometry_qc": {
+        "lymphocyte": 46,
+        "macrophage": 5
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "lymphocyte": 33,
+        "macrophage": 3
+      },
+      "typed_instance_count": 36,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 35,
+        "overlapping_target_polyline": 8,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 2
+      }
+    },
+    {
+      "fov_id": "TCGA-LL-A5YO-DX1_id-5ea40b14ddda5f83989980aa_left-36869_top-46431_bottom-46712_right-37142",
+      "patient_id": "TCGA-LL-A5YO",
+      "split": "train",
+      "height": 344,
+      "width": 335,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "8a5a2abf49469aff552cb8e4e7904a79b5714d69ad26b2116fc4ffb3d6ebc3cb",
+      "prepared_rgb_sha256": "f240bef60f1ff31f006ab59434fdaa8c510a06cd74e7d703b63c53b2b643c96d",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 1,
+        "lymphocyte": 8,
+        "macrophage": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 1,
+        "lymphocyte": 8,
+        "macrophage": 1
+      },
+      "typed_instance_count": 10,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 18,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 4
+      }
+    },
+    {
+      "fov_id": "TCGA-LL-A5YO-DX1_id-5ea40b14ddda5f83989980aa_left-38674_top-45649_bottom-45933_right-38940",
+      "patient_id": "TCGA-LL-A5YO",
+      "split": "train",
+      "height": 348,
+      "width": 326,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "c1fb278e52717bc588e789d769f646bb1245d4cde814a9bbd535880a105d030a",
+      "prepared_rgb_sha256": "bd69bd5399a444fcfa1415408b17d73cf900959742cb0800712168e496438ab3",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 4,
+        "lymphocyte": 2,
+        "macrophage": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 4,
+        "lymphocyte": 2,
+        "macrophage": 1
+      },
+      "typed_instance_count": 7,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 18
+      }
+    },
+    {
+      "fov_id": "TCGA-LL-A5YO-DX1_id-5ea40b14ddda5f83989980aa_left-39180_top-45417_bottom-45699_right-39454",
+      "patient_id": "TCGA-LL-A5YO",
+      "split": "train",
+      "height": 345,
+      "width": 336,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "33131596cf79c586435a3aa8311b3ca4c584fff0fb4c398238d482c6ec19ff9a",
+      "prepared_rgb_sha256": "00b00b0982b1ba7fe87855b2a96daa34a07c282b89aeff54d2406092553ff3d3",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 5,
+        "lymphocyte": 36
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 5,
+        "lymphocyte": 30
+      },
+      "typed_instance_count": 35,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 18,
+        "overlapping_target_polyline": 3
+      }
+    },
+    {
+      "fov_id": "TCGA-LL-A5YO-DX1_id-5ea40b14ddda5f83989980aa_left-39427_top-44640_bottom-44908_right-39716",
+      "patient_id": "TCGA-LL-A5YO",
+      "split": "train",
+      "height": 328,
+      "width": 354,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "fb415a0d6a13d766623a039eff9bffcdcbd925b09dbcb7ec01da2dc8d173fb1d",
+      "prepared_rgb_sha256": "a7d2caff29b7a523e61040c4f94500d188b96ad2e0632e2d1f4e86b9eef3dc55",
+      "target_polyline_counts_before_geometry_qc": {
+        "lymphocyte": 18,
+        "macrophage": 14
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "lymphocyte": 16,
+        "macrophage": 10
+      },
+      "typed_instance_count": 26,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 30,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 2,
+        "overlapping_target_polyline": 3
+      }
+    },
+    {
+      "fov_id": "TCGA-LL-A5YO-DX1_id-5ea40b14ddda5f83989980aa_left-39698_top-46429_bottom-46699_right-39981",
+      "patient_id": "TCGA-LL-A5YO",
+      "split": "train",
+      "height": 331,
+      "width": 347,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "9bead150393fcf2bd4797808cb2606c9fc6d51dfefaf2cb302ea348ec5634d77",
+      "prepared_rgb_sha256": "dee9d3c18f16efa707d5d72ab190435232e2e7142e202a5b02863f9d5b57eac5",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 1,
+        "macrophage": 2,
+        "lymphocyte": 13
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 1,
+        "macrophage": 2,
+        "lymphocyte": 9
+      },
+      "typed_instance_count": 12,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 14,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 1,
+        "overlapping_target_polyline": 2
+      }
+    },
+    {
+      "fov_id": "TCGA-LL-A73Y-DX1_id-5ea40b1cddda5f8398998a1e_left-68619_top-49680_bottom-49967_right-68902",
+      "patient_id": "TCGA-LL-A73Y",
+      "split": "train",
+      "height": 362,
+      "width": 357,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "727fb3b1b9bb61be8392d8261f7940d2590564ca5f87f5bf35cf5ef0b04bcfc8",
+      "prepared_rgb_sha256": "0d33971da648cf3f5708537c1e36a4735a06336c1f30725fce64e79c404f25e6",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 2,
+        "lymphocyte": 2
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 2,
+        "lymphocyte": 2
+      },
+      "typed_instance_count": 4,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 29,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 5
+      }
+    },
+    {
+      "fov_id": "TCGA-LL-A740-DX1_id-5ea409eaddda5f8398987e66_left-39681_top-24318_bottom-24608_right-39959",
+      "patient_id": "TCGA-LL-A740",
+      "split": "train",
+      "height": 365,
+      "width": 350,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "a42aa9ccec1a34c9b566c91c22945e8817835d0b098b1f86e3c142bb2b317890",
+      "prepared_rgb_sha256": "5f374dd4832cc6b9766010f9e311486777cfab59a28716e1f68d3b7d508fc58c",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 1,
+        "lymphocyte": 37,
+        "plasma_cell": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "lymphocyte": 32
+      },
+      "typed_instance_count": 32,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 39,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 2,
+        "overlapping_target_polyline": 4
+      }
+    },
+    {
+      "fov_id": "TCGA-OL-A5D7-DX1_id-5ea40a81ddda5f8398990684_left-116210_top-29145_bottom-29410_right-116502",
+      "patient_id": "TCGA-OL-A5D7",
+      "split": "test",
+      "height": 324,
+      "width": 357,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "3ce1ba00cd58cf20d407a7605b0b29ffc9a234769a1cc7156a86137d245e09f5",
+      "prepared_rgb_sha256": "b7ee9af503e5e69afac1fb375a4ac27ae0b24a1d2bf1ab2550333f3d9a128e2d",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 8,
+        "plasma_cell": 2,
+        "lymphocyte": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 8,
+        "plasma_cell": 2,
+        "lymphocyte": 1
+      },
+      "typed_instance_count": 11,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 18,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 2
+      }
+    },
+    {
+      "fov_id": "TCGA-OL-A5D7-DX1_id-5ea40a81ddda5f8398990684_left-118516_top-23494_bottom-23789_right-118813",
+      "patient_id": "TCGA-OL-A5D7",
+      "split": "test",
+      "height": 362,
+      "width": 364,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "1a9cf02d9467a1d9455ba2ed576329bcedeeedbc28323c88b62a3163b3745eab",
+      "prepared_rgb_sha256": "578207f6cd3244ba6bf8c8c70ce8c62f1ac53f4fee81407b5fac0be50cc64559",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 6,
+        "plasma_cell": 12
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 6,
+        "plasma_cell": 11
+      },
+      "typed_instance_count": 17,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 19,
+        "target_overlaps_excluded_polyline": 1,
+        "excluded_fine_class": 1
+      }
+    },
+    {
+      "fov_id": "TCGA-OL-A5D7-DX1_id-5ea40a81ddda5f8398990684_left-118777_top-22983_bottom-23257_right-119059",
+      "patient_id": "TCGA-OL-A5D7",
+      "split": "test",
+      "height": 336,
+      "width": 346,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "edc3cc18dafc703fc2f7dd127d57bcba4fd27e014a8a390b0fd4b0e2f18386ff",
+      "prepared_rgb_sha256": "5c3a2f4ff7f63d8fc2656a5017a3728e4ce274f7e041ae980d449c447c648e07",
+      "target_polyline_counts_before_geometry_qc": {
+        "plasma_cell": 15,
+        "macrophage": 2
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "plasma_cell": 15,
+        "macrophage": 2
+      },
+      "typed_instance_count": 17,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 1,
+        "non_polyline_rectangle": 31
+      }
+    },
+    {
+      "fov_id": "TCGA-OL-A5D7-DX1_id-5ea40a81ddda5f8398990684_left-119040_top-23478_bottom-23813_right-119336",
+      "patient_id": "TCGA-OL-A5D7",
+      "split": "test",
+      "height": 410,
+      "width": 363,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "fb5a5700007c5db1126ce22b4d1d7ce95ccabf5a2eca45c870d23cb4ac7d461c",
+      "prepared_rgb_sha256": "d6d72a70f6a595b3bc830c83d9aaa0e0332f4cf3c15e0cced1f61b8169b5809e",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 6,
+        "macrophage": 3,
+        "plasma_cell": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 6,
+        "macrophage": 3,
+        "plasma_cell": 1
+      },
+      "typed_instance_count": 10,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 13
+      }
+    },
+    {
+      "fov_id": "TCGA-OL-A66I-DX1_id-5ea40973ddda5f839897bc9c_left-42229_top-24987_bottom-25286_right-42535",
+      "patient_id": "TCGA-OL-A66I",
+      "split": "test",
+      "height": 299,
+      "width": 306,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "392a1ca4c6c81bf26df02eb3573409fa0688f54972594930450c8b05c29320d3",
+      "prepared_rgb_sha256": "dd81e1262b43ea96cbe08816715c31c1b09aafb474785552e96b15845462bc77",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 3,
+        "lymphocyte": 31
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 3,
+        "lymphocyte": 25
+      },
+      "typed_instance_count": 28,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 7,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 2,
+        "overlapping_target_polyline": 3
+      }
+    },
+    {
+      "fov_id": "TCGA-OL-A66I-DX1_id-5ea40973ddda5f839897bc9c_left-42513_top-24228_bottom-24493_right-42811",
+      "patient_id": "TCGA-OL-A66I",
+      "split": "test",
+      "height": 265,
+      "width": 298,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "9b024f28ff1102ebd49257ab0381317e7574cfabd164e44e8bb3bb2f98854798",
+      "prepared_rgb_sha256": "9529592d9e9b882154b4727351d67018ca879763636de4dd28991585046b23cf",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 4,
+        "macrophage": 2,
+        "lymphocyte": 4
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 4,
+        "macrophage": 1,
+        "lymphocyte": 3
+      },
+      "typed_instance_count": 8,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 1,
+        "overlapping_target_polyline": 1,
+        "non_polyline_rectangle": 5
+      }
+    },
+    {
+      "fov_id": "TCGA-OL-A66P-DX1_id-5ea40ab3ddda5f83989931f0_left-31405_top-25419_bottom-25686_right-31682",
+      "patient_id": "TCGA-OL-A66P",
+      "split": "test",
+      "height": 267,
+      "width": 277,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "b4c55b95468686dd307f3039f89ffe52c2eca4511c0589517459e11f0382c601",
+      "prepared_rgb_sha256": "04a4b0226f3242dcdf484d817ba241afeeea0d6ea33060f09a3222185c966755",
+      "target_polyline_counts_before_geometry_qc": {
+        "plasma_cell": 2,
+        "macrophage": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "plasma_cell": 2,
+        "macrophage": 1
+      },
+      "typed_instance_count": 3,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 7,
+        "non_polyline_rectangle": 8
+      }
+    },
+    {
+      "fov_id": "TCGA-OL-A66P-DX1_id-5ea40ab3ddda5f83989931f0_left-31634_top-26147_bottom-26469_right-31955",
+      "patient_id": "TCGA-OL-A66P",
+      "split": "test",
+      "height": 322,
+      "width": 321,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "093fbd3ac3ca10e86a5457a254c2f452a40b54a3669fb5ca65e76b6e279ae691",
+      "prepared_rgb_sha256": "db515048e1034f975d152a842b4e052a0f1a12ab3c921b0951848c82641862b7",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 3
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 3
+      },
+      "typed_instance_count": 3,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 4,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 3
+      }
+    },
+    {
+      "fov_id": "TCGA-OL-A66P-DX1_id-5ea40ab3ddda5f83989931f0_left-31917_top-27477_bottom-27749_right-32191",
+      "patient_id": "TCGA-OL-A66P",
+      "split": "test",
+      "height": 272,
+      "width": 274,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "a5a668082ed0a05cbfecea05fe8806344a4f240a68e596dc9a2a018e85d50d1f",
+      "prepared_rgb_sha256": "64fe7082445d92f0cde9336abf18d66ddaab8190192c64614a400e792018e379",
+      "target_polyline_counts_before_geometry_qc": {
+        "plasma_cell": 4,
+        "macrophage": 6
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "plasma_cell": 4,
+        "macrophage": 4
+      },
+      "typed_instance_count": 8,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 4,
+        "overlapping_target_polyline": 1,
+        "non_polyline_rectangle": 4
+      }
+    },
+    {
+      "fov_id": "TCGA-OL-A66P-DX1_id-5ea40ab3ddda5f83989931f0_left-31925_top-27734_bottom-27995_right-32191",
+      "patient_id": "TCGA-OL-A66P",
+      "split": "test",
+      "height": 261,
+      "width": 266,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "db0dcd5e599f2c3a5d134342564141b8a59deb13202b3cf3b9e186ee5480a36c",
+      "prepared_rgb_sha256": "c8a2fea64e11abfd6d5475b772c500b4ef53658191d07e04818c5026a88c5416",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 6
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 4
+      },
+      "typed_instance_count": 4,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 9,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 2,
+        "overlapping_target_polyline": 1
+      }
+    },
+    {
+      "fov_id": "TCGA-OL-A66P-DX1_id-5ea40ab3ddda5f83989931f0_left-32174_top-27414_bottom-27743_right-32471",
+      "patient_id": "TCGA-OL-A66P",
+      "split": "test",
+      "height": 329,
+      "width": 297,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "10bb2e09272dcfc69cd2e39b6fc73bbf7bb34f15458fb9936d9f0ea747041859",
+      "prepared_rgb_sha256": "a7d5f2db1bedfb3120aed490ec6d2a1a559aef39532895b0f35b9e8dc00c816f",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 3,
+        "plasma_cell": 9,
+        "macrophage": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 3,
+        "plasma_cell": 7,
+        "macrophage": 1
+      },
+      "typed_instance_count": 11,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 3,
+        "overlapping_target_polyline": 1,
+        "non_polyline_rectangle": 4
+      }
+    },
+    {
+      "fov_id": "TCGA-OL-A66P-DX1_id-5ea40ab3ddda5f83989931f0_left-32411_top-25927_bottom-26198_right-32719",
+      "patient_id": "TCGA-OL-A66P",
+      "split": "test",
+      "height": 271,
+      "width": 308,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "a6d38489b49318ba386fd214e0de7ae9616aaab3df276652c0530444470333ae",
+      "prepared_rgb_sha256": "230c35a76689a82ccded54f7487fc2defae38e1641ee2673755db5ad12b3818c",
+      "target_polyline_counts_before_geometry_qc": {
+        "plasma_cell": 6,
+        "macrophage": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "plasma_cell": 3,
+        "macrophage": 1
+      },
+      "typed_instance_count": 4,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 8,
+        "overlapping_target_polyline": 2,
+        "non_polyline_rectangle": 2
+      }
+    },
+    {
+      "fov_id": "TCGA-OL-A66P-DX1_id-5ea40ab3ddda5f83989931f0_left-32637_top-24350_bottom-24662_right-32967",
+      "patient_id": "TCGA-OL-A66P",
+      "split": "test",
+      "height": 312,
+      "width": 330,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "ffbdb12b665d19c6e22e38d764581982d057aa6fbbfe71f834f0d56d46424c89",
+      "prepared_rgb_sha256": "9092e458d2c8498edb8353aaf25cc47dfea95a4b1ae33cc27f77caa3c05ba3f0",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 4,
+        "macrophage": 3,
+        "lymphocyte": 2
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 2,
+        "macrophage": 3,
+        "lymphocyte": 2
+      },
+      "typed_instance_count": 7,
+      "excluded_reasons": {
+        "overlapping_target_polyline": 1,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 2,
+        "non_polyline_rectangle": 5
+      }
+    },
+    {
+      "fov_id": "TCGA-OL-A66P-DX1_id-5ea40ab3ddda5f83989931f0_left-33936_top-22357_bottom-22614_right-34271",
+      "patient_id": "TCGA-OL-A66P",
+      "split": "test",
+      "height": 257,
+      "width": 335,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "8f02a67f2d69224883a8e92313f61771eee65e54390a560682f192d0a3e95831",
+      "prepared_rgb_sha256": "4a98093cbd169614e0c440fddd5f08cde735ddd961c79ab5f399d6a6ed27ff9e",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 3,
+        "macrophage": 2
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 3,
+        "macrophage": 2
+      },
+      "typed_instance_count": 5,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 7,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 2
+      }
+    },
+    {
+      "fov_id": "TCGA-OL-A66P-DX1_id-5ea40ab3ddda5f83989931f0_left-34976_top-26676_bottom-26978_right-35297",
+      "patient_id": "TCGA-OL-A66P",
+      "split": "test",
+      "height": 302,
+      "width": 321,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "49f5a9d1c857b78871cf515e28a4cafdb7a22872305dda81ce153d63a07b93fb",
+      "prepared_rgb_sha256": "4e663d9445ff5a77d151b66827275edfe41e2d231163acde63397b7305b297a3",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 5,
+        "lymphocyte": 6
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 5,
+        "lymphocyte": 5
+      },
+      "typed_instance_count": 10,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 6,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 7,
+        "overlapping_target_polyline": 1
+      }
+    },
+    {
+      "fov_id": "TCGA-OL-A66P-DX1_id-5ea40ab3ddda5f83989931f0_left-35213_top-23373_bottom-23662_right-35551",
+      "patient_id": "TCGA-OL-A66P",
+      "split": "test",
+      "height": 289,
+      "width": 338,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "17e14b4e8e64d807ed29c85ab0c23d67f301a47c8101d2f059724998e1b44497",
+      "prepared_rgb_sha256": "8e0e536d92101dc7889dc2884238766bae6c44e8d58510b14e5b1de8be8de4c3",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 1
+      },
+      "typed_instance_count": 1,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 21
+      }
+    },
+    {
+      "fov_id": "TCGA-OL-A66P-DX1_id-5ea40ab3ddda5f83989931f0_left-36510_top-24634_bottom-24937_right-36803",
+      "patient_id": "TCGA-OL-A66P",
+      "split": "test",
+      "height": 303,
+      "width": 293,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "6f5d622e87ecf37a588258408e8d69e8e71fc22da22dc3064c114f917ae2daf8",
+      "prepared_rgb_sha256": "48d52b7a6085d8c2bf7d4eb49f1dbd166ab836b6b7bf553baf0cb635fd0b340f",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 9,
+        "plasma_cell": 2
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 9,
+        "plasma_cell": 2
+      },
+      "typed_instance_count": 11,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 15,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 3
+      }
+    },
+    {
+      "fov_id": "TCGA-OL-A66P-DX1_id-5ea40ab3ddda5f83989931f0_left-36783_top-24640_bottom-24937_right-37076",
+      "patient_id": "TCGA-OL-A66P",
+      "split": "test",
+      "height": 297,
+      "width": 293,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "6b712082a3f133bc4e85413124e8459f61ac20108f54b6eb6b1ab2491f70baee",
+      "prepared_rgb_sha256": "a09c7b771f93c833f8c995c94a4840b98f7213b4d5d6e8f95599c5bf653ce2ed",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 3,
+        "plasma_cell": 2,
+        "lymphocyte": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 3,
+        "plasma_cell": 2,
+        "lymphocyte": 1
+      },
+      "typed_instance_count": 6,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 15,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 3
+      }
+    },
+    {
+      "fov_id": "TCGA-OL-A66P-DX1_id-5ea40ab3ddda5f83989931f0_left-37287_top-24913_bottom-25174_right-37580",
+      "patient_id": "TCGA-OL-A66P",
+      "split": "test",
+      "height": 261,
+      "width": 293,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "b052de7b60f1480b1fd29b94062d27b55d448688bb50148c5b2a062f5d65b818",
+      "prepared_rgb_sha256": "a4934a9f79171c2d769287df21b572b33b5776664f0808ab8e24e54041646cc4",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 9
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 8
+      },
+      "typed_instance_count": 8,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 8,
+        "overlapping_target_polyline": 1,
+        "non_polyline_rectangle": 3
+      }
+    },
+    {
+      "fov_id": "TCGA-OL-A66P-DX1_id-5ea40ab3ddda5f83989931f0_left-37566_top-24886_bottom-25215_right-37834",
+      "patient_id": "TCGA-OL-A66P",
+      "split": "test",
+      "height": 329,
+      "width": 268,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "a3fc3bf9be9ebe3a6e2ceb7ea10896f425eb519b36f71f6a7b934709a9eaf5c5",
+      "prepared_rgb_sha256": "a60344bbb010bb4ffd61474d83d118438eb7d7c3bb02bd1e0326f1551b96d01f",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 8
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 8
+      },
+      "typed_instance_count": 8,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 10,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 5
+      }
+    },
+    {
+      "fov_id": "TCGA-OL-A6VO-DX1_id-5ea4099fddda5f839898232e_left-89127_top-192581_bottom-192866_right-89463",
+      "patient_id": "TCGA-OL-A6VO",
+      "split": "test",
+      "height": 285,
+      "width": 336,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "89b809d525af8aac1ef27acf87e05b8d7a015c8642adcb6a4d98c619970c80ea",
+      "prepared_rgb_sha256": "2f6c38f65915887b7030f2653c7e07a1a01c900fc1d1ac1d0da8c2936cc5d70e",
+      "target_polyline_counts_before_geometry_qc": {
+        "lymphocyte": 11,
+        "plasma_cell": 2
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "lymphocyte": 11,
+        "plasma_cell": 2
+      },
+      "typed_instance_count": 13,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 1,
+        "non_polyline_rectangle": 14
+      }
+    },
+    {
+      "fov_id": "TCGA-OL-A6VO-DX1_id-5ea4099fddda5f839898232e_left-89647_top-192837_bottom-193099_right-89965",
+      "patient_id": "TCGA-OL-A6VO",
+      "split": "test",
+      "height": 262,
+      "width": 318,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "3d0940c26c6064ec4aeeb492668673a066f3dbd36edb180b3788d63ee4f53966",
+      "prepared_rgb_sha256": "0f1ddeba84c5226a8b8749e781954fe924bc55299a88401119d7caf64a5f8233",
+      "target_polyline_counts_before_geometry_qc": {
+        "lymphocyte": 6,
+        "plasma_cell": 2
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "lymphocyte": 6,
+        "plasma_cell": 2
+      },
+      "typed_instance_count": 8,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 2,
+        "non_polyline_rectangle": 10
+      }
+    },
+    {
+      "fov_id": "TCGA-OL-A6VO-DX1_id-5ea4099fddda5f839898232e_left-89666_top-192540_bottom-192837_right-89975",
+      "patient_id": "TCGA-OL-A6VO",
+      "split": "test",
+      "height": 297,
+      "width": 309,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "13051ff29d9dbffb98e76f1b65ab68a8d64d1c28fbd7ca1c7c438822ab9112da",
+      "prepared_rgb_sha256": "6ac3317b0cb74343d9ce8428852e8f9a876df74a7e3e8bdbde2e68af6a0e27d4",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 7,
+        "lymphocyte": 3,
+        "plasma_cell": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 7,
+        "lymphocyte": 3,
+        "plasma_cell": 1
+      },
+      "typed_instance_count": 11,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 14
+      }
+    },
+    {
+      "fov_id": "TCGA-OL-A6VO-DX1_id-5ea4099fddda5f839898232e_left-89932_top-192581_bottom-192858_right-90208",
+      "patient_id": "TCGA-OL-A6VO",
+      "split": "test",
+      "height": 277,
+      "width": 276,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "d50b3657f978c3e4158370342af6886f509949fe3f972b1ec89a51036ccf5d68",
+      "prepared_rgb_sha256": "cdcc1e30d367481e5c6e560f5718e064b859bbaba85100903278011b7ea300fe",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 3,
+        "macrophage": 2
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 3,
+        "macrophage": 2
+      },
+      "typed_instance_count": 5,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 1,
+        "non_polyline_rectangle": 8
+      }
+    },
+    {
+      "fov_id": "TCGA-OL-A6VO-DX1_id-5ea4099fddda5f839898232e_left-89940_top-190497_bottom-190810_right-90239",
+      "patient_id": "TCGA-OL-A6VO",
+      "split": "test",
+      "height": 313,
+      "width": 299,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "526c58db54e2fe0327283541957156b85c0c542d086ce672cbc675f421e7aaac",
+      "prepared_rgb_sha256": "2cdce2aba29007a037440e9af6e0dfee99dff645bf06a66e41c42b7adcb12937",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 5,
+        "lymphocyte": 2
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 5,
+        "lymphocyte": 2
+      },
+      "typed_instance_count": 7,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 16
+      }
+    },
+    {
+      "fov_id": "TCGA-OL-A6VO-DX1_id-5ea4099fddda5f839898232e_left-90442_top-192043_bottom-192363_right-90757",
+      "patient_id": "TCGA-OL-A6VO",
+      "split": "test",
+      "height": 320,
+      "width": 315,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "e253fffd83be26ade3ffe4880f9960392e8f2578ed668255063c2d394e98e63a",
+      "prepared_rgb_sha256": "632e7151650c42766e2f8a3371d8668431785de1c8d406c6a90db6d4560e5d3f",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 3,
+        "tumor_epithelial": 6,
+        "lymphocyte": 2
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 2,
+        "tumor_epithelial": 5,
+        "lymphocyte": 1
+      },
+      "typed_instance_count": 8,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 1,
+        "excluded_fine_class": 1,
+        "overlapping_target_polyline": 1,
+        "non_polyline_rectangle": 12
+      }
+    },
+    {
+      "fov_id": "TCGA-OL-A6VO-DX1_id-5ea4099fddda5f839898232e_left-90464_top-192829_bottom-193127_right-90720",
+      "patient_id": "TCGA-OL-A6VO",
+      "split": "test",
+      "height": 298,
+      "width": 256,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "66019ce495ac03adbbf6d4a18e94def7f68013f785af49b8677ab97daefd4073",
+      "prepared_rgb_sha256": "edd3322b02f17d95dd8cca1bf4fbbc1b5198d583bfcdc24568f54b5152e53626",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 1,
+        "plasma_cell": 4,
+        "lymphocyte": 3
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 1,
+        "plasma_cell": 4,
+        "lymphocyte": 3
+      },
+      "typed_instance_count": 8,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 10
+      }
+    },
+    {
+      "fov_id": "TCGA-OL-A6VO-DX1_id-5ea4099fddda5f839898232e_left-90700_top-193332_bottom-193613_right-91003",
+      "patient_id": "TCGA-OL-A6VO",
+      "split": "test",
+      "height": 281,
+      "width": 303,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "58dddc8e3529e97b6cda3b53a53163f4b234c548abccce7a4de43c3a6ac34852",
+      "prepared_rgb_sha256": "c347ac4bb29deb9af22838abfd1d9648582d485df52589cb230182c5ddd1d1a7",
+      "target_polyline_counts_before_geometry_qc": {
+        "plasma_cell": 6,
+        "lymphocyte": 8
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "plasma_cell": 5,
+        "lymphocyte": 7
+      },
+      "typed_instance_count": 12,
+      "excluded_reasons": {
+        "overlapping_target_polyline": 1,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 2,
+        "non_polyline_rectangle": 15
+      }
+    },
+    {
+      "fov_id": "TCGA-OL-A6VO-DX1_id-5ea4099fddda5f839898232e_left-90720_top-191020_bottom-191324_right-90983",
+      "patient_id": "TCGA-OL-A6VO",
+      "split": "test",
+      "height": 304,
+      "width": 263,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "ce385da4b09764227aad177508d9fce34637520e1b0478f3ce84152aa1caccf1",
+      "prepared_rgb_sha256": "6a25564faea88f4472c2f896a3147fffaadf003c7dd513cbb7a8346e88ab2d0a",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 3,
+        "lymphocyte": 2
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 3,
+        "lymphocyte": 2
+      },
+      "typed_instance_count": 5,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 2,
+        "non_polyline_rectangle": 6
+      }
+    },
+    {
+      "fov_id": "TCGA-OL-A6VO-DX1_id-5ea4099fddda5f839898232e_left-91744_top-189490_bottom-189765_right-92069",
+      "patient_id": "TCGA-OL-A6VO",
+      "split": "test",
+      "height": 275,
+      "width": 325,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "369c7e9e05c92829620d1868e4337d61a7a7ee988f57b05623ed64ec0ab605a3",
+      "prepared_rgb_sha256": "2081c3cb3102a8d7c65582b659850db8ebdbd1ad0fcaf18db3f321601aa2209c",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 1
+      },
+      "typed_instance_count": 1,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 8,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 4
+      }
+    },
+    {
+      "fov_id": "TCGA-OL-A6VO-DX1_id-5ea4099fddda5f839898232e_left-91989_top-191531_bottom-191819_right-92262",
+      "patient_id": "TCGA-OL-A6VO",
+      "split": "test",
+      "height": 288,
+      "width": 273,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "2aed3b017ac2bc98b52b69ebb6b8f76f1c7ca78635e59602ca1b831c22740f74",
+      "prepared_rgb_sha256": "c7591be7c2530869898db63a1debcceb14816dee99744477360df3f6bbcb6aa5",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 1,
+        "lymphocyte": 7
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 1,
+        "lymphocyte": 7
+      },
+      "typed_instance_count": 8,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 3,
+        "non_polyline_rectangle": 11
+      }
+    },
+    {
+      "fov_id": "TCGA-OL-A6VO-DX1_id-5ea4099fddda5f839898232e_left-92238_top-191535_bottom-191834_right-92529",
+      "patient_id": "TCGA-OL-A6VO",
+      "split": "test",
+      "height": 299,
+      "width": 291,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "ebd013f0a42285a9ecf983abc752612493059713da60266104b3290cbdfe35bf",
+      "prepared_rgb_sha256": "52790ec515c7d1cff152222760ed0de349e223fa4fd7315ecef5dacf4bff25cc",
+      "target_polyline_counts_before_geometry_qc": {
+        "plasma_cell": 6,
+        "lymphocyte": 12
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "plasma_cell": 6,
+        "lymphocyte": 10
+      },
+      "typed_instance_count": 16,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 3,
+        "non_polyline_rectangle": 12,
+        "overlapping_target_polyline": 1
+      }
+    },
+    {
+      "fov_id": "TCGA-OL-A6VO-DX1_id-5ea4099fddda5f839898232e_left-92494_top-191274_bottom-191573_right-92786",
+      "patient_id": "TCGA-OL-A6VO",
+      "split": "test",
+      "height": 299,
+      "width": 292,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "1a19e943c2df9719bfe2bab37312c804a6512b287516f81904d4cbd7d46f1bf3",
+      "prepared_rgb_sha256": "c461330be090537ae758c772cc59b5170bbb3f4e5cc5f7b905cdd6bbde5ab622",
+      "target_polyline_counts_before_geometry_qc": {
+        "lymphocyte": 13,
+        "plasma_cell": 2
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "lymphocyte": 13,
+        "plasma_cell": 2
+      },
+      "typed_instance_count": 15,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 11
+      }
+    },
+    {
+      "fov_id": "TCGA-OL-A6VO-DX1_id-5ea4099fddda5f839898232e_left-92720_top-189758_bottom-190032_right-93037",
+      "patient_id": "TCGA-OL-A6VO",
+      "split": "test",
+      "height": 274,
+      "width": 317,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "6659375b4b17c42f0512c0953f0bc5a296d1a37590e496f23500d71e85018c7d",
+      "prepared_rgb_sha256": "15ca50207cabe7dfce468a66913746867d6605a804fc3865d59057ea89acb891",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 5,
+        "macrophage": 1,
+        "lymphocyte": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 5,
+        "macrophage": 1,
+        "lymphocyte": 1
+      },
+      "typed_instance_count": 7,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 1,
+        "non_polyline_rectangle": 14
+      }
+    },
+    {
+      "fov_id": "TCGA-OL-A6VO-DX1_id-5ea4099fddda5f839898232e_left-92756_top-191034_bottom-191327_right-93047",
+      "patient_id": "TCGA-OL-A6VO",
+      "split": "test",
+      "height": 293,
+      "width": 291,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "8da52decb03a6948aad726e0b9f5918342d586d455ffeb42f893978b2cc402c2",
+      "prepared_rgb_sha256": "079f065bb624c19fa3d760d97d00042257b93e3f1a81efbb078a43c6cf01423b",
+      "target_polyline_counts_before_geometry_qc": {
+        "lymphocyte": 6,
+        "macrophage": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "lymphocyte": 6,
+        "macrophage": 1
+      },
+      "typed_instance_count": 7,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 19
+      }
+    },
+    {
+      "fov_id": "TCGA-OL-A6VO-DX1_id-5ea4099fddda5f839898232e_left-92967_top-190477_bottom-190789_right-93280",
+      "patient_id": "TCGA-OL-A6VO",
+      "split": "test",
+      "height": 312,
+      "width": 313,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "224faec502e6ff7c5f07593ba314d3649640e772ec5fe88d96c70e6b39f053bf",
+      "prepared_rgb_sha256": "3291380a429d51498303660b4834342a2217c0a8050f8c6f3132f57f818cda33",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 1,
+        "lymphocyte": 13
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 1,
+        "lymphocyte": 13
+      },
+      "typed_instance_count": 14,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 5,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 3
+      }
+    },
+    {
+      "fov_id": "TCGA-OL-A6VO-DX1_id-5ea4099fddda5f839898232e_left-93006_top-189993_bottom-190294_right-93306",
+      "patient_id": "TCGA-OL-A6VO",
+      "split": "test",
+      "height": 301,
+      "width": 300,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "ad68dca9548b3c9ebe4aee073c0de9d33acf0285b801e1589fdb769eed390674",
+      "prepared_rgb_sha256": "b597c7ccf0678ad72c8a00fd156fb88a8b1c62b3bd64fd6eae5fa35d87ee8afb",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 3,
+        "lymphocyte": 6
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 3,
+        "lymphocyte": 6
+      },
+      "typed_instance_count": 9,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 8,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 2
+      }
+    },
+    {
+      "fov_id": "TCGA-OL-A6VO-DX1_id-5ea4099fddda5f839898232e_left-93276_top-190253_bottom-190542_right-93544",
+      "patient_id": "TCGA-OL-A6VO",
+      "split": "test",
+      "height": 289,
+      "width": 268,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "62aa8e65fa7bec5e28642fae02e6b8eea014847674d1fa1c47dc1ed5251e9f05",
+      "prepared_rgb_sha256": "d9a51861bed1c5fcda939d2d03b9eeb9c27b01b982462b3723f9b1b52bf0dcfe",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 4,
+        "lymphocyte": 3,
+        "plasma_cell": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "macrophage": 4,
+        "lymphocyte": 3,
+        "plasma_cell": 1
+      },
+      "typed_instance_count": 8,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 10
+      }
+    },
+    {
+      "fov_id": "TCGA-S3-AA10-DX1_id-5ea40a7dddda5f8398990245_left-44063_top-25762_bottom-26038_right-44332",
+      "patient_id": "TCGA-S3-AA10",
+      "split": "train",
+      "height": 276,
+      "width": 269,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "8ae55e68f96af96bbbe75db3f12ad02e4e83647befa231d18ba35c1aa798971d",
+      "prepared_rgb_sha256": "08b2cf6e3f76bb7e5e500456b4efb52ecd260d688818c23395ad99f64b9fcbed",
+      "target_polyline_counts_before_geometry_qc": {
+        "macrophage": 1,
+        "plasma_cell": 5
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "plasma_cell": 3
+      },
+      "typed_instance_count": 3,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 1,
+        "excluded_fine_class": 9,
+        "non_polyline_rectangle": 17,
+        "overlapping_target_polyline": 1
+      }
+    },
+    {
+      "fov_id": "TCGA-S3-AA10-DX1_id-5ea40a7dddda5f8398990245_left-44573_top-26531_bottom-26830_right-44843",
+      "patient_id": "TCGA-S3-AA10",
+      "split": "train",
+      "height": 299,
+      "width": 270,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "c0a8a991cf5403bd73e58b9a74a6a2bf25763338ef48f3e7fa737a27b059467e",
+      "prepared_rgb_sha256": "6776eb9f75ba3cf32e195d90685b4d1971e4ffe9804a9a8087c966d510da4140",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 1,
+        "lymphocyte": 6,
+        "plasma_cell": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 1,
+        "lymphocyte": 6,
+        "plasma_cell": 1
+      },
+      "typed_instance_count": 8,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 10,
+        "non_polyline_rectangle": 19
+      }
+    },
+    {
+      "fov_id": "TCGA-S3-AA10-DX1_id-5ea40a7dddda5f8398990245_left-44803_top-26796_bottom-27069_right-45115",
+      "patient_id": "TCGA-S3-AA10",
+      "split": "train",
+      "height": 273,
+      "width": 312,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "6e87ad317927637ff5c64e7ba2a21b585e95bba46542c584220ac788f6754075",
+      "prepared_rgb_sha256": "acb73d9ec743e6e43d7e586338330f8751dd24620dc6db5483c71e798a6ca300",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 2,
+        "plasma_cell": 17
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "plasma_cell": 15
+      },
+      "typed_instance_count": 15,
+      "excluded_reasons": {
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 15,
+        "overlapping_target_polyline": 2,
+        "non_polyline_rectangle": 24
+      }
+    },
+    {
+      "fov_id": "TCGA-S3-AA15-DX1_id-5ea40a6addda5f839898f24a_left-55998_top-30195_bottom-30473_right-56271",
+      "patient_id": "TCGA-S3-AA15",
+      "split": "train",
+      "height": 278,
+      "width": 273,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "fa2338f19a247a9c90a4624d038824039d33479fb3677bb2ae1cf6cecb907069",
+      "prepared_rgb_sha256": "3935f09727a41ae71c8715a36e4b91fe344588588669e6e00fc915ec779e93e0",
+      "target_polyline_counts_before_geometry_qc": {
+        "plasma_cell": 3,
+        "lymphocyte": 7
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "plasma_cell": 3,
+        "lymphocyte": 7
+      },
+      "typed_instance_count": 10,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 44,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 5
+      }
+    },
+    {
+      "fov_id": "TCGA-S3-AA15-DX1_id-5ea40a6addda5f839898f24a_left-56490_top-30455_bottom-30722_right-56785",
+      "patient_id": "TCGA-S3-AA15",
+      "split": "train",
+      "height": 267,
+      "width": 295,
+      "source_mpp_um": 0.2,
+      "target_model_mpp_um": 0.25,
+      "encoded_rgb_sha256": "f98fadcc985f4cd5e7f076b34acdfda349b36f14a885a9c6f1f9671c93dcef01",
+      "prepared_rgb_sha256": "5f9923661076056f1b212ad70db1be7c72c49ea2e798f360595444e48c4eedb5",
+      "target_polyline_counts_before_geometry_qc": {
+        "tumor_epithelial": 2,
+        "plasma_cell": 3,
+        "lymphocyte": 1
+      },
+      "target_polyline_counts_after_geometry_qc": {
+        "tumor_epithelial": 2,
+        "plasma_cell": 2
+      },
+      "typed_instance_count": 4,
+      "excluded_reasons": {
+        "non_polyline_rectangle": 44,
+        "target_overlaps_excluded_polyline": 0,
+        "excluded_fine_class": 3,
+        "overlapping_target_polyline": 1
+      }
+    }
+  ],
+  "limit": "Data-only preparation. No GigaTIME/StarDist output, technical QC, classifier, score or public cell-type result."
+}

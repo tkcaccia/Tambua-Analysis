@@ -1,0 +1,28 @@
+{
+  "status": "partial_manual_review_complete",
+  "date": "2026-10-20",
+  "reviewed_cases": [
+    "TCGA-E9-A22G-01Z-00-DX1_3",
+    "TCGA-J4-A67T-01Z-00-DX1-1",
+    "TCGA-E9-A22G-01Z-00-DX1_4",
+    "TCGA-J4-A67T-01Z-00-DX1-5",
+    "TCGA-EJ-5517-01Z-00-DX1-1",
+    "TCGA-KK-A59X-01Z-00-DX1-2",
+    "TCGA-EW-A6SB-01Z-00-DX1_001",
+    "TCGA-KK-A6E0-01Z-00-DX1-3",
+    "TCGA-EW-A6SB-01Z-00-DX1_002",
+    "TCGA-KK-A6E0-01Z-00-DX1-5"
+  ],
+  "reviewed_pages": [
+    "output-qc-07.webp",
+    "output-qc-08.webp",
+    "output-qc-09.webp"
+  ],
+  "automated_qc_counts": {
+    "pass": 2,
+    "fail": 8
+  },
+  "visual_findings": "Scanner RGB channel order looks plausible across the ten fields. Virtual DAPI is bright over many apparent nuclei but blurred/merged or shifted relative to H&E and red StarDist boundaries in several fields. Some CD68 and CK structures track the bright DAPI morphology, so marker identity cannot be established from these previews. Cases 42 and 47 pass automated nuclear QC, but their marker fidelity remains unresolved; the other eight fail automated QC.",
+  "publication_status": "do_not_use_as_validated_marker_or_classifier_results",
+  "scope": "Contact-sheet review of only cases 42-51 from a still-running 93-case CPU expansion. Original uint16 predictions unchanged. No protein-specific ground-truth validation for these fields."
+}

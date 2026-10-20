@@ -1,0 +1,4584 @@
+{
+  "status": "fixed_source_cohort_no_inference",
+  "source": "NuCLS corrected single-rater, MedOtter Parquet mirror",
+  "source_shard_sha256": {
+    "train-00000-of-00003.parquet": "9f59987fe978f8c8d9f1adf4fc87549d3d15de02a8241f4d403b46e2cfa52b46",
+    "train-00001-of-00003.parquet": "abdfd25673abdfc03cbffd9b3d74eb79c5e08819baf9d259d90fc2b81261c3da",
+    "train-00002-of-00003.parquet": "6bbc9f31954dc8f91f1d149dd3aa100a17596d61919cb2930f5c8e17e123a026"
+  },
+  "fov_total": 1744,
+  "train_patients_total": 102,
+  "test_patients_total": 22,
+  "selection": "All fields with an outlined macrophage, plus 50 train and 20 test non-macrophage fields with at least two represented target classes and five target polylines, sorted by SHA-256 of FOV ID. This is explicitly expert-label-enriched; not a prevalence-representative sample.",
+  "annotation_rule": "Only CSV polyline boundaries. Main tumor_nonMitotic and tumor_mitotic map to tumor_epithelial; macrophage, lymphocyte and plasma_cell retain their fine labels. Other nuclei, rectangles and degenerate points are excluded from typed-cell targets.",
+  "calibration": "NuCLS source coordinates are 0.2 \u00b5m/pixel; any future GigaTIME input must use physical resampling to its pinned 0.25 \u00b5m/pixel grid.",
+  "by_split": {
+    "train": {
+      "images": 138,
+      "patients": 59,
+      "macrophage_images": 88,
+      "target_polyline_counts": {
+        "tumor_epithelial": 236,
+        "lymphocyte": 1550,
+        "macrophage": 412,
+        "plasma_cell": 314
+      }
+    },
+    "test": {
+      "images": 54,
+      "patients": 12,
+      "macrophage_images": 34,
+      "target_polyline_counts": {
+        "lymphocyte": 267,
+        "plasma_cell": 118,
+        "tumor_epithelial": 100,
+        "macrophage": 116
+      }
+    }
+  },
+  "selected": [
+    {
+      "fov_id": "TCGA-A1-A0SP-DX1_id-5ea4095addda5f8398977ebc_left-8325_top-57028_bottom-57311_right-8600",
+      "patient_id": "TCGA-A1-A0SP",
+      "split": "test",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 13,
+      "height": 356,
+      "width": 346,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_nonTILnonMQ_stromal": 13,
+        "lymphocyte": 11,
+        "plasma_cell": 2,
+        "tumor_epithelial": 1
+      },
+      "fine_raw_polyline_counts": {
+        "fibroblast": 13,
+        "lymphocyte": 11,
+        "plasma_cell": 2,
+        "tumor": 1
+      },
+      "excluded_rectangles": 8,
+      "excluded_points": 2,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-AC-A2BK-DX1_id-5ea40a4dddda5f839898d7d9_left-15932_top-8581_bottom-8868_right-16224",
+      "patient_id": "TCGA-AC-A2BK",
+      "split": "test",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 494,
+      "height": 361,
+      "width": 367,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 4,
+        "excluded_nonTILnonMQ_stromal": 9,
+        "lymphocyte": 7,
+        "excluded_AMBIGUOUS": 1
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 4,
+        "fibroblast": 9,
+        "lymphocyte": 7,
+        "unlabeled": 1
+      },
+      "excluded_rectangles": 21,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-AC-A2BK-DX1_id-5ea40a4dddda5f839898d7d9_left-16686_top-9611_bottom-9894_right-16968",
+      "patient_id": "TCGA-AC-A2BK",
+      "split": "test",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 497,
+      "height": 356,
+      "width": 355,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 2,
+        "excluded_nonTILnonMQ_stromal": 8,
+        "lymphocyte": 13,
+        "plasma_cell": 1
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 2,
+        "fibroblast": 8,
+        "lymphocyte": 13,
+        "plasma_cell": 1
+      },
+      "excluded_rectangles": 25,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-AC-A2BK-DX1_id-5ea40a4dddda5f839898d7d9_left-16943_top-9080_bottom-9378_right-17250",
+      "patient_id": "TCGA-AC-A2BK",
+      "split": "test",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 498,
+      "height": 374,
+      "width": 386,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 4,
+        "lymphocyte": 2
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 4,
+        "lymphocyte": 2
+      },
+      "excluded_rectangles": 32,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-AC-A2BK-DX1_id-5ea40a4dddda5f839898d7d9_left-16957_top-9598_bottom-9887_right-17217",
+      "patient_id": "TCGA-AC-A2BK",
+      "split": "test",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 499,
+      "height": 364,
+      "width": 327,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 2,
+        "excluded_nonTILnonMQ_stromal": 1,
+        "lymphocyte": 17
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 2,
+        "fibroblast": 1,
+        "lymphocyte": 17
+      },
+      "excluded_rectangles": 31,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-AC-A2BK-DX1_id-5ea40a4dddda5f839898d7d9_left-18740_top-9355_bottom-9635_right-19024",
+      "patient_id": "TCGA-AC-A2BK",
+      "split": "test",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 506,
+      "height": 352,
+      "width": 357,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 5,
+        "lymphocyte": 2
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 5,
+        "lymphocyte": 2
+      },
+      "excluded_rectangles": 21,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-AC-A6IW-DX1_id-5ea40997ddda5f83989810a2_left-15625_top-6976_bottom-7255_right-15909",
+      "patient_id": "TCGA-AC-A6IW",
+      "split": "test",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 508,
+      "height": 351,
+      "width": 357,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 16,
+        "lymphocyte": 8
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 16,
+        "lymphocyte": 8
+      },
+      "excluded_rectangles": 25,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-BH-A0AV-DX1_id-5ea4099dddda5f8398981d96_left-82013_top-58694_bottom-58981_right-82302",
+      "patient_id": "TCGA-BH-A0AV",
+      "split": "test",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 193,
+      "height": 359,
+      "width": 361,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 1,
+        "excluded_nonTILnonMQ_stromal": 3,
+        "lymphocyte": 6,
+        "excluded_AMBIGUOUS": 2
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 1,
+        "fibroblast": 3,
+        "lymphocyte": 6,
+        "unlabeled": 2
+      },
+      "excluded_rectangles": 62,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-BH-A0B9-DX1_id-5ea409afddda5f8398984518_left-65731_top-58455_bottom-58757_right-66063",
+      "patient_id": "TCGA-BH-A0B9",
+      "split": "test",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 209,
+      "height": 375,
+      "width": 412,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 4,
+        "lymphocyte": 2
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 4,
+        "lymphocyte": 2
+      },
+      "excluded_rectangles": 25,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-BH-A0BG-DX1_id-5ea40b3addda5f839899a696_left-65020_top-29039_bottom-29328_right-65298",
+      "patient_id": "TCGA-BH-A0BG",
+      "split": "test",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 216,
+      "height": 361,
+      "width": 348,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 4,
+        "lymphocyte": 1
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 4,
+        "lymphocyte": 1
+      },
+      "excluded_rectangles": 17,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-BH-A0BG-DX1_id-5ea40b3addda5f839899a696_left-65035_top-29826_bottom-30098_right-65316",
+      "patient_id": "TCGA-BH-A0BG",
+      "split": "test",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 218,
+      "height": 340,
+      "width": 351,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "plasma_cell": 8,
+        "excluded_AMBIGUOUS": 7,
+        "lymphocyte": 14,
+        "excluded_nonTILnonMQ_stromal": 2,
+        "macrophage": 3
+      },
+      "fine_raw_polyline_counts": {
+        "plasma_cell": 8,
+        "unlabeled": 7,
+        "lymphocyte": 14,
+        "fibroblast": 2,
+        "macrophage": 3
+      },
+      "excluded_rectangles": 9,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-BH-A0BG-DX1_id-5ea40b3addda5f839899a696_left-65801_top-29326_bottom-29589_right-66104",
+      "patient_id": "TCGA-BH-A0BG",
+      "split": "test",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 221,
+      "height": 328,
+      "width": 379,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 8,
+        "plasma_cell": 15,
+        "excluded_AMBIGUOUS": 3,
+        "lymphocyte": 1
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 8,
+        "plasma_cell": 15,
+        "unlabeled": 3,
+        "lymphocyte": 1
+      },
+      "excluded_rectangles": 9,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-BH-A0E6-DX1_id-5ea40afeddda5f8398996f64_left-58853_top-20757_bottom-21035_right-59144",
+      "patient_id": "TCGA-BH-A0E6",
+      "split": "test",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 237,
+      "height": 345,
+      "width": 360,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 8,
+        "lymphocyte": 14,
+        "excluded_nonTILnonMQ_stromal": 1
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 8,
+        "lymphocyte": 14,
+        "fibroblast": 1
+      },
+      "excluded_rectangles": 30,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-BH-A18G-DX1_id-5ea40b1eddda5f8398998d16_left-17066_top-729_bottom-1037_right-17347",
+      "patient_id": "TCGA-BH-A18G",
+      "split": "test",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 246,
+      "height": 382,
+      "width": 349,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 2,
+        "excluded_nonTILnonMQ_stromal": 4,
+        "lymphocyte": 9,
+        "macrophage": 2,
+        "plasma_cell": 6,
+        "excluded_AMBIGUOUS": 1
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 2,
+        "fibroblast": 4,
+        "lymphocyte": 9,
+        "macrophage": 2,
+        "plasma_cell": 6,
+        "unlabeled": 1
+      },
+      "excluded_rectangles": 18,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-BH-A18G-DX1_id-5ea40b1eddda5f8398998d16_left-17086_top-2754_bottom-3070_right-17363",
+      "patient_id": "TCGA-BH-A18G",
+      "split": "test",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 247,
+      "height": 391,
+      "width": 344,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 1,
+        "excluded_AMBIGUOUS": 6,
+        "lymphocyte": 7,
+        "plasma_cell": 1
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 1,
+        "unlabeled": 6,
+        "lymphocyte": 7,
+        "plasma_cell": 1
+      },
+      "excluded_rectangles": 24,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-BH-A18G-DX1_id-5ea40b1eddda5f8398998d16_left-17580_top-3044_bottom-3332_right-17907",
+      "patient_id": "TCGA-BH-A18G",
+      "split": "test",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 253,
+      "height": 357,
+      "width": 405,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_nonTILnonMQ_stromal": 1,
+        "lymphocyte": 10,
+        "plasma_cell": 6
+      },
+      "fine_raw_polyline_counts": {
+        "fibroblast": 1,
+        "lymphocyte": 10,
+        "plasma_cell": 6
+      },
+      "excluded_rectangles": 31,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-OL-A5D7-DX1_id-5ea40a81ddda5f8398990684_left-116210_top-29145_bottom-29410_right-116502",
+      "patient_id": "TCGA-OL-A5D7",
+      "split": "test",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 426,
+      "height": 324,
+      "width": 357,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 8,
+        "plasma_cell": 2,
+        "excluded_nonTILnonMQ_stromal": 2,
+        "lymphocyte": 1
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 8,
+        "plasma_cell": 2,
+        "fibroblast": 2,
+        "lymphocyte": 1
+      },
+      "excluded_rectangles": 18,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-OL-A5D7-DX1_id-5ea40a81ddda5f8398990684_left-118516_top-23494_bottom-23789_right-118813",
+      "patient_id": "TCGA-OL-A5D7",
+      "split": "test",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 429,
+      "height": 362,
+      "width": 364,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 6,
+        "plasma_cell": 12,
+        "excluded_AMBIGUOUS": 1
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 6,
+        "plasma_cell": 12,
+        "unlabeled": 1
+      },
+      "excluded_rectangles": 19,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-OL-A5D7-DX1_id-5ea40a81ddda5f8398990684_left-118777_top-22983_bottom-23257_right-119059",
+      "patient_id": "TCGA-OL-A5D7",
+      "split": "test",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 430,
+      "height": 336,
+      "width": 346,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "plasma_cell": 15,
+        "macrophage": 2,
+        "excluded_nonTILnonMQ_stromal": 1
+      },
+      "fine_raw_polyline_counts": {
+        "plasma_cell": 15,
+        "macrophage": 2,
+        "vascular_endothelium": 1
+      },
+      "excluded_rectangles": 31,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-OL-A5D7-DX1_id-5ea40a81ddda5f8398990684_left-119040_top-23478_bottom-23813_right-119336",
+      "patient_id": "TCGA-OL-A5D7",
+      "split": "test",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 431,
+      "height": 410,
+      "width": 363,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 6,
+        "macrophage": 3,
+        "plasma_cell": 1
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 6,
+        "macrophage": 3,
+        "plasma_cell": 1
+      },
+      "excluded_rectangles": 13,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-OL-A66I-DX1_id-5ea40973ddda5f839897bc9c_left-42229_top-24987_bottom-25286_right-42535",
+      "patient_id": "TCGA-OL-A66I",
+      "split": "test",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 440,
+      "height": 299,
+      "width": 306,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 3,
+        "lymphocyte": 31,
+        "excluded_AMBIGUOUS": 2
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 3,
+        "lymphocyte": 31,
+        "unlabeled": 2
+      },
+      "excluded_rectangles": 7,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-OL-A66I-DX1_id-5ea40973ddda5f839897bc9c_left-42513_top-24228_bottom-24493_right-42811",
+      "patient_id": "TCGA-OL-A66I",
+      "split": "test",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 441,
+      "height": 265,
+      "width": 298,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_nonTILnonMQ_stromal": 1,
+        "tumor_epithelial": 4,
+        "macrophage": 2,
+        "lymphocyte": 4
+      },
+      "fine_raw_polyline_counts": {
+        "fibroblast": 1,
+        "tumor": 4,
+        "macrophage": 2,
+        "lymphocyte": 4
+      },
+      "excluded_rectangles": 5,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-OL-A66P-DX1_id-5ea40ab3ddda5f83989931f0_left-31405_top-25419_bottom-25686_right-31682",
+      "patient_id": "TCGA-OL-A66P",
+      "split": "test",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 445,
+      "height": 267,
+      "width": 277,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_AMBIGUOUS": 6,
+        "plasma_cell": 2,
+        "macrophage": 1,
+        "excluded_nonTILnonMQ_stromal": 1
+      },
+      "fine_raw_polyline_counts": {
+        "unlabeled": 6,
+        "plasma_cell": 2,
+        "macrophage": 1,
+        "fibroblast": 1
+      },
+      "excluded_rectangles": 8,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-OL-A66P-DX1_id-5ea40ab3ddda5f83989931f0_left-31634_top-26147_bottom-26469_right-31955",
+      "patient_id": "TCGA-OL-A66P",
+      "split": "test",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 446,
+      "height": 322,
+      "width": 321,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_nonTILnonMQ_stromal": 2,
+        "macrophage": 3,
+        "excluded_AMBIGUOUS": 1
+      },
+      "fine_raw_polyline_counts": {
+        "fibroblast": 2,
+        "macrophage": 3,
+        "unlabeled": 1
+      },
+      "excluded_rectangles": 4,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-OL-A66P-DX1_id-5ea40ab3ddda5f83989931f0_left-31917_top-27477_bottom-27749_right-32191",
+      "patient_id": "TCGA-OL-A66P",
+      "split": "test",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 450,
+      "height": 272,
+      "width": 274,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "plasma_cell": 4,
+        "excluded_AMBIGUOUS": 4,
+        "macrophage": 6
+      },
+      "fine_raw_polyline_counts": {
+        "plasma_cell": 4,
+        "unlabeled": 4,
+        "macrophage": 6
+      },
+      "excluded_rectangles": 4,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-OL-A66P-DX1_id-5ea40ab3ddda5f83989931f0_left-31925_top-27734_bottom-27995_right-32191",
+      "patient_id": "TCGA-OL-A66P",
+      "split": "test",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 451,
+      "height": 261,
+      "width": 266,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_AMBIGUOUS": 2,
+        "macrophage": 6
+      },
+      "fine_raw_polyline_counts": {
+        "unlabeled": 2,
+        "macrophage": 6
+      },
+      "excluded_rectangles": 9,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-OL-A66P-DX1_id-5ea40ab3ddda5f83989931f0_left-32174_top-27414_bottom-27743_right-32471",
+      "patient_id": "TCGA-OL-A66P",
+      "split": "test",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 454,
+      "height": 329,
+      "width": 297,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 3,
+        "plasma_cell": 9,
+        "excluded_AMBIGUOUS": 3,
+        "macrophage": 1
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 3,
+        "plasma_cell": 9,
+        "unlabeled": 3,
+        "macrophage": 1
+      },
+      "excluded_rectangles": 4,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-OL-A66P-DX1_id-5ea40ab3ddda5f83989931f0_left-32411_top-25927_bottom-26198_right-32719",
+      "patient_id": "TCGA-OL-A66P",
+      "split": "test",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 455,
+      "height": 271,
+      "width": 308,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "plasma_cell": 6,
+        "excluded_nonTILnonMQ_stromal": 2,
+        "excluded_AMBIGUOUS": 6,
+        "macrophage": 1
+      },
+      "fine_raw_polyline_counts": {
+        "plasma_cell": 6,
+        "fibroblast": 2,
+        "unlabeled": 6,
+        "macrophage": 1
+      },
+      "excluded_rectangles": 2,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-OL-A66P-DX1_id-5ea40ab3ddda5f83989931f0_left-32637_top-24350_bottom-24662_right-32967",
+      "patient_id": "TCGA-OL-A66P",
+      "split": "test",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 457,
+      "height": 312,
+      "width": 330,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 4,
+        "macrophage": 3,
+        "lymphocyte": 2,
+        "excluded_nonTILnonMQ_stromal": 1,
+        "excluded_AMBIGUOUS": 1
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 4,
+        "macrophage": 3,
+        "lymphocyte": 2,
+        "fibroblast": 1,
+        "unlabeled": 1
+      },
+      "excluded_rectangles": 5,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-OL-A66P-DX1_id-5ea40ab3ddda5f83989931f0_left-33936_top-22357_bottom-22614_right-34271",
+      "patient_id": "TCGA-OL-A66P",
+      "split": "test",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 462,
+      "height": 257,
+      "width": 335,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 3,
+        "excluded_AMBIGUOUS": 2,
+        "macrophage": 2
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 3,
+        "unlabeled": 2,
+        "macrophage": 2
+      },
+      "excluded_rectangles": 7,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-OL-A66P-DX1_id-5ea40ab3ddda5f83989931f0_left-34976_top-26676_bottom-26978_right-35297",
+      "patient_id": "TCGA-OL-A66P",
+      "split": "test",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 467,
+      "height": 302,
+      "width": 321,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_AMBIGUOUS": 7,
+        "macrophage": 5,
+        "lymphocyte": 6
+      },
+      "fine_raw_polyline_counts": {
+        "unlabeled": 7,
+        "macrophage": 5,
+        "lymphocyte": 6
+      },
+      "excluded_rectangles": 6,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-OL-A66P-DX1_id-5ea40ab3ddda5f83989931f0_left-35213_top-23373_bottom-23662_right-35551",
+      "patient_id": "TCGA-OL-A66P",
+      "split": "test",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 469,
+      "height": 289,
+      "width": 338,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 1
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 1
+      },
+      "excluded_rectangles": 21,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-OL-A66P-DX1_id-5ea40ab3ddda5f83989931f0_left-36510_top-24634_bottom-24937_right-36803",
+      "patient_id": "TCGA-OL-A66P",
+      "split": "test",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 486,
+      "height": 303,
+      "width": 293,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 9,
+        "plasma_cell": 2,
+        "excluded_AMBIGUOUS": 3
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 9,
+        "plasma_cell": 2,
+        "unlabeled": 3
+      },
+      "excluded_rectangles": 15,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-OL-A66P-DX1_id-5ea40ab3ddda5f83989931f0_left-36783_top-24640_bottom-24937_right-37076",
+      "patient_id": "TCGA-OL-A66P",
+      "split": "test",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 488,
+      "height": 297,
+      "width": 293,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 3,
+        "excluded_AMBIGUOUS": 3,
+        "plasma_cell": 2,
+        "lymphocyte": 1
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 3,
+        "unlabeled": 3,
+        "plasma_cell": 2,
+        "lymphocyte": 1
+      },
+      "excluded_rectangles": 15,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-OL-A66P-DX1_id-5ea40ab3ddda5f83989931f0_left-37287_top-24913_bottom-25174_right-37580",
+      "patient_id": "TCGA-OL-A66P",
+      "split": "test",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 492,
+      "height": 261,
+      "width": 293,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_AMBIGUOUS": 8,
+        "macrophage": 9
+      },
+      "fine_raw_polyline_counts": {
+        "unlabeled": 8,
+        "macrophage": 9
+      },
+      "excluded_rectangles": 3,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-OL-A66P-DX1_id-5ea40ab3ddda5f83989931f0_left-37566_top-24886_bottom-25215_right-37834",
+      "patient_id": "TCGA-OL-A66P",
+      "split": "test",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 495,
+      "height": 329,
+      "width": 268,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 8,
+        "excluded_AMBIGUOUS": 3,
+        "excluded_nonTILnonMQ_stromal": 2
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 8,
+        "unlabeled": 3,
+        "fibroblast": 2
+      },
+      "excluded_rectangles": 10,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-OL-A6VO-DX1_id-5ea4099fddda5f839898232e_left-89127_top-192581_bottom-192866_right-89463",
+      "patient_id": "TCGA-OL-A6VO",
+      "split": "test",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 500,
+      "height": 285,
+      "width": 336,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_nonTILnonMQ_stromal": 1,
+        "lymphocyte": 11,
+        "plasma_cell": 2
+      },
+      "fine_raw_polyline_counts": {
+        "fibroblast": 1,
+        "lymphocyte": 11,
+        "plasma_cell": 2
+      },
+      "excluded_rectangles": 14,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-OL-A6VO-DX1_id-5ea4099fddda5f839898232e_left-89647_top-192837_bottom-193099_right-89965",
+      "patient_id": "TCGA-OL-A6VO",
+      "split": "test",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 502,
+      "height": 262,
+      "width": 318,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "lymphocyte": 6,
+        "plasma_cell": 2,
+        "excluded_AMBIGUOUS": 1,
+        "excluded_nonTILnonMQ_stromal": 1
+      },
+      "fine_raw_polyline_counts": {
+        "lymphocyte": 6,
+        "plasma_cell": 2,
+        "unlabeled": 1,
+        "fibroblast": 1
+      },
+      "excluded_rectangles": 10,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-OL-A6VO-DX1_id-5ea4099fddda5f839898232e_left-89666_top-192540_bottom-192837_right-89975",
+      "patient_id": "TCGA-OL-A6VO",
+      "split": "test",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 503,
+      "height": 297,
+      "width": 309,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 7,
+        "lymphocyte": 3,
+        "plasma_cell": 1
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 7,
+        "lymphocyte": 3,
+        "plasma_cell": 1
+      },
+      "excluded_rectangles": 14,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-OL-A6VO-DX1_id-5ea4099fddda5f839898232e_left-89932_top-192581_bottom-192858_right-90208",
+      "patient_id": "TCGA-OL-A6VO",
+      "split": "test",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 506,
+      "height": 277,
+      "width": 276,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 3,
+        "macrophage": 2,
+        "excluded_AMBIGUOUS": 1
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 3,
+        "macrophage": 2,
+        "unlabeled": 1
+      },
+      "excluded_rectangles": 8,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-OL-A6VO-DX1_id-5ea4099fddda5f839898232e_left-89940_top-190497_bottom-190810_right-90239",
+      "patient_id": "TCGA-OL-A6VO",
+      "split": "test",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 507,
+      "height": 313,
+      "width": 299,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 5,
+        "lymphocyte": 2
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 3,
+        "mitotic_figure": 2,
+        "lymphocyte": 2
+      },
+      "excluded_rectangles": 16,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-OL-A6VO-DX1_id-5ea4099fddda5f839898232e_left-90442_top-192043_bottom-192363_right-90757",
+      "patient_id": "TCGA-OL-A6VO",
+      "split": "test",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 509,
+      "height": 320,
+      "width": 315,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 3,
+        "tumor_epithelial": 6,
+        "excluded_AMBIGUOUS": 1,
+        "lymphocyte": 2
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 3,
+        "mitotic_figure": 3,
+        "unlabeled": 1,
+        "tumor": 3,
+        "lymphocyte": 2
+      },
+      "excluded_rectangles": 12,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-OL-A6VO-DX1_id-5ea4099fddda5f839898232e_left-90464_top-192829_bottom-193127_right-90720",
+      "patient_id": "TCGA-OL-A6VO",
+      "split": "test",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 512,
+      "height": 298,
+      "width": 256,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 1,
+        "plasma_cell": 4,
+        "lymphocyte": 3
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 1,
+        "plasma_cell": 4,
+        "lymphocyte": 3
+      },
+      "excluded_rectangles": 10,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-OL-A6VO-DX1_id-5ea4099fddda5f839898232e_left-90700_top-193332_bottom-193613_right-91003",
+      "patient_id": "TCGA-OL-A6VO",
+      "split": "test",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 515,
+      "height": 281,
+      "width": 303,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "plasma_cell": 6,
+        "lymphocyte": 8,
+        "excluded_other_nucleus": 2
+      },
+      "fine_raw_polyline_counts": {
+        "plasma_cell": 6,
+        "lymphocyte": 8,
+        "myoepithelium": 2
+      },
+      "excluded_rectangles": 15,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-OL-A6VO-DX1_id-5ea4099fddda5f839898232e_left-90720_top-191020_bottom-191324_right-90983",
+      "patient_id": "TCGA-OL-A6VO",
+      "split": "test",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 516,
+      "height": 304,
+      "width": 263,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 3,
+        "lymphocyte": 2,
+        "excluded_AMBIGUOUS": 2
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 3,
+        "lymphocyte": 2,
+        "unlabeled": 2
+      },
+      "excluded_rectangles": 6,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-OL-A6VO-DX1_id-5ea4099fddda5f839898232e_left-91744_top-189490_bottom-189765_right-92069",
+      "patient_id": "TCGA-OL-A6VO",
+      "split": "test",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 523,
+      "height": 275,
+      "width": 325,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_AMBIGUOUS": 4,
+        "macrophage": 1
+      },
+      "fine_raw_polyline_counts": {
+        "unlabeled": 4,
+        "macrophage": 1
+      },
+      "excluded_rectangles": 8,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-OL-A6VO-DX1_id-5ea4099fddda5f839898232e_left-91989_top-191531_bottom-191819_right-92262",
+      "patient_id": "TCGA-OL-A6VO",
+      "split": "test",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 527,
+      "height": 288,
+      "width": 273,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 1,
+        "lymphocyte": 7,
+        "excluded_nonTILnonMQ_stromal": 3
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 1,
+        "lymphocyte": 7,
+        "fibroblast": 3
+      },
+      "excluded_rectangles": 11,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-OL-A6VO-DX1_id-5ea4099fddda5f839898232e_left-92238_top-191535_bottom-191834_right-92529",
+      "patient_id": "TCGA-OL-A6VO",
+      "split": "test",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 528,
+      "height": 299,
+      "width": 291,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_AMBIGUOUS": 2,
+        "excluded_other_nucleus": 1,
+        "plasma_cell": 6,
+        "lymphocyte": 12
+      },
+      "fine_raw_polyline_counts": {
+        "unlabeled": 2,
+        "eosinophil": 1,
+        "plasma_cell": 6,
+        "lymphocyte": 12
+      },
+      "excluded_rectangles": 12,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-OL-A6VO-DX1_id-5ea4099fddda5f839898232e_left-92494_top-191274_bottom-191573_right-92786",
+      "patient_id": "TCGA-OL-A6VO",
+      "split": "test",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 531,
+      "height": 299,
+      "width": 292,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "lymphocyte": 13,
+        "plasma_cell": 2
+      },
+      "fine_raw_polyline_counts": {
+        "lymphocyte": 13,
+        "plasma_cell": 2
+      },
+      "excluded_rectangles": 11,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-OL-A6VO-DX1_id-5ea4099fddda5f839898232e_left-92720_top-189758_bottom-190032_right-93037",
+      "patient_id": "TCGA-OL-A6VO",
+      "split": "test",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 532,
+      "height": 274,
+      "width": 317,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 5,
+        "macrophage": 1,
+        "excluded_nonTILnonMQ_stromal": 1,
+        "lymphocyte": 1
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 4,
+        "macrophage": 1,
+        "mitotic_figure": 1,
+        "fibroblast": 1,
+        "lymphocyte": 1
+      },
+      "excluded_rectangles": 14,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-OL-A6VO-DX1_id-5ea4099fddda5f839898232e_left-92756_top-191034_bottom-191327_right-93047",
+      "patient_id": "TCGA-OL-A6VO",
+      "split": "test",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 534,
+      "height": 293,
+      "width": 291,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "lymphocyte": 6,
+        "macrophage": 1
+      },
+      "fine_raw_polyline_counts": {
+        "lymphocyte": 6,
+        "macrophage": 1
+      },
+      "excluded_rectangles": 19,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-OL-A6VO-DX1_id-5ea4099fddda5f839898232e_left-92967_top-190477_bottom-190789_right-93280",
+      "patient_id": "TCGA-OL-A6VO",
+      "split": "test",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 535,
+      "height": 312,
+      "width": 313,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_nonTILnonMQ_stromal": 3,
+        "macrophage": 1,
+        "lymphocyte": 13
+      },
+      "fine_raw_polyline_counts": {
+        "fibroblast": 3,
+        "macrophage": 1,
+        "lymphocyte": 13
+      },
+      "excluded_rectangles": 5,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-OL-A6VO-DX1_id-5ea4099fddda5f839898232e_left-93006_top-189993_bottom-190294_right-93306",
+      "patient_id": "TCGA-OL-A6VO",
+      "split": "test",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 536,
+      "height": 301,
+      "width": 300,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_nonTILnonMQ_stromal": 1,
+        "macrophage": 3,
+        "excluded_AMBIGUOUS": 1,
+        "lymphocyte": 6
+      },
+      "fine_raw_polyline_counts": {
+        "fibroblast": 1,
+        "macrophage": 3,
+        "unlabeled": 1,
+        "lymphocyte": 6
+      },
+      "excluded_rectangles": 8,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-OL-A6VO-DX1_id-5ea4099fddda5f839898232e_left-93276_top-190253_bottom-190542_right-93544",
+      "patient_id": "TCGA-OL-A6VO",
+      "split": "test",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 537,
+      "height": 289,
+      "width": 268,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 4,
+        "lymphocyte": 3,
+        "plasma_cell": 1
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 4,
+        "lymphocyte": 3,
+        "plasma_cell": 1
+      },
+      "excluded_rectangles": 10,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-A2-A04T-DX1_id-5ea40961ddda5f8398979057_left-73665_top-40353_bottom-40624_right-73954",
+      "patient_id": "TCGA-A2-A04T",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 39,
+      "height": 339,
+      "width": 361,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 2,
+        "excluded_nonTILnonMQ_stromal": 2,
+        "lymphocyte": 3
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 2,
+        "fibroblast": 2,
+        "lymphocyte": 3
+      },
+      "excluded_rectangles": 14,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-A2-A04T-DX1_id-5ea40961ddda5f8398979057_left-73680_top-39835_bottom-40101_right-73937",
+      "patient_id": "TCGA-A2-A04T",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 40,
+      "height": 333,
+      "width": 321,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_nonTILnonMQ_stromal": 3,
+        "macrophage": 1,
+        "lymphocyte": 1
+      },
+      "fine_raw_polyline_counts": {
+        "fibroblast": 3,
+        "macrophage": 1,
+        "lymphocyte": 1
+      },
+      "excluded_rectangles": 10,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-A2-A0CM-DX1_id-5ea40963ddda5f8398979473_left-20097_top-57088_bottom-57366_right-20364",
+      "patient_id": "TCGA-A2-A0CM",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 58,
+      "height": 345,
+      "width": 331,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_nonTILnonMQ_stromal": 6,
+        "excluded_AMBIGUOUS": 3,
+        "lymphocyte": 4,
+        "macrophage": 1
+      },
+      "fine_raw_polyline_counts": {
+        "fibroblast": 6,
+        "unlabeled": 3,
+        "lymphocyte": 4,
+        "macrophage": 1
+      },
+      "excluded_rectangles": 14,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-A2-A0D0-DX1_id-5ea40b17ddda5f839899849a_left-72833_top-42910_bottom-43170_right-73094",
+      "patient_id": "TCGA-A2-A0D0",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 67,
+      "height": 323,
+      "width": 323,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_nonTILnonMQ_stromal": 1,
+        "macrophage": 2
+      },
+      "fine_raw_polyline_counts": {
+        "fibroblast": 1,
+        "macrophage": 2
+      },
+      "excluded_rectangles": 21,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-A2-A0D0-DX1_id-5ea40b17ddda5f839899849a_left-73583_top-44429_bottom-44711_right-73870",
+      "patient_id": "TCGA-A2-A0D0",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 68,
+      "height": 349,
+      "width": 356,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "lymphocyte": 21,
+        "excluded_nonTILnonMQ_stromal": 1,
+        "macrophage": 5
+      },
+      "fine_raw_polyline_counts": {
+        "lymphocyte": 21,
+        "fibroblast": 1,
+        "macrophage": 5
+      },
+      "excluded_rectangles": 39,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-A2-A0ST-DX1_id-5ea40aedddda5f83989960e1_left-109938_top-21322_bottom-21618_right-110226",
+      "patient_id": "TCGA-A2-A0ST",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 89,
+      "height": 366,
+      "width": 356,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 30,
+        "plasma_cell": 1,
+        "lymphocyte": 8,
+        "excluded_nonTILnonMQ_stromal": 1
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 30,
+        "plasma_cell": 1,
+        "lymphocyte": 8,
+        "fibroblast": 1
+      },
+      "excluded_rectangles": 20,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-A2-A0SX-DX1_id-5ea40b05ddda5f839899743b_left-54250_top-61025_bottom-61306_right-54568",
+      "patient_id": "TCGA-A2-A0SX",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 93,
+      "height": 348,
+      "width": 394,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_nonTILnonMQ_stromal": 5,
+        "macrophage": 3,
+        "tumor_epithelial": 1,
+        "lymphocyte": 2,
+        "excluded_AMBIGUOUS": 1
+      },
+      "fine_raw_polyline_counts": {
+        "fibroblast": 5,
+        "macrophage": 3,
+        "tumor": 1,
+        "lymphocyte": 2,
+        "unlabeled": 1
+      },
+      "excluded_rectangles": 43,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-A2-A0SX-DX1_id-5ea40b05ddda5f839899743b_left-55056_top-59480_bottom-59784_right-55352",
+      "patient_id": "TCGA-A2-A0SX",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 104,
+      "height": 376,
+      "width": 366,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 4,
+        "macrophage": 5,
+        "excluded_nonTILnonMQ_stromal": 3,
+        "lymphocyte": 10
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 3,
+        "macrophage": 5,
+        "fibroblast": 3,
+        "mitotic_figure": 1,
+        "lymphocyte": 10
+      },
+      "excluded_rectangles": 12,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-A2-A0SX-DX1_id-5ea40b05ddda5f839899743b_left-55303_top-60751_bottom-61071_right-55613",
+      "patient_id": "TCGA-A2-A0SX",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 105,
+      "height": 396,
+      "width": 384,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 1,
+        "excluded_AMBIGUOUS": 1,
+        "lymphocyte": 3
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 1,
+        "unlabeled": 1,
+        "lymphocyte": 3
+      },
+      "excluded_rectangles": 29,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-A2-A0SX-DX1_id-5ea40b05ddda5f839899743b_left-55825_top-57448_bottom-57731_right-56096",
+      "patient_id": "TCGA-A2-A0SX",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 114,
+      "height": 350,
+      "width": 335,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 3,
+        "excluded_AMBIGUOUS": 2,
+        "lymphocyte": 4,
+        "plasma_cell": 1,
+        "excluded_nonTILnonMQ_stromal": 4
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 3,
+        "unlabeled": 2,
+        "lymphocyte": 4,
+        "plasma_cell": 1,
+        "fibroblast": 4
+      },
+      "excluded_rectangles": 20,
+      "excluded_points": 2,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-A2-A0SX-DX1_id-5ea40b05ddda5f839899743b_left-56076_top-59738_bottom-60014_right-56355",
+      "patient_id": "TCGA-A2-A0SX",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 116,
+      "height": 342,
+      "width": 345,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_nonTILnonMQ_stromal": 3,
+        "macrophage": 4,
+        "lymphocyte": 11
+      },
+      "fine_raw_polyline_counts": {
+        "fibroblast": 3,
+        "macrophage": 4,
+        "lymphocyte": 11
+      },
+      "excluded_rectangles": 32,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-A2-A0SX-DX1_id-5ea40b05ddda5f839899743b_left-56081_top-57443_bottom-57731_right-56368",
+      "patient_id": "TCGA-A2-A0SX",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 119,
+      "height": 356,
+      "width": 355,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "plasma_cell": 2,
+        "macrophage": 1,
+        "lymphocyte": 10
+      },
+      "fine_raw_polyline_counts": {
+        "plasma_cell": 2,
+        "macrophage": 1,
+        "lymphocyte": 10
+      },
+      "excluded_rectangles": 45,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-A2-A0SX-DX1_id-5ea40b05ddda5f839899743b_left-56297_top-58968_bottom-59253_right-56614",
+      "patient_id": "TCGA-A2-A0SX",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 120,
+      "height": 353,
+      "width": 393,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_nonTILnonMQ_stromal": 2,
+        "excluded_AMBIGUOUS": 1,
+        "macrophage": 3,
+        "lymphocyte": 37
+      },
+      "fine_raw_polyline_counts": {
+        "fibroblast": 2,
+        "unlabeled": 1,
+        "macrophage": 3,
+        "lymphocyte": 37
+      },
+      "excluded_rectangles": 51,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-A2-A0T0-DX1_id-5ea40989ddda5f839897f293_left-75412_top-60225_bottom-60498_right-75682",
+      "patient_id": "TCGA-A2-A0T0",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 135,
+      "height": 338,
+      "width": 334,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 3,
+        "lymphocyte": 1,
+        "excluded_AMBIGUOUS": 1
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 3,
+        "lymphocyte": 1,
+        "unlabeled": 1
+      },
+      "excluded_rectangles": 15,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-A2-A0T0-DX1_id-5ea40989ddda5f839897f293_left-76950_top-61480_bottom-61778_right-77225",
+      "patient_id": "TCGA-A2-A0T0",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 150,
+      "height": 369,
+      "width": 340,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 15,
+        "lymphocyte": 2,
+        "excluded_nonTILnonMQ_stromal": 1,
+        "excluded_AMBIGUOUS": 2
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 15,
+        "lymphocyte": 2,
+        "fibroblast": 1,
+        "unlabeled": 2
+      },
+      "excluded_rectangles": 17,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-A2-A0T2-DX1_id-5ea40a2cddda5f839898b7e9_left-64565_top-59528_bottom-59842_right-64857",
+      "patient_id": "TCGA-A2-A0T2",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 156,
+      "height": 389,
+      "width": 362,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "lymphocyte": 44,
+        "tumor_epithelial": 1,
+        "excluded_other_nucleus": 2
+      },
+      "fine_raw_polyline_counts": {
+        "lymphocyte": 44,
+        "tumor": 1,
+        "ductal_epithelium": 2
+      },
+      "excluded_rectangles": 13,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-A2-A0YE-DX1_id-5ea40a24ddda5f839898afb8_left-60720_top-36064_bottom-36349_right-61027",
+      "patient_id": "TCGA-A2-A0YE",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 169,
+      "height": 356,
+      "width": 383,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 9,
+        "excluded_nonTILnonMQ_stromal": 1,
+        "lymphocyte": 1
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 9,
+        "fibroblast": 1,
+        "lymphocyte": 1
+      },
+      "excluded_rectangles": 17,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-A2-A0YE-DX1_id-5ea40a24ddda5f839898afb8_left-61758_top-36811_bottom-37110_right-62025",
+      "patient_id": "TCGA-A2-A0YE",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 180,
+      "height": 374,
+      "width": 334,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 1,
+        "excluded_nonTILnonMQ_stromal": 15,
+        "plasma_cell": 4,
+        "lymphocyte": 5
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 1,
+        "fibroblast": 15,
+        "plasma_cell": 4,
+        "lymphocyte": 5
+      },
+      "excluded_rectangles": 35,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-A2-A0YE-DX1_id-5ea40a24ddda5f839898afb8_left-62765_top-36052_bottom-36321_right-63060",
+      "patient_id": "TCGA-A2-A0YE",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 193,
+      "height": 336,
+      "width": 369,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 6,
+        "plasma_cell": 23
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 6,
+        "plasma_cell": 23
+      },
+      "excluded_rectangles": 47,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-A2-A0YM-DX1_id-5ea40969ddda5f839897a3ea_left-48865_top-68934_bottom-69240_right-49200",
+      "patient_id": "TCGA-A2-A0YM",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 201,
+      "height": 382,
+      "width": 419,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_nonTILnonMQ_stromal": 6,
+        "tumor_epithelial": 3,
+        "lymphocyte": 1
+      },
+      "fine_raw_polyline_counts": {
+        "fibroblast": 6,
+        "tumor": 3,
+        "lymphocyte": 1
+      },
+      "excluded_rectangles": 41,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-A2-A1G6-DX1_id-5ea409adddda5f839898410a_left-57935_top-69751_bottom-70051_right-58236",
+      "patient_id": "TCGA-A2-A1G6",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 218,
+      "height": 372,
+      "width": 373,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 2,
+        "macrophage": 6,
+        "lymphocyte": 22
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 1,
+        "mitotic_figure": 1,
+        "macrophage": 6,
+        "lymphocyte": 22
+      },
+      "excluded_rectangles": 26,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-A2-A1G6-DX1_id-5ea409adddda5f839898410a_left-57945_top-70262_bottom-70551_right-58232",
+      "patient_id": "TCGA-A2-A1G6",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 219,
+      "height": 359,
+      "width": 356,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "lymphocyte": 15,
+        "macrophage": 32,
+        "excluded_AMBIGUOUS": 1
+      },
+      "fine_raw_polyline_counts": {
+        "lymphocyte": 15,
+        "macrophage": 32,
+        "unlabeled": 1
+      },
+      "excluded_rectangles": 22,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-A2-A1G6-DX1_id-5ea409adddda5f839898410a_left-58193_top-71277_bottom-71582_right-58491",
+      "patient_id": "TCGA-A2-A1G6",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 220,
+      "height": 378,
+      "width": 369,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 8,
+        "lymphocyte": 34,
+        "excluded_AMBIGUOUS": 1,
+        "excluded_nonTILnonMQ_stromal": 1
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 8,
+        "lymphocyte": 34,
+        "unlabeled": 1,
+        "fibroblast": 1
+      },
+      "excluded_rectangles": 20,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-A2-A3XS-DX1_id-5ea4096dddda5f839897afad_left-21663_top-37707_bottom-38010_right-21932",
+      "patient_id": "TCGA-A2-A3XS",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 230,
+      "height": 371,
+      "width": 330,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_AMBIGUOUS": 1,
+        "plasma_cell": 7,
+        "excluded_nonTILnonMQ_stromal": 3,
+        "tumor_epithelial": 1
+      },
+      "fine_raw_polyline_counts": {
+        "unlabeled": 1,
+        "plasma_cell": 7,
+        "fibroblast": 3,
+        "tumor": 1
+      },
+      "excluded_rectangles": 12,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-A2-A3XT-DX1_id-5ea409a1ddda5f839898268e_left-88412_top-32477_bottom-32760_right-88696",
+      "patient_id": "TCGA-A2-A3XT",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 290,
+      "height": 347,
+      "width": 348,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_other_nucleus": 4,
+        "plasma_cell": 8,
+        "excluded_AMBIGUOUS": 3,
+        "lymphocyte": 5
+      },
+      "fine_raw_polyline_counts": {
+        "myoepithelium": 1,
+        "ductal_epithelium": 3,
+        "plasma_cell": 8,
+        "unlabeled": 3,
+        "lymphocyte": 5
+      },
+      "excluded_rectangles": 27,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-A2-A3XT-DX1_id-5ea409a1ddda5f839898268e_left-88926_top-32226_bottom-32515_right-89207",
+      "patient_id": "TCGA-A2-A3XT",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 293,
+      "height": 354,
+      "width": 344,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "lymphocyte": 12,
+        "plasma_cell": 17,
+        "excluded_AMBIGUOUS": 3
+      },
+      "fine_raw_polyline_counts": {
+        "lymphocyte": 12,
+        "plasma_cell": 17,
+        "unlabeled": 3
+      },
+      "excluded_rectangles": 12,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-A2-A3XX-DX1_id-5ea40a53ddda5f839898dd0a_left-70687_top-42327_bottom-42606_right-70971",
+      "patient_id": "TCGA-A2-A3XX",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 314,
+      "height": 342,
+      "width": 348,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 5,
+        "excluded_nonTILnonMQ_stromal": 1,
+        "plasma_cell": 3
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 5,
+        "fibroblast": 1,
+        "plasma_cell": 3
+      },
+      "excluded_rectangles": 17,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-A2-A3XX-DX1_id-5ea40a53ddda5f839898dd0a_left-70698_top-42579_bottom-42875_right-70967",
+      "patient_id": "TCGA-A2-A3XX",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 316,
+      "height": 362,
+      "width": 330,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 6,
+        "lymphocyte": 2
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 6,
+        "lymphocyte": 2
+      },
+      "excluded_rectangles": 20,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-A7-A0CE-DX1_id-5ea409d9ddda5f8398987058_left-58948_top-19236_bottom-19533_right-59249",
+      "patient_id": "TCGA-A7-A0CE",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 359,
+      "height": 365,
+      "width": 370,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 3,
+        "plasma_cell": 6,
+        "lymphocyte": 18
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 3,
+        "plasma_cell": 6,
+        "lymphocyte": 18
+      },
+      "excluded_rectangles": 24,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-A7-A0CE-DX1_id-5ea409d9ddda5f8398987058_left-58964_top-19510_bottom-19790_right-59228",
+      "patient_id": "TCGA-A7-A0CE",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 360,
+      "height": 344,
+      "width": 325,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "plasma_cell": 2,
+        "lymphocyte": 19,
+        "excluded_nonTILnonMQ_stromal": 2
+      },
+      "fine_raw_polyline_counts": {
+        "plasma_cell": 2,
+        "lymphocyte": 19,
+        "fibroblast": 2
+      },
+      "excluded_rectangles": 14,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-A7-A0CE-DX1_id-5ea409d9ddda5f8398987058_left-60233_top-20012_bottom-20321_right-60526",
+      "patient_id": "TCGA-A7-A0CE",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 365,
+      "height": 380,
+      "width": 360,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_nonTILnonMQ_stromal": 4,
+        "macrophage": 3,
+        "lymphocyte": 7,
+        "excluded_AMBIGUOUS": 1
+      },
+      "fine_raw_polyline_counts": {
+        "fibroblast": 4,
+        "macrophage": 3,
+        "lymphocyte": 7,
+        "unlabeled": 1
+      },
+      "excluded_rectangles": 22,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-A7-A0CE-DX1_id-5ea409d9ddda5f8398987058_left-60237_top-21538_bottom-21831_right-60528",
+      "patient_id": "TCGA-A7-A0CE",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 366,
+      "height": 361,
+      "width": 358,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 15,
+        "lymphocyte": 8,
+        "excluded_AMBIGUOUS": 2
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 15,
+        "lymphocyte": 8,
+        "unlabeled": 2
+      },
+      "excluded_rectangles": 17,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-A7-A0CE-DX1_id-5ea409d9ddda5f8398987058_left-60494_top-21294_bottom-21602_right-60776",
+      "patient_id": "TCGA-A7-A0CE",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 367,
+      "height": 378,
+      "width": 347,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_nonTILnonMQ_stromal": 1,
+        "macrophage": 12,
+        "plasma_cell": 5,
+        "lymphocyte": 8
+      },
+      "fine_raw_polyline_counts": {
+        "fibroblast": 1,
+        "macrophage": 12,
+        "plasma_cell": 5,
+        "lymphocyte": 8
+      },
+      "excluded_rectangles": 17,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-A7-A0CE-DX1_id-5ea409d9ddda5f8398987058_left-60739_top-20024_bottom-20324_right-61033",
+      "patient_id": "TCGA-A7-A0CE",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 368,
+      "height": 369,
+      "width": 361,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 8,
+        "lymphocyte": 9
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 8,
+        "lymphocyte": 9
+      },
+      "excluded_rectangles": 23,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-A7-A0CE-DX1_id-5ea409d9ddda5f8398987058_left-60758_top-21282_bottom-21576_right-61042",
+      "patient_id": "TCGA-A7-A0CE",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 369,
+      "height": 362,
+      "width": 349,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 12,
+        "lymphocyte": 7
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 12,
+        "lymphocyte": 7
+      },
+      "excluded_rectangles": 17,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-A7-A0CE-DX1_id-5ea409d9ddda5f8398987058_left-60971_top-21553_bottom-21854_right-61313",
+      "patient_id": "TCGA-A7-A0CE",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 371,
+      "height": 370,
+      "width": 421,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 8,
+        "lymphocyte": 2
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 8,
+        "lymphocyte": 2
+      },
+      "excluded_rectangles": 18,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-A7-A0CE-DX1_id-5ea409d9ddda5f8398987058_left-61014_top-20778_bottom-21054_right-61287",
+      "patient_id": "TCGA-A7-A0CE",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 372,
+      "height": 339,
+      "width": 336,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 7,
+        "macrophage": 2
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 7,
+        "macrophage": 2
+      },
+      "excluded_rectangles": 12,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-A7-A26I-DX1_id-5ea40a12ddda5f839898a0ef_left-10681_top-26138_bottom-26436_right-10971",
+      "patient_id": "TCGA-A7-A26I",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 392,
+      "height": 369,
+      "width": 359,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 2,
+        "macrophage": 12,
+        "lymphocyte": 4,
+        "excluded_nonTILnonMQ_stromal": 3
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 2,
+        "macrophage": 12,
+        "lymphocyte": 4,
+        "fibroblast": 3
+      },
+      "excluded_rectangles": 14,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-A7-A26I-DX1_id-5ea40a12ddda5f839898a0ef_left-9938_top-25898_bottom-26193_right-10213",
+      "patient_id": "TCGA-A7-A26I",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 418,
+      "height": 365,
+      "width": 340,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 1,
+        "lymphocyte": 38
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 1,
+        "lymphocyte": 38
+      },
+      "excluded_rectangles": 26,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-A7-A4SD-DX1_id-5ea40b0dddda5f8398997bf0_left-55570_top-12876_bottom-13187_right-55879",
+      "patient_id": "TCGA-A7-A4SD",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 423,
+      "height": 383,
+      "width": 381,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 11,
+        "excluded_AMBIGUOUS": 1,
+        "lymphocyte": 1
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 8,
+        "mitotic_figure": 3,
+        "apoptotic_body": 1,
+        "lymphocyte": 1
+      },
+      "excluded_rectangles": 24,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-A7-A6VV-DX1_id-5ea40ac8ddda5f8398994163_left-49686_top-37695_bottom-37986_right-49980",
+      "patient_id": "TCGA-A7-A6VV",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 440,
+      "height": 359,
+      "width": 362,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_nonTILnonMQ_stromal": 10,
+        "tumor_epithelial": 3,
+        "plasma_cell": 1,
+        "excluded_AMBIGUOUS": 2
+      },
+      "fine_raw_polyline_counts": {
+        "fibroblast": 10,
+        "tumor": 3,
+        "plasma_cell": 1,
+        "unlabeled": 2
+      },
+      "excluded_rectangles": 9,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-A7-A6VV-DX1_id-5ea40ac8ddda5f8398994163_left-52001_top-38496_bottom-38759_right-52271",
+      "patient_id": "TCGA-A7-A6VV",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 466,
+      "height": 324,
+      "width": 332,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_nonTILnonMQ_stromal": 6,
+        "plasma_cell": 3,
+        "lymphocyte": 4,
+        "excluded_AMBIGUOUS": 1
+      },
+      "fine_raw_polyline_counts": {
+        "fibroblast": 6,
+        "plasma_cell": 3,
+        "lymphocyte": 4,
+        "unlabeled": 1
+      },
+      "excluded_rectangles": 7,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-A7-A6VV-DX1_id-5ea40ac8ddda5f8398994163_left-53520_top-38474_bottom-38757_right-53809",
+      "patient_id": "TCGA-A7-A6VV",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 478,
+      "height": 349,
+      "width": 356,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_nonTILnonMQ_stromal": 12,
+        "macrophage": 1,
+        "plasma_cell": 4,
+        "lymphocyte": 1,
+        "excluded_AMBIGUOUS": 2
+      },
+      "fine_raw_polyline_counts": {
+        "fibroblast": 12,
+        "macrophage": 1,
+        "plasma_cell": 4,
+        "lymphocyte": 1,
+        "unlabeled": 2
+      },
+      "excluded_rectangles": 8,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-AN-A0AR-DX1_id-5ea40994ddda5f8398980909_left-10755_top-21653_bottom-21964_right-11043",
+      "patient_id": "TCGA-AN-A0AR",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 520,
+      "height": 385,
+      "width": 357,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 2,
+        "macrophage": 3,
+        "excluded_AMBIGUOUS": 5,
+        "lymphocyte": 8
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 2,
+        "macrophage": 3,
+        "unlabeled": 5,
+        "lymphocyte": 8
+      },
+      "excluded_rectangles": 31,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-AN-A0AR-DX1_id-5ea40994ddda5f8398980909_left-11017_top-21658_bottom-21943_right-11284",
+      "patient_id": "TCGA-AN-A0AR",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 521,
+      "height": 353,
+      "width": 330,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 6,
+        "macrophage": 2,
+        "lymphocyte": 12,
+        "excluded_AMBIGUOUS": 1
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 6,
+        "macrophage": 2,
+        "lymphocyte": 12,
+        "unlabeled": 1
+      },
+      "excluded_rectangles": 35,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-AN-A0AT-DX1_id-5ea40a18ddda5f839898a4f0_left-31677_top-35988_bottom-36290_right-31964",
+      "patient_id": "TCGA-AN-A0AT",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 534,
+      "height": 374,
+      "width": 355,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 4,
+        "excluded_AMBIGUOUS": 1,
+        "lymphocyte": 1
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 4,
+        "unlabeled": 1,
+        "lymphocyte": 1
+      },
+      "excluded_rectangles": 30,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-AN-A0AT-DX1_id-5ea40a18ddda5f839898a4f0_left-31919_top-39067_bottom-39365_right-32210",
+      "patient_id": "TCGA-AN-A0AT",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 536,
+      "height": 369,
+      "width": 360,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_nonTILnonMQ_stromal": 1,
+        "macrophage": 4,
+        "lymphocyte": 18,
+        "excluded_AMBIGUOUS": 4,
+        "plasma_cell": 1
+      },
+      "fine_raw_polyline_counts": {
+        "fibroblast": 1,
+        "macrophage": 4,
+        "lymphocyte": 18,
+        "unlabeled": 4,
+        "plasma_cell": 1
+      },
+      "excluded_rectangles": 49,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-AN-A0AT-DX1_id-5ea40a18ddda5f839898a4f0_left-32175_top-38313_bottom-38589_right-32475",
+      "patient_id": "TCGA-AN-A0AT",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 540,
+      "height": 342,
+      "width": 371,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_nonTILnonMQ_stromal": 1,
+        "excluded_AMBIGUOUS": 2,
+        "lymphocyte": 24,
+        "plasma_cell": 1
+      },
+      "fine_raw_polyline_counts": {
+        "fibroblast": 1,
+        "unlabeled": 2,
+        "lymphocyte": 24,
+        "plasma_cell": 1
+      },
+      "excluded_rectangles": 49,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-AN-A0AT-DX1_id-5ea40a18ddda5f839898a4f0_left-32175_top-38811_bottom-39100_right-32460",
+      "patient_id": "TCGA-AN-A0AT",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 541,
+      "height": 358,
+      "width": 353,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 1,
+        "lymphocyte": 56,
+        "excluded_AMBIGUOUS": 1
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 1,
+        "lymphocyte": 56,
+        "unlabeled": 1
+      },
+      "excluded_rectangles": 43,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-AN-A0AT-DX1_id-5ea40a18ddda5f839898a4f0_left-32177_top-35982_bottom-36276_right-32480",
+      "patient_id": "TCGA-AN-A0AT",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 542,
+      "height": 364,
+      "width": 375,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 3,
+        "excluded_AMBIGUOUS": 4,
+        "lymphocyte": 2
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 3,
+        "unlabeled": 4,
+        "lymphocyte": 2
+      },
+      "excluded_rectangles": 32,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-AN-A0G0-DX1_id-5ea409a4ddda5f8398982bfa_left-36815_top-15021_bottom-15340_right-37103",
+      "patient_id": "TCGA-AN-A0G0",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 575,
+      "height": 395,
+      "width": 357,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 3,
+        "plasma_cell": 1,
+        "lymphocyte": 1,
+        "excluded_AMBIGUOUS": 1
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 3,
+        "plasma_cell": 1,
+        "lymphocyte": 1,
+        "unlabeled": 1
+      },
+      "excluded_rectangles": 24,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-AN-A0XU-DX1_id-5ea40b25ddda5f83989991fd_left-26629_top-21492_bottom-21774_right-26898",
+      "patient_id": "TCGA-AN-A0XU",
+      "split": "train",
+      "source_shard": "train-00000-of-00003.parquet",
+      "source_row": 580,
+      "height": 356,
+      "width": 339,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_nonTILnonMQ_stromal": 6,
+        "macrophage": 1,
+        "lymphocyte": 24,
+        "plasma_cell": 2
+      },
+      "fine_raw_polyline_counts": {
+        "fibroblast": 6,
+        "macrophage": 1,
+        "lymphocyte": 24,
+        "plasma_cell": 2
+      },
+      "excluded_rectangles": 41,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-AN-A0XU-DX1_id-5ea40b25ddda5f83989991fd_left-30703_top-21491_bottom-21777_right-30992",
+      "patient_id": "TCGA-AN-A0XU",
+      "split": "train",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 19,
+      "height": 361,
+      "width": 364,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_AMBIGUOUS": 2,
+        "excluded_nonTILnonMQ_stromal": 2,
+        "plasma_cell": 7,
+        "lymphocyte": 12
+      },
+      "fine_raw_polyline_counts": {
+        "unlabeled": 2,
+        "fibroblast": 2,
+        "plasma_cell": 7,
+        "lymphocyte": 12
+      },
+      "excluded_rectangles": 36,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-AN-A0XU-DX1_id-5ea40b25ddda5f83989991fd_left-30713_top-22015_bottom-22291_right-30993",
+      "patient_id": "TCGA-AN-A0XU",
+      "split": "train",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 20,
+      "height": 348,
+      "width": 353,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 8,
+        "lymphocyte": 15
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 8,
+        "lymphocyte": 15
+      },
+      "excluded_rectangles": 40,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-AN-A0XU-DX1_id-5ea40b25ddda5f83989991fd_left-30970_top-21742_bottom-22036_right-31243",
+      "patient_id": "TCGA-AN-A0XU",
+      "split": "train",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 22,
+      "height": 371,
+      "width": 344,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_nonTILnonMQ_stromal": 2,
+        "tumor_epithelial": 2,
+        "macrophage": 1,
+        "lymphocyte": 17,
+        "plasma_cell": 5
+      },
+      "fine_raw_polyline_counts": {
+        "fibroblast": 2,
+        "tumor": 2,
+        "macrophage": 1,
+        "lymphocyte": 17,
+        "plasma_cell": 5
+      },
+      "excluded_rectangles": 28,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-AQ-A04J-DX1_id-5ea40996ddda5f8398980f76_left-65889_top-14596_bottom-14939_right-66186",
+      "patient_id": "TCGA-AQ-A04J",
+      "split": "train",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 81,
+      "height": 424,
+      "width": 368,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 8,
+        "excluded_nonTILnonMQ_stromal": 4,
+        "lymphocyte": 1,
+        "macrophage": 1
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 8,
+        "fibroblast": 4,
+        "lymphocyte": 1,
+        "macrophage": 1
+      },
+      "excluded_rectangles": 27,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-AQ-A54N-DX1_id-5ea40a47ddda5f839898d34a_left-34950_top-26780_bottom-27096_right-35285",
+      "patient_id": "TCGA-AQ-A54N",
+      "split": "train",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 93,
+      "height": 390,
+      "width": 413,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "lymphocyte": 9,
+        "excluded_nonTILnonMQ_stromal": 2,
+        "plasma_cell": 1
+      },
+      "fine_raw_polyline_counts": {
+        "lymphocyte": 9,
+        "fibroblast": 2,
+        "plasma_cell": 1
+      },
+      "excluded_rectangles": 34,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-AR-A0TS-DX1_id-5ea40971ddda5f839897b6f4_left-119083_top-23568_bottom-23852_right-119361",
+      "patient_id": "TCGA-AR-A0TS",
+      "split": "train",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 97,
+      "height": 350,
+      "width": 343,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 2,
+        "excluded_nonTILnonMQ_stromal": 2,
+        "excluded_AMBIGUOUS": 6,
+        "lymphocyte": 13
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 2,
+        "vascular_endothelium": 1,
+        "unlabeled": 6,
+        "fibroblast": 1,
+        "lymphocyte": 13
+      },
+      "excluded_rectangles": 27,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-AR-A0TS-DX1_id-5ea40971ddda5f839897b6f4_left-119598_top-24850_bottom-25130_right-119879",
+      "patient_id": "TCGA-AR-A0TS",
+      "split": "train",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 104,
+      "height": 344,
+      "width": 346,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_nonTILnonMQ_stromal": 2,
+        "macrophage": 1,
+        "lymphocyte": 34,
+        "plasma_cell": 1
+      },
+      "fine_raw_polyline_counts": {
+        "fibroblast": 2,
+        "macrophage": 1,
+        "lymphocyte": 34,
+        "plasma_cell": 1
+      },
+      "excluded_rectangles": 43,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-AR-A0TS-DX1_id-5ea40971ddda5f839897b6f4_left-120882_top-23304_bottom-23587_right-121160",
+      "patient_id": "TCGA-AR-A0TS",
+      "split": "train",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 109,
+      "height": 348,
+      "width": 343,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_AMBIGUOUS": 7,
+        "tumor_epithelial": 2,
+        "excluded_nonTILnonMQ_stromal": 2,
+        "plasma_cell": 3,
+        "lymphocyte": 14,
+        "macrophage": 1
+      },
+      "fine_raw_polyline_counts": {
+        "unlabeled": 7,
+        "tumor": 2,
+        "fibroblast": 2,
+        "plasma_cell": 3,
+        "lymphocyte": 14,
+        "macrophage": 1
+      },
+      "excluded_rectangles": 17,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-AR-A0TS-DX1_id-5ea40971ddda5f839897b6f4_left-121133_top-23823_bottom-24108_right-121424",
+      "patient_id": "TCGA-AR-A0TS",
+      "split": "train",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 111,
+      "height": 351,
+      "width": 358,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_nonTILnonMQ_stromal": 3,
+        "excluded_AMBIGUOUS": 8,
+        "macrophage": 2,
+        "plasma_cell": 3,
+        "lymphocyte": 7
+      },
+      "fine_raw_polyline_counts": {
+        "fibroblast": 3,
+        "unlabeled": 8,
+        "macrophage": 2,
+        "plasma_cell": 3,
+        "lymphocyte": 7
+      },
+      "excluded_rectangles": 19,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-AR-A0TS-DX1_id-5ea40971ddda5f839897b6f4_left-124193_top-24082_bottom-24366_right-124485",
+      "patient_id": "TCGA-AR-A0TS",
+      "split": "train",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 129,
+      "height": 350,
+      "width": 360,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 1,
+        "excluded_nonTILnonMQ_stromal": 6,
+        "lymphocyte": 26,
+        "excluded_AMBIGUOUS": 2
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 1,
+        "fibroblast": 6,
+        "lymphocyte": 26,
+        "unlabeled": 2
+      },
+      "excluded_rectangles": 23,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-AR-A0TS-DX1_id-5ea40971ddda5f839897b6f4_left-124462_top-24317_bottom-24640_right-124749",
+      "patient_id": "TCGA-AR-A0TS",
+      "split": "train",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 131,
+      "height": 398,
+      "width": 353,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_AMBIGUOUS": 5,
+        "lymphocyte": 31,
+        "excluded_nonTILnonMQ_stromal": 2,
+        "macrophage": 1,
+        "plasma_cell": 2
+      },
+      "fine_raw_polyline_counts": {
+        "unlabeled": 5,
+        "lymphocyte": 31,
+        "fibroblast": 2,
+        "macrophage": 1,
+        "plasma_cell": 2
+      },
+      "excluded_rectangles": 39,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-AR-A0U1-DX1_id-5ea40987ddda5f839897edd8_left-64419_top-26692_bottom-27006_right-64721",
+      "patient_id": "TCGA-AR-A0U1",
+      "split": "train",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 139,
+      "height": 387,
+      "width": 372,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 9,
+        "lymphocyte": 1
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 9,
+        "lymphocyte": 1
+      },
+      "excluded_rectangles": 11,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-AR-A0U1-DX1_id-5ea40987ddda5f839897edd8_left-65195_top-25412_bottom-25694_right-65488",
+      "patient_id": "TCGA-AR-A0U1",
+      "split": "train",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 141,
+      "height": 347,
+      "width": 361,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 10,
+        "excluded_nonTILnonMQ_stromal": 1,
+        "lymphocyte": 15,
+        "excluded_AMBIGUOUS": 2
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 10,
+        "fibroblast": 1,
+        "lymphocyte": 15,
+        "unlabeled": 2
+      },
+      "excluded_rectangles": 34,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-AR-A0U1-DX1_id-5ea40987ddda5f839897edd8_left-66238_top-25433_bottom-25704_right-66505",
+      "patient_id": "TCGA-AR-A0U1",
+      "split": "train",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 143,
+      "height": 334,
+      "width": 329,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 12
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 12
+      },
+      "excluded_rectangles": 16,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-AR-A0U1-DX1_id-5ea40987ddda5f839897edd8_left-66490_top-25171_bottom-25439_right-66763",
+      "patient_id": "TCGA-AR-A0U1",
+      "split": "train",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 145,
+      "height": 330,
+      "width": 336,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 3
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 3
+      },
+      "excluded_rectangles": 15,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-AR-A0U1-DX1_id-5ea40987ddda5f839897edd8_left-67255_top-25165_bottom-25445_right-67543",
+      "patient_id": "TCGA-AR-A0U1",
+      "split": "train",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 146,
+      "height": 345,
+      "width": 355,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 2
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 2
+      },
+      "excluded_rectangles": 28,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-AR-A0U4-DX1_id-5ea40a88ddda5f8398990ccf_left-41880_top-70798_bottom-71087_right-42167",
+      "patient_id": "TCGA-AR-A0U4",
+      "split": "train",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 148,
+      "height": 356,
+      "width": 353,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "lymphocyte": 13,
+        "tumor_epithelial": 1
+      },
+      "fine_raw_polyline_counts": {
+        "lymphocyte": 13,
+        "tumor": 1
+      },
+      "excluded_rectangles": 44,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-AR-A256-DX1_id-5ea40990ddda5f83989802f3_left-41832_top-17319_bottom-17605_right-42103",
+      "patient_id": "TCGA-AR-A256",
+      "split": "train",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 175,
+      "height": 354,
+      "width": 336,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 5,
+        "lymphocyte": 48,
+        "excluded_AMBIGUOUS": 2
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 5,
+        "lymphocyte": 48,
+        "unlabeled": 2
+      },
+      "excluded_rectangles": 21,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-AR-A256-DX1_id-5ea40990ddda5f83989802f3_left-43346_top-18839_bottom-19140_right-43626",
+      "patient_id": "TCGA-AR-A256",
+      "split": "train",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 179,
+      "height": 373,
+      "width": 346,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "plasma_cell": 3,
+        "excluded_nonTILnonMQ_stromal": 3,
+        "lymphocyte": 2
+      },
+      "fine_raw_polyline_counts": {
+        "plasma_cell": 3,
+        "fibroblast": 3,
+        "lymphocyte": 2
+      },
+      "excluded_rectangles": 15,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-C8-A12V-DX1_id-5ea40b30ddda5f8398999de2_left-12332_top-56174_bottom-56464_right-12595",
+      "patient_id": "TCGA-C8-A12V",
+      "split": "train",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 291,
+      "height": 360,
+      "width": 326,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 12,
+        "lymphocyte": 28,
+        "excluded_AMBIGUOUS": 1
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 12,
+        "lymphocyte": 28,
+        "unlabeled": 1
+      },
+      "excluded_rectangles": 15,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-C8-A27B-DX1_id-5ea40a77ddda5f839898fc2d_left-52887_top-12370_bottom-12643_right-53148",
+      "patient_id": "TCGA-C8-A27B",
+      "split": "train",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 311,
+      "height": 335,
+      "width": 320,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 8,
+        "lymphocyte": 7
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 8,
+        "lymphocyte": 7
+      },
+      "excluded_rectangles": 16,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-D8-A13Z-DX1_id-5ea40980ddda5f839897de6e_left-34800_top-50862_bottom-51139_right-35088",
+      "patient_id": "TCGA-D8-A13Z",
+      "split": "train",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 317,
+      "height": 343,
+      "width": 357,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_AMBIGUOUS": 11,
+        "macrophage": 7,
+        "excluded_nonTILnonMQ_stromal": 2,
+        "lymphocyte": 12
+      },
+      "fine_raw_polyline_counts": {
+        "unlabeled": 11,
+        "macrophage": 7,
+        "fibroblast": 2,
+        "lymphocyte": 12
+      },
+      "excluded_rectangles": 20,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-D8-A13Z-DX1_id-5ea40980ddda5f839897de6e_left-35325_top-50608_bottom-50885_right-35613",
+      "patient_id": "TCGA-D8-A13Z",
+      "split": "train",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 318,
+      "height": 343,
+      "width": 356,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 13,
+        "excluded_AMBIGUOUS": 7,
+        "lymphocyte": 14
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 13,
+        "unlabeled": 7,
+        "lymphocyte": 14
+      },
+      "excluded_rectangles": 16,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-D8-A142-DX1_id-5ea4095dddda5f8398978433_left-69301_top-42858_bottom-43156_right-69593",
+      "patient_id": "TCGA-D8-A142",
+      "split": "train",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 340,
+      "height": 369,
+      "width": 362,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 1,
+        "plasma_cell": 19
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 1,
+        "plasma_cell": 19
+      },
+      "excluded_rectangles": 33,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-D8-A147-DX1_id-5ea40991ddda5f8398980535_left-67137_top-19787_bottom-20089_right-67439",
+      "patient_id": "TCGA-D8-A147",
+      "split": "train",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 371,
+      "height": 374,
+      "width": 373,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 5,
+        "lymphocyte": 4
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 5,
+        "lymphocyte": 4
+      },
+      "excluded_rectangles": 14,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-D8-A147-DX1_id-5ea40991ddda5f8398980535_left-67391_top-20306_bottom-20619_right-67682",
+      "patient_id": "TCGA-D8-A147",
+      "split": "train",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 374,
+      "height": 388,
+      "width": 360,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 3,
+        "macrophage": 1,
+        "plasma_cell": 2,
+        "lymphocyte": 2
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 3,
+        "macrophage": 1,
+        "plasma_cell": 2,
+        "lymphocyte": 2
+      },
+      "excluded_rectangles": 18,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-D8-A147-DX1_id-5ea40991ddda5f8398980535_left-67673_top-20298_bottom-20589_right-67930",
+      "patient_id": "TCGA-D8-A147",
+      "split": "train",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 377,
+      "height": 360,
+      "width": 318,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_nonTILnonMQ_stromal": 1,
+        "lymphocyte": 14,
+        "macrophage": 1
+      },
+      "fine_raw_polyline_counts": {
+        "fibroblast": 1,
+        "lymphocyte": 14,
+        "macrophage": 1
+      },
+      "excluded_rectangles": 28,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-D8-A1JF-DX1_id-5ea40a71ddda5f839898f744_left-26631_top-55920_bottom-56185_right-26918",
+      "patient_id": "TCGA-D8-A1JF",
+      "split": "train",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 403,
+      "height": 327,
+      "width": 355,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 2,
+        "excluded_AMBIGUOUS": 4,
+        "lymphocyte": 9
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 2,
+        "unlabeled": 4,
+        "lymphocyte": 9
+      },
+      "excluded_rectangles": 18,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-D8-A1JF-DX1_id-5ea40a71ddda5f839898f744_left-27151_top-56173_bottom-56457_right-27431",
+      "patient_id": "TCGA-D8-A1JF",
+      "split": "train",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 410,
+      "height": 352,
+      "width": 346,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "plasma_cell": 15,
+        "lymphocyte": 17
+      },
+      "fine_raw_polyline_counts": {
+        "plasma_cell": 15,
+        "lymphocyte": 17
+      },
+      "excluded_rectangles": 25,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-D8-A1JF-DX1_id-5ea40a71ddda5f839898f744_left-28431_top-53614_bottom-53902_right-28732",
+      "patient_id": "TCGA-D8-A1JF",
+      "split": "train",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 425,
+      "height": 356,
+      "width": 373,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 3,
+        "lymphocyte": 1
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 3,
+        "lymphocyte": 1
+      },
+      "excluded_rectangles": 3,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-D8-A1JG-DX1_id-5ea40993ddda5f83989807c0_left-16943_top-72523_bottom-72802_right-17228",
+      "patient_id": "TCGA-D8-A1JG",
+      "split": "train",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 433,
+      "height": 345,
+      "width": 353,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 30,
+        "excluded_AMBIGUOUS": 2,
+        "lymphocyte": 4
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 30,
+        "unlabeled": 2,
+        "lymphocyte": 4
+      },
+      "excluded_rectangles": 52,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-D8-A1JL-DX1_id-5ea40a9bddda5f839899203f_left-41011_top-26873_bottom-27168_right-41334",
+      "patient_id": "TCGA-D8-A1JL",
+      "split": "train",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 442,
+      "height": 365,
+      "width": 400,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_nonTILnonMQ_stromal": 1,
+        "macrophage": 6,
+        "excluded_AMBIGUOUS": 2
+      },
+      "fine_raw_polyline_counts": {
+        "fibroblast": 1,
+        "macrophage": 6,
+        "unlabeled": 2
+      },
+      "excluded_rectangles": 23,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-D8-A1JL-DX1_id-5ea40a9bddda5f839899203f_left-48979_top-31471_bottom-31752_right-49240",
+      "patient_id": "TCGA-D8-A1JL",
+      "split": "train",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 448,
+      "height": 348,
+      "width": 323,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 7,
+        "lymphocyte": 41
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 7,
+        "lymphocyte": 41
+      },
+      "excluded_rectangles": 18,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-D8-A1JL-DX1_id-5ea40a9bddda5f839899203f_left-49469_top-31217_bottom-31494_right-49759",
+      "patient_id": "TCGA-D8-A1JL",
+      "split": "train",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 450,
+      "height": 343,
+      "width": 359,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 9,
+        "lymphocyte": 47,
+        "excluded_AMBIGUOUS": 2
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 9,
+        "lymphocyte": 47,
+        "unlabeled": 2
+      },
+      "excluded_rectangles": 14,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-D8-A1JL-DX1_id-5ea40a9bddda5f839899203f_left-49476_top-31727_bottom-32021_right-49760",
+      "patient_id": "TCGA-D8-A1JL",
+      "split": "train",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 451,
+      "height": 364,
+      "width": 352,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 5,
+        "lymphocyte": 32,
+        "excluded_AMBIGUOUS": 3
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 5,
+        "lymphocyte": 32,
+        "unlabeled": 3
+      },
+      "excluded_rectangles": 19,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-D8-A1XQ-DX1_id-5ea4098fddda5f83989800a7_left-63025_top-35071_bottom-35396_right-63341",
+      "patient_id": "TCGA-D8-A1XQ",
+      "split": "train",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 461,
+      "height": 401,
+      "width": 389,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 1,
+        "tumor_epithelial": 3,
+        "excluded_nonTILnonMQ_stromal": 4,
+        "lymphocyte": 2
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 1,
+        "tumor": 3,
+        "fibroblast": 4,
+        "lymphocyte": 2
+      },
+      "excluded_rectangles": 22,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-D8-A27M-DX1_id-5ea40965ddda5f83989797ff_left-58817_top-16868_bottom-17133_right-59103",
+      "patient_id": "TCGA-D8-A27M",
+      "split": "train",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 492,
+      "height": 326,
+      "width": 352,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_nonTILnonMQ_stromal": 1,
+        "lymphocyte": 20,
+        "plasma_cell": 3,
+        "excluded_AMBIGUOUS": 2
+      },
+      "fine_raw_polyline_counts": {
+        "fibroblast": 1,
+        "lymphocyte": 20,
+        "plasma_cell": 3,
+        "unlabeled": 2
+      },
+      "excluded_rectangles": 14,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-E2-A14R-DX1_id-5ea40976ddda5f839897c149_left-9281_top-61076_bottom-61374_right-9556",
+      "patient_id": "TCGA-E2-A14R",
+      "split": "train",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 511,
+      "height": 367,
+      "width": 339,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 3,
+        "lymphocyte": 21
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 3,
+        "lymphocyte": 21
+      },
+      "excluded_rectangles": 23,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-E2-A14R-DX1_id-5ea40976ddda5f839897c149_left-9526_top-60831_bottom-61118_right-9806",
+      "patient_id": "TCGA-E2-A14R",
+      "split": "train",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 512,
+      "height": 354,
+      "width": 345,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 4,
+        "plasma_cell": 6,
+        "excluded_AMBIGUOUS": 1,
+        "lymphocyte": 2
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 4,
+        "plasma_cell": 6,
+        "unlabeled": 1,
+        "lymphocyte": 2
+      },
+      "excluded_rectangles": 41,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-E2-A14X-DX1_id-5ea40af5ddda5f83989966cf_left-89325_top-69459_bottom-69745_right-89617",
+      "patient_id": "TCGA-E2-A14X",
+      "split": "train",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 514,
+      "height": 352,
+      "width": 360,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_AMBIGUOUS": 3,
+        "plasma_cell": 8,
+        "macrophage": 1,
+        "lymphocyte": 15
+      },
+      "fine_raw_polyline_counts": {
+        "unlabeled": 3,
+        "plasma_cell": 8,
+        "macrophage": 1,
+        "lymphocyte": 15
+      },
+      "excluded_rectangles": 35,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-E2-A14X-DX1_id-5ea40af5ddda5f83989966cf_left-89331_top-69177_bottom-69469_right-89609",
+      "patient_id": "TCGA-E2-A14X",
+      "split": "train",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 515,
+      "height": 360,
+      "width": 343,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "plasma_cell": 3,
+        "lymphocyte": 11
+      },
+      "fine_raw_polyline_counts": {
+        "plasma_cell": 3,
+        "lymphocyte": 11
+      },
+      "excluded_rectangles": 30,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-E2-A14X-DX1_id-5ea40af5ddda5f83989966cf_left-90838_top-68908_bottom-69232_right-91177",
+      "patient_id": "TCGA-E2-A14X",
+      "split": "train",
+      "source_shard": "train-00001-of-00003.parquet",
+      "source_row": 524,
+      "height": 399,
+      "width": 417,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 11,
+        "lymphocyte": 2
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 11,
+        "lymphocyte": 2
+      },
+      "excluded_rectangles": 25,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-E2-A1AZ-DX1_id-5ea409c8ddda5f8398986084_left-52326_top-19120_bottom-19378_right-52607",
+      "patient_id": "TCGA-E2-A1AZ",
+      "split": "train",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 3,
+      "height": 318,
+      "width": 346,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "plasma_cell": 16,
+        "excluded_nonTILnonMQ_stromal": 8,
+        "macrophage": 1,
+        "lymphocyte": 19
+      },
+      "fine_raw_polyline_counts": {
+        "plasma_cell": 16,
+        "fibroblast": 8,
+        "macrophage": 1,
+        "lymphocyte": 19
+      },
+      "excluded_rectangles": 0,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-E2-A1B6-DX1_id-5ea40abeddda5f83989937f1_left-18044_top-54985_bottom-55267_right-18326",
+      "patient_id": "TCGA-E2-A1B6",
+      "split": "train",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 6,
+      "height": 347,
+      "width": 347,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 4,
+        "lymphocyte": 6,
+        "plasma_cell": 2,
+        "excluded_AMBIGUOUS": 8
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 4,
+        "lymphocyte": 6,
+        "plasma_cell": 2,
+        "unlabeled": 8
+      },
+      "excluded_rectangles": 31,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-E2-A1B6-DX1_id-5ea40abeddda5f83989937f1_left-19062_top-54450_bottom-54746_right-19357",
+      "patient_id": "TCGA-E2-A1B6",
+      "split": "train",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 11,
+      "height": 365,
+      "width": 364,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_AMBIGUOUS": 2,
+        "tumor_epithelial": 4,
+        "lymphocyte": 4
+      },
+      "fine_raw_polyline_counts": {
+        "unlabeled": 2,
+        "tumor": 4,
+        "lymphocyte": 4
+      },
+      "excluded_rectangles": 29,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-E2-A1L7-DX1_id-5ea40ae5ddda5f8398995967_left-53323_top-18200_bottom-18506_right-53617",
+      "patient_id": "TCGA-E2-A1L7",
+      "split": "train",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 23,
+      "height": 379,
+      "width": 364,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 18,
+        "lymphocyte": 1
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 18,
+        "lymphocyte": 1
+      },
+      "excluded_rectangles": 28,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-E2-A1L7-DX1_id-5ea40ae5ddda5f8398995967_left-56639_top-17966_bottom-18257_right-56930",
+      "patient_id": "TCGA-E2-A1L7",
+      "split": "train",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 30,
+      "height": 360,
+      "width": 360,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_nonTILnonMQ_stromal": 5,
+        "plasma_cell": 5,
+        "excluded_AMBIGUOUS": 2,
+        "macrophage": 1
+      },
+      "fine_raw_polyline_counts": {
+        "fibroblast": 4,
+        "plasma_cell": 5,
+        "unlabeled": 2,
+        "vascular_endothelium": 1,
+        "macrophage": 1
+      },
+      "excluded_rectangles": 9,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-E2-A1L7-DX1_id-5ea40ae5ddda5f8398995967_left-56654_top-15915_bottom-16206_right-56950",
+      "patient_id": "TCGA-E2-A1L7",
+      "split": "train",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 31,
+      "height": 360,
+      "width": 366,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_AMBIGUOUS": 9,
+        "tumor_epithelial": 2,
+        "plasma_cell": 5,
+        "excluded_nonTILnonMQ_stromal": 1,
+        "lymphocyte": 1
+      },
+      "fine_raw_polyline_counts": {
+        "unlabeled": 9,
+        "tumor": 2,
+        "plasma_cell": 5,
+        "fibroblast": 1,
+        "lymphocyte": 1
+      },
+      "excluded_rectangles": 19,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-E2-A1L7-DX1_id-5ea40ae5ddda5f8398995967_left-56925_top-15926_bottom-16207_right-57197",
+      "patient_id": "TCGA-E2-A1L7",
+      "split": "train",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 34,
+      "height": 348,
+      "width": 337,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 7,
+        "plasma_cell": 4,
+        "excluded_AMBIGUOUS": 1
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 7,
+        "plasma_cell": 4,
+        "unlabeled": 1
+      },
+      "excluded_rectangles": 29,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-E2-A1LH-DX1_id-5ea40a58ddda5f839898e0ed_left-23023_top-25673_bottom-25959_right-23311",
+      "patient_id": "TCGA-E2-A1LH",
+      "split": "train",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 39,
+      "height": 354,
+      "width": 357,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 5,
+        "excluded_nonTILnonMQ_stromal": 1,
+        "plasma_cell": 1,
+        "macrophage": 2,
+        "lymphocyte": 3
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 5,
+        "fibroblast": 1,
+        "plasma_cell": 1,
+        "macrophage": 2,
+        "lymphocyte": 3
+      },
+      "excluded_rectangles": 18,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-E2-A1LH-DX1_id-5ea40a58ddda5f839898e0ed_left-24277_top-25684_bottom-25968_right-24568",
+      "patient_id": "TCGA-E2-A1LH",
+      "split": "train",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 60,
+      "height": 351,
+      "width": 360,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "plasma_cell": 5,
+        "excluded_AMBIGUOUS": 2,
+        "macrophage": 4,
+        "excluded_nonTILnonMQ_stromal": 1
+      },
+      "fine_raw_polyline_counts": {
+        "plasma_cell": 5,
+        "unlabeled": 2,
+        "macrophage": 4,
+        "fibroblast": 1
+      },
+      "excluded_rectangles": 29,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-E2-A1LH-DX1_id-5ea40a58ddda5f839898e0ed_left-25312_top-26964_bottom-27235_right-25597",
+      "patient_id": "TCGA-E2-A1LH",
+      "split": "train",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 71,
+      "height": 336,
+      "width": 353,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 4,
+        "excluded_nonTILnonMQ_stromal": 3,
+        "excluded_AMBIGUOUS": 1,
+        "plasma_cell": 6
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 4,
+        "fibroblast": 3,
+        "unlabeled": 1,
+        "plasma_cell": 6
+      },
+      "excluded_rectangles": 19,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-E2-A1LH-DX1_id-5ea40a58ddda5f839898e0ed_left-25822_top-25418_bottom-25694_right-26127",
+      "patient_id": "TCGA-E2-A1LH",
+      "split": "train",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 77,
+      "height": 342,
+      "width": 378,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 1,
+        "excluded_AMBIGUOUS": 2,
+        "excluded_other_nucleus": 1,
+        "lymphocyte": 11
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 1,
+        "unlabeled": 2,
+        "ductal_epithelium": 1,
+        "lymphocyte": 11
+      },
+      "excluded_rectangles": 38,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-E2-A574-DX1_id-5ea40a05ddda5f83989895aa_left-58537_top-51570_bottom-51835_right-58815",
+      "patient_id": "TCGA-E2-A574",
+      "split": "train",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 124,
+      "height": 328,
+      "width": 344,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 4,
+        "excluded_nonTILnonMQ_stromal": 7,
+        "lymphocyte": 9
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 4,
+        "fibroblast": 7,
+        "lymphocyte": 9
+      },
+      "excluded_rectangles": 14,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-EW-A1P1-DX1_id-5ea409bdddda5f8398985857_left-52339_top-40757_bottom-41042_right-52628",
+      "patient_id": "TCGA-EW-A1P1",
+      "split": "train",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 142,
+      "height": 354,
+      "width": 358,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_nonTILnonMQ_stromal": 8,
+        "plasma_cell": 1,
+        "lymphocyte": 9
+      },
+      "fine_raw_polyline_counts": {
+        "fibroblast": 8,
+        "plasma_cell": 1,
+        "lymphocyte": 9
+      },
+      "excluded_rectangles": 34,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-EW-A1P1-DX1_id-5ea409bdddda5f8398985857_left-52862_top-39235_bottom-39507_right-53141",
+      "patient_id": "TCGA-EW-A1P1",
+      "split": "train",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 149,
+      "height": 337,
+      "width": 346,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_AMBIGUOUS": 2,
+        "macrophage": 2,
+        "excluded_nonTILnonMQ_stromal": 3,
+        "lymphocyte": 17,
+        "plasma_cell": 8
+      },
+      "fine_raw_polyline_counts": {
+        "unlabeled": 2,
+        "macrophage": 2,
+        "fibroblast": 3,
+        "lymphocyte": 17,
+        "plasma_cell": 8
+      },
+      "excluded_rectangles": 32,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-EW-A1P1-DX1_id-5ea409bdddda5f8398985857_left-52862_top-39488_bottom-39767_right-53137",
+      "patient_id": "TCGA-EW-A1P1",
+      "split": "train",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 150,
+      "height": 345,
+      "width": 341,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_AMBIGUOUS": 1,
+        "lymphocyte": 22,
+        "excluded_nonTILnonMQ_stromal": 2,
+        "plasma_cell": 14
+      },
+      "fine_raw_polyline_counts": {
+        "unlabeled": 1,
+        "lymphocyte": 22,
+        "fibroblast": 2,
+        "plasma_cell": 14
+      },
+      "excluded_rectangles": 28,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-EW-A1P1-DX1_id-5ea409bdddda5f8398985857_left-53121_top-39499_bottom-39771_right-53383",
+      "patient_id": "TCGA-EW-A1P1",
+      "split": "train",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 155,
+      "height": 337,
+      "width": 324,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 4,
+        "lymphocyte": 15
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 4,
+        "lymphocyte": 15
+      },
+      "excluded_rectangles": 31,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-EW-A1P1-DX1_id-5ea409bdddda5f8398985857_left-53122_top-39221_bottom-39499_right-53411",
+      "patient_id": "TCGA-EW-A1P1",
+      "split": "train",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 156,
+      "height": 345,
+      "width": 358,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_nonTILnonMQ_stromal": 5,
+        "macrophage": 3,
+        "lymphocyte": 6
+      },
+      "fine_raw_polyline_counts": {
+        "fibroblast": 5,
+        "macrophage": 3,
+        "lymphocyte": 6
+      },
+      "excluded_rectangles": 20,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-EW-A1P8-DX1_id-5ea409d1ddda5f83989868a3_left-17297_top-28640_bottom-28960_right-17568",
+      "patient_id": "TCGA-EW-A1P8",
+      "split": "train",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 174,
+      "height": 397,
+      "width": 336,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 1,
+        "excluded_nonTILnonMQ_stromal": 2,
+        "lymphocyte": 1
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 1,
+        "fibroblast": 2,
+        "lymphocyte": 1
+      },
+      "excluded_rectangles": 22,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-EW-A1PB-DX1_id-5ea409f2ddda5f839898836d_left-58483_top-27721_bottom-28001_right-58755",
+      "patient_id": "TCGA-EW-A1PB",
+      "split": "train",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 189,
+      "height": 346,
+      "width": 336,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "plasma_cell": 33,
+        "macrophage": 4,
+        "excluded_nonTILnonMQ_stromal": 4
+      },
+      "fine_raw_polyline_counts": {
+        "plasma_cell": 33,
+        "macrophage": 4,
+        "fibroblast": 4
+      },
+      "excluded_rectangles": 50,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-EW-A1PB-DX1_id-5ea409f2ddda5f839898836d_left-58736_top-30003_bottom-30325_right-59013",
+      "patient_id": "TCGA-EW-A1PB",
+      "split": "train",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 190,
+      "height": 399,
+      "width": 343,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 3,
+        "excluded_AMBIGUOUS": 1,
+        "plasma_cell": 2
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 3,
+        "unlabeled": 1,
+        "plasma_cell": 2
+      },
+      "excluded_rectangles": 28,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-EW-A1PH-DX1_id-5ea40978ddda5f839897c52c_left-5495_top-56651_bottom-56922_right-5770",
+      "patient_id": "TCGA-EW-A1PH",
+      "split": "train",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 196,
+      "height": 336,
+      "width": 340,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 8,
+        "excluded_AMBIGUOUS": 4,
+        "lymphocyte": 9,
+        "plasma_cell": 3
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 8,
+        "unlabeled": 4,
+        "lymphocyte": 9,
+        "plasma_cell": 3
+      },
+      "excluded_rectangles": 36,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-GM-A2DB-DX1_id-5ea409baddda5f8398985662_left-56963_top-45906_bottom-46194_right-57262",
+      "patient_id": "TCGA-GM-A2DB",
+      "split": "train",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 278,
+      "height": 354,
+      "width": 368,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_AMBIGUOUS": 2,
+        "macrophage": 1,
+        "lymphocyte": 4
+      },
+      "fine_raw_polyline_counts": {
+        "unlabeled": 2,
+        "macrophage": 1,
+        "lymphocyte": 4
+      },
+      "excluded_rectangles": 31,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-GM-A2DD-DX1_id-5ea40aa8ddda5f8398992acd_left-47501_top-22897_bottom-23176_right-47801",
+      "patient_id": "TCGA-GM-A2DD",
+      "split": "train",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 279,
+      "height": 343,
+      "width": 370,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "lymphocyte": 20,
+        "excluded_AMBIGUOUS": 1,
+        "plasma_cell": 5,
+        "excluded_nonTILnonMQ_stromal": 1
+      },
+      "fine_raw_polyline_counts": {
+        "lymphocyte": 20,
+        "unlabeled": 1,
+        "plasma_cell": 5,
+        "fibroblast": 1
+      },
+      "excluded_rectangles": 31,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-GM-A2DF-DX1_id-5ea409faddda5f8398988c32_left-50865_top-46574_bottom-46855_right-51154",
+      "patient_id": "TCGA-GM-A2DF",
+      "split": "train",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 319,
+      "height": 346,
+      "width": 356,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 1,
+        "lymphocyte": 30,
+        "excluded_AMBIGUOUS": 1
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 1,
+        "lymphocyte": 30,
+        "unlabeled": 1
+      },
+      "excluded_rectangles": 59,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-GM-A2DF-DX1_id-5ea409faddda5f8398988c32_left-51130_top-45027_bottom-45326_right-51413",
+      "patient_id": "TCGA-GM-A2DF",
+      "split": "train",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 321,
+      "height": 368,
+      "width": 349,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "lymphocyte": 15,
+        "macrophage": 5,
+        "plasma_cell": 1,
+        "excluded_nonTILnonMQ_stromal": 1
+      },
+      "fine_raw_polyline_counts": {
+        "lymphocyte": 15,
+        "macrophage": 5,
+        "plasma_cell": 1,
+        "fibroblast": 1
+      },
+      "excluded_rectangles": 44,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-GM-A2DF-DX1_id-5ea409faddda5f8398988c32_left-51140_top-46573_bottom-46860_right-51420",
+      "patient_id": "TCGA-GM-A2DF",
+      "split": "train",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 322,
+      "height": 353,
+      "width": 345,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "lymphocyte": 29,
+        "macrophage": 1,
+        "excluded_AMBIGUOUS": 1
+      },
+      "fine_raw_polyline_counts": {
+        "lymphocyte": 29,
+        "macrophage": 1,
+        "unlabeled": 1
+      },
+      "excluded_rectangles": 46,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-GM-A2DF-DX1_id-5ea409faddda5f8398988c32_left-53185_top-44788_bottom-45075_right-53476",
+      "patient_id": "TCGA-GM-A2DF",
+      "split": "train",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 335,
+      "height": 354,
+      "width": 359,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_nonTILnonMQ_stromal": 1,
+        "lymphocyte": 9,
+        "macrophage": 1,
+        "excluded_AMBIGUOUS": 1
+      },
+      "fine_raw_polyline_counts": {
+        "fibroblast": 1,
+        "lymphocyte": 9,
+        "macrophage": 1,
+        "unlabeled": 1
+      },
+      "excluded_rectangles": 27,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-GM-A2DF-DX1_id-5ea409faddda5f8398988c32_left-53688_top-44273_bottom-44565_right-53997",
+      "patient_id": "TCGA-GM-A2DF",
+      "split": "train",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 336,
+      "height": 360,
+      "width": 380,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 1,
+        "lymphocyte": 4
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 1,
+        "lymphocyte": 4
+      },
+      "excluded_rectangles": 40,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-GM-A2DH-DX1_id-5ea40adcddda5f83989951a2_left-53773_top-59370_bottom-59650_right-54063",
+      "patient_id": "TCGA-GM-A2DH",
+      "split": "train",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 361,
+      "height": 345,
+      "width": 357,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "lymphocyte": 17,
+        "excluded_nonTILnonMQ_stromal": 3,
+        "macrophage": 1,
+        "excluded_AMBIGUOUS": 13
+      },
+      "fine_raw_polyline_counts": {
+        "lymphocyte": 17,
+        "fibroblast": 3,
+        "macrophage": 1,
+        "unlabeled": 13
+      },
+      "excluded_rectangles": 42,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-GM-A2DH-DX1_id-5ea40adcddda5f83989951a2_left-54790_top-58848_bottom-59139_right-55058",
+      "patient_id": "TCGA-GM-A2DH",
+      "split": "train",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 367,
+      "height": 359,
+      "width": 330,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "lymphocyte": 6,
+        "tumor_epithelial": 1,
+        "excluded_nonTILnonMQ_stromal": 1,
+        "excluded_AMBIGUOUS": 1
+      },
+      "fine_raw_polyline_counts": {
+        "lymphocyte": 6,
+        "tumor": 1,
+        "fibroblast": 1,
+        "unlabeled": 1
+      },
+      "excluded_rectangles": 32,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-GM-A3XL-DX1_id-5ea40a3bddda5f839898c578_left-36279_top-18882_bottom-19159_right-36582",
+      "patient_id": "TCGA-GM-A3XL",
+      "split": "train",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 395,
+      "height": 341,
+      "width": 372,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "lymphocyte": 14,
+        "macrophage": 10,
+        "excluded_nonTILnonMQ_stromal": 2
+      },
+      "fine_raw_polyline_counts": {
+        "lymphocyte": 14,
+        "macrophage": 10,
+        "fibroblast": 2
+      },
+      "excluded_rectangles": 35,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-LL-A441-DX1_id-5ea40984ddda5f839897e7e2_left-85065_top-44643_bottom-44927_right-85348",
+      "patient_id": "TCGA-LL-A441",
+      "split": "train",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 402,
+      "height": 348,
+      "width": 347,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "lymphocyte": 46,
+        "macrophage": 5,
+        "excluded_AMBIGUOUS": 2
+      },
+      "fine_raw_polyline_counts": {
+        "lymphocyte": 46,
+        "macrophage": 5,
+        "unlabeled": 2
+      },
+      "excluded_rectangles": 35,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-LL-A5YO-DX1_id-5ea40b14ddda5f83989980aa_left-36869_top-46431_bottom-46712_right-37142",
+      "patient_id": "TCGA-LL-A5YO",
+      "split": "train",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 404,
+      "height": 344,
+      "width": 335,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_nonTILnonMQ_stromal": 3,
+        "tumor_epithelial": 1,
+        "lymphocyte": 8,
+        "excluded_AMBIGUOUS": 1,
+        "macrophage": 1
+      },
+      "fine_raw_polyline_counts": {
+        "fibroblast": 3,
+        "tumor": 1,
+        "lymphocyte": 8,
+        "unlabeled": 1,
+        "macrophage": 1
+      },
+      "excluded_rectangles": 18,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-LL-A5YO-DX1_id-5ea40b14ddda5f83989980aa_left-38674_top-45649_bottom-45933_right-38940",
+      "patient_id": "TCGA-LL-A5YO",
+      "split": "train",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 406,
+      "height": 348,
+      "width": 326,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 4,
+        "lymphocyte": 2,
+        "macrophage": 1
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 4,
+        "lymphocyte": 2,
+        "macrophage": 1
+      },
+      "excluded_rectangles": 18,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-LL-A5YO-DX1_id-5ea40b14ddda5f83989980aa_left-39180_top-45417_bottom-45699_right-39454",
+      "patient_id": "TCGA-LL-A5YO",
+      "split": "train",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 407,
+      "height": 345,
+      "width": 336,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 5,
+        "lymphocyte": 36
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 5,
+        "lymphocyte": 36
+      },
+      "excluded_rectangles": 18,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-LL-A5YO-DX1_id-5ea40b14ddda5f83989980aa_left-39427_top-44640_bottom-44908_right-39716",
+      "patient_id": "TCGA-LL-A5YO",
+      "split": "train",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 408,
+      "height": 328,
+      "width": 354,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "lymphocyte": 18,
+        "macrophage": 14,
+        "excluded_nonTILnonMQ_stromal": 2
+      },
+      "fine_raw_polyline_counts": {
+        "lymphocyte": 18,
+        "macrophage": 14,
+        "fibroblast": 2
+      },
+      "excluded_rectangles": 30,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-LL-A5YO-DX1_id-5ea40b14ddda5f83989980aa_left-39698_top-46429_bottom-46699_right-39981",
+      "patient_id": "TCGA-LL-A5YO",
+      "split": "train",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 409,
+      "height": 331,
+      "width": 347,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_AMBIGUOUS": 1,
+        "tumor_epithelial": 1,
+        "macrophage": 2,
+        "lymphocyte": 13
+      },
+      "fine_raw_polyline_counts": {
+        "unlabeled": 1,
+        "tumor": 1,
+        "macrophage": 2,
+        "lymphocyte": 13
+      },
+      "excluded_rectangles": 14,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-LL-A73Y-DX1_id-5ea40b1cddda5f8398998a1e_left-68619_top-49680_bottom-49967_right-68902",
+      "patient_id": "TCGA-LL-A73Y",
+      "split": "train",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 411,
+      "height": 362,
+      "width": 357,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 2,
+        "excluded_nonTILnonMQ_stromal": 5,
+        "lymphocyte": 2
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 2,
+        "fibroblast": 5,
+        "lymphocyte": 2
+      },
+      "excluded_rectangles": 29,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-LL-A740-DX1_id-5ea409eaddda5f8398987e66_left-39681_top-24318_bottom-24608_right-39959",
+      "patient_id": "TCGA-LL-A740",
+      "split": "train",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 414,
+      "height": 365,
+      "width": 350,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "macrophage": 1,
+        "excluded_AMBIGUOUS": 2,
+        "lymphocyte": 37,
+        "plasma_cell": 1
+      },
+      "fine_raw_polyline_counts": {
+        "macrophage": 1,
+        "unlabeled": 2,
+        "lymphocyte": 37,
+        "plasma_cell": 1
+      },
+      "excluded_rectangles": 39,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-S3-AA10-DX1_id-5ea40a7dddda5f8398990245_left-44063_top-25762_bottom-26038_right-44332",
+      "patient_id": "TCGA-S3-AA10",
+      "split": "train",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 541,
+      "height": 276,
+      "width": 269,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_nonTILnonMQ_stromal": 7,
+        "macrophage": 1,
+        "plasma_cell": 5,
+        "excluded_AMBIGUOUS": 2
+      },
+      "fine_raw_polyline_counts": {
+        "fibroblast": 7,
+        "macrophage": 1,
+        "plasma_cell": 5,
+        "unlabeled": 2
+      },
+      "excluded_rectangles": 17,
+      "excluded_points": 0,
+      "selection": "all_macrophage_polyline_fields"
+    },
+    {
+      "fov_id": "TCGA-S3-AA10-DX1_id-5ea40a7dddda5f8398990245_left-44573_top-26531_bottom-26830_right-44843",
+      "patient_id": "TCGA-S3-AA10",
+      "split": "train",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 550,
+      "height": 299,
+      "width": 270,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 1,
+        "excluded_AMBIGUOUS": 4,
+        "lymphocyte": 6,
+        "excluded_nonTILnonMQ_stromal": 6,
+        "plasma_cell": 1
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 1,
+        "unlabeled": 4,
+        "lymphocyte": 6,
+        "fibroblast": 6,
+        "plasma_cell": 1
+      },
+      "excluded_rectangles": 19,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-S3-AA10-DX1_id-5ea40a7dddda5f8398990245_left-44803_top-26796_bottom-27069_right-45115",
+      "patient_id": "TCGA-S3-AA10",
+      "split": "train",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 552,
+      "height": 273,
+      "width": 312,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "tumor_epithelial": 2,
+        "excluded_AMBIGUOUS": 10,
+        "excluded_nonTILnonMQ_stromal": 5,
+        "plasma_cell": 17
+      },
+      "fine_raw_polyline_counts": {
+        "tumor": 2,
+        "unlabeled": 10,
+        "fibroblast": 5,
+        "plasma_cell": 17
+      },
+      "excluded_rectangles": 24,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-S3-AA15-DX1_id-5ea40a6addda5f839898f24a_left-55998_top-30195_bottom-30473_right-56271",
+      "patient_id": "TCGA-S3-AA15",
+      "split": "train",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 566,
+      "height": 278,
+      "width": 273,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_nonTILnonMQ_stromal": 5,
+        "plasma_cell": 3,
+        "lymphocyte": 7
+      },
+      "fine_raw_polyline_counts": {
+        "fibroblast": 2,
+        "vascular_endothelium": 3,
+        "plasma_cell": 3,
+        "lymphocyte": 7
+      },
+      "excluded_rectangles": 44,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    },
+    {
+      "fov_id": "TCGA-S3-AA15-DX1_id-5ea40a6addda5f839898f24a_left-56490_top-30455_bottom-30722_right-56785",
+      "patient_id": "TCGA-S3-AA15",
+      "split": "train",
+      "source_shard": "train-00002-of-00003.parquet",
+      "source_row": 569,
+      "height": 267,
+      "width": 295,
+      "source_mpp_um": 0.2,
+      "target_polyline_counts": {
+        "excluded_AMBIGUOUS": 1,
+        "tumor_epithelial": 2,
+        "plasma_cell": 3,
+        "lymphocyte": 1,
+        "excluded_nonTILnonMQ_stromal": 2
+      },
+      "fine_raw_polyline_counts": {
+        "unlabeled": 1,
+        "tumor": 2,
+        "plasma_cell": 3,
+        "lymphocyte": 1,
+        "fibroblast": 2
+      },
+      "excluded_rectangles": 44,
+      "excluded_points": 0,
+      "selection": "deterministic_class_diverse_supplement"
+    }
+  ],
+  "limit": "A frozen source/annotation plan only. No GigaTIME output, StarDist QC, cell quantification, classifier prediction or score exists. NuCLS has no outlined test neutrophils and cannot validate that cell type."
+}
