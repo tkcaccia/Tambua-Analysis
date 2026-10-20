@@ -1,0 +1,1335 @@
+{
+  "status": "diagnostic_only",
+  "device": "CPU",
+  "source_inference": "/home/chiamaka/Tambua-monusac-expanded-cpu-inference-2026-10-20",
+  "sampling": "Deterministic uniform subsample of independent StarDist nuclear pixels",
+  "records": [
+    {
+      "sample_id": "TCGA-YL-A9WL-01Z-00-DX1_2",
+      "patient_id": "TCGA-YL-A9WL",
+      "organ": "prostate",
+      "model_mpp_um": 0.24999999999999997,
+      "nuclear_pixels_total": 9115,
+      "nuclear_pixels_sampled": 9115,
+      "channel_names": [
+        "DAPI",
+        "TRITC",
+        "Cy5",
+        "PD-1",
+        "CD14",
+        "CD4",
+        "T-bet",
+        "CD34",
+        "CD68",
+        "CD16",
+        "CD11c",
+        "CD138",
+        "CD20",
+        "CD3",
+        "CD8",
+        "PD-L1",
+        "CK",
+        "Ki67",
+        "Tryptase",
+        "Actin-D",
+        "Caspase3-D",
+        "PHH3-B",
+        "Transgelin"
+      ],
+      "median_pairwise_spearman": 0.5460461330585443,
+      "pair_fraction_spearman_gt_0_8": 0.33992094861660077,
+      "dapi_to_other_spearman": {
+        "TRITC": 0.3165351598147429,
+        "Cy5": 0.31351793415322077,
+        "PD-1": 0.2694393427142544,
+        "CD14": 0.25052849393738963,
+        "CD4": 0.189981454102984,
+        "T-bet": 0.5105514161037552,
+        "CD34": -0.1879652000087591,
+        "CD68": 0.38254619779976134,
+        "CD16": 0.2242840555987815,
+        "CD11c": 0.12603663032363757,
+        "CD138": 0.6918949580482512,
+        "CD20": 0.48665798465369076,
+        "CD3": 0.12582521934884966,
+        "CD8": 0.7575383239534883,
+        "PD-L1": 0.481946491691313,
+        "CK": 0.3262688671955536,
+        "Ki67": 0.6277292111757322,
+        "Tryptase": 0.15046641618141554,
+        "Actin-D": 0.5912012736302189,
+        "Caspase3-D": 0.7462284931746367,
+        "PHH3-B": 0.5217033935937876,
+        "Transgelin": 0.27958208393590234
+      },
+      "channel_pair_spearman": [
+        {
+          "first": "DAPI",
+          "second": "TRITC",
+          "rho": 0.3165351598147429
+        },
+        {
+          "first": "DAPI",
+          "second": "Cy5",
+          "rho": 0.31351793415322077
+        },
+        {
+          "first": "DAPI",
+          "second": "PD-1",
+          "rho": 0.2694393427142544
+        },
+        {
+          "first": "DAPI",
+          "second": "CD14",
+          "rho": 0.25052849393738963
+        },
+        {
+          "first": "DAPI",
+          "second": "CD4",
+          "rho": 0.189981454102984
+        },
+        {
+          "first": "DAPI",
+          "second": "T-bet",
+          "rho": 0.5105514161037552
+        },
+        {
+          "first": "DAPI",
+          "second": "CD34",
+          "rho": -0.1879652000087591
+        },
+        {
+          "first": "DAPI",
+          "second": "CD68",
+          "rho": 0.38254619779976134
+        },
+        {
+          "first": "DAPI",
+          "second": "CD16",
+          "rho": 0.2242840555987815
+        },
+        {
+          "first": "DAPI",
+          "second": "CD11c",
+          "rho": 0.12603663032363757
+        },
+        {
+          "first": "DAPI",
+          "second": "CD138",
+          "rho": 0.6918949580482512
+        },
+        {
+          "first": "DAPI",
+          "second": "CD20",
+          "rho": 0.48665798465369076
+        },
+        {
+          "first": "DAPI",
+          "second": "CD3",
+          "rho": 0.12582521934884966
+        },
+        {
+          "first": "DAPI",
+          "second": "CD8",
+          "rho": 0.7575383239534883
+        },
+        {
+          "first": "DAPI",
+          "second": "PD-L1",
+          "rho": 0.481946491691313
+        },
+        {
+          "first": "DAPI",
+          "second": "CK",
+          "rho": 0.3262688671955536
+        },
+        {
+          "first": "DAPI",
+          "second": "Ki67",
+          "rho": 0.6277292111757322
+        },
+        {
+          "first": "DAPI",
+          "second": "Tryptase",
+          "rho": 0.15046641618141554
+        },
+        {
+          "first": "DAPI",
+          "second": "Actin-D",
+          "rho": 0.5912012736302189
+        },
+        {
+          "first": "DAPI",
+          "second": "Caspase3-D",
+          "rho": 0.7462284931746367
+        },
+        {
+          "first": "DAPI",
+          "second": "PHH3-B",
+          "rho": 0.5217033935937876
+        },
+        {
+          "first": "DAPI",
+          "second": "Transgelin",
+          "rho": 0.27958208393590234
+        },
+        {
+          "first": "TRITC",
+          "second": "Cy5",
+          "rho": 0.9792887810952333
+        },
+        {
+          "first": "TRITC",
+          "second": "PD-1",
+          "rho": 0.8612852162638357
+        },
+        {
+          "first": "TRITC",
+          "second": "CD14",
+          "rho": 0.9339557860552272
+        },
+        {
+          "first": "TRITC",
+          "second": "CD4",
+          "rho": 0.9104548453441954
+        },
+        {
+          "first": "TRITC",
+          "second": "T-bet",
+          "rho": 0.7985710538098676
+        },
+        {
+          "first": "TRITC",
+          "second": "CD34",
+          "rho": 0.32943796173977324
+        },
+        {
+          "first": "TRITC",
+          "second": "CD68",
+          "rho": 0.8989788307921702
+        },
+        {
+          "first": "TRITC",
+          "second": "CD16",
+          "rho": 0.9315529281166646
+        },
+        {
+          "first": "TRITC",
+          "second": "CD11c",
+          "rho": 0.9123483685990403
+        },
+        {
+          "first": "TRITC",
+          "second": "CD138",
+          "rho": -0.25448018614453455
+        },
+        {
+          "first": "TRITC",
+          "second": "CD20",
+          "rho": -0.0911062186952399
+        },
+        {
+          "first": "TRITC",
+          "second": "CD3",
+          "rho": 0.8478203262018079
+        },
+        {
+          "first": "TRITC",
+          "second": "CD8",
+          "rho": 0.12867262723546455
+        },
+        {
+          "first": "TRITC",
+          "second": "PD-L1",
+          "rho": 0.8652411474060431
+        },
+        {
+          "first": "TRITC",
+          "second": "CK",
+          "rho": -0.5548131406577054
+        },
+        {
+          "first": "TRITC",
+          "second": "Ki67",
+          "rho": 0.8371547541994497
+        },
+        {
+          "first": "TRITC",
+          "second": "Tryptase",
+          "rho": 0.8529579499457726
+        },
+        {
+          "first": "TRITC",
+          "second": "Actin-D",
+          "rho": 0.3865286036533586
+        },
+        {
+          "first": "TRITC",
+          "second": "Caspase3-D",
+          "rho": -0.12347863917024256
+        },
+        {
+          "first": "TRITC",
+          "second": "PHH3-B",
+          "rho": 0.8947035593539538
+        },
+        {
+          "first": "TRITC",
+          "second": "Transgelin",
+          "rho": 0.6399479799238593
+        },
+        {
+          "first": "Cy5",
+          "second": "PD-1",
+          "rho": 0.8223431392488104
+        },
+        {
+          "first": "Cy5",
+          "second": "CD14",
+          "rho": 0.9301831468115357
+        },
+        {
+          "first": "Cy5",
+          "second": "CD4",
+          "rho": 0.8860783276252024
+        },
+        {
+          "first": "Cy5",
+          "second": "T-bet",
+          "rho": 0.7816518574932282
+        },
+        {
+          "first": "Cy5",
+          "second": "CD34",
+          "rho": 0.360577868704919
+        },
+        {
+          "first": "Cy5",
+          "second": "CD68",
+          "rho": 0.8918036865894099
+        },
+        {
+          "first": "Cy5",
+          "second": "CD16",
+          "rho": 0.9241073526876317
+        },
+        {
+          "first": "Cy5",
+          "second": "CD11c",
+          "rho": 0.902568454515594
+        },
+        {
+          "first": "Cy5",
+          "second": "CD138",
+          "rho": -0.27177090187511754
+        },
+        {
+          "first": "Cy5",
+          "second": "CD20",
+          "rho": -0.13908476048382007
+        },
+        {
+          "first": "Cy5",
+          "second": "CD3",
+          "rho": 0.8137361791794637
+        },
+        {
+          "first": "Cy5",
+          "second": "CD8",
+          "rho": 0.07487612474933338
+        },
+        {
+          "first": "Cy5",
+          "second": "PD-L1",
+          "rho": 0.848209289694097
+        },
+        {
+          "first": "Cy5",
+          "second": "CK",
+          "rho": -0.5315761671668
+        },
+        {
+          "first": "Cy5",
+          "second": "Ki67",
+          "rho": 0.8356614081689131
+        },
+        {
+          "first": "Cy5",
+          "second": "Tryptase",
+          "rho": 0.8382582768631827
+        },
+        {
+          "first": "Cy5",
+          "second": "Actin-D",
+          "rho": 0.3706624765170391
+        },
+        {
+          "first": "Cy5",
+          "second": "Caspase3-D",
+          "rho": -0.11465102677731047
+        },
+        {
+          "first": "Cy5",
+          "second": "PHH3-B",
+          "rho": 0.884663155016756
+        },
+        {
+          "first": "Cy5",
+          "second": "Transgelin",
+          "rho": 0.6346595853081867
+        },
+        {
+          "first": "PD-1",
+          "second": "CD14",
+          "rho": 0.8665531007956229
+        },
+        {
+          "first": "PD-1",
+          "second": "CD4",
+          "rho": 0.9335732732884565
+        },
+        {
+          "first": "PD-1",
+          "second": "T-bet",
+          "rho": 0.8616591063994122
+        },
+        {
+          "first": "PD-1",
+          "second": "CD34",
+          "rho": 0.40203487784794095
+        },
+        {
+          "first": "PD-1",
+          "second": "CD68",
+          "rho": 0.8926523403338125
+        },
+        {
+          "first": "PD-1",
+          "second": "CD16",
+          "rho": 0.836712719556612
+        },
+        {
+          "first": "PD-1",
+          "second": "CD11c",
+          "rho": 0.8930110897513949
+        },
+        {
+          "first": "PD-1",
+          "second": "CD138",
+          "rho": -0.09085767114139452
+        },
+        {
+          "first": "PD-1",
+          "second": "CD20",
+          "rho": 0.14842236173755008
+        },
+        {
+          "first": "PD-1",
+          "second": "CD3",
+          "rho": 0.9063948391016339
+        },
+        {
+          "first": "PD-1",
+          "second": "CD8",
+          "rho": 0.2924970273546068
+        },
+        {
+          "first": "PD-1",
+          "second": "PD-L1",
+          "rho": 0.8987448262083554
+        },
+        {
+          "first": "PD-1",
+          "second": "CK",
+          "rho": -0.512572943741666
+        },
+        {
+          "first": "PD-1",
+          "second": "Ki67",
+          "rho": 0.8610651548330696
+        },
+        {
+          "first": "PD-1",
+          "second": "Tryptase",
+          "rho": 0.8742072357283537
+        },
+        {
+          "first": "PD-1",
+          "second": "Actin-D",
+          "rho": 0.5746607881224304
+        },
+        {
+          "first": "PD-1",
+          "second": "Caspase3-D",
+          "rho": -0.10056661195386066
+        },
+        {
+          "first": "PD-1",
+          "second": "PHH3-B",
+          "rho": 0.888820686177646
+        },
+        {
+          "first": "PD-1",
+          "second": "Transgelin",
+          "rho": 0.7935964525882304
+        },
+        {
+          "first": "CD14",
+          "second": "CD4",
+          "rho": 0.9462228610340078
+        },
+        {
+          "first": "CD14",
+          "second": "T-bet",
+          "rho": 0.8026949656848856
+        },
+        {
+          "first": "CD14",
+          "second": "CD34",
+          "rho": 0.4150081021790198
+        },
+        {
+          "first": "CD14",
+          "second": "CD68",
+          "rho": 0.9423128823243221
+        },
+        {
+          "first": "CD14",
+          "second": "CD16",
+          "rho": 0.9772353318810725
+        },
+        {
+          "first": "CD14",
+          "second": "CD11c",
+          "rho": 0.9469615896050414
+        },
+        {
+          "first": "CD14",
+          "second": "CD138",
+          "rho": -0.29185923900471417
+        },
+        {
+          "first": "CD14",
+          "second": "CD20",
+          "rho": -0.1466828948426357
+        },
+        {
+          "first": "CD14",
+          "second": "CD3",
+          "rho": 0.8733226440746693
+        },
+        {
+          "first": "CD14",
+          "second": "CD8",
+          "rho": 0.09256270838210498
+        },
+        {
+          "first": "CD14",
+          "second": "PD-L1",
+          "rho": 0.886791658604496
+        },
+        {
+          "first": "CD14",
+          "second": "CK",
+          "rho": -0.6143483531014338
+        },
+        {
+          "first": "CD14",
+          "second": "Ki67",
+          "rho": 0.8128777994340913
+        },
+        {
+          "first": "CD14",
+          "second": "Tryptase",
+          "rho": 0.9158264722638922
+        },
+        {
+          "first": "CD14",
+          "second": "Actin-D",
+          "rho": 0.38712982075389124
+        },
+        {
+          "first": "CD14",
+          "second": "Caspase3-D",
+          "rho": -0.17436869619745943
+        },
+        {
+          "first": "CD14",
+          "second": "PHH3-B",
+          "rho": 0.8955221720536912
+        },
+        {
+          "first": "CD14",
+          "second": "Transgelin",
+          "rho": 0.6235194654190923
+        },
+        {
+          "first": "CD4",
+          "second": "T-bet",
+          "rho": 0.8528938420515642
+        },
+        {
+          "first": "CD4",
+          "second": "CD34",
+          "rho": 0.44169151738023754
+        },
+        {
+          "first": "CD4",
+          "second": "CD68",
+          "rho": 0.9019841856114952
+        },
+        {
+          "first": "CD4",
+          "second": "CD16",
+          "rho": 0.93729978552674
+        },
+        {
+          "first": "CD4",
+          "second": "CD11c",
+          "rho": 0.9726103387458374
+        },
+        {
+          "first": "CD4",
+          "second": "CD138",
+          "rho": -0.30061923757895415
+        },
+        {
+          "first": "CD4",
+          "second": "CD20",
+          "rho": 0.02267954492878014
+        },
+        {
+          "first": "CD4",
+          "second": "CD3",
+          "rho": 0.9667098024149617
+        },
+        {
+          "first": "CD4",
+          "second": "CD8",
+          "rho": 0.15670942883414907
+        },
+        {
+          "first": "CD4",
+          "second": "PD-L1",
+          "rho": 0.8594014133590069
+        },
+        {
+          "first": "CD4",
+          "second": "CK",
+          "rho": -0.6951851793799183
+        },
+        {
+          "first": "CD4",
+          "second": "Ki67",
+          "rho": 0.80717617516038
+        },
+        {
+          "first": "CD4",
+          "second": "Tryptase",
+          "rho": 0.9035534552177038
+        },
+        {
+          "first": "CD4",
+          "second": "Actin-D",
+          "rho": 0.463166350691022
+        },
+        {
+          "first": "CD4",
+          "second": "Caspase3-D",
+          "rho": -0.2706315516550778
+        },
+        {
+          "first": "CD4",
+          "second": "PHH3-B",
+          "rho": 0.8762989777023376
+        },
+        {
+          "first": "CD4",
+          "second": "Transgelin",
+          "rho": 0.7186917496314269
+        },
+        {
+          "first": "T-bet",
+          "second": "CD34",
+          "rho": 0.30929545201938424
+        },
+        {
+          "first": "T-bet",
+          "second": "CD68",
+          "rho": 0.8661525960047947
+        },
+        {
+          "first": "T-bet",
+          "second": "CD16",
+          "rho": 0.8070766401190754
+        },
+        {
+          "first": "T-bet",
+          "second": "CD11c",
+          "rho": 0.8050277588332679
+        },
+        {
+          "first": "T-bet",
+          "second": "CD138",
+          "rho": 0.1180368843059721
+        },
+        {
+          "first": "T-bet",
+          "second": "CD20",
+          "rho": 0.3384803368089024
+        },
+        {
+          "first": "T-bet",
+          "second": "CD3",
+          "rho": 0.841186179002722
+        },
+        {
+          "first": "T-bet",
+          "second": "CD8",
+          "rho": 0.5440920466199414
+        },
+        {
+          "first": "T-bet",
+          "second": "PD-L1",
+          "rho": 0.9113960119279149
+        },
+        {
+          "first": "T-bet",
+          "second": "CK",
+          "rho": -0.3565551547440011
+        },
+        {
+          "first": "T-bet",
+          "second": "Ki67",
+          "rho": 0.9120886024730595
+        },
+        {
+          "first": "T-bet",
+          "second": "Tryptase",
+          "rho": 0.7763094276193417
+        },
+        {
+          "first": "T-bet",
+          "second": "Actin-D",
+          "rho": 0.735380095451789
+        },
+        {
+          "first": "T-bet",
+          "second": "Caspase3-D",
+          "rho": 0.10422725349497447
+        },
+        {
+          "first": "T-bet",
+          "second": "PHH3-B",
+          "rho": 0.9228724536040279
+        },
+        {
+          "first": "T-bet",
+          "second": "Transgelin",
+          "rho": 0.769798616091111
+        },
+        {
+          "first": "CD34",
+          "second": "CD68",
+          "rho": 0.29299811793134944
+        },
+        {
+          "first": "CD34",
+          "second": "CD16",
+          "rho": 0.3521890288875957
+        },
+        {
+          "first": "CD34",
+          "second": "CD11c",
+          "rho": 0.3609639354866836
+        },
+        {
+          "first": "CD34",
+          "second": "CD138",
+          "rho": -0.3948485915013138
+        },
+        {
+          "first": "CD34",
+          "second": "CD20",
+          "rho": -0.1705377282203004
+        },
+        {
+          "first": "CD34",
+          "second": "CD3",
+          "rho": 0.53431938316673
+        },
+        {
+          "first": "CD34",
+          "second": "CD8",
+          "rho": -0.2409480634452354
+        },
+        {
+          "first": "CD34",
+          "second": "PD-L1",
+          "rho": 0.24129585006174545
+        },
+        {
+          "first": "CD34",
+          "second": "CK",
+          "rho": -0.27864602879283457
+        },
+        {
+          "first": "CD34",
+          "second": "Ki67",
+          "rho": 0.1820415780413015
+        },
+        {
+          "first": "CD34",
+          "second": "Tryptase",
+          "rho": 0.4254085755773133
+        },
+        {
+          "first": "CD34",
+          "second": "Actin-D",
+          "rho": 0.040196472103678375
+        },
+        {
+          "first": "CD34",
+          "second": "Caspase3-D",
+          "rho": -0.3622632374891924
+        },
+        {
+          "first": "CD34",
+          "second": "PHH3-B",
+          "rho": 0.2895935691230586
+        },
+        {
+          "first": "CD34",
+          "second": "Transgelin",
+          "rho": 0.2676855548807383
+        },
+        {
+          "first": "CD68",
+          "second": "CD16",
+          "rho": 0.9334538196698697
+        },
+        {
+          "first": "CD68",
+          "second": "CD11c",
+          "rho": 0.9073772339805113
+        },
+        {
+          "first": "CD68",
+          "second": "CD138",
+          "rho": -0.05546264550336973
+        },
+        {
+          "first": "CD68",
+          "second": "CD20",
+          "rho": -0.0008128943907288828
+        },
+        {
+          "first": "CD68",
+          "second": "CD3",
+          "rho": 0.8120882998667063
+        },
+        {
+          "first": "CD68",
+          "second": "CD8",
+          "rho": 0.28689866604290315
+        },
+        {
+          "first": "CD68",
+          "second": "PD-L1",
+          "rho": 0.9631263287334395
+        },
+        {
+          "first": "CD68",
+          "second": "CK",
+          "rho": -0.44414771705845196
+        },
+        {
+          "first": "CD68",
+          "second": "Ki67",
+          "rho": 0.9007059749518662
+        },
+        {
+          "first": "CD68",
+          "second": "Tryptase",
+          "rho": 0.8995398952760256
+        },
+        {
+          "first": "CD68",
+          "second": "Actin-D",
+          "rho": 0.5658052311247055
+        },
+        {
+          "first": "CD68",
+          "second": "Caspase3-D",
+          "rho": 0.03650096335087006
+        },
+        {
+          "first": "CD68",
+          "second": "PHH3-B",
+          "rho": 0.9477741199245755
+        },
+        {
+          "first": "CD68",
+          "second": "Transgelin",
+          "rho": 0.721695050151945
+        },
+        {
+          "first": "CD16",
+          "second": "CD11c",
+          "rho": 0.9543541996330357
+        },
+        {
+          "first": "CD16",
+          "second": "CD138",
+          "rho": -0.32449944320154056
+        },
+        {
+          "first": "CD16",
+          "second": "CD20",
+          "rho": -0.14962904056577545
+        },
+        {
+          "first": "CD16",
+          "second": "CD3",
+          "rho": 0.8642118189317078
+        },
+        {
+          "first": "CD16",
+          "second": "CD8",
+          "rho": 0.0927158193794607
+        },
+        {
+          "first": "CD16",
+          "second": "PD-L1",
+          "rho": 0.8770719082687811
+        },
+        {
+          "first": "CD16",
+          "second": "CK",
+          "rho": -0.6166020686258304
+        },
+        {
+          "first": "CD16",
+          "second": "Ki67",
+          "rho": 0.7871386427945763
+        },
+        {
+          "first": "CD16",
+          "second": "Tryptase",
+          "rho": 0.8981043749359863
+        },
+        {
+          "first": "CD16",
+          "second": "Actin-D",
+          "rho": 0.36225048195169857
+        },
+        {
+          "first": "CD16",
+          "second": "Caspase3-D",
+          "rho": -0.21138440900710675
+        },
+        {
+          "first": "CD16",
+          "second": "PHH3-B",
+          "rho": 0.8762324580374843
+        },
+        {
+          "first": "CD16",
+          "second": "Transgelin",
+          "rho": 0.6041858392624885
+        },
+        {
+          "first": "CD11c",
+          "second": "CD138",
+          "rho": -0.3546683330472871
+        },
+        {
+          "first": "CD11c",
+          "second": "CD20",
+          "rho": -0.06459980651627638
+        },
+        {
+          "first": "CD11c",
+          "second": "CD3",
+          "rho": 0.9193823901114229
+        },
+        {
+          "first": "CD11c",
+          "second": "CD8",
+          "rho": 0.08415301336911309
+        },
+        {
+          "first": "CD11c",
+          "second": "PD-L1",
+          "rho": 0.8529796619619057
+        },
+        {
+          "first": "CD11c",
+          "second": "CK",
+          "rho": -0.7186343934001873
+        },
+        {
+          "first": "CD11c",
+          "second": "Ki67",
+          "rho": 0.7917725675238738
+        },
+        {
+          "first": "CD11c",
+          "second": "Tryptase",
+          "rho": 0.8964257705644745
+        },
+        {
+          "first": "CD11c",
+          "second": "Actin-D",
+          "rho": 0.4185732225469263
+        },
+        {
+          "first": "CD11c",
+          "second": "Caspase3-D",
+          "rho": -0.3012405250031084
+        },
+        {
+          "first": "CD11c",
+          "second": "PHH3-B",
+          "rho": 0.849318589075112
+        },
+        {
+          "first": "CD11c",
+          "second": "Transgelin",
+          "rho": 0.7075553309404438
+        },
+        {
+          "first": "CD138",
+          "second": "CD20",
+          "rho": 0.6530156315995248
+        },
+        {
+          "first": "CD138",
+          "second": "CD3",
+          "rho": -0.3266991638743775
+        },
+        {
+          "first": "CD138",
+          "second": "CD8",
+          "rho": 0.7946158341883172
+        },
+        {
+          "first": "CD138",
+          "second": "PD-L1",
+          "rho": 0.08615041555306704
+        },
+        {
+          "first": "CD138",
+          "second": "CK",
+          "rho": 0.7159849116848229
+        },
+        {
+          "first": "CD138",
+          "second": "Ki67",
+          "rho": 0.20478187123815567
+        },
+        {
+          "first": "CD138",
+          "second": "Tryptase",
+          "rho": -0.25924722984324783
+        },
+        {
+          "first": "CD138",
+          "second": "Actin-D",
+          "rho": 0.5460461330585443
+        },
+        {
+          "first": "CD138",
+          "second": "Caspase3-D",
+          "rho": 0.8955142990943508
+        },
+        {
+          "first": "CD138",
+          "second": "PHH3-B",
+          "rho": 0.0658668140615488
+        },
+        {
+          "first": "CD138",
+          "second": "Transgelin",
+          "rho": 0.08955930527753991
+        },
+        {
+          "first": "CD20",
+          "second": "CD3",
+          "rho": 0.07218022733761566
+        },
+        {
+          "first": "CD20",
+          "second": "CD8",
+          "rho": 0.8417561849932376
+        },
+        {
+          "first": "CD20",
+          "second": "PD-L1",
+          "rho": 0.14422817712396774
+        },
+        {
+          "first": "CD20",
+          "second": "CK",
+          "rho": 0.19929532611688286
+        },
+        {
+          "first": "CD20",
+          "second": "Ki67",
+          "rho": 0.2357563316219264
+        },
+        {
+          "first": "CD20",
+          "second": "Tryptase",
+          "rho": -0.17047590499257978
+        },
+        {
+          "first": "CD20",
+          "second": "Actin-D",
+          "rho": 0.5979075371944872
+        },
+        {
+          "first": "CD20",
+          "second": "Caspase3-D",
+          "rho": 0.39349433025164754
+        },
+        {
+          "first": "CD20",
+          "second": "PHH3-B",
+          "rho": 0.13450225631082602
+        },
+        {
+          "first": "CD20",
+          "second": "Transgelin",
+          "rho": 0.2623974212958263
+        },
+        {
+          "first": "CD3",
+          "second": "CD8",
+          "rho": 0.15735235606616016
+        },
+        {
+          "first": "CD3",
+          "second": "PD-L1",
+          "rho": 0.7805552956541424
+        },
+        {
+          "first": "CD3",
+          "second": "CK",
+          "rho": -0.7041997838188889
+        },
+        {
+          "first": "CD3",
+          "second": "Ki67",
+          "rho": 0.7382387758772403
+        },
+        {
+          "first": "CD3",
+          "second": "Tryptase",
+          "rho": 0.8595434997539211
+        },
+        {
+          "first": "CD3",
+          "second": "Actin-D",
+          "rho": 0.45527045414815354
+        },
+        {
+          "first": "CD3",
+          "second": "Caspase3-D",
+          "rho": -0.34295137898417644
+        },
+        {
+          "first": "CD3",
+          "second": "PHH3-B",
+          "rho": 0.8151513929179979
+        },
+        {
+          "first": "CD3",
+          "second": "Transgelin",
+          "rho": 0.7037893761718317
+        },
+        {
+          "first": "CD8",
+          "second": "PD-L1",
+          "rho": 0.4262903735141232
+        },
+        {
+          "first": "CD8",
+          "second": "CK",
+          "rho": 0.26860735160136473
+        },
+        {
+          "first": "CD8",
+          "second": "Ki67",
+          "rho": 0.5086860759227297
+        },
+        {
+          "first": "CD8",
+          "second": "Tryptase",
+          "rho": 0.07193060538517726
+        },
+        {
+          "first": "CD8",
+          "second": "Actin-D",
+          "rho": 0.7780808030044992
+        },
+        {
+          "first": "CD8",
+          "second": "Caspase3-D",
+          "rho": 0.6139988888433862
+        },
+        {
+          "first": "CD8",
+          "second": "PHH3-B",
+          "rho": 0.4067726596578625
+        },
+        {
+          "first": "CD8",
+          "second": "Transgelin",
+          "rho": 0.3828715545498735
+        },
+        {
+          "first": "PD-L1",
+          "second": "CK",
+          "rho": -0.33838395153313616
+        },
+        {
+          "first": "PD-L1",
+          "second": "Ki67",
+          "rho": 0.9395549473596627
+        },
+        {
+          "first": "PD-L1",
+          "second": "Tryptase",
+          "rho": 0.8462030395830181
+        },
+        {
+          "first": "PD-L1",
+          "second": "Actin-D",
+          "rho": 0.6456797460270384
+        },
+        {
+          "first": "PD-L1",
+          "second": "Caspase3-D",
+          "rho": 0.14505441705327732
+        },
+        {
+          "first": "PD-L1",
+          "second": "PHH3-B",
+          "rho": 0.9611805869588392
+        },
+        {
+          "first": "PD-L1",
+          "second": "Transgelin",
+          "rho": 0.7420157144980316
+        },
+        {
+          "first": "CK",
+          "second": "Ki67",
+          "rho": -0.2632961322180053
+        },
+        {
+          "first": "CK",
+          "second": "Tryptase",
+          "rho": -0.5650025242909592
+        },
+        {
+          "first": "CK",
+          "second": "Actin-D",
+          "rho": -0.02649570587676725
+        },
+        {
+          "first": "CK",
+          "second": "Caspase3-D",
+          "rho": 0.7341202312155243
+        },
+        {
+          "first": "CK",
+          "second": "PHH3-B",
+          "rho": -0.36134065309244634
+        },
+        {
+          "first": "CK",
+          "second": "Transgelin",
+          "rho": -0.37000966738377294
+        },
+        {
+          "first": "Ki67",
+          "second": "Tryptase",
+          "rho": 0.7816242144197572
+        },
+        {
+          "first": "Ki67",
+          "second": "Actin-D",
+          "rho": 0.7320830070251637
+        },
+        {
+          "first": "Ki67",
+          "second": "Caspase3-D",
+          "rho": 0.25224699621784297
+        },
+        {
+          "first": "Ki67",
+          "second": "PHH3-B",
+          "rho": 0.9444509292844395
+        },
+        {
+          "first": "Ki67",
+          "second": "Transgelin",
+          "rho": 0.7890679779928402
+        },
+        {
+          "first": "Tryptase",
+          "second": "Actin-D",
+          "rho": 0.42337219033171136
+        },
+        {
+          "first": "Tryptase",
+          "second": "Caspase3-D",
+          "rho": -0.2043934507747704
+        },
+        {
+          "first": "Tryptase",
+          "second": "PHH3-B",
+          "rho": 0.8260238319949299
+        },
+        {
+          "first": "Tryptase",
+          "second": "Transgelin",
+          "rho": 0.6921824527925875
+        },
+        {
+          "first": "Actin-D",
+          "second": "Caspase3-D",
+          "rho": 0.41995682529736683
+        },
+        {
+          "first": "Actin-D",
+          "second": "PHH3-B",
+          "rho": 0.6448994135264884
+        },
+        {
+          "first": "Actin-D",
+          "second": "Transgelin",
+          "rho": 0.8236228042279863
+        },
+        {
+          "first": "Caspase3-D",
+          "second": "PHH3-B",
+          "rho": 0.15381600414208194
+        },
+        {
+          "first": "Caspase3-D",
+          "second": "Transgelin",
+          "rho": 0.030660397492556335
+        },
+        {
+          "first": "PHH3-B",
+          "second": "Transgelin",
+          "rho": 0.7265412860000025
+        }
+      ]
+    }
+  ],
+  "limit": "Cross-channel rank correlation measures spatial redundancy, not measured protein agreement or classifier accuracy. No QC status or output is altered."
+}

@@ -1,0 +1,10 @@
+{
+  "status": "technical_review_complete_biological_validation_pending",
+  "date": "2026-10-20",
+  "sample_id": "TCGA-YL-A9WL-01Z-00-DX1_2",
+  "all_23_channels_inspected": true,
+  "nuclear_qc_status": "pass",
+  "marker_distribution_qc": "pass",
+  "finding": "Calibrated RGB source and sparse DAPI/StarDist correspondence appear plausible. No sharp rectangular shadow is visible at contact-sheet scale. Multiple nominally different markers show similar nuclear patterns; 34% of native channel pairs have within-nucleus Spearman rho >0.8. This raises a marker-specificity concern that cannot be resolved using MoNuSAC H&E alone.",
+  "decision": "hold_from_public_cell_type_score_pending_measured_marker_reference_and_full_resolution_review"
+}

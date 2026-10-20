@@ -1,0 +1,24 @@
+{
+  "status": "partial_manual_review_complete",
+  "date": "2026-10-20",
+  "reviewed_positions": [91, 92],
+  "automated_qc_counts": {"pass": 1, "fail": 1},
+  "records": [
+    {
+      "sample_id": "TCGA-VP-A87H-01Z-00-DX1_6",
+      "organ": "prostate",
+      "split": "test",
+      "finding": "Virtual DAPI has bright, partly confluent peaks in a compact cell cluster. Some peaks overlap independently outlined nuclei, but AUC 0.690 and contrast 0.034 fail the frozen nuclear gate.",
+      "decision": "exclude_frozen_qc_fail"
+    },
+    {
+      "sample_id": "TCGA-YL-A9WL-01Z-00-DX1_2",
+      "organ": "prostate",
+      "split": "test",
+      "finding": "Virtual-DAPI peaks often correspond to sparse StarDist nuclei and automatic nuclear, spatial and seam checks pass; no obvious rectangular shadow at contact-sheet scale. All 23 channels were inspected. Many displayed proteins share bright nuclear morphology: 34% of native marker pairs have within-nucleus Spearman rho above 0.8, and the pairwise median is 0.546. Biological marker specificity and full-resolution shadow absence remain unverified.",
+      "decision": "technical_pass_hold_for_marker_specificity_and_full_resolution_review",
+      "all_23_channel_evidence": "../monusac-expanded-all-marker-review-2026-10-20/TCGA-YL-A9WL-01Z-00-DX1_2/all-23-markers.webp"
+    }
+  ],
+  "publication_limit": "The one technical pass is not yet a validated cell-type test image. No score or public gallery was updated from this partial cohort."
+}
